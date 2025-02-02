@@ -1,12 +1,13 @@
 #include "gim_model.h"
 #include <iostream>
 #include <fstream>
-using namespace std;
 
 // now, we actually run the full model
 Inference accelerator(fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZE][ARRAY_SIZE],
 				fixed_16  bias_1[ARRAY_SIZE], fixed_16 bias_2[ARRAY_SIZE],
                 fixed_16 training) {
+
+using namespace std;
 
     // array for the final output
     Inference output_array;
@@ -59,6 +60,7 @@ Inference accelerator(fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZ
 
     // store actual and predicted difference in vector, set other params
     char model = 'l'; // s = sigmoid, r = relu, l = leaky relu NOTE: SIGMOID CANNOT BE USED ON HARDWARE
+    char model_last = 's';
     fixed_16 alpha = 0.1; // for leaky relu, CHANGE IF LAD FOUND BETTER LEARNING RATE
     fixed_16 lr = 0.1; // learning rate
 
@@ -87,7 +89,7 @@ Inference accelerator(fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZ
             output_1[1] = array_out1.output_k[1];
 
             // then layer two
-            Array array_out2 = model_array(w2_local, bias_2_local, output_1, delta_2, lr, model, alpha, training);
+            Array array_out2 = model_array(w2_local, bias_2_local, output_1, delta_2, lr, model_last, alpha, training);
             output_2[0] = array_out2.output_k[0];
             output_2[1] = array_out2.output_k[1];
 
@@ -127,7 +129,7 @@ Inference accelerator(fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZ
             // MORE LAYERS HERE
 
             // start with layer 2
-            Array array_back2 = model_array(w2_local, bias_2_local, output_1, delta_2, lr, model, alpha, training);
+            Array array_back2 = model_array(w2_local, bias_2_local, output_1, delta_2, lr, model_last, alpha, training);
             delta_1[0] = array_back2.delta_kmin1[0];
             delta_1[1] = array_back2.delta_kmin1[1];
             // update the weights and biases

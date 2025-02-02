@@ -13,6 +13,11 @@ int main() { // BASICALLY JUST REWRITE THIS
     // training the array
     Inference training = accelerator(w1, w2, bias_1, bias_2, 1);
 
+    cout << "The following are the training weights and biases" << endl;
+    
+    for (int i = 0; i < ARRAY_SIZE; i++){
+        
+    }
     // running inference using the trained accelerator
     Inference output = accelerator(training.new_w1, training.new_w2, training.new_b1, training.new_b2, 0);
 

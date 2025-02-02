@@ -1,11 +1,12 @@
 #include "gim_model.h"
-using namespace std;
 
 Array model_array(fixed_16 weights[ARRAY_SIZE][ARRAY_SIZE],
 			fixed_16 biases[ARRAY_SIZE],
 			fixed_16 output_kmin1[ARRAY_SIZE],
 			fixed_16 delta_k[ARRAY_SIZE], fixed_16 eta,
 			char model, fixed_16 alpha, fixed_16 training) {
+using namespace std;
+
 //#pragma HLS bind_storage variable= weights type=RAM_2P impl=bram
 //#pragma HLS bind_storage variable= biases  type=RAM_2P impl=bram
 //#pragma HLS bind_storage variable= output_kmin1 type = RAM_2P impl=bram
