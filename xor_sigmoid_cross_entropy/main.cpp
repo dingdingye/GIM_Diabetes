@@ -17,7 +17,7 @@ int main() { // BASICALLY JUST REWRITE THIS
     cout << "W1" << endl;
     for (int i = 0; i < ARRAY_SIZE; i++){
         for (int j = 0; j < ARRAY_SIZE; j++){
-            cout << w1[i][j] << ", ";
+            cout << training.new_w1[i][j] << ", ";
         }
         cout << endl;
 
@@ -26,23 +26,23 @@ int main() { // BASICALLY JUST REWRITE THIS
     cout << "W2" << endl;
     for (int i = 0; i < ARRAY_SIZE; i++){
         for (int j = 0; j < ARRAY_SIZE; j++){
-            cout << w2[i][j] << ", ";
+            cout << training.new_w2[i][j] << ", ";
         }
         cout << endl;
     }
 
     cout << "bias 1" << endl;
     for (int i = 0; i < ARRAY_SIZE; i++){
-        cout << bias_1[i] << ", ";
+        cout << training.new_b1[i] << ", ";
     }
     cout << endl;
 
     cout << "bias 2" << endl;
     for (int i = 0; i < ARRAY_SIZE; i++){
-        cout << bias_2[i] << ", ";
+        cout << training.new_b2[i] << ", ";
     }
     cout << endl;
-    
+
     // running inference using the trained accelerator
     Inference output = accelerator(training.new_w1, training.new_w2, training.new_b1, training.new_b2, 0);
 
