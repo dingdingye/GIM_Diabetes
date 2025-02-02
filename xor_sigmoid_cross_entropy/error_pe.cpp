@@ -4,9 +4,9 @@
 
 fixed_16 error_pe(fixed_16 output_kmin1, fixed_16 partial_sum_delta_k, char model, fixed_16 alpha) {
     fixed_16 error = 0;
-    // if (model == 's'){
-    //     error = output_kmin1 * (1 - output_kmin1) * partial_sum_delta_k;
-    // }
+    if (model == 's'){
+        error = output_kmin1 * (1 - output_kmin1) * partial_sum_delta_k;
+    }
     if (model == 'r'){
         if (output_kmin1 > 0){
             error = partial_sum_delta_k;

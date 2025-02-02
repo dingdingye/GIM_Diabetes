@@ -59,7 +59,7 @@ using namespace std;
     // number of iterations defined in the header file
 
     // store actual and predicted difference in vector, set other params
-    char model = 'l'; // s = sigmoid, r = relu, l = leaky relu NOTE: SIGMOID CANNOT BE USED ON HARDWARE
+    char model = 's'; // s = sigmoid, r = relu, l = leaky relu NOTE: SIGMOID CANNOT BE USED ON HARDWARE
     char model_last = 's';
     fixed_16 alpha = 0.1; // for leaky relu, CHANGE IF LAD FOUND BETTER LEARNING RATE
     fixed_16 lr = 0.1; // learning rate
@@ -71,7 +71,7 @@ using namespace std;
         // iterate through all the data points
         int j;
         for (j = 0; j < 4; j++) {
-#pragma HLS PIPELINE
+            #pragma HLS PIPELINE
             // setup the initial data input
             output_0[0] = x1[j];
             output_0[1] = x2[j];
@@ -89,12 +89,13 @@ using namespace std;
             output_1[1] = array_out1.output_k[1];
 
             // then layer two
-            Array array_out2 = model_array(w2_local, bias_2_local, output_1, delta_2, lr, model_last, alpha, training);
+            Array array_out2 = model_array(w2_local, bias_2_local, output_1, delta_2, lr, model, alpha, training);
             output_2[0] = array_out2.output_k[0];
             output_2[1] = array_out2.output_k[1];
 
             // ADD MORE LAYERS HERE
 
+            // Note:this implies that the output is onehot so will try to caclulate the error using categorical cross entropy
             // make inferences for the return array if training has completed, INCREASE POSSIBLE OUTPUTS AND LOOK INTO THRESHOLDS
             if (output_2[0] > 0.5) {
                 output_array.inference[j] = 1;
@@ -104,6 +105,7 @@ using namespace std;
             }
             
             // lastly calculate the final error with the derivative of mse after the last output, LOOK INTO SPARSE CATEGORIAL CROSS-ENTROPY CALCULATIONS
+            
             if (model == 's') {
                 delta_2[0] = -(y[j] - output_2[0]) * output_2[0] * (1 - output_2[0]);
             }
@@ -129,7 +131,7 @@ using namespace std;
             // MORE LAYERS HERE
 
             // start with layer 2
-            Array array_back2 = model_array(w2_local, bias_2_local, output_1, delta_2, lr, model_last, alpha, training);
+            Array array_back2 = model_array(w2_local, bias_2_local, output_1, delta_2, lr, model, alpha, training);
             delta_1[0] = array_back2.delta_kmin1[0];
             delta_1[1] = array_back2.delta_kmin1[1];
             // update the weights and biases
