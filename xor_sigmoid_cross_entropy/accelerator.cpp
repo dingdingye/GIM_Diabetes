@@ -35,6 +35,7 @@ using namespace std;
     fixed_16 output_0[ARRAY_SIZE] = {0, 0};
     fixed_16 output_1[ARRAY_SIZE] = {0, 0};
     fixed_16 output_2[ARRAY_SIZE] = {0, 0};
+    fixed_16 true_val[ARRAY_SIZE] = {0, 0};
 
     // dummy arrays used to capture unused outputs
     fixed_16 dummy1[ARRAY_SIZE];
@@ -59,7 +60,7 @@ using namespace std;
     // number of iterations defined in the header file
 
     // store actual and predicted difference in vector, set other params
-    char model = 's'; // s = sigmoid, r = relu, l = leaky relu NOTE: SIGMOID CANNOT BE USED ON HARDWARE
+    char model = 'l'; // s = sigmoid, r = relu, l = leaky relu NOTE: SIGMOID CANNOT BE USED ON HARDWARE
     char model_last = 's';
     fixed_16 alpha = 0.1; // for leaky relu, CHANGE IF LAD FOUND BETTER LEARNING RATE
     fixed_16 lr = 0.1; // learning rate
@@ -99,27 +100,39 @@ using namespace std;
             // make inferences for the return array if training has completed, INCREASE POSSIBLE OUTPUTS AND LOOK INTO THRESHOLDS
             if (output_2[0] > 0.5) {
                 output_array.inference[j] = 1;
-            }
-            else if (output_2[0] <= 0.5) {
+            } else if (output_2[0] <= 0.5) {
                 output_array.inference[j] = 0;
             }
             
             // lastly calculate the final error with the derivative of mse after the last output, LOOK INTO SPARSE CATEGORIAL CROSS-ENTROPY CALCULATIONS
-            
+            if (y[j] == 0) {
+                true_val[0] = 0;
+                true_val[1] = 1;    
+            } else {
+                true_val[0] = 1;
+                true_val[1] = 0; 
+            }
             if (model == 's') {
-                delta_2[0] = -(y[j] - output_2[0]) * output_2[0] * (1 - output_2[0]);
+                delta_2[0] = -(true_val[0] - output_2[0]) * output_2[0] * (1 - output_2[0]);
+                delta_2[1] = -(true_val[1] - output_2[1]) * output_2[1] * (1 - output_2[1]);
             }
             else if (model == 'r') {
-                if (output_2[0] > 0)
-                    delta_2[0] = -(y[j] - output_2[0]);
-                else
+                if (output_2[0] > 0){
+                    delta_2[0] = -(true_val[0] - output_2[0]);
+                    delta_2[1] = -(true_val[1] - output_2[1]);
+                } else {
                     delta_2[0] = 0;
+                    delta_2[1] = 0;
+                }
             }
             else if (model == 'l') {
-                if (output_2[0] > 0)
-                    delta_2[0] = -(y[j] - output_2[0]);
-                else
-                    delta_2[0] = -(y[j] - output_2[0]) * alpha;
+                if (output_2[0] > 0) {
+                    delta_2[0] = -(true_val[0] - output_2[0]);
+                    delta_2[1] = -(true_val[1] - output_2[0]);
+                } else {
+                    delta_2[0] = -(true_val[0] - output_2[0]) * alpha;
+                    delta_2[1] = -(true_val[1] - output_2[1]) * alpha;
+                }
             }
             else {
                 // std::cout << "model invalid" << std::endl;
