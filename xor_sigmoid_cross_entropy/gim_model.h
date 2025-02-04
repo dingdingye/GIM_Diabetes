@@ -8,7 +8,7 @@
 #include <iostream>
 
 #define ARRAY_SIZE 2
-#define NUM_ITERATIONS 500
+#define NUM_ITERATIONS 1000
 
 typedef ap_fixed<16,4> fixed_16;
 using namespace std;
