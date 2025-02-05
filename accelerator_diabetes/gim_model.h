@@ -8,6 +8,7 @@
 #include <iostream>
 
 #define ARRAY_SIZE 2
+#define MAX_LAYER_SIZE 16
 #define NUM_INPUTS 16
 #define LAYER_1_SIZE 16
 #define LAYER_2_SIZE 2
@@ -77,7 +78,7 @@ struct Array {
     fixed_16 bias_change_l3[LAYER_3_SIZE];
     fixed_16 bias_change_l4[LAYER_4_SIZE];
     fixed_16 bias_change_l5[LAYER_5_SIZE];
-	fixed_16 bias_change_l5[LAYER_6_SIZE];
+	fixed_16 bias_change_l6[LAYER_6_SIZE];
 
 	// constructor
 	Array(){}
@@ -125,14 +126,47 @@ fixed_16 act_pe(fixed_16 net_in, char model, fixed_16 alpha);
 fixed_16 error_pe(fixed_16 output_kmin1, fixed_16 partial_sum_delta_k,
 				char model, fixed_16 alpha);
 
-Array model_array(fixed_16 weights[ARRAY_SIZE][ARRAY_SIZE],
-			fixed_16 biases[ARRAY_SIZE],
-			fixed_16 output_kmin1[ARRAY_SIZE],
-			fixed_16 delta_k[ARRAY_SIZE], fixed_16 eta,
-			char model, fixed_16 alpha, fixed_16 training);
+Array model_array(fixed_16 weights_l1[NUM_INPUTS][LAYER_1_SIZE],
+                  fixed_16 weights_l2[LAYER_1_SIZE][LAYER_2_SIZE],
+                  fixed_16 weights_l3[LAYER_2_SIZE][LAYER_3_SIZE],
+                  fixed_16 weights_l4[LAYER_3_SIZE][LAYER_4_SIZE],
+                  fixed_16 weights_l5[LAYER_4_SIZE][LAYER_5_SIZE],
+                  fixed_16 weights_l6[LAYER_5_SIZE][LAYER_6_SIZE],
+                  fixed_16 biases_l1[LAYER_1_SIZE],
+                  fixed_16 biases_l2[LAYER_2_SIZE],
+                  fixed_16 biases_l3[LAYER_3_SIZE],
+                  fixed_16 biases_l4[LAYER_4_SIZE],
+                  fixed_16 biases_l5[LAYER_5_SIZE],
+                  fixed_16 biases_l6[LAYER_6_SIZE],
+                  fixed_16 output_l1[LAYER_1_SIZE],
+                  fixed_16 output_l2[LAYER_2_SIZE],
+                  fixed_16 output_l3[LAYER_3_SIZE],
+                  fixed_16 output_l4[LAYER_4_SIZE],
+                  fixed_16 output_l5[LAYER_5_SIZE],
+                  fixed_16 output_l6[LAYER_6_SIZE],
+                  fixed_16 delta_l1[LAYER_1_SIZE],
+                  fixed_16 delta_l2[LAYER_2_SIZE],
+                  fixed_16 delta_l3[LAYER_3_SIZE],
+                  fixed_16 delta_l4[LAYER_4_SIZE],
+                  fixed_16 delta_l5[LAYER_5_SIZE],
+                  fixed_16 delta_l6[LAYER_6_SIZE],
+                  fixed_16 eta,
+                  char model,
+                  fixed_16 alpha,
+                  fixed_16 training);
 
-Inference accelerator(fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZE][ARRAY_SIZE],
-				 fixed_16  bias_1[ARRAY_SIZE], fixed_16 bias_2[ARRAY_SIZE],
-                 fixed_16 training);
+Inference accelerator(fixed_16 w1[NUM_INPUTS][LAYER_1_SIZE],
+                      fixed_16 w2[LAYER_1_SIZE][LAYER_2_SIZE],
+                      fixed_16 w3[LAYER_2_SIZE][LAYER_3_SIZE],
+                      fixed_16 w4[LAYER_3_SIZE][LAYER_4_SIZE],
+                      fixed_16 w5[LAYER_4_SIZE][LAYER_5_SIZE],
+                      fixed_16 w6[LAYER_5_SIZE][LAYER_6_SIZE],
+                      fixed_16 b1[LAYER_1_SIZE],
+                      fixed_16 b2[LAYER_2_SIZE],
+                      fixed_16 b3[LAYER_3_SIZE],
+                      fixed_16 b4[LAYER_4_SIZE],
+                      fixed_16 b5[LAYER_5_SIZE],
+                      fixed_16 b6[LAYER_6_SIZE],
+                      fixed_16 training);
 
 #endif // GIM_MODEL_
