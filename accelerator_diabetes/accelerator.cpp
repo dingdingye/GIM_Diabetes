@@ -99,7 +99,7 @@ Inference accelerator(fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZ
             }
             else if (output_2[0] <= 0.5) {
                 output_array.inference[j] = 0;
-            }
+            } // CHANGE THRESHOLD TO 0.9 / 0.1 AND TEST
             
             // lastly calculate the final error with the derivative of mse after the last output, LOOK INTO SPARSE CATEGORIAL CROSS-ENTROPY CALCULATIONS
             if (model == 's') {
