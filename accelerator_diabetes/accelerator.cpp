@@ -26,7 +26,7 @@ Inference accelerator(fixed_16 w1[NUM_INPUTS][LAYER_1_SIZE],
     fixed_16 y[3] = {0}; // 3 output neruons (I think we're implementing as one-hot encoded, check for later)
 
     // Setting up initial values for signals between layers
-    // fixed_16 output_l0[NUM_INPUTS] = {0, 0}; // Input layer
+    fixed_16 output_l0[NUM_INPUTS] = {0}; // Input layer
 
     // Initializing internal arrays with zeros
     fixed_16 delta_l1[LAYER_1_SIZE] = {0};
@@ -101,61 +101,53 @@ Inference accelerator(fixed_16 w1[NUM_INPUTS][LAYER_1_SIZE],
     for (int i = 0; i < NUM_ITERATIONS; i++) {
 
         // Iterate through all the data points
-        for (int j = 0; j < NUM_DATA_POINTS; j++) { // FIGURE OUT J
+        for (int j = 0; j < NUM_DATA_POINTS; j++) { 
         #pragma HLS PIPELINE
 
             // Set up the initial input data for the input layer
-            for (int n = 0; n < ARRAY_SIZE; n++) outputs[0][n] = x[n];
-            // output_l0[0] = x1[j];
-            // output_l0[1] = x2[j];
+            for (int n = 0; n < ARRAY_SIZE; n++) output_l0[n] = x[n];
 
-            // // Initialize the error backpropagation
-            // fixed_16 array[ARRAY_SIZE];
-            // for (int i = 0; i < ARRAY_SIZE; i++) {
-            // #pragma HLS UNROLL // Optional: Unroll the loop for better performance
-            //     array[i] = 0;
-            // }
+            // Initialize the error backpropagation
+            fixed_16 array[ARRAY_SIZE];
+            for (int i = 0; i < ARRAY_SIZE; i++) {
+            #pragma HLS UNROLL // Optional: Unroll the loop for better performance
+                array[i] = 0;
+            }
 
             // Run the forward propagation
-            for (int layer = 1; layer <= NUM_LAYERS - 1; layer++) {
-                Array array_out = model_array(weights[layer], biases[layer], outputs[layer - 1], deltas[layer], lr, model, alpha, training);
-                for (int n = 0; n < ARRAY_SIZE; n++) outputs[layer][n] = array_out.output_k[n];
-            }
+            Array array_out1 = model_array(w1_local, w2_local, w3_local, w4_local, w5_local, w6_local,
+                                          bias_1_local, bias_2_local, bias_3_local, bias_4_local, bias_5_local, bias_6_local,
+                                          output_l0, output_l0, output_l0, output_l0, output_l0, output_l0,
+                                          delta_l1, delta_l2, delta_l3, delta_l4, delta_l5, delta_l6,
+                                          lr, model, model_last, alpha, training);
 
             // Make inferences for the return array if training has completed, CHANGE FOR 3 OUTPUT
-            if (array_out1.output_l6[0] > 0.5) {
-                output_array.inference[j] = 1;
-            } else {
-                output_array.inference[j] = 0;
-            }
+            // if (array_out1.output_l6[0] > 0.5) {
+            //     output_array.inference[j] = 1;
+            // } else {
+            //     output_array.inference[j] = 0;
+            // }
 
-            // Calculate the final error with the derivative of MSE, LOOK AT CATEGORICAL CROSS ENTROPY 
-            for (int n = 0; n < LAYER_6_SIZE; n++) {
-                if (model == 's') {
-                    delta_l6[0] = -(y[j] - array_out1.output_l6[0]) * array_out1.output_l6[0] * (1 - array_out1.output_l6[0]);
-                } else if (model == 'r') {
-                    delta_l6[0] = (array_out1.output_l6[0] > 0) ? -(y[j] - array_out1.output_l6[0]) : static_cast<ap_fixed<18, 6>>(0);
-                } else if (model == 'l') {
-                    delta_l6[0] = (array_out1.output_l6[0] > 0) ? -(y[j] - array_out1.output_l6[0]) : -(y[j] - array_out1.output_l6[0]) * alpha;
-                } else {
-                    cout << "ERROR: Using invalid activation function model" << endl;
-                    break; // Invalid model
-                }
+            // Calculate the final error with the derivative of MSE
+            if (model == 's') {
+                delta_l6[0] = -(y[j] - array_out1.output_l6[0]) * array_out1.output_l6[0] * (1 - array_out1.output_l6[0]);
+            } else if (model == 'r') {
+                delta_l6[0] = (array_out1.output_l6[0] > 0) ? -(y[j] - array_out1.output_l6[0]) : static_cast<ap_fixed<18, 6>>(0);
+            } 
+            // else if (model == 'l') {
+            //     delta_l6[0] = (array_out1.output_l6[0] > 0) ? -(y[j] - array_out1.output_l6[0]) : -(y[j] - array_out1.output_l6[0]) * alpha;
+            // } 
+            else {
+                break; // Invalid model
             }
 
             // Run the backpropagation and update the weights/biases
-            for (int layer = 6; layer > 0; layer--) {
-                Array array_back = model_array(weights[layer], biases[layer], outputs[layer - 1], deltas[layer], lr, model, alpha, training);
-                for (int n = 0; n < ARRAY_SIZE; n++) {
-                    deltas[layer - 1][n] = array_back.delta_kmin1[n];
-                }
-                for (int n = 0; n < ARRAY_SIZE; n++) {
-                    biases[layer][n] = array_back.bias_change[n];
-                }
-                for (int m = 0; m < ARRAY_SIZE; m++) {
-                    weights[layer][n][m] = array_back.weight_changes[n][m];
-                }
-            }
+            Array array_back = model_array(w1_local, w2_local, w3_local, w4_local, w5_local, w6_local,
+                                          bias_1_local, bias_2_local, bias_3_local, bias_4_local, bias_5_local, bias_6_local,
+                                          output_l0, output_l0, output_l0, output_l0, output_l0, output_l0,
+                                          delta_l1, delta_l2, delta_l3, delta_l4, delta_l5, delta_l6,
+                                          lr, model, alpha, training);
+            
             // Update the weights and biases
             memcpy(w1_local, array_back.weight_changes_l1, sizeof(w1_local));
             memcpy(w2_local, array_back.weight_changes_l2, sizeof(w2_local));
