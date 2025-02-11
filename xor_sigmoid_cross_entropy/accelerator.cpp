@@ -60,10 +60,10 @@ using namespace std;
     // number of iterations defined in the header file
 
     // store actual and predicted difference in vector, set other params
-    char model = 'l'; // s = sigmoid, r = relu, l = leaky relu NOTE: SIGMOID CANNOT BE USED ON HARDWARE
-    char model_last = 's';
+    char model = 'r'; // s = sigmoid, r = relu, l = leaky relu NOTE: SIGMOID CANNOT BE USED ON HARDWARE
+    char model_last = 'r';
     fixed_16 alpha = 0.1; // for leaky relu, CHANGE IF LAD FOUND BETTER LEARNING RATE
-    fixed_16 lr = 0.1; // learning rate
+    fixed_16 lr = 0.05; // learning rate
 
     // iterate through the alloted epochs
     int i;
@@ -90,7 +90,7 @@ using namespace std;
             output_1[1] = array_out1.output_k[1];
 
             // then layer two
-            Array array_out2 = model_array(w2_local, bias_2_local, output_1, delta_2, lr, model, alpha, training);
+            Array array_out2 = model_array(w2_local, bias_2_local, output_1, delta_2, lr, model_last, alpha, training);
             output_2[0] = array_out2.output_k[0];
             output_2[1] = array_out2.output_k[1];
 
@@ -98,12 +98,18 @@ using namespace std;
 
             // Note:this implies that the output is onehot so will try to caclulate the error using categorical cross entropy
             // make inferences for the return array if training has completed, INCREASE POSSIBLE OUTPUTS AND LOOK INTO THRESHOLDS
-            if (output_2[0] > 0.5) {
+            // if (output_2[0] > 0.6) {
+            //     output_array.inference[j] = 1;
+            // } else if (output_2[0] <= 0.4) {
+            //     output_array.inference[j] = 0;
+            // }
+
+            if (output_2[0] > output_2[1]) {
                 output_array.inference[j] = 1;
-            } else if (output_2[0] <= 0.5) {
+            } else {
                 output_array.inference[j] = 0;
             }
-            
+            // if (output_2[0] > output_2[1])
             // lastly calculate the final error with the derivative of mse after the last output, LOOK INTO SPARSE CATEGORIAL CROSS-ENTROPY CALCULATIONS
             if (y[j] == 0) {
                 true_val[0] = 0;
@@ -112,20 +118,20 @@ using namespace std;
                 true_val[0] = 1;
                 true_val[1] = 0; 
             }
-            if (model == 's') {
-                delta_2[0] = -(true_val[0] - output_2[0]) * output_2[0] * (1 - output_2[0]);
-                delta_2[1] = -(true_val[1] - output_2[1]) * output_2[1] * (1 - output_2[1]);
+            if (model_last == 's') {
+                delta_2[0] = -2*(true_val[0] - output_2[0]) * output_2[0] * (1 - output_2[0]);
+                // delta_2[1] = -(true_val[1] - output_2[1]) * output_2[1] * (1 - output_2[1]);
             }
-            else if (model == 'r') {
+            else if (model_last == 'r') {
                 if (output_2[0] > 0){
-                    delta_2[0] = -(true_val[0] - output_2[0]);
-                    delta_2[1] = -(true_val[1] - output_2[1]);
+                    delta_2[0] = -2* (true_val[0] - output_2[0]);
+                    // delta_2[1] = -(true_val[1] - output_2[1]);
                 } else {
                     delta_2[0] = 0;
-                    delta_2[1] = 0;
+                    // delta_2[1] = 0;
                 }
             }
-            else if (model == 'l') {
+            else if (model_last == 'l') {
                 if (output_2[0] > 0) {
                     delta_2[0] = -(true_val[0] - output_2[0]);
                     delta_2[1] = -(true_val[1] - output_2[0]);
@@ -144,7 +150,7 @@ using namespace std;
             // MORE LAYERS HERE
 
             // start with layer 2
-            Array array_back2 = model_array(w2_local, bias_2_local, output_1, delta_2, lr, model, alpha, training);
+            Array array_back2 = model_array(w2_local, bias_2_local, output_1, delta_2, lr, model_last, alpha, training);
             delta_1[0] = array_back2.delta_kmin1[0];
             delta_1[1] = array_back2.delta_kmin1[1];
             // update the weights and biases
