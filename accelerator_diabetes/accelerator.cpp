@@ -4,8 +4,18 @@
 using namespace std;
 
 // Function to run the full model
-Inference accelerator(fixed_16 weights[NUM_LAYERS][ARRAY_SIZE][ARRAY_SIZE],
-                      fixed_16 bias_1[NUM_LAYERS][ARRAY_SIZE],
+Inference accelerator(fixed_16 w1[NUM_INPUTS][LAYER_1_SIZE],
+                      fixed_16 w2[LAYER_1_SIZE][LAYER_2_SIZE],
+                      fixed_16 w3[LAYER_2_SIZE][LAYER_3_SIZE],
+                      fixed_16 w4[LAYER_3_SIZE][LAYER_4_SIZE],
+                      fixed_16 w5[LAYER_4_SIZE][LAYER_5_SIZE],
+                      fixed_16 w6[LAYER_5_SIZE][LAYER_6_SIZE],
+                      fixed_16 bias_1[LAYER_1_SIZE],
+                      fixed_16 bias_2[LAYER_2_SIZE],
+                      fixed_16 bias_3[LAYER_3_SIZE],
+                      fixed_16 bias_4[LAYER_4_SIZE],
+                      fixed_16 bias_5[LAYER_5_SIZE],
+                      fixed_16 bias_6[LAYER_6_SIZE],
                       fixed_16 training) {
 
     // Array for the final output
@@ -13,77 +23,73 @@ Inference accelerator(fixed_16 weights[NUM_LAYERS][ARRAY_SIZE][ARRAY_SIZE],
 
     // Initializing the data for the XOR problem
     fixed_16 x[16] = {0}; // 16 input neurons, CHECK IF THIS REPRESENTS THE CORRECT THING
-    // fixed_16 x2[4] = {0, 1, 0, 1};
     fixed_16 y[3] = {0}; // 3 output neruons (I think we're implementing as one-hot encoded, check for later)
 
     // Setting up initial values for signals between layers
-    fixed_16 outputs[NUM_LAYERS][ARRAY_SIZE] = {{0}};
-    fixed_16 deltas[NUM_LAYERS][ARRAY_SIZE] = {{0}};
     // fixed_16 output_l0[NUM_INPUTS] = {0, 0}; // Input layer
 
     // Initializing internal arrays with zeros
-    // fixed_16 delta_l1[LAYER_1_SIZE] = {0};
-    // fixed_16 delta_l2[LAYER_2_SIZE] = {0};
-    // fixed_16 delta_l3[LAYER_3_SIZE] = {0};
-    // fixed_16 delta_l4[LAYER_4_SIZE] = {0};
-    // fixed_16 delta_l5[LAYER_5_SIZE] = {0};
-    // fixed_16 delta_l6[LAYER_6_SIZE] = {0};
+    fixed_16 delta_l1[LAYER_1_SIZE] = {0};
+    fixed_16 delta_l2[LAYER_2_SIZE] = {0};
+    fixed_16 delta_l3[LAYER_3_SIZE] = {0};
+    fixed_16 delta_l4[LAYER_4_SIZE] = {0};
+    fixed_16 delta_l5[LAYER_5_SIZE] = {0};
+    fixed_16 delta_l6[LAYER_6_SIZE] = {0};
 
     // Make local versions of the weights/biases
-    // fixed_16 w1_local[NUM_INPUTS][LAYER_1_SIZE];
-    // fixed_16 w2_local[LAYER_1_SIZE][LAYER_2_SIZE];
-    // fixed_16 w3_local[LAYER_2_SIZE][LAYER_3_SIZE];
-    // fixed_16 w4_local[LAYER_3_SIZE][LAYER_4_SIZE];
-    // fixed_16 w5_local[LAYER_4_SIZE][LAYER_5_SIZE];
-    // fixed_16 w6_local[LAYER_5_SIZE][LAYER_6_SIZE];
+    fixed_16 w1_local[NUM_INPUTS][LAYER_1_SIZE];
+    fixed_16 w2_local[LAYER_1_SIZE][LAYER_2_SIZE];
+    fixed_16 w3_local[LAYER_2_SIZE][LAYER_3_SIZE];
+    fixed_16 w4_local[LAYER_3_SIZE][LAYER_4_SIZE];
+    fixed_16 w5_local[LAYER_4_SIZE][LAYER_5_SIZE];
+    fixed_16 w6_local[LAYER_5_SIZE][LAYER_6_SIZE];
 
-    // fixed_16 bias_1_local[LAYER_1_SIZE];
-    // fixed_16 bias_2_local[LAYER_2_SIZE];
-    // fixed_16 bias_3_local[LAYER_3_SIZE];
-    // fixed_16 bias_4_local[LAYER_4_SIZE];
-    // fixed_16 bias_5_local[LAYER_5_SIZE];
-    // fixed_16 bias_6_local[LAYER_6_SIZE];
+    fixed_16 bias_1_local[LAYER_1_SIZE];
+    fixed_16 bias_2_local[LAYER_2_SIZE];
+    fixed_16 bias_3_local[LAYER_3_SIZE];
+    fixed_16 bias_4_local[LAYER_4_SIZE];
+    fixed_16 bias_5_local[LAYER_5_SIZE];
+    fixed_16 bias_6_local[LAYER_6_SIZE];
 
     // Copy weights and biases to local arrays
-    // for (int n = 0; n < NUM_INPUTS; n++) { // DO WE WANT TO PRE-INCREMENT
-    //     for (int m = 0; m < LAYER_1_SIZE; m++) {
-    //         w1_local[n][m] = w1[n][m];
-    //     }
-    // }
-    // for (int n = 0; n < LAYER_1_SIZE; n++) {
-    //     bias_1_local[n] = bias_1[n];
-    //     for (int m = 0; m < LAYER_2_SIZE; m++) {
-    //         w2_local[n][m] = w2[n][m];
-    //     }
-    // }
-    // // Repeat for other layers...
-    // for (int n = 0; n < LAYER_2_SIZE; n++) {
-    //     bias_2_local[n] = bias_2[n];
-    //     for (int m = 0; m < LAYER_3_SIZE; m++) {
-    //         w3_local[n][m] = w3[n][m];
-    //     }
-    // }
-    // for (int n = 0; n < LAYER_3_SIZE; n++) {
-    //     bias_3_local[n] = bias_3[n];
-    //     for (int m = 0; m < LAYER_4_SIZE; m++) {
-    //         w4_local[n][m] = w4[n][m];
-    //     }
-    // }
-    // for (int n = 0; n < LAYER_4_SIZE; n++) {
-    //     bias_4_local[n] = bias_4[n];
-    //     for (int m = 0; m < LAYER_5_SIZE; m++) {
-    //         w5_local[n][m] = w5[n][m];
-    //     }
-    // }
-    // for (int n = 0; n < LAYER_5_SIZE; n++) {
-    //     bias_5_local[n] = bias_5[n];
-    //     for (int m = 0; m < LAYER_6_SIZE; m++) {
-    //         w6_local[n][m] = w6[n][m];
-    //     }
-    // }
-    // for (int n = 0; n < LAYER_6_SIZE; n++) {
-    //     bias_6_local[n] = bias_6[n];
-    // }
+    for (int n = 0; n < NUM_INPUTS; n++) { // DO WE WANT TO PRE-INCREMENT
+        for (int m = 0; m < LAYER_1_SIZE; m++) {
+            w1_local[n][m] = w1[n][m];
+        }
+    }
+    for (int n = 0; n < LAYER_1_SIZE; n++) {
+        bias_1_local[n] = bias_1[n];
+        for (int m = 0; m < LAYER_2_SIZE; m++) {
+            w2_local[n][m] = w2[n][m];
+        }
+    }
+    for (int n = 0; n < LAYER_2_SIZE; n++) {
+        bias_2_local[n] = bias_2[n];
+        for (int m = 0; m < LAYER_3_SIZE; m++) {
+            w3_local[n][m] = w3[n][m];
+        }
+    }
+    for (int n = 0; n < LAYER_3_SIZE; n++) {
+        bias_3_local[n] = bias_3[n];
+        for (int m = 0; m < LAYER_4_SIZE; m++) {
+            w4_local[n][m] = w4[n][m];
+        }
+    }
+    for (int n = 0; n < LAYER_4_SIZE; n++) {
+        bias_4_local[n] = bias_4[n];
+        for (int m = 0; m < LAYER_5_SIZE; m++) {
+            w5_local[n][m] = w5[n][m];
+        }
+    }
+    for (int n = 0; n < LAYER_5_SIZE; n++) {
+        bias_5_local[n] = bias_5[n];
+        for (int m = 0; m < LAYER_6_SIZE; m++) {
+            w6_local[n][m] = w6[n][m];
+        }
+    }
+    for (int n = 0; n < LAYER_6_SIZE; n++) {
+        bias_6_local[n] = bias_6[n];
+    }
 
     // Number of iterations defined in the header file
     char model = 'l'; // s = sigmoid, r = relu, l = leaky relu
