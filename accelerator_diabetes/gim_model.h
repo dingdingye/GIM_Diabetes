@@ -16,14 +16,20 @@
 #define LAYER_4_SIZE 2
 #define LAYER_5_SIZE 2
 #define LAYER_6_SIZE 3
-#define NUM_ITERATIONS 500
+#define NUM_ITERATIONS 1
+#define MAX_DATA_ROWS 9721
+#define MAX_DATA_COLS 16
+#define TESTING_ROWS 4167
 
-typedef ap_fixed<16,4> fixed_16;
+typedef ap_fixed<16,7> fixed_16;
 using namespace std;
 
 
 // these structs are used to hold return values/arrays for simplicity
 // of return statements (i.e. no pointers used)
+
+void readCSV(const char* filepath, fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], int& num_rows, int& num_cols);
+
 struct Weight{
 	// members     
 	fixed_16 sum_delta_out;         
@@ -86,7 +92,9 @@ struct Array {
 
 struct Inference {
 	// members
-	fixed_16 inference[4];
+	fixed_16 inference[TESTING_ROWS];
+    fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS];
+    fixed_16 Y[MAX_DATA_ROWS][MAX_DATA_COLS];
 	// fixed_16 new_w1[ARRAY_SIZE][ARRAY_SIZE];
 	// fixed_16 new_w2[ARRAY_SIZE][ARRAY_SIZE];
 	// fixed_16 new_b1[ARRAY_SIZE];
@@ -153,20 +161,24 @@ Array model_array(fixed_16 weights_l1[NUM_INPUTS][LAYER_1_SIZE],
                   fixed_16 eta,
                   char model,
                   fixed_16 alpha,
-                  fixed_16 training);
+                  fixed_16 training,
+                  fixed_16 forward);
 
-Inference accelerator(fixed_16 w1[NUM_INPUTS][LAYER_1_SIZE],
+Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
+                      fixed_16 Y[MAX_DATA_ROWS][MAX_DATA_COLS],
+                      fixed_16 w1[NUM_INPUTS][LAYER_1_SIZE],
                       fixed_16 w2[LAYER_1_SIZE][LAYER_2_SIZE],
                       fixed_16 w3[LAYER_2_SIZE][LAYER_3_SIZE],
                       fixed_16 w4[LAYER_3_SIZE][LAYER_4_SIZE],
                       fixed_16 w5[LAYER_4_SIZE][LAYER_5_SIZE],
                       fixed_16 w6[LAYER_5_SIZE][LAYER_6_SIZE],
-                      fixed_16 b1[LAYER_1_SIZE],
-                      fixed_16 b2[LAYER_2_SIZE],
-                      fixed_16 b3[LAYER_3_SIZE],
-                      fixed_16 b4[LAYER_4_SIZE],
-                      fixed_16 b5[LAYER_5_SIZE],
-                      fixed_16 b6[LAYER_6_SIZE],
-                      fixed_16 training);
+                      fixed_16 bias_1[LAYER_1_SIZE],
+                      fixed_16 bias_2[LAYER_2_SIZE],
+                      fixed_16 bias_3[LAYER_3_SIZE],
+                      fixed_16 bias_4[LAYER_4_SIZE],
+                      fixed_16 bias_5[LAYER_5_SIZE],
+                      fixed_16 bias_6[LAYER_6_SIZE],
+                      fixed_16 training)
 
 #endif // GIM_MODEL_
+;
