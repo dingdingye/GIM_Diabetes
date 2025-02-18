@@ -1,0 +1,12 @@
+   Build using "C:/Xilinx/Vitis_HLS/2023.1/tps/win64/msys64/mingw64/bin/g++"
+   Compiling main.cpp_pre.cpp.tb.cpp
+   Compiling data.cpp_pre.cpp.tb.cpp
+   Compiling accelerator.cpp_pre.cpp.tb.cpp
+   Compiling apatb_accel.cpp
+   Compiling bias.cpp_pre.cpp.tb.cpp
+   Compiling matmul.cpp_pre.cpp.tb.cpp
+   Compiling activation.cpp_pre.cpp.tb.cpp
+   Compiling layer.cpp_pre.cpp.tb.cpp
+   Compiling error.cpp_pre.cpp.tb.cpp
+   Compiling apatb_accel_ir.ll
+   Generating cosim.tv.exe
