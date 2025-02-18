@@ -1,0 +1,162 @@
+<ENTRY>
+{
+ "thisFile": "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\accelerator_component\\accelerator\\accelerator.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/18/25 14:04:17",
+ "timestampMillis": "454502233",
+ "buildStep": {
+  "cmdId": "008d7342-2a33-4f3b-bac6-b751d374ff62",
+  "name": "vitis-run",
+  "logFile": "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\accelerator_component\\accelerator\\logs\\accelerator.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\accelerator_component\\hls_config.cfg --work_dir accelerator ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\accelerator_component\\hls_config.cfg",
+   "--work_dir",
+   "accelerator"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\accelerator_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/25 14:04:17",
+ "timestampMillis": "454502234",
+ "status": {
+  "cmdId": "008d7342-2a33-4f3b-bac6-b751d374ff62",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/18/25 14:04:42",
+ "timestampMillis": "454527582",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "accelerator",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\accelerator.cpp",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\act_pe.cpp",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\array.cpp",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\bias_pe.cpp",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\csv_import.cpp",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\error_pe.cpp",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\weight_pe.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/18/25 14:04:42",
+ "timestampMillis": "454527590",
+ "buildStep": {
+  "cmdId": "dfc526be-cf07-43d3-a988-ab91dda218fa",
+  "name": "csim_design",
+  "logFile": "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\accelerator_component\\accelerator\\hls\\hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\accelerator_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/25 14:04:42",
+ "timestampMillis": "454527592",
+ "status": {
+  "cmdId": "dfc526be-cf07-43d3-a988-ab91dda218fa",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/25 14:04:57",
+ "timestampMillis": "454543043",
+ "status": {
+  "cmdId": "dfc526be-cf07-43d3-a988-ab91dda218fa",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/25 14:04:58",
+ "timestampMillis": "454543574",
+ "status": {
+  "cmdId": "008d7342-2a33-4f3b-bac6-b751d374ff62",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/25 14:04:58",
+ "timestampMillis": "454543574",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/25 14:04:58",
+ "timestampMillis": "454543575",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

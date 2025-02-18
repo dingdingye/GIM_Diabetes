@@ -16,6 +16,8 @@
 #define LAYER_4_SIZE 2
 #define LAYER_5_SIZE 2
 #define LAYER_6_SIZE 3
+#define NUM_LAYERS 7
+#define NUM_DATA_POINTS 9721
 #define NUM_ITERATIONS 500
 
 typedef ap_fixed<16,4> fixed_16;

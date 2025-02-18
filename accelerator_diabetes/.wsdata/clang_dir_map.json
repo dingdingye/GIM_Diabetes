@@ -1,0 +1,13 @@
+{
+  "workspaceRoot": "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes",
+  "mapping": {
+    "act_pe.cpp": "accelerator_component",
+    "weight_pe.cpp": "accelerator_component",
+    "main.cpp": "accelerator_component",
+    "accelerator.cpp": "accelerator_component",
+    "bias_pe.cpp": "accelerator_component",
+    "error_pe.cpp": "accelerator_component",
+    "array.cpp": "accelerator_component",
+    "csv_import.cpp": "accelerator_component"
+  }
+}

@@ -5,7 +5,7 @@ using namespace std;
 
 // Function to run the full model
 Inference accelerator(fixed_16 weights[NUM_LAYERS][ARRAY_SIZE][ARRAY_SIZE],
-                      fixed_16 bias_1[NUM_LAYERS][ARRAY_SIZE],
+                      fixed_16 biases[NUM_LAYERS][ARRAY_SIZE],
                       fixed_16 training) {
 
     // Array for the final output
