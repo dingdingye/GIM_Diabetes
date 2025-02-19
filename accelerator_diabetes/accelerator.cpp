@@ -63,7 +63,7 @@ Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
     Inference output_array;
 
     // Setting up initial values for signals between layers
-    fixed_16 output_l0[NUM_INPUTS] = {0}; // Input layer
+    // fixed_16 output_l0[NUM_INPUTS] = {0}; // Input layer
 
     // Initializing internal arrays with zeros
     fixed_16 delta_l1[LAYER_1_SIZE] = {0};

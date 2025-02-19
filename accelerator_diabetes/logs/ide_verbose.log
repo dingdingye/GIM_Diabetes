@@ -2787,3 +2787,126 @@ Debugger contribution has been registered: lldb-mi
 2025-02-19 14:30:54 [debug] : command 'gitlens.computingFileAnnotations' already registered 
 2025-02-19 14:30:54 [debug] : [hosted-plugin: 16532] PLUGIN_HOST(16532): PluginManagerExtImpl/loadPlugin(C:\Xilinx\Vitis\2024.1\ide\electron-app\win64\resources\app\plugins\vscode-builtin-github-authentication\extension\dist\extension.js) 
 2025-02-19 14:30:55 [debug] : [hosted-plugin: 16532] PLUGIN_HOST(16532): PluginManagerExtImpl/loadPlugin(C:\Xilinx\Vitis\2024.1\ide\electron-app\win64\resources\app\plugins\vscode-clangd\extension\out\src\extension) 
+2025-02-19 14:30:55 [debug] : Event posted using notification server in backend. {"0":{"wrappers_":{},"arrayIndexOffset_":-1,"array":["14de4ccc-d93a-4bfc-b354-4b34392d2f2b",null,24,null,null,null,null,"C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\testing_component"],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2025-02-19 14:30:55 [debug] : >>>>>fetching >>>getComponentIncludes>>>>>>> {"0":"C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\testing_component"}
+2025-02-19 14:30:55 [debug] : Notification event posted from server - UPDATE_COMPILE_COMMAND. 
+2025-02-19 14:30:55 [debug] : Received event from notification service: UPDATE_COMPILE_COMMAND. 
+2025-02-19 14:30:55 [debug] : MonacoEditorModel.fireDidChangeContent - enter - {
+  "changes": [
+    {
+      "range": {
+        "startLineNumber": 2,
+        "startColumn": 29,
+        "endLineNumber": 8,
+        "endColumn": 6
+      },
+      "rangeLength": 332,
+      "text": "[\r\n        \"-IC:\\\\Xilinx\\\\Vitis_HLS\\\\2024.1\\\\include\",\r\n        \"-IC:\\\\Xilinx\\\\Vitis_HLS\\\\2024.1\\\\include\\\\etc\",\r\n        \"-IC:\\\\Xilinx\\\\Vitis_HLS\\\\2024.1\\\\include\\\\ap_sysc\",\r\n        \"-IC:\\\\Xilinx\\\\Vitis_HLS\\\\2024.1\\\\win64\\\\tools\\\\auto_cc\\\\include\",\r\n        \"-IC:\\\\Xilinx\\\\Vitis_HLS\\\\2024.1\\\\win64\\\\tools\\\\systemc\\\\include\"\r\n    ]",
+      "rangeOffset": 31,
+      "forceMoveMarkers": false
+    }
+  ],
+  "eol": "\r\n",
+  "versionId": 3,
+  "isUndoing": false,
+  "isRedoing": false,
+  "isFlush": false
+} {"0":"file:///c:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/.theia/settings.json"}
+2025-02-19 14:30:55 [debug] : MonacoEditorModel.markAsDirty - enter {"0":"file:///c:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/.theia/settings.json"}
+2025-02-19 14:30:55 [debug] : MonacoEditorModel.cancelSync {"0":"file:///c:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/.theia/settings.json"}
+2025-02-19 14:30:55 [debug] : MonacoEditorModel.cancelSave {"0":"file:///c:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/.theia/settings.json"}
+2025-02-19 14:30:55 [debug] : MonacoEditorModel.markAsDirty - exit {"0":"file:///c:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/.theia/settings.json"}
+2025-02-19 14:30:55 [debug] : MonacoEditorModel.fireDidChangeContent - exit {"0":"file:///c:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/.theia/settings.json"}
+2025-02-19 14:30:55 [debug] : MonacoEditorModel.cancelSave {"0":"file:///c:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/.theia/settings.json"}
+2025-02-19 14:30:55 [debug] : MonacoEditorModel.cancelSave {"0":"file:///c:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/.theia/settings.json"}
+2025-02-19 14:30:56 [debug] : [hosted-plugin: 16532] Could not identify plugin for 'Theia' require call from C:\Xilinx\Vitis\2024.1\ide\electron-app\win64\resources\app\node_modules\vscode-languageclient\lib\node\main.js 
+2025-02-19 14:30:57 [debug] : Error: Aborted onWillSaveTextDocument-event after 1750ms
+    at file:///C:/Xilinx/Vitis/2024.1/ide/electron-app/win64/resources/app/lib/bundle.js:2:7414298 
+2025-02-19 14:30:57 [debug] : MonacoEditorModel.cancelSync {"0":"file:///c:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/.theia/settings.json"}
+2025-02-19 14:30:57 [debug] : MonacoEditorModel.cancelSave {"0":"file:///c:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/.theia/settings.json"}
+2025-02-19 14:31:03 [debug] : [hosted-plugin: 16532] PLUGIN_HOST(16532): PluginManagerExtImpl/loadPlugin(c:\Users\GIM\AppData\Local\Temp\GIM-vscode-unpacked\vitis-hls-pragma-0.6.0.vsix\extension\out\extension.js) 
+2025-02-19 14:31:04 [debug] : [hosted-plugin: 16532] Starting extension "vitis-hls-pragma"! 
+2025-02-19 14:31:04 [debug] : [hosted-plugin: 16532] PLUGIN_HOST(16532): PluginManagerExtImpl/loadPlugin(c:\Users\GIM\AppData\Local\Temp\GIM-vscode-unpacked\vitis-hls-l1-library-0.0.1.vsix\extension\lib\extension.js) 
+2025-02-19 14:31:04 [debug] : [hosted-plugin: 16532] Clang Language Server is now active! 
+2025-02-19 14:31:05 [debug] : data provider for 'clangd.typeHierarchyView' view is already registered 
+2025-02-19 14:31:05 [debug] : command 'clangd.typeHierarchy' already registered 
+2025-02-19 14:31:05 [debug] : data provider for 'clangd.typeHierarchyView' view is already registered 
+2025-02-19 14:31:05 [debug] : data provider for 'clangd.ast' view is already registered 
+2025-02-19 14:31:05 [debug] : data provider for 'clangd.ast' view is already registered 
+2025-02-19 14:31:05 [debug] : command 'clangd.ast' already registered 
+2025-02-19 14:31:05 [debug] : Theia configuration directory file:///c:/Users/GIM/.Xilinx/Vitis/2024.1/.vitisng' 
+2025-02-19 14:31:05 [debug] : Theia configuration directory file:///c:/Users/GIM/.Xilinx/Vitis/2024.1/.vitisng' 
+2025-02-19 14:31:05 [debug] : [a537753a-fe6a-4d52-84c7-db79ef591ab5][eamodio.gitlens]: Started plugin. 
+2025-02-19 14:31:05 [debug] : [a537753a-fe6a-4d52-84c7-db79ef591ab5][eclipse-cdt.serial-monitor]: Started plugin. 
+2025-02-19 14:31:05 [debug] : [a537753a-fe6a-4d52-84c7-db79ef591ab5][amd.tcf-debug]: Started plugin. 
+2025-02-19 14:31:05 [debug] : [a537753a-fe6a-4d52-84c7-db79ef591ab5][twxs.cmake]: Started plugin. 
+2025-02-19 14:31:05 [debug] : [a537753a-fe6a-4d52-84c7-db79ef591ab5][amd.vitis-config]: Started plugin. 
+2025-02-19 14:31:05 [debug] : [a537753a-fe6a-4d52-84c7-db79ef591ab5][amd.vitis-hls-l1-library]: Started plugin. 
+2025-02-19 14:31:05 [debug] : [a537753a-fe6a-4d52-84c7-db79ef591ab5][amd.vitis-hls-pragma]: Started plugin. 
+2025-02-19 14:31:05 [debug] : [a537753a-fe6a-4d52-84c7-db79ef591ab5][vscode.cpp]: Started plugin. 
+2025-02-19 14:31:05 [debug] : [a537753a-fe6a-4d52-84c7-db79ef591ab5][vscode.github]: Started plugin. 
+2025-02-19 14:31:05 [debug] : [a537753a-fe6a-4d52-84c7-db79ef591ab5][vscode.github-authentication]: Started plugin. 
+2025-02-19 14:31:05 [debug] : [a537753a-fe6a-4d52-84c7-db79ef591ab5][vscode.json]: Started plugin. 
+2025-02-19 14:31:05 [debug] : [a537753a-fe6a-4d52-84c7-db79ef591ab5][vscode.json-language-features]: Started plugin. 
+2025-02-19 14:31:05 [debug] : [a537753a-fe6a-4d52-84c7-db79ef591ab5][llvm-vs-code-extensions.vscode-clangd]: Started plugin. 
+2025-02-19 14:31:05 [debug] : [a537753a-fe6a-4d52-84c7-db79ef591ab5][pkief.material-icon-theme]: Started plugin. 
+2025-02-19 14:31:05 [debug] : [a537753a-fe6a-4d52-84c7-db79ef591ab5][webfreak.debug]: Started plugin. 
+2025-02-19 14:31:05 [debug] : [a537753a-fe6a-4d52-84c7-db79ef591ab5][vscode.git]: Started plugin. 
+2025-02-19 14:31:05 [debug] : [a537753a-fe6a-4d52-84c7-db79ef591ab5][vscode.make]: Started plugin. 
+2025-02-19 14:31:05 [debug] : [a537753a-fe6a-4d52-84c7-db79ef591ab5] Start of 17 plugins: 23925.1 ms [Finished 88296.907 s after frontend start] 
+2025-02-19 14:31:05 [debug] : [hosted-plugin: 16532] Promise rejection not handled in one second: Error: An authentication provider with id 'github' is already registered. , reason: Error: An authentication provider with id 'github' is already registered.
+With stack trace: Error: An authentication provider with id 'github' is already registered.
+    at u.registerAuthenticationProvider (file:///C:/Xilinx/Vitis/2024.1/ide/electron-app/win64/resources/app/lib/bundle.js:2:1955068)
+    at t.AuthenticationMainImpl.$registerAuthenticationProvider (file:///C:/Xilinx/Vitis/2024.1/ide/electron-app/win64/resources/app/lib/bundle.js:2:7318772)
+    at t.RPCProtocolImpl.doInvokeHandler (file:///C:/Xilinx/Vitis/2024.1/ide/electron-app/win64/resources/app/lib/bundle.js:2:7291345)
+    at t.RPCProtocolImpl.invokeHandler (file:///C:/Xilinx/Vitis/2024.1/ide/electron-app/win64/resources/app/lib/bundle.js:2:7291096)
+    at t.RPCProtocolImpl.receiveRequest (file:///C:/Xilinx/Vitis/2024.1/ide/electron-app/win64/resources/app/lib/bundle.js:2:7290489)
+    at t.RPCProtocolImpl.receiveOneMessage (file:///C:/Xilinx/Vitis/2024.1/ide/electron-app/win64/resources/app/lib/bundle.js:2:7289982)
+    at file:///C:/Xilinx/Vitis/2024.1/ide/electron-app/win64/resources/app/lib/bundle.js:2:7288486
+    at file:///C:/Xilinx/Vitis/2024.1/ide/electron-app/win64/resources/app/lib/bundle.js:2:2547174
+    at o.invoke (file:///C:/Xilinx/Vitis/2024.1/ide/electron-app/win64/resources/app/lib/bundle.js:2:2547264)
+    at s.fire (file:///C:/Xilinx/Vitis/2024.1/ide/electron-app/win64/resources/app/lib/bundle.js:2:2549058) 
+2025-02-19 14:31:06 [debug] : [hosted-plugin: 16532] PLUGIN_HOST(16532): PluginManagerExtImpl/loadPlugin(c:\Users\GIM\AppData\Local\Temp\GIM-vscode-unpacked\vitis-config-0.0.1.vsix\extension\out\cfg-lsp-extension.js) 
+2025-02-19 14:31:06 [debug] : [hosted-plugin: 16532] ACTIVATE CONFIG LSP EXTENSION 
+2025-02-19 14:31:17 [debug] : Theia configuration directory file:///c:/Users/GIM/.Xilinx/Vitis/2024.1/.vitisng' 
+2025-02-19 14:31:17 [debug] : Theia configuration directory file:///c:/Users/GIM/.Xilinx/Vitis/2024.1/.vitisng' 
+2025-02-19 14:38:32 [debug] : [hosted-plugin: 16532] Response handler 'textDocument/hover' failed with message: Cannot read properties of undefined (reading 'remove') 
+2025-02-19 14:38:32 [debug] : [hosted-plugin: 16532] Response handler 'textDocument/hover' failed with message: Cannot read properties of undefined (reading 'remove') 
+2025-02-19 14:38:35 [debug] : [ProjectDecorator] tree decoration updated 
+2025-02-19 14:38:35 [debug] : [ProjectCache] Project location updated to C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\testing_component 
+2025-02-19 14:38:36 [debug] : MonacoEditorModel.cancelSync {"0":"file:///c:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp"}
+2025-02-19 14:38:36 [debug] : MonacoEditorModel.cancelSave {"0":"file:///c:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp"}
+2025-02-19 14:38:36 [debug] : [hosted-plugin: 16532] TextEditor is disposed! 
+2025-02-19 14:38:36 [debug] : [hosted-plugin: 16532] TextEditor is disposed! 
+2025-02-19 14:38:38 [debug] : [hosted-plugin: 16532] Response handler 'textDocument/codeAction' failed with message: Cannot read properties of undefined (reading 'remove') 
+2025-02-19 14:38:38 [debug] : [hosted-plugin: 16532] Response handler 'textDocument/documentSymbol' failed with message: Cannot read properties of undefined (reading 'remove') 
+2025-02-19 14:38:38 [debug] : [hosted-plugin: 16532] Response handler 'textDocument/codeAction' failed with message: Cannot read properties of undefined (reading 'remove') 
+2025-02-19 14:38:38 [debug] : [hosted-plugin: 16532] Response handler 'textDocument/hover' failed with message: Cannot read properties of undefined (reading 'remove') 
+2025-02-19 14:38:38 [debug] : [hosted-plugin: 16532] Response handler 'textDocument/hover' failed with message: Cannot read properties of undefined (reading 'remove') 
+2025-02-19 14:38:48 [debug] : MonacoEditorModel.fireDidChangeContent - enter - {
+  "changes": [
+    {
+      "range": {
+        "startLineNumber": 66,
+        "startColumn": 5,
+        "endLineNumber": 66,
+        "endColumn": 5
+      },
+      "rangeLength": 0,
+      "text": "// ",
+      "rangeOffset": 2096,
+      "forceMoveMarkers": false
+    }
+  ],
+  "eol": "\r\n",
+  "versionId": 9,
+  "isUndoing": false,
+  "isRedoing": false,
+  "isFlush": false
+} {"0":"file:///c:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp"}
+2025-02-19 14:38:48 [debug] : MonacoEditorModel.markAsDirty - enter {"0":"file:///c:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp"}
+2025-02-19 14:38:48 [debug] : MonacoEditorModel.cancelSync {"0":"file:///c:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp"}
+2025-02-19 14:38:48 [debug] : MonacoEditorModel.cancelSave {"0":"file:///c:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp"}
+2025-02-19 14:38:48 [debug] : MonacoEditorModel.markAsDirty - exit {"0":"file:///c:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp"}
+2025-02-19 14:38:48 [debug] : MonacoEditorModel.fireDidChangeContent - exit {"0":"file:///c:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp"}
+2025-02-19 14:38:48 [debug] : [hosted-plugin: 16532] Response handler 'textDocument/documentSymbol' failed with message: Cannot read properties of undefined (reading 'remove') 
