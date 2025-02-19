@@ -1,0 +1,219 @@
+10:23:35 INFO  : updated workspace path: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+10:23:35 INFO  : created .gitignore file for the project C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+10:23:36 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:247) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:241) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:175) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+10:23:36 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:247) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:241) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:181) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+10:23:36 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:247) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:241) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:187) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+10:23:36 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:247) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:241) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:193) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+10:23:36 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:247) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:241) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:199) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+10:23:36 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) ~[rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.lambda$modifyPeer$1(TCFUserDefPeer.java:68) ~[rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.protocol.Protocol.invokeAndWait(Protocol.java:220) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.modifyPeer(TCFUserDefPeer.java:70) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:205) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+10:23:36 INFO  : Marking the target connection as default Local
+10:23:36 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) ~[rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.lambda$modifyPeer$1(TCFUserDefPeer.java:68) ~[rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.protocol.Protocol.invokeAndWait(Protocol.java:220) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.modifyPeer(TCFUserDefPeer.java:70) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:206) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+10:23:36 INFO  : Marking the target connection as default Linux Agent
+10:23:36 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) ~[rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.lambda$modifyPeer$1(TCFUserDefPeer.java:68) ~[rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.protocol.Protocol.invokeAndWait(Protocol.java:220) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.modifyPeer(TCFUserDefPeer.java:70) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:207) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+10:23:36 INFO  : Marking the target connection as default XRTServer
+10:23:36 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) ~[rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.lambda$modifyPeer$1(TCFUserDefPeer.java:68) ~[rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.protocol.Protocol.invokeAndWait(Protocol.java:220) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.modifyPeer(TCFUserDefPeer.java:70) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:209) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+10:23:36 INFO  : Marking the target connection as default LinuxEmulation
+10:23:36 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) ~[rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.lambda$modifyPeer$1(TCFUserDefPeer.java:68) ~[rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.protocol.Protocol.invokeAndWait(Protocol.java:220) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.modifyPeer(TCFUserDefPeer.java:70) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:211) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+10:23:36 INFO  : Marking the target connection as default QEMU
+10:23:42 INFO  : Successfully created repository data at C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM2809539827016073294
+10:23:42 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM9878236370425108845 -r C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM2809539827016073294\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+10:23:43 INFO  : Embedded Template List generated successfully
+10:23:43 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\repo.py -st   C:\Xilinx\Vitis\2024.1\data\embeddedsw && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+10:23:51 INFO  : Successfully created repository data at C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy/.wsdata
+10:23:51 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM5630832416242684035 -r C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+10:23:53 INFO  : Embedded Template List generated successfully
+10:33:21 INFO  : created .gitignore file for the project C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\hls_component
+12:08:31 INFO  : updated workspace path: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+12:08:31 INFO  : created .gitignore file for the project C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+12:08:31 INFO  : Marking the target connection as default Local
+12:08:31 INFO  : Marking the target connection as default Linux Agent
+12:08:31 INFO  : Marking the target connection as default XRTServer
+12:08:31 INFO  : Marking the target connection as default LinuxEmulation
+12:08:31 INFO  : Marking the target connection as default QEMU
+12:08:31 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM13403391968011091929 -r C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+12:08:32 INFO  : Embedded Template List generated successfully
+12:08:33 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM9164585524283307307 -r C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+12:08:34 INFO  : Embedded Template List generated successfully
+20:26:37 INFO  : updated workspace path: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+20:26:37 INFO  : created .gitignore file for the project C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+20:26:37 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM9730466536084120869 -r C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+20:26:39 INFO  : Embedded Template List generated successfully
+20:26:39 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM41215233562422043 -r C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+20:26:41 INFO  : Embedded Template List generated successfully
+07:45:14 INFO  : updated workspace path: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+07:45:14 INFO  : created .gitignore file for the project C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+07:45:14 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM11959194439846361438 -r C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+07:45:21 INFO  : Embedded Template List generated successfully
+07:45:21 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM11033197253245597330 -r C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+07:45:22 INFO  : Embedded Template List generated successfully
+08:44:21 INFO  : updated workspace path: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+08:44:21 INFO  : created .gitignore file for the project C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+08:44:21 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM1448749533505044330 -r C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+08:44:23 INFO  : Embedded Template List generated successfully
+08:44:24 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM16146866577674556774 -r C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+08:44:25 INFO  : Embedded Template List generated successfully
+13:34:44 INFO  : updated workspace path: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+13:34:44 INFO  : created .gitignore file for the project C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+13:34:44 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM6509604403524879841 -r C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+13:34:47 INFO  : Embedded Template List generated successfully
+13:34:47 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM18207521163453838493 -r C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+13:34:49 INFO  : Embedded Template List generated successfully
+22:31:26 INFO  : updated workspace path: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+22:31:26 INFO  : created .gitignore file for the project C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+22:31:27 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM10803017786984851277 -r C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+22:31:33 INFO  : Embedded Template List generated successfully
+22:31:33 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM8548444150755397434 -r C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+22:31:35 INFO  : Embedded Template List generated successfully
+16:37:45 INFO  : updated workspace path: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+16:37:45 INFO  : created .gitignore file for the project C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+16:37:46 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM14439260004976173089 -r C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:37:48 INFO  : Embedded Template List generated successfully
+16:37:48 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM17499832311004288018 -r C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:37:50 INFO  : Embedded Template List generated successfully
+20:17:53 INFO  : updated workspace path: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+20:17:53 INFO  : created .gitignore file for the project C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+20:17:54 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM11454323984060957869 -r C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+20:17:56 INFO  : Embedded Template List generated successfully
+20:17:56 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM2045940928220322675 -r C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+20:17:58 INFO  : Embedded Template List generated successfully
+11:32:51 INFO  : updated workspace path: C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+11:32:51 INFO  : created .gitignore file for the project C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy
+11:32:52 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM5177909571852572319 -r C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+11:32:54 INFO  : Embedded Template List generated successfully
+11:32:54 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM8369621284971725119 -r C:\GIM_Repos\GIM_Diabetes\xor_sigmoid_cross_entropy\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+11:32:55 INFO  : Embedded Template List generated successfully

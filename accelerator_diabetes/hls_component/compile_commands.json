@@ -1,0 +1,98 @@
+[
+  {
+    "directory": "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp"
+    ],
+    "file": "C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp"
+  },
+  {
+    "directory": "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp"
+    ],
+    "file": "C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp"
+  },
+  {
+    "directory": "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp"
+    ],
+    "file": "C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp"
+  },
+  {
+    "directory": "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp"
+    ],
+    "file": "C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp"
+  },
+  {
+    "directory": "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp"
+    ],
+    "file": "C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp"
+  },
+  {
+    "directory": "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp"
+    ],
+    "file": "C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp"
+  },
+  {
+    "directory": "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp"
+    ],
+    "file": "C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp"
+  },
+  {
+    "directory": "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\include",
+      "",
+      "-c",
+      "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\main.cpp"
+    ],
+    "file": "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\main.cpp"
+  }
+]

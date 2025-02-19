@@ -1,0 +1,167 @@
+<ENTRY>
+{
+ "thisFile": "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\hls_component\\accelerator\\accelerator.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/19/25 15:09:52",
+ "timestampMillis": "544837966",
+ "buildStep": {
+  "cmdId": "cea6ae94-39c0-4966-9f4e-9116dd1dfc2e",
+  "name": "vitis-run",
+  "logFile": "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\hls_component\\accelerator\\logs\\accelerator.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\hls_component\\hls_config.cfg --work_dir accelerator ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "accelerator"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/19/25 15:09:52",
+ "timestampMillis": "544837967",
+ "status": {
+  "cmdId": "cea6ae94-39c0-4966-9f4e-9116dd1dfc2e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/19/25 15:10:04",
+ "timestampMillis": "544849677",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "accelerator",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\accelerator.cpp",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\act_pe.cpp",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\array.cpp",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\bias_pe.cpp",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\csv_import.cpp",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\error_pe.cpp",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\gim_model.h",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\weight_pe.cpp",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\X_test.csv",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\X_train.csv",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\Y_test.csv",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\Y_train.csv"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/19/25 15:10:04",
+ "timestampMillis": "544849682",
+ "buildStep": {
+  "cmdId": "f704fb6e-05f8-49f1-9c20-32efecde8e35",
+  "name": "csim_design",
+  "logFile": "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\hls_component\\accelerator\\hls\\hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/19/25 15:10:04",
+ "timestampMillis": "544849683",
+ "status": {
+  "cmdId": "f704fb6e-05f8-49f1-9c20-32efecde8e35",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/19/25 15:10:11",
+ "timestampMillis": "544856713",
+ "status": {
+  "cmdId": "f704fb6e-05f8-49f1-9c20-32efecde8e35",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/19/25 15:10:12",
+ "timestampMillis": "544857212",
+ "status": {
+  "cmdId": "cea6ae94-39c0-4966-9f4e-9116dd1dfc2e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/19/25 15:10:12",
+ "timestampMillis": "544857212",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/19/25 15:10:12",
+ "timestampMillis": "544857213",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -32,7 +32,12 @@ int main() {
     readCSV("X_test.csv", X_test, num_train_rows, num_train_cols);
     readCSV("Y_test.csv", Y_test, num_train_rows, num_train_cols);
 
-    std::cout << "Read CSV files" << std::endl;
+    cout << "Read CSV files" << endl;
+
+    // // Checking loaded data
+    // cout << double(X_train[0][0]) << endl; // should be 1
+    // cout << double(X_train[0][2]) << endl; // should be 29
+
 
     // Initialize weights and biases (example values)
     fixed_16 w1[NUM_INPUTS][LAYER_1_SIZE] = {
@@ -95,43 +100,43 @@ int main() {
     
     std::cout << "Began training" << std::endl;
 
-    for (size_t epoch = 0; epoch < NUM_ITERATIONS; epoch++) {
-        // for (size_t i = 0; i < MAX_DATA_ROWS; i++) {
-        //     for (size_t j = 0; j < NUM_INPUTS; j++) {
-        //         cout << "data " << X_train[i][j] << " ";
-        //     }
-        //     cout << endl;
-        // }
+    // for (size_t epoch = 0; epoch < NUM_ITERATIONS; epoch++) {
+    //     // for (size_t i = 0; i < MAX_DATA_ROWS; i++) {
+    //     //     for (size_t j = 0; j < NUM_INPUTS; j++) {
+    //     //         cout << "data " << X_train[i][j] << " ";
+    //     //     }
+    //     //     cout << endl;
+    //     // }
 
-        //     fixed_16 target = Y_train[i][0];
+    //     //     fixed_16 target = Y_train[i][0];
 
-            // Run the accelerator in training mode
-            Inference result = accelerator(X_train, Y_train, w1, w2, w3, w4, w5, w6,
-                                          bias_1, bias_2, bias_3, bias_4, bias_5, bias_6,
-                                          training);
+    //         // Run the accelerator in training mode
+    //         Inference result = accelerator(X_train, Y_train, w1, w2, w3, w4, w5, w6,
+    //                                       bias_1, bias_2, bias_3, bias_4, bias_5, bias_6,
+    //                                       training);
+            
+    //         // for (int i=0;i<NUM_INPUTS;i++){
+    //         //     for (int j=0;j<LAYER_1_SIZE;j++){
+    //         //         cout << w1[i][j] << endl;
+    //         //     }
+    //         // }
 
-            // for (int i=0;i<NUM_INPUTS;i++){
-            //     for (int j=0;j<LAYER_1_SIZE;j++){
-            //         cout << w1[i][j] << endl;
-            //     }
-            // }
+    //         // Update weights and biases
+    //         memcpy(w1, result.new_w1, sizeof(w1));
+    //         memcpy(w2, result.new_w2, sizeof(w2));
+    //         memcpy(w3, result.new_w3, sizeof(w3));
+    //         memcpy(w4, result.new_w4, sizeof(w4));
+    //         memcpy(w5, result.new_w5, sizeof(w5));
+    //         memcpy(w6, result.new_w6, sizeof(w6));
+    //         // cout << "weights: " << result.new_w6[0] << ", " << result.new_w6[1] << endl;
 
-            // Update weights and biases
-            memcpy(w1, result.new_w1, sizeof(w1));
-            memcpy(w2, result.new_w2, sizeof(w2));
-            memcpy(w3, result.new_w3, sizeof(w3));
-            memcpy(w4, result.new_w4, sizeof(w4));
-            memcpy(w5, result.new_w5, sizeof(w5));
-            memcpy(w6, result.new_w6, sizeof(w6));
-            // cout << "weights: " << result.new_w6[0] << ", " << result.new_w6[1] << endl;
-
-            memcpy(bias_1, result.new_b1, sizeof(bias_1));
-            memcpy(bias_2, result.new_b2, sizeof(bias_2));
-            memcpy(bias_3, result.new_b3, sizeof(bias_3));
-            memcpy(bias_4, result.new_b4, sizeof(bias_4));
-            memcpy(bias_5, result.new_b5, sizeof(bias_5));
-            memcpy(bias_6, result.new_b6, sizeof(bias_6));
-        }
+    //         memcpy(bias_1, result.new_b1, sizeof(bias_1));
+    //         memcpy(bias_2, result.new_b2, sizeof(bias_2));
+    //         memcpy(bias_3, result.new_b3, sizeof(bias_3));
+    //         memcpy(bias_4, result.new_b4, sizeof(bias_4));
+    //         memcpy(bias_5, result.new_b5, sizeof(bias_5));
+    //         memcpy(bias_6, result.new_b6, sizeof(bias_6));
+    //     }
 
     std::cout << "Finished training" << std::endl;
 
@@ -150,20 +155,20 @@ int main() {
     // for (size_t i = 0; i < 100; i++) {
 
     //     // Run the accelerator in inference mode
-        Inference result = accelerator(X_test, Y_test, w1, w2, w3, w4, w5, w6,
-                                      bias_1, bias_2, bias_3, bias_4, bias_5, bias_6,
-                                      training);
+        // Inference result = accelerator(X_test, Y_test, w1, w2, w3, w4, w5, w6,
+        //                               bias_1, bias_2, bias_3, bias_4, bias_5, bias_6,
+        //                               training);
 
-        for (size_t i = 0; i < 300; i++) {
-        // Store prediction and label
-        predictions.push_back(result.inference[i]);
-        labels.push_back(Y_test[i][0]);
-        cout << "Infrence: " << result.inference[i] << ", label: " << Y_test[i][0] << endl;
-        }
+        // for (size_t i = 0; i < 300; i++) {
+        // // Store prediction and label
+        // predictions.push_back(result.inference[i]);
+        // labels.push_back(Y_test[i][0]);
+        // cout << "Inference: " << result.inference[i] << ", label: " << Y_test[i][0] << endl;
+        // }
 
     // Calculate accuracy
-    float accuracy = calculate_accuracy(predictions, labels);
-    cout << "Accuracy: " << accuracy * 100 << "%" << endl;
+    // float accuracy = calculate_accuracy(predictions, labels);
+    // cout << "Accuracy: " << accuracy * 100 << "%" << endl;
 
     return 0;
 }

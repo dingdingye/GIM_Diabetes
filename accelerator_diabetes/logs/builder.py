@@ -12,3 +12,11 @@ comp = client.create_hls_component(name = "testing_component",cfg_file = ["hls_c
 comp = client.get_component(name="testing_component")
 comp.run(operation="C_SIMULATION")
 
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
