@@ -1,0 +1,169 @@
+13:45:08 INFO  : updated workspace path: C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes
+13:45:08 INFO  : created .gitignore file for the project C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes
+13:45:08 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:247) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:241) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:175) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+13:45:08 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:247) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:241) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:181) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+13:45:08 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:247) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:241) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:187) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+13:45:08 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:247) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:241) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:193) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+13:45:08 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:247) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createPeerWithAttrs(PeerUtil.java:241) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:199) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+13:45:08 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) ~[rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.lambda$modifyPeer$1(TCFUserDefPeer.java:68) ~[rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.protocol.Protocol.invokeAndWait(Protocol.java:220) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.modifyPeer(TCFUserDefPeer.java:70) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:205) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+13:45:08 INFO  : Marking the target connection as default Local
+13:45:08 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) ~[rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.lambda$modifyPeer$1(TCFUserDefPeer.java:68) ~[rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.protocol.Protocol.invokeAndWait(Protocol.java:220) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.modifyPeer(TCFUserDefPeer.java:70) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:206) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+13:45:08 INFO  : Marking the target connection as default Linux Agent
+13:45:08 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) ~[rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.lambda$modifyPeer$1(TCFUserDefPeer.java:68) ~[rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.protocol.Protocol.invokeAndWait(Protocol.java:220) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.modifyPeer(TCFUserDefPeer.java:70) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:207) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+13:45:08 INFO  : Marking the target connection as default XRTServer
+13:45:08 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) ~[rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.lambda$modifyPeer$1(TCFUserDefPeer.java:68) ~[rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.protocol.Protocol.invokeAndWait(Protocol.java:220) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.modifyPeer(TCFUserDefPeer.java:70) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:209) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+13:45:08 INFO  : Marking the target connection as default LinuxEmulation
+13:45:08 ERROR : Cannot save peer list
+java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\.wsdata\.peers.ini (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[?:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.savePeers(TCFUserDefPeer.java:151) ~[rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.lambda$modifyPeer$1(TCFUserDefPeer.java:68) ~[rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.protocol.Protocol.invokeAndWait(Protocol.java:220) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.modifyPeer(TCFUserDefPeer.java:70) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.PeerUtil.createDefaultPeers(PeerUtil.java:211) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.debug.tcf.targets.TCFUserDefPeer.loadPeers(TCFUserDefPeer.java:116) [rigel_server-1.0.0-161.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService$4.run(DebuggerService.java:371) [rigel_server-1.0.0-161.jar:?]
+	at org.eclipse.tcf.init.EventQueue.run(EventQueue.java:68) [rigel_server-1.0.0-161.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+13:45:08 INFO  : Marking the target connection as default QEMU
+13:45:18 INFO  : Successfully created repository data at C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM17751056001503450296
+13:45:18 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM13036120984072057298 -r C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM17751056001503450296\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+13:45:21 INFO  : Embedded Template List generated successfully
+13:45:21 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\repo.py -st   C:\Xilinx\Vitis\2024.1\data\embeddedsw && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+13:45:28 INFO  : Successfully created repository data at C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes/.wsdata
+13:45:28 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM16773099010054591264 -r C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+13:45:29 INFO  : Embedded Template List generated successfully
+13:48:03 INFO  : created .gitignore file for the project C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator_component
+14:00:57 INFO  : updated workspace path: C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes
+14:00:57 INFO  : Marking the target connection as default Local
+14:00:57 INFO  : Marking the target connection as default Linux Agent
+14:00:57 INFO  : Marking the target connection as default XRTServer
+14:00:57 INFO  : Marking the target connection as default LinuxEmulation
+14:00:57 INFO  : Marking the target connection as default QEMU
+14:01:04 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM14115966862600794384 -r C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+14:01:06 INFO  : Embedded Template List generated successfully
+14:08:14 INFO  : created .gitignore file for the project C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\testing_component
