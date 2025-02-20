@@ -9,6 +9,11 @@ std::vector<std::vector<double>> matmul(
     std::vector<std::vector<double>>& A,
     std::vector<std::vector<double>>& B);
 
+/// Compute W^T * delta, assuming both W and delta are shape [N x M].
+std::vector<std::vector<double>> matmulTransposeW(
+    std::vector<std::vector<double>>& W,
+    std::vector<std::vector<double>>& delta);
+
 std::vector<std::vector<double>> forwardPropagation(
     std::vector<std::vector<double>>& input,
     std::vector<std::vector<double>>& weights,
@@ -37,6 +42,7 @@ std::vector<std::vector<double>> backPropagationSingleSample(
     std::vector<double>& biases,
     std::vector<std::vector<double>>& output,
     std::vector<std::vector<double>>& dOut,
-    int activation // if you need to handle other activation types
+    int activation, // if you need to handle other activation types
+    int learning_rate
 );
 #endif // LAYER_H

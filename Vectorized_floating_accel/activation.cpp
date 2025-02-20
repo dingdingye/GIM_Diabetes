@@ -13,10 +13,27 @@ std::vector<double> relu(std::vector<double>& net) {
     return output;
 }
 
+std::vector<double> derivative_relu(std::vector<double>& net) {
+    std::vector<double> output(net.size());
+    for (size_t i = 0; i < net.size(); ++i) {
+        output[i] = net[i] > 0 ? 1 : 0;
+    }
+    return output;
+}
+
 std::vector<double> sigmoid(std::vector<double>& net) {
     std::vector<double> output(net.size());
     for (size_t i = 0; i < net.size(); ++i) {
         output[i] = 1.0 / (1.0 + std::exp(-net[i]));
+    }
+    return output;
+}
+
+std::vector<double> derivative_sigmoid(std::vector<double>& net) {
+    std::vector<double> sigma = sigmoid(net);
+    std::vector<double> output(net.size());
+    for (size_t i = 0; i < net.size(); ++i) {
+        output[i] = sigma[i] * (1 - sigma[i]);
     }
     return output;
 }
