@@ -31,18 +31,18 @@ int main()
 
     // Our 'weights' is 2x2
     vector<vector<double>> weights = {
-        {1.0, 2.0},
-        {3.0, 4.0}
+        {0.5, 0.5},
+        {0.5, 0.5}
     };
 
     // Our 'input' is 2x1
     vector<vector<double>> input = {
-        {5.0},
-        {6.0}
+        {0.0},
+        {1.0}
     };
 
     // 'biases' for the 2 rows
-    vector<double> biases = {10.0, 20.0};
+    vector<double> biases = {0.1, 0.0};
 
     // Dummy activation parameter
     int activation = 0;

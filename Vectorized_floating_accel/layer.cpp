@@ -3,9 +3,20 @@
 #include <cassert>
 #include <cmath>
 #include <algorithm>
+#include <iomanip>  // for std::setw (nice formatting)
+
 #include "layer.h"
 #include "activations.h"
 
+void print2D(const std::vector<std::vector<double>>& matrix)
+{
+    for (const auto& row : matrix) {
+        for (auto val : row) {
+            std::cout << std::setw(8) << val << " ";
+        }
+        std::cout << "\n";
+    }
+}
 
 std::vector<std::vector<double>> transpose(std::vector<std::vector<double>>& matrix) {
 
@@ -138,10 +149,11 @@ std::vector<std::vector<double>> backPropagationSingleSample(
     std::vector<std::vector<double>>& output,
     std::vector<std::vector<double>>& dOut,
     int activation, // if you need to handle other activation types
-    int learning_rate
+    double learning_rate
 ) 
 {
-
+    // printf("Dout internally \n");
+    // print2D(dOut);
     std::vector<std::vector<double>> d_minus1 = matmulTransposeW(weights, dOut);
 
     std::vector<std::vector<double>> mid = matmul(weights, input);
@@ -152,6 +164,7 @@ std::vector<std::vector<double>> backPropagationSingleSample(
         }
     }
 
+    // printf("Reached here\n");
 
     for (int i = 0; i < d_minus1.size(); ++i) {
         for (int j = 0; j < d_minus1[0].size(); ++j) {
@@ -159,21 +172,29 @@ std::vector<std::vector<double>> backPropagationSingleSample(
         }
     }
 
+    // printf("completed d_minus1\n");
+
     std::vector<std::vector<double>> input_t = transpose(input);
 
     // delta is: (output_dim x 1)
     // input is: (input_dim x 1)
     // weights is: (output_dim x input_dim)
 
-    for (int i = 0; i < dOut.size(); i++) {
-        for (int j = 0; j < input.size(); j++) {
+    for (size_t i = 0; i < dOut.size(); i++) {
+        for (size_t j = 0; j < input.size(); j++) {
             // gradient wrt w[i][j]
+            // printf("i is %f, and j is %f \n", i, j);
+            // printf("dout %f \n", dOut[0][0]);
+            // printf("dOut: %f, input: %f \n", dOut[i][0], input[j][0]);
             double dW = dOut[i][0] * input[j][0];
-
+            // printf("DW is %f\n", dW);
             // gradient descent update
-            weights[i][j] -= learning_rate * dW;
+            // printf("Weight before: %f \n", weights[i][j]);
+            // printf("Subtracting: %f \n", learning_rate * dW);
+            weights[i][j] = weights[i][j] - (learning_rate * dW);
+            // printf("Weights after: %f \n", weights[i][j]);
             biases[i] -= learning_rate * dOut[i][0];
         }
     }
-
+    return d_minus1;
 }
