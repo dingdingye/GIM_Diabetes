@@ -20,7 +20,7 @@ std::vector<std::vector<double>> forwardPropagation(
     std::vector<double>& biases,
     int activation);
 
-
+void print2D(const std::vector<std::vector<double>>& matrix);
 //-----------------------------------------------------------------------
 // backPropagationSingleSample
 //   input   : shape [N_in, 1]
@@ -43,6 +43,6 @@ std::vector<std::vector<double>> backPropagationSingleSample(
     std::vector<std::vector<double>>& output,
     std::vector<std::vector<double>>& dOut,
     int activation, // if you need to handle other activation types
-    int learning_rate
+    double learning_rate
 );
 #endif // LAYER_H
