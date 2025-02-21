@@ -13,6 +13,7 @@ Weight weights_pe(fixed_16 d_k, fixed_16 output_kmin1, fixed_16 partial_sum_out_
     return_array.sum_delta_out = partial_sum_delta_k + (d_k * init_weight);
     return_array.sum_output_out = partial_sum_out_k + (output_kmin1 * init_weight);
     return_array.weight_change = init_weight - (output_kmin1 * d_k * eta);
+    // cout << "output_kmin1: " << output_kmin1 << " d_k: " << d_k << " eta: " << eta << endl;
 
 	return return_array;
 }

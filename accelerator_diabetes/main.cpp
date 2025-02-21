@@ -154,11 +154,11 @@ int main() {
                                       bias_1, bias_2, bias_3, bias_4, bias_5, bias_6,
                                       training);
 
-        for (size_t i = 0; i < 300; i++) {
+        for (size_t i = 0; i < 100; i++) {
         // Store prediction and label
         predictions.push_back(result.inference[i]);
         labels.push_back(Y_test[i][0]);
-        cout << "Infrence: " << result.inference[i] << ", label: " << Y_test[i][0] << endl;
+        // cout << "Infrence: " << result.inference[i] << ", label: " << Y_test[i][0] << endl;
         }
 
     // Calculate accuracy
