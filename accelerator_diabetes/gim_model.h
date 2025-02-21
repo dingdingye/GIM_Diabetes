@@ -78,15 +78,21 @@ struct Inference {
 	fixed_16 inference[TESTING_ROWS];
     fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS];
     fixed_16 Y[MAX_DATA_ROWS][MAX_DATA_COLS];
-	// fixed_16 new_w1[ARRAY_SIZE][ARRAY_SIZE];
-	// fixed_16 new_w2[ARRAY_SIZE][ARRAY_SIZE];
-	// fixed_16 new_b1[ARRAY_SIZE];
-	// fixed_16 new_b2[ARRAY_SIZE];
-	// Store updated weights for each layer
-    fixed_16 new_w[PRE_LAYER_SIZE][POST_LAYER_SIZE];
 
+	// Store updated weights for each layer
+    fixed_16 new_w1[NUM_INPUTS][LAYER_1_SIZE];
+    fixed_16 new_w2[LAYER_1_SIZE][LAYER_2_SIZE];
+    fixed_16 new_w3[LAYER_2_SIZE][LAYER_3_SIZE];
+    fixed_16 new_w4[LAYER_3_SIZE][LAYER_4_SIZE];
+    fixed_16 new_w5[LAYER_4_SIZE][LAYER_5_SIZE];
+    fixed_16 new_w6[LAYER_5_SIZE][LAYER_6_SIZE];
     // Store updated biases for each layer
-    fixed_16 new_b[PRE_LAYER_SIZE];  
+    fixed_16 new_b1[LAYER_1_SIZE];
+    fixed_16 new_b2[LAYER_2_SIZE];
+    fixed_16 new_b3[LAYER_3_SIZE];
+    fixed_16 new_b4[LAYER_4_SIZE];
+    fixed_16 new_b5[LAYER_5_SIZE];
+    fixed_16 new_b6[LAYER_6_SIZE];
 	// constructor
 	Inference(){}
 };
@@ -107,8 +113,9 @@ fixed_16 act_pe(fixed_16 net_in, char model, fixed_16 alpha);
 fixed_16 error_pe(fixed_16 output_kmin1, fixed_16 partial_sum_delta_k,
 				char model, fixed_16 alpha);
 
-template <int PRE_LAYER_SIZE, int POST_LAYER_SIZE>
-Array model_array(fixed_16 weights[PRE_LAYER_SIZE][POST_LAYER_SIZE],
+// template <int PRE_LAYER_SIZE, int POST_LAYER_SIZE>
+void model_array(Array<PRE_LAYER_SIZE, POST_LAYER_SIZE>,
+                fixed_16 weights[PRE_LAYER_SIZE][POST_LAYER_SIZE],
                   fixed_16 biases[PRE_LAYER_SIZE],
                   fixed_16 output_kmin[PRE_LAYER_SIZE],
                   fixed_16 delta_k[PRE_LAYER_SIZE],
@@ -131,7 +138,9 @@ Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
                       fixed_16 bias_4[LAYER_4_SIZE],
                       fixed_16 bias_5[LAYER_5_SIZE],
                       fixed_16 bias_6[LAYER_6_SIZE],
-                      fixed_16 training)
+                      fixed_16 training);
+
+                      
+
 
 #endif // GIM_MODEL_
-;

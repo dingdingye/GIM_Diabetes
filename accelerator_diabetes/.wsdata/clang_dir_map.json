@@ -1,0 +1,18 @@
+{
+  "workspaceRoot": "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes",
+  "mapping": {
+    "main.cpp": "testing_component",
+    "Y_train.csv": "hls_component",
+    "accelerator.cpp": "hls_component",
+    "bias_pe.cpp": "hls_component",
+    "error_pe.cpp": "hls_component",
+    "X_test.csv": "hls_component",
+    "X_train.csv": "hls_component",
+    "array.cpp": "hls_component",
+    "csv_import.cpp": "hls_component",
+    "weight_pe.cpp": "hls_component",
+    "act_pe.cpp": "hls_component",
+    "Y_test.csv": "hls_component",
+    "gim_model.h": "hls_component"
+  }
+}

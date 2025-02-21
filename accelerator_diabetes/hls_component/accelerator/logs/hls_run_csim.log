@@ -1,16 +1,16 @@
-INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/hls_component/accelerator\accelerator.hlsrun_csim_summary, at 02/19/25 15:09:52
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/hls_component/accelerator\accelerator.hlsrun_csim_summary, at 02/20/25 18:43:56
 INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/hls_component/accelerator -config C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/hls_component/hls_config.cfg -cmdlineconfig C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/hls_component/accelerator/hls/config.cmdline
 
 ****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
   **** SW Build 5069499 on May 21 2024
   **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
   **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-  **** Start of session at: Wed Feb 19 15:09:57 2025
+  **** Start of session at: Thu Feb 20 18:44:02 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source C:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
-INFO: [HLS 200-10] For user 'GIM' on host 'gim_laptop_1' (Windows NT_amd64 version 10.0) on Wed Feb 19 15:09:58 -0800 2025
+INFO: [HLS 200-10] For user 'GIM' on host 'gim_laptop_1' (Windows NT_amd64 version 10.0) on Thu Feb 20 18:44:09 -0800 2025
 INFO: [HLS 200-10] In directory 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/hls_component'
 INFO: [HLS 200-2005] Using work_dir C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/hls_component/accelerator 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
@@ -56,7 +56,7 @@ INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
 INFO: [HLS 200-2036] Building debug C Simulation binaries
    Compiling ../../../../../main.cpp in debug mode
-   Generating csim.exe
+csim.mk:88: recipe for target 'obj/main.o' failed
 In file included from ../../../../../main.cpp:1:
 In file included from ../../../../../gim_model.h:4:
 In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
@@ -72,13 +72,22 @@ C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro
 C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
 #define __GMP_LIBGMP_DLL 1
         ^
-1 warning generated.
-Read CSV files
-1
-29
-Began training
-Finished training
-INFO: [SIM 211-1] CSim done with 0 errors.
+In file included from ../../../../../main.cpp:1:
+../../../../../gim_model.h:111:1: error: use of class template 'Array' requires template arguments
+Array model_array(fixed_16 weights[PRE_LAYER_SIZE][POST_LAYER_SIZE],
+^
+../../../../../gim_model.h:52:8: note: template is declared here
+struct Array {
+       ^
+../../../../../gim_model.h:120:1: error: use of class template 'Inference' requires template arguments
+Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
+^
+../../../../../gim_model.h:76:8: note: template is declared here
+struct Inference {
+       ^
+1 warning and 2 errors generated.
+make: *** [obj/main.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 14.555 seconds; peak allocated memory: 230.703 MB.
-INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 21s
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 32.094 seconds; peak allocated memory: 236.266 MB.

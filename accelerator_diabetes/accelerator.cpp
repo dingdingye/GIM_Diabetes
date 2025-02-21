@@ -42,6 +42,7 @@ void cross_entropy_loss(fixed_t y_true_int, fixed_t y_pred[3], fixed_t delta_l6[
     }
 }
 
+
 // Function to run the full model
 Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
                       fixed_16 Y[MAX_DATA_ROWS][MAX_DATA_COLS],
@@ -118,12 +119,17 @@ Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
             w5_local[n][m] = w5[n][m];
         }
     }
+    cout << "w6_local:" << endl;
+
     for (int n = 0; n < LAYER_5_SIZE; n++) {
         bias_5_local[n] = bias_5[n];
+        cout << "( ";
         for (int m = 0; m < LAYER_6_SIZE; m++) {
             bias_6_local[m] = bias_6[m];
             w6_local[n][m] = w6[n][m];
+            cout << double(w6_local[n][m]) << ", ";
         }
+        cout << ")" << endl;
     }
     // Number of iterations defined in the header file
     char model = 'r'; // s = sigmoid, r = relu, l = leaky relu
@@ -131,6 +137,8 @@ Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
     fixed_16 lr = 0.3; // Learning 
     fixed_16 forward;
     // fixed_16 training = 1;
+
+    cout << "w6_local:" << endl;
 
 //     // Iterate through the allotted epochs
 //     for (int i = 0; i < NUM_ITERATIONS; i++) {

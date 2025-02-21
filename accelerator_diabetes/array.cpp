@@ -2,8 +2,7 @@
 using namespace std;
 
 // Generalized function to process a single layer
-// template <int INPUT_SIZE, int LAYER_SIZE>
-template <int PRE_LAYER_SIZE, int POST_LAYER_SIZE>
+// template <int INPUT_SIZE, int LAYER_SIZE>template <int PRE_LAYER_SIZE, int POST_LAYER_SIZE>
 Array model_array(fixed_16 weights[PRE_LAYER_SIZE][POST_LAYER_SIZE],
                   fixed_16 biases[PRE_LAYER_SIZE],
                   fixed_16 output_kmin[PRE_LAYER_SIZE],
