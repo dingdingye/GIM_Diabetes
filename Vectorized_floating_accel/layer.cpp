@@ -18,6 +18,12 @@ void print2D(const std::vector<std::vector<double>>& matrix)
     }
 }
 
+void print1D(const std::vector<double>& vec) {
+    for (const auto &elem : vec) {
+        std::cout << elem << " " << std::endl;
+    }
+}
+
 std::vector<std::vector<double>> transpose(std::vector<std::vector<double>>& matrix) {
 
     // Create a new matrix with dimensions flipped (cols x rows).
@@ -135,10 +141,22 @@ std::vector<std::vector<double>> forwardPropagation(
 
     std::vector<std::vector<double>> output(net.size(), std::vector<double>(net[0].size(), 0.0));
 
-    for (int j = 0; j < net.size(); ++j) {
-        output[j] = relu(net[j]);
+    if (activation == 0) {
+        for (int j = 0; j < net.size(); ++j) {
+            output[j] = relu(net[j]);
+        }
+    } else if (activation = 1) {
+        for (int j = 0; j < net.size(); ++j) {
+            output[j] = softmax(net[j]);
+        }
+    } else if (activation = 2) {
+        for (int j = 0; j < net.size(); ++j) {
+            output[j] = sigmoid(net[j]);
+        }
+    } else {
+        throw std::runtime_error("Incorrect activation given");
     }
-
+    
     return output;
 }
 
@@ -165,12 +183,38 @@ std::vector<std::vector<double>> backPropagationSingleSample(
     }
 
     // printf("Reached here\n");
-
-    for (int i = 0; i < d_minus1.size(); ++i) {
-        for (int j = 0; j < d_minus1[0].size(); ++j) {
-            d_minus1[i][j] = d_minus1[i][j]*net[i][0];
+    // softmax code is given here: https://www.youtube.com/watch?v=AbLvJVwySEo
+    if (activation = 0) { // RELU
+        for (int i = 0; i < d_minus1.size(); ++i) {
+            for (int j = 0; j < d_minus1[0].size(); ++j) {
+                d_minus1[i][j] = d_minus1[i][j]*net[i][0];
+            }
         }
+    } else if (activation = 1) { // Softmax
+        // Create a square matrix (vector of vectors) of size d_minus1.size()
+        std::vector<std::vector<double>> deriv_softmax_mat(d_minus1.size(), std::vector<double>(d_minus1.size(), 0.0));
+        std::vector<std::vector<double>> identity_mat(d_minus1.size(), std::vector<double>(d_minus1.size(), 0.0));
+        std::vector<std::vector<double>> temp_mat(d_minus1.size(), std::vector<double>(d_minus1.size(), 0.0));
+        for (int i = 0; i < d_minus1.size(); ++i) {
+            for (int j = 0; j < d_minus1.size(); ++i) {
+                deriv_softmax_mat[i][j] = dOut[i][0];
+                if (i == j) {
+                    identity_mat[i][j] = 1.0;
+                }
+            }
+        }
+
+        for (int i = 0; i < temp_mat.size(); ++i) {
+            for (int j = 0; j < temp_mat.size(); ++j) {
+                temp_mat[i][j] = deriv_softmax_mat[i][j] * (identity_mat[i][j] - deriv_softmax_mat[i][j]);
+            }
+        }
+
+        d_minus1 = matmul(temp_mat, dOut);
+    } else {
+        throw std::runtime_error("Haven't supported any other activation functions for backprop");
     }
+    
 
     // printf("completed d_minus1\n");
 

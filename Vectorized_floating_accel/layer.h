@@ -21,6 +21,7 @@ std::vector<std::vector<double>> forwardPropagation(
     int activation);
 
 void print2D(const std::vector<std::vector<double>>& matrix);
+void print1D(const std::vector<double>& vec);
 //-----------------------------------------------------------------------
 // backPropagationSingleSample
 //   input   : shape [N_in, 1]
