@@ -63,9 +63,9 @@ int main(){
                     final_error[ii][j] = result_l2[ii][j] - y_true[iteration][ii][j];
                 }
             }
-            // printf("Final error:\n");
-            // print2D(final_error);
-            // print2D(final_error);
+            printf("Final error:\n");
+            print2D(final_error);
+            print2D(final_error);
 
             // printf("Input is\n");
             // print2D(input[i]);
@@ -80,13 +80,15 @@ int main(){
                 0.1
             );
             printf("Made it past 1 backprop\n");
+            printf("Propagating the following back: \n");
+            print2D(d2_to_lh);
             std::vector<std::vector<double>> dlh_to_1 = backPropagationSingleSample(
                 result_l1,
-                weights_l2,
-                biases_l2,
-                result_l2,
+                weights_lh,
+                biases_lh,
+                result_lh,
                 d2_to_lh,
-                activation_l2,
+                activation_l1,
                 0.1
             );
             printf("weights_l2:\n");
