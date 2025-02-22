@@ -15,6 +15,7 @@
 typedef ap_fixed<16,7> fixed_16;
 using namespace std;
 
+void readCSV(const char* filepath, fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], int& num_rows, int& num_cols);
 
 // these structs are used to hold return values/arrays for simplicity
 // of return statements (i.e. no pointers used)
