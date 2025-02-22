@@ -205,14 +205,14 @@ std::vector<std::vector<double> > backPropagationSingleSample(
     } else if (activation = 1) { // Softmax
         printf("Entering softmax \n");
         // Create a square matrix (vector of vectors) of size d_minus1.size()
-        std::vector<std::vector<double> > deriv_softmax_mat(d_minus1.size(), std::vector<double>(d_minus1.size(), 0.0));
-        std::vector<std::vector<double> > identity_mat(d_minus1.size(), std::vector<double>(d_minus1.size(), 0.0));
-        std::vector<std::vector<double> > temp_mat(d_minus1.size(), std::vector<double>(d_minus1.size(), 0.0));
+        std::vector<std::vector<double> > deriv_softmax_mat(dOut.size(), std::vector<double>(dOut.size(), 0.0));
+        std::vector<std::vector<double> > identity_mat(dOut.size(), std::vector<double>(dOut.size(), 0.0));
+        std::vector<std::vector<double> > temp_mat(dOut.size(), std::vector<double>(dOut.size(), 0.0));
         
         printf("Getting past init \n");
-        printf("matrix size %d \n", d_minus1.size());
-        for (int i = 0; i < d_minus1.size(); ++i) {
-            for (int j = 0; j < d_minus1.size(); ++j) {
+        printf("dOut size %d \n", dOut.size());
+        for (int i = 0; i < dOut.size(); ++i) {
+            for (int j = 0; j < dOut.size(); ++j) {
                 deriv_softmax_mat[i][j] = dOut[i][0];
                 printf("%f ", deriv_softmax_mat[i][j]);
                 if (i == j) {
