@@ -57,6 +57,7 @@ std::vector<std::vector<double> > matmul(
 
     // The number of columns in A must match the number of rows in B
     if (colsA != rowsB) {
+        printf("Cols of mat A is %d, and rows of mat b is %d \n", colsA, rowsB);
         throw std::runtime_error("Matrix dimensions do not match for multiplication (colsA != rowsB).");
     }
 
@@ -140,15 +141,24 @@ std::vector<std::vector<double> > forwardPropagation(
     }
 
     std::vector<std::vector<double> > output(net.size(), std::vector<double>(net[0].size(), 0.0));
-
     if (activation == 0) {
         for (int j = 0; j < net.size(); ++j) {
             output[j] = relu(net[j]);
         }
     } else if (activation = 1) {
-        for (int j = 0; j < net.size(); ++j) {
-            output[j] = softmax(net[j]);
+        std::vector<std::vector<double>> temp(net[0].size(), std::vector<double>(net.size()));
+        // printf("Pre_softmax: \n");
+        // print2D(net);
+        for (int j = 0; j < transpose(net).size(); ++j) {
+            // printf("j is %d\n", j);
+            // print1D(transpose(net)[j]);
+            temp[j] = softmax(transpose(net)[j]);
+            output = transpose(temp);
+            // print2D(temp);
+            // print2D(output);
         }
+        // printf("Post_softmax: \n");
+        // print2D(output);
     } else if (activation = 2) {
         for (int j = 0; j < net.size(); ++j) {
             output[j] = sigmoid(net[j]);
@@ -173,6 +183,7 @@ std::vector<std::vector<double> > backPropagationSingleSample(
     // printf("Dout internally \n");
     // print2D(dOut);
     std::vector<std::vector<double> > d_minus1 = matmulTransposeW(weights, dOut);
+    printf("Issue was in backprop\n");
 
     std::vector<std::vector<double> > mid = matmul(weights, input);
     std::vector<std::vector<double> > net(mid.size(), std::vector<double>(mid[0].size(), 0.0)); // Net should be the same size as biases
@@ -199,14 +210,16 @@ std::vector<std::vector<double> > backPropagationSingleSample(
         std::vector<std::vector<double> > temp_mat(d_minus1.size(), std::vector<double>(d_minus1.size(), 0.0));
         
         printf("Getting past init \n");
-
+        printf("matrix size %d \n", d_minus1.size());
         for (int i = 0; i < d_minus1.size(); ++i) {
             for (int j = 0; j < d_minus1.size(); ++j) {
                 deriv_softmax_mat[i][j] = dOut[i][0];
+                printf("%f ", deriv_softmax_mat[i][j]);
                 if (i == j) {
                     identity_mat[i][j] = 1.0;
                 }
             }
+            printf("\n");
         }
         printf("Generated indentity and deriv_softmax \n");
         for (int i = 0; i < temp_mat.size(); ++i) {
@@ -216,7 +229,7 @@ std::vector<std::vector<double> > backPropagationSingleSample(
         }
         printf("Completed hadamard product etc \n");
         d_minus1 = matmul(temp_mat, dOut);
-        printf("mat has been multied");
+        printf("mat has been multied \n");
     } else {
         throw std::runtime_error("Haven't supported any other activation functions for backprop");
     }
@@ -237,7 +250,7 @@ std::vector<std::vector<double> > backPropagationSingleSample(
             // printf("dout %f \n", dOut[0][0]);
             // printf("dOut: %f, input: %f \n", dOut[i][0], input[j][0]);
             double dW = dOut[i][0] * input[j][0];
-            printf("DW is %f\n", dW);
+            // printf("DW is %f\n", dW);
             // gradient descent update
             // printf("Weight before: %f \n", weights[i][j]);
             // printf("Subtracting: %f \n", learning_rate * dW);
