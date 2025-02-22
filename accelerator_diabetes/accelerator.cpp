@@ -11,6 +11,7 @@ Inference accelerator(fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZ
     // array for the final output
     Inference output_array;
 
+
     // CHANGE INITIAL VECTOR/MATRIX SIZES HERE
     // initializing the data for the XOR problem
     fixed_16 x1[4] = {0, 0, 1, 1};
