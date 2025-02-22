@@ -1,0 +1,1723 @@
+INFO-FLOW: Workspace C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls opened at Sat Feb 22 14:12:43 -0800 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Command   open_solution done; 0.415 sec.
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+Execute     add_files -tb C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 27.516 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.37 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.83 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command       ap_part_info done; 0.4 sec.
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 28.782 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 29.423 sec.
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command     ap_part_info done; 0.469 sec.
+INFO-FLOW: AESL_CSIM::c_sim errorInfo:
+
+    while executing
+"::AESL_CSIM::c_sim "$argn" "
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 85.256 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls opened at Sat Feb 22 14:21:41 -0800 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+Execute     add_files -tb C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 7.514 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.227 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.29 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command       ap_part_info done; 0.212 sec.
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 8.062 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 8.372 sec.
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command     ap_part_info done; 0.238 sec.
+INFO-FLOW: AESL_CSIM::c_sim errorInfo:
+
+    while executing
+"::AESL_CSIM::c_sim "$argn" "
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 36.552 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls opened at Sat Feb 22 14:23:47 -0800 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+Execute     add_files -tb C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+INFO-FLOW: Workspace C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls opened at Sat Feb 22 14:23:48 -0800 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+Execute     add_files -tb C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 9.92 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+DBG:HLSDevice: init success
+Command         ap_source done; 0.403 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.542 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command       ap_part_info done; 0.323 sec.
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 10.838 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 11.116 sec.
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 10.348 sec.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command         ap_source done; 0.223 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.282 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command     ap_part_info done; 0.233 sec.
+Command       ap_part_info done; 0.227 sec.
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 10.902 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+Execute     create_clock -period 10ns 
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+Execute     set_clock_uncertainty 2ns 
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 11.203 sec.
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command     ap_part_info done; 0.243 sec.
+Execute     source run_sim.tcl 
+Execute     source run_sim.tcl 
+Command     ap_source done; 10.935 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 84.06 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+Command     ap_source done; 10.463 sec.
+INFO-FLOW: AESL_CSIM::c_sim errorInfo:
+couldn't open "temp0.log": no such file or directory
+    while executing
+"error $result"
+    (procedure "open" line 5)
+    invoked from within
+"open $srcfile r"
+    (procedure "cplogfilecontent" line 2)
+    invoked from within
+"cplogfilecontent "temp0.log""
+    (procedure "::AESL_CSIM::c_sim" line 263)
+    invoked from within
+"::AESL_CSIM::c_sim "$argn" "
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 86.892 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls opened at Sat Feb 22 14:27:01 -0800 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+Execute     add_files -tb C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 6.618 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.179 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.242 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command       ap_part_info done; 0.196 sec.
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 7.068 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 7.31 sec.
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command     ap_part_info done; 0.2 sec.
+Execute     source run_sim.tcl 
+Command     ap_source done; 9.967 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 11.679 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls opened at Sat Feb 22 14:28:30 -0800 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+Execute     add_files -tb C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 6.745 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.158 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.212 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command       ap_part_info done; 0.186 sec.
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 7.156 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 7.666 sec.
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command     ap_part_info done; 0.176 sec.
+Execute     source run_sim.tcl 
+Command     ap_source done; 11.615 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 13.074 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls opened at Sat Feb 22 14:29:14 -0800 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+Execute     add_files -tb C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 6.538 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.205 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.27 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command       ap_part_info done; 0.199 sec.
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 7.02 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 7.245 sec.
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command     ap_part_info done; 0.257 sec.
+Execute     source run_sim.tcl 
+Command     ap_source done; 9.587 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 11.319 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls opened at Sat Feb 22 14:30:52 -0800 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+Execute     add_files -tb C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 8.79 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.209 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.27 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command       ap_part_info done; 0.282 sec.
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 9.364 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 9.756 sec.
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command     ap_part_info done; 0.222 sec.
+Execute     source run_sim.tcl 
+Command     ap_source done; 13.692 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 25.572 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls opened at Sat Feb 22 14:32:19 -0800 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+Execute     add_files -tb C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 6.485 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.177 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.243 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command       ap_part_info done; 0.186 sec.
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 6.926 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 7.202 sec.
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command     ap_part_info done; 0.243 sec.
+Execute     source run_sim.tcl 
+Command     ap_source done; 11.343 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 22.278 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls opened at Sat Feb 22 14:34:29 -0800 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+Execute     add_files -tb C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 6.595 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.179 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.243 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command       ap_part_info done; 0.204 sec.
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 7.055 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 7.282 sec.
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command     ap_part_info done; 0.187 sec.
+Execute     source run_sim.tcl 
+Command     ap_source done; 11.594 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 13.164 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls opened at Sat Feb 22 14:42:59 -0800 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+Execute     add_files -tb C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 7.267 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.189 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.251 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command       ap_part_info done; 0.191 sec.
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 7.728 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 7.962 sec.
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command     ap_part_info done; 0.274 sec.
+Execute     source run_sim.tcl 
+Command     ap_source done; 11.156 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 26.112 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls opened at Sat Feb 22 14:46:38 -0800 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+Execute     add_files -tb C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 6.819 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.277 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.348 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command       ap_part_info done; 0.216 sec.
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 7.398 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 7.641 sec.
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command     ap_part_info done; 0.202 sec.
+Execute     source run_sim.tcl 
+Command     ap_source done; 12.843 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 28.545 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls opened at Sat Feb 22 15:11:49 -0800 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+Execute     add_files -tb C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 7.102 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.188 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.248 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command       ap_part_info done; 0.188 sec.
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 7.555 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 7.801 sec.
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command     ap_part_info done; 0.188 sec.
+Execute     source run_sim.tcl 
+Command     ap_source done; 2.221 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 75.029 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls opened at Sat Feb 22 15:25:24 -0800 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+Execute     add_files -tb C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 7.182 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.188 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.255 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command       ap_part_info done; 0.194 sec.
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 7.646 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 7.88 sec.
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command     ap_part_info done; 0.178 sec.
+INFO-FLOW: AESL_CSIM::c_sim errorInfo:
+
+    while executing
+"::AESL_CSIM::c_sim "$argn" "
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 10.477 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls opened at Sat Feb 22 15:29:30 -0800 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+Execute     add_files C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+Execute     add_files -tb C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 8.214 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.226 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.293 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command       ap_part_info done; 0.191 sec.
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 8.711 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 9.007 sec.
+Execute   apply_ini C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Command     ap_part_info done; 0.234 sec.
+Execute     source run_sim.tcl 
+Command     ap_source done; 1.255 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 76.995 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 

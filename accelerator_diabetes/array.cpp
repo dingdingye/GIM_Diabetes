@@ -13,7 +13,7 @@ Array model_array(fixed_16 weights[ARRAY_SIZE][ARRAY_SIZE],
     Array return_array;
     
     // initialize internal array with zeros
-    fixed_16 partial_delta_sum[ARRAY_SIZE] = {0, 0};
+    fixed_16 partial_delta_sum[ARRAY_SIZE] = {0};
 
     // iterate through the neurons in the layer
     int n = 0;

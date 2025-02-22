@@ -2,7 +2,10 @@
 #include "gim_model.h"
 using namespace std;
 
-int main() { // BASICALLY JUST REWRITE THIS 
+int main() {  
+    // Load trainig and testing data from CSVs
+    
+
 
     // matrices initialized with random values from Python, known to converge, MIGHT HAVE TO FIND CONVERGING VALUES? SHOULD BE FINE THO
         // Initialize weights and biases (example values)
@@ -55,10 +58,10 @@ int main() { // BASICALLY JUST REWRITE THIS
 
     // capture the outputs of the accelerator
     cout << "The following are the predictions of the DNN:" << endl;
-    cout << output.inference[0] << endl;
-    cout << output.inference[1] << endl;
-    cout << output.inference[2] << endl;
-    cout << output.inference[3] << endl;
+    cout << "0: " << output.inference[0] << endl;
+    cout << "1: " << output.inference[1] << endl;
+    cout << "2: " << output.inference[2] << endl;
+    cout << "3: " << output.inference[3] << endl;
     return 0;
 
 }

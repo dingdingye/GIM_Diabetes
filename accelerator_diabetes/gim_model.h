@@ -7,10 +7,12 @@
 #include <vector>
 #include <iostream>
 
-#define ARRAY_SIZE 2
-#define NUM_ITERATIONS 500
+#define ARRAY_SIZE 16
+#define MAX_DATA_ROWS 9721
+#define MAX_DATA_COLS 16
+#define NUM_ITERATIONS 50
 
-typedef ap_fixed<16,4> fixed_16;
+typedef ap_fixed<16,7> fixed_16;
 using namespace std;
 
 

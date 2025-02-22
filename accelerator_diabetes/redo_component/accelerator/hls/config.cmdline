@@ -1,0 +1,3 @@
+relativeroot=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component
+original_argv=--mode hls --csim --config C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\hls_config.cfg --work_dir accelerator 
+

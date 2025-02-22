@@ -8,3 +8,9 @@ client.delete_component(name="testing_component")
 
 comp = client.create_hls_component(name = "redo_component",cfg_file = ["hls_config.cfg"],template = "empty_hls_component")
 
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+

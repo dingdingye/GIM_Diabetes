@@ -1,0 +1,43 @@
+<ENTRY>
+{
+ "thisFile": "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\redo_component\\accelerator\\accelerator.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/22/25 15:32:08",
+ "timestampMillis": "805373702",
+ "buildStep": {
+  "cmdId": "f7a8c020-3d5a-4d76-a7df-09270c660a21",
+  "name": "vitis-run",
+  "logFile": "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\redo_component\\accelerator\\logs\\accelerator.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\redo_component\\hls_config.cfg --work_dir accelerator ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\redo_component\\hls_config.cfg",
+   "--work_dir",
+   "accelerator"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\redo_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/22/25 15:32:08",
+ "timestampMillis": "805373704",
+ "status": {
+  "cmdId": "f7a8c020-3d5a-4d76-a7df-09270c660a21",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>

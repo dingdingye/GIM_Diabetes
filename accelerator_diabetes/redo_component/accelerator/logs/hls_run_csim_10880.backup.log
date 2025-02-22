@@ -1,0 +1,398 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator\accelerator.hlsrun_csim_summary, at 02/22/25 15:11:40
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator -config C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg -cmdlineconfig C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sat Feb 22 15:11:46 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source C:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'GIM' on host 'gim_laptop_1' (Windows NT_amd64 version 10.0) on Sat Feb 22 15:11:48 -0800 2025
+INFO: [HLS 200-10] In directory 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component'
+INFO: [HLS 200-2005] Using work_dir C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../main.cpp in debug mode
+   Compiling ../../../../../weight_pe.cpp in debug mode
+   Compiling ../../../../../error_pe.cpp in debug mode
+   Compiling ../../../../../csv_import.cpp in debug mode
+   Compiling ../../../../../bias_pe.cpp in debug mode
+   Compiling ../../../../../array.cpp in debug mode
+   Compiling ../../../../../act_pe.cpp in debug mode
+   Compiling ../../../../../accelerator.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../../main.cpp:2:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../weight_pe.cpp:1:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../error_pe.cpp:1:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../csv_import.cpp:2:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../bias_pe.cpp:1:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../array.cpp:1:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../act_pe.cpp:1:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../accelerator.cpp:1:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+layer 2 weights: {0.853516, 0.494141}, {0, 0}
+layer 2 weights: {0.808594, 0.488281}, {0, 0}
+layer 2 weights: {0.761719, 0.447266}, {0, 0}
+layer 2 weights: {0.773438, 0.451172}, {0, 0}
+layer 2 weights: {0.615234, 0.302734}, {0, 0}
+layer 2 weights: {0.605469, 0.302734}, {0, 0}
+layer 2 weights: {0.623047, 0.322266}, {0, 0}
+layer 2 weights: {0.642578, 0.326172}, {0, 0}
+layer 2 weights: {0.568359, 0.248047}, {0, 0}
+layer 2 weights: {0.560547, 0.248047}, {0, 0}
+layer 2 weights: {0.583984, 0.273438}, {0, 0}
+layer 2 weights: {0.601563, 0.275391}, {0, 0}
+layer 2 weights: {0.544922, 0.212891}, {0, 0}
+layer 2 weights: {0.537109, 0.212891}, {0, 0}
+layer 2 weights: {0.5625, 0.240234}, {0, 0}
+layer 2 weights: {0.580078, 0.242188}, {0, 0}
+layer 2 weights: {0.529297, 0.185547}, {0, 0}
+layer 2 weights: {0.521484, 0.185547}, {0, 0}
+layer 2 weights: {0.546875, 0.214844}, {0, 0}
+layer 2 weights: {0.564453, 0.216797}, {0, 0}
+layer 2 weights: {0.517578, 0.164063}, {0, 0}
+layer 2 weights: {0.509766, 0.164063}, {0, 0}
+layer 2 weights: {0.535156, 0.193359}, {0, 0}
+layer 2 weights: {0.550781, 0.195313}, {0, 0}
+layer 2 weights: {0.507813, 0.144531}, {0, 0}
+layer 2 weights: {0.498047, 0.144531}, {0, 0}
+layer 2 weights: {0.523438, 0.173828}, {0, 0}
+layer 2 weights: {0.539063, 0.175781}, {0, 0}
+layer 2 weights: {0.498047, 0.126953}, {0, 0}
+layer 2 weights: {0.488281, 0.126953}, {0, 0}
+layer 2 weights: {0.513672, 0.15625}, {0, 0}
+layer 2 weights: {0.529297, 0.158203}, {0, 0}
+layer 2 weights: {0.490234, 0.111328}, {0, 0}
+layer 2 weights: {0.480469, 0.111328}, {0, 0}
+layer 2 weights: {0.505859, 0.140625}, {0, 0}
+layer 2 weights: {0.521484, 0.142578}, {0, 0}
+layer 2 weights: {0.484375, 0.0976563}, {0, 0}
+layer 2 weights: {0.472656, 0.0976563}, {0, 0}
+layer 2 weights: {0.496094, 0.126953}, {0, 0}
+layer 2 weights: {0.511719, 0.126953}, {0, 0}
+layer 2 weights: {0.474609, 0.0839844}, {0, 0}
+layer 2 weights: {0.462891, 0.0839844}, {0, 0}
+layer 2 weights: {0.486328, 0.113281}, {0, 0}
+layer 2 weights: {0.501953, 0.113281}, {0, 0}
+layer 2 weights: {0.466797, 0.0703125}, {0, 0}
+layer 2 weights: {0.455078, 0.0703125}, {0, 0}
+layer 2 weights: {0.478516, 0.0996094}, {0, 0}
+layer 2 weights: {0.494141, 0.0996094}, {0, 0}
+layer 2 weights: {0.460938, 0.0585938}, {0, 0}
+layer 2 weights: {0.449219, 0.0585938}, {0, 0}
+layer 2 weights: {0.472656, 0.0878906}, {0, 0}
+layer 2 weights: {0.486328, 0.0878906}, {0, 0}
+layer 2 weights: {0.453125, 0.0488281}, {0, 0}
+layer 2 weights: {0.441406, 0.0488281}, {0, 0}
+layer 2 weights: {0.464844, 0.0761719}, {0, 0}
+layer 2 weights: {0.478516, 0.0761719}, {0, 0}
+layer 2 weights: {0.447266, 0.0371094}, {0, 0}
+layer 2 weights: {0.433594, 0.0371094}, {0, 0}
+layer 2 weights: {0.457031, 0.0644531}, {0, 0}
+layer 2 weights: {0.470703, 0.0644531}, {0, 0}
+layer 2 weights: {0.441406, 0.0273438}, {0, 0}
+layer 2 weights: {0.427734, 0.0273438}, {0, 0}
+layer 2 weights: {0.451172, 0.0546875}, {0, 0}
+layer 2 weights: {0.464844, 0.0546875}, {0, 0}
+layer 2 weights: {0.435547, 0.0175781}, {0, 0}
+layer 2 weights: {0.421875, 0.0175781}, {0, 0}
+layer 2 weights: {0.443359, 0.0449219}, {0, 0}
+layer 2 weights: {0.457031, 0.0449219}, {0, 0}
+layer 2 weights: {0.429688, 0.0078125}, {0, 0}
+layer 2 weights: {0.416016, 0.0078125}, {0, 0}
+layer 2 weights: {0.4375, 0.0351563}, {0, 0}
+layer 2 weights: {0.449219, 0.0351563}, {0, 0}
+layer 2 weights: {0.421875, 0}, {0, 0}
+layer 2 weights: {0.408203, 0}, {0, 0}
+layer 2 weights: {0.429688, 0.0273438}, {0, 0}
+layer 2 weights: {0.441406, 0.0273438}, {0, 0}
+layer 2 weights: {0.416016, -0.0078125}, {0, 0}
+layer 2 weights: {0.402344, -0.0078125}, {0, 0}
+layer 2 weights: {0.423828, 0.0195313}, {0, 0}
+layer 2 weights: {0.435547, 0.0175781}, {0, 0}
+layer 2 weights: {0.410156, -0.015625}, {0, 0}
+layer 2 weights: {0.396484, -0.015625}, {0, 0}
+layer 2 weights: {0.417969, 0.0117188}, {0, 0}
+layer 2 weights: {0.429688, 0.00976563}, {0, 0}
+layer 2 weights: {0.404297, -0.0234375}, {0, 0}
+layer 2 weights: {0.390625, -0.0234375}, {0, 0}
+layer 2 weights: {0.412109, 0.00390625}, {0, 0}
+layer 2 weights: {0.423828, 0.00195313}, {0, 0}
+layer 2 weights: {0.400391, -0.0292969}, {0, 0}
+layer 2 weights: {0.386719, -0.0292969}, {0, 0}
+layer 2 weights: {0.408203, -0.00195313}, {0, 0}
+layer 2 weights: {0.419922, -0.00390625}, {0, 0}
+layer 2 weights: {0.396484, -0.0351563}, {0, 0}
+layer 2 weights: {0.382813, -0.0351563}, {0, 0}
+layer 2 weights: {0.404297, -0.00976563}, {0, 0}
+layer 2 weights: {0.414063, -0.0117188}, {0, 0}
+layer 2 weights: {0.390625, -0.0429688}, {0, 0}
+layer 2 weights: {0.376953, -0.0429688}, {0, 0}
+layer 2 weights: {0.396484, -0.0175781}, {0, 0}
+layer 2 weights: {0.40625, -0.0195313}, {0, 0}
+layer 2 weights: {0.384766, -0.0507813}, {0, 0}
+layer 2 weights: {0.371094, -0.0507813}, {0, 0}
+layer 2 weights: {0.390625, -0.0253906}, {0, 0}
+layer 2 weights: {0.400391, -0.0273438}, {0, 0}
+layer 2 weights: {0.378906, -0.0566406}, {0, 0}
+layer 2 weights: {0.365234, -0.0566406}, {0, 0}
+layer 2 weights: {0.384766, -0.03125}, {0, 0}
+layer 2 weights: {0.394531, -0.0332031}, {0, 0}
+layer 2 weights: {0.373047, -0.0625}, {0, 0}
+layer 2 weights: {0.359375, -0.0625}, {0, 0}
+layer 2 weights: {0.378906, -0.0371094}, {0, 0}
+layer 2 weights: {0.388672, -0.0390625}, {0, 0}
+layer 2 weights: {0.369141, -0.0683594}, {0, 0}
+layer 2 weights: {0.355469, -0.0683594}, {0, 0}
+layer 2 weights: {0.375, -0.0429688}, {0, 0}
+layer 2 weights: {0.384766, -0.0449219}, {0, 0}
+layer 2 weights: {0.365234, -0.0722656}, {0, 0}
+layer 2 weights: {0.351563, -0.0722656}, {0, 0}
+layer 2 weights: {0.371094, -0.0488281}, {0, 0}
+layer 2 weights: {0.380859, -0.0507813}, {0, 0}
+layer 2 weights: {0.361328, -0.078125}, {0, 0}
+layer 2 weights: {0.347656, -0.078125}, {0, 0}
+layer 2 weights: {0.367188, -0.0546875}, {0, 0}
+layer 2 weights: {0.375, -0.0566406}, {0, 0}
+layer 2 weights: {0.355469, -0.0839844}, {0, 0}
+layer 2 weights: {0.341797, -0.0839844}, {0, 0}
+layer 2 weights: {0.361328, -0.0605469}, {0, 0}
+layer 2 weights: {0.369141, -0.0625}, {0, 0}
+layer 2 weights: {0.351563, -0.0898438}, {0, 0}
+layer 2 weights: {0.337891, -0.0898438}, {0, 0}
+layer 2 weights: {0.357422, -0.0664063}, {0, 0}
+layer 2 weights: {0.365234, -0.0683594}, {0, 0}
+layer 2 weights: {0.347656, -0.09375}, {0, 0}
+layer 2 weights: {0.333984, -0.09375}, {0, 0}
+layer 2 weights: {0.353516, -0.0722656}, {0, 0}
+layer 2 weights: {0.361328, -0.0742188}, {0, 0}
+layer 2 weights: {0.34375, -0.0996094}, {0, 0}
+layer 2 weights: {0.330078, -0.0996094}, {0, 0}
+layer 2 weights: {0.347656, -0.078125}, {0, 0}
+layer 2 weights: {0.355469, -0.0800781}, {0, 0}
+layer 2 weights: {0.337891, -0.105469}, {0, 0}
+layer 2 weights: {0.324219, -0.105469}, {0, 0}
+layer 2 weights: {0.341797, -0.0839844}, {0, 0}
+layer 2 weights: {0.349609, -0.0859375}, {0, 0}
+layer 2 weights: {0.332031, -0.109375}, {0, 0}
+layer 2 weights: {0.318359, -0.109375}, {0, 0}
+layer 2 weights: {0.335938, -0.0878906}, {0, 0}
+layer 2 weights: {0.34375, -0.0898438}, {0, 0}
+layer 2 weights: {0.328125, -0.113281}, {0, 0}
+layer 2 weights: {0.314453, -0.113281}, {0, 0}
+layer 2 weights: {0.332031, -0.09375}, {0, 0}
+layer 2 weights: {0.339844, -0.0957031}, {0, 0}
+layer 2 weights: {0.324219, -0.119141}, {0, 0}
+layer 2 weights: {0.310547, -0.119141}, {0, 0}
+layer 2 weights: {0.328125, -0.0996094}, {0, 0}
+layer 2 weights: {0.333984, -0.101563}, {0, 0}
+layer 2 weights: {0.318359, -0.125}, {0, 0}
+layer 2 weights: {0.304688, -0.125}, {0, 0}
+layer 2 weights: {0.322266, -0.105469}, {0, 0}
+layer 2 weights: {0.328125, -0.107422}, {0, 0}
+layer 2 weights: {0.3125, -0.128906}, {0, 0}
+layer 2 weights: {0.298828, -0.128906}, {0, 0}
+layer 2 weights: {0.316406, -0.109375}, {0, 0}
+layer 2 weights: {0.322266, -0.111328}, {0, 0}
+layer 2 weights: {0.308594, -0.132813}, {0, 0}
+layer 2 weights: {0.294922, -0.132813}, {0, 0}
+layer 2 weights: {0.3125, -0.115234}, {0, 0}
+layer 2 weights: {0.318359, -0.117188}, {0, 0}
+layer 2 weights: {0.304688, -0.138672}, {0, 0}
+layer 2 weights: {0.291016, -0.138672}, {0, 0}
+layer 2 weights: {0.308594, -0.121094}, {0, 0}
+layer 2 weights: {0.314453, -0.123047}, {0, 0}
+layer 2 weights: {0.300781, -0.144531}, {0, 0}
+layer 2 weights: {0.287109, -0.144531}, {0, 0}
+layer 2 weights: {0.302734, -0.126953}, {0, 0}
+layer 2 weights: {0.308594, -0.128906}, {0, 0}
+layer 2 weights: {0.294922, -0.150391}, {0, 0}
+layer 2 weights: {0.28125, -0.150391}, {0, 0}
+layer 2 weights: {0.296875, -0.132813}, {0, 0}
+layer 2 weights: {0.302734, -0.134766}, {0, 0}
+layer 2 weights: {0.291016, -0.154297}, {0, 0}
+layer 2 weights: {0.277344, -0.154297}, {0, 0}
+layer 2 weights: {0.292969, -0.138672}, {0, 0}
+layer 2 weights: {0.298828, -0.140625}, {0, 0}
+layer 2 weights: {0.287109, -0.160156}, {0, 0}
+layer 2 weights: {0.273438, -0.160156}, {0, 0}
+layer 2 weights: {0.289063, -0.144531}, {0, 0}
+layer 2 weights: {0.292969, -0.146484}, {0, 0}
+layer 2 weights: {0.28125, -0.166016}, {0, 0}
+layer 2 weights: {0.267578, -0.166016}, {0, 0}
+layer 2 weights: {0.283203, -0.150391}, {0, 0}
+layer 2 weights: {0.287109, -0.152344}, {0, 0}
+layer 2 weights: {0.275391, -0.171875}, {0, 0}
+layer 2 weights: {0.261719, -0.171875}, {0, 0}
+layer 2 weights: {0.277344, -0.158203}, {0, 0}
+layer 2 weights: {0.28125, -0.160156}, {0, 0}
+layer 2 weights: {0.269531, -0.179688}, {0, 0}
+layer 2 weights: {0.255859, -0.179688}, {0, 0}
+layer 2 weights: {0.271484, -0.166016}, {0, 0}
+layer 2 weights: {0.275391, -0.167969}, {0, 0}
+layer 2 weights: {0.263672, -0.1875}, {0, 0}
+layer 2 weights: {0.25, -0.1875}, {0, 0}
+layer 2 weights: {0.265625, -0.173828}, {0, 0}
+layer 2 weights: {0.269531, -0.175781}, {0, 0}
+The following are the predictions of the DNN:
+O: 1
+1: 0
+2: 0
+3: 0
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 86.236 seconds; peak allocated memory: 230.574 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 1m 36s
