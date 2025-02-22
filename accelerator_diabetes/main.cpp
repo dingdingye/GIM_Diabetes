@@ -4,7 +4,17 @@ using namespace std;
 
 int main() {  
     // Load trainig and testing data from CSVs
+    fixed_16 X_train[MAX_DATA_ROWS][MAX_DATA_COLS];
+    fixed_16 Y_train[MAX_DATA_ROWS][MAX_DATA_COLS]; 
+    fixed_16 X_test[MAX_DATA_ROWS][MAX_DATA_COLS];
+    fixed_16 Y_test[MAX_DATA_ROWS][MAX_DATA_COLS]; 
     
+    int num_train_rows, num_train_cols;
+
+    readCSV("X_train.csv", X_train, num_train_rows, num_train_cols);
+    readCSV("Y_train.csv", Y_train, num_train_rows, num_train_cols);
+    readCSV("X_test.csv", X_test, num_train_rows, num_train_cols);
+    readCSV("Y_test.csv", Y_test, num_train_rows, num_train_cols);
 
 
     // matrices initialized with random values from Python, known to converge, MIGHT HAVE TO FIND CONVERGING VALUES? SHOULD BE FINE THO
