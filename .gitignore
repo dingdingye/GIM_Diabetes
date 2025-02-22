@@ -1,0 +1,2 @@
+# Ignore all .exe files in the vectorized floating accel file
+Vectorized_floating_accel/*.exe

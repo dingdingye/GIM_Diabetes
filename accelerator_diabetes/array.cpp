@@ -2,19 +2,20 @@
 using namespace std;
 
 // Generalized function to process a single layer
-// template <int INPUT_SIZE, int LAYER_SIZE>template <int PRE_LAYER_SIZE, int POST_LAYER_SIZE>
-Array model_array(fixed_16 weights[PRE_LAYER_SIZE][POST_LAYER_SIZE],
+template <int PRE_LAYER_SIZE, int POST_LAYER_SIZE>
+Array<PRE_LAYER_SIZE, POST_LAYER_SIZE> model_array(fixed_16 weights[PRE_LAYER_SIZE][POST_LAYER_SIZE],
                   fixed_16 biases[PRE_LAYER_SIZE],
                   fixed_16 output_kmin[PRE_LAYER_SIZE],
                   fixed_16 delta_k[PRE_LAYER_SIZE],
                   fixed_16 eta,
                   char model,
                   fixed_16 alpha,
-                  fixed_16 training);
+                  fixed_16 training)
 // void process_layer(fixed_16 weights[][POST_LAYER_SIZE], fixed_16 biases[], fixed_16 outputs[], fixed_16 deltas[],
 //                    fixed_16 return_outputs[], fixed_16 return_deltas[], fixed_16 weight_changes[][LAYER_SIZE],
 //                    fixed_16 bias_changes[], fixed_16 eta, char model, fixed_16 alpha, fixed_16 training) 
 {
+    Array return_array;
     // Initialize partial delta sums
     fixed_16 partial_delta_sum[POST_LAYER_SIZE] = {0};
 
@@ -27,7 +28,7 @@ Array model_array(fixed_16 weights[PRE_LAYER_SIZE][POST_LAYER_SIZE],
         // Iterate through the inputs to the current layer
         for (int c = 0; c < PRE_LAYER_SIZE; c++) {
             // Get the running sums for the output and the delta from the current weight PE
-            Weight weight_out = weights_pe(deltas[n], outputs[c], partial_output_sum,
+            Weight weight_out = weights_pe(delta_k[n], output_kmin[c], partial_output_sum,
                                            partial_delta_sum[c], weights[c][n], eta, training);
             partial_output_sum = weight_out.sum_output_out;
             partial_delta_sum[c] = weight_out.sum_delta_out;
@@ -36,7 +37,7 @@ Array model_array(fixed_16 weights[PRE_LAYER_SIZE][POST_LAYER_SIZE],
         }
 
         // Get the output for the current neuron in the layer
-        Bias bias_out = bias_pe(deltas[n], partial_output_sum, biases[n], eta, training);
+        Bias bias_out = bias_pe(delta_k[n], partial_output_sum, biases[n], eta, training);
         bias_changes[n] = bias_out.bias_change;
         return_outputs[n] = act_pe(bias_out.net_sum, model, alpha);
     }

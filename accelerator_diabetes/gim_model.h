@@ -98,7 +98,7 @@ struct Inference {
 };
 
 // processing elements, array, and accelerator function prototypes
-Weight weights_pe(fixed_16 d_k, fixed_16 output_kmin1, fixed_16 partial_sum_out_k,
+Weight weights_pe(fixed_16 d_k, fixed_16 output_kmin1, fixed_16    partial_sum_out_k,
 				fixed_16 partial_sum_delta_k, fixed_16 init_weight,
 				fixed_16 eta, fixed_16 training);
 
@@ -113,9 +113,8 @@ fixed_16 act_pe(fixed_16 net_in, char model, fixed_16 alpha);
 fixed_16 error_pe(fixed_16 output_kmin1, fixed_16 partial_sum_delta_k,
 				char model, fixed_16 alpha);
 
-// template <int PRE_LAYER_SIZE, int POST_LAYER_SIZE>
-void model_array(Array<PRE_LAYER_SIZE, POST_LAYER_SIZE>,
-                fixed_16 weights[PRE_LAYER_SIZE][POST_LAYER_SIZE],
+template <int PRE_LAYER_SIZE, int POST_LAYER_SIZE>
+Array<PRE_LAYER_SIZE, POST_LAYER_SIZE> model_array(fixed_16 weights[PRE_LAYER_SIZE][POST_LAYER_SIZE],
                   fixed_16 biases[PRE_LAYER_SIZE],
                   fixed_16 output_kmin[PRE_LAYER_SIZE],
                   fixed_16 delta_k[PRE_LAYER_SIZE],
@@ -124,7 +123,8 @@ void model_array(Array<PRE_LAYER_SIZE, POST_LAYER_SIZE>,
                   fixed_16 alpha,
                   fixed_16 training);
 
-Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
+template <int PRE_LAYER_SIZE, int POST_LAYER_SIZE>
+Inference<PRE_LAYER_SIZE, POST_LAYER_SIZE> accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
                       fixed_16 Y[MAX_DATA_ROWS][MAX_DATA_COLS],
                       fixed_16 w1[NUM_INPUTS][LAYER_1_SIZE],
                       fixed_16 w2[LAYER_1_SIZE][LAYER_2_SIZE],

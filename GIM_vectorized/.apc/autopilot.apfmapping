@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="accelerator.cpp" path="C:\GIM_HLS\GIM_vectorized\accelerator.cpp"/>
+    <originFiles name="activation.cpp" path="C:\GIM_HLS\GIM_vectorized\activation.cpp"/>
+    <originFiles name="bias.cpp" path="C:\GIM_HLS\GIM_vectorized\bias.cpp"/>
+    <originFiles name="biases_layer1.csv" path="C:\Users\gaozh.000\Downloads\biases_layer1.csv"/>
+    <originFiles name="biases_layer2.csv" path="C:\Users\gaozh.000\Downloads\biases_layer2.csv"/>
+    <originFiles name="data.cpp" path="C:\GIM_HLS\GIM_vectorized\data.cpp"/>
+    <originFiles name="drawing_3_normalized.csv" path="C:\GIM_HLS\GIM_vectorized\drawing_3_normalized.csv"/>
+    <originFiles name="drawing_6.csv" path="C:\GIM_HLS\GIM_vectorized\drawing_6.csv"/>
+    <originFiles name="drawing_6_normalized.csv" path="C:\GIM_HLS\GIM_vectorized\drawing_6_normalized.csv"/>
+    <originFiles name="error.cpp" path="C:\GIM_HLS\GIM_vectorized\error.cpp"/>
+    <originFiles name="float_20_0.csv" path="C:\Users\gaozh.000\Downloads\float_20_0.csv"/>
+    <originFiles name="float_20_1.csv" path="C:\Users\gaozh.000\Downloads\recsvnumbernormalized20x20\float_20_1.csv"/>
+    <originFiles name="float_20_2.csv" path="C:\Users\gaozh.000\Downloads\recsvnumbernormalized20x20\float_20_2.csv"/>
+    <originFiles name="float_20_3.csv" path="C:\Users\gaozh.000\Downloads\recsvnumbernormalized20x20\float_20_3.csv"/>
+    <originFiles name="float_20_4.csv" path="C:\Users\gaozh.000\Downloads\recsvnumbernormalized20x20\float_20_4.csv"/>
+    <originFiles name="float_20_5.csv" path="C:\Users\gaozh.000\Downloads\recsvnumbernormalized20x20\float_20_5.csv"/>
+    <originFiles name="float_20_6.csv" path="C:\Users\gaozh.000\Downloads\recsvnumbernormalized20x20\float_20_6.csv"/>
+    <originFiles name="float_20_7.csv" path="C:\Users\gaozh.000\Downloads\recsvnumbernormalized20x20\float_20_7.csv"/>
+    <originFiles name="float_20_8.csv" path="C:\Users\gaozh.000\Downloads\recsvnumbernormalized20x20\float_20_8.csv"/>
+    <originFiles name="float_20_9.csv" path="C:\Users\gaozh.000\Downloads\recsvnumbernormalized20x20\float_20_9.csv"/>
+    <originFiles name="layer.cpp" path="C:\GIM_HLS\GIM_vectorized\layer.cpp"/>
+    <originFiles name="matmul.cpp" path="C:\GIM_HLS\GIM_vectorized\matmul.cpp"/>
+    <originFiles name="test_matrix(1).csv" path="C:\Users\gaozh.000\Downloads\test_matrix(1).csv"/>
+    <originFiles name="test_matrix.csv" path="C:\Users\gaozh.000\Downloads\test_matrix.csv"/>
+    <originFiles name="test_matrix0.csv" path="C:\Users\gaozh.000\Downloads\test_matrix0.csv"/>
+    <originFiles name="test_matrix2.csv" path="C:\Users\gaozh.000\Downloads\test_matrix2.csv"/>
+    <originFiles name="test_matrix7.csv" path="C:\Users\gaozh.000\Downloads\test_matrix7.csv"/>
+    <originFiles name="w1(1).csv" path="C:\GIM_HLS\GIM_vectorized\w1(1).csv"/>
+    <originFiles name="w1.csv" path="C:\GIM_HLS\GIM_vectorized\w1.csv"/>
+    <originFiles name="weights_layer1.csv" path="C:\Users\gaozh.000\Downloads\weights_layer1.csv"/>
+    <originFiles name="weights_layer2.csv" path="C:\Users\gaozh.000\Downloads\weights_layer2.csv"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="C:\GIM_HLS\GIM_vectorized\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
