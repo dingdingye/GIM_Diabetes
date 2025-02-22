@@ -5,22 +5,22 @@
 #include <cmath>
 #include <algorithm>
 
-std::vector<std::vector<double>> matmul(
-    std::vector<std::vector<double>>& A,
-    std::vector<std::vector<double>>& B);
+std::vector<std::vector<double> > matmul(
+    std::vector<std::vector<double> >& A,
+    std::vector<std::vector<double> >& B);
 
 /// Compute W^T * delta, assuming both W and delta are shape [N x M].
-std::vector<std::vector<double>> matmulTransposeW(
-    std::vector<std::vector<double>>& W,
-    std::vector<std::vector<double>>& delta);
+std::vector<std::vector<double> > matmulTransposeW(
+    std::vector<std::vector<double> >& W,
+    std::vector<std::vector<double> >& delta);
 
-std::vector<std::vector<double>> forwardPropagation(
-    std::vector<std::vector<double>>& input,
-    std::vector<std::vector<double>>& weights,
+std::vector<std::vector<double> > forwardPropagation(
+    std::vector<std::vector<double> >& input,
+    std::vector<std::vector<double> >& weights,
     std::vector<double>& biases,
     int activation);
 
-void print2D(const std::vector<std::vector<double>>& matrix);
+void print2D(const std::vector<std::vector<double> >& matrix);
 void print1D(const std::vector<double>& vec);
 //-----------------------------------------------------------------------
 // backPropagationSingleSample
@@ -37,12 +37,12 @@ void print1D(const std::vector<double>& vec);
 // Assumes ReLU activation. If you have multiple activations,
 // you'd switch on the 'activation' parameter similarly to your forward pass.
 //-----------------------------------------------------------------------
-std::vector<std::vector<double>> backPropagationSingleSample(
-    std::vector<std::vector<double>>& input,
-    std::vector<std::vector<double>>& weights,
-    std::vector<double>& biases,
-    std::vector<std::vector<double>>& output,
-    std::vector<std::vector<double>>& dOut,
+std::vector<std::vector <double> > backPropagationSingleSample(
+    std::vector<std::vector <double> > & input,
+    std::vector<std::vector <double> > & weights,
+    std::vector<double> & biases,
+    std::vector <std::vector <double> > & output,
+    std::vector<std::vector <double> > & dOut,
     int activation, // if you need to handle other activation types
     double learning_rate
 );
