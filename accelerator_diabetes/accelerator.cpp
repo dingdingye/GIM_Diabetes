@@ -92,8 +92,9 @@ Inference accelerator(fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZ
             output_2[0] = array_out2.output_k[0];
             output_2[1] = array_out2.output_k[1];
 
-            // ADD MORE LAYERS HERE
-
+            // Check if weights are converging
+            cout << "layer 2 weight: {" << w2_local[0][0] << ", " << w2_local[0][1] << } << endl;
+            
             // make inferences for the return array if training has completed, INCREASE POSSIBLE OUTPUTS AND LOOK INTO THRESHOLDS
             if (output_2[0] > 0.5) {
                 output_array.inference[j] = 1;

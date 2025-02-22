@@ -1,16 +1,16 @@
-INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator\accelerator.hlsrun_csim_summary, at 02/22/25 15:35:27
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator\accelerator.hlsrun_csim_summary, at 02/22/25 15:32:08
 INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator -config C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg -cmdlineconfig C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline
 
 ****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
   **** SW Build 5069499 on May 21 2024
   **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
   **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-  **** Start of session at: Sat Feb 22 15:35:33 2025
+  **** Start of session at: Sat Feb 22 15:32:13 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source C:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
-INFO: [HLS 200-10] For user 'GIM' on host 'gim_laptop_1' (Windows NT_amd64 version 10.0) on Sat Feb 22 15:35:36 -0800 2025
+INFO: [HLS 200-10] For user 'GIM' on host 'gim_laptop_1' (Windows NT_amd64 version 10.0) on Sat Feb 22 15:32:15 -0800 2025
 INFO: [HLS 200-10] In directory 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component'
 INFO: [HLS 200-2005] Using work_dir C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
@@ -48,7 +48,7 @@ INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
 INFO: [HLS 200-2036] Building debug C Simulation binaries
    Compiling ../../../../../main.cpp in debug mode
-csim.mk:88: recipe for target 'obj/main.o' failed
+   Generating csim.exe
 In file included from ../../../../../main.cpp:2:
 In file included from ../../../../../gim_model.h:4:
 In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
@@ -64,21 +64,13 @@ C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro
 C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
 #define __GMP_LIBGMP_DLL 1
         ^
-../../../../../main.cpp:14:5: error: use of undeclared identifier 'readCSV'
-    readCSV("X_train.csv", X_train, num_train_rows, num_train_cols);
-    ^
-../../../../../main.cpp:15:5: error: use of undeclared identifier 'readCSV'
-    readCSV("Y_train.csv", Y_train, num_train_rows, num_train_cols);
-    ^
-../../../../../main.cpp:16:5: error: use of undeclared identifier 'readCSV'
-    readCSV("X_test.csv", X_test, num_train_rows, num_train_cols);
-    ^
-../../../../../main.cpp:17:5: error: use of undeclared identifier 'readCSV'
-    readCSV("Y_test.csv", Y_test, num_train_rows, num_train_cols);
-    ^
-1 warning and 4 errors generated.
-make: *** [obj/main.o] Error 1
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+1 warning generated.
+The following are the predictions of the DNN:
+0: 0
+1: 0
+2: 0
+3: 1
+INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-ERROR: 4
-INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 21.707 seconds; peak allocated memory: 231.449 MB.
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 2 seconds. Total elapsed time: 19.694 seconds; peak allocated memory: 232.039 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 28s

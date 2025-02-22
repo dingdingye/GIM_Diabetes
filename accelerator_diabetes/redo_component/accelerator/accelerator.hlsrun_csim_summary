@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "02/22/25 15:32:08",
- "timestampMillis": "805373702",
+ "dateTimestamp": "02/22/25 15:35:27",
+ "timestampMillis": "805572974",
  "buildStep": {
-  "cmdId": "f7a8c020-3d5a-4d76-a7df-09270c660a21",
+  "cmdId": "ff2ebae4-4d52-45e1-8c6b-9325dd11862d",
   "name": "vitis-run",
   "logFile": "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\redo_component\\accelerator\\logs\\accelerator.steps.log",
   "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\redo_component\\hls_config.cfg --work_dir accelerator ",
@@ -33,11 +33,131 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "02/22/25 15:32:08",
- "timestampMillis": "805373704",
+ "dateTimestamp": "02/22/25 15:35:27",
+ "timestampMillis": "805572975",
  "status": {
-  "cmdId": "f7a8c020-3d5a-4d76-a7df-09270c660a21",
+  "cmdId": "ff2ebae4-4d52-45e1-8c6b-9325dd11862d",
   "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/22/25 15:35:44",
+ "timestampMillis": "805589884",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "accelerator",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\accelerator.cpp",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\act_pe.cpp",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\array.cpp",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\bias_pe.cpp",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\csv_import.cpp",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\error_pe.cpp",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\gim_model.h",
+     "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\weight_pe.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/22/25 15:35:44",
+ "timestampMillis": "805589892",
+ "buildStep": {
+  "cmdId": "f0901ce6-0f05-48cb-8163-939b5f53f6d5",
+  "name": "csim_design",
+  "logFile": "C:/GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\redo_component\\accelerator\\hls\\hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\GIM_Repos\\GIM_Diabetes\\accelerator_diabetes\\redo_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/22/25 15:35:44",
+ "timestampMillis": "805589894",
+ "status": {
+  "cmdId": "f0901ce6-0f05-48cb-8163-939b5f53f6d5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/22/25 15:35:55",
+ "timestampMillis": "805600594",
+ "status": {
+  "cmdId": "f0901ce6-0f05-48cb-8163-939b5f53f6d5",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/22/25 15:35:56",
+ "timestampMillis": "805601138",
+ "status": {
+  "cmdId": "ff2ebae4-4d52-45e1-8c6b-9325dd11862d",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/22/25 15:35:56",
+ "timestampMillis": "805601139",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/22/25 15:35:56",
+ "timestampMillis": "805601140",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
  }
 }
 </ENTRY>
