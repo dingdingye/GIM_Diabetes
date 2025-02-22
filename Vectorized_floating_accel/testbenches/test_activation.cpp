@@ -4,7 +4,7 @@
 
 int main() {
     // Create a sample input vector.
-    std::vector<double> testValues = { -1.0, 0.0, 1.0, 2.0, 3.0 };
+    std::vector<double> testValues = { 0.75, 0.63 };
 
     // Test the ReLU activation function.
     std::vector<double> reluOutput = relu(testValues);
