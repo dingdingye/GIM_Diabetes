@@ -623,3 +623,28 @@
 02/22/25 16:23:41: SERVER: destructor for server bound to port 52381
 02/22/25 16:23:41: Server exiting with status 0.
 02/22/25 16:23:41: Closing log file.
+02/22/25 16:30:38: Running xcd server. This server was NOT built by gradle, but presumably rdi.
+02/22/25 16:30:38: Server was asked to start on port: '52410'
+02/22/25 16:30:38: Server is using token UUID: '238b63fa-e6f8-4a5e-bfd9-a332c33efd39'
+02/22/25 16:30:38: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+02/22/25 16:30:38: Attempting to start server on port '52410'
+02/22/25 16:30:38: Running Dispatch Server
+02/22/25 16:30:38: Version 2.2.0
+02/22/25 16:30:38: Dispatch Server: Accepted socket connection from client
+02/22/25 16:30:38: Starting Socket connection
+02/22/25 16:30:38: EXCHANGE_TOKEN received, server token: 238b63fa-e6f8-4a5e-bfd9-a332c33efd39, passed token: 238b63fa-e6f8-4a5e-bfd9-a332c33efd39
+02/22/25 16:30:38: DISPATCH_HANDLER: Adding handler from function makeHandler in library librdi_system_diagram failed with exception: Could not dynamically load librdi_system_diagram.dll
+02/22/25 16:30:38: SESSION_MGR: creating session with session uuid: '26765494-b95b-4957-bcc4-031954325323' and name 'vitis-run_compile_accelerator'
+02/22/25 16:30:38: KERNEL_SVC: creating session with uuid: '26765494-b95b-4957-bcc4-031954325323' and name 'vitis-run_compile_accelerator'
+02/22/25 16:30:38: GUIDANCE_SMGR: creating guidance session with uuid: '26765494-b95b-4957-bcc4-031954325323' and name 'vitis-run_compile_accelerator'
+02/22/25 16:30:51: Dispatch Server: Accepted socket connection from client
+02/22/25 16:30:51: Starting Socket connection
+02/22/25 16:31:08: SESSION_MGR: closing session for UUID '26765494-b95b-4957-bcc4-031954325323' with name 'vitis-run_compile_accelerator'
+02/22/25 16:31:08: KERNEL_SVC: closing session for UUID '26765494-b95b-4957-bcc4-031954325323' with name 'vitis-run_compile_accelerator'
+02/22/25 16:31:08: GUIDANCE_SMGR: closing session for UUID '26765494-b95b-4957-bcc4-031954325323' with name 'vitis-run_compile_accelerator'
+02/22/25 16:31:08: STOP_SERVER received, server token: 238b63fa-e6f8-4a5e-bfd9-a332c33efd39, passed token: 238b63fa-e6f8-4a5e-bfd9-a332c33efd39
+02/22/25 16:31:08: Socket received request to stop server.
+02/22/25 16:31:08: Dispatch Server: do_await_stop
+02/22/25 16:31:08: SERVER: destructor for server bound to port 52410
+02/22/25 16:31:08: Server exiting with status 0.
+02/22/25 16:31:08: Closing log file.
