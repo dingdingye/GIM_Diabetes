@@ -46,4 +46,22 @@ std::vector<std::vector <double> > backPropagationSingleSample(
     int activation, // if you need to handle other activation types
     double learning_rate
 );
+
+std::vector<std::vector<double>> backProp(
+    std::vector<std::vector<double>> w_l_plus1,
+    std::vector<std::vector<double>> d_l_plus1,
+    std::vector<std::vector<double> >& input,
+    std::vector<std::vector<double> >& weights,
+    std::vector<double>& biases,
+    int activation
+);
+
+void updateWeightBias(
+    std::vector<std::vector<double>>& weights,
+    std::vector<double>& biases,
+    std::vector<std::vector<double>>& input,
+    std::vector<std::vector<double>>& d_l,
+    double learning_rate
+);
+
 #endif // LAYER_H

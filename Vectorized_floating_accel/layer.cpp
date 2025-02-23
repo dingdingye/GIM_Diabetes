@@ -170,9 +170,12 @@ std::vector<std::vector<double> > forwardPropagation(
     return output;
 }
 
-std::vector<std::vector<double>> backProp(
+std::vector<std::vector<double>> backProp (
     std::vector<std::vector<double>> w_l_plus1,
     std::vector<std::vector<double>> d_l_plus1,
+    std::vector<std::vector<double> >& input,
+    std::vector<std::vector<double> >& weights,
+    std::vector<double>& biases,
     int activation
 )
 {
@@ -180,8 +183,58 @@ std::vector<std::vector<double>> backProp(
     std::vector<std::vector<double>> w_l_plus1_T = transpose(w_l_plus1);
     std::vector<std::vector<double>> temp = matmul(w_l_plus1_T, d_l_plus1);
     
+    // Getting the Net term for this layer 
+    std::vector<std::vector<double> > mid = matmul(weights, input);
+    std::vector<std::vector<double>> net(mid.size(), std::vector<double>(mid[0].size(), 0.0)); // Net should be the same size as biases
+    for (size_t i = 0; i < mid.size(); ++i) {
+        for (size_t j = 0; j < mid[i].size(); ++j) {
+            net[i][j] = mid[i][j] + biases[i];
+        }
+    }
+
     if (activation == 0) {
+        std::vector<std::vector<double>> d_activation(net.size(), std::vector<double>(net[0].size(), 0));
+        for (int ii = 0; ii < d_activation.size(); ++ii){
+            d_activation[ii] = derivative_relu(net[ii]);
+        }
         
+        if (temp.size() != d_activation.size()){
+            printf("Dimension of temp mat w*d+1: %d x %d \n", temp.size(), temp[0].size());
+            printf("Activation function is: %d x 1 \n", d_activation.size());
+            throw std::runtime_error("Backprop temp matrix and d activation vector size mismatch");
+        }
+        for (int ii = 0; ii < temp.size(); ++ii) {
+            for (int jj = 0; jj < temp[0].size(); ++jj) {
+                temp[ii][jj] *= d_activation[ii][0];
+            }
+        }
+    } else {
+        throw std::runtime_error("Haven't supported any other activation functions for backprop"); 
+    }
+    return temp;
+}
+
+void updateWeightBias (
+    std::vector<std::vector<double>>& weights,
+    std::vector<double>& biases,
+    std::vector<std::vector<double>>& input,
+    std::vector<std::vector<double>>& d_l,
+    double learning_rate
+)
+{
+    std::vector<std::vector<double>> input_T = transpose(input);
+    std::vector<std::vector<double>> update_temp_mat = matmul(d_l, input_T);
+    if (update_temp_mat.size() != weights.size() ||
+        update_temp_mat[0].size() != weights[0].size()) {  
+            printf("Update_temp_mat is %d x %d\n", update_temp_mat.size(), update_temp_mat[0].size());
+            printf("weights mat is %d x %d\n", weights.size(), weights[0].size());
+            throw std::runtime_error("Weight update matrices sizes do not match\n");
+    }
+    for (int i = 0; i < weights.size(); ++i) {
+        for (int j = 0; j < weights[0].size(); ++j) {
+            weights[i][j] = weights[i][j] - learning_rate * update_temp_mat[i][j];
+        }
+        biases[i] = biases[i] - learning_rate * d_l[i][0];
     }
 }
 
@@ -257,6 +310,7 @@ std::vector<std::vector<double> > backPropagationSingleSample(
     // delta is: (output_dim x 1)
     // input is: (input_dim x 1)
     // weights is: (output_dim x input_dim)
+
 
     for (size_t i = 0; i < dOut.size(); i++) {
         for (size_t j = 0; j < input.size(); j++) {
