@@ -16,6 +16,10 @@ int main() {
     readCSV("X_test.csv", X_test, num_train_rows, num_train_cols);
     readCSV("Y_test.csv", Y_test, num_train_rows, num_train_cols);
 
+    cout << "Y_train size: " << double(sizeof(Y_train)) << endl;
+    cout << "Y00, 10: " << double(Y_train[0][0])  << double(Y_train[1][0]) << endl;
+    cout << "CSV files successfully loaded" << endl;
+
 
     // matrices initialized with random values from Python, known to converge, MIGHT HAVE TO FIND CONVERGING VALUES? SHOULD BE FINE THO
         // Initialize weights and biases (example values)
@@ -61,10 +65,10 @@ int main() {
     fixed_16 bias_2[ARRAY_SIZE] = {0};
 
     // training the array
-    Inference training = accelerator(weight_1, weight_2, bias_1, bias_2, 1);
+    Inference training = accelerator(X_train, Y_train, weight_1, weight_2, bias_1, bias_2, 1);
 
     // running inference using the trained accelerator
-    Inference output = accelerator(training.new_w1, training.new_w2, training.new_b1, training.new_b2, 0);
+    Inference output = accelerator(X_test, Y_test, training.new_w1, training.new_w2, training.new_b1, training.new_b2, 0);
 
     // capture the outputs of the accelerator
     cout << "The following are the predictions of the DNN:" << endl;

@@ -4,7 +4,7 @@
 using namespace std;
 
 // now, we actually run the full model
-Inference accelerator(fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZE][ARRAY_SIZE],
+Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labels[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZE][ARRAY_SIZE],
 				fixed_16  bias_1[ARRAY_SIZE], fixed_16 bias_2[ARRAY_SIZE],
                 fixed_16 training) {
 
@@ -14,27 +14,30 @@ Inference accelerator(fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZ
 
     // CHANGE INITIAL VECTOR/MATRIX SIZES HERE
     // initializing the data for the XOR problem
-    fixed_16 x1[4] = {0, 0, 1, 1};
-    fixed_16 x2[4] = {0, 1, 0, 1};
-    fixed_16 y[4] = {0, 1, 1, 0};
+    // fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS];
+    // memcpy(X, data, sizeof(data));
+    // fixed_16 x1[]
+    fixed_16 x1[ARRAY_SIZE] = {0};
+    fixed_16 x2[ARRAY_SIZE] = {0};
+    // fixed_16 y[4] = {0, 1, 1, 0};
     // setting up initial values for signals between layers
     fixed_16 output_kmin1[2] = {0, 0};
 
     // initializing internal arrays with zeros
-    fixed_16 delta_2[ARRAY_SIZE] = {0, 0};
-    fixed_16 output_back1[ARRAY_SIZE] = {0, 0};
-    fixed_16 delta_1[ARRAY_SIZE] = {0, 0};
-    fixed_16 weight_changes_2[ARRAY_SIZE][ARRAY_SIZE] = {{0, 0}, {0, 0}};
-    fixed_16 bias_2_update[ARRAY_SIZE] = {0, 0};
+    fixed_16 delta_2[ARRAY_SIZE] = {0};
+    fixed_16 output_back1[ARRAY_SIZE] = {0};
+    fixed_16 delta_1[ARRAY_SIZE] = {0};
+    fixed_16 weight_changes_2[ARRAY_SIZE][ARRAY_SIZE] = {0};
+    fixed_16 bias_2_update[ARRAY_SIZE] = {0};
 
-    fixed_16 output_back2[ARRAY_SIZE] = {0, 0};
-    fixed_16 delta_0[ARRAY_SIZE] = {0, 0};
-    fixed_16 weight_changes_1[ARRAY_SIZE][ARRAY_SIZE] = {{0, 0}, {0, 0}};
-    fixed_16 bias_1_update[ARRAY_SIZE] = {0, 0};
+    fixed_16 output_back2[ARRAY_SIZE] = {0};
+    fixed_16 delta_0[ARRAY_SIZE] = {0};
+    fixed_16 weight_changes_1[ARRAY_SIZE][ARRAY_SIZE] = {0};
+    fixed_16 bias_1_update[ARRAY_SIZE] = {0};
 
-    fixed_16 output_0[ARRAY_SIZE] = {0, 0};
-    fixed_16 output_1[ARRAY_SIZE] = {0, 0};
-    fixed_16 output_2[ARRAY_SIZE] = {0, 0};
+    fixed_16 output_0[ARRAY_SIZE] = {0};
+    fixed_16 output_1[ARRAY_SIZE] = {0};
+    fixed_16 output_2[ARRAY_SIZE] = {0};
 
     // dummy arrays used to capture unused outputs
     fixed_16 dummy1[ARRAY_SIZE];
@@ -69,13 +72,14 @@ Inference accelerator(fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZ
 
         // iterate through all the data points
         int j;
-        for (j = 0; j < 4; j++) {
+        for (j = 0; j < MAX_DATA_COLS; j++) {
 #pragma HLS PIPELINE
             // setup the initial data input
-            output_0[0] = x1[j];
-            output_0[1] = x2[j];
+            for (int n; n < ARRAY_SIZE; n++ ) {output_0[n] = data[j][n];}
+            // output_0[0] = x1[j];
+            // output_0[1] = x2[j];
 
-            // initialize the error backpropagation cout
+            // initialize the error backpropagatoution cout
             delta_1[0] = 0;
             delta_1[1] = 0; 
             delta_2[0] = 0; 
@@ -93,8 +97,8 @@ Inference accelerator(fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZ
             output_2[1] = array_out2.output_k[1];
 
             // Check if weights are converging
-            cout << "layer 2 weight: {" << w2_local[0][0] << ", " << w2_local[0][1] << } << endl;
-            
+            cout << "layer 2 weight: {" << w2_local[0][0] << ", " << w2_local[0][1] << " }" << endl;
+
             // make inferences for the return array if training has completed, INCREASE POSSIBLE OUTPUTS AND LOOK INTO THRESHOLDS
             if (output_2[0] > 0.5) {
                 output_array.inference[j] = 1;
@@ -105,19 +109,19 @@ Inference accelerator(fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZ
             
             // lastly calculate the final error with the derivative of mse after the last output, LOOK INTO SPARSE CATEGORIAL CROSS-ENTROPY CALCULATIONS
             if (model == 's') {
-                delta_2[0] = -(y[j] - output_2[0]) * output_2[0] * (1 - output_2[0]);
+                delta_2[0] = -(labels[j] - output_2[0]) * output_2[0] * (1 - output_2[0]);
             }
             else if (model == 'r') {
                 if (output_2[0] > 0)
-                    delta_2[0] = -(y[j] - output_2[0]);
+                    delta_2[0] = -(labels[j] - output_2[0]);
                 else
                     delta_2[0] = 0;
             }
             else if (model == 'l') {
                 if (output_2[0] > 0)
-                    delta_2[0] = -(y[j] - output_2[0]);
+                    delta_2[0] = -(labels[j] - output_2[0]);
                 else
-                    delta_2[0] = -(y[j] - output_2[0]) * alpha;
+                    delta_2[0] = -(labels[j] - output_2[0]) * alpha;
             }
             else {
                 // std::cout << "model invalid" << std::endl;
@@ -157,7 +161,7 @@ Inference accelerator(fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZ
 
         // store inaccuracy for model training reference
         float inaccuracy;
-        inaccuracy = y[j] - output_2[0];
+        inaccuracy = double(labels[j]) - output_2[0];
         //cout  << inaccuracy << endl;
 
         if (training == 0) {

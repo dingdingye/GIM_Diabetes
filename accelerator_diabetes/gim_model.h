@@ -79,7 +79,7 @@ Array model_array(fixed_16 weights[ARRAY_SIZE][ARRAY_SIZE],
 			fixed_16 delta_k[ARRAY_SIZE], fixed_16 eta,
 			char model, fixed_16 alpha, fixed_16 training);
 
-Inference accelerator(fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZE][ARRAY_SIZE],
+Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labels[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZE][ARRAY_SIZE],
 				 fixed_16  bias_1[ARRAY_SIZE], fixed_16 bias_2[ARRAY_SIZE],
                  fixed_16 training);
 
