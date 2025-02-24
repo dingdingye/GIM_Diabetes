@@ -1,0 +1,280 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator\accelerator.hlsrun_csim_summary, at 02/24/25 11:39:49
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator -config C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg -cmdlineconfig C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Mon Feb 24 11:39:53 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source C:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'GIM' on host 'gim_laptop_1' (Windows NT_amd64 version 10.0) on Mon Feb 24 11:39:59 -0800 2025
+INFO: [HLS 200-10] In directory 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component'
+INFO: [HLS 200-2005] Using work_dir C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\X_test.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/X_test.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\X_train.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/X_train.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\Y_test.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(21)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/Y_test.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\Y_train.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(22)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/Y_train.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../accelerator.cpp in debug mode
+csim.mk:130: recipe for target 'obj/accelerator.o' failed
+In file included from ../../../../../accelerator.cpp:1:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+../../../../../accelerator.cpp:112:42: error: use of overloaded operator '-' is ambiguous (with operand types 'fixed_16[16]' (aka 'ap_fixed<16, 7>[16]') and 'fixed_16' (aka 'ap_fixed<16, 7>'))
+                delta_2[0] = -(labels[j] - output_2[0]) * output_2[0] * (1 - output_2[0]);
+                               ~~~~~~~~~ ^ ~~~~~~~~~~~
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2372:1: note: candidate function [with _AP_W = 16, _AP_I = 7, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(bool, 1, false)
+^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2346:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(-, C_TYPE, (BITS), (SIGN), minus)    \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2302:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+../../../../../accelerator.cpp:112:42: note: built-in candidate operator-(struct ap_fixed<16, 7, AP_TRN, AP_WRAP, 0> *, long long)
+                delta_2[0] = -(labels[j] - output_2[0]) * output_2[0] * (1 - output_2[0]);
+                                         ^
+../../../../../accelerator.cpp:112:42: note: built-in candidate operator-(const struct ap_fixed<16, 7, AP_TRN, AP_WRAP, 0> *, long long)
+../../../../../accelerator.cpp:112:42: note: built-in candidate operator-(volatile struct ap_fixed<16, 7, AP_TRN, AP_WRAP, 0> *, long long)
+../../../../../accelerator.cpp:112:42: note: built-in candidate operator-(const volatile struct ap_fixed<16, 7, AP_TRN, AP_WRAP, 0> *, long long)
+../../../../../accelerator.cpp:116:46: error: use of overloaded operator '-' is ambiguous (with operand types 'fixed_16[16]' (aka 'ap_fixed<16, 7>[16]') and 'fixed_16' (aka 'ap_fixed<16, 7>'))
+                    delta_2[0] = -(labels[j] - output_2[0]);
+                                   ~~~~~~~~~ ^ ~~~~~~~~~~~
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2372:1: note: candidate function [with _AP_W = 16, _AP_I = 7, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(bool, 1, false)
+^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2346:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(-, C_TYPE, (BITS), (SIGN), minus)    \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2302:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+../../../../../accelerator.cpp:116:46: note: built-in candidate operator-(struct ap_fixed<16, 7, AP_TRN, AP_WRAP, 0> *, long long)
+                    delta_2[0] = -(labels[j] - output_2[0]);
+                                             ^
+../../../../../accelerator.cpp:116:46: note: built-in candidate operator-(const struct ap_fixed<16, 7, AP_TRN, AP_WRAP, 0> *, long long)
+../../../../../accelerator.cpp:116:46: note: built-in candidate operator-(volatile struct ap_fixed<16, 7, AP_TRN, AP_WRAP, 0> *, long long)
+../../../../../accelerator.cpp:116:46: note: built-in candidate operator-(const volatile struct ap_fixed<16, 7, AP_TRN, AP_WRAP, 0> *, long long)
+../../../../../accelerator.cpp:122:46: error: use of overloaded operator '-' is ambiguous (with operand types 'fixed_16[16]' (aka 'ap_fixed<16, 7>[16]') and 'fixed_16' (aka 'ap_fixed<16, 7>'))
+                    delta_2[0] = -(labels[j] - output_2[0]);
+                                   ~~~~~~~~~ ^ ~~~~~~~~~~~
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2372:1: note: candidate function [with _AP_W = 16, _AP_I = 7, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(bool, 1, false)
+^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2346:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(-, C_TYPE, (BITS), (SIGN), minus)    \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2302:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+../../../../../accelerator.cpp:122:46: note: built-in candidate operator-(struct ap_fixed<16, 7, AP_TRN, AP_WRAP, 0> *, long long)
+                    delta_2[0] = -(labels[j] - output_2[0]);
+                                             ^
+../../../../../accelerator.cpp:122:46: note: built-in candidate operator-(const struct ap_fixed<16, 7, AP_TRN, AP_WRAP, 0> *, long long)
+../../../../../accelerator.cpp:122:46: note: built-in candidate operator-(volatile struct ap_fixed<16, 7, AP_TRN, AP_WRAP, 0> *, long long)
+../../../../../accelerator.cpp:122:46: note: built-in candidate operator-(const volatile struct ap_fixed<16, 7, AP_TRN, AP_WRAP, 0> *, long long)
+../../../../../accelerator.cpp:124:46: error: use of overloaded operator '-' is ambiguous (with operand types 'fixed_16[16]' (aka 'ap_fixed<16, 7>[16]') and 'fixed_16' (aka 'ap_fixed<16, 7>'))
+                    delta_2[0] = -(labels[j] - output_2[0]) * alpha;
+                                   ~~~~~~~~~ ^ ~~~~~~~~~~~
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2372:1: note: candidate function [with _AP_W = 16, _AP_I = 7, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(bool, 1, false)
+^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2346:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(-, C_TYPE, (BITS), (SIGN), minus)    \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2302:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+../../../../../accelerator.cpp:124:46: note: built-in candidate operator-(struct ap_fixed<16, 7, AP_TRN, AP_WRAP, 0> *, long long)
+                    delta_2[0] = -(labels[j] - output_2[0]) * alpha;
+                                             ^
+../../../../../accelerator.cpp:124:46: note: built-in candidate operator-(const struct ap_fixed<16, 7, AP_TRN, AP_WRAP, 0> *, long long)
+../../../../../accelerator.cpp:124:46: note: built-in candidate operator-(volatile struct ap_fixed<16, 7, AP_TRN, AP_WRAP, 0> *, long long)
+../../../../../accelerator.cpp:124:46: note: built-in candidate operator-(const volatile struct ap_fixed<16, 7, AP_TRN, AP_WRAP, 0> *, long long)
+../../../../../accelerator.cpp:162:22: error: functional-style cast from 'fixed_16 *' (aka 'ap_fixed<16, 7> *') to 'double' is not allowed
+        inaccuracy = double(labels[j]) - output_2[0];
+                     ^~~~~~~~~~~~~~~~
+../../../../../accelerator.cpp:162:40: error: use of overloaded operator '-' is ambiguous (with operand types 'double' and 'fixed_16' (aka 'ap_fixed<16, 7>'))
+        inaccuracy = double(labels[j]) - output_2[0];
+                     ~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2372:1: note: candidate function [with _AP_W = 16, _AP_I = 7, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(bool, 1, false)
+^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2346:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(-, C_TYPE, (BITS), (SIGN), minus)    \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2302:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2373:1: note: candidate function [with _AP_W = 16, _AP_I = 7, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(char, 8, CHAR_IS_SIGNED)
+^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2346:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(-, C_TYPE, (BITS), (SIGN), minus)    \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2302:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2374:1: note: candidate function [with _AP_W = 16, _AP_I = 7, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(signed char, 8, true)
+^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2346:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(-, C_TYPE, (BITS), (SIGN), minus)    \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2302:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2375:1: note: candidate function [with _AP_W = 16, _AP_I = 7, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(unsigned char, 8, false)
+^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2346:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(-, C_TYPE, (BITS), (SIGN), minus)    \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2302:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2376:1: note: candidate function [with _AP_W = 16, _AP_I = 7, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(short, _AP_SIZE_short, true)
+^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2346:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(-, C_TYPE, (BITS), (SIGN), minus)    \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2302:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2377:1: note: candidate function [with _AP_W = 16, _AP_I = 7, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(unsigned short, _AP_SIZE_short, false)
+^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2346:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(-, C_TYPE, (BITS), (SIGN), minus)    \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2302:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2378:1: note: candidate function [with _AP_W = 16, _AP_I = 7, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(int, _AP_SIZE_int, true)
+^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2346:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(-, C_TYPE, (BITS), (SIGN), minus)    \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2302:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2379:1: note: candidate function [with _AP_W = 16, _AP_I = 7, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(unsigned int, _AP_SIZE_int, false)
+^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2346:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(-, C_TYPE, (BITS), (SIGN), minus)    \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2302:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2380:1: note: candidate function [with _AP_W = 16, _AP_I = 7, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(long, _AP_SIZE_long, true)
+^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2346:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(-, C_TYPE, (BITS), (SIGN), minus)    \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2302:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2381:1: note: candidate function [with _AP_W = 16, _AP_I = 7, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(unsigned long, _AP_SIZE_long, false)
+^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2346:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(-, C_TYPE, (BITS), (SIGN), minus)    \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2302:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2382:1: note: candidate function [with _AP_W = 16, _AP_I = 7, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(ap_slong, _AP_SIZE_ap_slong, true)
+^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2346:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(-, C_TYPE, (BITS), (SIGN), minus)    \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2302:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2383:1: note: candidate function [with _AP_W = 16, _AP_I = 7, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(ap_ulong, _AP_SIZE_ap_slong, false)
+^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2346:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(-, C_TYPE, (BITS), (SIGN), minus)    \
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h:2302:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+../../../../../accelerator.cpp:162:40: note: built-in candidate operator-(double, float)
+        inaccuracy = double(labels[j]) - output_2[0];
+                                       ^
+../../../../../accelerator.cpp:162:40: note: built-in candidate operator-(double, double)
+../../../../../accelerator.cpp:162:40: note: built-in candidate operator-(double, long double)
+../../../../../accelerator.cpp:162:40: note: built-in candidate operator-(double, __float128)
+../../../../../accelerator.cpp:162:40: note: built-in candidate operator-(double, int)
+../../../../../accelerator.cpp:162:40: note: built-in candidate operator-(double, long)
+../../../../../accelerator.cpp:162:40: note: built-in candidate operator-(double, long long)
+../../../../../accelerator.cpp:162:40: note: built-in candidate operator-(double, __int128)
+../../../../../accelerator.cpp:162:40: note: built-in candidate operator-(double, unsigned int)
+../../../../../accelerator.cpp:162:40: note: built-in candidate operator-(double, unsigned long)
+../../../../../accelerator.cpp:162:40: note: built-in candidate operator-(double, unsigned long long)
+../../../../../accelerator.cpp:162:40: note: built-in candidate operator-(double, unsigned __int128)
+1 warning and 6 errors generated.
+make: *** [obj/accelerator.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 6 seconds. Total CPU system time: 2 seconds. Total elapsed time: 30.83 seconds; peak allocated memory: 233.602 MB.

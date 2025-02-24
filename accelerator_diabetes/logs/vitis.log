@@ -184,3 +184,29 @@ java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\.w
 13:38:33 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM5418889602275349550 -r C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM3740709341765962087\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
 13:38:35 INFO  : Embedded Template List generated successfully
 14:04:20 INFO  : created .gitignore file for the project C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component
+11:39:06 INFO  : updated workspace path: C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes
+11:39:07 INFO  : Marking the target connection as default Local
+11:39:07 INFO  : Marking the target connection as default Linux Agent
+11:39:07 INFO  : Marking the target connection as default XRTServer
+11:39:07 INFO  : Marking the target connection as default LinuxEmulation
+11:39:07 INFO  : Marking the target connection as default QEMU
+11:39:13 INFO  : Successfully created repository data at C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM9966067030088127718
+11:39:13 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM15877225273787442292 -r C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM9966067030088127718\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+11:39:14 INFO  : Embedded Template List generated successfully
+11:39:14 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\repo.py -st   C:\Xilinx\Vitis\2024.1\data\embeddedsw && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+11:39:18 INFO  : Successfully created repository data at C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes/.wsdata
+11:39:18 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM6283743316968368634 -r C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+11:39:19 INFO  : Embedded Template List generated successfully
+11:43:52 INFO  : connection terminated
+11:43:52 INFO  : connection terminated
+11:43:52 INFO  : scheduling shutdown timer for 2 seconds ...
+11:43:52 INFO  : scheduling shutdown timer for 2 seconds ...
+11:43:54 INFO  : Terminating Vitis C++ Server
+11:43:54 INFO  : Terminating Vitis C++ Server
+11:43:54 INFO  : Vitis C++ Server terminated
+11:44:41 INFO  : updated workspace path: C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes
+11:44:46 INFO  : Successfully created repository data at C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM11478211034629439290
+11:44:46 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM8323702749222908412 -r C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM11478211034629439290\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+11:44:47 INFO  : Embedded Template List generated successfully
+11:44:47 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM13597810613931908268 -r C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+11:44:49 INFO  : Embedded Template List generated successfully

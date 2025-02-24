@@ -17,7 +17,7 @@ int main() {
     readCSV("Y_test.csv", Y_test, num_train_rows, num_train_cols);
 
     cout << "Y_train size: " << double(sizeof(Y_train)) << endl;
-    cout << "Y00, 10: " << double(Y_train[0][0])  << double(Y_train[1][0]) << endl;
+    cout << "first 3 labels: " << double(Y_train[0][0])  << ", " << double(Y_train[1][0]) << double(Y_train[2][0]) << endl; // y labels should be 0, 1, 2 for the 
     cout << "CSV files successfully loaded" << endl;
 
 
@@ -72,6 +72,7 @@ int main() {
 
     // capture the outputs of the accelerator
     cout << "The following are the predictions of the DNN:" << endl;
+    cout << "0: " << output.inference[0] << endl;
     cout << "0: " << output.inference[0] << endl;
     cout << "1: " << output.inference[1] << endl;
     cout << "2: " << output.inference[2] << endl;

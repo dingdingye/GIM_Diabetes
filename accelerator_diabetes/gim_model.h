@@ -8,7 +8,7 @@
 #include <iostream>
 
 #define ARRAY_SIZE 16
-#define MAX_DATA_ROWS 9721
+#define MAX_DATA_ROWS 10 // should be 9721, reduced numbers for testing
 #define MAX_DATA_COLS 16
 #define NUM_ITERATIONS 50
 

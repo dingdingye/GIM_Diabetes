@@ -17,11 +17,11 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
     // fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS];
     // memcpy(X, data, sizeof(data));
     // fixed_16 x1[]
-    fixed_16 x1[ARRAY_SIZE] = {0};
-    fixed_16 x2[ARRAY_SIZE] = {0};
+    // fixed_16 x1[ARRAY_SIZE] = {0};
+    // fixed_16 x2[ARRAY_SIZE] = {0};
     // fixed_16 y[4] = {0, 1, 1, 0};
     // setting up initial values for signals between layers
-    fixed_16 output_kmin1[2] = {0, 0};
+    fixed_16 output_kmin1[ARRAY_SIZE] = {0};
 
     // initializing internal arrays with zeros
     fixed_16 delta_2[ARRAY_SIZE] = {0};
@@ -46,16 +46,17 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
 
     // CHANGE TO MATCH NUMBER OF LAYERS/SIZE OF MATRICES
     // make local versions of the weights/biases
-    fixed_16 w1_local[ARRAY_SIZE][ARRAY_SIZE] = {{0, 0}, {0, 0}};
-    fixed_16 w2_local[ARRAY_SIZE][ARRAY_SIZE] = {{0, 0}, {0, 0}};
-    fixed_16 bias_1_local[ARRAY_SIZE] = {0, 0};
-    fixed_16 bias_2_local[ARRAY_SIZE] = {0, 0};
+    fixed_16 w1_local[ARRAY_SIZE][ARRAY_SIZE] = {0};
+    fixed_16 w2_local[ARRAY_SIZE][ARRAY_SIZE] = {0};
+    fixed_16 bias_1_local[ARRAY_SIZE] = {0};
+    fixed_16 bias_2_local[ARRAY_SIZE] = {0};
     for (int n = 0; n<ARRAY_SIZE; n++) {
         bias_1_local[n] = bias_1[n];
         bias_2_local[n] = bias_2[n];
         for (int m = 0;m<ARRAY_SIZE; m++) {
             w1_local[n][m] = w1[n][m];
             w2_local[n][m] = w2[n][m];
+ 
         }
     }
 
@@ -67,17 +68,22 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
     fixed_16 lr = 0.1; // learning rate
 
     // iterate through the alloted epochs
-    int i;
-    for (i = 0; i < NUM_ITERATIONS; i++) { // MATCH THE MATRIX SIZES THROUGHOUT
+    for (int i = 0; i < NUM_ITERATIONS; i++) { 
 
+        cout << double(bias_1_local[0]) << ", " << double(bias_2_local[0]) << endl;
+        // // Check if weights are converging
+        // cout << "layer 2 weight: {" << double(w2_local[0][0]) << ", " << double(w2_local[0][1]) << " }" << endl;
         // iterate through all the data points
         int j;
-        for (j = 0; j < MAX_DATA_COLS; j++) {
+        for (j = 0; j < MAX_DATA_ROWS; j++) {
 #pragma HLS PIPELINE
             // setup the initial data input
-            for (int n; n < ARRAY_SIZE; n++ ) {output_0[n] = data[j][n];}
-            // output_0[0] = x1[j];
-            // output_0[1] = x2[j];
+            for (int n = 0; n < ARRAY_SIZE; n++ ) {
+                output_0[n] = data[j][n];
+        
+            }
+            // cout << "j: " << double(j) << endl;
+            // cout << "output_0: " << double(output_0[0]) << ", " << double(output_0[1]) << ", " << double(output_0[2])<< endl; // check data loading
 
             // initialize the error backpropagatoution cout
             delta_1[0] = 0;
@@ -96,9 +102,6 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
             output_2[0] = array_out2.output_k[0];
             output_2[1] = array_out2.output_k[1];
 
-            // Check if weights are converging
-            cout << "layer 2 weight: {" << w2_local[0][0] << ", " << w2_local[0][1] << " }" << endl;
-
             // make inferences for the return array if training has completed, INCREASE POSSIBLE OUTPUTS AND LOOK INTO THRESHOLDS
             if (output_2[0] > 0.5) {
                 output_array.inference[j] = 1;
@@ -108,20 +111,21 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
             } // CHANGE THRESHOLD TO 0.9 / 0.1 AND TEST
             
             // lastly calculate the final error with the derivative of mse after the last output, LOOK INTO SPARSE CATEGORIAL CROSS-ENTROPY CALCULATIONS
+            // cout << "label: " << double(labels[j][0]) << endl;
             if (model == 's') {
-                delta_2[0] = -(labels[j] - output_2[0]) * output_2[0] * (1 - output_2[0]);
+                delta_2[0] = -(labels[j][0] - output_2[0]) * output_2[0] * (1 - output_2[0]);
             }
             else if (model == 'r') {
                 if (output_2[0] > 0)
-                    delta_2[0] = -(labels[j] - output_2[0]);
+                    delta_2[0] = -(labels[j][0] - output_2[0]);
                 else
                     delta_2[0] = 0;
             }
             else if (model == 'l') {
                 if (output_2[0] > 0)
-                    delta_2[0] = -(labels[j] - output_2[0]);
+                    delta_2[0] = -(labels[j][0] - output_2[0]);
                 else
-                    delta_2[0] = -(labels[j] - output_2[0]) * alpha;
+                    delta_2[0] = -(labels[j][0] - output_2[0]) * alpha;
             }
             else {
                 // std::cout << "model invalid" << std::endl;
@@ -129,8 +133,6 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
             }
 
             // run the backpropagation and update the array
-
-            // MORE LAYERS HERE
 
             // start with layer 2
             Array array_back2 = model_array(w2_local, bias_2_local, output_1, delta_2, lr, model, alpha, training);
@@ -154,14 +156,14 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
                 }
             }
 
-            if ((training == 0) && (j == 3)) { // CHANGE TO MORE DATA POINTS
-                break; // only run this for all 4 data points once if infering
+            if ((training == 0) && (j == MAX_DATA_ROWS)) { // CHANGE TO MORE DATA POINTS
+                break; // only run this for all data points once if infering
             }
         }
 
         // store inaccuracy for model training reference
         float inaccuracy;
-        inaccuracy = double(labels[j]) - output_2[0];
+        inaccuracy = labels[j][0] - output_2[0];
         //cout  << inaccuracy << endl;
 
         if (training == 0) {
