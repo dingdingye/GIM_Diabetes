@@ -199,8 +199,6 @@ std::vector<std::vector<double>> backProp (
         }
         
         if (temp.size() != d_activation.size()){
-            printf("Dimension of temp mat w*d+1: %d x %d \n", temp.size(), temp[0].size());
-            printf("Activation function is: %d x 1 \n", d_activation.size());
             throw std::runtime_error("Backprop temp matrix and d activation vector size mismatch");
         }
         for (int ii = 0; ii < temp.size(); ++ii) {
@@ -224,10 +222,9 @@ void updateWeightBias (
 {
     std::vector<std::vector<double>> input_T = transpose(input);
     std::vector<std::vector<double>> update_temp_mat = matmul(d_l, input_T);
+
     if (update_temp_mat.size() != weights.size() ||
         update_temp_mat[0].size() != weights[0].size()) {  
-            printf("Update_temp_mat is %d x %d\n", update_temp_mat.size(), update_temp_mat[0].size());
-            printf("weights mat is %d x %d\n", weights.size(), weights[0].size());
             throw std::runtime_error("Weight update matrices sizes do not match\n");
     }
     for (int i = 0; i < weights.size(); ++i) {

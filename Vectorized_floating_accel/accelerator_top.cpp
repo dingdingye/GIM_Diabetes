@@ -15,9 +15,9 @@ int main(){
                                                    {0.5, 0.5}, {0.5, 0.5}};
     std::vector<std::vector<double>> weights_l1 = {{0.5, 0.5}, {0.5, 0.5}};
 
-    std::vector<double> biases_l1 = {0.1, 0.2, 0.3, 0.4};
-    std::vector<double> biases_lh = {0.3, 0.4};
-    std::vector<double> biases_l2 = {0.1, 0.2};
+    std::vector<double> biases_l1 = {0.5, 0.5, 0.5, 0.5};
+    std::vector<double> biases_lh = {0.5, 0.5};
+    std::vector<double> biases_l2 = {0.5, 0.5};
 
     std::vector<std::vector<std::vector<double>>> input =  {{{0.0}, {0.0}}, 
                                                             {{0.0}, {1.0}}, 
@@ -31,7 +31,8 @@ int main(){
     std::vector<std::vector<double>> copy;
     int activation_l1 = 0; // relu
     int activation_l2 = 1; // softmax
-    for (int epoch = 0; epoch < 5; ++epoch){
+    int first_full_acc_epoch = 501;
+    for (int epoch = 0; epoch < 200; ++epoch){
         double correct = 0;
         for (int iteration = 0; iteration < 4; ++iteration) {
             printf("======================\n");
@@ -99,7 +100,7 @@ int main(){
             updateWeightBias(
                 weights_lh,
                 biases_lh,
-                result_lh,
+                result_l1,
                 d_lh,
                 0.1
             );
@@ -107,7 +108,7 @@ int main(){
             updateWeightBias(
                 weights_l1,
                 biases_l1,
-                result_l1,
+                input[iteration],
                 d_l1,
                 0.1
             );
@@ -126,10 +127,13 @@ int main(){
             print2D(weights_l1);
             printf("biases_l1:\n");
             print1D(biases_l1);
-            // printf("Dminus1:\n");
-            // print2D(d_minus1);
+
         }
         printf("Epoch %d accuracy: %f \n", epoch, correct/4);
+        if (correct/4 == 1.0) {
+            first_full_acc_epoch = first_full_acc_epoch > epoch ? epoch : first_full_acc_epoch;
+        }
     }
+    printf("First full accuracy occors in epoch %d \n", first_full_acc_epoch);
     return 0;
 }
