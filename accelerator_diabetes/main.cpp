@@ -72,11 +72,10 @@ int main() {
 
     // capture the outputs of the accelerator
     cout << "The following are the predictions of the DNN:" << endl;
-    cout << "0: " << output.inference[0] << endl;
-    cout << "0: " << output.inference[0] << endl;
-    cout << "1: " << output.inference[1] << endl;
-    cout << "2: " << output.inference[2] << endl;
-    cout << "3: " << output.inference[3] << endl;
+    cout << "0: " << output.inference[0] << "| Correct label:" << double(Y_test[0][0]) << endl;
+    cout << "1: " << output.inference[1] << "| Correct label:" << double(Y_test[1][0]) << endl;
+    cout << "2: " << output.inference[2] << "| Correct label:" << double(Y_test[2][0]) << endl;
+    cout << "3: " << output.inference[3] << "| Correct label:" << double(Y_test[3][0]) << endl;
     return 0;
 
 }

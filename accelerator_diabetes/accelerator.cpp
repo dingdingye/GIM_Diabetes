@@ -2,10 +2,11 @@
 #include <iostream>
 #include <fstream>
 #include <iomanip>
+#include <cmath>
 using namespace std;
 
 // Function to calculate accuracy and print it in a formatted table
-void calculate_accuracy(fixed_16 predictions[MAX_DATA_ROWS], fixed_16 labels[MAX_DATA_ROWS], int epoch) {
+void calculate_accuracy(fixed_16 predictions[MAX_DATA_ROWS], fixed_16 labels[MAX_DATA_ROWS], double loss, int epoch) {
     int correct = 0;
     for (int i = 0; i < MAX_DATA_ROWS; i++) {
         if (predictions[i] == labels[i]) {
@@ -15,19 +16,26 @@ void calculate_accuracy(fixed_16 predictions[MAX_DATA_ROWS], fixed_16 labels[MAX
     float accuracy = (float(correct) / MAX_DATA_ROWS) * 100;
 
     // Print formatted accuracy table
-    cout << "+----------------------+
-";
-    cout << "| Epoch: " << setw(10) << epoch << " |
-";
-    cout << "| Accuracy: " << setw(7) << fixed << setprecision(2) << accuracy << "% |
-";
-    cout << "+----------------------+
-";
+    cout << "+-----------------------------------------------------+" << endl;
+    cout << "| Epoch: " << setw(10) << epoch;
+    cout << "| Accuracy: " << setw(7) << fixed << setprecision(2) << accuracy << "% ";
+    cout << "| Loss: " << setw(10) << fixed << setprecision(6) << loss << "|"  << endl;
+}
+
+double categoricalCrossEntropy(fixed_16 y_true[MAX_DATA_ROWS], fixed_16 y_pred[MAX_DATA_ROWS]) {
+    double loss = 0.0;
+    const double epsilon = 1e-12;
+
+    for (int i = 0; i < MAX_DATA_ROWS; ++i) {
+        loss -= double(y_true[i] * log(double(double(y_pred[i]) + epsilon)));
+    }
+    return loss;
 }
 
 
 // now, we actually run the full model
 Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labels[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZE][ARRAY_SIZE],
+
 				fixed_16  bias_1[ARRAY_SIZE], fixed_16 bias_2[ARRAY_SIZE],
                 fixed_16 training) {
 
@@ -62,10 +70,10 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
     fixed_16 output_1[ARRAY_SIZE] = {0};
     fixed_16 output_2[ARRAY_SIZE] = {0};
 
-    // dummy arrays used to capture unused outputs
-    fixed_16 dummy1[ARRAY_SIZE];
-    fixed_16 dummy2[ARRAY_SIZE][ARRAY_SIZE];
-    fixed_16 dummy3[ARRAY_SIZE];
+    // // dummy arrays used to capture unused outputs
+    // fixed_16 dummy1[ARRAY_SIZE];
+    // fixed_16 dummy2[ARRAY_SIZE][ARRAY_SIZE];
+    // fixed_16 dummy3[ARRAY_SIZE];
 
     // CHANGE TO MATCH NUMBER OF LAYERS/SIZE OF MATRICES
     // make local versions of the weights/biases
@@ -93,7 +101,7 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
     // iterate through the alloted epochs
     for (int i = 0; i < NUM_ITERATIONS; i++) { 
 
-        cout << double(bias_1_local[0]) << ", " << double(bias_2_local[0]) << endl;
+        // cout << double(bias_1_local[0]) << ", " << double(bias_2_local[0]) << endl;
         // // Check if weights are converging
         // cout << "layer 2 weight: {" << double(w2_local[0][0]) << ", " << double(w2_local[0][1]) << " }" << endl;
         // iterate through all the data points
@@ -117,43 +125,59 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
             // run the forward propagation
             // start with layer 1
             Array array_out1 = model_array(w1_local, bias_1_local, output_0, delta_1, lr, model, alpha, training);
-            output_1[0] = array_out1.output_k[0];
-            output_1[1] = array_out1.output_k[1];
+            for (int n = 0; n < ARRAY_SIZE; n++) output_1[n] = array_out1.output_k[n];
+            // output_1[0] = array_out1.output_k[0];
+            // output_1[1] = array_out1.output_k[1];
 
             // then layer two
             Array array_out2 = model_array(w2_local, bias_2_local, output_1, delta_2, lr, model, alpha, training);
-            output_2[0] = array_out2.output_k[0];
-            output_2[1] = array_out2.output_k[1];
+            for (int n = 0; n < ARRAY_SIZE; n++) output_2[n] = array_out2.output_k[n];
+            // output_2[0] = array_out2.output_k[0];
+            // output_2[1] = array_out2.output_k[1];
 
-            // make inferences for the return array if training has completed, INCREASE POSSIBLE OUTPUTS AND LOOK INTO THRESHOLDS
-            if (output_2[0] > 0.5) {
-                output_array.inference[j] = 1;
+            // // make inferences for the return array if training has completed, INCREASE POSSIBLE OUTPUTS AND LOOK INTO THRESHOLDS
+            // if (output_2[0] > 0.5) {
+            //     output_array.inference[j] = 1;
+            // }
+            // else if (output_2[0] <= 0.5) {
+            //     output_array.inference[j] = 0;
+            // } // CHANGE THRESHOLD TO 0.9 / 0.1 AND TEST
+
+            // cout << double(j) << ": " << double(output_2[0]) << ", " << double(output_2[1]) << ", " << double(output_2[2])  << "| | ";
+
+            int highest_index = 0;
+            fixed_16 highest_output = output_2[0];
+            for (int i = 0; i < 3; i++) {
+                if (output_2[i] > highest_output) {
+                    output_2[i] = highest_output;
+                    highest_index = i;
+                }
             }
-            else if (output_2[0] <= 0.5) {
-                output_array.inference[j] = 0;
-            } // CHANGE THRESHOLD TO 0.9 / 0.1 AND TEST
+            output_array.inference[j] = highest_index;
+            // cout << double(output_array.inference[j]) << endl;
             
-            // lastly calculate the final error with the derivative of mse after the last output, LOOK INTO SPARSE CATEGORIAL CROSS-ENTROPY CALCULATIONS
-            // cout << "label: " << double(labels[j][0]) << endl;
-            if (model == 's') {
-                delta_2[0] = -(labels[j][0] - output_2[0]) * output_2[0] * (1 - output_2[0]);
-            }
-            else if (model == 'r') {
-                if (output_2[0] > 0)
-                    delta_2[0] = -(labels[j][0] - output_2[0]);
-                else
-                    delta_2[0] = 0;
-            }
-            else if (model == 'l') {
-                if (output_2[0] > 0)
-                    delta_2[0] = -(labels[j][0] - output_2[0]);
-                else
-                    delta_2[0] = -(labels[j][0] - output_2[0]) * alpha;
-            }
-            else {
-                // std::cout << "model invalid" << std::endl;
-                break;
-            }
+            double loss = categoricalCrossEntropy(output_array.inference, labels[0]);
+            // // lastly calculate the final error with the derivative of mse after the last output, LOOK INTO SPARSE CATEGORIAL CROSS-ENTROPY CALCULATIONS
+            // // cout << "label: " << double(labels[j][0]) << endl;
+            // if (model == 's') {
+            //     delta_2[0] = -(labels[j][0] - output_2[0]) * output_2[0] * (1 - output_2[0]);
+            // }
+            // else if (model == 'r') {
+            //     if (output_2[0] > 0)
+            //         delta_2[0] = -(labels[j][0] - output_2[0]);
+            //     else
+            //         delta_2[0] = 0;
+            // }
+            // else if (model == 'l') {
+            //     if (output_2[0] > 0)
+            //         delta_2[0] = -(labels[j][0] - output_2[0]);
+            //     else
+            //         delta_2[0] = -(labels[j][0] - output_2[0]) * alpha;
+            // }
+            // else {
+            //     // std::cout << "model invalid" << std::endl;
+            //     break;
+            // }
 
             // run the backpropagation and update the array
 

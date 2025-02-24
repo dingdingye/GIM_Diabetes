@@ -1,0 +1,139 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator\accelerator.hlsrun_csim_summary, at 02/24/25 12:29:52
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator -config C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg -cmdlineconfig C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Mon Feb 24 12:29:56 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source C:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'GIM' on host 'gim_laptop_1' (Windows NT_amd64 version 10.0) on Mon Feb 24 12:29:58 -0800 2025
+INFO: [HLS 200-10] In directory 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component'
+INFO: [HLS 200-2005] Using work_dir C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\X_test.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/X_test.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\X_train.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/X_train.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\Y_test.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(21)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/Y_test.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\Y_train.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(22)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/Y_train.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../accelerator.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../../accelerator.cpp:1:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+Y_train size: 320
+first 3 labels: 0, 12
+CSV files successfully loaded
+0, 0
++----------------------+| Epoch:          0 || Accuracy:   20.00% |+----------------------+-5.88, -2.59
++----------------------+| Epoch:          1 || Accuracy:   50.00% |+----------------------+-3.50, -11.45
++----------------------+| Epoch:          2 || Accuracy:   30.00% |+----------------------+-1.43, -30.21
++----------------------+| Epoch:          3 || Accuracy:   40.00% |+----------------------+-4.03, -42.45
++----------------------+| Epoch:          4 || Accuracy:   20.00% |+----------------------+-4.97, 63.46
++----------------------+| Epoch:          5 || Accuracy:   30.00% |+----------------------+-16.95, 46.00
++----------------------+| Epoch:          6 || Accuracy:   40.00% |+----------------------+-15.63, 40.84
++----------------------+| Epoch:          7 || Accuracy:   50.00% |+----------------------+-29.63, 30.79
++----------------------+| Epoch:          8 || Accuracy:   20.00% |+----------------------+-34.14, 8.91
++----------------------+| Epoch:          9 || Accuracy:   30.00% |+----------------------+-28.79, -2.97
++----------------------+| Epoch:         10 || Accuracy:   50.00% |+----------------------+-25.24, -7.65
++----------------------+| Epoch:         11 || Accuracy:   30.00% |+----------------------+-17.03, -30.29
++----------------------+| Epoch:         12 || Accuracy:   30.00% |+----------------------+-16.47, -38.67
++----------------------+| Epoch:         13 || Accuracy:   40.00% |+----------------------+-18.79, -53.79
++----------------------+| Epoch:         14 || Accuracy:   40.00% |+----------------------+-13.91, 60.29
++----------------------+| Epoch:         15 || Accuracy:   30.00% |+----------------------+-11.18, 47.54
++----------------------+| Epoch:         16 || Accuracy:   20.00% |+----------------------+-16.26, 33.37
++----------------------+| Epoch:         17 || Accuracy:   20.00% |+----------------------+-18.37, 24.36
++----------------------+| Epoch:         18 || Accuracy:   50.00% |+----------------------+-6.69, 14.18
++----------------------+| Epoch:         19 || Accuracy:   10.00% |+----------------------+-10.21, -4.21
++----------------------+| Epoch:         20 || Accuracy:   30.00% |+----------------------+-18.46, -21.47
++----------------------+| Epoch:         21 || Accuracy:   30.00% |+----------------------+-15.74, -29.31
++----------------------+| Epoch:         22 || Accuracy:   30.00% |+----------------------+-10.91, -39.27
++----------------------+| Epoch:         23 || Accuracy:   20.00% |+----------------------+9.35, -44.46
++----------------------+| Epoch:         24 || Accuracy:   10.00% |+----------------------+12.47, -59.80
++----------------------+| Epoch:         25 || Accuracy:   40.00% |+----------------------+7.76, 51.36
++----------------------+| Epoch:         26 || Accuracy:   30.00% |+----------------------+-1.07, 37.54
++----------------------+| Epoch:         27 || Accuracy:   30.00% |+----------------------+3.56, 26.68
++----------------------+| Epoch:         28 || Accuracy:   10.00% |+----------------------+5.53, -5.21
++----------------------+| Epoch:         29 || Accuracy:   40.00% |+----------------------+1.10, -21.30
++----------------------+| Epoch:         30 || Accuracy:   10.00% |+----------------------+3.46, -45.08
++----------------------+| Epoch:         31 || Accuracy:   20.00% |+----------------------+3.11, 61.98
++----------------------+| Epoch:         32 || Accuracy:   40.00% |+----------------------+-3.46, 49.13
++----------------------+| Epoch:         33 || Accuracy:   30.00% |+----------------------+-1.46, 31.54
++----------------------+| Epoch:         34 || Accuracy:   30.00% |+----------------------+-6.92, 9.51
++----------------------+| Epoch:         35 || Accuracy:   20.00% |+----------------------+2.07, -5.47
++----------------------+| Epoch:         36 || Accuracy:   20.00% |+----------------------+4.60, -32.58
++----------------------+| Epoch:         37 || Accuracy:   20.00% |+----------------------+4.88, -36.95
++----------------------+| Epoch:         38 || Accuracy:   30.00% |+----------------------+15.79, -51.69
++----------------------+| Epoch:         39 || Accuracy:   40.00% |+----------------------+14.62, 63.87
++----------------------+| Epoch:         40 || Accuracy:   40.00% |+----------------------+18.71, 53.91
++----------------------+| Epoch:         41 || Accuracy:   50.00% |+----------------------+20.33, 51.77
++----------------------+| Epoch:         42 || Accuracy:   40.00% |+----------------------+27.74, 39.44
++----------------------+| Epoch:         43 || Accuracy:   50.00% |+----------------------+22.75, 34.85
++----------------------+| Epoch:         44 || Accuracy:   20.00% |+----------------------+31.95, 22.41
++----------------------+| Epoch:         45 || Accuracy:   50.00% |+----------------------+20.44, 11.83
++----------------------+| Epoch:         46 || Accuracy:   30.00% |+----------------------+22.16, 1.83
++----------------------+| Epoch:         47 || Accuracy:   20.00% |+----------------------+21.42, -25.24
++----------------------+| Epoch:         48 || Accuracy:   50.00% |+----------------------+1.95, -38.96
++----------------------+| Epoch:         49 || Accuracy:   30.00% |+----------------------+-3.59, -57.00
+The following are the predictions of the DNN:
+0: 0
+0: 0
+1: 1
+2: 1
+3: 1
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 20.828 seconds; peak allocated memory: 230.992 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 28s
