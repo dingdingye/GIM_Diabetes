@@ -1,7 +1,30 @@
 #include "gim_model.h"
 #include <iostream>
 #include <fstream>
+#include <iomanip>
 using namespace std;
+
+// Function to calculate accuracy and print it in a formatted table
+void calculate_accuracy(fixed_16 predictions[MAX_DATA_ROWS], fixed_16 labels[MAX_DATA_ROWS], int epoch) {
+    int correct = 0;
+    for (int i = 0; i < MAX_DATA_ROWS; i++) {
+        if (predictions[i] == labels[i]) {
+            correct++;
+        }
+    }
+    float accuracy = (float(correct) / MAX_DATA_ROWS) * 100;
+
+    // Print formatted accuracy table
+    cout << "+----------------------+
+";
+    cout << "| Epoch: " << setw(10) << epoch << " |
+";
+    cout << "| Accuracy: " << setw(7) << fixed << setprecision(2) << accuracy << "% |
+";
+    cout << "+----------------------+
+";
+}
+
 
 // now, we actually run the full model
 Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labels[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZE][ARRAY_SIZE],
@@ -169,6 +192,9 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
         if (training == 0) {
             break; // only run this once if we are inferring
         }
+        
+        // Calculate and print accuracy each epoch
+        calculate_accuracy(output_array.inference, labels[0], i);
     }
 
     // produce the final weights to be used in inference
