@@ -210,3 +210,9 @@ java.io.FileNotFoundException: C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\.w
 11:44:47 INFO  : Embedded Template List generated successfully
 11:44:47 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM13597810613931908268 -r C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
 11:44:49 INFO  : Embedded Template List generated successfully
+14:16:07 INFO  : created .gitignore file for the project C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes
+14:16:07 INFO  : updated workspace path: C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes
+14:16:07 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM11488187278215947161 -r C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+14:16:10 INFO  : Embedded Template List generated successfully
+14:16:10 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\GIM\AppData\Local\Temp\rigel_lopper_GIM11950256959631057376 -r C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+14:16:12 INFO  : Embedded Template List generated successfully

@@ -6,7 +6,7 @@
 using namespace std;
 
 // Function to calculate accuracy and print it in a formatted table
-void calculate_accuracy(fixed_16 predictions[MAX_DATA_ROWS], fixed_16 labels[MAX_DATA_ROWS], double loss, int epoch) {
+void calculate_accuracy(fixed_16 predictions[MAX_DATA_ROWS], fixed_16 labels[MAX_DATA_ROWS], int epoch) {
     int correct = 0;
     for (int i = 0; i < MAX_DATA_ROWS; i++) {
         if (predictions[i] == labels[i]) {
@@ -16,19 +16,18 @@ void calculate_accuracy(fixed_16 predictions[MAX_DATA_ROWS], fixed_16 labels[MAX
     float accuracy = (float(correct) / MAX_DATA_ROWS) * 100;
 
     // Print formatted accuracy table
-    cout << "+-----------------------------------------------------+" << endl;
+    cout << "+---------------------------------------+" << endl;
     cout << "| Epoch: " << setw(10) << epoch;
-    cout << "| Accuracy: " << setw(7) << fixed << setprecision(2) << accuracy << "% ";
-    cout << "| Loss: " << setw(10) << fixed << setprecision(6) << loss << "|"  << endl;
+    cout << "| Accuracy: " << setw(7) << fixed << setprecision(2) << accuracy << "% |"  << endl;
 }
 
-double categoricalCrossEntropy(fixed_16 y_true[MAX_DATA_ROWS], fixed_16 y_pred[MAX_DATA_ROWS]) {
+double categoricalCrossEntropy(fixed_16 y_true, fixed_16 y_pred) {
     double loss = 0.0;
     const double epsilon = 1e-12;
 
-    for (int i = 0; i < MAX_DATA_ROWS; ++i) {
-        loss -= double(y_true[i] * log(double(double(y_pred[i]) + epsilon)));
-    }
+    
+    loss -= double(y_true) * log(double(double(y_pred) + epsilon));
+    
     return loss;
 }
 
@@ -143,7 +142,7 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
             //     output_array.inference[j] = 0;
             // } // CHANGE THRESHOLD TO 0.9 / 0.1 AND TEST
 
-            // cout << double(j) << ": " << double(output_2[0]) << ", " << double(output_2[1]) << ", " << double(output_2[2])  << "| | ";
+            cout << double(j) << ": " << double(output_2[0]) << ", " << double(output_2[1]) << ", " << double(output_2[2])  << "| | ";
 
             int highest_index = 0;
             fixed_16 highest_output = output_2[0];
@@ -154,9 +153,11 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
                 }
             }
             output_array.inference[j] = highest_index;
-            // cout << double(output_array.inference[j]) << endl;
+            cout << double(output_array.inference[j]) << endl;
             
-            double loss = categoricalCrossEntropy(output_array.inference, labels[0]);
+            double loss = categoricalCrossEntropy(output_array.inference[j], labels[j][0]);
+            cout << "output: " << double(output_array.inference[j]) << ", label: " << double(labels[j][0]);
+            cout << "loss: " << loss << endl;
             // // lastly calculate the final error with the derivative of mse after the last output, LOOK INTO SPARSE CATEGORIAL CROSS-ENTROPY CALCULATIONS
             // // cout << "label: " << double(labels[j][0]) << endl;
             // if (model == 's') {
