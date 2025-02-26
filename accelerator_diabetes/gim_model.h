@@ -21,7 +21,7 @@
 #define MAX_DATA_COLS 16
 #define TESTING_ROWS 4167
 
-typedef ap_fixed<16,7> fixed_16;
+typedef ap_fixed<24,7> fixed_16;
 using namespace std;
 
 

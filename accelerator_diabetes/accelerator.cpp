@@ -7,7 +7,7 @@
 using namespace std;
 
 // Define fixed-point type
-typedef ap_fixed<16, 7> fixed_t;
+typedef ap_fixed<24, 7> fixed_t;
 
 // Softmax function
 void softmax(fixed_t input[3], fixed_t output[3]) {
@@ -127,8 +127,8 @@ Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
     }
     // Number of iterations defined in the header file
     char model = 'r'; // s = sigmoid, r = relu, l = leaky relu
-    fixed_16 alpha = 0.1; // For leaky relu
-    fixed_16 lr = 0.2; // Learning 
+    fixed_16 alpha = 0.001; // For leaky relu
+    fixed_16 lr = 0.08; // Learning 
     fixed_16 forward;
     // fixed_16 training = 1;
     // Arrays to store layer outputs
@@ -141,9 +141,10 @@ Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
 
     // Iterate through the allotted epochs
     for (int i = 0; i < NUM_ITERATIONS; i++) {
+        cout << "iteration: " << i << endl;
 
         // Iterate through all the data points
-        for (int j = 0; j < 3; j++) {
+        for (int j = 0; j < TESTING_ROWS; j++) {
 #pragma HLS PIPELINE
             // Setup the initial data input
             // for (int k = 0; k < NUM_INPUTS; k++) {
@@ -161,10 +162,10 @@ Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
 
             forward = 1;
             // Run the forward propagation
-            cout << "Begin forward propagation: " << endl;
+            // cout << "Begin forward propagation: " << endl;
             Array array_out1 = model_array(w1_local, w2_local, w3_local, w4_local, w5_local, w6_local,
                                           bias_1_local, bias_2_local, bias_3_local, bias_4_local, bias_5_local, bias_6_local,
-                                          output_l1, output_l2, output_l3, output_l4, output_l5, output_l6,
+                                          X[j], output_l2, output_l3, output_l4, output_l5, output_l6,
                                           delta_l1, delta_l2, delta_l3, delta_l4, delta_l5, delta_l6,
                                           lr, model, alpha, training, forward);
 
@@ -182,7 +183,10 @@ Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
             fixed_t softmax_output[3];
             // cout << "array out: " << (float)array_out1.output_l6[0] << " " << (float)array_out1.output_l6[1] << " " << (float)array_out1.output_l6[2] << endl;
             softmax(array_out1.output_l6, softmax_output);
-            cout << "softmax out: " << softmax_output[0] << " " << softmax_output[1] << " " << softmax_output[2] << endl;
+            // if (training == 0) {
+            //     cout << "test test test test " << endl;
+            //     cout << "softmax out: " << softmax_output[0] << " " << softmax_output[1] << " " << softmax_output[2] << endl;
+            // }
             int max_index = 0;
             fixed_16 highest_value = softmax_output[0];
             fixed_16 delta_l6[3];
@@ -194,10 +198,14 @@ Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
                     max_index = i;
                 }
             }
-            cout << "max index: " << max_index << endl;
+            // cout << "max index: " << max_index << endl;
 
             // Store the index of the neuron with the highest value as the final inference
             output_array.inference[j] = max_index;
+
+        if (training == 0) {
+            continue; // Only run this once if we are inferring
+        }
 
             // // Calculate the final error with the derivative of MSE
             // if (model == 's') {
@@ -222,26 +230,20 @@ Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
 
             // Run the backpropagation and update the weights/biases
             forward = 0;
-            cout << "Begin backward propagation: " << endl;
+            // cout << "Begin backward propagation: " << endl;
             Array array_back = model_array(w1_local, w2_local, w3_local, w4_local, w5_local, w6_local,
                                           bias_1_local, bias_2_local, bias_3_local, bias_4_local, bias_5_local, bias_6_local,
                                           output_l1, output_l2, output_l3, output_l4, output_l5, output_l6,
                                           delta_l1, delta_l2, delta_l3, delta_l4, delta_l5, delta_l6,
                                           lr, model, alpha, training, forward);
 
-            cout << "b6 changes: " << endl;
-            for (int i=0;i<LAYER_5_SIZE;i++){
-                cout << bias_6_local[i] << " ";
-            }
-            cout << endl;
+            // cout << "b6 changes: " << endl;
+            // for (int i=0;i<LAYER_5_SIZE;i++){
+            //     cout << bias_6_local[i] << " ";
+            // }
+            // cout << endl;
 
-            cout << "w6: " << endl;
-            for (int i=0;i<LAYER_5_SIZE;i++){
-                for (int j=0;j<LAYER_6_SIZE;j++){
-                    cout << w6_local[i][j] << " ";
-                }
-                cout << endl;
-            }
+            // cout << "w6[0][0]: " << w6_local[0][0] << " w5[0][0]: " << w5_local[0][0] << " w4[0][0]: " << w4_local[0][0] << " w3[0][0]: " << w3_local[0][0] << " w2[0][0]: " << w2_local[0][0] << " w1[0][0]: " << w1_local[0][0] << endl;
 
             // cout << "After update, w1_local[0][0] = " << (float)w1_local[0][0] << endl;
 
@@ -260,14 +262,8 @@ Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
             memcpy(bias_5_local, array_back.bias_change_l5, sizeof(bias_5_local));
             memcpy(bias_6_local, array_back.bias_change_l6, sizeof(bias_6_local));
 
-            // if ((training == 0) && (j == 3)) {
-            //     break; // Only run this for all 4 data points once if inferring
-            // }
         }
 
-        if (training == 0) {
-            break; // Only run this once if we are inferring
-        }
     }
 
     // Produce the final weights to be used in inference

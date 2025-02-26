@@ -4,7 +4,7 @@
 #include <fstream>
 #include "gim_model.h"
 
-typedef ap_fixed<16, 7> fixed_16;
+typedef ap_fixed<24, 7> fixed_16;
 
 void readCSV(const char* filepath, fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], int& num_rows, int& num_cols) {
     std::ifstream file(filepath);

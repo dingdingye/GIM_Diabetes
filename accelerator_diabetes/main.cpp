@@ -87,10 +87,7 @@ int main() {
     fixed_16 bias_5[LAYER_5_SIZE] = {0};
     fixed_16 bias_6[LAYER_6_SIZE] = {0};
 
-    // Training loop
-    fixed_16 lr = 0.1; // Learning rate
-    char model = 'l';  // Activation function (leaky ReLU)
-    fixed_16 alpha = 0.1; // Alpha for leaky ReLU
+
     fixed_16 training = 1; // Training mode
     
     std::cout << "Began training" << std::endl;
@@ -154,11 +151,44 @@ int main() {
                                       bias_1, bias_2, bias_3, bias_4, bias_5, bias_6,
                                       training);
 
+        // cout << "test test test test" << endl;
+        // cout << "w6[0][0]: " << w6[0][0] << " w5[0][0]: " << w5[0][0] << " w4[0][0]: " << w4[0][0] << " w3[0][0]: " << w3[0][0] << " w2[0][0]: " << w2[0][0] << " w1[0][0]: " << w1[0][0] << endl;
+
+        // for (int i=0; i<LAYER_1_SIZE; i++){
+        //     cout <<  bias_1[i] << " ";
+        // }
+        // cout << endl;
+
+        // for (int i=0; i<LAYER_2_SIZE; i++){
+        //     cout << bias_2[i] << " ";
+        // }
+        // cout << endl;
+
+        // for (int i=0; i<LAYER_3_SIZE; i++){
+        //     cout << bias_3[i] << " ";
+        // }
+        // cout << endl;
+
+        // for (int i=0; i<LAYER_4_SIZE; i++){
+        //     cout << bias_4[i] << " ";
+        // }
+        // cout << endl;
+
+        // for (int i=0; i<LAYER_5_SIZE; i++){
+        //     cout << bias_5[i] << " ";
+        // }
+        // cout << endl;
+
+        // for (int i=0; i<LAYER_6_SIZE; i++){
+        //     cout << bias_6[i] << " ";
+        // }
+        // cout << endl;
+
         for (size_t i = 0; i < 100; i++) {
         // Store prediction and label
         predictions.push_back(result.inference[i]);
         labels.push_back(Y_test[i][0]);
-        // cout << "Infrence: " << result.inference[i] << ", label: " << Y_test[i][0] << endl;
+        cout << "Infrence: " << result.inference[i] << ", label: " << Y_test[i][0] << endl;
         }
 
     // Calculate accuracy
