@@ -1,10 +1,11 @@
 #include "gim_model.h"
 using namespace std;
 
-Array model_array(fixed_16 weights[ARRAY_SIZE][ARRAY_SIZE],
-			fixed_16 biases[ARRAY_SIZE],
-			fixed_16 output_kmin1[ARRAY_SIZE],
-			fixed_16 delta_k[ARRAY_SIZE], fixed_16 eta,
+template <int INPUT_SIZE, int OUTPUT_SIZE>
+Array model_array(fixed_16 (&weights)[INPUT_SIZE][OUTPUT_SIZE],
+			fixed_16 (&biases)[OUTPUT_SIZE],
+			fixed_16 (&output_kmin1)[INPUT_SIZE],
+			fixed_16 (&delta_k)[OUTPUT_SIZE], fixed_16 eta,
 			char model, fixed_16 alpha, fixed_16 training) {
 //#pragma HLS bind_storage variable= weights type=RAM_2P impl=bram
 //#pragma HLS bind_storage variable= biases  type=RAM_2P impl=bram
@@ -13,17 +14,17 @@ Array model_array(fixed_16 weights[ARRAY_SIZE][ARRAY_SIZE],
     Array return_array;
     
     // initialize internal array with zeros
-    fixed_16 partial_delta_sum[ARRAY_SIZE] = {0};
+    fixed_16 partial_delta_sum[INPUT_SIZE] = {0};
 
     // iterate through the neurons in the layer
     int n = 0;
-    for (n = 0; n < ARRAY_SIZE; n++) {
+    for (n = 0; n < OUTPUT_SIZE; n++) {
 #pragma HLS UNROLL
         // initialize the running output sum
         fixed_16 partial_output_sum = 0;
         int c = 0;
         // iterate through the columns of the current layer
-        for (c = 0; c < ARRAY_SIZE; c++) {
+        for (c = 0; c < INPUT_SIZE; c++) {
 
             // get the running sums for the output and the delta from the current weight pe
             Weight weight_out = weights_pe(delta_k[n], output_kmin1[c], partial_output_sum,
@@ -35,12 +36,13 @@ Array model_array(fixed_16 weights[ARRAY_SIZE][ARRAY_SIZE],
     
         // get the output for the current neuron in the layer
         Bias bias_out = bias_pe(delta_k[n], partial_output_sum, biases[n], eta, training);
+        
         return_array.bias_change[n] = bias_out.bias_change;
         return_array.output_k[n] = act_pe(bias_out.net_sum, model, alpha);
     }
     // get the delta signal for the previous layer using the error pe
     int j = 0;
-    for (j = 0; j < ARRAY_SIZE; j++) {
+    for (j = 0; j < INPUT_SIZE; j++) {
         if (training == 0) 
             return_array.delta_kmin1[j] = 0;
         else

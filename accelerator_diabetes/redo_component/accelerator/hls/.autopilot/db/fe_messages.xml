@@ -1,0 +1,12 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="../weight_pe.cpp:7:28" msg_body="unused parameter 'training'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-3587" msg_severity="ERROR" msg_loc="../csv_import.cpp:21:28" msg_body="implicit instantiation of undefined template 'std::__cxx11::basic_istringstream&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;'">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4520" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\iosfwd:100:11" msg_body="template is declared here">
+        <args/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

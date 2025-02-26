@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1850" tag="" content="Skipped source file &apos;Y_train.csv&apos;. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1850" tag="" content="Skipped source file &apos;Y_test.csv&apos;. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1850" tag="" content="Skipped source file &apos;X_train.csv&apos;. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1850" tag="" content="Skipped source file &apos;X_test.csv&apos;. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished File checks and directory preparation: CPU user time: 5 seconds. CPU system time: 2 seconds. Elapsed time: 16.18 seconds; current allocated memory: 230.973 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;../weight_pe.cpp&apos; ..." resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 207-5292]" key="HLS 207-5292" tag="" content="unused parameter &apos;training&apos; (../weight_pe.cpp:7:28)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;../error_pe.cpp&apos; ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;../csv_import.cpp&apos; ..." resolution=""/>
+	<Message severity="ERROR" prefix="[HLS 207-3587]" key="HLS 207-3587" tag="" content="implicit instantiation of undefined template &apos;std::__cxx11::basic_istringstream&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;&apos; (../csv_import.cpp:21:28)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4520]" key="HLS 207-4520" tag="" content="template is declared here (C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\iosfwd:100:11)" resolution=""/>
+</Messages>

@@ -1,6 +1,7 @@
 #include "gim_model.h"
 
 // bias pe definition
+using namespace std;
 
 Bias bias_pe(fixed_16 delta_k,
 				fixed_16 sum_in,
@@ -11,6 +12,7 @@ Bias bias_pe(fixed_16 delta_k,
 	Bias return_array;
 
     return_array.net_sum = init_bias + sum_in;
+    // cout << "delta_k: " << double(delta_k) << "eta: " << double(eta) << endl;
     return_array.bias_change = init_bias - (delta_k * eta);
 
 	return return_array;

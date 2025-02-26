@@ -8,6 +8,7 @@
 #include <iostream>
 
 #define ARRAY_SIZE 16
+#define OUTPUT_LAYER_SIZE 3
 #define MAX_DATA_ROWS 10 // should be 9721, reduced numbers for testing
 #define MAX_DATA_COLS 16
 #define NUM_ITERATIONS 50
@@ -73,10 +74,16 @@ fixed_16 act_pe(fixed_16 net_in, char model, fixed_16 alpha);
 fixed_16 error_pe(fixed_16 output_kmin1, fixed_16 partial_sum_delta_k,
 				char model, fixed_16 alpha);
 
-Array model_array(fixed_16 weights[ARRAY_SIZE][ARRAY_SIZE],
-			fixed_16 biases[ARRAY_SIZE],
-			fixed_16 output_kmin1[ARRAY_SIZE],
-			fixed_16 delta_k[ARRAY_SIZE], fixed_16 eta,
+// Array model_array(fixed_16 weights[ARRAY_SIZE][ARRAY_SIZE],
+// 			fixed_16 biases[ARRAY_SIZE],
+// 			fixed_16 output_kmin1[ARRAY_SIZE],
+// 			fixed_16 delta_k[ARRAY_SIZE], fixed_16 eta,
+// 			char model, fixed_16 alpha, fixed_16 training);
+template <int INPUT_SIZE, int OUTPUT_SIZE>
+Array model_array(fixed_16 (&weights)[INPUT_SIZE][OUTPUT_SIZE],
+			fixed_16 (&biases)[OUTPUT_SIZE],
+			fixed_16 (&output_kmin1)[INPUT_SIZE],
+			fixed_16 (&delta_k)[OUTPUT_SIZE], fixed_16 eta,
 			char model, fixed_16 alpha, fixed_16 training);
 
 Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labels[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZE][ARRAY_SIZE],

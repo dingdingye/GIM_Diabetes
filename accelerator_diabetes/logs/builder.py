@@ -1,4 +1,4 @@
-# 2025-02-24T11:45:21.417469800
+# 2025-02-26T08:26:44.731302400
 import vitis
 
 client = vitis.create_client()
@@ -9,71 +9,5 @@ comp.run(operation="C_SIMULATION")
 
 comp.run(operation="C_SIMULATION")
 
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION_DEBUG")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
+vitis.dispose()
 

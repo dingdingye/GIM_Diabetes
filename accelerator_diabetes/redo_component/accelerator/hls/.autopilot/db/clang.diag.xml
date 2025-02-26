@@ -1,0 +1,35 @@
+<dict>
+  <key>main-file</key>
+  <string>C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/.autopilot/db/csv_import.pp.0.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>error</string>
+      <key>filename</key>
+      <string>../csv_import.cpp</string>
+      <key>line</key>
+      <integer>21</integer>
+      <key>column</key>
+      <integer>28</integer>
+      <key>message</key>
+      <string>implicit instantiation of undefined template &apos;std::__cxx11::basic_istringstream&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;&apos;</string>
+      <key>ID</key>
+      <integer>3587</integer>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>note</string>
+      <key>filename</key>
+      <string>C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\iosfwd</string>
+      <key>line</key>
+      <integer>100</integer>
+      <key>column</key>
+      <integer>11</integer>
+      <key>message</key>
+      <string>template is declared here</string>
+      <key>ID</key>
+      <integer>4520</integer>
+    </dict>
+  </array>
+</dict>
