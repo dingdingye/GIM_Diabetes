@@ -1,0 +1,170 @@
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:1326:7: warning: Added loop label VITIS_LOOP_1223_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1223_1: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:1326:7: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:2300:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:2300:5: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:2314:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:2314:5: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:2328:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:2328:5: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:3945:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:3945:7: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:44603:5: warning: Added loop label VITIS_LOOP_99_1:   [xilinx-label-all-loops]
+    for (n = 0; n < OUTPUT_SIZE; n++) {
+    ^~~
+    VITIS_LOOP_99_1: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:44603:5: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:44609:9: warning: Added loop label VITIS_LOOP_105_2:   [xilinx-label-all-loops]
+        for (c = 0; c < INPUT_SIZE; c++) {
+        ^~~
+        VITIS_LOOP_105_2: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:44609:9: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:44627:5: warning: Added loop label VITIS_LOOP_123_3:   [xilinx-label-all-loops]
+    for (j = 0; j < INPUT_SIZE; j++) {
+    ^~~
+    VITIS_LOOP_123_3: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:44627:5: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54560:5: warning: Added loop label VITIS_LOOP_10_1:   [xilinx-label-all-loops]
+    for (int i = 1; i < 3; i++) {
+    ^~~
+    VITIS_LOOP_10_1: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54560:5: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54565:5: warning: Added loop label VITIS_LOOP_15_2:   [xilinx-label-all-loops]
+    for (int i = 0; i < 3; i++) {
+    ^~~
+    VITIS_LOOP_15_2: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54565:5: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54570:5: warning: Added loop label VITIS_LOOP_20_3:   [xilinx-label-all-loops]
+    for (int i = 0; i < 3; i++) {
+    ^~~
+    VITIS_LOOP_20_3: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54570:5: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54578:5: warning: Added loop label VITIS_LOOP_28_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < 25; i++) {
+    ^~~
+    VITIS_LOOP_28_1: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54578:5: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54598:5: warning: Added loop label VITIS_LOOP_48_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < 3; i++) {
+    ^~~
+    VITIS_LOOP_48_1: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54598:5: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54639:5: warning: Added loop label VITIS_LOOP_102_1:   [xilinx-label-all-loops]
+    for (int n = 0; n<16; n++) {
+    ^~~
+    VITIS_LOOP_102_1: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54639:5: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54641:9: warning: Added loop label VITIS_LOOP_104_2:   [xilinx-label-all-loops]
+        for (int m = 0;m<16; m++) {
+        ^~~
+        VITIS_LOOP_104_2: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54641:9: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54646:5: warning: Added loop label VITIS_LOOP_109_3:   [xilinx-label-all-loops]
+    for (int n = 0; n<16; n++) {
+    ^~~
+    VITIS_LOOP_109_3: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54646:5: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54648:9: warning: Added loop label VITIS_LOOP_111_4:   [xilinx-label-all-loops]
+        for (int m = 0;m<3; m++) {
+        ^~~
+        VITIS_LOOP_111_4: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54648:9: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54663:5: warning: Added loop label VITIS_LOOP_126_5:   [xilinx-label-all-loops]
+    for (int i = 0; i < 20; i++) {
+    ^~~
+    VITIS_LOOP_126_5: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54663:5: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54670:9: warning: Added loop label VITIS_LOOP_133_6:   [xilinx-label-all-loops]
+        for (j = 0; j < 25; j++) {
+        ^~~
+        VITIS_LOOP_133_6: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54670:9: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54673:2: warning: Added loop label VITIS_LOOP_136_7:   [xilinx-label-all-loops]
+ for (int n = 0; n < 16; n++ ) {
+ ^~~
+ VITIS_LOOP_136_7: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54673:2: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54681:13: warning: Added loop label VITIS_LOOP_144_8:   [xilinx-label-all-loops]
+            for (int i = 0; i < 16; i++) {
+            ^~~
+            VITIS_LOOP_144_8: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54681:13: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54684:13: warning: Added loop label VITIS_LOOP_147_9:   [xilinx-label-all-loops]
+            for (int i = 0; i < 3; i++) {
+            ^~~
+            VITIS_LOOP_147_9: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54684:13: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54691:13: warning: Added loop label VITIS_LOOP_154_10:   [xilinx-label-all-loops]
+            for (int n = 0; n < 16; n++) output_1[n] = array_out1.output_k[n];
+            ^~~
+            VITIS_LOOP_154_10: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54691:13: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54695:13: warning: Added loop label VITIS_LOOP_158_11:   [xilinx-label-all-loops]
+            for (int n = 0; n < 3; n++) output_2[n] = array_out2.output_k[n];
+            ^~~
+            VITIS_LOOP_158_11: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54695:13: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54702:13: warning: Added loop label VITIS_LOOP_175_12:   [xilinx-label-all-loops]
+            for (int i = 1; i < 3; i++) {
+            ^~~
+            VITIS_LOOP_175_12: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54702:13: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54718:13: warning: Added loop label VITIS_LOOP_191_13:   [xilinx-label-all-loops]
+            for (int n = 0; n < 3; n++) delta_1[n] = array_out2.delta_kmin1[n];
+            ^~~
+            VITIS_LOOP_191_13: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54718:13: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54720:13: warning: Added loop label VITIS_LOOP_193_14:   [xilinx-label-all-loops]
+            for (int n = 0; n<16; n++) {
+            ^~~
+            VITIS_LOOP_193_14: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54720:13: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54721:17: warning: Added loop label VITIS_LOOP_194_15:   [xilinx-label-all-loops]
+                for (int m = 0;m<3; m++) {
+                ^~~
+                VITIS_LOOP_194_15: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54721:17: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54731:13: warning: Added loop label VITIS_LOOP_204_16:   [xilinx-label-all-loops]
+            for (int n = 0; n<16; n++) {
+            ^~~
+            VITIS_LOOP_204_16: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54731:13: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54734:17: warning: Added loop label VITIS_LOOP_207_17:   [xilinx-label-all-loops]
+                for (int m = 0;m<16; m++) {
+                ^~~
+                VITIS_LOOP_207_17: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54734:17: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54759:5: warning: Added loop label VITIS_LOOP_232_18:   [xilinx-label-all-loops]
+    for (int n = 0; n<16; n++) {
+    ^~~
+    VITIS_LOOP_232_18: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54759:5: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54761:9: warning: Added loop label VITIS_LOOP_234_19:   [xilinx-label-all-loops]
+        for (int m = 0;m<16; m++) {
+        ^~~
+        VITIS_LOOP_234_19: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54761:9: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54766:5: warning: Added loop label VITIS_LOOP_239_20:   [xilinx-label-all-loops]
+    for (int n = 0; n<3; n++) {
+    ^~~
+    VITIS_LOOP_239_20: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54766:5: note: FIX-IT applied suggested code changes
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54768:9: warning: Added loop label VITIS_LOOP_241_21:   [xilinx-label-all-loops]
+        for (int m = 0;m<3; m++) {
+        ^~~
+        VITIS_LOOP_241_21: 
+C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:54768:9: note: FIX-IT applied suggested code changes

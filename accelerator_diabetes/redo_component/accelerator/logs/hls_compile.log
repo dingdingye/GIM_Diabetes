@@ -1,67 +1,135 @@
-INFO: [v++ 60-1548] Creating build summary session with primary output C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator\accelerator.hlscompile_summary, at 02/25/25 15:26:45
+INFO: [v++ 60-1548] Creating build summary session with primary output C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator\accelerator.hlscompile_summary, at 02/26/25 10:20:53
 INFO: [v++ 82-31] Launching vitis_hls: vitis_hls -nolog -run csynth -work_dir C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator -config C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg -cmdlineconfig C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline
 
 ****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
   **** SW Build 5069499 on May 21 2024
   **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
   **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-  **** Start of session at: Tue Feb 25 15:26:51 2025
+  **** Start of session at: Wed Feb 26 10:20:59 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source C:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
-INFO: [HLS 200-10] For user 'GIM' on host 'gim_laptop_1' (Windows NT_amd64 version 10.0) on Tue Feb 25 15:26:54 -0800 2025
+INFO: [HLS 200-10] For user 'GIM' on host 'gim_laptop_1' (Windows NT_amd64 version 10.0) on Wed Feb 26 10:21:02 -0800 2025
 INFO: [HLS 200-10] In directory 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component'
 INFO: [HLS 200-2005] Using work_dir C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
 Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
-INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
 INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
-INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
 INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
-INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
 INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
-INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
 INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
-INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
-INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
-INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
 INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
-INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
 INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
-INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
 INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
-INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\X_test.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(19)
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\X_test.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
 INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/X_test.csv' to the project
-INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\X_train.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(20)
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\X_train.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
 INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/X_train.csv' to the project
-INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\Y_test.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(21)
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\Y_test.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(19)
 INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/Y_test.csv' to the project
-INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\Y_train.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(22)
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\Y_train.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(20)
 INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/Y_train.csv' to the project
-INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(21)
 INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(22)
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
 INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
 INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
 INFO: [HLS 200-1505] Using flow_target 'vivado'
 Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
 INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
 INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
-INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
 INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
 INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
 WARNING: [HLS 200-40] Skipped source file 'Y_train.csv'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
 WARNING: [HLS 200-40] Skipped source file 'Y_test.csv'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
 WARNING: [HLS 200-40] Skipped source file 'X_train.csv'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
 WARNING: [HLS 200-40] Skipped source file 'X_test.csv'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 5 seconds. CPU system time: 2 seconds. Elapsed time: 16.18 seconds; current allocated memory: 230.973 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 5 seconds. CPU system time: 2 seconds. Elapsed time: 14.655 seconds; current allocated memory: 230.953 MB.
 INFO: [HLS 200-10] Analyzing design file '../weight_pe.cpp' ... 
 WARNING: [HLS 207-5292] unused parameter 'training' (../weight_pe.cpp:7:28)
 INFO: [HLS 200-10] Analyzing design file '../error_pe.cpp' ... 
-INFO: [HLS 200-10] Analyzing design file '../csv_import.cpp' ... 
-ERROR: [HLS 207-3587] implicit instantiation of undefined template 'std::__cxx11::basic_istringstream<char, std::char_traits<char>, std::allocator<char> >' (../csv_import.cpp:21:28)
-INFO: [HLS 207-4520] template is declared here (C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\iosfwd:100:11)
-ERROR:  
-INFO: [HLS 200-112] Total CPU user time: 6 seconds. Total CPU system time: 2 seconds. Total elapsed time: 75.556 seconds; peak allocated memory: 233.559 MB.
+INFO: [HLS 200-10] Analyzing design file '../bias_pe.cpp' ... 
+WARNING: [HLS 207-5292] unused parameter 'training' (../bias_pe.cpp:10:14)
+INFO: [HLS 200-10] Analyzing design file '../array.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../act_pe.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../accelerator.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 98.721 seconds; current allocated memory: 234.160 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 19,056 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 98,815 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34,334 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34,080 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 33,922 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_136_7' is marked as complete unroll implied by the pipeline pragma (../accelerator.cpp:136:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_144_8' is marked as complete unroll implied by the pipeline pragma (../accelerator.cpp:144:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_147_9' is marked as complete unroll implied by the pipeline pragma (../accelerator.cpp:147:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_154_10' is marked as complete unroll implied by the pipeline pragma (../accelerator.cpp:154:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_158_11' is marked as complete unroll implied by the pipeline pragma (../accelerator.cpp:158:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_175_12' is marked as complete unroll implied by the pipeline pragma (../accelerator.cpp:175:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_191_13' is marked as complete unroll implied by the pipeline pragma (../accelerator.cpp:191:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_193_14' is marked as complete unroll implied by the pipeline pragma (../accelerator.cpp:193:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_194_15' is marked as complete unroll implied by the pipeline pragma (../accelerator.cpp:194:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_204_16' is marked as complete unroll implied by the pipeline pragma (../accelerator.cpp:204:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_207_17' is marked as complete unroll implied by the pipeline pragma (../accelerator.cpp:207:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_48_1' is marked as complete unroll implied by the pipeline pragma (../accelerator.cpp:48:22)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (../accelerator.cpp:45:26)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_20_3' is marked as complete unroll implied by the pipeline pragma (../accelerator.cpp:20:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_15_2' is marked as complete unroll implied by the pipeline pragma (../accelerator.cpp:15:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_10_1' is marked as complete unroll implied by the pipeline pragma (../accelerator.cpp:10:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_123_3' is marked as complete unroll implied by the pipeline pragma (../gim_model.h:123:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_99_1' is marked as complete unroll implied by the pipeline pragma (../gim_model.h:99:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_105_2' is marked as complete unroll implied by the pipeline pragma (../gim_model.h:105:27)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (../gim_model.h:95:46)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_136_7' (../accelerator.cpp:136:20) in function 'accelerator' completely with a factor of 16 (../accelerator.cpp:58:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_144_8' (../accelerator.cpp:144:31) in function 'accelerator' completely with a factor of 16 (../accelerator.cpp:58:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_9' (../accelerator.cpp:147:31) in function 'accelerator' completely with a factor of 3 (../accelerator.cpp:58:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_154_10' (../accelerator.cpp:154:32) in function 'accelerator' completely with a factor of 16 (../accelerator.cpp:58:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_158_11' (../accelerator.cpp:158:32) in function 'accelerator' completely with a factor of 3 (../accelerator.cpp:58:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_175_12' (../accelerator.cpp:175:32) in function 'accelerator' completely with a factor of 2 (../accelerator.cpp:58:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_191_13' (../accelerator.cpp:191:32) in function 'accelerator' completely with a factor of 3 (../accelerator.cpp:58:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_193_14' (../accelerator.cpp:193:32) in function 'accelerator' completely with a factor of 16 (../accelerator.cpp:58:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_194_15' (../accelerator.cpp:194:36) in function 'accelerator' completely with a factor of 3 (../accelerator.cpp:58:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_204_16' (../accelerator.cpp:204:32) in function 'accelerator' completely with a factor of 16 (../accelerator.cpp:58:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_207_17' (../accelerator.cpp:207:36) in function 'accelerator' completely with a factor of 16 (../accelerator.cpp:58:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_48_1' (../accelerator.cpp:48:22) in function 'categoricalCrossEntropy' completely with a factor of 3 (../accelerator.cpp:41:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (../accelerator.cpp:45:26) in function 'categoricalCrossEntropy' completely with a factor of 2 (../accelerator.cpp:41:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' () in function 'categoricalCrossEntropy' completely with a factor of 1 (../accelerator.cpp:41:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_20_3' (../accelerator.cpp:20:22) in function 'softmax' completely with a factor of 3 (../accelerator.cpp:8:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_15_2' (../accelerator.cpp:15:22) in function 'softmax' completely with a factor of 3 (../accelerator.cpp:8:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_10_1' (../accelerator.cpp:10:22) in function 'softmax' completely with a factor of 2 (../accelerator.cpp:8:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_123_3' (../gim_model.h:123:23) in function 'model_array<16, 3>' completely with a factor of 16 (../gim_model.h:87:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_99_1' (../gim_model.h:99:22) in function 'model_array<16, 3>' completely with a factor of 3 (../gim_model.h:87:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 3>' completely with a factor of 16 (../gim_model.h:87:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (../gim_model.h:95:46) in function 'model_array<16, 3>' completely with a factor of 15 (../gim_model.h:87:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' () in function 'model_array<16, 3>' completely with a factor of 1 (../gim_model.h:87:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_123_3' (../gim_model.h:123:23) in function 'model_array<16, 16>' completely with a factor of 16 (../gim_model.h:87:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_99_1' (../gim_model.h:99:22) in function 'model_array<16, 16>' completely with a factor of 16 (../gim_model.h:87:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 16>' completely with a factor of 16 (../gim_model.h:87:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (../gim_model.h:95:46) in function 'model_array<16, 16>' completely with a factor of 15 (../gim_model.h:87:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' () in function 'model_array<16, 16>' completely with a factor of 1 (../gim_model.h:87:0)
+INFO: [HLS 214-178] Inlining function 'bias_pe(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'Array model_array<16, 3>(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [16][3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, char, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)' (../gim_model.h:87:0)
+INFO: [HLS 214-178] Inlining function 'act_pe(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, char, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'Array model_array<16, 3>(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [16][3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, char, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)' (../gim_model.h:87:0)
+INFO: [HLS 214-178] Inlining function 'std::exp(float)' into 'softmax(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../accelerator.cpp:8:0)
+INFO: [HLS 214-178] Inlining function 'std::setprecision(int)' into 'calculate_accuracy(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)' (../accelerator.cpp:26:0)
+INFO: [HLS 214-178] Inlining function 'calculate_accuracy(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)' into 'accelerator(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)' (../accelerator.cpp:58:0)
+INFO: [HLS 214-178] Inlining function 'categoricalCrossEntropy(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'accelerator(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)' (../accelerator.cpp:58:0)
+ERROR: [HLS 214-194] in function 'accelerator(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)': Undefined function std::operator<<<char, std::char_traits<char> > (../accelerator.cpp:37:25)
+ERROR: [HLS 214-194] in function 'accelerator(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)': Undefined function std::operator<<<char, std::char_traits<char> > (../accelerator.cpp:38:28)
+ERROR: [HLS 214-194] in function 'accelerator(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)': Undefined function std::operator<<<char, std::char_traits<char> > (../accelerator.cpp:38:48)
+ERROR: [HLS 214-135] Syn check fail!
+ERROR: [HLS 200-1715] Encountered problem during source synthesis
+ERROR: Pre-synthesis failed.
+INFO: [HLS 200-112] Total CPU user time: 10 seconds. Total CPU system time: 3 seconds. Total elapsed time: 144.415 seconds; peak allocated memory: 236.566 MB.

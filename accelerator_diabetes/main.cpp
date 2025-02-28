@@ -42,40 +42,42 @@ int main() {
         {0.01, -0.02, 0.03, -0.05, 0.02, 0.01, -0.04, 0.03, -0.02, 0.05, -0.01, 0.04, -0.03, 0.02, -0.05, 0.01}
     };
 
-    fixed_16 weight_2[ARRAY_SIZE][ARRAY_SIZE] = {
-        { 0.03, -0.02,  0.05,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
-        {-0.04,  0.01, -0.03,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
-        { 0.02, -0.01,  0.04,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
-        {-0.05,  0.03, -0.02,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
-        { 0.01,  0.05, -0.04,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
-        { 0.04, -0.03,  0.02,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
-        {-0.02,  0.01, -0.05,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
-        { 0.03, -0.04,  0.01,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
-        {-0.01,  0.02, -0.03,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
-        { 0.05, -0.02,  0.04,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
-        {-0.03,  0.01, -0.05,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
-        { 0.02, -0.04,  0.03,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
-        {-0.05,  0.04, -0.02,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
-        { 0.01, -0.03,  0.05,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
-        { 0.04, -0.01, -0.02,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
-        {-0.02,  0.03, -0.05,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+    fixed_16 weight_2[ARRAY_SIZE][OUTPUT_LAYER_SIZE] = {
+        { 0.03, -0.02,  0.05}, 
+        {-0.04,  0.01, -0.03}, 
+        { 0.02, -0.01,  0.04}, 
+        {-0.05,  0.03, -0.02}, 
+        { 0.01,  0.05, -0.04}, 
+        { 0.04, -0.03,  0.02}, 
+        {-0.02,  0.01, -0.05}, 
+        { 0.03, -0.04,  0.01}, 
+        {-0.01,  0.02, -0.03}, 
+        { 0.05, -0.02,  0.04}, 
+        {-0.03,  0.01, -0.05}, 
+        { 0.02, -0.04,  0.03}, 
+        {-0.05,  0.04, -0.02}, 
+        { 0.01, -0.03,  0.05}, 
+        { 0.04, -0.01, -0.02}, 
+        {-0.02,  0.03, -0.05}
     };
 
     fixed_16 bias_1[ARRAY_SIZE] = {0};
-    fixed_16 bias_2[ARRAY_SIZE] = {0};
+    fixed_16 bias_2[OUTPUT_LAYER_SIZE] = {0};
 
     // training the array
     Inference training = accelerator(X_train, Y_train, weight_1, weight_2, bias_1, bias_2, 1);
 
-    // running inference using the trained accelerator
+    // // running inference using the trained accelerator
     Inference output = accelerator(X_test, Y_test, training.new_w1, training.new_w2, training.new_b1, training.new_b2, 0);
 
-    // capture the outputs of the accelerator
+    // // capture the outputs of the accelerator
     cout << "The following are the predictions of the DNN:" << endl;
     cout << "0: " << output.inference[0] << "| Correct label:" << double(Y_test[0][0]) << endl;
     cout << "1: " << output.inference[1] << "| Correct label:" << double(Y_test[1][0]) << endl;
     cout << "2: " << output.inference[2] << "| Correct label:" << double(Y_test[2][0]) << endl;
     cout << "3: " << output.inference[3] << "| Correct label:" << double(Y_test[3][0]) << endl;
+    cout << "4: " << output.inference[4] << "| Correct label:" << double(Y_test[4][0]) << endl;
+    cout << "5: " << output.inference[5] << "| Correct label:" << double(Y_test[5][0]) << endl;
     return 0;
 
 }

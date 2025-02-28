@@ -22,9 +22,13 @@ fixed_16 act_pe(fixed_16 net_in, char model, fixed_16 alpha) {
             output = alpha * omega;
         }
     }
+    else if (model == 'n') { // no model selected, usually used for output layer so that softmax can be used on a vector
+        output = omega;
+    }
     else {
-        //std::cout << "Error: Invalid Model Name" << std::endl;  // Comment this out when doing synthesis
+        std::cout << "Error: Invalid Model Name" << std::endl;  // Comment this out when doing synthesis
         output = 0;
     }
     return output;
 }
+

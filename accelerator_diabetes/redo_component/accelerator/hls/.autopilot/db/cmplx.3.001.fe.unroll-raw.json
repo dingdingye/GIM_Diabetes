@@ -1,0 +1,156 @@
+{
+  "0": {
+    "basicblocks": 265,
+    "calls": "4 1 6 4 2 9 9",
+    "file": "accelerator.cpp",
+    "fileloc": 58,
+    "instructions": 3340,
+    "loads": {
+      "L": 746,
+      "T": 21
+    },
+    "name": "accelerator",
+    "stores": {
+      "L": 466
+    },
+    "total_instructions": 98815
+  },
+  "1": {
+    "basicblocks": 173,
+    "calls": "",
+    "file": "accelerator.cpp",
+    "fileloc": 8,
+    "instructions": 509,
+    "loads": {
+      "L": 35
+    },
+    "name": "softmax",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 707
+  },
+  "10": {
+    "basicblocks": 24,
+    "calls": "",
+    "file": "error_pe.cpp",
+    "fileloc": 5,
+    "instructions": 36,
+    "name": "error_pe",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 36
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "ios_base.h",
+    "fileloc": 1043,
+    "instructions": 1,
+    "name": "fixed",
+    "total_instructions": 1
+  },
+  "2": {
+    "basicblocks": 4,
+    "calls": "3",
+    "file": "accelerator.cpp",
+    "fileloc": 26,
+    "instructions": 16,
+    "name": "calculate_accuracy",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 17
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "iomanip",
+    "fileloc": 195,
+    "instructions": 1,
+    "name": "setprecision",
+    "total_instructions": 1
+  },
+  "4": {
+    "basicblocks": 175,
+    "calls": "7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 8 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 8",
+    "file": "gim_model.h",
+    "fileloc": 83,
+    "instructions": 1466,
+    "loads": {
+      "L": 373
+    },
+    "name": "model_array<16, 3>",
+    "stores": {
+      "L": 151
+    },
+    "total_instructions": 8159
+  },
+  "5": {
+    "basicblocks": 37,
+    "calls": "",
+    "file": "bias_pe.cpp",
+    "fileloc": 6,
+    "instructions": 67,
+    "name": "bias_pe",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 67
+  },
+  "6": {
+    "basicblocks": 61,
+    "calls": "",
+    "file": "accelerator.cpp",
+    "fileloc": 41,
+    "instructions": 157,
+    "loads": {
+      "L": 18
+    },
+    "name": "categoricalCrossEntropy",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 157
+  },
+  "7": {
+    "basicblocks": 70,
+    "calls": "",
+    "file": "weight_pe.cpp",
+    "fileloc": 5,
+    "instructions": 121,
+    "name": "weights_pe",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 121
+  },
+  "8": {
+    "basicblocks": 24,
+    "calls": "",
+    "file": "act_pe.cpp",
+    "fileloc": 4,
+    "instructions": 36,
+    "name": "act_pe",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 36
+  },
+  "9": {
+    "basicblocks": 214,
+    "calls": "7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 8 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 8",
+    "file": "gim_model.h",
+    "fileloc": 83,
+    "instructions": 5938,
+    "loads": {
+      "L": 1699
+    },
+    "name": "model_array<16, 16>",
+    "stores": {
+      "L": 593
+    },
+    "total_instructions": 39138
+  }
+}

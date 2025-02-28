@@ -1,0 +1,1733 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator\accelerator.hlsrun_csim_summary, at 02/26/25 08:54:26
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator -config C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg -cmdlineconfig C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Wed Feb 26 08:54:30 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source C:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'GIM' on host 'gim_laptop_1' (Windows NT_amd64 version 10.0) on Wed Feb 26 08:54:32 -0800 2025
+INFO: [HLS 200-10] In directory 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component'
+INFO: [HLS 200-2005] Using work_dir C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\X_test.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/X_test.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\X_train.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/X_train.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\Y_test.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/Y_test.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\Y_train.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/Y_train.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(21)
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(22)
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../csv_import.cpp in debug mode
+   Compiling ../../../../../main.cpp in debug mode
+   Compiling ../../../../../weight_pe.cpp in debug mode
+   Compiling ../../../../../error_pe.cpp in debug mode
+   Compiling ../../../../../bias_pe.cpp in debug mode
+   Compiling ../../../../../act_pe.cpp in debug mode
+   Compiling ../../../../../accelerator.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../../csv_import.cpp:2:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../main.cpp:2:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../weight_pe.cpp:1:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../error_pe.cpp:1:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../bias_pe.cpp:1:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../act_pe.cpp:1:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../accelerator.cpp:1:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+Y_train size: 320
+first 3 labels: 0, 12
+CSV files successfully loaded
+0: -0.660156
+1: 0.328125
+2: 0.328125
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 1
+1: 0
+2: -1
+0: 0
+1: 0
+2: 0
+0: 1
+1: 0
+2: -1
+0: 0
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: 0
+1: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 1
+1: -1
+2: 0
+0: 1
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0
+1: 0
+2: 0
+0: 1
+1: 0
+2: -1
+0: 0
+1: 0
+2: 0
+0: 0
+1: 0
+2: 0
+0: 0
+1: 0
+2: 0
+2: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 1
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0.00390625
+1: -0.996094
+2: 0.00390625
+0: 0
+1: 0
+2: -1
+0: 0
+1: 0
+2: 0
+0: 1
+1: 0
+2: -1
+0: 0
+1: 0
+2: 0
+0: 0
+1: 0
+2: 0
+0: 0
+1: 0
+2: 0
+3: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 1
+1: -1
+2: 0
+0: 1
+1: 0
+2: -1
+0: 0.162109
+1: -0.837891
+2: 0.00585938
+0: 0
+1: 0
+2: -1
+0: -0.978516
+1: 0.0214844
+2: 0.0214844
+0: 0.0332031
+1: 0.0332031
+2: -0.972656
+0: -0.970703
+1: 0.0292969
+2: 0.0292969
+0: -0.931641
+1: 0.0683594
+2: 0.0449219
+0: -0.939453
+1: 0.0605469
+2: 0.0351562
+4: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: -0.982422
+1: 0.0175781
+2: 0
+0: 0
+1: 0
+2: -1
+0: -0.964844
+1: 0.0351562
+2: 0.00195312
+0: -1
+1: 0
+2: 0
+0: -0.957031
+1: 0.0429688
+2: 0
+5: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0
+1: -1
+2: 0
+0: 1
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+6: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0
+1: -1
+2: 0
+0: 0.115234
+1: 0.115234
+2: -0.884766
+0: 0.625
+1: -0.984375
+2: 0.355469
+0: 0.00195312
+1: 0
+2: -0.998047
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: -0.996094
+1: 0.00390625
+2: 0.00390625
+0: -1
+1: 0
+2: 0
+7: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0
+1: -1
+2: 0
+0: 0.154297
+1: 0.00195312
+2: -0.845703
+0: 0.974609
+1: -0.978516
+2: 0
+0: 0.5625
+1: 0.378906
+2: -0.943359
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: -0.998047
+1: 0.00195312
+2: 0
+0: -1
+1: 0
+2: 0
+8: 0, -34.5625, biases: 0.2226560.179688
+0: 0
+1: 0
+2: 0
+0: 0
+1: -1
+2: 0
+0: 0.998047
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 1
+1: 0
+2: -1
+0: -0.347656
+1: 0.345703
+2: 0
+0: 0
+1: 0
+2: -1
+0: -0.0605469
+1: 0.0585938
+2: 0
+0: 0
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+9: 0, -34.5625, biases: 0.2226560.179688
+0: -0.193359
+1: 0.0078125
+2: 0.183594
+0: 0
+1: -1
+2: 0
+0: 1
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: -0.533203
+1: 0.0585938
+2: 0.466797
+0: 0.505859
+1: 0.0292969
+2: -0.539062
+0: -0.521484
+1: 0.0566406
+2: 0.460938
+0: -0.214844
+1: 0.0214844
+2: 0.191406
+0: -0.433594
+1: 0.0273438
+2: 0.402344
+10: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0.146484
+1: -0.980469
+2: 0.146484
+0: 0
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: -0.236328
+1: 0.195312
+2: 0.0390625
+0: 0.845703
+1: 0.111328
+2: -0.958984
+0: -0.257812
+1: 0.199219
+2: 0.0546875
+0: -0.0859375
+1: 0.0644531
+2: 0.0195312
+0: -0.162109
+1: 0.107422
+2: 0.0527344
+11: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0.515625
+1: -0.804688
+2: 0.285156
+0: 1
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 1
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: 0
+12: 0, -34.5625, biases: 0.2226560.179688
+0: -0.394531
+1: 0.207031
+2: 0.185547
+0: 1
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 1
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+13: 0, -34.5625, biases: 0.2226560.179688
+0: -0.560547
+1: 0.103516
+2: 0.439453
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0.0683594
+1: -0.931641
+2: 0.0683594
+0: 0.00195312
+1: 0.00195312
+2: -0.998047
+0: -1
+1: 0
+2: 0
+0: 0.898438
+1: 0
+2: -0.900391
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: 0
+0: -0.328125
+1: 0
+2: 0.326172
+14: 0, -34.5625, biases: 0.2226560.179688
+0: -0.787109
+1: 0.0351562
+2: 0.212891
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0.0683594
+1: -0.931641
+2: 0.00390625
+0: 0
+1: 0
+2: -1
+0: 0
+1: 0
+2: 0
+0: 1
+1: 0
+2: -1
+0: -0.00390625
+1: 0.00195312
+2: 0
+0: 0
+1: 0
+2: 0
+0: 0
+1: 0
+2: 0
+15: 0, -34.5625, biases: 0.2226560.179688
+0: -0.980469
+1: 0
+2: 0.0195312
+0: 0.111328
+1: -0.888672
+2: 0.00585938
+0: 1
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+16: 0, -34.5625, biases: 0.2226560.179688
+0: 0
+1: 0
+2: 0
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+17: 0, -34.5625, biases: 0.2226560.179688
+0: 0
+1: 0
+2: 0
+0: 0.103516
+1: -1
+2: 0.103516
+0: 1
+1: 0
+2: -1
+0: 0.275391
+1: -0.943359
+2: 0.275391
+0: 0.601562
+1: 0.0273438
+2: -0.630859
+0: 0
+1: 0
+2: 0
+0: 0.96875
+1: 0.00390625
+2: -0.976562
+0: 0
+1: 0
+2: 0
+0: -0.0429688
+1: 0.00585938
+2: 0.0332031
+0: -0.0488281
+1: 0.00585938
+2: 0.0390625
+18: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 1
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0.392578
+1: 0.392578
+2: -0.986328
+0: 0
+1: 0
+2: 0
+0: 0.960938
+1: 0.0332031
+2: -0.998047
+0: 0
+1: 0
+2: 0
+0: -0.0449219
+1: 0.0351562
+2: 0.00585938
+0: -0.0507812
+1: 0.0390625
+2: 0.0078125
+19: 0, -34.5625, biases: 0.2226560.179688
+0: 0
+1: 0
+2: 0
+0: 1
+1: -1
+2: 0
+0: 0.03125
+1: 0.03125
+2: -0.96875
+0: 1
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+20: 0, -34.5625, biases: 0.2226560.179688
+0: -0.992188
+1: 0.0078125
+2: 0.0078125
+0: 1
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 1
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+21: 0, -34.5625, biases: 0.2226560.179688
+0: -0.994141
+1: 0.00585938
+2: 0.00585938
+0: 0
+1: -1
+2: 0
+0: 1
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0.00195312
+1: 0.00195312
+2: -1
+0: 0
+1: 0
+2: 0
+0: 1
+1: 0
+2: -1
+0: 0
+1: 0
+2: 0
+0: 0
+1: 0
+2: 0
+0: 0
+1: 0
+2: 0
+22: 0, -34.5625, biases: 0.2226560.179688
+0: 0
+1: 0
+2: 0
+0: 1
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0
+1: 0
+2: 0
+0: 1
+1: 0
+2: -1
+0: 0
+1: 0
+2: 0
+0: 0
+1: 0
+2: 0
+0: 0
+1: 0
+2: 0
+23: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0.929688
+1: -0.931641
+2: 0
+0: 1
+1: 0
+2: -1
+0: 1
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+24: 0, -34.5625, biases: 0.2226560.179688
+0: -0.0195312
+1: 0
+2: 0.0175781
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 1
+1: -1
+2: 0
+0: 0.015625
+1: 0.015625
+2: -0.984375
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+25: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0.0429688
+1: -0.984375
+2: 0.0429688
+0: 0
+1: 0
+2: -1
+0: 1
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: -0.669922
+1: 0.0234375
+2: 0.330078
+0: 0.320312
+1: 0.220703
+2: -0.679688
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -0.599609
+1: 0.150391
+2: 0.400391
+26: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0.388672
+1: -0.6875
+2: 0.296875
+0: 1
+1: 0
+2: -1
+0: 0.0546875
+1: -0.945312
+2: 0.0546875
+0: 0
+1: 0
+2: -1
+0: -0.015625
+1: 0.00585938
+2: 0.00585938
+0: 0.917969
+1: 0.0761719
+2: -0.998047
+0: -0.0253906
+1: 0.0078125
+2: 0.0136719
+0: -1
+1: 0
+2: 0
+0: -0.0761719
+1: 0.0683594
+2: 0.00585938
+27: 0, -34.5625, biases: 0.2226560.179688
+0: 0
+1: 0
+2: 0
+0: 1
+1: -1
+2: 0
+0: 1
+1: 0
+2: -1
+0: 1
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+28: 0, -34.5625, biases: 0.2226560.179688
+0: 0
+1: 0
+2: 0
+0: 1
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 1
+1: -1
+2: 0
+0: 0.21875
+1: 0.21875
+2: -0.78125
+0: 0
+1: 0
+2: 0
+0: 0.00390625
+1: 0
+2: -0.996094
+0: 0
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+29: 0, -34.5625, biases: 0.2226560.179688
+0: -0.988281
+1: 0
+2: 0.0117188
+0: 1
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: -0.00976562
+1: 0.0078125
+2: 0
+0: 1
+1: 0
+2: -1
+0: -0.226562
+1: 0.224609
+2: 0
+0: -0.167969
+1: 0.15625
+2: 0.0078125
+0: 0
+1: 0
+2: 0
+30: 0, -34.5625, biases: 0.2226560.179688
+0: -0.964844
+1: 0.0351562
+2: 0.0351562
+0: 1
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 1
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -0.789062
+1: 0.210938
+2: 0
+31: 0, -34.5625, biases: 0.2226560.179688
+0: -0.958984
+1: 0.0410156
+2: 0.0410156
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 1
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+32: 0, -34.5625, biases: 0.2226560.179688
+0: -0.974609
+1: 0.0253906
+2: 0.0253906
+0: 0.00585938
+1: -1
+2: 0.00585938
+0: 0
+1: 0
+2: -1
+0: 0.603516
+1: -1
+2: 0.394531
+0: 0
+1: 0
+2: -1
+0: 0
+1: 0
+2: 0
+0: 1
+1: 0
+2: -1
+0: 0
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+33: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0.0898438
+1: -0.910156
+2: 0.0898438
+0: 1
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0.996094
+1: 0
+2: -0.998047
+0: -1
+1: 0
+2: 0
+0: 0.375
+1: 0.375
+2: -0.865234
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -0.535156
+1: 0.375
+2: 0.15625
+34: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0.808594
+1: -0.851562
+2: 0.0390625
+0: 0
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 1
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+35: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0.869141
+1: -0.871094
+2: 0
+0: 1
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0.0917969
+1: 0.0917969
+2: -0.964844
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+36: 0, -34.5625, biases: 0.2226560.179688
+0: -0.996094
+1: 0.00390625
+2: 0.00195312
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 1
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+37: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 1
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0.0078125
+1: -0.992188
+2: 0.0078125
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0.925781
+1: 0.0722656
+2: -1
+0: -1
+1: 0
+2: 0
+0: -0.720703
+1: 0.279297
+2: 0.279297
+0: -0.00585938
+1: 0.00390625
+2: 0
+38: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0.0195312
+1: -0.980469
+2: 0.0117188
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0.078125
+1: 0.078125
+2: -1
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -0.0917969
+1: 0.0898438
+2: 0
+39: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0
+1: -1
+2: 0
+0: 1
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0.367188
+1: 0.367188
+2: -0.8125
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+40: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0.392578
+1: -0.990234
+2: 0.392578
+0: 0
+1: 0
+2: -1
+0: 0.976562
+1: -0.978516
+2: 0
+0: 0
+1: 0
+2: -1
+0: -0.765625
+1: 0.208984
+2: 0.234375
+0: 0
+1: 0
+2: -1
+0: -0.773438
+1: 0.164062
+2: 0.226562
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+41: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0.988281
+1: -0.998047
+2: 0.00585938
+0: 0
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0.0429688
+1: 0.0429688
+2: -0.957031
+0: -0.5625
+1: 0.4375
+2: 0.0566406
+0: 0
+1: 0
+2: -1
+0: -0.523438
+1: 0.441406
+2: 0.0800781
+0: -0.00390625
+1: 0.00195312
+2: 0
+0: -1
+1: 0
+2: 0
+42: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 1
+1: -1
+2: 0
+0: 1
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 1
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+43: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 1
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0.015625
+1: -0.998047
+2: 0.015625
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+44: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0.998047
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0.681641
+1: -0.738281
+2: 0.0546875
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0.720703
+1: 0
+2: -0.722656
+0: -1
+1: 0
+2: 0
+0: -0.876953
+1: 0.0449219
+2: 0.123047
+0: -0.517578
+1: 0
+2: 0.482422
+45: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 1
+1: 0
+2: -1
+0: -0.978516
+1: 0.0214844
+2: 0
+0: 1
+1: 0
+2: -1
+0: -0.990234
+1: 0.00976562
+2: 0
+0: -0.601562
+1: 0.369141
+2: 0.228516
+0: 0
+1: 0
+2: 0
+46: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0.0292969
+1: 0.0292969
+2: -0.970703
+0: -1
+1: 0
+2: 0
+0: 0.751953
+1: 0.246094
+2: -1
+0: -1
+1: 0
+2: 0
+0: -0.587891
+1: 0.412109
+2: 0.015625
+0: -0.0078125
+1: 0.00585938
+2: 0
+47: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0.0585938
+1: 0.0585938
+2: -1
+0: -1
+1: 0
+2: 0
+0: -0.994141
+1: 0.00585938
+2: 0
+0: -0.111328
+1: 0.109375
+2: 0
+48: 0, -34.5625, biases: 0.2226560.179688
+0: -1
+1: 0
+2: 0
+0: 0.224609
+1: -0.931641
+2: 0.224609
+0: 0.169922
+1: 0.169922
+2: -0.888672
+0: 1
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+49: 0, -34.5625, biases: 0.2226560.179688
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 62.153 seconds; peak allocated memory: 230.992 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 1m 8s

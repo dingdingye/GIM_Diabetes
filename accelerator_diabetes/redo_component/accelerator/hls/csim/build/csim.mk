@@ -23,7 +23,7 @@ __USE_VCXX_CLANG__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../../main.cpp ../../../../../weight_pe.cpp ../../../../../error_pe.cpp ../../../../../csv_import.cpp ../../../../../bias_pe.cpp ../../../../../array.cpp ../../../../../act_pe.cpp ../../../../../accelerator.cpp
+HLS_SOURCES = ../../../../../csv_import.cpp ../../../../../main.cpp ../../../../../weight_pe.cpp ../../../../../error_pe.cpp ../../../../../bias_pe.cpp ../../../../../array.cpp ../../../../../act_pe.cpp ../../../../../accelerator.cpp
 
 override TARGET := csim.exe
 
@@ -84,6 +84,12 @@ all: $(TARGET)
 
 
 
+$(ObjDir)/csv_import.o: ../../../../../csv_import.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../../csv_import.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CXX) -std=gnu++14 ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/csv_import.d
+
 $(ObjDir)/main.o: ../../../../../main.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../../main.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CXX) -std=gnu++14 ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
@@ -101,12 +107,6 @@ $(ObjDir)/error_pe.o: ../../../../../error_pe.cpp $(ObjDir)/.dir
 	$(Verb)  $(CXX) -std=gnu++14 ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/error_pe.d
-
-$(ObjDir)/csv_import.o: ../../../../../csv_import.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../../csv_import.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CXX) -std=gnu++14 ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/csv_import.d
 
 $(ObjDir)/bias_pe.o: ../../../../../bias_pe.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../../bias_pe.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)

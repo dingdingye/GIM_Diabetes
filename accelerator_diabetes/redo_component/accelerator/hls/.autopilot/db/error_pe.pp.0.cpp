@@ -44520,7 +44520,7 @@ namespace std
 typedef ap_fixed<16,7> fixed_16;
 using namespace std;
 
-void readCSV(const char* filepath, fixed_16 data[10][16], int& num_rows, int& num_cols);
+void readCSV(const char* filepath, fixed_16 data[25][16], int& num_rows, int& num_cols);
 
 
 
@@ -44553,11 +44553,11 @@ struct Array {
 
 struct Inference {
 
- fixed_16 inference[4];
+ fixed_16 inference[25];
  fixed_16 new_w1[16][16];
- fixed_16 new_w2[16][16];
+ fixed_16 new_w2[16][3];
  fixed_16 new_b1[16];
- fixed_16 new_b2[16];
+ fixed_16 new_b2[3];
 
  Inference(){}
 };
@@ -44578,15 +44578,67 @@ fixed_16 act_pe(fixed_16 net_in, char model, fixed_16 alpha);
 fixed_16 error_pe(fixed_16 output_kmin1, fixed_16 partial_sum_delta_k,
     char model, fixed_16 alpha);
 
-Array model_array(fixed_16 weights[16][16],
-   fixed_16 biases[16],
-   fixed_16 output_kmin1[16],
-   fixed_16 delta_k[16], fixed_16 eta,
-   char model, fixed_16 alpha, fixed_16 training);
 
-Inference accelerator(fixed_16 data[10][16], fixed_16 labels[10][16], fixed_16 w1[16][16], fixed_16 w2[16][16],
-     fixed_16 bias_1[16], fixed_16 bias_2[16],
-                 fixed_16 training);
+
+
+
+
+template <int INPUT_SIZE, int OUTPUT_SIZE>
+Array model_array(fixed_16 (&weights)[INPUT_SIZE][OUTPUT_SIZE],
+   fixed_16 (&biases)[OUTPUT_SIZE],
+   fixed_16 (&output_kmin1)[INPUT_SIZE],
+   fixed_16 (&delta_k)[OUTPUT_SIZE], fixed_16 eta,
+   char model, fixed_16 alpha, fixed_16 training) {
+
+
+
+
+    Array return_array;
+
+
+    fixed_16 partial_delta_sum[INPUT_SIZE] = {0};
+
+
+    int n = 0;
+    VITIS_LOOP_99_1: for (n = 0; n < OUTPUT_SIZE; n++) {
+#pragma HLS UNROLL
+
+ fixed_16 partial_output_sum = 0;
+        int c = 0;
+
+        VITIS_LOOP_105_2: for (c = 0; c < INPUT_SIZE; c++) {
+
+
+            Weight weight_out = weights_pe(delta_k[n], output_kmin1[c], partial_output_sum,
+              partial_delta_sum[c], weights[n][c], eta, training);
+            partial_output_sum = weight_out.sum_output_out;
+            partial_delta_sum[c] = weight_out.sum_delta_out;
+            return_array.weight_changes[n][c] = weight_out.weight_change;
+        }
+
+
+        Bias bias_out = bias_pe(delta_k[n], partial_output_sum, biases[n], eta, training);
+
+        return_array.bias_change[n] = bias_out.bias_change;
+        return_array.output_k[n] = act_pe(bias_out.net_sum, model, alpha);
+    }
+
+    int j = 0;
+    VITIS_LOOP_123_3: for (j = 0; j < INPUT_SIZE; j++) {
+        if (training == 0)
+            return_array.delta_kmin1[j] = 0;
+        else
+            return_array.delta_kmin1[j] = error_pe(output_kmin1[j], partial_delta_sum[j], model, alpha);
+    }
+
+    return return_array;
+}
+
+
+
+
+
+Inference accelerator(fixed_16 data[25][16], fixed_16 labels[25][16], fixed_16 w1[16][16], fixed_16 w2[16][3], fixed_16 bias_1[16], fixed_16 bias_2[3], fixed_16 training);
 # 2 "../error_pe.cpp" 2
 
 

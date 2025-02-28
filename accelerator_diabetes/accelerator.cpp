@@ -38,7 +38,7 @@ void calculate_accuracy(fixed_16 predictions[MAX_DATA_ROWS], fixed_16 labels[MAX
     cout << "| Accuracy: " << setw(7) << fixed << setprecision(2) << accuracy << "% |"  << endl;
 }
 
-void categoricalCrossEntropy(fixed_16 y_true_int, fixed_16 y_pred[OUTPUT_LAYER_SIZE], fixed_16 delta_2[OUTPUT_LAYER_SIZE]) {
+void categoricalCrossEntropy(fixed_16 y_true_int, fixed_16 y_pred[OUTPUT_LAYER_SIZE], fixed_16 delta_out[OUTPUT_LAYER_SIZE]) {
     double loss = 0.0;
     const double epsilon = 1e-12;
 
@@ -47,18 +47,15 @@ void categoricalCrossEntropy(fixed_16 y_true_int, fixed_16 y_pred[OUTPUT_LAYER_S
 
     for (int i = 0; i < OUTPUT_LAYER_SIZE; i++) {
         // delta_2[i] = double(y_true[i]) * log(double(double(y_pred[i]) + epsilon)// Calculate categorical cross entropy loss
-        delta_2[i] = y_pred[i] - y_true[i];
-        cout << double(i) << ": " <<  double(delta_2[i]) << endl;
+        delta_out[i] = y_pred[i] - y_true[i];
+        // cout << double(i) << ": " <<  double(delta_2[i]) << endl;
     }
     
 }
 
 
 // now, we actually run the full model
-Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labels[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZE][OUTPUT_LAYER_SIZE],
-
-				fixed_16  bias_1[ARRAY_SIZE], fixed_16 bias_2[OUTPUT_LAYER_SIZE],
-                fixed_16 training) {
+Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labels[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZE][OUTPUT_LAYER_SIZE], fixed_16  bias_1[ARRAY_SIZE], fixed_16 bias_2[OUTPUT_LAYER_SIZE], fixed_16 training) {
 
     // array for the final output
     Inference output_array;
@@ -77,12 +74,12 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
 
     // initializing internal arrays with zeros
     fixed_16 delta_2[OUTPUT_LAYER_SIZE] = {0};
-    fixed_16 output_back1[ARRAY_SIZE] = {0};
+    // fixed_16 output_back1[ARRAY_SIZE] = {0};
     fixed_16 delta_1[ARRAY_SIZE] = {0};
     fixed_16 weight_changes_2[ARRAY_SIZE][OUTPUT_LAYER_SIZE] = {0};
     fixed_16 bias_2_update[OUTPUT_LAYER_SIZE] = {0};
 
-    fixed_16 output_back2[OUTPUT_LAYER_SIZE] = {0};
+    // fixed_16 output_back2[OUTPUT_LAYER_SIZE] = {0};
     fixed_16 delta_0[ARRAY_SIZE] = {0};
     fixed_16 weight_changes_1[ARRAY_SIZE][ARRAY_SIZE] = {0};
     fixed_16 bias_1_update[ARRAY_SIZE] = {0};
@@ -110,9 +107,9 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
         }
     }
     for (int n = 0; n<ARRAY_SIZE; n++) {
-        bias_1_local[n] = bias_1[n];
+        
         for (int m = 0;m<OUTPUT_LAYER_SIZE; m++) {
-            
+            bias_2_local[m] = bias_2[m];
             w2_local[n][m] = w2[n][m];
  
         }
@@ -137,7 +134,7 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
 #pragma HLS PIPELINE
             // setup the initial data input
             for (int n = 0; n < ARRAY_SIZE; n++ ) {
-                output_0[n] = data[j][n];
+                output_0[n] = data[j+25][n]; // set offset here to test different subsets (ex. j + 25) 
         
             }
             // cout << "j: " << double(j) << endl;
@@ -157,16 +154,8 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
             for (int n = 0; n < ARRAY_SIZE; n++) output_1[n] = array_out1.output_k[n];
 
             // then layer two
-            Array array_out2 = model_array(w2_local, bias_2_local, output_1, delta_2, lr, model, alpha, training);
+            Array array_out2 = model_array(w2_local, bias_2_local, output_1, delta_2, lr, 'n', alpha, training);
             for (int n = 0; n < OUTPUT_LAYER_SIZE; n++) output_2[n] = array_out2.output_k[n];
-
-            // // make inferences for the return array if training has completed, INCREASE POSSIBLE OUTPUTS AND LOOK INTO THRESHOLDS
-            // if (output_2[0] > 0.5) {
-            //     output_array.inference[j] = 1;
-            // }
-            // else if (output_2[0] <= 0.5) {
-            //     output_array.inference[j] = 0;
-            // } // CHANGE THRESHOLD TO 0.9 / 0.1 AND TEST
 
             // cout << double(j) << ": " << double(output_2[0]) << ", " << double(output_2[1]) << ", " << double(output_2[2])  << "| | ";
 
@@ -194,8 +183,8 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
             for (int n = 0; n < OUTPUT_LAYER_SIZE; n++) delta_1[n] = array_out2.delta_kmin1[n];
             // update the weights and biases
             for (int n = 0; n<ARRAY_SIZE; n++) {
-                bias_2_local[n] = array_back2.bias_change[n];
-                for (int m = 0;m<ARRAY_SIZE; m++) {
+                for (int m = 0;m<OUTPUT_LAYER_SIZE; m++) {
+                    bias_2_local[m] = array_back2.bias_change[m];
                     w2_local[n][m] = array_back2.weight_changes[n][m];
                 }
             }
@@ -227,16 +216,22 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
         }
         
         // Calculate and print accuracy each epoch
-        // calculate_accuracy(output_array.inference, labels[0], i);
-        cout << double(i) << ": " << double(w1_local[0][0]) << ", " << double(w1_local[0][1]) << ", " << "biases: " << double(bias_1_local[0]) << double(bias_1_local[1]) << endl;
+        calculate_accuracy(output_array.inference, labels[0], i);
+        // cout << double(i) << ": " << double(w1_local[0][0]) << ", " << double(w1_local[0][1]) << ", " << "biases: " << double(bias_1_local[0]) << double(bias_1_local[1]) << endl;
     }
 
     // produce the final weights to be used in inference
     for (int n = 0; n<ARRAY_SIZE; n++) {
         output_array.new_b1[n] = bias_1_local[n];
-        output_array.new_b2[n] = bias_2_local[n];
         for (int m = 0;m<ARRAY_SIZE; m++) {
             output_array.new_w1[n][m] = w1_local[n][m];
+        }
+    }
+    // produce the final weights to be used in inference
+    for (int n = 0; n<OUTPUT_LAYER_SIZE; n++) {
+        output_array.new_b2[n] = bias_2_local[n];
+        for (int m = 0;m<OUTPUT_LAYER_SIZE; m++) {
+            output_array.new_b2[m] = bias_2_local[m];
             output_array.new_w2[n][m] = w2_local[n][m];
         }
     }

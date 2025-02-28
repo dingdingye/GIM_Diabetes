@@ -1,0 +1,140 @@
+remark: ../accelerator.cpp:136:20: Loop 'VITIS_LOOP_136_7' is marked as complete unroll implied by the pipeline pragma
+remark: ../accelerator.cpp:144:31: Loop 'VITIS_LOOP_144_8' is marked as complete unroll implied by the pipeline pragma
+remark: ../accelerator.cpp:147:31: Loop 'VITIS_LOOP_147_9' is marked as complete unroll implied by the pipeline pragma
+remark: ../accelerator.cpp:154:32: Loop 'VITIS_LOOP_154_10' is marked as complete unroll implied by the pipeline pragma
+remark: ../accelerator.cpp:158:32: Loop 'VITIS_LOOP_158_11' is marked as complete unroll implied by the pipeline pragma
+remark: ../accelerator.cpp:175:32: Loop 'VITIS_LOOP_175_12' is marked as complete unroll implied by the pipeline pragma
+remark: ../accelerator.cpp:191:32: Loop 'VITIS_LOOP_191_13' is marked as complete unroll implied by the pipeline pragma
+remark: ../accelerator.cpp:193:32: Loop 'VITIS_LOOP_193_14' is marked as complete unroll implied by the pipeline pragma
+remark: ../accelerator.cpp:194:36: Loop 'VITIS_LOOP_194_15' is marked as complete unroll implied by the pipeline pragma
+remark: ../accelerator.cpp:204:32: Loop 'VITIS_LOOP_204_16' is marked as complete unroll implied by the pipeline pragma
+remark: ../accelerator.cpp:207:36: Loop 'VITIS_LOOP_207_17' is marked as complete unroll implied by the pipeline pragma
+remark: ../accelerator.cpp:48:22: Loop 'VITIS_LOOP_48_1' is marked as complete unroll implied by the pipeline pragma
+remark: ../accelerator.cpp:45:26: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: <unknown>:0:0: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: ../accelerator.cpp:20:22: Loop 'VITIS_LOOP_20_3' is marked as complete unroll implied by the pipeline pragma
+remark: ../accelerator.cpp:15:22: Loop 'VITIS_LOOP_15_2' is marked as complete unroll implied by the pipeline pragma
+remark: ../accelerator.cpp:10:22: Loop 'VITIS_LOOP_10_1' is marked as complete unroll implied by the pipeline pragma
+remark: ../gim_model.h:123:23: Loop 'VITIS_LOOP_123_3' is marked as complete unroll implied by the pipeline pragma
+remark: ../gim_model.h:99:22: Loop 'VITIS_LOOP_99_1' is marked as complete unroll implied by the pipeline pragma
+remark: ../gim_model.h:105:27: Loop 'VITIS_LOOP_105_2' is marked as complete unroll implied by the pipeline pragma
+remark: ../gim_model.h:95:46: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: <unknown>:0:0: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: ../gim_model.h:123:23: Loop 'VITIS_LOOP_123_3' is marked as complete unroll implied by the pipeline pragma
+remark: ../gim_model.h:99:22: Loop 'VITIS_LOOP_99_1' is marked as complete unroll implied by the pipeline pragma
+remark: ../gim_model.h:105:27: Loop 'VITIS_LOOP_105_2' is marked as complete unroll implied by the pipeline pragma
+remark: ../gim_model.h:95:46: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: <unknown>:0:0: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_136_7' (../accelerator.cpp:136:20) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_144_8' (../accelerator.cpp:144:31) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_147_9' (../accelerator.cpp:147:31) in function 'accelerator' completely with a factor of 3
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_154_10' (../accelerator.cpp:154:32) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_158_11' (../accelerator.cpp:158:32) in function 'accelerator' completely with a factor of 3
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_175_12' (../accelerator.cpp:175:32) in function 'accelerator' completely with a factor of 2
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_191_13' (../accelerator.cpp:191:32) in function 'accelerator' completely with a factor of 3
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_193_14' (../accelerator.cpp:193:32) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_194_15' (../accelerator.cpp:194:36) in function 'accelerator' completely with a factor of 3
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_194_15' (../accelerator.cpp:194:36) in function 'accelerator' completely with a factor of 3
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_194_15' (../accelerator.cpp:194:36) in function 'accelerator' completely with a factor of 3
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_194_15' (../accelerator.cpp:194:36) in function 'accelerator' completely with a factor of 3
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_194_15' (../accelerator.cpp:194:36) in function 'accelerator' completely with a factor of 3
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_194_15' (../accelerator.cpp:194:36) in function 'accelerator' completely with a factor of 3
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_194_15' (../accelerator.cpp:194:36) in function 'accelerator' completely with a factor of 3
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_194_15' (../accelerator.cpp:194:36) in function 'accelerator' completely with a factor of 3
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_194_15' (../accelerator.cpp:194:36) in function 'accelerator' completely with a factor of 3
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_194_15' (../accelerator.cpp:194:36) in function 'accelerator' completely with a factor of 3
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_194_15' (../accelerator.cpp:194:36) in function 'accelerator' completely with a factor of 3
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_194_15' (../accelerator.cpp:194:36) in function 'accelerator' completely with a factor of 3
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_194_15' (../accelerator.cpp:194:36) in function 'accelerator' completely with a factor of 3
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_194_15' (../accelerator.cpp:194:36) in function 'accelerator' completely with a factor of 3
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_194_15' (../accelerator.cpp:194:36) in function 'accelerator' completely with a factor of 3
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_194_15' (../accelerator.cpp:194:36) in function 'accelerator' completely with a factor of 3
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_204_16' (../accelerator.cpp:204:32) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_207_17' (../accelerator.cpp:207:36) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_207_17' (../accelerator.cpp:207:36) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_207_17' (../accelerator.cpp:207:36) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_207_17' (../accelerator.cpp:207:36) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_207_17' (../accelerator.cpp:207:36) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_207_17' (../accelerator.cpp:207:36) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_207_17' (../accelerator.cpp:207:36) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_207_17' (../accelerator.cpp:207:36) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_207_17' (../accelerator.cpp:207:36) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_207_17' (../accelerator.cpp:207:36) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_207_17' (../accelerator.cpp:207:36) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_207_17' (../accelerator.cpp:207:36) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_207_17' (../accelerator.cpp:207:36) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_207_17' (../accelerator.cpp:207:36) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_207_17' (../accelerator.cpp:207:36) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:58:0: Unrolling loop 'VITIS_LOOP_207_17' (../accelerator.cpp:207:36) in function 'accelerator' completely with a factor of 16
+remark: ../accelerator.cpp:41:0: Unrolling loop 'VITIS_LOOP_48_1' (../accelerator.cpp:48:22) in function 'categoricalCrossEntropy' completely with a factor of 3
+remark: ../accelerator.cpp:41:0: Unrolling loop 'anonymous' (../accelerator.cpp:45:26) in function 'categoricalCrossEntropy' completely with a factor of 2
+remark: ../accelerator.cpp:41:0: Unrolling loop 'anonymous' () in function 'categoricalCrossEntropy' completely with a factor of 1
+remark: ../accelerator.cpp:41:0: Unrolling loop 'anonymous' () in function 'categoricalCrossEntropy' completely with a factor of 1
+remark: ../accelerator.cpp:8:0: Unrolling loop 'VITIS_LOOP_20_3' (../accelerator.cpp:20:22) in function 'softmax' completely with a factor of 3
+remark: ../accelerator.cpp:8:0: Unrolling loop 'VITIS_LOOP_15_2' (../accelerator.cpp:15:22) in function 'softmax' completely with a factor of 3
+remark: ../accelerator.cpp:8:0: Unrolling loop 'VITIS_LOOP_10_1' (../accelerator.cpp:10:22) in function 'softmax' completely with a factor of 2
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_123_3' (../gim_model.h:123:23) in function 'model_array<16, 3>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_99_1' (../gim_model.h:99:22) in function 'model_array<16, 3>' completely with a factor of 3
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 3>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 3>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 3>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' (../gim_model.h:95:46) in function 'model_array<16, 3>' completely with a factor of 15
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 3>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 3>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 3>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 3>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 3>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 3>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 3>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 3>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 3>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 3>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 3>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 3>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 3>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 3>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 3>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_123_3' (../gim_model.h:123:23) in function 'model_array<16, 16>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_99_1' (../gim_model.h:99:22) in function 'model_array<16, 16>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 16>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 16>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 16>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 16>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 16>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 16>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 16>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 16>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 16>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 16>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 16>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 16>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 16>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 16>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 16>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array<16, 16>' completely with a factor of 16
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' (../gim_model.h:95:46) in function 'model_array<16, 16>' completely with a factor of 15
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 16>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 16>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 16>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 16>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 16>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 16>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 16>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 16>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 16>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 16>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 16>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 16>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 16>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 16>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Unrolling loop 'anonymous' () in function 'model_array<16, 16>' completely with a factor of 1
+remark: ../gim_model.h:87:0: Inlining function 'bias_pe(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'Array model_array<16, 3>(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [16][3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, char, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+remark: ../gim_model.h:87:0: Inlining function 'act_pe(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, char, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'Array model_array<16, 3>(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [16][3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, char, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+remark: ../accelerator.cpp:8:0: Inlining function 'std::exp(float)' into 'softmax(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+remark: ../accelerator.cpp:26:0: Inlining function 'std::setprecision(int)' into 'calculate_accuracy(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+remark: ../accelerator.cpp:58:0: Inlining function 'calculate_accuracy(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)' into 'accelerator(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+remark: ../accelerator.cpp:58:0: Inlining function 'categoricalCrossEntropy(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'accelerator(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+error: ../accelerator.cpp:37:25: in function 'accelerator(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)': Undefined function std::operator<<<char, std::char_traits<char> >
+error: ../accelerator.cpp:38:28: in function 'accelerator(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)': Undefined function std::operator<<<char, std::char_traits<char> >
+error: ../accelerator.cpp:38:48: in function 'accelerator(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)': Undefined function std::operator<<<char, std::char_traits<char> >
+error: Syn check fail!

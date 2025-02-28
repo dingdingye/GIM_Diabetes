@@ -1,0 +1,1783 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator\accelerator.hlsrun_csim_summary, at 02/26/25 08:57:24
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator -config C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg -cmdlineconfig C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Wed Feb 26 08:57:28 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source C:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'GIM' on host 'gim_laptop_1' (Windows NT_amd64 version 10.0) on Wed Feb 26 08:57:31 -0800 2025
+INFO: [HLS 200-10] In directory 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component'
+INFO: [HLS 200-2005] Using work_dir C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/accelerator.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/act_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/array.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/bias_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/error_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/gim_model.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/weight_pe.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\X_test.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/X_test.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\X_train.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/X_train.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\Y_test.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/Y_test.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\Y_train.csv' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/Y_train.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(21)
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/main.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\csv_import.cpp' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(22)
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/csv_import.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(8)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(9)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../csv_import.cpp in debug mode
+   Compiling ../../../../../main.cpp in debug mode
+   Compiling ../../../../../weight_pe.cpp in debug mode
+   Compiling ../../../../../error_pe.cpp in debug mode
+   Compiling ../../../../../bias_pe.cpp in debug mode
+   Compiling ../../../../../act_pe.cpp in debug mode
+   Compiling ../../../../../accelerator.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../../csv_import.cpp:2:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../main.cpp:2:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../weight_pe.cpp:1:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../error_pe.cpp:1:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../bias_pe.cpp:1:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../act_pe.cpp:1:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../accelerator.cpp:1:
+In file included from ../../../../../gim_model.h:4:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+Y_train size: 320
+first 3 labels: 0, 12
+CSV files successfully loaded
+0: -0.660156
+1: 0.328125
+2: 0.328125
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: 0
+1: -1
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: 0
+1: 0
+2: -1
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
+0: -1
+1: 0
+2: 0
++---------------------------------------+
+| Epoch:          0| Accuracy:   10.00% |
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
+0.00: 1.00
+1.00: -1.00
+2.00: 0.00
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.00
+1.00: -1.00
+2.00: 0.00
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
++---------------------------------------+
+| Epoch:          1| Accuracy:    0.00% |
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
+0.00: 1.00
+1.00: -1.00
+2.00: 0.00
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.00
+1.00: -1.00
+2.00: 0.00
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
++---------------------------------------+
+| Epoch:          2| Accuracy:    0.00% |
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
+0.00: 1.00
+1.00: -1.00
+2.00: 0.00
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.00
+1.00: -1.00
+2.00: 0.00
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
++---------------------------------------+
+| Epoch:          3| Accuracy:    0.00% |
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
+0.00: 0.17
+1.00: -0.83
+2.00: 0.17
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.01
+1.00: -0.99
+2.00: 0.01
+0.00: 1.00
+1.00: 0.00
+2.00: -1.00
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
+0.00: -0.99
+1.00: 0.01
+2.00: 0.01
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
++---------------------------------------+
+| Epoch:          4| Accuracy:   10.00% |
+0.00: 0.00
+1.00: 0.00
+2.00: 0.00
+0.00: 0.20
+1.00: -0.80
+2.00: 0.20
+0.00: 0.01
+1.00: 0.01
+2.00: -0.99
+0.00: 0.02
+1.00: -0.98
+2.00: 0.02
+0.00: 1.00
+1.00: 0.00
+2.00: -1.00
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
+0.00: -0.97
+1.00: 0.03
+2.00: 0.03
+0.00: -0.98
+1.00: 0.02
+2.00: 0.02
++---------------------------------------+
+| Epoch:          5| Accuracy:   20.00% |
+0.00: -0.73
+1.00: 0.27
+2.00: 0.27
+0.00: 0.24
+1.00: -0.76
+2.00: 0.24
+0.00: 0.06
+1.00: 0.06
+2.00: -0.94
+0.00: 0.11
+1.00: -0.89
+2.00: 0.11
+0.00: 0.27
+1.00: 0.27
+2.00: -0.73
+0.00: 0.00
+1.00: 0.00
+2.00: 0.00
+0.00: 1.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.00
+1.00: 0.00
+2.00: 0.00
+0.00: -0.96
+1.00: 0.04
+2.00: 0.04
+0.00: -0.97
+1.00: 0.03
+2.00: 0.03
++---------------------------------------+
+| Epoch:          6| Accuracy:   30.00% |
+0.00: -0.72
+1.00: 0.28
+2.00: 0.28
+0.00: 0.25
+1.00: -0.75
+2.00: 0.25
+0.00: 0.09
+1.00: 0.09
+2.00: -0.91
+0.00: 0.14
+1.00: -0.86
+2.00: 0.14
+0.00: 0.28
+1.00: 0.28
+2.00: -0.72
+0.00: -0.72
+1.00: 0.28
+2.00: 0.28
+0.00: 1.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.00
+1.00: 0.00
+2.00: 0.00
+0.00: -0.92
+1.00: 0.08
+2.00: 0.08
+0.00: 0.00
+1.00: 0.00
+2.00: 0.00
++---------------------------------------+
+| Epoch:          7| Accuracy:   20.00% |
+0.00: -0.72
+1.00: 0.28
+2.00: 0.28
+0.00: 0.26
+1.00: -0.74
+2.00: 0.26
+0.00: 0.10
+1.00: 0.10
+2.00: -0.90
+0.00: 0.15
+1.00: -0.85
+2.00: 0.15
+0.00: 0.29
+1.00: 0.29
+2.00: -0.71
+0.00: -0.71
+1.00: 0.29
+2.00: 0.29
+0.00: 0.29
+1.00: 0.29
+2.00: -0.71
+0.00: -0.71
+1.00: 0.29
+2.00: 0.29
+0.00: -0.82
+1.00: 0.18
+2.00: 0.18
+0.00: 0.00
+1.00: 0.00
+2.00: 0.00
++---------------------------------------+
+| Epoch:          8| Accuracy:    0.00% |
+0.00: -0.69
+1.00: 0.31
+2.00: 0.31
+0.00: 0.28
+1.00: -0.72
+2.00: 0.28
+0.00: 0.23
+1.00: 0.23
+2.00: -0.77
+0.00: 0.26
+1.00: -0.76
+2.00: 0.26
+0.00: 0.30
+1.00: 0.30
+2.00: -0.70
+0.00: -0.69
+1.00: 0.31
+2.00: 0.31
+0.00: 0.31
+1.00: 0.31
+2.00: -0.69
+0.00: -0.70
+1.00: 0.30
+2.00: 0.30
+0.00: -0.71
+1.00: 0.13
+2.00: 0.29
+0.00: -0.67
+1.00: 0.32
+2.00: 0.33
++---------------------------------------+
+| Epoch:          9| Accuracy:    0.00% |
+0.00: -0.67
+1.00: 0.31
+2.00: 0.33
+0.00: 0.30
+1.00: -0.70
+2.00: 0.30
+0.00: 0.48
+1.00: 0.16
+2.00: -0.64
+0.00: 0.44
+1.00: -0.86
+2.00: 0.42
+0.00: 0.33
+1.00: 0.33
+2.00: -0.67
+0.00: -0.67
+1.00: 0.32
+2.00: 0.33
+0.00: 0.33
+1.00: 0.32
+2.00: -0.67
+0.00: -0.68
+1.00: 0.32
+2.00: 0.32
+0.00: -0.54
+1.00: 0.07
+2.00: 0.46
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
++---------------------------------------+
+| Epoch:         10| Accuracy:   20.00% |
+0.00: -0.64
+1.00: 0.30
+2.00: 0.34
+0.00: 0.33
+1.00: -0.67
+2.00: 0.33
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.69
+1.00: -0.93
+2.00: 0.24
+0.00: 0.36
+1.00: 0.31
+2.00: -0.67
+0.00: -0.65
+1.00: 0.30
+2.00: 0.34
+0.00: 0.36
+1.00: 0.30
+2.00: -0.66
+0.00: -0.65
+1.00: 0.30
+2.00: 0.35
+0.00: -0.31
+1.00: 0.04
+2.00: 0.27
+0.00: -1.00
+1.00: 0.00
+2.00: 0.00
++---------------------------------------+
+| Epoch:         11| Accuracy:   60.00% |
+0.00: -0.62
+1.00: 0.28
+2.00: 0.33
+0.00: 0.35
+1.00: -0.68
+2.00: 0.33
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.82
+1.00: -0.96
+2.00: 0.14
+0.00: 0.38
+1.00: 0.30
+2.00: -0.68
+0.00: -0.63
+1.00: 0.29
+2.00: 0.33
+0.00: 0.37
+1.00: 0.29
+2.00: -0.67
+0.00: -0.63
+1.00: 0.29
+2.00: 0.34
+0.00: -0.19
+1.00: 0.02
+2.00: 0.17
+0.00: -0.62
+1.00: 0.28
+2.00: 0.33
++---------------------------------------+
+| Epoch:         12| Accuracy:   60.00% |
+0.00: -0.61
+1.00: 0.27
+2.00: 0.33
+0.00: 0.36
+1.00: -0.69
+2.00: 0.33
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.86
+1.00: -0.98
+2.00: 0.12
+0.00: 0.38
+1.00: 0.29
+2.00: -0.68
+0.00: -0.62
+1.00: 0.28
+2.00: 0.33
+0.00: 0.38
+1.00: 0.29
+2.00: -0.67
+0.00: -0.62
+1.00: 0.28
+2.00: 0.34
+0.00: -0.16
+1.00: 0.01
+2.00: 0.14
+0.00: -0.61
+1.00: 0.27
+2.00: 0.33
++---------------------------------------+
+| Epoch:         13| Accuracy:   60.00% |
+0.00: -0.60
+1.00: 0.27
+2.00: 0.33
+0.00: 0.37
+1.00: -0.70
+2.00: 0.33
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.88
+1.00: -0.98
+2.00: 0.10
+0.00: 0.39
+1.00: 0.29
+2.00: -0.68
+0.00: -0.61
+1.00: 0.28
+2.00: 0.33
+0.00: 0.39
+1.00: 0.28
+2.00: -0.67
+0.00: -0.62
+1.00: 0.28
+2.00: 0.34
+0.00: -0.13
+1.00: 0.01
+2.00: 0.12
+0.00: -0.60
+1.00: 0.27
+2.00: 0.33
++---------------------------------------+
+| Epoch:         14| Accuracy:   60.00% |
+0.00: -0.59
+1.00: 0.26
+2.00: 0.33
+0.00: 0.38
+1.00: -0.71
+2.00: 0.32
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.90
+1.00: -0.99
+2.00: 0.09
+0.00: 0.40
+1.00: 0.28
+2.00: -0.68
+0.00: -0.60
+1.00: 0.27
+2.00: 0.33
+0.00: 0.40
+1.00: 0.28
+2.00: -0.67
+0.00: -0.61
+1.00: 0.27
+2.00: 0.34
+0.00: -0.12
+1.00: 0.01
+2.00: 0.11
+0.00: -0.60
+1.00: 0.26
+2.00: 0.33
++---------------------------------------+
+| Epoch:         15| Accuracy:   60.00% |
+0.00: -0.58
+1.00: 0.25
+2.00: 0.33
+0.00: 0.38
+1.00: -0.71
+2.00: 0.32
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.90
+1.00: -0.99
+2.00: 0.08
+0.00: 0.41
+1.00: 0.27
+2.00: -0.68
+0.00: -0.60
+1.00: 0.26
+2.00: 0.33
+0.00: 0.40
+1.00: 0.27
+2.00: -0.67
+0.00: -0.61
+1.00: 0.27
+2.00: 0.34
+0.00: -0.10
+1.00: 0.00
+2.00: 0.10
+0.00: -0.59
+1.00: 0.26
+2.00: 0.33
++---------------------------------------+
+| Epoch:         16| Accuracy:   60.00% |
+0.00: -0.58
+1.00: 0.25
+2.00: 0.33
+0.00: 0.39
+1.00: -0.71
+2.00: 0.32
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.91
+1.00: -0.99
+2.00: 0.08
+0.00: 0.41
+1.00: 0.27
+2.00: -0.68
+0.00: -0.59
+1.00: 0.26
+2.00: 0.33
+0.00: 0.41
+1.00: 0.27
+2.00: -0.68
+0.00: -0.60
+1.00: 0.26
+2.00: 0.34
+0.00: -0.09
+1.00: 0.00
+2.00: 0.09
+0.00: -0.59
+1.00: 0.25
+2.00: 0.33
++---------------------------------------+
+| Epoch:         17| Accuracy:   60.00% |
+0.00: -0.57
+1.00: 0.24
+2.00: 0.33
+0.00: 0.39
+1.00: -0.71
+2.00: 0.32
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.92
+1.00: -0.99
+2.00: 0.07
+0.00: 0.42
+1.00: 0.26
+2.00: -0.68
+0.00: -0.59
+1.00: 0.26
+2.00: 0.33
+0.00: 0.41
+1.00: 0.26
+2.00: -0.68
+0.00: -0.60
+1.00: 0.26
+2.00: 0.33
+0.00: -0.09
+1.00: 0.00
+2.00: 0.08
+0.00: -0.58
+1.00: 0.25
+2.00: 0.33
++---------------------------------------+
+| Epoch:         18| Accuracy:   60.00% |
+0.00: -0.57
+1.00: 0.24
+2.00: 0.33
+0.00: 0.39
+1.00: -0.72
+2.00: 0.32
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.92
+1.00: -1.00
+2.00: 0.07
+0.00: 0.42
+1.00: 0.26
+2.00: -0.68
+0.00: -0.58
+1.00: 0.25
+2.00: 0.33
+0.00: 0.41
+1.00: 0.26
+2.00: -0.68
+0.00: -0.59
+1.00: 0.26
+2.00: 0.33
+0.00: -0.08
+1.00: 0.00
+2.00: 0.08
+0.00: -0.58
+1.00: 0.25
+2.00: 0.33
++---------------------------------------+
+| Epoch:         19| Accuracy:   60.00% |
+0.00: -0.57
+1.00: 0.24
+2.00: 0.33
+0.00: 0.40
+1.00: -0.72
+2.00: 0.32
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.93
+1.00: -1.00
+2.00: 0.07
+0.00: 0.42
+1.00: 0.26
+2.00: -0.68
+0.00: -0.58
+1.00: 0.25
+2.00: 0.33
+0.00: 0.41
+1.00: 0.26
+2.00: -0.68
+0.00: -0.59
+1.00: 0.25
+2.00: 0.33
+0.00: -0.08
+1.00: 0.00
+2.00: 0.07
+0.00: -0.58
+1.00: 0.25
+2.00: 0.33
++---------------------------------------+
+| Epoch:         20| Accuracy:   60.00% |
+0.00: -0.56
+1.00: 0.24
+2.00: 0.32
+0.00: 0.40
+1.00: -0.72
+2.00: 0.32
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.93
+1.00: -1.00
+2.00: 0.06
+0.00: 0.43
+1.00: 0.26
+2.00: -0.69
+0.00: -0.58
+1.00: 0.25
+2.00: 0.33
+0.00: 0.42
+1.00: 0.26
+2.00: -0.68
+0.00: -0.59
+1.00: 0.25
+2.00: 0.33
+0.00: -0.07
+1.00: 0.00
+2.00: 0.07
+0.00: -0.58
+1.00: 0.24
+2.00: 0.33
++---------------------------------------+
+| Epoch:         21| Accuracy:   60.00% |
+0.00: -0.56
+1.00: 0.23
+2.00: 0.32
+0.00: 0.40
+1.00: -0.72
+2.00: 0.32
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.93
+1.00: -1.00
+2.00: 0.06
+0.00: 0.43
+1.00: 0.25
+2.00: -0.69
+0.00: -0.58
+1.00: 0.24
+2.00: 0.33
+0.00: 0.42
+1.00: 0.25
+2.00: -0.68
+0.00: -0.59
+1.00: 0.25
+2.00: 0.33
+0.00: -0.07
+1.00: 0.00
+2.00: 0.07
+0.00: -0.57
+1.00: 0.24
+2.00: 0.33
++---------------------------------------+
+| Epoch:         22| Accuracy:   60.00% |
+0.00: -0.56
+1.00: 0.23
+2.00: 0.32
+0.00: 0.41
+1.00: -0.72
+2.00: 0.31
+0.00: 0.44
+1.00: 0.24
+2.00: -0.69
+0.00: 0.91
+1.00: -1.00
+2.00: 0.08
+0.00: 0.42
+1.00: 0.25
+2.00: -0.68
+0.00: -0.58
+1.00: 0.24
+2.00: 0.33
+0.00: 0.41
+1.00: 0.25
+2.00: -0.67
+0.00: -0.59
+1.00: 0.25
+2.00: 0.34
+0.00: -0.09
+1.00: 0.00
+2.00: 0.09
+0.00: -0.58
+1.00: 0.24
+2.00: 0.33
++---------------------------------------+
+| Epoch:         23| Accuracy:   70.00% |
+0.00: -0.56
+1.00: 0.23
+2.00: 0.33
+0.00: 0.40
+1.00: -0.72
+2.00: 0.32
+0.00: 0.44
+1.00: 0.24
+2.00: -0.68
+0.00: 0.90
+1.00: -1.00
+2.00: 0.10
+0.00: 0.42
+1.00: 0.25
+2.00: -0.68
+0.00: -0.58
+1.00: 0.24
+2.00: 0.34
+0.00: 0.41
+1.00: 0.25
+2.00: -0.67
+0.00: -0.60
+1.00: 0.25
+2.00: 0.34
+0.00: -0.11
+1.00: 0.00
+2.00: 0.10
+0.00: -0.58
+1.00: 0.24
+2.00: 0.34
++---------------------------------------+
+| Epoch:         24| Accuracy:   70.00% |
+0.00: -0.57
+1.00: 0.23
+2.00: 0.33
+0.00: 0.40
+1.00: -0.72
+2.00: 0.32
+0.00: 0.44
+1.00: 0.24
+2.00: -0.68
+0.00: 0.88
+1.00: -1.00
+2.00: 0.11
+0.00: 0.42
+1.00: 0.25
+2.00: -0.67
+0.00: -0.59
+1.00: 0.24
+2.00: 0.34
+0.00: 0.41
+1.00: 0.25
+2.00: -0.66
+0.00: -0.60
+1.00: 0.25
+2.00: 0.35
+0.00: -0.12
+1.00: 0.00
+2.00: 0.12
+0.00: -0.58
+1.00: 0.24
+2.00: 0.34
++---------------------------------------+
+| Epoch:         25| Accuracy:   70.00% |
+0.00: -0.57
+1.00: 0.23
+2.00: 0.34
+0.00: 0.39
+1.00: -0.72
+2.00: 0.33
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.89
+1.00: -1.00
+2.00: 0.10
+0.00: 0.42
+1.00: 0.25
+2.00: -0.67
+0.00: -0.58
+1.00: 0.24
+2.00: 0.34
+0.00: 0.41
+1.00: 0.25
+2.00: -0.67
+0.00: -0.59
+1.00: 0.25
+2.00: 0.34
+0.00: -0.11
+1.00: 0.00
+2.00: 0.10
+0.00: -0.58
+1.00: 0.24
+2.00: 0.34
++---------------------------------------+
+| Epoch:         26| Accuracy:   60.00% |
+0.00: -0.56
+1.00: 0.23
+2.00: 0.33
+0.00: 0.40
+1.00: -0.72
+2.00: 0.32
+0.00: 0.44
+1.00: 0.24
+2.00: -0.68
+0.00: 0.88
+1.00: -1.00
+2.00: 0.11
+0.00: 0.42
+1.00: 0.25
+2.00: -0.67
+0.00: -0.58
+1.00: 0.24
+2.00: 0.34
+0.00: 0.41
+1.00: 0.25
+2.00: -0.66
+0.00: -0.60
+1.00: 0.25
+2.00: 0.35
+0.00: -0.12
+1.00: 0.00
+2.00: 0.12
+0.00: -0.58
+1.00: 0.24
+2.00: 0.34
++---------------------------------------+
+| Epoch:         27| Accuracy:   70.00% |
+0.00: -0.57
+1.00: 0.23
+2.00: 0.34
+0.00: 0.39
+1.00: -0.72
+2.00: 0.33
+0.00: 0.44
+1.00: 0.24
+2.00: -0.67
+0.00: 0.87
+1.00: -1.00
+2.00: 0.12
+0.00: 0.42
+1.00: 0.25
+2.00: -0.67
+0.00: -0.59
+1.00: 0.24
+2.00: 0.34
+0.00: 0.41
+1.00: 0.25
+2.00: -0.66
+0.00: -0.60
+1.00: 0.25
+2.00: 0.35
+0.00: -0.13
+1.00: 0.00
+2.00: 0.12
+0.00: -0.58
+1.00: 0.24
+2.00: 0.34
++---------------------------------------+
+| Epoch:         28| Accuracy:   70.00% |
+0.00: -0.57
+1.00: 0.23
+2.00: 0.34
+0.00: 0.39
+1.00: -0.72
+2.00: 0.33
+0.00: 0.43
+1.00: 0.23
+2.00: -0.67
+0.00: 0.86
+1.00: -1.00
+2.00: 0.13
+0.00: 0.42
+1.00: 0.25
+2.00: -0.67
+0.00: -0.59
+1.00: 0.24
+2.00: 0.35
+0.00: 0.41
+1.00: 0.25
+2.00: -0.66
+0.00: -0.60
+1.00: 0.25
+2.00: 0.35
+0.00: -0.13
+1.00: 0.00
+2.00: 0.13
+0.00: -0.58
+1.00: 0.24
+2.00: 0.35
++---------------------------------------+
+| Epoch:         29| Accuracy:   70.00% |
+0.00: -0.57
+1.00: 0.23
+2.00: 0.34
+0.00: 0.39
+1.00: -0.72
+2.00: 0.33
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.88
+1.00: -1.00
+2.00: 0.11
+0.00: 0.42
+1.00: 0.25
+2.00: -0.67
+0.00: -0.58
+1.00: 0.23
+2.00: 0.34
+0.00: 0.41
+1.00: 0.25
+2.00: -0.66
+0.00: -0.59
+1.00: 0.24
+2.00: 0.35
+0.00: -0.11
+1.00: 0.00
+2.00: 0.11
+0.00: -0.58
+1.00: 0.23
+2.00: 0.34
++---------------------------------------+
+| Epoch:         30| Accuracy:   60.00% |
+0.00: -0.56
+1.00: 0.22
+2.00: 0.34
+0.00: 0.39
+1.00: -0.73
+2.00: 0.33
+0.00: 0.44
+1.00: 0.23
+2.00: -0.67
+0.00: 0.87
+1.00: -1.00
+2.00: 0.13
+0.00: 0.42
+1.00: 0.24
+2.00: -0.67
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
+0.00: 0.41
+1.00: 0.25
+2.00: -0.66
+0.00: -0.60
+1.00: 0.24
+2.00: 0.35
+0.00: -0.12
+1.00: 0.00
+2.00: 0.12
+0.00: -0.58
+1.00: 0.23
+2.00: 0.34
++---------------------------------------+
+| Epoch:         31| Accuracy:   70.00% |
+0.00: -0.56
+1.00: 0.22
+2.00: 0.34
+0.00: 0.39
+1.00: -0.72
+2.00: 0.33
+0.00: 0.44
+1.00: 0.23
+2.00: -0.67
+0.00: 0.86
+1.00: -1.00
+2.00: 0.13
+0.00: 0.42
+1.00: 0.24
+2.00: -0.67
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
+0.00: 0.41
+1.00: 0.25
+2.00: -0.66
+0.00: -0.60
+1.00: 0.24
+2.00: 0.35
+0.00: -0.13
+1.00: 0.00
+2.00: 0.13
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
++---------------------------------------+
+| Epoch:         32| Accuracy:   70.00% |
+0.00: -0.57
+1.00: 0.22
+2.00: 0.34
+0.00: 0.39
+1.00: -0.72
+2.00: 0.33
+0.00: 0.44
+1.00: 0.23
+2.00: -0.67
+0.00: 0.85
+1.00: -1.00
+2.00: 0.14
+0.00: 0.42
+1.00: 0.24
+2.00: -0.66
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
+0.00: 0.41
+1.00: 0.25
+2.00: -0.66
+0.00: -0.60
+1.00: 0.24
+2.00: 0.35
+0.00: -0.14
+1.00: 0.00
+2.00: 0.13
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
++---------------------------------------+
+| Epoch:         33| Accuracy:   70.00% |
+0.00: -0.57
+1.00: 0.22
+2.00: 0.34
+0.00: 0.39
+1.00: -0.72
+2.00: 0.33
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.87
+1.00: -1.00
+2.00: 0.12
+0.00: 0.42
+1.00: 0.24
+2.00: -0.67
+0.00: -0.58
+1.00: 0.23
+2.00: 0.34
+0.00: 0.41
+1.00: 0.25
+2.00: -0.66
+0.00: -0.59
+1.00: 0.24
+2.00: 0.35
+0.00: -0.11
+1.00: 0.00
+2.00: 0.11
+0.00: -0.58
+1.00: 0.23
+2.00: 0.34
++---------------------------------------+
+| Epoch:         34| Accuracy:   60.00% |
+0.00: -0.56
+1.00: 0.22
+2.00: 0.34
+0.00: 0.39
+1.00: -0.73
+2.00: 0.33
+0.00: 0.44
+1.00: 0.23
+2.00: -0.67
+0.00: 0.86
+1.00: -1.00
+2.00: 0.13
+0.00: 0.42
+1.00: 0.24
+2.00: -0.67
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
+0.00: 0.41
+1.00: 0.25
+2.00: -0.66
+0.00: -0.60
+1.00: 0.24
+2.00: 0.35
+0.00: -0.12
+1.00: 0.00
+2.00: 0.12
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
++---------------------------------------+
+| Epoch:         35| Accuracy:   70.00% |
+0.00: -0.56
+1.00: 0.22
+2.00: 0.34
+0.00: 0.39
+1.00: -0.72
+2.00: 0.33
+0.00: 0.44
+1.00: 0.23
+2.00: -0.67
+0.00: 0.85
+1.00: -1.00
+2.00: 0.14
+0.00: 0.42
+1.00: 0.24
+2.00: -0.66
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
+0.00: 0.41
+1.00: 0.25
+2.00: -0.66
+0.00: -0.60
+1.00: 0.24
+2.00: 0.35
+0.00: -0.13
+1.00: 0.00
+2.00: 0.13
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
++---------------------------------------+
+| Epoch:         36| Accuracy:   70.00% |
+0.00: -0.56
+1.00: 0.22
+2.00: 0.34
+0.00: 0.39
+1.00: -0.72
+2.00: 0.33
+0.00: 0.44
+1.00: 0.23
+2.00: -0.67
+0.00: 0.85
+1.00: -1.00
+2.00: 0.15
+0.00: 0.42
+1.00: 0.24
+2.00: -0.66
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
+0.00: 0.41
+1.00: 0.25
+2.00: -0.66
+0.00: -0.60
+1.00: 0.24
+2.00: 0.35
+0.00: -0.13
+1.00: 0.00
+2.00: 0.13
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
++---------------------------------------+
+| Epoch:         37| Accuracy:   70.00% |
+0.00: -0.56
+1.00: 0.22
+2.00: 0.34
+0.00: 0.39
+1.00: -0.72
+2.00: 0.33
+0.00: 0.44
+1.00: 0.23
+2.00: -0.67
+0.00: 0.84
+1.00: -1.00
+2.00: 0.15
+0.00: 0.42
+1.00: 0.24
+2.00: -0.66
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
+0.00: 0.41
+1.00: 0.24
+2.00: -0.66
+0.00: -0.60
+1.00: 0.24
+2.00: 0.36
+0.00: -0.14
+1.00: 0.00
+2.00: 0.13
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
++---------------------------------------+
+| Epoch:         38| Accuracy:   70.00% |
+0.00: -0.56
+1.00: 0.22
+2.00: 0.34
+0.00: 0.38
+1.00: -0.72
+2.00: 0.34
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.87
+1.00: -1.00
+2.00: 0.13
+0.00: 0.43
+1.00: 0.24
+2.00: -0.67
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
+0.00: 0.41
+1.00: 0.24
+2.00: -0.66
+0.00: -0.59
+1.00: 0.24
+2.00: 0.35
+0.00: -0.12
+1.00: 0.00
+2.00: 0.11
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
++---------------------------------------+
+| Epoch:         39| Accuracy:   60.00% |
+0.00: -0.56
+1.00: 0.22
+2.00: 0.34
+0.00: 0.39
+1.00: -0.72
+2.00: 0.33
+0.00: 0.44
+1.00: 0.23
+2.00: -0.67
+0.00: 0.85
+1.00: -1.00
+2.00: 0.14
+0.00: 0.42
+1.00: 0.24
+2.00: -0.67
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
+0.00: 0.41
+1.00: 0.24
+2.00: -0.66
+0.00: -0.59
+1.00: 0.24
+2.00: 0.35
+0.00: -0.12
+1.00: 0.00
+2.00: 0.12
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
++---------------------------------------+
+| Epoch:         40| Accuracy:   70.00% |
+0.00: -0.56
+1.00: 0.22
+2.00: 0.34
+0.00: 0.39
+1.00: -0.72
+2.00: 0.33
+0.00: 0.44
+1.00: 0.23
+2.00: -0.67
+0.00: 0.85
+1.00: -1.00
+2.00: 0.15
+0.00: 0.42
+1.00: 0.24
+2.00: -0.66
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
+0.00: 0.41
+1.00: 0.24
+2.00: -0.66
+0.00: -0.60
+1.00: 0.24
+2.00: 0.35
+0.00: -0.13
+1.00: 0.00
+2.00: 0.12
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
++---------------------------------------+
+| Epoch:         41| Accuracy:   70.00% |
+0.00: -0.56
+1.00: 0.22
+2.00: 0.34
+0.00: 0.38
+1.00: -0.72
+2.00: 0.33
+0.00: 0.44
+1.00: 0.23
+2.00: -0.67
+0.00: 0.84
+1.00: -1.00
+2.00: 0.15
+0.00: 0.42
+1.00: 0.24
+2.00: -0.66
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
+0.00: 0.41
+1.00: 0.24
+2.00: -0.66
+0.00: -0.60
+1.00: 0.24
+2.00: 0.36
+0.00: -0.13
+1.00: 0.00
+2.00: 0.13
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
++---------------------------------------+
+| Epoch:         42| Accuracy:   70.00% |
+0.00: -0.56
+1.00: 0.22
+2.00: 0.34
+0.00: 0.38
+1.00: -0.72
+2.00: 0.34
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.87
+1.00: -1.00
+2.00: 0.13
+0.00: 0.43
+1.00: 0.24
+2.00: -0.67
+0.00: -0.57
+1.00: 0.22
+2.00: 0.35
+0.00: 0.41
+1.00: 0.24
+2.00: -0.66
+0.00: -0.59
+1.00: 0.24
+2.00: 0.35
+0.00: -0.11
+1.00: 0.00
+2.00: 0.11
+0.00: -0.57
+1.00: 0.23
+2.00: 0.34
++---------------------------------------+
+| Epoch:         43| Accuracy:   60.00% |
+0.00: -0.56
+1.00: 0.21
+2.00: 0.34
+0.00: 0.39
+1.00: -0.72
+2.00: 0.33
+0.00: 0.44
+1.00: 0.23
+2.00: -0.67
+0.00: 0.85
+1.00: -1.00
+2.00: 0.14
+0.00: 0.43
+1.00: 0.24
+2.00: -0.67
+0.00: -0.57
+1.00: 0.22
+2.00: 0.35
+0.00: 0.41
+1.00: 0.24
+2.00: -0.66
+0.00: -0.59
+1.00: 0.24
+2.00: 0.35
+0.00: -0.12
+1.00: 0.00
+2.00: 0.12
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
++---------------------------------------+
+| Epoch:         44| Accuracy:   70.00% |
+0.00: -0.56
+1.00: 0.21
+2.00: 0.34
+0.00: 0.39
+1.00: -0.72
+2.00: 0.33
+0.00: 0.44
+1.00: 0.23
+2.00: -0.67
+0.00: 0.84
+1.00: -1.00
+2.00: 0.15
+0.00: 0.42
+1.00: 0.24
+2.00: -0.66
+0.00: -0.58
+1.00: 0.22
+2.00: 0.35
+0.00: 0.41
+1.00: 0.24
+2.00: -0.66
+0.00: -0.59
+1.00: 0.24
+2.00: 0.35
+0.00: -0.12
+1.00: 0.00
+2.00: 0.12
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
++---------------------------------------+
+| Epoch:         45| Accuracy:   70.00% |
+0.00: -0.56
+1.00: 0.21
+2.00: 0.34
+0.00: 0.38
+1.00: -0.72
+2.00: 0.33
+0.00: 0.44
+1.00: 0.22
+2.00: -0.67
+0.00: 0.84
+1.00: -1.00
+2.00: 0.16
+0.00: 0.42
+1.00: 0.24
+2.00: -0.66
+0.00: -0.58
+1.00: 0.22
+2.00: 0.35
+0.00: 0.41
+1.00: 0.24
+2.00: -0.66
+0.00: -0.59
+1.00: 0.24
+2.00: 0.36
+0.00: -0.13
+1.00: 0.00
+2.00: 0.12
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
++---------------------------------------+
+| Epoch:         46| Accuracy:   70.00% |
+0.00: -0.56
+1.00: 0.21
+2.00: 0.34
+0.00: 0.38
+1.00: -0.72
+2.00: 0.34
+0.00: 0.44
+1.00: 0.23
+2.00: -0.67
+0.00: 0.83
+1.00: -1.00
+2.00: 0.16
+0.00: 0.42
+1.00: 0.24
+2.00: -0.66
+0.00: -0.58
+1.00: 0.22
+2.00: 0.35
+0.00: 0.41
+1.00: 0.24
+2.00: -0.65
+0.00: -0.60
+1.00: 0.24
+2.00: 0.36
+0.00: -0.13
+1.00: 0.00
+2.00: 0.13
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
++---------------------------------------+
+| Epoch:         47| Accuracy:   70.00% |
+0.00: -0.56
+1.00: 0.21
+2.00: 0.34
+0.00: 0.38
+1.00: -0.72
+2.00: 0.34
+0.00: 0.00
+1.00: 0.00
+2.00: -1.00
+0.00: 0.86
+1.00: -1.00
+2.00: 0.13
+0.00: 0.43
+1.00: 0.23
+2.00: -0.67
+0.00: -0.57
+1.00: 0.22
+2.00: 0.35
+0.00: 0.41
+1.00: 0.24
+2.00: -0.66
+0.00: -0.59
+1.00: 0.24
+2.00: 0.35
+0.00: -0.11
+1.00: 0.00
+2.00: 0.11
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
++---------------------------------------+
+| Epoch:         48| Accuracy:   60.00% |
+0.00: -0.56
+1.00: 0.21
+2.00: 0.34
+0.00: 0.38
+1.00: -0.72
+2.00: 0.33
+0.00: 0.44
+1.00: 0.22
+2.00: -0.67
+0.00: 0.85
+1.00: -1.00
+2.00: 0.15
+0.00: 0.43
+1.00: 0.23
+2.00: -0.67
+0.00: -0.57
+1.00: 0.22
+2.00: 0.35
+0.00: 0.41
+1.00: 0.24
+2.00: -0.66
+0.00: -0.59
+1.00: 0.24
+2.00: 0.35
+0.00: -0.12
+1.00: 0.00
+2.00: 0.11
+0.00: -0.58
+1.00: 0.23
+2.00: 0.35
++---------------------------------------+
+| Epoch:         49| Accuracy:   70.00% |
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 51.704 seconds; peak allocated memory: 231.668 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 58s

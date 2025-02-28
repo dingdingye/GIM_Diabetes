@@ -1,0 +1,310 @@
+---
+MainSourceFile:  'C:/GIM_Repos/GIM_Diabetes/accelerator_diabetes/redo_component/accelerator/hls/.autopilot/db/accelerator.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1223_1:  '
+    FileOffset:      1223
+    FilePath:        'C:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_base.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          55417
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1223_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          282783
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          283247
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          283712
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        'C:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          566636
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_99_1:  '
+    FileOffset:      99
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\gim_model.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2050926
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_99_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_105_2:  '
+    FileOffset:      105
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\gim_model.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2051044
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_105_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_123_3:  '
+    FileOffset:      123
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\gim_model.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2051700
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_123_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_10_1:  '
+    FileOffset:      10
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2341302
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_10_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_15_2:  '
+    FileOffset:      15
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2341423
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_15_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_20_3:  '
+    FileOffset:      20
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2341551
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_20_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_28_1:  '
+    FileOffset:      28
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2341730
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_28_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_48_1:  '
+    FileOffset:      48
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2342324
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_48_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_102_1:  '
+    FileOffset:      102
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2343423
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_102_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_104_2:  '
+    FileOffset:      104
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2343497
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_104_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_109_3:  '
+    FileOffset:      109
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2343585
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_109_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_111_4:  '
+    FileOffset:      111
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2343623
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_111_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_126_5:  '
+    FileOffset:      126
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2343829
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_126_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_133_6:  '
+    FileOffset:      133
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2343888
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_133_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_136_7:  '
+    FileOffset:      136
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2343938
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_136_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_144_8:  '
+    FileOffset:      144
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2344043
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_144_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_147_9:  '
+    FileOffset:      147
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2344132
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_147_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_154_10:  '
+    FileOffset:      154
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2344338
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_154_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_158_11:  '
+    FileOffset:      158
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2344534
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_158_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_175_12:  '
+    FileOffset:      175
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2344819
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_175_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_191_13:  '
+    FileOffset:      191
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2345300
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_191_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_193_14:  '
+    FileOffset:      193
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2345381
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_193_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_194_15:  '
+    FileOffset:      194
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2345426
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_194_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_204_16:  '
+    FileOffset:      204
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2345754
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_204_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_207_17:  '
+    FileOffset:      207
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2345862
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_207_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_232_18:  '
+    FileOffset:      232
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2346234
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_232_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_234_19:  '
+    FileOffset:      234
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2346321
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_234_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_239_20:  '
+    FileOffset:      239
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2346426
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_239_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_241_21:  '
+    FileOffset:      241
+    FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Repos\GIM_Diabetes\accelerator_diabetes\redo_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          2346512
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_241_21: '
+...

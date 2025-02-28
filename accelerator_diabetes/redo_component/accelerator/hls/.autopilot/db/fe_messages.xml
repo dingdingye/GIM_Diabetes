@@ -2,11 +2,197 @@
     <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="../weight_pe.cpp:7:28" msg_body="unused parameter 'training'">
         <args ClangWarningOption="unused-parameter"/>
     </msg>
-    <msg msg_groups="" msg_id="207-3587" msg_severity="ERROR" msg_loc="../csv_import.cpp:21:28" msg_body="implicit instantiation of undefined template 'std::__cxx11::basic_istringstream&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;'">
-        <args/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gim_model.h:100:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="model_array" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="" msg_id="207-4520" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\iosfwd:100:11" msg_body="template is declared here">
-        <args/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gim_model.h:100:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="model_array" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="../bias_pe.cpp:10:14" msg_body="unused parameter 'training'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gim_model.h:100:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="model_array" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gim_model.h:100:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="model_array" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../gim_model.h:100:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="model_array" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="accelerator" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=accelerator" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../accelerator.cpp:134:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="accelerator" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../accelerator.cpp:136:20" msg_body="Loop 'VITIS_LOOP_136_7' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_136_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../accelerator.cpp:144:31" msg_body="Loop 'VITIS_LOOP_144_8' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_144_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../accelerator.cpp:147:31" msg_body="Loop 'VITIS_LOOP_147_9' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_147_9"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../accelerator.cpp:154:32" msg_body="Loop 'VITIS_LOOP_154_10' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_154_10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../accelerator.cpp:158:32" msg_body="Loop 'VITIS_LOOP_158_11' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_158_11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../accelerator.cpp:175:32" msg_body="Loop 'VITIS_LOOP_175_12' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_175_12"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../accelerator.cpp:191:32" msg_body="Loop 'VITIS_LOOP_191_13' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_191_13"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../accelerator.cpp:193:32" msg_body="Loop 'VITIS_LOOP_193_14' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_193_14"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../accelerator.cpp:194:36" msg_body="Loop 'VITIS_LOOP_194_15' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_194_15"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../accelerator.cpp:204:32" msg_body="Loop 'VITIS_LOOP_204_16' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_204_16"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../accelerator.cpp:207:36" msg_body="Loop 'VITIS_LOOP_207_17' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_207_17"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../accelerator.cpp:48:22" msg_body="Loop 'VITIS_LOOP_48_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_48_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../accelerator.cpp:45:26" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../accelerator.cpp:20:22" msg_body="Loop 'VITIS_LOOP_20_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_20_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../accelerator.cpp:15:22" msg_body="Loop 'VITIS_LOOP_15_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_15_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../accelerator.cpp:10:22" msg_body="Loop 'VITIS_LOOP_10_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_10_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../gim_model.h:123:23" msg_body="Loop 'VITIS_LOOP_123_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_123_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../gim_model.h:99:22" msg_body="Loop 'VITIS_LOOP_99_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_99_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../gim_model.h:105:27" msg_body="Loop 'VITIS_LOOP_105_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_105_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../gim_model.h:95:46" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../accelerator.cpp:58:0" msg_body="Unrolling loop 'VITIS_LOOP_136_7' (../accelerator.cpp:136:20) in function 'accelerator' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../accelerator.cpp:136:20" LoopName="VITIS_LOOP_136_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../accelerator.cpp:58:0" msg_body="Unrolling loop 'VITIS_LOOP_144_8' (../accelerator.cpp:144:31) in function 'accelerator' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../accelerator.cpp:144:31" LoopName="VITIS_LOOP_144_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../accelerator.cpp:58:0" msg_body="Unrolling loop 'VITIS_LOOP_147_9' (../accelerator.cpp:147:31) in function 'accelerator' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../accelerator.cpp:147:31" LoopName="VITIS_LOOP_147_9"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../accelerator.cpp:58:0" msg_body="Unrolling loop 'VITIS_LOOP_154_10' (../accelerator.cpp:154:32) in function 'accelerator' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../accelerator.cpp:154:32" LoopName="VITIS_LOOP_154_10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../accelerator.cpp:58:0" msg_body="Unrolling loop 'VITIS_LOOP_158_11' (../accelerator.cpp:158:32) in function 'accelerator' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../accelerator.cpp:158:32" LoopName="VITIS_LOOP_158_11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../accelerator.cpp:58:0" msg_body="Unrolling loop 'VITIS_LOOP_175_12' (../accelerator.cpp:175:32) in function 'accelerator' completely with a factor of 2">
+        <args Factor="2" LoopLoc="../accelerator.cpp:175:32" LoopName="VITIS_LOOP_175_12"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../accelerator.cpp:58:0" msg_body="Unrolling loop 'VITIS_LOOP_191_13' (../accelerator.cpp:191:32) in function 'accelerator' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../accelerator.cpp:191:32" LoopName="VITIS_LOOP_191_13"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../accelerator.cpp:58:0" msg_body="Unrolling loop 'VITIS_LOOP_193_14' (../accelerator.cpp:193:32) in function 'accelerator' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../accelerator.cpp:193:32" LoopName="VITIS_LOOP_193_14"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../accelerator.cpp:58:0" msg_body="Unrolling loop 'VITIS_LOOP_194_15' (../accelerator.cpp:194:36) in function 'accelerator' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../accelerator.cpp:194:36" LoopName="VITIS_LOOP_194_15"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../accelerator.cpp:58:0" msg_body="Unrolling loop 'VITIS_LOOP_204_16' (../accelerator.cpp:204:32) in function 'accelerator' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../accelerator.cpp:204:32" LoopName="VITIS_LOOP_204_16"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../accelerator.cpp:58:0" msg_body="Unrolling loop 'VITIS_LOOP_207_17' (../accelerator.cpp:207:36) in function 'accelerator' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../accelerator.cpp:207:36" LoopName="VITIS_LOOP_207_17"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../accelerator.cpp:41:0" msg_body="Unrolling loop 'VITIS_LOOP_48_1' (../accelerator.cpp:48:22) in function 'categoricalCrossEntropy' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../accelerator.cpp:48:22" LoopName="VITIS_LOOP_48_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../accelerator.cpp:41:0" msg_body="Unrolling loop 'anonymous' (../accelerator.cpp:45:26) in function 'categoricalCrossEntropy' completely with a factor of 2">
+        <args Factor="2" LoopLoc="../accelerator.cpp:45:26" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../accelerator.cpp:41:0" msg_body="Unrolling loop 'anonymous' () in function 'categoricalCrossEntropy' completely with a factor of 1">
+        <args Factor="1" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../accelerator.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_20_3' (../accelerator.cpp:20:22) in function 'softmax' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../accelerator.cpp:20:22" LoopName="VITIS_LOOP_20_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../accelerator.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_15_2' (../accelerator.cpp:15:22) in function 'softmax' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../accelerator.cpp:15:22" LoopName="VITIS_LOOP_15_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../accelerator.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_10_1' (../accelerator.cpp:10:22) in function 'softmax' completely with a factor of 2">
+        <args Factor="2" LoopLoc="../accelerator.cpp:10:22" LoopName="VITIS_LOOP_10_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gim_model.h:87:0" msg_body="Unrolling loop 'VITIS_LOOP_123_3' (../gim_model.h:123:23) in function 'model_array&lt;16, 3&gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../gim_model.h:123:23" LoopName="VITIS_LOOP_123_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gim_model.h:87:0" msg_body="Unrolling loop 'VITIS_LOOP_99_1' (../gim_model.h:99:22) in function 'model_array&lt;16, 3&gt;' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../gim_model.h:99:22" LoopName="VITIS_LOOP_99_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gim_model.h:87:0" msg_body="Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array&lt;16, 3&gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../gim_model.h:105:27" LoopName="VITIS_LOOP_105_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gim_model.h:87:0" msg_body="Unrolling loop 'anonymous' (../gim_model.h:95:46) in function 'model_array&lt;16, 3&gt;' completely with a factor of 15">
+        <args Factor="15" LoopLoc="../gim_model.h:95:46" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gim_model.h:87:0" msg_body="Unrolling loop 'anonymous' () in function 'model_array&lt;16, 3&gt;' completely with a factor of 1">
+        <args Factor="1" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gim_model.h:87:0" msg_body="Unrolling loop 'VITIS_LOOP_123_3' (../gim_model.h:123:23) in function 'model_array&lt;16, 16&gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../gim_model.h:123:23" LoopName="VITIS_LOOP_123_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gim_model.h:87:0" msg_body="Unrolling loop 'VITIS_LOOP_99_1' (../gim_model.h:99:22) in function 'model_array&lt;16, 16&gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../gim_model.h:99:22" LoopName="VITIS_LOOP_99_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gim_model.h:87:0" msg_body="Unrolling loop 'VITIS_LOOP_105_2' (../gim_model.h:105:27) in function 'model_array&lt;16, 16&gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../gim_model.h:105:27" LoopName="VITIS_LOOP_105_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gim_model.h:87:0" msg_body="Unrolling loop 'anonymous' (../gim_model.h:95:46) in function 'model_array&lt;16, 16&gt;' completely with a factor of 15">
+        <args Factor="15" LoopLoc="../gim_model.h:95:46" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../gim_model.h:87:0" msg_body="Unrolling loop 'anonymous' () in function 'model_array&lt;16, 16&gt;' completely with a factor of 1">
+        <args Factor="1" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../gim_model.h:87:0" msg_body="Inlining function 'bias_pe(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'Array model_array&lt;16, 3&gt;(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (&amp;) [16][3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (&amp;) [3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (&amp;) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (&amp;) [3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, char, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)'">
+        <args Callee="bias_pe(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File ../bias_pe.cpp Line 10 Column 0" Caller="Array model_array&lt;16, 3&gt;(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (&amp;) [16][3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (&amp;) [3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (&amp;) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (&amp;) [3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, char, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Caller-DebugLoc="File ../gim_model.h Line 87 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../gim_model.h:87:0" msg_body="Inlining function 'act_pe(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, char, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'Array model_array&lt;16, 3&gt;(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (&amp;) [16][3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (&amp;) [3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (&amp;) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (&amp;) [3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, char, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)'">
+        <args Callee="act_pe(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, char, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File ../act_pe.cpp Line 4 Column 0" Caller="Array model_array&lt;16, 3&gt;(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (&amp;) [16][3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (&amp;) [3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (&amp;) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (&amp;) [3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, char, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Caller-DebugLoc="File ../gim_model.h Line 87 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../accelerator.cpp:8:0" msg_body="Inlining function 'std::exp(float)' into 'softmax(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="std::exp(float)" Callee-DebugLoc="File {C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath} Line 223 Column 0" Caller="softmax(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ../accelerator.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../accelerator.cpp:26:0" msg_body="Inlining function 'std::setprecision(int)' into 'calculate_accuracy(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, int)'">
+        <args Callee="std::setprecision(int)" Callee-DebugLoc="File {C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\iomanip} Line 196 Column 0" Caller="calculate_accuracy(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, int)" Caller-DebugLoc="File ../accelerator.cpp Line 26 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../accelerator.cpp:58:0" msg_body="Inlining function 'calculate_accuracy(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, int)' into 'accelerator(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)'">
+        <args Callee="calculate_accuracy(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, int)" Callee-DebugLoc="File ../accelerator.cpp Line 26 Column 0" Caller="accelerator(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Caller-DebugLoc="File ../accelerator.cpp Line 58 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../accelerator.cpp:58:0" msg_body="Inlining function 'categoricalCrossEntropy(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'accelerator(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)'">
+        <args Callee="categoricalCrossEntropy(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File ../accelerator.cpp Line 41 Column 0" Caller="accelerator(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Caller-DebugLoc="File ../accelerator.cpp Line 58 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-194" msg_severity="ERROR" msg_loc="../accelerator.cpp:37:25" msg_body="in function 'accelerator(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)': Undefined function std::operator&lt;&lt;&lt;char, std::char_traits&lt;char&gt; &gt;">
+        <args Function="accelerator(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Function-DebugLoc="File ../accelerator.cpp Line 58 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-194" msg_severity="ERROR" msg_loc="../accelerator.cpp:38:28" msg_body="in function 'accelerator(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)': Undefined function std::operator&lt;&lt;&lt;char, std::char_traits&lt;char&gt; &gt;">
+        <args Function="accelerator(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Function-DebugLoc="File ../accelerator.cpp Line 58 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-194" msg_severity="ERROR" msg_loc="../accelerator.cpp:38:48" msg_body="in function 'accelerator(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)': Undefined function std::operator&lt;&lt;&lt;char, std::char_traits&lt;char&gt; &gt;">
+        <args Function="accelerator(ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [16], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Function-DebugLoc="File ../accelerator.cpp Line 58 Column 0"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

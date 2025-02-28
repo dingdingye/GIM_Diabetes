@@ -1,0 +1,2046 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 136, Column: 20 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_136_7
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 144, Column: 31 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_144_8
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 147, Column: 31 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_147_9
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 154, Column: 32 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_154_10
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 158, Column: 32 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_158_11
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 175, Column: 32 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_175_12
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 191, Column: 32 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_191_13
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 193, Column: 32 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_193_14
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 194, Column: 36 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_194_15
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 204, Column: 32 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_204_16
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 207, Column: 36 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_207_17
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 48, Column: 22 }
+Function:        _Z23categoricalCrossEntropy8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_S3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_48_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 45, Column: 26 }
+Function:        _Z23categoricalCrossEntropy8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_S3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+Function:        _Z23categoricalCrossEntropy8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_S3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 20, Column: 22 }
+Function:        _Z7softmaxP8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_20_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 15, Column: 22 }
+Function:        _Z7softmaxP8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_15_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 10, Column: 22 }
+Function:        _Z7softmaxP8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_10_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 123, Column: 23 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_123_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 99, Column: 22 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_99_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 105, Column: 27 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 95, Column: 46 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 123, Column: 23 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_123_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 99, Column: 22 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_99_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 105, Column: 27 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 95, Column: 46 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_136_7
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:136:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_144_8
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:144:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_147_9
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:147:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_154_10
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:154:32'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_158_11
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:158:32'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_175_12
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:175:32'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_191_13
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:191:32'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_193_14
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:193:32'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_194_15
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:194:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_194_15
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:194:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_194_15
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:194:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_194_15
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:194:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_194_15
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:194:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_194_15
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:194:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_194_15
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:194:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_194_15
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:194:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_194_15
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:194:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_194_15
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:194:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_194_15
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:194:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_194_15
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:194:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_194_15
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:194:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_194_15
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:194:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_194_15
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:194:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_194_15
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:194:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_204_16
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:204:32'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_207_17
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:207:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_207_17
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:207:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_207_17
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:207:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_207_17
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:207:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_207_17
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:207:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_207_17
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:207:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_207_17
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:207:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_207_17
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:207:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_207_17
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:207:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_207_17
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:207:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_207_17
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:207:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_207_17
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:207:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_207_17
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:207:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_207_17
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:207:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_207_17
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:207:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_207_17
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:207:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          accelerator
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 41, Column: 0 }
+Function:        _Z23categoricalCrossEntropy8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_48_1
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:48:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          categoricalCrossEntropy
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 41, Column: 0 }
+Function:        _Z23categoricalCrossEntropy8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:45:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          categoricalCrossEntropy
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 41, Column: 0 }
+Function:        _Z23categoricalCrossEntropy8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          categoricalCrossEntropy
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 41, Column: 0 }
+Function:        _Z23categoricalCrossEntropy8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          categoricalCrossEntropy
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 8, Column: 0 }
+Function:        _Z7softmaxP8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_20_3
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:20:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          softmax
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 8, Column: 0 }
+Function:        _Z7softmaxP8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_15_2
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:15:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          softmax
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../accelerator.cpp, Line: 8, Column: 0 }
+Function:        _Z7softmaxP8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_10_1
+  - String:          ''' ('
+  - LoopLoc:         '../accelerator.cpp:10:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          softmax
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_123_3
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:123:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_99_1
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:99:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:95:46'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 3>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_123_3
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:123:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_99_1
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:99:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_2
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '../gim_model.h:95:46'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi16EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'model_array<16, 16>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bias_pe(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: ../bias_pe.cpp, Line: 10, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'Array model_array<16, 3>(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [16][3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, char, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+Function:        _Z11model_arrayILi16ELi3EE5ArrayRAT__AT0__8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EERS5_RAT__S4_S8_S4_cS4_S4_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'act_pe(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, char, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: ../act_pe.cpp, Line: 4, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'Array model_array<16, 3>(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [16][3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (&) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, char, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: ../gim_model.h, Line: 87, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../accelerator.cpp, Line: 8, Column: 0 }
+Function:        _Z7softmaxP8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::exp(float)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath', 
+                       Line: 223, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'softmax(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../accelerator.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../accelerator.cpp, Line: 26, Column: 0 }
+Function:        _Z18calculate_accuracyP8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_i
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::setprecision(int)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\iomanip', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'calculate_accuracy(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: ../accelerator.cpp, Line: 26, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'calculate_accuracy(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: ../accelerator.cpp, Line: 26, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'accelerator(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'categoricalCrossEntropy(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ../accelerator.cpp, Line: 41, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'accelerator(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+  - String:          ''''
+...
+--- !HLSUnsupported
+Pass:            reflow-syncheck
+Name:            UnsupportedUndefinedFunction
+DebugLoc:        { File: ../accelerator.cpp, Line: 37, Column: 25 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'in function '''
+  - Function:        'accelerator(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+  - String:          ''': '
+  - String:          'Undefined function '
+  - String:          'std::operator<<<char, std::char_traits<char> >'
+...
+--- !HLSUnsupported
+Pass:            reflow-syncheck
+Name:            UnsupportedUndefinedFunction
+DebugLoc:        { File: ../accelerator.cpp, Line: 38, Column: 28 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'in function '''
+  - Function:        'accelerator(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+  - String:          ''': '
+  - String:          'Undefined function '
+  - String:          'std::operator<<<char, std::char_traits<char> >'
+...
+--- !HLSUnsupported
+Pass:            reflow-syncheck
+Name:            UnsupportedUndefinedFunction
+DebugLoc:        { File: ../accelerator.cpp, Line: 38, Column: 48 }
+Function:        _Z11acceleratorPA16_8ap_fixedILi16ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_PA3_S2_PS2_S7_S2_
+Args:            
+  - String:          'in function '''
+  - Function:        'accelerator(ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: ../accelerator.cpp, Line: 58, Column: 0 }
+  - String:          ''': '
+  - String:          'Undefined function '
+  - String:          'std::operator<<<char, std::char_traits<char> >'
+...
+--- !HLSReportFatalError
+Pass:            reflow-syncheck
+Name:            SynCheckError
+Args:            
+  - Msg:             'Syn check fail!'
+...
