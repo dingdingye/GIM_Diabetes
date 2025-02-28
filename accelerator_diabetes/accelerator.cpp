@@ -186,6 +186,17 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
                 }
             }
 
+            if (DEBUG) {
+                cout << "---------------------------------------------------" << endl;
+                cout << "| Iteration: " << setw(4) << i << " | Data Row: " << setw(4) << j << " |" << endl;
+                cout << "---------------------------------------------------" << endl;
+                cout << "| Weights 1 | " << setw(10) << w1[0][0] << " " << setw(10) << w1[0][1] << " | Bias 1 | " << setw(10) << bias_1[0] << " |" << endl;
+                cout << "| Weights 2 | " << setw(10) << w2[0][0] << " " << setw(10) << w2[0][1] << " | Bias 2 | " << setw(10) << bias_2[0] << " |" << endl;
+                cout << "| Output    | " << setw(10) << softmax_output[0] << " " << setw(10) << softmax_output[1] << " " << setw(10) << softmax_output[2] << " |" << endl;
+                cout << "| Deltas    | " << setw(10) << delta_2[0] << " " << setw(10) << delta_2[1] << " " << setw(10) << delta_2[2] << " |" << endl;
+                cout << "---------------------------------------------------" << endl;
+            }
+
             if ((training == 0) && (j == MAX_DATA_ROWS)) { 
                 break; // only run this for all data points once if infering
             }
