@@ -5,6 +5,14 @@
 #include <cmath>
 using namespace std;
 
+#define DEBUG // Set to 1 for debug mode, 0 for normal execution
+
+/**
+ * @brief Applies the softmax function to an input vector.
+ *
+ * @param[in]  input  Input vector of pre-activation values.
+ * @param[out] output Output vector storing the softmax probabilities.
+ */
 void softmax(fixed_16 input[OUTPUT_LAYER_SIZE], fixed_16 output[OUTPUT_LAYER_SIZE]) {
     fixed_16 max_val = input[0];
     for (int i = 1; i < OUTPUT_LAYER_SIZE; i++) {
@@ -22,7 +30,30 @@ void softmax(fixed_16 input[OUTPUT_LAYER_SIZE], fixed_16 output[OUTPUT_LAYER_SIZ
     }
 }
 
-// Function to calculate accuracy and print it in a formatted table
+/**
+ * @brief Computes categorical cross-entropy loss and its gradient w.r.t. softmax activation function.
+ *
+ * @param[in]  y_true_int Index representing the correct class.
+ * @param[in]  y_pred     Predicted probability distribution.
+ * @param[out] delta_out  Output gradient with respect to input.
+ */
+void categoricalCrossEntropy(fixed_16 y_true_int, fixed_16 y_pred[OUTPUT_LAYER_SIZE], fixed_16 delta_out[OUTPUT_LAYER_SIZE]) {
+    fixed_16 y_true[OUTPUT_LAYER_SIZE] = {0};   // Set up one-hot encoding
+    y_true[int(y_true_int)] = 1;                // Indicate high index to 1
+
+    for (int i = 0; i < OUTPUT_LAYER_SIZE; i++) {
+       delta_out[i] = y_pred[i] - y_true[i];
+        // cout << double(i) << ": " <<  double(delta_2[i]) << endl;
+    }
+}
+
+/**
+ * @brief Computes and displays the accuracy of predictions for current epoch.
+ *
+ * @param[in] predictions Model output labels.
+ * @param[in] labels      Ground truth labels.
+ * @param[in] epoch       Current training epoch.
+ */
 void calculate_accuracy(fixed_16 predictions[MAX_DATA_ROWS], fixed_16 labels[MAX_DATA_ROWS], int epoch) {
     int correct = 0;
     for (int i = 0; i < MAX_DATA_ROWS; i++) {
@@ -38,107 +69,72 @@ void calculate_accuracy(fixed_16 predictions[MAX_DATA_ROWS], fixed_16 labels[MAX
     cout << "| Accuracy: " << setw(7) << fixed << setprecision(2) << accuracy << "% |"  << endl;
 }
 
-void categoricalCrossEntropy(fixed_16 y_true_int, fixed_16 y_pred[OUTPUT_LAYER_SIZE], fixed_16 delta_out[OUTPUT_LAYER_SIZE]) {
-    double loss = 0.0;
-    const double epsilon = 1e-12;
 
-    fixed_16 y_true[OUTPUT_LAYER_SIZE] = {0};   // Set up one-hot encoding
-    y_true[int(y_true_int)] = 1;                // Indicate high index to 1
-
-    for (int i = 0; i < OUTPUT_LAYER_SIZE; i++) {
-        // delta_2[i] = double(y_true[i]) * log(double(double(y_pred[i]) + epsilon)// Calculate categorical cross entropy loss
-        delta_out[i] = y_pred[i] - y_true[i];
-        // cout << double(i) << ": " <<  double(delta_2[i]) << endl;
-    }
-    
-}
-
-
-// now, we actually run the full model
+/**
+ * @brief Runs the inference accelerator model with training and inference capabilities.
+ *
+ * @param[in]  data      Input dataset.
+ * @param[in]  labels    Ground truth labels.
+ * @param[in,out] w1     Weights for the first layer.
+ * @param[in,out] w2     Weights for the second layer.
+ * @param[in,out] bias_1 Biases for the first layer.
+ * @param[in,out] bias_2 Biases for the second layer.
+ * @param[in]  training  Training mode flag (1 for training, 0 for inference).
+ * @return     Inference result containing updated weights and predictions.
+ */
 Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labels[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZE][OUTPUT_LAYER_SIZE], fixed_16  bias_1[ARRAY_SIZE], fixed_16 bias_2[OUTPUT_LAYER_SIZE], fixed_16 training) {
 
-    // array for the final output
-    Inference output_array;
-
-
-    // CHANGE INITIAL VECTOR/MATRIX SIZES HERE
-    // initializing the data for the XOR problem
-    // fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS];
-    // memcpy(X, data, sizeof(data));
-    // fixed_16 x1[]
-    // fixed_16 x1[ARRAY_SIZE] = {0};
-    // fixed_16 x2[ARRAY_SIZE] = {0};
-    // fixed_16 y[4] = {0, 1, 1, 0};
-    // setting up initial values for signals between layers
-    fixed_16 output_kmin1[ARRAY_SIZE] = {0};
-
-    // initializing internal arrays with zeros
-    fixed_16 delta_2[OUTPUT_LAYER_SIZE] = {0};
-    // fixed_16 output_back1[ARRAY_SIZE] = {0};
-    fixed_16 delta_1[ARRAY_SIZE] = {0};
-    fixed_16 weight_changes_2[ARRAY_SIZE][OUTPUT_LAYER_SIZE] = {0};
-    fixed_16 bias_2_update[OUTPUT_LAYER_SIZE] = {0};
-
-    // fixed_16 output_back2[OUTPUT_LAYER_SIZE] = {0};
-    fixed_16 delta_0[ARRAY_SIZE] = {0};
-    fixed_16 weight_changes_1[ARRAY_SIZE][ARRAY_SIZE] = {0};
-    fixed_16 bias_1_update[ARRAY_SIZE] = {0};
-
-    fixed_16 output_0[ARRAY_SIZE] = {0};
-    fixed_16 output_1[ARRAY_SIZE] = {0};
-    fixed_16 output_2[OUTPUT_LAYER_SIZE] = {0};
-
-    // // dummy arrays used to capture unused outputs
-    // fixed_16 dummy1[ARRAY_SIZE];
-    // fixed_16 dummy2[ARRAY_SIZE][ARRAY_SIZE];
-    // fixed_16 dummy3[ARRAY_SIZE];
-
-    // CHANGE TO MATCH NUMBER OF LAYERS/SIZE OF MATRICES
-    // make local versions of the weights/biases
-    fixed_16 w1_local[ARRAY_SIZE][ARRAY_SIZE] = {0};
+    Inference output_array; // array for the final output
+    fixed_16 w1_local[ARRAY_SIZE][ARRAY_SIZE] = {0}; // local copies of the weights/biases
     fixed_16 w2_local[ARRAY_SIZE][OUTPUT_LAYER_SIZE] = {0};
     fixed_16 bias_1_local[ARRAY_SIZE] = {0};
     fixed_16 bias_2_local[OUTPUT_LAYER_SIZE] = {0};
+
+    // Copy over local versions of the weights/biases
     for (int n = 0; n<ARRAY_SIZE; n++) {
         bias_1_local[n] = bias_1[n];
         for (int m = 0;m<ARRAY_SIZE; m++) {
             w1_local[n][m] = w1[n][m];
- 
         }
     }
-    for (int n = 0; n<ARRAY_SIZE; n++) {
-        
+    for (int n = 0; n<ARRAY_SIZE; n++) {       
         for (int m = 0;m<OUTPUT_LAYER_SIZE; m++) {
             bias_2_local[m] = bias_2[m];
-            w2_local[n][m] = w2[n][m];
- 
+            w2_local[n][m] = w2[n][m]; 
         }
     }
 
-    // number of iterations defined in the header file
+    // fixed_16 output_kmin1[ARRAY_SIZE] = {0};
 
-    // store actual and predicted difference in vector, set other params
-    char model = 'l'; // s = sigmoid, r = relu, l = leaky relu NOTE: SIGMOID CANNOT BE USED ON HARDWARE
-    fixed_16 alpha = 0.1; // for leaky relu, CHANGE IF LAD FOUND BETTER LEARNING RATE
+
+    // fixed_16 weight_changes_2[ARRAY_SIZE][OUTPUT_LAYER_SIZE] = {0};
+    // fixed_16 bias_2_update[OUTPUT_LAYER_SIZE] = {0};
+    // fixed_16 weight_changes_1[ARRAY_SIZE][ARRAY_SIZE] = {0};
+    // fixed_16 bias_1_update[ARRAY_SIZE] = {0};
+
+    // Initalize internal propagation arrays with zeros
+    // SIMAR SAID TO TRY RANDOM THESE VALUES INSTEAD OF DOING 0
+    fixed_16 output_0[ARRAY_SIZE] = {0};
+    fixed_16 output_1[ARRAY_SIZE] = {0};
+    fixed_16 output_2[OUTPUT_LAYER_SIZE] = {0};
+
+    fixed_16 delta_2[OUTPUT_LAYER_SIZE] = {0};
+    fixed_16 delta_1[ARRAY_SIZE] = {0};
+    fixed_16 delta_0[ARRAY_SIZE] = {0};
+
+    // Set parameters
+    char model = 'l'; // s = sigmoid, r = relu, l = leaky relu, n = none, this sets the model for all but the output layer
+    fixed_16 alpha = 0.1; // for negative x-values in leaky relu
     fixed_16 lr = 0.25; // learning rate
 
-    // iterate through the alloted epochs
-    for (int i = 0; i < NUM_ITERATIONS; i++) { 
-
-        // cout << double(bias_1_local[0]) << ", " << double(bias_2_local[0]) << endl;
-        // // Check if weights are converging
-        // cout << "layer 2 weight: {" << double(w2_local[0][0]) << ", " << double(w2_local[0][1]) << " }" << endl;
-        // iterate through all the data points
-        int j;
-        for (j = 0; j < MAX_DATA_ROWS; j++) {
-#pragma HLS PIPELINE
-            // setup the initial data input
-            for (int n = 0; n < ARRAY_SIZE; n++ ) {
+    
+    for (int i = 0; i < NUM_ITERATIONS; i++) { // iterate through the alloted epochs
+        for (int j = 0; j < MAX_DATA_ROWS; j++) { // iterate through all the data points
+            #pragma HLS PIPELINE
+            for (int n = 0; n < ARRAY_SIZE; n++ ) { // setup the initial data input
                 output_0[n] = data[j+25][n]; // set offset here to test different subsets (ex. j + 25) 
         
             }
-            // cout << "j: " << double(j) << endl;
-            // cout << "output_0: " << double(output_0[0]) << ", " << double(output_0[1]) << ", " << double(output_0[2])<< endl; // check data loading
 
             // reinitialize the error backpropagatoution cout
             for (int i = 0; i < ARRAY_SIZE; i++) {
@@ -148,54 +144,43 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
                 delta_2[i] = 0;
             }
 
-            // run the forward propagation
-            // start with layer 1
+            // ------- FORWARD PROPAGATION -------
             Array array_out1 = model_array(w1_local, bias_1_local, output_0, delta_1, lr, model, alpha, training);
-            for (int n = 0; n < ARRAY_SIZE; n++) output_1[n] = array_out1.output_k[n];
+            for (int n = 0; n < ARRAY_SIZE; n++) output_1[n] = array_out1.output_k[n];  // update passed output value
 
-            // then layer two
             Array array_out2 = model_array(w2_local, bias_2_local, output_1, delta_2, lr, 'n', alpha, training);
-            for (int n = 0; n < OUTPUT_LAYER_SIZE; n++) output_2[n] = array_out2.output_k[n];
-
-            // cout << double(j) << ": " << double(output_2[0]) << ", " << double(output_2[1]) << ", " << double(output_2[2])  << "| | ";
+            for (int n = 0; n < OUTPUT_LAYER_SIZE; n++) output_2[n] = array_out2.output_k[n];  // update passed output value
 
             fixed_16 softmax_output[OUTPUT_LAYER_SIZE];
             softmax(output_2, softmax_output);
 
-            int highest_index = 0;
-            fixed_16 highest_output = softmax_output[0];
-            for (int i = 1; i < OUTPUT_LAYER_SIZE; i++) {
-                if (softmax_output[i] > highest_output) {
-                    softmax_output[i] = highest_output;
-                    highest_index = i;
-                }
-            }
-            output_array.inference[j] = highest_index;
-            // cout << double(output_array.inference[j]) << endl;
-            
+            int highest_index = max_element(softmax_output, softmax_output + OUTPUT_LAYER_SIZE) - softmax_output; // subtract softmax output to convert to an index
+
+            // int highest_index = 0;
+            // fixed_16 highest_output = softmax_output[0];
+            // for (int i = 1; i < OUTPUT_LAYER_SIZE; i++) {
+            //     if (softmax_output[i] > highest_output) {
+            //         highest_output = softmax_output[i];
+            //         highest_index = i;
+            //     }
+            // }
+            output_array.inference[j] = highest_index;    
+
             categoricalCrossEntropy(labels[j][0], softmax_output, delta_2);
-            // cout << "output: " << double(softmax_output[0]) << ", " << double(softmax_output[1]) << ", " << double(softmax_output[2]) << ", label: " << double(labels[j][0]) << endl;
 
-            // run the backpropagation and update the array
-
-            // start with layer 2
+            // ------- BACKPROPAGATION -------
             Array array_back2 = model_array(w2_local, bias_2_local, output_1, delta_2, lr, model, alpha, training);
-            for (int n = 0; n < OUTPUT_LAYER_SIZE; n++) delta_1[n] = array_out2.delta_kmin1[n];
-            // update the weights and biases
-            for (int n = 0; n<ARRAY_SIZE; n++) {
+            for (int n = 0; n < OUTPUT_LAYER_SIZE; n++) delta_1[n] = array_out2.delta_kmin1[n];  // update passed delta value for previous layer
+            for (int n = 0; n<ARRAY_SIZE; n++) { // update the weights and biases
                 for (int m = 0;m<OUTPUT_LAYER_SIZE; m++) {
                     bias_2_local[m] = array_back2.bias_change[m];
                     w2_local[n][m] = array_back2.weight_changes[n][m];
                 }
             }
 
-            // end with layer 1
             Array array_back1 = model_array(w1_local, bias_1_local, output_0, delta_1, lr, model, alpha, training);
-            
-            // update the weights and biases
-            for (int n = 0; n<ARRAY_SIZE; n++) {
+            for (int n = 0; n<ARRAY_SIZE; n++) { // update the weights and biases
                 bias_1_local[n] = array_back1.bias_change[n];
-                // cout << double(array_back1.bias_change[n]) << endl;
                 for (int m = 0;m<ARRAY_SIZE; m++) {
                     w1_local[n][m] = array_back1.weight_changes[n][m];
                 }
@@ -205,11 +190,6 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
                 break; // only run this for all data points once if infering
             }
         }
-
-        // store inaccuracy for model training reference
-        // float inaccuracy;
-        // inaccuracy = labels[j][0] - output_2[0];
-        //cout  << inaccuracy << endl;
 
         if (training == 0) {
             break; // only run this once if we are inferring
@@ -223,15 +203,13 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
     // produce the final weights to be used in inference
     for (int n = 0; n<ARRAY_SIZE; n++) {
         output_array.new_b1[n] = bias_1_local[n];
-        for (int m = 0;m<ARRAY_SIZE; m++) {
+        for (int m = 0;m<OUTPUT_LAYER_SIZE; m++) {
             output_array.new_w1[n][m] = w1_local[n][m];
         }
     }
-    // produce the final weights to be used in inference
     for (int n = 0; n<OUTPUT_LAYER_SIZE; n++) {
         output_array.new_b2[n] = bias_2_local[n];
-        for (int m = 0;m<OUTPUT_LAYER_SIZE; m++) {
-            output_array.new_b2[m] = bias_2_local[m];
+        for (int m = 0;m<ARRAY_SIZE; m++) {
             output_array.new_w2[n][m] = w2_local[n][m];
         }
     }
