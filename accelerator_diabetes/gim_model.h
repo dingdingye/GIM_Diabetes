@@ -85,10 +85,7 @@ Array model_array(fixed_16 (&weights)[INPUT_SIZE][OUTPUT_SIZE],
 			fixed_16 (&output_kmin1)[INPUT_SIZE],
 			fixed_16 (&delta_k)[OUTPUT_SIZE], fixed_16 eta,
 			char model, fixed_16 alpha, fixed_16 training) {
-//#pragma HLS bind_storage variable= weights type=RAM_2P impl=bram
-//#pragma HLS bind_storage variable= biases  type=RAM_2P impl=bram
-//#pragma HLS bind_storage variable= output_kmin1 type = RAM_2P impl=bram
-//#pragma HLS bind_storage variable= delta_k type=RAM_2P impl=bram
+
     Array return_array;
     
     // initialize internal array with zeros
@@ -97,7 +94,7 @@ Array model_array(fixed_16 (&weights)[INPUT_SIZE][OUTPUT_SIZE],
     // iterate through the neurons in the layer
     int n = 0;
     for (n = 0; n < OUTPUT_SIZE; n++) {
-#pragma HLS UNROLL
+    #pragma HLS UNROLL
         // initialize the running output sum
         fixed_16 partial_output_sum = 0;
         int c = 0;
@@ -129,10 +126,6 @@ Array model_array(fixed_16 (&weights)[INPUT_SIZE][OUTPUT_SIZE],
 
     return return_array;
 }
-
-// Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labels[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZE][ARRAY_SIZE],
-// 				 fixed_16  bias_1[ARRAY_SIZE], fixed_16 bias_2[ARRAY_SIZE],
-//                  fixed_16 training);
 
 Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labels[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 w1[ARRAY_SIZE][ARRAY_SIZE], fixed_16 w2[ARRAY_SIZE][OUTPUT_LAYER_SIZE], fixed_16  bias_1[ARRAY_SIZE], fixed_16 bias_2[OUTPUT_LAYER_SIZE], fixed_16 training);
 

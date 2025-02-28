@@ -1,6 +1,17 @@
 // This is the test bench file for the GIM@Rice accelerator in HLS
 #include "gim_model.h"
+#include <vector>
 using namespace std;
+
+float calculate_test_accuracy(const vector<fixed_16>& predictions, const vector<fixed_16>& labels) {
+    int correct = 0;
+    for (int i = 0; i < predictions.size(); i++) {
+        if (predictions[i] == labels[i]) {
+            correct++;
+        }
+    }
+    return static_cast<float>(correct) / predictions.size();
+}
 
 int main() {  
     // Load trainig and testing data from CSVs
@@ -79,5 +90,15 @@ int main() {
     cout << "4: " << output.inference[4] << "| Correct label:" << double(Y_test[4][0]) << endl;
     cout << "5: " << output.inference[5] << "| Correct label:" << double(Y_test[5][0]) << endl;
     return 0;
+
+    vector<fixed_16> predictions;
+    vector<fixed_16> labels;
+    for (int i = 0; i < 100; i++) {
+        predictions.push_back(output.inference[i]);
+        labels.push_back(Y_test[i][0]);
+    }
+
+    float accuracy = calculate_test_accuracy(predictions, labels);
+    cout << "Accuracy: " << accuracy * 100 << "%" << endl;
 
 }

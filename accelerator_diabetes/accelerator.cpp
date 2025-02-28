@@ -5,7 +5,7 @@
 #include <cmath>
 using namespace std;
 
-#define DEBUG // Set to 1 for debug mode, 0 for normal execution
+#define DEBUG 0 // Set to 1 for debug mode, 0 for normal execution
 
 /**
  * @brief Applies the softmax function to an input vector.
@@ -104,14 +104,6 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
         }
     }
 
-    // fixed_16 output_kmin1[ARRAY_SIZE] = {0};
-
-
-    // fixed_16 weight_changes_2[ARRAY_SIZE][OUTPUT_LAYER_SIZE] = {0};
-    // fixed_16 bias_2_update[OUTPUT_LAYER_SIZE] = {0};
-    // fixed_16 weight_changes_1[ARRAY_SIZE][ARRAY_SIZE] = {0};
-    // fixed_16 bias_1_update[ARRAY_SIZE] = {0};
-
     // Initalize internal propagation arrays with zeros
     // SIMAR SAID TO TRY RANDOM THESE VALUES INSTEAD OF DOING 0
     fixed_16 output_0[ARRAY_SIZE] = {0};
@@ -132,11 +124,11 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
         for (int j = 0; j < MAX_DATA_ROWS; j++) { // iterate through all the data points
             #pragma HLS PIPELINE
             for (int n = 0; n < ARRAY_SIZE; n++ ) { // setup the initial data input
-                output_0[n] = data[j+25][n]; // set offset here to test different subsets (ex. j + 25) 
+                output_0[n] = data[j][n]; // set offset here to test different subsets (ex. j + 25) 
         
             }
 
-            // reinitialize the error backpropagatoution cout
+            // reinitialize the error backpropagation cout
             for (int i = 0; i < ARRAY_SIZE; i++) {
                 delta_1[i] = 0;                
             }
@@ -155,15 +147,6 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
             softmax(output_2, softmax_output);
 
             int highest_index = max_element(softmax_output, softmax_output + OUTPUT_LAYER_SIZE) - softmax_output; // subtract softmax output to convert to an index
-
-            // int highest_index = 0;
-            // fixed_16 highest_output = softmax_output[0];
-            // for (int i = 1; i < OUTPUT_LAYER_SIZE; i++) {
-            //     if (softmax_output[i] > highest_output) {
-            //         highest_output = softmax_output[i];
-            //         highest_index = i;
-            //     }
-            // }
             output_array.inference[j] = highest_index;    
 
             categoricalCrossEntropy(labels[j][0], softmax_output, delta_2);
@@ -190,10 +173,10 @@ Inference accelerator(fixed_16 data[MAX_DATA_ROWS][MAX_DATA_COLS], fixed_16 labe
                 cout << "---------------------------------------------------" << endl;
                 cout << "| Iteration: " << setw(4) << i << " | Data Row: " << setw(4) << j << " |" << endl;
                 cout << "---------------------------------------------------" << endl;
-                cout << "| Weights 1 | " << setw(10) << w1[0][0] << " " << setw(10) << w1[0][1] << " | Bias 1 | " << setw(10) << bias_1[0] << " |" << endl;
-                cout << "| Weights 2 | " << setw(10) << w2[0][0] << " " << setw(10) << w2[0][1] << " | Bias 2 | " << setw(10) << bias_2[0] << " |" << endl;
-                cout << "| Output    | " << setw(10) << softmax_output[0] << " " << setw(10) << softmax_output[1] << " " << setw(10) << softmax_output[2] << " |" << endl;
-                cout << "| Deltas    | " << setw(10) << delta_2[0] << " " << setw(10) << delta_2[1] << " " << setw(10) << delta_2[2] << " |" << endl;
+                cout << "| Weights 1 | " << setw(10) << double(w1[0][0]) << " " << setw(10) << double(w1[0][1]) << " | Bias 1 | " << setw(10) << double(bias_1[0]) << " |" << endl;
+                cout << "| Weights 2 | " << setw(10) << double(w2[0][0]) << " " << setw(10) << double(w2[0][1]) << " | Bias 2 | " << setw(10) << double(bias_2[0]) << " |" << endl;
+                cout << "| Output    | " << setw(10) << double(softmax_output[0]) << " " << setw(10) << double(softmax_output[1]) << " " << setw(10) << double(softmax_output[2]) << " |" << endl;
+                cout << "| Deltas    | " << setw(10) << double(delta_2[0]) << " " << setw(10) << double(delta_2[1]) << " " << setw(10) << double(delta_2[2]) << " |" << endl;
                 cout << "---------------------------------------------------" << endl;
             }
 
