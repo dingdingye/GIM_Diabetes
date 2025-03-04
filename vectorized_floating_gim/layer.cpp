@@ -145,7 +145,7 @@ std::vector<std::vector<double> > forwardPropagation(
         for (int j = 0; j < net.size(); ++j) {
             output[j] = relu(net[j]);
         }
-    } else if (activation = 1) {
+    } else if (activation == 1) {
         std::vector<std::vector<double>> temp(net[0].size(), std::vector<double>(net.size()));
         // printf("Pre_softmax: \n");
         // print2D(net);
@@ -159,7 +159,7 @@ std::vector<std::vector<double> > forwardPropagation(
         }
         // printf("Post_softmax: \n");
         // print2D(output);
-    } else if (activation = 2) {
+    } else if (activation == 2) {
         for (int j = 0; j < net.size(); ++j) {
             output[j] = sigmoid(net[j]);
         }

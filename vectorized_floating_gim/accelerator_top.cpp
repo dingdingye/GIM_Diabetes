@@ -9,15 +9,15 @@
 
 int main(){
     // L+1 rows, L cols
-    std::vector<std::vector<double>> weights_l2 = {{0.5, 0.5, 0.5, 0.5}, 
-                                                   {0.5, 0.5, 0.5, 0.5}};
-    std::vector<std::vector<double>> weights_lh = {{0.5, 0.5}, {0.5, 0.5},
-                                                   {0.5, 0.5}, {0.5, 0.5}};
-    std::vector<std::vector<double>> weights_l1 = {{0.5, 0.5}, {0.5, 0.5}};
+    std::vector<std::vector<double>> weights_l2 = {{0.05, 0.05, 0.05, 0.05}, 
+                                                   {0.05, 0.05, 0.05, 0.05}};
+    std::vector<std::vector<double>> weights_lh = {{0.05, 0.05}, {0.05, 0.05},
+                                                   {0.05, 0.05}, {0.05, 0.05}};
+    std::vector<std::vector<double>> weights_l1 = {{0.05, 0.05}, {0.05, 0.05}};
 
-    std::vector<double> biases_l1 = {0.5, 0.5, 0.5, 0.5};
-    std::vector<double> biases_lh = {0.5, 0.5};
-    std::vector<double> biases_l2 = {0.5, 0.5};
+    std::vector<double> biases_l1 = {0.05, 0.05, 0.05, 0.05};
+    std::vector<double> biases_lh = {0.05, 0.05};
+    std::vector<double> biases_l2 = {0.05, 0.05};
 
     std::vector<std::vector<std::vector<double>>> input =  {{{0.0}, {0.0}}, 
                                                             {{0.0}, {1.0}}, 
@@ -35,7 +35,7 @@ int main(){
 
     std::vector<std::vector<double>> final_error(y_true[0].size(), std::vector<double>(y_true[0][0].size(), 0));
     std::vector<std::vector<double>> result_l2(y_true[0].size(), std::vector<double>(y_true[0][0].size(), 0));
-    for (int epoch = 0; epoch < 200; ++epoch){
+    for (int epoch = 0; epoch < 10; ++epoch){
         double correct = 0;
         for (int iteration = 0; iteration < 4; ++iteration) {
             printf("======================\n");
@@ -50,12 +50,17 @@ int main(){
                     final_error[ii][j] = result_l2[ii][j] - y_true[iteration][ii][j];
                 }
             }
-            printf("Final error:\n");
-            print2D(final_error);
-
+            // printf("Final error:\n");
+            // print2D(final_error);
+            // printf("Result l1 (n-1): \n");
+            // print2D(result_l1);
+            // printf("weights lh (n-1): \n");
+            // print2D(weights_lh);
+            // printf("Biases lh (n-1): \n");
+            // print1D(biases_lh);
             // FWD prop from input layer to hidden layer
             std::vector<std::vector<double>> result_lh = forwardPropagation(result_l1, weights_lh, biases_lh, activation_l1);
-            
+            printf("makes it past f_lh\n");
             // Backprop of output error into Lh
             std::vector<std::vector<double>> d_lh = backProp(
                 weights_l2,
@@ -65,9 +70,11 @@ int main(){
                 biases_lh,
                 0
             );
+            printf("makes it past b_lh\n");
 
             std::vector<std::vector<double>> result_l2 = forwardPropagation(result_lh, weights_l2, biases_l2, activation_l2);
 
+            printf("makes it past f_l2\n");
             // Backprop of output error into L1
             std::vector<std::vector<double>> d_l1 = backProp(
                 weights_lh,
@@ -77,7 +84,7 @@ int main(){
                 biases_l1,
                 0
             );
-
+            printf("makes it past b_l1\n");
 
             if (result_l2[0] > result_l2[1] && (y_true[iteration][0][0] == 1.0) || 
                 result_l2[0] < result_l2[1] && (y_true[iteration][1][0] == 1.0)) {
@@ -101,6 +108,7 @@ int main(){
                 final_error,
                 0.1
             );
+            printf("Updated L2 \n");
 
             updateWeightBias(
                 weights_lh,
@@ -109,6 +117,7 @@ int main(){
                 d_lh,
                 0.1
             );
+            printf("Updated LH \n");
 
             updateWeightBias(
                 weights_l1,
@@ -117,7 +126,8 @@ int main(){
                 d_l1,
                 0.1
             );
-            
+            printf("Updated L1 \n");
+
             printf("weights_l2:\n");
             print2D(weights_l2);
             printf("biases_l2:\n");
