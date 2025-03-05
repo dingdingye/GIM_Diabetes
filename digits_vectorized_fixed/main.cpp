@@ -20,11 +20,12 @@ int main() {
     std::vector<double> biases_l2(8, 0.5);  // 8 elements
     std::vector<double> biases_l3(10, 0.5); // 10 elements
 
-    // std::vector<double> biases_l0(64, 0.0);  // Biases should start at 0 for ReLU
+    // std::vector<double> biases_l0(64, 0.0);  // Biases should start at 0 for ReLU supposedly?
     // std::vector<double> biases_l1(8, 0.0);
     // std::vector<double> biases_l2(8, 0.0);
     // std::vector<double> biases_l3(10, 0.0);
 
+    // He initialization with weights 
     for (int i = 0; i < 64; i++)
         for (int j = 0; j < 64; j++)
             weights_l0[i][j] = he_init(64);  
