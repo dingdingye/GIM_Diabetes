@@ -9,14 +9,14 @@
 
 int main(){
     // L+1 rows, L cols
-    std::vector<std::vector<double>> weights_l2 = {{0.5, 0.5, 0.5, 0.5}, 
-                                                   {0.5, 0.5, 0.5, 0.5}};
-    std::vector<std::vector<double>> weights_lh = {{0.5, 0.5}, {0.5, 0.5},
-                                                   {0.5, 0.5}, {0.5, 0.5}};
-    std::vector<std::vector<double>> weights_l1 = {{0.5, 0.5}, {0.5, 0.5}};
+    std::vector<std::vector<double>> weights_l2 = {{0.1, 0.2, 0.3, 0.4}, 
+                                                   {-0.2, -0.3, -0.4, -0.5}};
+    std::vector<std::vector<double>> weights_lh = {{0.0, -0.5}, {-0.5, 0.5},
+                                                   {-0.4, 0.0}, {0.2, 0.3}};
+    std::vector<std::vector<double>> weights_l1 = {{-0.1, -0.5}, {0.5, 0.5}};
 
-    std::vector<double> biases_l1 = {0.5, 0.5, 0.5, 0.5};
-    std::vector<double> biases_lh = {0.5, 0.5};
+    std::vector<double> biases_lh = {0.5, 0.5, 0.5, 0.5};
+    std::vector<double> biases_l1 = {0.5, 0.5};
     std::vector<double> biases_l2 = {0.5, 0.5};
 
     std::vector<std::vector<std::vector<double>>> input =  {{{0.0}, {0.0}}, 
@@ -32,7 +32,7 @@ int main(){
     int activation_l1 = 0; // relu
     int activation_l2 = 1; // softmax
     int first_full_acc_epoch = 501;
-    for (int epoch = 0; epoch < 200; ++epoch){
+    for (int epoch = 0; epoch < 500; ++epoch){
         double correct = 0;
         for (int iteration = 0; iteration < 4; ++iteration) {
             printf("======================\n");

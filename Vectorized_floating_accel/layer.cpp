@@ -135,6 +135,7 @@ std::vector<std::vector<double> > forwardPropagation(
 
     std::vector<std::vector<double> > net(mid.size(), std::vector<double>(mid[0].size(), 0.0)); // Net should be the same size as biases
     for (size_t i = 0; i < mid.size(); ++i) {
+        // printf("Biases index %d \n", i);
         for (size_t j = 0; j < mid[i].size(); ++j) {
             net[i][j] = mid[i][j] + biases[i];
         }
