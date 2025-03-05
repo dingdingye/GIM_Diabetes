@@ -8,7 +8,7 @@
 std::vector<std::vector<double> > matmul(
     std::vector<std::vector<double> >& A,
     std::vector<std::vector<double> >& B);
-
+    
 /// Compute W^T * delta, assuming both W and delta are shape [N x M].
 std::vector<std::vector<double> > matmulTransposeW(
     std::vector<std::vector<double> >& W,

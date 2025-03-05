@@ -214,6 +214,7 @@ std::vector<std::vector<double>> backProp (
                 temp[ii][jj] *= d_activation[ii][0];
             }
         }
+    
     } else {
         throw std::runtime_error("Haven't supported any other activation functions for backprop"); 
     }

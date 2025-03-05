@@ -21,6 +21,14 @@ std::vector<double> derivative_relu(std::vector<double>& net) {
     return output;
 }
 
+std::vector<double> derivative_leaky_relu(std::vector<double>& net, double alpha) {
+    std::vector<double> output(net.size());
+    for (size_t i = 0; i < net.size(); ++i) {
+        output[i] = net[i] > 0 ? 1 : alpha;
+    }
+    return output;
+}
+
 std::vector<double> sigmoid(std::vector<double>& net) {
     std::vector<double> output(net.size());
     for (size_t i = 0; i < net.size(); ++i) {
