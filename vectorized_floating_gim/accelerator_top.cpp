@@ -35,21 +35,51 @@ int main(){
 
     std::vector<std::vector<double>> final_error(y_true[0].size(), std::vector<double>(y_true[0][0].size(), 0));
     std::vector<std::vector<double>> result_l2(y_true[0].size(), std::vector<double>(y_true[0][0].size(), 0));
+    std::vector<std::vector<double>> result_lh(weights_l2[0].size(), std::vector<double>(y_true[0][0].size(), 0));
+    std::vector<std::vector<double>> result_l1(weights_lh[0].size(), std::vector<double>(y_true[0][0].size(), 0));
+    
     for (int epoch = 0; epoch < 10; ++epoch){
         double correct = 0;
         for (int iteration = 0; iteration < 4; ++iteration) {
             printf("======================\n");
-            printf("iteration %d \n", iteration);
+            printf("epoch %d iteration %d \n", epoch, iteration);
             std::vector<std::vector<double>> result_l1 = forwardPropagation(input[iteration], weights_l1, biases_l1, activation_l1);
             printf("Finished first forward prop\n");
             
-
+            printf("Starting backprop");
             // Output Error Calculation (essentially the backprop step for the softmax end layer)
+            printf("Prev iter result: \n");
+            print2D(result_l2);
             for (size_t ii = 0; ii < result_l2.size(); ++ii) {
                 for (size_t j = 0; j < result_l2[0].size(); ++j) {
                     final_error[ii][j] = result_l2[ii][j] - y_true[iteration][ii][j];
                 }
             }
+            std::vector<std::vector<double>> d_lh = backProp(
+                weights_l2,
+                final_error,
+                result_l1,
+                weights_lh,
+                biases_lh,
+                0
+            );
+            std::vector<std::vector<double>> d_l1 = backProp(
+                weights_lh,
+                d_lh,
+                input[iteration],
+                weights_l1,
+                biases_l1,
+                0
+            );
+
+            printf("Deltas for backprop are:\n");
+            printf("Error layer: \n");
+            print2D(final_error);
+            printf("d_lh\n");
+            print2D(d_lh);
+            printf("d_l1\n");
+            print2D(d_l1);
+
             // printf("Final error:\n");
             // print2D(final_error);
             // printf("Result l1 (n-1): \n");
@@ -59,31 +89,20 @@ int main(){
             // printf("Biases lh (n-1): \n");
             // print1D(biases_lh);
             // FWD prop from input layer to hidden layer
+            std::vector<std::vector<double>> result_l1 = forwardPropagation(input[iteration], weights_l1, biases_l1, activation_l1);
+            printf("Finished first forward prop\n");
+
             std::vector<std::vector<double>> result_lh = forwardPropagation(result_l1, weights_lh, biases_lh, activation_l1);
             printf("makes it past f_lh\n");
             // Backprop of output error into Lh
-            std::vector<std::vector<double>> d_lh = backProp(
-                weights_l2,
-                final_error,
-                result_l1,
-                weights_lh,
-                biases_lh,
-                0
-            );
+            
             printf("makes it past b_lh\n");
 
             std::vector<std::vector<double>> result_l2 = forwardPropagation(result_lh, weights_l2, biases_l2, activation_l2);
 
             printf("makes it past f_l2\n");
             // Backprop of output error into L1
-            std::vector<std::vector<double>> d_l1 = backProp(
-                weights_lh,
-                d_lh,
-                input[iteration],
-                weights_l1,
-                biases_l1,
-                0
-            );
+            
             printf("makes it past b_l1\n");
 
             if (result_l2[0] > result_l2[1] && (y_true[iteration][0][0] == 1.0) || 
@@ -93,12 +112,6 @@ int main(){
             } else {
                 printf("Incorrect!\n");
             }
-            
-
-
-            
-
-
 
             // Weight and bias update step can happen simultaneously across layers
             updateWeightBias(
