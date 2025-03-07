@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${vcpkgRoot}/x86-windows/include",
-                "C:\\Users\\benja\\ELEC494\\GIM_Diabetes\\accelerator_diabetes"
+                "C:\\Users\\benja\\ELEC494\\GIM_Diabetes\\accelerator_diabetes",
+                "C:\\eigen-3.4.0"
             ],
             "defines": [
                 "_DEBUG",

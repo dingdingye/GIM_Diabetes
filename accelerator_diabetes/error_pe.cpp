@@ -10,6 +10,7 @@ fixed_16 error_pe(fixed_16 output_kmin1, fixed_16 partial_sum_delta_k, char mode
     if (model == 'r'){
         if (output_kmin1 > 0){
             error = partial_sum_delta_k;
+            // cout << "actually calculates error" << endl;
         }
         else {
             error = 0;

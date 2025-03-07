@@ -12,6 +12,7 @@ Bias bias_pe(fixed_16 d_k,
 
     return_array.net_sum = init_bias + sum_in;
     return_array.bias_change = init_bias - (d_k * eta);
+    // cout << "d_k: " << d_k;
 
 	return return_array;
 

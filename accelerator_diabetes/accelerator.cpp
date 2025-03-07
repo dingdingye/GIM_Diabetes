@@ -128,7 +128,7 @@ Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
     // Number of iterations defined in the header file
     char model = 'r'; // s = sigmoid, r = relu, l = leaky relu
     fixed_16 alpha = 0.001; // For leaky relu
-    fixed_16 lr = 0.08; // Learning 
+    fixed_16 lr = 0.2; // Learning 
     fixed_16 forward;
     // fixed_16 training = 1;
     // Arrays to store layer outputs
@@ -144,7 +144,7 @@ Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
         cout << "iteration: " << i << endl;
 
         // Iterate through all the data points
-        for (int j = 0; j < TESTING_ROWS; j++) {
+        for (int j = 0; j < 3; j++) {
 #pragma HLS PIPELINE
             // Setup the initial data input
             // for (int k = 0; k < NUM_INPUTS; k++) {
@@ -165,7 +165,7 @@ Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
             // cout << "Begin forward propagation: " << endl;
             Array array_out1 = model_array(w1_local, w2_local, w3_local, w4_local, w5_local, w6_local,
                                           bias_1_local, bias_2_local, bias_3_local, bias_4_local, bias_5_local, bias_6_local,
-                                          X[j], output_l2, output_l3, output_l4, output_l5, output_l6,
+                                          X[j], output_l1, output_l2, output_l3, output_l4, output_l5,
                                           delta_l1, delta_l2, delta_l3, delta_l4, delta_l5, delta_l6,
                                           lr, model, alpha, training, forward);
 
@@ -223,7 +223,7 @@ Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
 
             cross_entropy_loss(Y[j][0], softmax_output, delta_l6);
 
-            cout << "delta_l6: " << delta_l6[0] << " " << delta_l6[1] << " " << delta_l6[2] << endl;
+            // cout << "delta_l6: " << delta_l6[0] << " " << delta_l6[1] << " " << delta_l6[2] << endl;
 
             // cout << "Before update, w1_local[0][0] = " << (float)w1_local[0][0] << endl;
 
@@ -233,7 +233,7 @@ Inference accelerator(fixed_16 X[MAX_DATA_ROWS][MAX_DATA_COLS],
             // cout << "Begin backward propagation: " << endl;
             Array array_back = model_array(w1_local, w2_local, w3_local, w4_local, w5_local, w6_local,
                                           bias_1_local, bias_2_local, bias_3_local, bias_4_local, bias_5_local, bias_6_local,
-                                          output_l1, output_l2, output_l3, output_l4, output_l5, output_l6,
+                                          X[j], output_l1, output_l2, output_l3, output_l4, output_l5,
                                           delta_l1, delta_l2, delta_l3, delta_l4, delta_l5, delta_l6,
                                           lr, model, alpha, training, forward);
 

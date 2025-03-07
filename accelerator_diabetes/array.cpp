@@ -105,28 +105,59 @@ Array model_array(fixed_16 weights_l1[NUM_INPUTS][LAYER_1_SIZE],
         // Process Layer 6
     process_layer<LAYER_5_SIZE, LAYER_6_SIZE>(weights_l6, biases_l6, output_l6, delta_l6, return_array.output_l6, return_array.delta_l6,
                                               return_array.weight_changes_l6, return_array.bias_change_l6, eta, model, alpha, training);
-    
+    // cout << "delta_l6" << endl;
+    // for (int i=0; i<LAYER_6_SIZE; i++){
+    //     cout << delta_l6[i] << " ";
+    // }
+    // cout << endl;
+    // cout << "return_array.delta_l6" << endl;
+    // for (int i=0; i<LAYER_6_SIZE; i++){
+    //     cout << return_array.delta_l6[i] << " ";
+    // }
+    // cout << endl;
+    // cout << "output_l6" << endl;
+    // for (int i=0; i<LAYER_6_SIZE; i++){
+    //     cout << output_l6[i] << " ";
+    // }
+    // cout << endl;
     // Process Layer 5
     process_layer<LAYER_4_SIZE, LAYER_5_SIZE>(weights_l5, biases_l5, output_l5, return_array.delta_l6, return_array.output_l5, return_array.delta_l5,
                                               return_array.weight_changes_l5, return_array.bias_change_l5, eta, model, alpha, training);
-
+    // cout << "return_array.delta_l5" << endl;
+    // for (int i=0; i<LAYER_5_SIZE; i++){
+    //     cout << return_array.delta_l5[i] << " ";
+    // }
+    // cout << endl;
     // Process Layer 4
     process_layer<LAYER_3_SIZE, LAYER_4_SIZE>(weights_l4, biases_l4, output_l4, return_array.delta_l5, return_array.output_l4, return_array.delta_l4,
                                               return_array.weight_changes_l4, return_array.bias_change_l4, eta, model, alpha, training);
-    
+    // cout << "return_array.delta_l4" << endl;
+    // for (int i=0; i<LAYER_4_SIZE; i++){
+    //     cout << return_array.delta_l4[i] << " ";
+    // }
+    // cout << endl;
     // Process Layer 3
     process_layer<LAYER_2_SIZE, LAYER_3_SIZE>(weights_l3, biases_l3, output_l3, return_array.delta_l4, return_array.output_l3, return_array.delta_l3,
                                               return_array.weight_changes_l3, return_array.bias_change_l3, eta, model, alpha, training);
-    
+    // cout << "return_array.delta_l3" << endl;
+    // for (int i=0; i<LAYER_3_SIZE; i++){
+    //     cout << return_array.delta_l3[i] << " ";
+    // }
+    // cout << endl;
     // Process Layer 2
     process_layer<LAYER_1_SIZE, LAYER_2_SIZE>(weights_l2, biases_l2, output_l2, return_array.delta_l3, return_array.output_l2, return_array.delta_l2,
                                               return_array.weight_changes_l2, return_array.bias_change_l2, eta, model, alpha, training);
-
+    // cout << "return_array.delta_l2" << endl;
+    // for (int i=0; i<LAYER_2_SIZE; i++){
+    //     cout << return_array.delta_l2[i] << " ";
+    // }
+    cout << endl;
     // Process Layer 1
     process_layer<NUM_INPUTS, LAYER_1_SIZE>(weights_l1, biases_l1, output_l1, return_array.delta_l2, return_array.output_l1, return_array.delta_l1,
                                             return_array.weight_changes_l1, return_array.bias_change_l1, eta, model, alpha, training);
+    // cout << "return_array.delta_l1" << endl;
     // for (int i=0; i<LAYER_1_SIZE; i++){
-    //     cout << return_array.bias_change_l1[i] << " ";
+    //     cout << return_array.delta_l1[i] << " ";
     // }
     // cout << endl;
     }
