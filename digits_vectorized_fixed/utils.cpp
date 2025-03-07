@@ -6,10 +6,17 @@
 #include <string>
 #include <cmath>   // for sqrt
 #include <cstdlib> // for rand()
+#include <random>
 
 // He initalization function, works well with ReLU
+// double he_init(int fan_in) {
+//     return sqrt(2.0 / fan_in) * ((double)rand() / RAND_MAX - 0.5);
+// }
 double he_init(int fan_in) {
-    return sqrt(2.0 / fan_in) * ((double)rand() / RAND_MAX - 0.5);
+    std::random_device rd;
+    std::mt19937 gen(rd());  // Initialize random number generator
+    std::uniform_real_distribution<> dis(-0.5, 0.5);  // Uniform distribution from -0.5 to 0.5
+    return sqrt(2.0 / fan_in) * dis(gen);  // Scaled random number
 }
 
 // Function to load the CSV for features (input)

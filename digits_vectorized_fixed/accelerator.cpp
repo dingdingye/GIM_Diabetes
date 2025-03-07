@@ -6,7 +6,7 @@
 #include <iostream>
 #include <iomanip>  // for std::setw (nice formatting)
 #include <vector>
-#include <cmath>
+#include <cmath> 
 
 using namespace std;
 
@@ -27,11 +27,14 @@ void accelerator(
 
     std::cout << "+---------------------------------------------------------------+" << std::endl;
 
-    std::cout << "Initial | weights_l0[0][0]: " << weights_l0[0][0] << " | weights_l3[0][0]: " << weights_l3[0][0] << std::endl;
+    std::cout << "Initial | weights_l0[0][0]: " << weights_l0[0][0] 
+                << " | weights_l1[0][0]: " << weights_l1[0][0] 
+                << " | weights_l2[0][0]: " << weights_l2[0][0] 
+                << " | weights_l3[0][0]: " << weights_l3[0][0] << std::endl;
             
 
     for (int epoch = 0; epoch < NUM_ITERATIONS; ++epoch) {
-        double correct = 0;
+        int correct = 0;
         
         for (int iteration = 0; iteration < input.size(); ++iteration) {
             // printf("======================\n");
@@ -56,7 +59,11 @@ void accelerator(
             // print2D(y_true[iteration]);
 
             // select the max value in the last layer output
-            int predicted_digit = std::distance(result_l3[0].begin(), std::max_element(result_l3[0].begin(), result_l3[0].end()));
+            int predicted_digit = std::distance(result_l3.begin(), 
+                                    std::max_element(result_l3.begin(), result_l3.end(),
+                                    [](const std::vector<double>& a, const std::vector<double>& b) {
+                                        return a[0] < b[0];  // Compare based on the first element
+                                    }));
 
             // select which in the one-hot vector is the correct label
             int actual_digit = std::distance(y_true[iteration].begin(), std::max_element(y_true[iteration].begin(), y_true[iteration].end()));
@@ -77,23 +84,31 @@ void accelerator(
             std::vector<std::vector<double>> d_l1 = backProp(weights_l2, d_l2, result_l0, weights_l1, biases_l1, 0);
             // printf("Finished second backprop\n");
             std::vector<std::vector<double>> d_l0 = backProp(weights_l1, d_l1, input_ref, weights_l0, biases_l0, 0);
-            // printf("Finished all backprop\n");
+            // // printf("Finished all backprop\n");
             // std::cout << "Gradient d_l3[0][0]: " << final_error[0][0] << std::endl;
             // std::cout << "Gradient d_l2[0][0]: " << d_l2[0][0] << std::endl;
             // std::cout << "Gradient d_l1[0][0]: " << d_l1[0][0] << std::endl;
             // std::cout << "Gradient d_l0[0][0]: " << d_l0[0][0] << std::endl;
-            
+            // double max_gradient = 0;
+            // for (auto& row : final_error) {
+            //     for (double val : row) {
+            //         max_gradient = std::max(max_gradient, std::abs(val));
+            //     }
+            // }
+            // std::cout << "Max Gradient d_l3: " << max_gradient << std::endl;
             updateWeightBias(weights_l3, biases_l3, result_l2, final_error, learning_rate);
             updateWeightBias(weights_l2, biases_l2, result_l1, d_l2, learning_rate);
             updateWeightBias(weights_l1, biases_l1, result_l0, d_l1, learning_rate);
             updateWeightBias(weights_l0, biases_l0, input_ref, d_l0, learning_rate);
             
         }
-        std::cout << "Epoch " << epoch 
-                        << " | weights_l0[0][0]: " << weights_l0[0][0]
-                        << " | weights_l3[0][0]: " << weights_l3[0][0]
-                        << std::endl;
-        // std::cout << "Epoch " << epoch << " accuracy: " << correct / input.size() << std::endl;
+        // std::cout << "Epoch " << epoch 
+                        // << " | weights_l0[0][0]: " << weights_l0[0][0]
+                        // << " | weights_l1[0][0]: " << weights_l1[0][0]
+                        // << " | weights_l2[0][0]: " << weights_l2[0][0]
+                        // << " | weights_l3[0][0]: " << weights_l3[0][0]
+                        // << std::endl;
+        std::cout << "Epoch " << epoch << " accuracy: " << (double)correct / input.size() << std::endl;
         if (correct / input.size() == 1.0) {
             first_full_acc_epoch = std::min(first_full_acc_epoch, epoch);
         }

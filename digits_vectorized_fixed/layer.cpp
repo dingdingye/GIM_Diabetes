@@ -203,7 +203,7 @@ std::vector<std::vector<double>> backProp (
     if (activation == 0) {
         std::vector<std::vector<double>> d_activation(net.size(), std::vector<double>(net[0].size(), 0));
         for (int ii = 0; ii < d_activation.size(); ++ii){
-            d_activation[ii] = derivative_relu(net[ii]);
+            d_activation[ii] = derivative_leaky_relu(net[ii]);
         }
         
         if (temp.size() != d_activation.size()){

@@ -10,10 +10,10 @@ using namespace std;
 
 
 int main() {
-    std::vector<std::vector<double>> weights_l0(64, std::vector<double>(64, 0.5)); // 2x2, change to 64x64 later
-    std::vector<std::vector<double>> weights_l1(8, std::vector<double>(64, 0.5)); // 8x2, change to 8x64 later
-    std::vector<std::vector<double>> weights_l2(8, std::vector<double>(8, 0.5)); // 8x8
-    std::vector<std::vector<double>> weights_l3(10, std::vector<double>(8, 0.5)); // 10x8
+    std::vector<std::vector<double>> weights_l0(64, std::vector<double>(64)); // 2x2, change to 64x64 later
+    std::vector<std::vector<double>> weights_l1(8, std::vector<double>(64)); // 8x2, change to 8x64 later
+    std::vector<std::vector<double>> weights_l2(8, std::vector<double>(8)); // 8x8
+    std::vector<std::vector<double>> weights_l3(10, std::vector<double>(8)); // 10x8
 
     std::vector<double> biases_l0(64, 0.5);  // 64 elements
     std::vector<double> biases_l1(8, 0.5);  // 8 elements
@@ -41,7 +41,6 @@ int main() {
     for (int i = 0; i < 10; i++)
         for (int j = 0; j < 8; j++)
             weights_l3[i][j] = he_init(8);  
-
 
 
     std::vector<std::vector<std::vector<double>>> input = load_csv("digits_features.csv");  // Load and reformat features

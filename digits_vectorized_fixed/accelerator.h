@@ -4,7 +4,7 @@
 #include <vector>
 
 #define NUM_ITERATIONS 200
-#define LR 0.1
+#define LR 0.001
 // #define ALPHA 0.02 // factor for "leaky-ness" of leaky ReLU
 #define ACTIVATION_HIDDEN 0 // ReLU
 #define ACTIVATION_OUTPUT 1 // Softmax
