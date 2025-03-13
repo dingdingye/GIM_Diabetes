@@ -1,12 +1,14 @@
 #ifndef UTILS_H
 #define UTILS_H
 
+#include "accelerator.h"
+
 #include <string>
-#include <vector>
+#include <array>
 
 double he_init(int fan_in);
-std::vector<std::vector<std::vector<double>>> load_csv(const std::string& filename);
-std::vector<std::vector<double>> load_labels(const std::string &filename);
+std::array<std::array<std::array<double, 1>, IN_SIZE>, DATA_SIZE> load_csv(const std::string& filename);
+std::array<std::array<double, OUT_SIZE>, DATA_SIZE> load_labels(const std::string& filename);
 
 
 #endif

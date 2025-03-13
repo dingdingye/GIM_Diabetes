@@ -1,7 +1,7 @@
 #include <iostream>
-#include <vector>
+#include <array>
 #include <cmath>
-#include <stdexcept>
+// #include <stdexcept>
 
 /**
  * Computes the categorical cross-entropy between two vectors.
@@ -12,11 +12,14 @@
  * @throws std::invalid_argument if the vectors differ in size or
  *         if a predicted probability is <= 0 or > 1.
  */
-double categoricalCrossEntropy(std::vector<std::vector<double>>& y_true,
-                               std::vector<std::vector<double>>& y_pred)
+template <int N>
+double categoricalCrossEntropy( std::array<std::array<double, 1>, N>& y_true,
+                                std::array<std::array<double, 1>, N>& y_pred)
 {
     if (y_true.size() != y_pred.size()) {
-        throw std::invalid_argument("Vectors must have the same length.");
+        // throw std::invalid_argument("Vectors must have the same length.");
+        std::cout << "Error: Arrays must have the same length." << std::endl;
+        return -1.0;  // Return an error value
     }
 
     double loss = 0.0;
@@ -25,7 +28,9 @@ double categoricalCrossEntropy(std::vector<std::vector<double>>& y_true,
 
     for (size_t i = 0; i < y_true.size(); ++i) {
         if (y_pred[i][0] <= 0.0 || y_pred[i][0] > 1.0) {
-            throw std::invalid_argument("Predicted probabilities must be in the range (0, 1].");
+            // throw std::invalid_argument("Predicted probabilities must be in the range (0, 1].");
+            std::cout << "Error: Predicted probabilities must be in the range (0, 1]." << std::endl;
+            return -1.0;  // Return an error value
         }
         loss -= y_true[i][0] * std::log(y_pred[i][0] + epsilon);
     }

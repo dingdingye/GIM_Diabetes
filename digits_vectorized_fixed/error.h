@@ -1,7 +1,7 @@
 #ifndef ERROR_H
 #define ERROR_H
 
-#include <vector>
+#include <array>
 #include <cmath>
 #include <stdexcept>
 /**
@@ -13,7 +13,9 @@
  * @throws std::invalid_argument if the vectors differ in size or
  *         if a predicted probability is <= 0 or > 1.
  */
-double categoricalCrossEntropy(std::vector<std::vector<double>>& y_true,
-                               std::vector<std::vector<double>>& y_pred);
+
+template <size_t N>
+double categoricalCrossEntropy(std::array<std::array<double, 1>, N>& y_true,
+                                std::array<std::array<double, 1>, N>& y_pred);
 
 #endif // CATEGORICAL_CROSS_ENTROPY_H

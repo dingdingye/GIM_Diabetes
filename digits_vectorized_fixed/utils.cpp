@@ -1,8 +1,9 @@
 #include "utils.h"
+#include "accelerator.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include <vector>
+#include <array>
 #include <string>
 #include <cmath>   // for sqrt
 #include <cstdlib> // for rand()
@@ -20,8 +21,8 @@ double he_init(int fan_in) {
 }
 
 // Function to load the CSV for features (input)
-std::vector<std::vector<std::vector<double>>> load_csv(const std::string& filename) {
-    std::vector<std::vector<std::vector<double>>> formatted_input;
+std::array<std::array<std::array<double, 1>, IN_SIZE>, DATA_SIZE> load_csv(const std::string& filename) {
+    std::array<std::array<std::array<double, 1>, IN_SIZE>, DATA_SIZE> formatted_input{}; // Initialize with zeros
     std::ifstream file(filename);
     std::string line;
 
@@ -30,16 +31,17 @@ std::vector<std::vector<std::vector<double>>> load_csv(const std::string& filena
         return formatted_input;
     }
 
-    // Read and format the CSV data (64 features per row)
-    while (getline(file, line)) {
-        std::vector<std::vector<double>> sample;
+    size_t sample_index = 0;
+    while (getline(file, line) && sample_index < 1000) { // Limit to 1000 samples
         std::stringstream ss(line);
         std::string value;
+        size_t feature_index = 0;
 
-        while (getline(ss, value, ',')) {
-            sample.push_back({std::stod(value)});  // Wrap each feature value in a 1D vector
+        while (getline(ss, value, ',') && feature_index < IN_SIZE) {
+            formatted_input[sample_index][feature_index][0] = std::stod(value);
+            ++feature_index;
         }
-        formatted_input.push_back(sample);  // Add the sample (row) to the input
+        ++sample_index;
     }
 
     file.close();
@@ -47,8 +49,8 @@ std::vector<std::vector<std::vector<double>>> load_csv(const std::string& filena
 }
 
 // Function to load the CSV for labels (y_true)
-std::vector<std::vector<double>> load_labels(const std::string &filename) {
-    std::vector<std::vector<double>> labels;
+std::array<std::array<double, OUT_SIZE>, DATA_SIZE> load_labels(const std::string& filename) {
+    std::array<std::array<double, OUT_SIZE>, DATA_SIZE> labels{}; // Initialize with zeros
     std::ifstream file(filename);
     std::string line;
 
@@ -57,11 +59,13 @@ std::vector<std::vector<double>> load_labels(const std::string &filename) {
         return labels;
     }
 
-    while (getline(file, line)) {
-        int label = std::stoi(line);  // convert the label to an integer (0-9)
-        std::vector<double> one_hot(10, 0.0);  // create a vector of size 10 initialized to 0
-        one_hot[label] = 1.0;  // set the index corresponding to the label to 1
-        labels.push_back(one_hot);  // add the one-hot vector to the labels vector
+    size_t sample_index = 0;
+    while (getline(file, line) && sample_index < DATA_SIZE) { // Limit to 1000 samples
+        int label = std::stoi(line);
+        if (label >= 0 && label < OUT_SIZE) {
+            labels[sample_index][label] = 1.0;  // One-hot encode
+        }
+        ++sample_index;
     }
 
     file.close();

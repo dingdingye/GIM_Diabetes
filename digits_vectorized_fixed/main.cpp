@@ -8,17 +8,24 @@
 
 using namespace std;
 
+// #define DATA_SIZE 500    
+// #define IN_SIZE 64        
+// #define L0_SIZE 64       
+// #define L1_SIZE 8        
+// #define L2_SIZE 8        
+// #define OUT_SIZE 10    
+
 
 int main() {
-    std::vector<std::vector<double>> weights_l0(64, std::vector<double>(64)); // 2x2, change to 64x64 later
-    std::vector<std::vector<double>> weights_l1(8, std::vector<double>(64)); // 8x2, change to 8x64 later
-    std::vector<std::vector<double>> weights_l2(8, std::vector<double>(8)); // 8x8
-    std::vector<std::vector<double>> weights_l3(10, std::vector<double>(8)); // 10x8
+    std::array<std::array<double, IN_SIZE>, L0_SIZE> weights_l0; // 64x64
+    std::array<std::array<double, L0_SIZE>, L1_SIZE> weights_l1; // 8x64
+    std::array<std::array<double, L1_SIZE>, L2_SIZE> weights_l2; // 8x8
+    std::array<std::array<double, L2_SIZE>, OUT_SIZE> weights_l3; // 10x8
 
-    std::vector<double> biases_l0(64, 0.5);  // 64 elements
-    std::vector<double> biases_l1(8, 0.5);  // 8 elements
-    std::vector<double> biases_l2(8, 0.5);  // 8 elements
-    std::vector<double> biases_l3(10, 0.5); // 10 elements
+    std::array<double, L0_SIZE> biases_l0 = {0.5};  // 64 elements
+    std::array<double, L1_SIZE> biases_l1 = {0.5};  // 8 elements
+    std::array<double, L2_SIZE> biases_l2 = {0.5};  // 8 elements
+    std::array<double, OUT_SIZE> biases_l3 = {0.5}; // 10 elements
 
     // std::vector<double> biases_l0(64, 0.0);  // Biases should start at 0 for ReLU supposedly?
     // std::vector<double> biases_l1(8, 0.0);
@@ -42,9 +49,8 @@ int main() {
         for (int j = 0; j < 8; j++)
             weights_l3[i][j] = he_init(8);  
 
-
-    std::vector<std::vector<std::vector<double>>> input = load_csv("digits_features.csv");  // Load and reformat features
-    std::vector<std::vector<double>> y_true = load_labels("digits_labels.csv");    // Load and one-hot encode labels
+    std::array<std::array<std::array<double, 1>, IN_SIZE>, DATA_SIZE> input = load_csv("digits_features.csv");  // Load and reformat features
+    std::array<std::array<double, OUT_SIZE>, DATA_SIZE> y_true = load_labels("digits_labels.csv");    // Load and one-hot encode labels
 
     // // check if data and labels are correctly loaded
     // std::cout << "First sample (64 features): ";
