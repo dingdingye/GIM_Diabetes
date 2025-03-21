@@ -2,6 +2,7 @@
 #define LAYER_H
 
 #include "activations.h"
+#include "accelerator.h"
 
 #include <array>
 #include <cmath>
@@ -31,10 +32,10 @@ using namespace std;
 // }
 
 template <size_t ROWS, size_t COLS>
-std::array<std::array<double, ROWS>, COLS> transpose(
-    const std::array<std::array<double, COLS>, ROWS>& matrix)
+std::array<std::array<fixed_16, ROWS>, COLS> transpose(
+    const std::array<std::array<fixed_16, COLS>, ROWS>& matrix)
 {
-    std::array<std::array<double, ROWS>, COLS> transposed;
+    std::array<std::array<fixed_16, ROWS>, COLS> transposed;
 
     // Transpose operation
     for (size_t i = 0; i < ROWS; ++i) {
@@ -52,9 +53,9 @@ std::array<std::array<double, ROWS>, COLS> transpose(
     
 
 template <size_t ROWS_A, size_t COLS_A, size_t COLS_B>
-std::array<std::array<double, COLS_B>, ROWS_A> matmul(
-    const std::array<std::array<double, COLS_A>, ROWS_A>& A,
-    const std::array<std::array<double, COLS_B>, COLS_A>& B)
+std::array<std::array<fixed_16, COLS_B>, ROWS_A> matmul(
+    const std::array<std::array<fixed_16, COLS_A>, ROWS_A>& A,
+    const std::array<std::array<fixed_16, COLS_B>, COLS_A>& B)
 {
     
     // // Number of rows in A, columns in A
@@ -74,7 +75,7 @@ std::array<std::array<double, COLS_B>, ROWS_A> matmul(
     }
 
     // Initialize the result matrix C with size (rowsA x colsB), filled with 0
-    std::array<std::array<double, COLS_B>, ROWS_A> C = {}; // using aggregate initialization 
+    std::array<std::array<fixed_16, COLS_B>, ROWS_A> C = {}; // using aggregate initialization 
     // std::vector<std::vector<double> > C(rowsA, std::vector<double>(colsB, 0.0));
 
     // Perform matrix multiplication
@@ -91,9 +92,9 @@ std::array<std::array<double, COLS_B>, ROWS_A> matmul(
 /// Compute W^T * delta, where W is [n x m] and delta is [n x p].
 /// The result will be [m x p].
 template <size_t N, size_t M, size_t P>
-std::array<std::array<double, P>, M> matmulTransposeW (
-    const std::array<std::array<double, M>, N>& W,      // shape [N x M]
-    const std::array<std::array<double, P>, N>& delta)  // shape [N x P]
+std::array<std::array<fixed_16, P>, M> matmulTransposeW (
+    const std::array<std::array<fixed_16, M>, N>& W,      // shape [N x M]
+    const std::array<std::array<fixed_16, P>, N>& delta)  // shape [N x P]
 {
 
     // Check for non-empty matrices by ensuring sizes are greater than 0
@@ -115,12 +116,12 @@ std::array<std::array<double, P>, M> matmulTransposeW (
 
     // W^T is [m x n], delta is [n x p]
     // => result is [m x p]
-    std::array<std::array<double, P>, M> result = {};
+    std::array<std::array<fixed_16, P>, M> result = {};
 
     // Compute W^T * delta
     for (size_t i = 0; i < M; ++i) {  
         for (size_t j = 0; j < P; ++j) {  
-            double sumVal = 0.0;
+            fixed_16 sumVal = 0.0;
             for (size_t k = 0; k < N; ++k) {  
                 sumVal += W[k][i] * delta[k][j];  
             }
@@ -145,18 +146,18 @@ std::array<std::array<double, P>, M> matmulTransposeW (
 /// @param activations A vector of activation functions, one for each layer.
 /// @return The output vector from the final layer.
 template <int IN_SIZE, int OUT_SIZE>
-std::array<std::array<double, 1>, OUT_SIZE> forwardPropagation(
-    std::array<std::array<double, 1>, IN_SIZE>& input,
-    std::array<std::array<double, IN_SIZE>, OUT_SIZE>& weights,
-    std::array<double, OUT_SIZE>& biases,
+std::array<std::array<fixed_16, 1>, OUT_SIZE> forwardPropagation(
+    std::array<std::array<fixed_16, 1>, IN_SIZE>& input,
+    std::array<std::array<fixed_16, IN_SIZE>, OUT_SIZE>& weights,
+    std::array<fixed_16, OUT_SIZE>& biases,
     int activation)
 {
     // int cols = input.size();
     // The input to the first layer is the network's input.
     
-    std::array<std::array<double, 1>, OUT_SIZE> mid = matmul(weights, input); // weights * input
+    std::array<std::array<fixed_16, 1>, OUT_SIZE> mid = matmul(weights, input); // weights * input
 
-    std::array<std::array<double, 1>, OUT_SIZE> net{};  // initialize net with zeros to be same size as mid
+    std::array<std::array<fixed_16, 1>, OUT_SIZE> net{};  // initialize net with zeros to be same size as mid
 
     for (size_t i = 0; i < mid.size(); ++i) {
         for (size_t j = 0; j < mid[i].size(); ++j) {
@@ -164,7 +165,7 @@ std::array<std::array<double, 1>, OUT_SIZE> forwardPropagation(
         }
     }
 
-    std::array<std::array<double, 1>, OUT_SIZE> output{}; // initialize output with zeros to be same size as net
+    std::array<std::array<fixed_16, 1>, OUT_SIZE> output{}; // initialize output with zeros to be same size as net
     
     if (activation == 0) {
         output = relu<OUT_SIZE>(net); 
@@ -172,11 +173,11 @@ std::array<std::array<double, 1>, OUT_SIZE> forwardPropagation(
         //     output[j] = relu<OUT_SIZE>(net[j]);
         // }
     } else if (activation == 1) {
-        std::array<std::array<double, 1>, OUT_SIZE> temp{};
+        std::array<std::array<fixed_16, 1>, OUT_SIZE> temp{};
 
         for (int j = 0; j < OUT_SIZE; ++j) {
             // Wrap transpose<OUT_SIZE>(net)[j] inside a temporary 2D array
-            std::array<std::array<double, 1>, OUT_SIZE> softmax_input{};
+            std::array<std::array<fixed_16, 1>, OUT_SIZE> softmax_input{};
             for (int k = 0; k < OUT_SIZE; ++k) {
                 softmax_input[k][0] = transpose<OUT_SIZE>(net)[j][k];
             }
@@ -246,23 +247,23 @@ std::array<std::array<double, 1>, OUT_SIZE> forwardPropagation(
 // );
 
 template <int OUT_SIZE, int IN_SIZE, int PLUS_1_SIZE>
-std::array<std::array<double, 1>, IN_SIZE> backProp(
-        const std::array<std::array<double, IN_SIZE>, PLUS_1_SIZE>& w_l_plus1,
-        const std::array<std::array<double, 1>, PLUS_1_SIZE>& d_l_plus1,
-        const std::array<std::array<double, 1>, OUT_SIZE>& input,
-        const std::array<std::array<double, OUT_SIZE>, IN_SIZE>& weights,
-        const std::array<double, IN_SIZE>& biases,
+std::array<std::array<fixed_16, 1>, IN_SIZE> backProp(
+        const std::array<std::array<fixed_16, IN_SIZE>, PLUS_1_SIZE>& w_l_plus1,
+        const std::array<std::array<fixed_16, 1>, PLUS_1_SIZE>& d_l_plus1,
+        const std::array<std::array<fixed_16, 1>, OUT_SIZE>& input,
+        const std::array<std::array<fixed_16, OUT_SIZE>, IN_SIZE>& weights,
+        const std::array<fixed_16, IN_SIZE>& biases,
         int activation)
 
 {
     
-    std::array<std::array<double, 1>, IN_SIZE> d_l{}; // initialize d_l with zeros
-    std::array<std::array<double, PLUS_1_SIZE>, IN_SIZE> w_l_plus1_T = transpose<PLUS_1_SIZE, IN_SIZE>(w_l_plus1); // transpose w_l_plus1
-    std::array<std::array<double, 1>, IN_SIZE> temp = matmul(w_l_plus1_T, d_l_plus1); // w_l_plus1_T * d_l_plus1
+    std::array<std::array<fixed_16, 1>, IN_SIZE> d_l{}; // initialize d_l with zeros
+    std::array<std::array<fixed_16, PLUS_1_SIZE>, IN_SIZE> w_l_plus1_T = transpose<PLUS_1_SIZE, IN_SIZE>(w_l_plus1); // transpose w_l_plus1
+    std::array<std::array<fixed_16, 1>, IN_SIZE> temp = matmul(w_l_plus1_T, d_l_plus1); // w_l_plus1_T * d_l_plus1
     
     // Getting the net term for this layer (net = matmul(weights, input) + biases)
-    std::array<std::array<double, 1>, IN_SIZE> mid = matmul<IN_SIZE, OUT_SIZE, 1>(weights, input);
-    std::array<std::array<double, 1>, IN_SIZE> net{}; // Net should be the same size as biases
+    std::array<std::array<fixed_16, 1>, IN_SIZE> mid = matmul<IN_SIZE, OUT_SIZE, 1>(weights, input);
+    std::array<std::array<fixed_16, 1>, IN_SIZE> net{}; // Net should be the same size as biases
     for (size_t i = 0; i < IN_SIZE; ++i) {
         for (size_t j = 0; j < mid[i].size(); ++j) {
             net[i][j] = mid[i][j] + biases[i];
@@ -303,14 +304,14 @@ std::array<std::array<double, 1>, IN_SIZE> backProp(
 
 template <int IN_SIZE, int OUT_SIZE>
 void updateWeightBias (
-    std::array<std::array<double, IN_SIZE>, OUT_SIZE>& weights,
-    std::array<double, OUT_SIZE>& biases,
-    const std::array<std::array<double, 1>, IN_SIZE>& input,
-    const std::array<std::array<double, 1>, OUT_SIZE>& d_l,
-    double learning_rate)
+    std::array<std::array<fixed_16, IN_SIZE>, OUT_SIZE>& weights,
+    std::array<fixed_16, OUT_SIZE>& biases,
+    const std::array<std::array<fixed_16, 1>, IN_SIZE>& input,
+    const std::array<std::array<fixed_16, 1>, OUT_SIZE>& d_l,
+    fixed_16 learning_rate)
 {
-    std::array<std::array<double, IN_SIZE>, 1> input_T = transpose(input);                      // transpose input
-    std::array<std::array<double, IN_SIZE>, OUT_SIZE> update_temp_mat = matmul(d_l, input_T);   // compute update matrix
+    std::array<std::array<fixed_16, IN_SIZE>, 1> input_T = transpose(input);                      // transpose input
+    std::array<std::array<fixed_16, IN_SIZE>, OUT_SIZE> update_temp_mat = matmul(d_l, input_T);   // compute update matrix
 
     if (update_temp_mat.size() != weights.size() ||
         update_temp_mat[0].size() != weights[0].size()) {  

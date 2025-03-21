@@ -2,6 +2,7 @@
 #define ACCELERATOR_H
 
 #include <array>
+#include <ap_fixed.h>
 
 #define NUM_ITERATIONS 50
 #define LR 0.001
@@ -18,7 +19,7 @@
 #define ACTIVATION_OUTPUT 1 // Softmax
 
 void accelerator(
-    const std::array<std::array<std::array<double, 1>, IN_SIZE>, DATA_SIZE>& input,
+    const std::array<std::array<std::array<fixed_16, 1>, IN_SIZE>, DATA_SIZE>& input,
     const std::array<std::array<double, OUT_SIZE>, DATA_SIZE>& y_true,
     std::array<std::array<double, IN_SIZE>, L0_SIZE>& weights_l0,
     std::array<std::array<double, L0_SIZE>, L1_SIZE>& weights_l1,

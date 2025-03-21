@@ -4,6 +4,8 @@
 #include <array>
 #include <cmath>
 #include <stdexcept>
+
+#include "accelerator.h"
 /**
  * Computes the categorical cross-entropy between two vectors.
  *
@@ -15,7 +17,7 @@
  */
 
 template <size_t N>
-double categoricalCrossEntropy(std::array<std::array<double, 1>, N>& y_true,
-                                std::array<std::array<double, 1>, N>& y_pred);
+fixed_16 categoricalCrossEntropy(std::array<std::array<fixed_16, 1>, N>& y_true,
+                                std::array<std::array<fixed_16, 1>, N>& y_pred);
 
 #endif // CATEGORICAL_CROSS_ENTROPY_H

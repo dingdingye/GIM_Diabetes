@@ -3,6 +3,8 @@
 #include <cmath>
 // #include <stdexcept>
 
+#include "accelerator.h"
+
 /**
  * Computes the categorical cross-entropy between two vectors.
  *
@@ -13,8 +15,8 @@
  *         if a predicted probability is <= 0 or > 1.
  */
 template <int N>
-double categoricalCrossEntropy( std::array<std::array<double, 1>, N>& y_true,
-                                std::array<std::array<double, 1>, N>& y_pred)
+fixed_16 categoricalCrossEntropy( std::array<std::array<fixed_16, 1>, N>& y_true,
+                                std::array<std::array<fixed_16, 1>, N>& y_pred)
 {
     if (y_true.size() != y_pred.size()) {
         // throw std::invalid_argument("Vectors must have the same length.");
@@ -22,9 +24,9 @@ double categoricalCrossEntropy( std::array<std::array<double, 1>, N>& y_true,
         return -1.0;  // Return an error value
     }
 
-    double loss = 0.0;
+    fixed_16 loss = 0.0;
     // Small value to avoid log(0)
-    const double epsilon = 1e-12;
+    const fixed_16 epsilon = 1e-12;
 
     for (size_t i = 0; i < y_true.size(); ++i) {
         if (y_pred[i][0] <= 0.0 || y_pred[i][0] > 1.0) {

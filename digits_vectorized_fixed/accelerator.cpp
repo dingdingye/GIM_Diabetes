@@ -7,7 +7,9 @@
 #include <iomanip>  // for std::setw (nice formatting)
 #include <vector>
 #include <cmath> 
+#include <ap_fixed.h>
 
+typedef ap_fixed<16,7> fixed_16;
 using namespace std;
 
 void accelerator(
