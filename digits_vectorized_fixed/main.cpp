@@ -51,7 +51,7 @@ int main() {
 
     std::array<std::array<std::array<double, 1>, IN_SIZE>, DATA_SIZE> input = load_csv("digits_features.csv");  // Load and reformat features
     std::array<std::array<double, OUT_SIZE>, DATA_SIZE> y_true = load_labels("digits_labels.csv");    // Load and one-hot encode labels
-
+    
     // // check if data and labels are correctly loaded
     // std::cout << "First sample (64 features): ";
     // for (const auto& val : input[0]) {

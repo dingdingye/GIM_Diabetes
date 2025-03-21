@@ -7,7 +7,7 @@
 #define LR 0.001
 // #define ALPHA 0.02 // factor for "leaky-ness" of leaky ReLU
 
-#define DATA_SIZE 500 // full is 1797    
+#define DATA_SIZE 1797 // full is 1797    
 #define IN_SIZE 64        
 #define L0_SIZE 64       
 #define L1_SIZE 8        
