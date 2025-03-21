@@ -13,16 +13,16 @@ typedef ap_fixed<16,7> fixed_16;
 using namespace std;
 
 void accelerator(
-    const std::array<std::array<std::array<double, 1>, IN_SIZE>, DATA_SIZE>& input,
-    const std::array<std::array<double, OUT_SIZE>, DATA_SIZE>& y_true,
-    std::array<std::array<double, IN_SIZE>, L0_SIZE>& weights_l0,
-    std::array<std::array<double, L0_SIZE>, L1_SIZE>& weights_l1,
-    std::array<std::array<double, L1_SIZE>, L2_SIZE>& weights_l2,
-    std::array<std::array<double, L2_SIZE>, OUT_SIZE>& weights_l3,
-    std::array<double, L0_SIZE>& biases_l0,
-    std::array<double, L1_SIZE>& biases_l1,
-    std::array<double, L2_SIZE>& biases_l2,
-    std::array<double, OUT_SIZE>& biases_l3
+    const std::array<std::array<std::array<fixed_16, 1>, IN_SIZE>, DATA_SIZE>& input,
+    const std::array<std::array<fixed_16, OUT_SIZE>, DATA_SIZE>& y_true,
+    std::array<std::array<fixed_16, IN_SIZE>, L0_SIZE>& weights_l0,
+    std::array<std::array<fixed_16, L0_SIZE>, L1_SIZE>& weights_l1,
+    std::array<std::array<fixed_16, L1_SIZE>, L2_SIZE>& weights_l2,
+    std::array<std::array<fixed_16, L2_SIZE>, OUT_SIZE>& weights_l3,
+    std::array<fixed_16, L0_SIZE>& biases_l0,
+    std::array<fixed_16, L1_SIZE>& biases_l1,
+    std::array<fixed_16, L2_SIZE>& biases_l2,
+    std::array<fixed_16, OUT_SIZE>& biases_l3
 ) {
     int first_full_acc_epoch = NUM_ITERATIONS + 301;
     double learning_rate = LR;
