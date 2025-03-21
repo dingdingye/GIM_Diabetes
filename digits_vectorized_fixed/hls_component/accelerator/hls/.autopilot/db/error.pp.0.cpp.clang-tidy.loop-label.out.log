@@ -1,0 +1,5 @@
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\error.pp.0.cpp:28348:5: warning: Added loop label VITIS_LOOP_29_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < y_true.size(); ++i) {
+    ^~~
+    VITIS_LOOP_29_1: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\error.pp.0.cpp:28348:5: note: FIX-IT applied suggested code changes

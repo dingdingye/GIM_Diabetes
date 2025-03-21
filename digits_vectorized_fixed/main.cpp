@@ -8,7 +8,7 @@
 
 using namespace std;
 
-// #define DATA_SIZE 500    
+// #define DATA_SIZE 1797    
 // #define IN_SIZE 64        
 // #define L0_SIZE 64       
 // #define L1_SIZE 8        

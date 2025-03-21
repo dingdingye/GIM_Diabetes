@@ -4,8 +4,10 @@
 #include <array>
 #include <cmath>
 #include <algorithm>
+#include <ap_fixed.h>
 
 #include "accelerator.h"
+typedef ap_fixed<16,7> fixed_16;
 
 // #define ALPHA 0.02 // factor for "leaky-ness" of leaky ReLU
 

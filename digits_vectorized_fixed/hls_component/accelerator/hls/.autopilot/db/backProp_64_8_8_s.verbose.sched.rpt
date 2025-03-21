@@ -1,0 +1,390 @@
+
+
+================================================================
+== Vitis HLS Report for 'backProp_64_8_8_s'
+================================================================
+* Date:           Fri Mar 21 12:03:50 2025
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        accelerator
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sfvc784-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.954 ns|     2.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      734|      734|  7.340 us|  7.340 us|  734|  734|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 13
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.79>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%agg_result_7_0_local_0_loc = alloca i64 1"   --->   Operation 14 'alloca' 'agg_result_7_0_local_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%agg_result_6_0_local_0_loc = alloca i64 1"   --->   Operation 15 'alloca' 'agg_result_6_0_local_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%agg_result_5_0_local_0_loc = alloca i64 1"   --->   Operation 16 'alloca' 'agg_result_5_0_local_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%agg_result_4_0_local_0_loc = alloca i64 1"   --->   Operation 17 'alloca' 'agg_result_4_0_local_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%agg_result_3_0_local_0_loc = alloca i64 1"   --->   Operation 18 'alloca' 'agg_result_3_0_local_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%agg_result_2_0_local_0_loc = alloca i64 1"   --->   Operation 19 'alloca' 'agg_result_2_0_local_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%agg_result_1_0_local_0_loc = alloca i64 1"   --->   Operation 20 'alloca' 'agg_result_1_0_local_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%agg_result_0_0_local_0_loc = alloca i64 1"   --->   Operation 21 'alloca' 'agg_result_0_0_local_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%mux_case_0_loc = alloca i64 1"   --->   Operation 22 'alloca' 'mux_case_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%mux_case_1_loc = alloca i64 1"   --->   Operation 23 'alloca' 'mux_case_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%mux_case_2_loc = alloca i64 1"   --->   Operation 24 'alloca' 'mux_case_2_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%mux_case_3_loc = alloca i64 1"   --->   Operation 25 'alloca' 'mux_case_3_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%mux_case_4_loc = alloca i64 1"   --->   Operation 26 'alloca' 'mux_case_4_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%mux_case_5_loc = alloca i64 1"   --->   Operation 27 'alloca' 'mux_case_5_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%mux_case_6_loc = alloca i64 1"   --->   Operation 28 'alloca' 'mux_case_6_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%mux_case_7_loc = alloca i64 1"   --->   Operation 29 'alloca' 'mux_case_7_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%add_i_71_loc = alloca i64 1"   --->   Operation 30 'alloca' 'add_i_71_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%add_i_73_loc = alloca i64 1"   --->   Operation 31 'alloca' 'add_i_73_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%add_i_75_loc = alloca i64 1"   --->   Operation 32 'alloca' 'add_i_75_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%add_i_77_loc = alloca i64 1"   --->   Operation 33 'alloca' 'add_i_77_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%add_i_79_loc = alloca i64 1"   --->   Operation 34 'alloca' 'add_i_79_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%add_i_711_loc = alloca i64 1"   --->   Operation 35 'alloca' 'add_i_711_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%add_i_713_loc = alloca i64 1"   --->   Operation 36 'alloca' 'add_i_713_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%add_i_715_loc = alloca i64 1"   --->   Operation 37 'alloca' 'add_i_715_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%w_l_plus1_T = alloca i64 1" [../layer.h:260]   --->   Operation 38 'alloca' 'w_l_plus1_T' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%w_l_plus1_T_64 = alloca i64 1" [../layer.h:260]   --->   Operation 39 'alloca' 'w_l_plus1_T_64' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%w_l_plus1_T_65 = alloca i64 1" [../layer.h:260]   --->   Operation 40 'alloca' 'w_l_plus1_T_65' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%w_l_plus1_T_66 = alloca i64 1" [../layer.h:260]   --->   Operation 41 'alloca' 'w_l_plus1_T_66' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%w_l_plus1_T_67 = alloca i64 1" [../layer.h:260]   --->   Operation 42 'alloca' 'w_l_plus1_T_67' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%w_l_plus1_T_68 = alloca i64 1" [../layer.h:260]   --->   Operation 43 'alloca' 'w_l_plus1_T_68' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%w_l_plus1_T_69 = alloca i64 1" [../layer.h:260]   --->   Operation 44 'alloca' 'w_l_plus1_T_69' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%w_l_plus1_T_70 = alloca i64 1" [../layer.h:260]   --->   Operation 45 'alloca' 'w_l_plus1_T_70' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%C_0 = alloca i64 1" [../layer.h:77->../layer.h:264]   --->   Operation 46 'alloca' 'C_0' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%net_0 = alloca i64 1" [../layer.h:265]   --->   Operation 47 'alloca' 'net_0' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%d_activation_0 = alloca i64 1" [../layer.h:274]   --->   Operation 48 'alloca' 'd_activation_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%C_0_addr = getelementptr i64 %C_0, i64 0, i64 0"   --->   Operation 49 'getelementptr' 'C_0_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%C_0_addr_31 = getelementptr i64 %C_0, i64 0, i64 1"   --->   Operation 50 'getelementptr' 'C_0_addr_31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i3 %C_0_addr"   --->   Operation 51 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 52 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i3 %C_0_addr_31"   --->   Operation 52 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%net_0_addr = getelementptr i64 %net_0, i64 0, i64 0"   --->   Operation 53 'getelementptr' 'net_0_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%net_0_addr_94 = getelementptr i64 %net_0, i64 0, i64 1"   --->   Operation 54 'getelementptr' 'net_0_addr_94' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i3 %net_0_addr"   --->   Operation 55 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 56 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i3 %net_0_addr_94"   --->   Operation 56 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+
+State 2 <SV = 1> <Delay = 0.79>
+ST_2 : Operation 57 [1/1] (0.00ns)   --->   "%C_0_addr_32 = getelementptr i64 %C_0, i64 0, i64 2"   --->   Operation 57 'getelementptr' 'C_0_addr_32' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%C_0_addr_33 = getelementptr i64 %C_0, i64 0, i64 3"   --->   Operation 58 'getelementptr' 'C_0_addr_33' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i3 %C_0_addr_32"   --->   Operation 59 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 60 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i3 %C_0_addr_33"   --->   Operation 60 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%net_0_addr_95 = getelementptr i64 %net_0, i64 0, i64 2"   --->   Operation 61 'getelementptr' 'net_0_addr_95' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%net_0_addr_96 = getelementptr i64 %net_0, i64 0, i64 3"   --->   Operation 62 'getelementptr' 'net_0_addr_96' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 63 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i3 %net_0_addr_95"   --->   Operation 63 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 64 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i3 %net_0_addr_96"   --->   Operation 64 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+
+State 3 <SV = 2> <Delay = 0.79>
+ST_3 : Operation 65 [1/1] (0.00ns)   --->   "%C_0_addr_34 = getelementptr i64 %C_0, i64 0, i64 4"   --->   Operation 65 'getelementptr' 'C_0_addr_34' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 66 [1/1] (0.00ns)   --->   "%C_0_addr_35 = getelementptr i64 %C_0, i64 0, i64 5"   --->   Operation 66 'getelementptr' 'C_0_addr_35' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 67 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i3 %C_0_addr_34"   --->   Operation 67 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_3 : Operation 68 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i3 %C_0_addr_35"   --->   Operation 68 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_3 : Operation 69 [1/1] (0.00ns)   --->   "%net_0_addr_97 = getelementptr i64 %net_0, i64 0, i64 4"   --->   Operation 69 'getelementptr' 'net_0_addr_97' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 70 [1/1] (0.00ns)   --->   "%net_0_addr_98 = getelementptr i64 %net_0, i64 0, i64 5"   --->   Operation 70 'getelementptr' 'net_0_addr_98' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 71 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i3 %net_0_addr_97"   --->   Operation 71 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_3 : Operation 72 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i3 %net_0_addr_98"   --->   Operation 72 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+
+State 4 <SV = 3> <Delay = 0.79>
+ST_4 : Operation 73 [1/1] (0.00ns)   --->   "%C_0_addr_36 = getelementptr i64 %C_0, i64 0, i64 6"   --->   Operation 73 'getelementptr' 'C_0_addr_36' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 74 [1/1] (0.00ns)   --->   "%C_0_addr_37 = getelementptr i64 %C_0, i64 0, i64 7"   --->   Operation 74 'getelementptr' 'C_0_addr_37' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 75 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i3 %C_0_addr_36"   --->   Operation 75 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_4 : Operation 76 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i3 %C_0_addr_37"   --->   Operation 76 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_4 : Operation 77 [1/1] (0.00ns)   --->   "%net_0_addr_99 = getelementptr i64 %net_0, i64 0, i64 6"   --->   Operation 77 'getelementptr' 'net_0_addr_99' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 78 [1/1] (0.00ns)   --->   "%net_0_addr_100 = getelementptr i64 %net_0, i64 0, i64 7"   --->   Operation 78 'getelementptr' 'net_0_addr_100' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 79 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i3 %net_0_addr_99"   --->   Operation 79 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_4 : Operation 80 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i3 %net_0_addr_100"   --->   Operation 80 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+
+State 5 <SV = 4> <Delay = 2.92>
+ST_5 : Operation 81 [1/1] (0.00ns)   --->   "%p_read_259 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read71"   --->   Operation 81 'read' 'p_read_259' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 82 [1/1] (0.00ns)   --->   "%p_read_260 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read70"   --->   Operation 82 'read' 'p_read_260' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 83 [1/1] (0.00ns)   --->   "%p_read_261 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read69"   --->   Operation 83 'read' 'p_read_261' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 84 [1/1] (0.00ns)   --->   "%p_read_262 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read68"   --->   Operation 84 'read' 'p_read_262' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 85 [1/1] (0.00ns)   --->   "%p_read_263 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read67"   --->   Operation 85 'read' 'p_read_263' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 86 [1/1] (0.00ns)   --->   "%p_read_264 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read66"   --->   Operation 86 'read' 'p_read_264' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 87 [1/1] (0.00ns)   --->   "%p_read_265 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read65"   --->   Operation 87 'read' 'p_read_265' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 88 [1/1] (0.00ns)   --->   "%p_read_266 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read64"   --->   Operation 88 'read' 'p_read_266' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 89 [1/1] (0.00ns)   --->   "%p_read_267 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read63"   --->   Operation 89 'read' 'p_read_267' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 90 [1/1] (0.00ns)   --->   "%p_read_268 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read62"   --->   Operation 90 'read' 'p_read_268' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 91 [1/1] (0.00ns)   --->   "%p_read_269 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read61"   --->   Operation 91 'read' 'p_read_269' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 92 [1/1] (0.00ns)   --->   "%p_read_270 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read60"   --->   Operation 92 'read' 'p_read_270' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 93 [1/1] (0.00ns)   --->   "%p_read_271 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read59"   --->   Operation 93 'read' 'p_read_271' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 94 [1/1] (0.00ns)   --->   "%p_read_272 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read58"   --->   Operation 94 'read' 'p_read_272' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 95 [1/1] (0.00ns)   --->   "%p_read_273 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read57"   --->   Operation 95 'read' 'p_read_273' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 96 [1/1] (0.00ns)   --->   "%p_read_274 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read56"   --->   Operation 96 'read' 'p_read_274' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 97 [1/1] (0.00ns)   --->   "%p_read_275 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read55"   --->   Operation 97 'read' 'p_read_275' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 98 [1/1] (0.00ns)   --->   "%p_read_276 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read54"   --->   Operation 98 'read' 'p_read_276' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 99 [1/1] (0.00ns)   --->   "%p_read_277 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read53"   --->   Operation 99 'read' 'p_read_277' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 100 [1/1] (0.00ns)   --->   "%p_read_278 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read52"   --->   Operation 100 'read' 'p_read_278' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 101 [1/1] (0.00ns)   --->   "%p_read_279 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read51"   --->   Operation 101 'read' 'p_read_279' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 102 [1/1] (0.00ns)   --->   "%p_read_280 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read50"   --->   Operation 102 'read' 'p_read_280' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 103 [1/1] (0.00ns)   --->   "%p_read_281 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read49"   --->   Operation 103 'read' 'p_read_281' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 104 [1/1] (0.00ns)   --->   "%p_read_282 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read48"   --->   Operation 104 'read' 'p_read_282' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 105 [1/1] (0.00ns)   --->   "%p_read_283 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read47"   --->   Operation 105 'read' 'p_read_283' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 106 [1/1] (0.00ns)   --->   "%p_read_284 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read46"   --->   Operation 106 'read' 'p_read_284' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 107 [1/1] (0.00ns)   --->   "%p_read_285 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read45"   --->   Operation 107 'read' 'p_read_285' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 108 [1/1] (0.00ns)   --->   "%p_read_286 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read44"   --->   Operation 108 'read' 'p_read_286' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 109 [1/1] (0.00ns)   --->   "%p_read_287 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read43"   --->   Operation 109 'read' 'p_read_287' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 110 [1/1] (0.00ns)   --->   "%p_read_288 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read42"   --->   Operation 110 'read' 'p_read_288' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 111 [1/1] (0.00ns)   --->   "%p_read_289 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read41"   --->   Operation 111 'read' 'p_read_289' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 112 [1/1] (0.00ns)   --->   "%p_read40280 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read40"   --->   Operation 112 'read' 'p_read40280' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 113 [1/1] (0.00ns)   --->   "%p_read_290 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read39"   --->   Operation 113 'read' 'p_read_290' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 114 [1/1] (0.00ns)   --->   "%p_read_291 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read38"   --->   Operation 114 'read' 'p_read_291' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 115 [1/1] (0.00ns)   --->   "%p_read_292 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read37"   --->   Operation 115 'read' 'p_read_292' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 116 [1/1] (0.00ns)   --->   "%p_read_293 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read36"   --->   Operation 116 'read' 'p_read_293' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 117 [1/1] (0.00ns)   --->   "%p_read_294 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read35"   --->   Operation 117 'read' 'p_read_294' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 118 [1/1] (0.00ns)   --->   "%p_read_295 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read34"   --->   Operation 118 'read' 'p_read_295' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 119 [1/1] (0.00ns)   --->   "%p_read_296 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read33"   --->   Operation 119 'read' 'p_read_296' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 120 [1/1] (0.00ns)   --->   "%p_read_297 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read32"   --->   Operation 120 'read' 'p_read_297' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 121 [1/1] (0.00ns)   --->   "%p_read_298 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read31"   --->   Operation 121 'read' 'p_read_298' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 122 [1/1] (0.00ns)   --->   "%p_read30270 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read30"   --->   Operation 122 'read' 'p_read30270' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 123 [1/1] (0.00ns)   --->   "%p_read_299 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read29"   --->   Operation 123 'read' 'p_read_299' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 124 [1/1] (0.00ns)   --->   "%p_read_300 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read28"   --->   Operation 124 'read' 'p_read_300' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 125 [1/1] (0.00ns)   --->   "%p_read_301 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read27"   --->   Operation 125 'read' 'p_read_301' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 126 [1/1] (0.00ns)   --->   "%p_read_302 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read26"   --->   Operation 126 'read' 'p_read_302' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 127 [1/1] (0.00ns)   --->   "%p_read_303 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read25"   --->   Operation 127 'read' 'p_read_303' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 128 [1/1] (0.00ns)   --->   "%p_read_304 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read24"   --->   Operation 128 'read' 'p_read_304' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 129 [1/1] (0.00ns)   --->   "%p_read_305 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read23"   --->   Operation 129 'read' 'p_read_305' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 130 [1/1] (0.00ns)   --->   "%p_read_306 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read22"   --->   Operation 130 'read' 'p_read_306' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 131 [1/1] (0.00ns)   --->   "%p_read_307 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read21"   --->   Operation 131 'read' 'p_read_307' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 132 [1/1] (0.00ns)   --->   "%p_read20260 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read20"   --->   Operation 132 'read' 'p_read20260' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 133 [1/1] (0.00ns)   --->   "%p_read_308 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read19"   --->   Operation 133 'read' 'p_read_308' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 134 [1/1] (0.00ns)   --->   "%p_read_309 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read18"   --->   Operation 134 'read' 'p_read_309' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 135 [1/1] (0.00ns)   --->   "%p_read_310 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read17"   --->   Operation 135 'read' 'p_read_310' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 136 [1/1] (0.00ns)   --->   "%p_read_311 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read16"   --->   Operation 136 'read' 'p_read_311' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 137 [1/1] (0.00ns)   --->   "%p_read_312 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read15"   --->   Operation 137 'read' 'p_read_312' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 138 [1/1] (0.00ns)   --->   "%p_read_313 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read14"   --->   Operation 138 'read' 'p_read_313' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 139 [1/1] (0.00ns)   --->   "%p_read_314 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read13"   --->   Operation 139 'read' 'p_read_314' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 140 [1/1] (0.00ns)   --->   "%p_read_315 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read12"   --->   Operation 140 'read' 'p_read_315' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 141 [1/1] (0.00ns)   --->   "%p_read_316 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read11"   --->   Operation 141 'read' 'p_read_316' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 142 [1/1] (0.00ns)   --->   "%p_read10250 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read10"   --->   Operation 142 'read' 'p_read10250' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 143 [1/1] (0.00ns)   --->   "%p_read9249 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read9"   --->   Operation 143 'read' 'p_read9249' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 144 [1/1] (0.00ns)   --->   "%p_read8248 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read8"   --->   Operation 144 'read' 'p_read8248' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 145 [1/1] (0.00ns)   --->   "%w_l_plus1_val_read = read i4096 @_ssdm_op_Read.ap_auto.i4096, i4096 %w_l_plus1_val"   --->   Operation 145 'read' 'w_l_plus1_val_read' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 146 [2/2] (2.92ns)   --->   "%call_ln0 = call void @backProp<64, 8, 8>_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_41_2, i64 %w_l_plus1_T_70, i64 %w_l_plus1_T_69, i64 %w_l_plus1_T_68, i64 %w_l_plus1_T_67, i64 %w_l_plus1_T_66, i64 %w_l_plus1_T_65, i64 %w_l_plus1_T_64, i64 %w_l_plus1_T, i4096 %w_l_plus1_val_read"   --->   Operation 146 'call' 'call_ln0' <Predicate = true> <Delay = 2.92> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 147 [2/2] (0.00ns)   --->   "%call_ln0 = call void @backProp<64, 8, 8>_Pipeline_VITIS_LOOP_81_13, i64 %C_0, i4096 %weights_l1, i64 %p_read8248, i64 %p_read9249, i64 %p_read10250, i64 %p_read_316, i64 %p_read_315, i64 %p_read_314, i64 %p_read_313, i64 %p_read_312, i64 %p_read_311, i64 %p_read_310, i64 %p_read_309, i64 %p_read_308, i64 %p_read20260, i64 %p_read_307, i64 %p_read_306, i64 %p_read_305, i64 %p_read_304, i64 %p_read_303, i64 %p_read_302, i64 %p_read_301, i64 %p_read_300, i64 %p_read_299, i64 %p_read30270, i64 %p_read_298, i64 %p_read_297, i64 %p_read_296, i64 %p_read_295, i64 %p_read_294, i64 %p_read_293, i64 %p_read_292, i64 %p_read_291, i64 %p_read_290, i64 %p_read40280, i64 %p_read_289, i64 %p_read_288, i64 %p_read_287, i64 %p_read_286, i64 %p_read_285, i64 %p_read_284, i64 %p_read_283, i64 %p_read_282, i64 %p_read_281, i64 %p_read_280, i64 %p_read_279, i64 %p_read_278, i64 %p_read_277, i64 %p_read_276, i64 %p_read_275, i64 %p_read_274, i64 %p_read_273, i64 %p_read_272, i64 %p_read_271, i64 %p_read_270, i64 %p_read_269, i64 %p_read_268, i64 %p_read_267, i64 %p_read_266, i64 %p_read_265, i64 %p_read_264, i64 %p_read_263, i64 %p_read_262, i64 %p_read_261, i64 %p_read_260, i64 %p_read_259"   --->   Operation 147 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 1.87>
+ST_6 : Operation 148 [1/2] (1.87ns)   --->   "%call_ln0 = call void @backProp<64, 8, 8>_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_41_2, i64 %w_l_plus1_T_70, i64 %w_l_plus1_T_69, i64 %w_l_plus1_T_68, i64 %w_l_plus1_T_67, i64 %w_l_plus1_T_66, i64 %w_l_plus1_T_65, i64 %w_l_plus1_T_64, i64 %w_l_plus1_T, i4096 %w_l_plus1_val_read"   --->   Operation 148 'call' 'call_ln0' <Predicate = true> <Delay = 1.87> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 149 [1/2] (0.00ns)   --->   "%call_ln0 = call void @backProp<64, 8, 8>_Pipeline_VITIS_LOOP_81_13, i64 %C_0, i4096 %weights_l1, i64 %p_read8248, i64 %p_read9249, i64 %p_read10250, i64 %p_read_316, i64 %p_read_315, i64 %p_read_314, i64 %p_read_313, i64 %p_read_312, i64 %p_read_311, i64 %p_read_310, i64 %p_read_309, i64 %p_read_308, i64 %p_read20260, i64 %p_read_307, i64 %p_read_306, i64 %p_read_305, i64 %p_read_304, i64 %p_read_303, i64 %p_read_302, i64 %p_read_301, i64 %p_read_300, i64 %p_read_299, i64 %p_read30270, i64 %p_read_298, i64 %p_read_297, i64 %p_read_296, i64 %p_read_295, i64 %p_read_294, i64 %p_read_293, i64 %p_read_292, i64 %p_read_291, i64 %p_read_290, i64 %p_read40280, i64 %p_read_289, i64 %p_read_288, i64 %p_read_287, i64 %p_read_286, i64 %p_read_285, i64 %p_read_284, i64 %p_read_283, i64 %p_read_282, i64 %p_read_281, i64 %p_read_280, i64 %p_read_279, i64 %p_read_278, i64 %p_read_277, i64 %p_read_276, i64 %p_read_275, i64 %p_read_274, i64 %p_read_273, i64 %p_read_272, i64 %p_read_271, i64 %p_read_270, i64 %p_read_269, i64 %p_read_268, i64 %p_read_267, i64 %p_read_266, i64 %p_read_265, i64 %p_read_264, i64 %p_read_263, i64 %p_read_262, i64 %p_read_261, i64 %p_read_260, i64 %p_read_259"   --->   Operation 149 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 2.13>
+ST_7 : Operation 150 [1/1] (0.00ns)   --->   "%biases_val_read = read i512 @_ssdm_op_Read.ap_auto.i512, i512 %biases_val"   --->   Operation 150 'read' 'biases_val_read' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 151 [1/1] (0.00ns)   --->   "%p_read7247 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read7"   --->   Operation 151 'read' 'p_read7247' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 152 [1/1] (0.00ns)   --->   "%p_read6246 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read6"   --->   Operation 152 'read' 'p_read6246' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 153 [1/1] (0.00ns)   --->   "%p_read5245 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read5"   --->   Operation 153 'read' 'p_read5245' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 154 [1/1] (0.00ns)   --->   "%p_read4244 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read4"   --->   Operation 154 'read' 'p_read4244' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 155 [1/1] (0.00ns)   --->   "%p_read3243 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read3"   --->   Operation 155 'read' 'p_read3243' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 156 [1/1] (0.00ns)   --->   "%p_read2242 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read2"   --->   Operation 156 'read' 'p_read2242' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 157 [1/1] (0.00ns)   --->   "%p_read1241 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read1"   --->   Operation 157 'read' 'p_read1241' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 158 [1/1] (0.00ns)   --->   "%p_read240 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %p_read"   --->   Operation 158 'read' 'p_read240' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 159 [2/2] (0.00ns)   --->   "%call_ln0 = call void @backProp<64, 8, 8>_Pipeline_VITIS_LOOP_81_1, i64 %w_l_plus1_T, i64 %p_read240, i64 %w_l_plus1_T_64, i64 %p_read1241, i64 %w_l_plus1_T_65, i64 %p_read2242, i64 %w_l_plus1_T_66, i64 %p_read3243, i64 %w_l_plus1_T_67, i64 %p_read4244, i64 %w_l_plus1_T_68, i64 %p_read5245, i64 %w_l_plus1_T_69, i64 %p_read6246, i64 %w_l_plus1_T_70, i64 %p_read7247, i64 %add_i_715_loc, i64 %add_i_713_loc, i64 %add_i_711_loc, i64 %add_i_79_loc, i64 %add_i_77_loc, i64 %add_i_75_loc, i64 %add_i_73_loc, i64 %add_i_71_loc, i64 %mux_case_7_loc, i64 %mux_case_6_loc, i64 %mux_case_5_loc, i64 %mux_case_4_loc, i64 %mux_case_3_loc, i64 %mux_case_2_loc, i64 %mux_case_1_loc, i64 %mux_case_0_loc"   --->   Operation 159 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 160 [2/2] (2.13ns)   --->   "%call_ln0 = call void @backProp<64, 8, 8>_Pipeline_VITIS_LOOP_266_1, i64 %C_0, i512 %biases_val_read, i64 %net_0"   --->   Operation 160 'call' 'call_ln0' <Predicate = true> <Delay = 2.13> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 161 [1/2] (0.00ns)   --->   "%call_ln0 = call void @backProp<64, 8, 8>_Pipeline_VITIS_LOOP_81_1, i64 %w_l_plus1_T, i64 %p_read240, i64 %w_l_plus1_T_64, i64 %p_read1241, i64 %w_l_plus1_T_65, i64 %p_read2242, i64 %w_l_plus1_T_66, i64 %p_read3243, i64 %w_l_plus1_T_67, i64 %p_read4244, i64 %w_l_plus1_T_68, i64 %p_read5245, i64 %w_l_plus1_T_69, i64 %p_read6246, i64 %w_l_plus1_T_70, i64 %p_read7247, i64 %add_i_715_loc, i64 %add_i_713_loc, i64 %add_i_711_loc, i64 %add_i_79_loc, i64 %add_i_77_loc, i64 %add_i_75_loc, i64 %add_i_73_loc, i64 %add_i_71_loc, i64 %mux_case_7_loc, i64 %mux_case_6_loc, i64 %mux_case_5_loc, i64 %mux_case_4_loc, i64 %mux_case_3_loc, i64 %mux_case_2_loc, i64 %mux_case_1_loc, i64 %mux_case_0_loc"   --->   Operation 161 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 162 [1/2] (0.00ns)   --->   "%call_ln0 = call void @backProp<64, 8, 8>_Pipeline_VITIS_LOOP_266_1, i64 %C_0, i512 %biases_val_read, i64 %net_0"   --->   Operation 162 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 163 [2/2] (0.00ns)   --->   "%call_ln0 = call void @backProp<64, 8, 8>_Pipeline_VITIS_LOOP_22_1, i64 %net_0, i64 %d_activation_0"   --->   Operation 163 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 164 [1/2] (0.00ns)   --->   "%call_ln0 = call void @backProp<64, 8, 8>_Pipeline_VITIS_LOOP_22_1, i64 %net_0, i64 %d_activation_0"   --->   Operation 164 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 0.48>
+ST_11 : Operation 165 [1/1] (0.00ns)   --->   "%add_i_715_loc_load = load i64 %add_i_715_loc"   --->   Operation 165 'load' 'add_i_715_loc_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 166 [1/1] (0.00ns)   --->   "%add_i_713_loc_load = load i64 %add_i_713_loc"   --->   Operation 166 'load' 'add_i_713_loc_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 167 [1/1] (0.00ns)   --->   "%add_i_711_loc_load = load i64 %add_i_711_loc"   --->   Operation 167 'load' 'add_i_711_loc_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 168 [1/1] (0.00ns)   --->   "%add_i_79_loc_load = load i64 %add_i_79_loc"   --->   Operation 168 'load' 'add_i_79_loc_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 169 [1/1] (0.00ns)   --->   "%add_i_77_loc_load = load i64 %add_i_77_loc"   --->   Operation 169 'load' 'add_i_77_loc_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 170 [1/1] (0.00ns)   --->   "%add_i_75_loc_load = load i64 %add_i_75_loc"   --->   Operation 170 'load' 'add_i_75_loc_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 171 [1/1] (0.00ns)   --->   "%add_i_73_loc_load = load i64 %add_i_73_loc"   --->   Operation 171 'load' 'add_i_73_loc_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 172 [1/1] (0.00ns)   --->   "%add_i_71_loc_load = load i64 %add_i_71_loc"   --->   Operation 172 'load' 'add_i_71_loc_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 173 [1/1] (0.00ns)   --->   "%mux_case_7_loc_load = load i64 %mux_case_7_loc"   --->   Operation 173 'load' 'mux_case_7_loc_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 174 [1/1] (0.00ns)   --->   "%mux_case_6_loc_load = load i64 %mux_case_6_loc"   --->   Operation 174 'load' 'mux_case_6_loc_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 175 [1/1] (0.00ns)   --->   "%mux_case_5_loc_load = load i64 %mux_case_5_loc"   --->   Operation 175 'load' 'mux_case_5_loc_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 176 [1/1] (0.00ns)   --->   "%mux_case_4_loc_load = load i64 %mux_case_4_loc"   --->   Operation 176 'load' 'mux_case_4_loc_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 177 [1/1] (0.00ns)   --->   "%mux_case_3_loc_load = load i64 %mux_case_3_loc"   --->   Operation 177 'load' 'mux_case_3_loc_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 178 [1/1] (0.00ns)   --->   "%mux_case_2_loc_load = load i64 %mux_case_2_loc"   --->   Operation 178 'load' 'mux_case_2_loc_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 179 [1/1] (0.00ns)   --->   "%mux_case_1_loc_load = load i64 %mux_case_1_loc"   --->   Operation 179 'load' 'mux_case_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 180 [1/1] (0.00ns)   --->   "%mux_case_0_loc_load = load i64 %mux_case_0_loc"   --->   Operation 180 'load' 'mux_case_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 181 [2/2] (0.48ns)   --->   "%call_ln0 = call void @backProp<64, 8, 8>_Pipeline_VITIS_LOOP_284_3, i64 %add_i_713_loc_load, i64 %add_i_711_loc_load, i64 %add_i_79_loc_load, i64 %add_i_77_loc_load, i64 %add_i_75_loc_load, i64 %add_i_73_loc_load, i64 %add_i_71_loc_load, i64 %add_i_715_loc_load, i64 %mux_case_7_loc_load, i64 %mux_case_6_loc_load, i64 %mux_case_5_loc_load, i64 %mux_case_4_loc_load, i64 %mux_case_3_loc_load, i64 %mux_case_2_loc_load, i64 %mux_case_1_loc_load, i64 %mux_case_0_loc_load, i64 %d_activation_0, i64 %agg_result_0_0_local_0_loc, i64 %agg_result_1_0_local_0_loc, i64 %agg_result_2_0_local_0_loc, i64 %agg_result_3_0_local_0_loc, i64 %agg_result_4_0_local_0_loc, i64 %agg_result_5_0_local_0_loc, i64 %agg_result_6_0_local_0_loc, i64 %agg_result_7_0_local_0_loc"   --->   Operation 181 'call' 'call_ln0' <Predicate = true> <Delay = 0.48> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 182 [1/2] (0.00ns)   --->   "%call_ln0 = call void @backProp<64, 8, 8>_Pipeline_VITIS_LOOP_284_3, i64 %add_i_713_loc_load, i64 %add_i_711_loc_load, i64 %add_i_79_loc_load, i64 %add_i_77_loc_load, i64 %add_i_75_loc_load, i64 %add_i_73_loc_load, i64 %add_i_71_loc_load, i64 %add_i_715_loc_load, i64 %mux_case_7_loc_load, i64 %mux_case_6_loc_load, i64 %mux_case_5_loc_load, i64 %mux_case_4_loc_load, i64 %mux_case_3_loc_load, i64 %mux_case_2_loc_load, i64 %mux_case_1_loc_load, i64 %mux_case_0_loc_load, i64 %d_activation_0, i64 %agg_result_0_0_local_0_loc, i64 %agg_result_1_0_local_0_loc, i64 %agg_result_2_0_local_0_loc, i64 %agg_result_3_0_local_0_loc, i64 %agg_result_4_0_local_0_loc, i64 %agg_result_5_0_local_0_loc, i64 %agg_result_6_0_local_0_loc, i64 %agg_result_7_0_local_0_loc"   --->   Operation 182 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 12> <Delay = 0.00>
+ST_13 : Operation 183 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i4096 %weights_l1, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 183 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 184 [1/1] (0.00ns)   --->   "%agg_result_0_0_local_0_loc_load = load i64 %agg_result_0_0_local_0_loc"   --->   Operation 184 'load' 'agg_result_0_0_local_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 185 [1/1] (0.00ns)   --->   "%agg_result_1_0_local_0_loc_load = load i64 %agg_result_1_0_local_0_loc"   --->   Operation 185 'load' 'agg_result_1_0_local_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 186 [1/1] (0.00ns)   --->   "%agg_result_2_0_local_0_loc_load = load i64 %agg_result_2_0_local_0_loc"   --->   Operation 186 'load' 'agg_result_2_0_local_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 187 [1/1] (0.00ns)   --->   "%agg_result_3_0_local_0_loc_load = load i64 %agg_result_3_0_local_0_loc"   --->   Operation 187 'load' 'agg_result_3_0_local_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 188 [1/1] (0.00ns)   --->   "%agg_result_4_0_local_0_loc_load = load i64 %agg_result_4_0_local_0_loc"   --->   Operation 188 'load' 'agg_result_4_0_local_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 189 [1/1] (0.00ns)   --->   "%agg_result_5_0_local_0_loc_load = load i64 %agg_result_5_0_local_0_loc"   --->   Operation 189 'load' 'agg_result_5_0_local_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 190 [1/1] (0.00ns)   --->   "%agg_result_6_0_local_0_loc_load = load i64 %agg_result_6_0_local_0_loc"   --->   Operation 190 'load' 'agg_result_6_0_local_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 191 [1/1] (0.00ns)   --->   "%agg_result_7_0_local_0_loc_load = load i64 %agg_result_7_0_local_0_loc"   --->   Operation 191 'load' 'agg_result_7_0_local_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 192 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.doubleP0A, i64 %agg_result_0_0, i64 %agg_result_0_0_local_0_loc_load"   --->   Operation 192 'write' 'write_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 193 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.doubleP0A, i64 %agg_result_1_0, i64 %agg_result_1_0_local_0_loc_load"   --->   Operation 193 'write' 'write_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 194 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.doubleP0A, i64 %agg_result_2_0, i64 %agg_result_2_0_local_0_loc_load"   --->   Operation 194 'write' 'write_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 195 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.doubleP0A, i64 %agg_result_3_0, i64 %agg_result_3_0_local_0_loc_load"   --->   Operation 195 'write' 'write_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 196 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.doubleP0A, i64 %agg_result_4_0, i64 %agg_result_4_0_local_0_loc_load"   --->   Operation 196 'write' 'write_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 197 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.doubleP0A, i64 %agg_result_5_0, i64 %agg_result_5_0_local_0_loc_load"   --->   Operation 197 'write' 'write_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 198 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.doubleP0A, i64 %agg_result_6_0, i64 %agg_result_6_0_local_0_loc_load"   --->   Operation 198 'write' 'write_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 199 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.doubleP0A, i64 %agg_result_7_0, i64 %agg_result_7_0_local_0_loc_load"   --->   Operation 199 'write' 'write_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 200 [1/1] (0.00ns)   --->   "%ret_ln295 = ret" [../layer.h:295]   --->   Operation 200 'ret' 'ret_ln295' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.000ns.
+
+ <State 1>: 0.790ns
+The critical path consists of the following:
+	'alloca' operation 64 bit ('C[0]', ../layer.h:77->../layer.h:264) [191]  (0.000 ns)
+	'getelementptr' operation 3 bit ('C_0_addr') [212]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on array 'C[0]', ../layer.h:77->../layer.h:264 [220]  (0.790 ns)
+
+ <State 2>: 0.790ns
+The critical path consists of the following:
+	'getelementptr' operation 3 bit ('C_0_addr_32') [214]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on array 'C[0]', ../layer.h:77->../layer.h:264 [222]  (0.790 ns)
+
+ <State 3>: 0.790ns
+The critical path consists of the following:
+	'getelementptr' operation 3 bit ('C_0_addr_34') [216]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on array 'C[0]', ../layer.h:77->../layer.h:264 [224]  (0.790 ns)
+
+ <State 4>: 0.790ns
+The critical path consists of the following:
+	'getelementptr' operation 3 bit ('C_0_addr_36') [218]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on array 'C[0]', ../layer.h:77->../layer.h:264 [226]  (0.790 ns)
+
+ <State 5>: 2.923ns
+The critical path consists of the following:
+	wire read operation ('w_l_plus1_val_read') on port 'w_l_plus1_val' [157]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'backProp<64, 8, 8>_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_41_2' [194]  (2.923 ns)
+
+ <State 6>: 1.875ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'backProp<64, 8, 8>_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_41_2' [194]  (1.875 ns)
+
+ <State 7>: 2.133ns
+The critical path consists of the following:
+	wire read operation ('biases_val_read') on port 'biases_val' [84]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'backProp<64, 8, 8>_Pipeline_VITIS_LOOP_266_1' [245]  (2.133 ns)
+
+ <State 8>: 0.000ns
+The critical path consists of the following:
+
+ <State 9>: 0.000ns
+The critical path consists of the following:
+
+ <State 10>: 0.000ns
+The critical path consists of the following:
+
+ <State 11>: 0.489ns
+The critical path consists of the following:
+	'load' operation 64 bit ('add_i_715_loc_load') on local variable 'add_i_715_loc' [196]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'backProp<64, 8, 8>_Pipeline_VITIS_LOOP_284_3' [247]  (0.489 ns)
+
+ <State 12>: 0.000ns
+The critical path consists of the following:
+
+ <State 13>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

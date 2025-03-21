@@ -4,6 +4,8 @@
 #include <array>
 #include <ap_fixed.h>
 
+typedef ap_fixed<16,7> fixed_16;
+
 #define NUM_ITERATIONS 50
 #define LR 0.001
 // #define ALPHA 0.02 // factor for "leaky-ness" of leaky ReLU

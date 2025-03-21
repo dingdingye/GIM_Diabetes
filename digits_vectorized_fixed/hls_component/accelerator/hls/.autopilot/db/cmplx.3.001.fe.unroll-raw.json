@@ -1,0 +1,1301 @@
+{
+  "0": {
+    "basicblocks": 20,
+    "calls": "5 94 111 64 73 117 117 54 69 6 30 34 30 34 30 57 82 75 30 44 97 44 113 113 107 88 25 24 83 28 12 45",
+    "file": "accelerator.cpp",
+    "fileloc": 13,
+    "instructions": 417,
+    "loads": {
+      "L": 69
+    },
+    "name": "accelerator",
+    "stores": {
+      "L": 79
+    },
+    "total_instructions": 14399
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "109",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "10": {
+    "basicblocks": 14,
+    "calls": "81 1 113 18 95 41",
+    "file": "layer.h",
+    "fileloc": 55,
+    "instructions": 163,
+    "loads": {
+      "L": 3
+    },
+    "name": "matmul<64, 64, 1>",
+    "stores": {
+      "L": 65
+    },
+    "total_instructions": 190
+  },
+  "100": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "101": {
+    "basicblocks": 7,
+    "calls": "11 41 58 105",
+    "file": "layer.h",
+    "fileloc": 34,
+    "instructions": 19,
+    "loads": {
+      "L": 1
+    },
+    "name": "transpose<8, 1>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 37
+  },
+  "102": {
+    "basicblocks": 1,
+    "calls": "100",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "103": {
+    "basicblocks": 1,
+    "calls": "20",
+    "file": "stl_algo.h",
+    "fileloc": 5699,
+    "instructions": 2,
+    "name": "max_element<std::array<double, 1> *, (lambda at ../activation.cpp:84:9)>",
+    "total_instructions": 40
+  },
+  "104": {
+    "basicblocks": 1,
+    "calls": "90",
+    "file": "array",
+    "fileloc": 234,
+    "instructions": 2,
+    "name": "data",
+    "total_instructions": 4
+  },
+  "105": {
+    "basicblocks": 1,
+    "calls": "66",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "106": {
+    "basicblocks": 1,
+    "calls": "100",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "107": {
+    "basicblocks": 20,
+    "calls": "4 89 96 33 23 33 113 113 40 33 113 33 113",
+    "file": "layer.h",
+    "fileloc": 249,
+    "instructions": 80,
+    "loads": {
+      "L": 4
+    },
+    "name": "backProp<8, 8, 10>",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 350
+  },
+  "108": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "109": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "19",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "110": {
+    "basicblocks": 1,
+    "calls": "98",
+    "file": "x_hls_utils.h",
+    "fileloc": 509,
+    "instructions": 2,
+    "name": "to_ieee",
+    "total_instructions": 21
+  },
+  "111": {
+    "basicblocks": 17,
+    "calls": "29 33 105 33 113 113 112",
+    "file": "layer.h",
+    "fileloc": 148,
+    "instructions": 105,
+    "loads": {
+      "L": 10
+    },
+    "name": "forwardPropagation<64, 8>",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 275
+  },
+  "112": {
+    "basicblocks": 12,
+    "calls": "33 113 33 113 33 113",
+    "file": "activation.cpp",
+    "fileloc": 11,
+    "instructions": 42,
+    "loads": {
+      "L": 2
+    },
+    "name": "relu<8>",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 69
+  },
+  "113": {
+    "basicblocks": 1,
+    "calls": "84",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "114": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "115": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "predefined_ops.h",
+    "fileloc": 42,
+    "instructions": 4,
+    "loads": {
+      "L": 2
+    },
+    "name": "operator()<const double *, const double *>",
+    "total_instructions": 4
+  },
+  "116": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "117": {
+    "basicblocks": 1,
+    "calls": "104",
+    "file": "array",
+    "fileloc": 126,
+    "instructions": 2,
+    "name": "begin",
+    "total_instructions": 6
+  },
+  "12": {
+    "basicblocks": 9,
+    "calls": "61 65 70 70 70 26 26 26 26 95 41 26",
+    "file": "layer.h",
+    "fileloc": 307,
+    "instructions": 48,
+    "loads": {
+      "L": 4
+    },
+    "name": "updateWeightBias<64, 64>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 8385
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "41 41",
+    "file": "activation.cpp",
+    "fileloc": 84,
+    "instructions": 6,
+    "loads": {
+      "L": 2
+    },
+    "name": "operator()",
+    "total_instructions": 16
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "stl_iterator_base_funcs.h",
+    "fileloc": 98,
+    "instructions": 5,
+    "name": "__distance<std::array<double, 1> *>",
+    "total_instructions": 5
+  },
+  "15": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "16": {
+    "basicblocks": 1,
+    "calls": "100",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "17": {
+    "basicblocks": 1,
+    "calls": "114",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "18": {
+    "basicblocks": 1,
+    "calls": "50",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "19": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 59,
+    "instructions": 2,
+    "name": "_S_ptr",
+    "total_instructions": 2
+  },
+  "20": {
+    "basicblocks": 9,
+    "calls": "32",
+    "file": "stl_algo.h",
+    "fileloc": 5653,
+    "instructions": 20,
+    "name": "__max_element<std::array<double, 1> *, __gnu_cxx::__ops::_Iter_comp_iter<(lambda at ../activation.cpp:84:9)> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 38
+  },
+  "21": {
+    "basicblocks": 14,
+    "calls": "11 80 26 41 99 18",
+    "file": "layer.h",
+    "fileloc": 55,
+    "instructions": 1059,
+    "loads": {
+      "L": 3
+    },
+    "name": "matmul<8, 1, 64>",
+    "stores": {
+      "L": 513
+    },
+    "total_instructions": 1086
+  },
+  "22": {
+    "basicblocks": 1,
+    "calls": "41 41",
+    "file": "accelerator.cpp",
+    "fileloc": 54,
+    "instructions": 6,
+    "loads": {
+      "L": 2
+    },
+    "name": "operator()",
+    "total_instructions": 16
+  },
+  "23": {
+    "basicblocks": 1,
+    "calls": "66",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "24": {
+    "basicblocks": 9,
+    "calls": "101 77 17 17 17 105 105 105 67 47 41 67",
+    "file": "layer.h",
+    "fileloc": 307,
+    "instructions": 48,
+    "loads": {
+      "L": 4
+    },
+    "name": "updateWeightBias<8, 10>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 353
+  },
+  "25": {
+    "basicblocks": 20,
+    "calls": "86 91 10 1 18 1 113 113 42 1 113 1 113",
+    "file": "layer.h",
+    "fileloc": 249,
+    "instructions": 192,
+    "loads": {
+      "L": 4
+    },
+    "name": "backProp<64, 64, 8>",
+    "stores": {
+      "L": 66
+    },
+    "total_instructions": 685
+  },
+  "26": {
+    "basicblocks": 1,
+    "calls": "50",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "27": {
+    "basicblocks": 24,
+    "calls": "117 54 103 113 44 113 44 113 44 113 117 54 44 113 44 113 117 54",
+    "file": "activation.cpp",
+    "fileloc": 58,
+    "instructions": 87,
+    "loads": {
+      "L": 5
+    },
+    "name": "softmax<10>",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 261
+  },
+  "28": {
+    "basicblocks": 9,
+    "calls": "61 21 80 80 80 26 26 26 105 11 41 105",
+    "file": "layer.h",
+    "fileloc": 307,
+    "instructions": 48,
+    "loads": {
+      "L": 4
+    },
+    "name": "updateWeightBias<64, 8>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 1217
+  },
+  "29": {
+    "basicblocks": 14,
+    "calls": "56 33 113 18 95 41",
+    "file": "layer.h",
+    "fileloc": 55,
+    "instructions": 51,
+    "loads": {
+      "L": 3
+    },
+    "name": "matmul<8, 64, 1>",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 78
+  },
+  "3": {
+    "basicblocks": 7,
+    "calls": "92 23 106 105",
+    "file": "layer.h",
+    "fileloc": 34,
+    "instructions": 19,
+    "loads": {
+      "L": 1
+    },
+    "name": "transpose<8, 8>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 38
+  },
+  "30": {
+    "basicblocks": 1,
+    "calls": "108",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "31": {
+    "basicblocks": 9,
+    "calls": "49",
+    "file": "stl_algo.h",
+    "fileloc": 5653,
+    "instructions": 20,
+    "name": "__max_element<std::array<double, 1> *, __gnu_cxx::__ops::_Iter_comp_iter<(lambda at ../accelerator.cpp:54:17)> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 38
+  },
+  "32": {
+    "basicblocks": 1,
+    "calls": "13",
+    "file": "predefined_ops.h",
+    "fileloc": 142,
+    "instructions": 2,
+    "name": "operator()<std::array<double, 1> *, std::array<double, 1> *>",
+    "total_instructions": 18
+  },
+  "33": {
+    "basicblocks": 1,
+    "calls": "19",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "34": {
+    "basicblocks": 1,
+    "calls": "93",
+    "file": "array",
+    "fileloc": 130,
+    "instructions": 2,
+    "name": "begin",
+    "total_instructions": 7
+  },
+  "35": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "36": {
+    "basicblocks": 14,
+    "calls": "71 44 113 23 11 41",
+    "file": "layer.h",
+    "fileloc": 55,
+    "instructions": 55,
+    "loads": {
+      "L": 3
+    },
+    "name": "matmul<10, 8, 1>",
+    "stores": {
+      "L": 11
+    },
+    "total_instructions": 82
+  },
+  "37": {
+    "basicblocks": 1,
+    "calls": "46",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "38": {
+    "basicblocks": 1,
+    "calls": "48",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "39": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "stl_iterator_base_funcs.h",
+    "fileloc": 98,
+    "instructions": 5,
+    "name": "__distance<const double *>",
+    "total_instructions": 5
+  },
+  "4": {
+    "basicblocks": 7,
+    "calls": "71 23 78 67",
+    "file": "layer.h",
+    "fileloc": 34,
+    "instructions": 19,
+    "loads": {
+      "L": 1
+    },
+    "name": "transpose<10, 8>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 37
+  },
+  "40": {
+    "basicblocks": 5,
+    "calls": "33 113 33 113",
+    "file": "activation.cpp",
+    "fileloc": 20,
+    "instructions": 17,
+    "loads": {
+      "L": 1
+    },
+    "name": "derivative_relu<8>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 35
+  },
+  "41": {
+    "basicblocks": 1,
+    "calls": "84",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "42": {
+    "basicblocks": 5,
+    "calls": "1 113 1 113",
+    "file": "activation.cpp",
+    "fileloc": 20,
+    "instructions": 17,
+    "loads": {
+      "L": 1
+    },
+    "name": "derivative_relu<64>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 35
+  },
+  "43": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 456,
+    "instructions": 8,
+    "name": "fp_struct",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 8
+  },
+  "44": {
+    "basicblocks": 1,
+    "calls": "85",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "45": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "stl_algobase.h",
+    "fileloc": 195,
+    "instructions": 8,
+    "loads": {
+      "L": 2
+    },
+    "name": "min<int>",
+    "total_instructions": 8
+  },
+  "46": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "47": {
+    "basicblocks": 1,
+    "calls": "85",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "48": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "49": {
+    "basicblocks": 1,
+    "calls": "22",
+    "file": "predefined_ops.h",
+    "fileloc": 142,
+    "instructions": 2,
+    "name": "operator()<std::array<double, 1> *, std::array<double, 1> *>",
+    "total_instructions": 18
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "74",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "50": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "51": {
+    "basicblocks": 7,
+    "calls": "47 41 37 67",
+    "file": "layer.h",
+    "fileloc": 34,
+    "instructions": 19,
+    "loads": {
+      "L": 1
+    },
+    "name": "transpose<10, 1>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 37
+  },
+  "52": {
+    "basicblocks": 1,
+    "calls": "116",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "53": {
+    "basicblocks": 1,
+    "calls": "15",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "54": {
+    "basicblocks": 1,
+    "calls": "104",
+    "file": "array",
+    "fileloc": 134,
+    "instructions": 3,
+    "name": "end",
+    "total_instructions": 7
+  },
+  "55": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "56": {
+    "basicblocks": 1,
+    "calls": "60",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "57": {
+    "basicblocks": 1,
+    "calls": "93",
+    "file": "array",
+    "fileloc": 138,
+    "instructions": 3,
+    "name": "end",
+    "total_instructions": 8
+  },
+  "58": {
+    "basicblocks": 1,
+    "calls": "35",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "59": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 475,
+    "instructions": 14,
+    "loads": {
+      "L": 4
+    },
+    "name": "data",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 14
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "14",
+    "file": "stl_iterator_base_funcs.h",
+    "fileloc": 138,
+    "instructions": 2,
+    "name": "distance<std::array<double, 1> *>",
+    "total_instructions": 7
+  },
+  "60": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "61": {
+    "basicblocks": 7,
+    "calls": "95 41 53 26",
+    "file": "layer.h",
+    "fileloc": 34,
+    "instructions": 19,
+    "loads": {
+      "L": 1
+    },
+    "name": "transpose<64, 1>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 37
+  },
+  "62": {
+    "basicblocks": 1,
+    "calls": "35",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "63": {
+    "basicblocks": 1,
+    "calls": "7",
+    "file": "hls_fabs.h",
+    "fileloc": 12,
+    "instructions": 2,
+    "name": "generic_fabs<double>",
+    "total_instructions": 38
+  },
+  "64": {
+    "basicblocks": 17,
+    "calls": "96 33 105 33 113 113 112",
+    "file": "layer.h",
+    "fileloc": 148,
+    "instructions": 105,
+    "loads": {
+      "L": 10
+    },
+    "name": "forwardPropagation<8, 8>",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 276
+  },
+  "65": {
+    "basicblocks": 14,
+    "calls": "95 70 26 41 99 18",
+    "file": "layer.h",
+    "fileloc": 55,
+    "instructions": 8227,
+    "loads": {
+      "L": 3
+    },
+    "name": "matmul<64, 1, 64>",
+    "stores": {
+      "L": 4097
+    },
+    "total_instructions": 8254
+  },
+  "66": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "67": {
+    "basicblocks": 1,
+    "calls": "55",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "68": {
+    "basicblocks": 12,
+    "calls": "1 113 1 113 1 113",
+    "file": "activation.cpp",
+    "fileloc": 11,
+    "instructions": 154,
+    "loads": {
+      "L": 2
+    },
+    "name": "relu<64>",
+    "stores": {
+      "L": 65
+    },
+    "total_instructions": 181
+  },
+  "69": {
+    "basicblocks": 1,
+    "calls": "31",
+    "file": "stl_algo.h",
+    "fileloc": 5699,
+    "instructions": 2,
+    "name": "max_element<std::array<double, 1> *, (lambda at ../accelerator.cpp:54:17)>",
+    "total_instructions": 40
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "43 110",
+    "file": "hls_copysign.h",
+    "fileloc": 10,
+    "instructions": 7,
+    "name": "generic_copysign<double>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 36
+  },
+  "70": {
+    "basicblocks": 1,
+    "calls": "79",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "71": {
+    "basicblocks": 1,
+    "calls": "114",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "72": {
+    "basicblocks": 14,
+    "calls": "11 106 105 41 62 23",
+    "file": "layer.h",
+    "fileloc": 55,
+    "instructions": 163,
+    "loads": {
+      "L": 3
+    },
+    "name": "matmul<8, 1, 8>",
+    "stores": {
+      "L": 65
+    },
+    "total_instructions": 190
+  },
+  "73": {
+    "basicblocks": 33,
+    "calls": "36 44 67 44 113 113 37 51 67 44 113 27 44 113 44 113",
+    "file": "layer.h",
+    "fileloc": 148,
+    "instructions": 212,
+    "loads": {
+      "L": 14
+    },
+    "name": "forwardPropagation<8, 10>",
+    "stores": {
+      "L": 53
+    },
+    "total_instructions": 651
+  },
+  "74": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "75": {
+    "basicblocks": 1,
+    "calls": "39",
+    "file": "stl_iterator_base_funcs.h",
+    "fileloc": 138,
+    "instructions": 2,
+    "name": "distance<const double *>",
+    "total_instructions": 7
+  },
+  "76": {
+    "basicblocks": 1,
+    "calls": "63",
+    "file": "fabsdouble.cpp",
+    "fileloc": 7,
+    "instructions": 2,
+    "name": "fabs",
+    "total_instructions": 40
+  },
+  "77": {
+    "basicblocks": 14,
+    "calls": "47 17 105 41 62 23",
+    "file": "layer.h",
+    "fileloc": 55,
+    "instructions": 195,
+    "loads": {
+      "L": 3
+    },
+    "name": "matmul<10, 1, 8>",
+    "stores": {
+      "L": 81
+    },
+    "total_instructions": 222
+  },
+  "78": {
+    "basicblocks": 1,
+    "calls": "48",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "79": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "8": {
+    "basicblocks": 9,
+    "calls": "115",
+    "file": "stl_algo.h",
+    "fileloc": 5653,
+    "instructions": 18,
+    "name": "__max_element<const double *, __gnu_cxx::__ops::_Iter_less_iter>",
+    "total_instructions": 22
+  },
+  "80": {
+    "basicblocks": 1,
+    "calls": "60",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "81": {
+    "basicblocks": 1,
+    "calls": "79",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "82": {
+    "basicblocks": 1,
+    "calls": "8",
+    "file": "stl_algo.h",
+    "fileloc": 5674,
+    "instructions": 2,
+    "name": "max_element<const double *>",
+    "total_instructions": 24
+  },
+  "83": {
+    "basicblocks": 9,
+    "calls": "101 72 16 106 16 105 105 105 105 11 41 105",
+    "file": "layer.h",
+    "fileloc": 307,
+    "instructions": 48,
+    "loads": {
+      "L": 4
+    },
+    "name": "updateWeightBias<8, 8>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 323
+  },
+  "84": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "85": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "86": {
+    "basicblocks": 7,
+    "calls": "56 18 52 105",
+    "file": "layer.h",
+    "fileloc": 34,
+    "instructions": 19,
+    "loads": {
+      "L": 1
+    },
+    "name": "transpose<8, 64>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 37
+  },
+  "87": {
+    "basicblocks": 1,
+    "calls": "116",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "88": {
+    "basicblocks": 20,
+    "calls": "3 9 29 33 23 33 113 113 40 33 113 33 113",
+    "file": "layer.h",
+    "fileloc": 249,
+    "instructions": 80,
+    "loads": {
+      "L": 4
+    },
+    "name": "backProp<64, 8, 8>",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 350
+  },
+  "89": {
+    "basicblocks": 14,
+    "calls": "38 33 113 97 47 41",
+    "file": "layer.h",
+    "fileloc": 55,
+    "instructions": 51,
+    "loads": {
+      "L": 3
+    },
+    "name": "matmul<8, 10, 1>",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 78
+  },
+  "9": {
+    "basicblocks": 14,
+    "calls": "102 33 113 23 11 41",
+    "file": "layer.h",
+    "fileloc": 55,
+    "instructions": 51,
+    "loads": {
+      "L": 3
+    },
+    "name": "matmul<8, 8, 1>",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 78
+  },
+  "90": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 59,
+    "instructions": 2,
+    "name": "_S_ptr",
+    "total_instructions": 2
+  },
+  "91": {
+    "basicblocks": 14,
+    "calls": "87 1 113 23 11 41",
+    "file": "layer.h",
+    "fileloc": 55,
+    "instructions": 163,
+    "loads": {
+      "L": 3
+    },
+    "name": "matmul<64, 8, 1>",
+    "stores": {
+      "L": 65
+    },
+    "total_instructions": 190
+  },
+  "92": {
+    "basicblocks": 1,
+    "calls": "100",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "93": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "array",
+    "fileloc": 238,
+    "instructions": 3,
+    "name": "data",
+    "total_instructions": 5
+  },
+  "94": {
+    "basicblocks": 17,
+    "calls": "10 1 26 1 113 113 68",
+    "file": "layer.h",
+    "fileloc": 148,
+    "instructions": 553,
+    "loads": {
+      "L": 66
+    },
+    "name": "forwardPropagation<64, 64>",
+    "stores": {
+      "L": 193
+    },
+    "total_instructions": 947
+  },
+  "95": {
+    "basicblocks": 1,
+    "calls": "109",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  },
+  "96": {
+    "basicblocks": 14,
+    "calls": "92 33 113 23 11 41",
+    "file": "layer.h",
+    "fileloc": 55,
+    "instructions": 51,
+    "loads": {
+      "L": 3
+    },
+    "name": "matmul<8, 8, 1>",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 79
+  },
+  "97": {
+    "basicblocks": 1,
+    "calls": "55",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "98": {
+    "basicblocks": 1,
+    "calls": "59",
+    "file": "x_hls_utils.h",
+    "fileloc": 494,
+    "instructions": 5,
+    "loads": {
+      "L": 1
+    },
+    "name": "to_double",
+    "total_instructions": 19
+  },
+  "99": {
+    "basicblocks": 1,
+    "calls": "15",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 2,
+    "name": "operator[]",
+    "total_instructions": 4
+  }
+}

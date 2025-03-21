@@ -1,0 +1,110 @@
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43278:5: warning: Added loop label VITIS_LOOP_40_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < ROWS; ++i) {
+    ^~~
+    VITIS_LOOP_40_1: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43278:5: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43279:9: warning: Added loop label VITIS_LOOP_41_2:   [xilinx-label-all-loops]
+        for (size_t j = 0; j < COLS; ++j) {
+        ^~~
+        VITIS_LOOP_41_2: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43279:9: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43311:5: warning: Added loop label VITIS_LOOP_81_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < ROWS_A; ++i) {
+    ^~~
+    VITIS_LOOP_81_1: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43311:5: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43312:9: warning: Added loop label VITIS_LOOP_82_2:   [xilinx-label-all-loops]
+        for (size_t j = 0; j < COLS_B; ++j) {
+        ^~~
+        VITIS_LOOP_82_2: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43312:9: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43313:13: warning: Added loop label VITIS_LOOP_83_3:   [xilinx-label-all-loops]
+            for (size_t k = 0; k < COLS_A; ++k) {
+            ^~~
+            VITIS_LOOP_83_3: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43313:13: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43338:5: warning: Added loop label VITIS_LOOP_121_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < M; ++i) {
+    ^~~
+    VITIS_LOOP_121_1: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43338:5: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43339:9: warning: Added loop label VITIS_LOOP_122_2:   [xilinx-label-all-loops]
+        for (size_t j = 0; j < P; ++j) {
+        ^~~
+        VITIS_LOOP_122_2: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43339:9: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43341:13: warning: Added loop label VITIS_LOOP_124_3:   [xilinx-label-all-loops]
+            for (size_t k = 0; k < N; ++k) {
+            ^~~
+            VITIS_LOOP_124_3: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43341:13: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43365:5: warning: Added loop label VITIS_LOOP_161_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < mid.size(); ++i) {
+    ^~~
+    VITIS_LOOP_161_1: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43365:5: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43366:9: warning: Added loop label VITIS_LOOP_162_2:   [xilinx-label-all-loops]
+        for (size_t j = 0; j < mid[i].size(); ++j) {
+        ^~~
+        VITIS_LOOP_162_2: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43366:9: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43381:9: warning: Added loop label VITIS_LOOP_177_3:   [xilinx-label-all-loops]
+        for (int j = 0; j < OUT_SIZE; ++j) {
+        ^~~
+        VITIS_LOOP_177_3: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43381:9: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43384:13: warning: Added loop label VITIS_LOOP_180_4:   [xilinx-label-all-loops]
+            for (int k = 0; k < OUT_SIZE; ++k) {
+            ^~~
+            VITIS_LOOP_180_4: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43384:13: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43425:5: warning: Added loop label VITIS_LOOP_266_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < IN_SIZE; ++i) {
+    ^~~
+    VITIS_LOOP_266_1: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43425:5: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43426:9: warning: Added loop label VITIS_LOOP_267_2:   [xilinx-label-all-loops]
+        for (size_t j = 0; j < mid[i].size(); ++j) {
+        ^~~
+        VITIS_LOOP_267_2: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43426:9: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43443:9: warning: Added loop label VITIS_LOOP_284_3:   [xilinx-label-all-loops]
+        for (int ii = 0; ii < IN_SIZE; ++ii) {
+        ^~~
+        VITIS_LOOP_284_3: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43443:9: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43444:13: warning: Added loop label VITIS_LOOP_285_4:   [xilinx-label-all-loops]
+            for (int jj = 0; jj < temp[0].size(); ++jj) {
+            ^~~
+            VITIS_LOOP_285_4: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43444:13: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43473:5: warning: Added loop label VITIS_LOOP_323_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < OUT_SIZE; ++i) {
+    ^~~
+    VITIS_LOOP_323_1: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43473:5: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43474:9: warning: Added loop label VITIS_LOOP_324_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < IN_SIZE; ++j) {
+        ^~~
+        VITIS_LOOP_324_2: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:43474:9: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:47407:5: warning: Added loop label VITIS_LOOP_36_1:   [xilinx-label-all-loops]
+    for (int epoch = 0; epoch < 50; ++epoch) {
+    ^~~
+    VITIS_LOOP_36_1: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:47407:5: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:47409:9: warning: Added loop label VITIS_LOOP_38_2:   [xilinx-label-all-loops]
+        for (int iteration = 0; iteration < input.size(); ++iteration) {
+        ^~~
+        VITIS_LOOP_38_2: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:47409:9: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:47438:13: warning: Added loop label VITIS_LOOP_67_3:   [xilinx-label-all-loops]
+            for (size_t i = 0; i < result_l3.size(); ++i) {
+            ^~~
+            VITIS_LOOP_67_3: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:47438:13: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:47439:17: warning: Added loop label VITIS_LOOP_68_4:   [xilinx-label-all-loops]
+                for (size_t j = 0; j < result_l3[i].size(); ++j) {
+                ^~~
+                VITIS_LOOP_68_4: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp:47439:17: note: FIX-IT applied suggested code changes

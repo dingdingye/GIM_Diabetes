@@ -1,0 +1,244 @@
+{
+  "0": {
+    "basicblocks": 26,
+    "calls": "14 15 10 3 9 11 5 12 8 13 6",
+    "file": "accelerator.cpp",
+    "fileloc": 13,
+    "instructions": 2141,
+    "loads": {
+      "L": 146,
+      "T": 10
+    },
+    "name": "accelerator",
+    "stores": {
+      "L": 79,
+      "T": 8
+    },
+    "total_instructions": 17637
+  },
+  "1": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 55,
+    "instructions": 586,
+    "loads": {
+      "L": 66
+    },
+    "name": "matmul<64, 64, 1>",
+    "stores": {
+      "L": 65
+    },
+    "total_instructions": 714
+  },
+  "10": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 148,
+    "instructions": 185,
+    "loads": {
+      "L": 19
+    },
+    "name": "forwardPropagation<8, 8>",
+    "stores": {
+      "L": 35
+    },
+    "total_instructions": 203
+  },
+  "11": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 249,
+    "instructions": 628,
+    "loads": {
+      "L": 87
+    },
+    "name": "backProp<64, 8, 8>",
+    "stores": {
+      "L": 30
+    },
+    "total_instructions": 760
+  },
+  "12": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 55,
+    "instructions": 185,
+    "loads": {
+      "L": 3
+    },
+    "name": "matmul<10, 1, 8>",
+    "stores": {
+      "L": 81
+    },
+    "total_instructions": 185
+  },
+  "13": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 55,
+    "instructions": 1049,
+    "loads": {
+      "L": 3
+    },
+    "name": "matmul<8, 1, 64>",
+    "stores": {
+      "L": 513
+    },
+    "total_instructions": 1049
+  },
+  "14": {
+    "basicblocks": 3,
+    "calls": "1 7",
+    "file": "layer.h",
+    "fileloc": 148,
+    "instructions": 472,
+    "loads": {
+      "L": 65
+    },
+    "name": "forwardPropagation<64, 64>",
+    "stores": {
+      "L": 193
+    },
+    "total_instructions": 1328
+  },
+  "15": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 148,
+    "instructions": 562,
+    "loads": {
+      "L": 76
+    },
+    "name": "forwardPropagation<64, 8>",
+    "stores": {
+      "L": 35
+    },
+    "total_instructions": 692
+  },
+  "2": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "activation.cpp",
+    "fileloc": 58,
+    "instructions": 75,
+    "loads": {
+      "L": 4
+    },
+    "name": "softmax<10>",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 75
+  },
+  "3": {
+    "basicblocks": 9,
+    "calls": "2",
+    "file": "layer.h",
+    "fileloc": 148,
+    "instructions": 269,
+    "loads": {
+      "L": 33
+    },
+    "name": "forwardPropagation<8, 10>",
+    "stores": {
+      "L": 74
+    },
+    "total_instructions": 362
+  },
+  "4": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 55,
+    "instructions": 185,
+    "loads": {
+      "L": 17
+    },
+    "name": "matmul<64, 8, 1>",
+    "stores": {
+      "L": 65
+    },
+    "total_instructions": 185
+  },
+  "5": {
+    "basicblocks": 9,
+    "calls": "4 1",
+    "file": "layer.h",
+    "fileloc": 249,
+    "instructions": 502,
+    "loads": {
+      "L": 5
+    },
+    "name": "backProp<64, 64, 8>",
+    "stores": {
+      "L": 131
+    },
+    "total_instructions": 1531
+  },
+  "6": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 55,
+    "instructions": 8217,
+    "loads": {
+      "L": 3
+    },
+    "name": "matmul<64, 1, 64>",
+    "stores": {
+      "L": 4097
+    },
+    "total_instructions": 8217
+  },
+  "7": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "activation.cpp",
+    "fileloc": 11,
+    "instructions": 140,
+    "loads": {
+      "L": 1
+    },
+    "name": "relu<64>",
+    "stores": {
+      "L": 65
+    },
+    "total_instructions": 140
+  },
+  "8": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 55,
+    "instructions": 153,
+    "loads": {
+      "L": 3
+    },
+    "name": "matmul<8, 1, 8>",
+    "stores": {
+      "L": 65
+    },
+    "total_instructions": 153
+  },
+  "9": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 249,
+    "instructions": 288,
+    "loads": {
+      "L": 35
+    },
+    "name": "backProp<8, 8, 10>",
+    "stores": {
+      "L": 37
+    },
+    "total_instructions": 322
+  }
+}

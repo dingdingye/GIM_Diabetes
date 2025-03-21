@@ -1,0 +1,274 @@
+
+
+================================================================
+== Vitis HLS Report for 'matmul_8ul_1ul_8ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2'
+================================================================
+* Date:           Fri Mar 21 12:04:02 2025
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        accelerator
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sfvc784-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.439 ns|     2.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                   |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                     |
+    +---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+    |       77|       77|  0.770 us|  0.770 us|   65|   65|  loop auto-rewind stp(delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |             Loop Name             |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_81_1_VITIS_LOOP_82_2  |       75|       75|        13|          1|          1|    64|       yes|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 13
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 13
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 13, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.16>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%j_1 = alloca i32 1" [C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:189->../layer.h:84]   --->   Operation 16 'alloca' 'j_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%i_03 = alloca i32 1" [../layer.h:81]   --->   Operation 17 'alloca' 'i_03' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%indvar_flatten = alloca i32 1"   --->   Operation 18 'alloca' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%A_0_read_1 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %A_0_read_14"   --->   Operation 19 'read' 'A_0_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%A_0_read_2 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %A_0_read_13"   --->   Operation 20 'read' 'A_0_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%A_0_read_3 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %A_0_read_12"   --->   Operation 21 'read' 'A_0_read_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%A_0_read_4 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %A_0_read_11"   --->   Operation 22 'read' 'A_0_read_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%A_0_read_5 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %A_0_read_10"   --->   Operation 23 'read' 'A_0_read_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%A_0_read_6 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %A_0_read_9"   --->   Operation 24 'read' 'A_0_read_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%A_0_read_7 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %A_0_read_8"   --->   Operation 25 'read' 'A_0_read_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%A_0_read_15 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %A_0_read"   --->   Operation 26 'read' 'A_0_read_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.48ns)   --->   "%store_ln0 = store i7 0, i7 %indvar_flatten"   --->   Operation 27 'store' 'store_ln0' <Predicate = true> <Delay = 0.48>
+ST_1 : Operation 28 [1/1] (0.48ns)   --->   "%store_ln81 = store i4 0, i4 %i_03" [../layer.h:81]   --->   Operation 28 'store' 'store_ln81' <Predicate = true> <Delay = 0.48>
+ST_1 : Operation 29 [1/1] (0.48ns)   --->   "%store_ln189 = store i4 0, i4 %j_1" [C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:189->../layer.h:84]   --->   Operation 29 'store' 'store_ln189' <Predicate = true> <Delay = 0.48>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%br_ln0 = br void %VITIS_LOOP_83_3"   --->   Operation 30 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%indvar_flatten_load = load i7 %indvar_flatten" [../layer.h:81]   --->   Operation 31 'load' 'indvar_flatten_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.89ns)   --->   "%icmp_ln81 = icmp_eq  i7 %indvar_flatten_load, i7 64" [../layer.h:81]   --->   Operation 32 'icmp' 'icmp_ln81' <Predicate = true> <Delay = 0.89> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.89> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 33 [1/1] (0.89ns)   --->   "%add_ln81 = add i7 %indvar_flatten_load, i7 1" [../layer.h:81]   --->   Operation 33 'add' 'add_ln81' <Predicate = true> <Delay = 0.89> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%br_ln81 = br i1 %icmp_ln81, void %for.inc24, void %for.end26.exitStub" [../layer.h:81]   --->   Operation 34 'br' 'br_ln81' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%j_1_load = load i4 %j_1" [../layer.h:82]   --->   Operation 35 'load' 'j_1_load' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%i_03_load = load i4 %i_03" [../layer.h:81]   --->   Operation 36 'load' 'i_03_load' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.86ns)   --->   "%i = add i4 %i_03_load, i4 1" [../layer.h:81]   --->   Operation 37 'add' 'i' <Predicate = (!icmp_ln81)> <Delay = 0.86> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.86> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 38 [1/1] (0.86ns)   --->   "%icmp_ln82 = icmp_eq  i4 %j_1_load, i4 8" [../layer.h:82]   --->   Operation 38 'icmp' 'icmp_ln82' <Predicate = (!icmp_ln81)> <Delay = 0.86> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.86> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 39 [1/1] (0.45ns)   --->   "%select_ln81 = select i1 %icmp_ln82, i4 0, i4 %j_1_load" [../layer.h:81]   --->   Operation 39 'select' 'select_ln81' <Predicate = (!icmp_ln81)> <Delay = 0.45> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.45> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 40 [1/1] (0.45ns)   --->   "%select_ln81_1 = select i1 %icmp_ln82, i4 %i, i4 %i_03_load" [../layer.h:81]   --->   Operation 40 'select' 'select_ln81_1' <Predicate = (!icmp_ln81)> <Delay = 0.45> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.45> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%trunc_ln56 = trunc i4 %select_ln81_1" [C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:56->C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186->../layer.h:84]   --->   Operation 41 'trunc' 'trunc_ln56' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%zext_ln82 = zext i4 %select_ln81" [../layer.h:82]   --->   Operation 42 'zext' 'zext_ln82' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%B_0_addr = getelementptr i64 %B_0, i64 0, i64 %zext_ln82" [C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:56->C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:190->../layer.h:84]   --->   Operation 43 'getelementptr' 'B_0_addr' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_1 : Operation 44 [2/2] (0.79ns)   --->   "%B_0_load = load i3 %B_0_addr" [../layer.h:84]   --->   Operation 44 'load' 'B_0_load' <Predicate = (!icmp_ln81)> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 45 [1/1] (0.86ns)   --->   "%j = add i4 %select_ln81, i4 1" [../layer.h:82]   --->   Operation 45 'add' 'j' <Predicate = (!icmp_ln81)> <Delay = 0.86> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.86> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 46 [1/1] (0.48ns)   --->   "%store_ln81 = store i7 %add_ln81, i7 %indvar_flatten" [../layer.h:81]   --->   Operation 46 'store' 'store_ln81' <Predicate = (!icmp_ln81)> <Delay = 0.48>
+ST_1 : Operation 47 [1/1] (0.48ns)   --->   "%store_ln81 = store i4 %select_ln81_1, i4 %i_03" [../layer.h:81]   --->   Operation 47 'store' 'store_ln81' <Predicate = (!icmp_ln81)> <Delay = 0.48>
+ST_1 : Operation 48 [1/1] (0.48ns)   --->   "%store_ln189 = store i4 %j, i4 %j_1" [C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:189->../layer.h:84]   --->   Operation 48 'store' 'store_ln189' <Predicate = (!icmp_ln81)> <Delay = 0.48>
+
+State 2 <SV = 1> <Delay = 7.43>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%tmp_1 = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i3.i3, i3 %trunc_ln56, i3 0" [C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:56->C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186->../layer.h:84]   --->   Operation 49 'bitconcatenate' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (0.83ns)   --->   "%tmp = sparsemux i64 @_ssdm_op_SparseMux.ap_auto.8double.double.i3, i3 0, i64 %A_0_read_15, i3 1, i64 %A_0_read_7, i3 2, i64 %A_0_read_6, i3 3, i64 %A_0_read_5, i3 4, i64 %A_0_read_4, i3 5, i64 %A_0_read_3, i3 6, i64 %A_0_read_2, i3 7, i64 %A_0_read_1, i64 <undef>, i3 %trunc_ln56" [C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:56->C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186->../layer.h:84]   --->   Operation 50 'sparsemux' 'tmp' <Predicate = true> <Delay = 0.83> <CoreInst = "SparseMux">   --->   Core 144 'SparseMux' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%zext_ln56 = zext i4 %select_ln81" [C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:56->C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186->../layer.h:84]   --->   Operation 51 'zext' 'zext_ln56' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.88ns)   --->   "%add_ln56 = add i6 %tmp_1, i6 %zext_ln56" [C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:56->C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186->../layer.h:84]   --->   Operation 52 'add' 'add_ln56' <Predicate = true> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 53 [1/2] (0.79ns)   --->   "%B_0_load = load i3 %B_0_addr" [../layer.h:84]   --->   Operation 53 'load' 'B_0_load' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 54 [6/6] (6.60ns)   --->   "%mul = dmul i64 %tmp, i64 %B_0_load" [../layer.h:84]   --->   Operation 54 'dmul' 'mul' <Predicate = true> <Delay = 6.60> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 5> <II = 1> <Delay = 6.60> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 6.60>
+ST_3 : Operation 55 [5/6] (6.60ns)   --->   "%mul = dmul i64 %tmp, i64 %B_0_load" [../layer.h:84]   --->   Operation 55 'dmul' 'mul' <Predicate = true> <Delay = 6.60> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 5> <II = 1> <Delay = 6.60> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 6.60>
+ST_4 : Operation 56 [4/6] (6.60ns)   --->   "%mul = dmul i64 %tmp, i64 %B_0_load" [../layer.h:84]   --->   Operation 56 'dmul' 'mul' <Predicate = true> <Delay = 6.60> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 5> <II = 1> <Delay = 6.60> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 6.60>
+ST_5 : Operation 57 [3/6] (6.60ns)   --->   "%mul = dmul i64 %tmp, i64 %B_0_load" [../layer.h:84]   --->   Operation 57 'dmul' 'mul' <Predicate = true> <Delay = 6.60> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 5> <II = 1> <Delay = 6.60> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 6.60>
+ST_6 : Operation 58 [1/1] (0.00ns)   --->   "%zext_ln56_1 = zext i6 %add_ln56" [C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:56->C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186->../layer.h:84]   --->   Operation 58 'zext' 'zext_ln56_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 59 [1/1] (0.00ns)   --->   "%agg_result_addr = getelementptr i64 %agg_result, i64 0, i64 %zext_ln56_1" [C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:56->C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186->../layer.h:84]   --->   Operation 59 'getelementptr' 'agg_result_addr' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 60 [2/6] (6.60ns)   --->   "%mul = dmul i64 %tmp, i64 %B_0_load" [../layer.h:84]   --->   Operation 60 'dmul' 'mul' <Predicate = true> <Delay = 6.60> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 5> <II = 1> <Delay = 6.60> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 61 [2/2] (1.35ns)   --->   "%agg_result_load = load i6 %agg_result_addr" [../layer.h:84]   --->   Operation 61 'load' 'agg_result_load' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+
+State 7 <SV = 6> <Delay = 6.60>
+ST_7 : Operation 62 [1/6] (6.60ns)   --->   "%mul = dmul i64 %tmp, i64 %B_0_load" [../layer.h:84]   --->   Operation 62 'dmul' 'mul' <Predicate = true> <Delay = 6.60> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 5> <II = 1> <Delay = 6.60> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 63 [1/2] (1.35ns)   --->   "%agg_result_load = load i6 %agg_result_addr" [../layer.h:84]   --->   Operation 63 'load' 'agg_result_load' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+
+State 8 <SV = 7> <Delay = 6.91>
+ST_8 : Operation 64 [5/5] (6.91ns)   --->   "%add = dadd i64 %agg_result_load, i64 %mul" [../layer.h:84]   --->   Operation 64 'dadd' 'add' <Predicate = true> <Delay = 6.91> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 6.91>
+ST_9 : Operation 65 [4/5] (6.91ns)   --->   "%add = dadd i64 %agg_result_load, i64 %mul" [../layer.h:84]   --->   Operation 65 'dadd' 'add' <Predicate = true> <Delay = 6.91> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 6.91>
+ST_10 : Operation 66 [3/5] (6.91ns)   --->   "%add = dadd i64 %agg_result_load, i64 %mul" [../layer.h:84]   --->   Operation 66 'dadd' 'add' <Predicate = true> <Delay = 6.91> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 6.91>
+ST_11 : Operation 67 [2/5] (6.91ns)   --->   "%add = dadd i64 %agg_result_load, i64 %mul" [../layer.h:84]   --->   Operation 67 'dadd' 'add' <Predicate = true> <Delay = 6.91> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 6.91>
+ST_12 : Operation 68 [1/5] (6.91ns)   --->   "%add = dadd i64 %agg_result_load, i64 %mul" [../layer.h:84]   --->   Operation 68 'dadd' 'add' <Predicate = true> <Delay = 6.91> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 74 [1/1] (0.48ns)   --->   "%ret_ln0 = ret"   --->   Operation 74 'ret' 'ret_ln0' <Predicate = (icmp_ln81)> <Delay = 0.48>
+
+State 13 <SV = 12> <Delay = 1.35>
+ST_13 : Operation 69 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_81_1_VITIS_LOOP_82_2_str"   --->   Operation 69 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 70 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 64, i64 64, i64 64"   --->   Operation 70 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 71 [1/1] (0.00ns)   --->   "%specpipeline_ln82 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [../layer.h:82]   --->   Operation 71 'specpipeline' 'specpipeline_ln82' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 72 [1/1] (1.35ns)   --->   "%store_ln84 = store i64 %add, i6 %agg_result_addr" [../layer.h:84]   --->   Operation 72 'store' 'store_ln84' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_13 : Operation 73 [1/1] (0.00ns)   --->   "%br_ln82 = br void %VITIS_LOOP_83_3" [../layer.h:82]   --->   Operation 73 'br' 'br_ln82' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.000ns.
+
+ <State 1>: 3.164ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln189', C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:189->../layer.h:84) of constant 0 on local variable '__n', C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:189->../layer.h:84 [24]  (0.489 ns)
+	'load' operation 4 bit ('j_1_load', ../layer.h:82) on local variable '__n', C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:189->../layer.h:84 [32]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln82', ../layer.h:82) [37]  (0.868 ns)
+	'select' operation 4 bit ('select_ln81', ../layer.h:81) [38]  (0.450 ns)
+	'add' operation 4 bit ('j', ../layer.h:82) [55]  (0.868 ns)
+	'store' operation 0 bit ('store_ln189', C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:189->../layer.h:84) of variable 'j', ../layer.h:82 on local variable '__n', C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:189->../layer.h:84 [58]  (0.489 ns)
+
+ <State 2>: 7.439ns
+The critical path consists of the following:
+	'sparsemux' operation 64 bit ('tmp', C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:56->C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186->../layer.h:84) [42]  (0.837 ns)
+	'dmul' operation 64 bit ('mul', ../layer.h:84) [51]  (6.602 ns)
+
+ <State 3>: 6.602ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul', ../layer.h:84) [51]  (6.602 ns)
+
+ <State 4>: 6.602ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul', ../layer.h:84) [51]  (6.602 ns)
+
+ <State 5>: 6.602ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul', ../layer.h:84) [51]  (6.602 ns)
+
+ <State 6>: 6.602ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul', ../layer.h:84) [51]  (6.602 ns)
+
+ <State 7>: 6.602ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul', ../layer.h:84) [51]  (6.602 ns)
+
+ <State 8>: 6.919ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('add', ../layer.h:84) [53]  (6.919 ns)
+
+ <State 9>: 6.919ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('add', ../layer.h:84) [53]  (6.919 ns)
+
+ <State 10>: 6.919ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('add', ../layer.h:84) [53]  (6.919 ns)
+
+ <State 11>: 6.919ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('add', ../layer.h:84) [53]  (6.919 ns)
+
+ <State 12>: 6.919ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('add', ../layer.h:84) [53]  (6.919 ns)
+
+ <State 13>: 1.352ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln84', ../layer.h:84) of variable 'add', ../layer.h:84 on array 'agg_result' [54]  (1.352 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

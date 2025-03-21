@@ -1,0 +1,4235 @@
+{
+  "Top": "accelerator",
+  "RtlTop": "accelerator",
+  "RtlPrefix": "",
+  "RtlSubPrefix": "accelerator_",
+  "SourceLanguage": "cpp",
+  "HostMachineBits": "64",
+  "FunctionProtocol": "ap_ctrl_hs",
+  "ResetStyle": "control",
+  "Target": {
+    "Family": "zynquplus",
+    "Device": "xczu3eg",
+    "Package": "-sfvc784",
+    "Speed": "-1-e",
+    "Triple": "fpga64-xilinx-none"
+  },
+  "Args": {
+    "input": {
+      "index": "0",
+      "direction": "in",
+      "srcType": "array<std::array<std::array<double, 1>, 64>, 1797> const &",
+      "srcSize": "7360512",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "input_r_address0",
+          "name": "input_r_address0",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "input_r_ce0",
+          "name": "input_r_ce0",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "input_r_q0",
+          "name": "input_r_q0",
+          "usage": "data",
+          "direction": "in"
+        }
+      ]
+    },
+    "y_true": {
+      "index": "1",
+      "direction": "in",
+      "srcType": "array<std::array<double, 10>, 1797> const &",
+      "srcSize": "1150080",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "y_true_address0",
+          "name": "y_true_address0",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "y_true_ce0",
+          "name": "y_true_ce0",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "y_true_q0",
+          "name": "y_true_q0",
+          "usage": "data",
+          "direction": "in"
+        }
+      ]
+    },
+    "weights_l0": {
+      "index": "2",
+      "direction": "inout",
+      "srcType": "array<std::array<double, 64>, 64>&",
+      "srcSize": "262144",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "weights_l0_address0",
+          "name": "weights_l0_address0",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "weights_l0_ce0",
+          "name": "weights_l0_ce0",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "weights_l0_we0",
+          "name": "weights_l0_we0",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "weights_l0_d0",
+          "name": "weights_l0_d0",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "weights_l0_q0",
+          "name": "weights_l0_q0",
+          "usage": "data",
+          "direction": "in"
+        }
+      ]
+    },
+    "weights_l1": {
+      "index": "3",
+      "direction": "inout",
+      "srcType": "array<std::array<double, 64>, 8>&",
+      "srcSize": "32768",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "weights_l1_address0",
+          "name": "weights_l1_address0",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "weights_l1_ce0",
+          "name": "weights_l1_ce0",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "weights_l1_we0",
+          "name": "weights_l1_we0",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "weights_l1_d0",
+          "name": "weights_l1_d0",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "weights_l1_q0",
+          "name": "weights_l1_q0",
+          "usage": "data",
+          "direction": "in"
+        }
+      ]
+    },
+    "weights_l2": {
+      "index": "4",
+      "direction": "inout",
+      "srcType": "array<std::array<double, 8>, 8>&",
+      "srcSize": "4096",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "weights_l2_i",
+          "name": "weights_l2_i",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "weights_l2_o",
+          "name": "weights_l2_o",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "weights_l2_o_ap_vld",
+          "name": "weights_l2_o_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "weights_l3": {
+      "index": "5",
+      "direction": "inout",
+      "srcType": "array<std::array<double, 8>, 10>&",
+      "srcSize": "5120",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "weights_l3_address0",
+          "name": "weights_l3_address0",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "weights_l3_ce0",
+          "name": "weights_l3_ce0",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "weights_l3_we0",
+          "name": "weights_l3_we0",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "weights_l3_d0",
+          "name": "weights_l3_d0",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "weights_l3_q0",
+          "name": "weights_l3_q0",
+          "usage": "data",
+          "direction": "in"
+        }
+      ]
+    },
+    "biases_l0": {
+      "index": "6",
+      "direction": "inout",
+      "srcType": "array<double, 64>&",
+      "srcSize": "4096",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "biases_l0_i",
+          "name": "biases_l0_i",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "biases_l0_o",
+          "name": "biases_l0_o",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "biases_l0_o_ap_vld",
+          "name": "biases_l0_o_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "biases_l1": {
+      "index": "7",
+      "direction": "inout",
+      "srcType": "array<double, 8>&",
+      "srcSize": "512",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "biases_l1_i",
+          "name": "biases_l1_i",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "biases_l1_o",
+          "name": "biases_l1_o",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "biases_l1_o_ap_vld",
+          "name": "biases_l1_o_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "biases_l2": {
+      "index": "8",
+      "direction": "inout",
+      "srcType": "array<double, 8>&",
+      "srcSize": "512",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "biases_l2_i",
+          "name": "biases_l2_i",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "biases_l2_o",
+          "name": "biases_l2_o",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "biases_l2_o_ap_vld",
+          "name": "biases_l2_o_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "biases_l3": {
+      "index": "9",
+      "direction": "inout",
+      "srcType": "array<double, 10>&",
+      "srcSize": "640",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "biases_l3_i",
+          "name": "biases_l3_i",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "biases_l3_o",
+          "name": "biases_l3_o",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "biases_l3_o_ap_vld",
+          "name": "biases_l3_o_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    }
+  },
+  "HlsSolution": {
+    "FlowTarget": "vivado",
+    "ConfigTcl": [
+      "config_export -format=ip_catalog",
+      "config_export -flow=none"
+    ],
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "KernelName": "accelerator"
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "10",
+    "Uncertainty": "2",
+    "IsCombinational": "0",
+    "II": "882866202",
+    "Latency": "882866201"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "xilinx.com",
+    "Library": "hls",
+    "Name": "accelerator",
+    "Version": "1.0",
+    "DisplayName": "Accelerator",
+    "Revision": "2114005039",
+    "Description": "An IP generated by Vitis HLS",
+    "Taxonomy": "\/VITIS_HLS_IP",
+    "AutoFamilySupport": "",
+    "ZipFile": "xilinx_com_hls_accelerator_1_0.zip"
+  },
+  "Files": {
+    "CSource": [
+      "..\/..\/..\/accelerator.cpp",
+      "..\/..\/..\/accelerator.h",
+      "..\/..\/..\/activation.cpp",
+      "..\/..\/..\/activations.h",
+      "..\/..\/..\/error.cpp",
+      "..\/..\/..\/error.h",
+      "..\/..\/..\/layer.cpp",
+      "..\/..\/..\/layer.h",
+      "..\/..\/..\/utils.cpp",
+      "..\/..\/..\/utils.h"
+    ],
+    "TestBench": [
+      "..\/..\/..\/main.cpp",
+      "..\/..\/..\/digits_features.csv",
+      "..\/..\/..\/digits_labels.csv"
+    ],
+    "Vhdl": [
+      "impl\/vhdl\/accelerator_accelerator_Pipeline_VITIS_LOOP_40_1.vhd",
+      "impl\/vhdl\/accelerator_accelerator_Pipeline_VITIS_LOOP_40_14.vhd",
+      "impl\/vhdl\/accelerator_accelerator_Pipeline_VITIS_LOOP_40_15.vhd",
+      "impl\/vhdl\/accelerator_accelerator_Pipeline_VITIS_LOOP_40_17.vhd",
+      "impl\/vhdl\/accelerator_accelerator_Pipeline_VITIS_LOOP_67_3.vhd",
+      "impl\/vhdl\/accelerator_accelerator_Pipeline_VITIS_LOOP_323_1.vhd",
+      "impl\/vhdl\/accelerator_accelerator_Pipeline_VITIS_LOOP_323_1_VITIS_LOOP_324_2.vhd",
+      "impl\/vhdl\/accelerator_accelerator_Pipeline_VITIS_LOOP_323_16.vhd",
+      "impl\/vhdl\/accelerator_accelerator_Pipeline_VITIS_LOOP_323_18.vhd",
+      "impl\/vhdl\/accelerator_backProp_8_8_10_Pipeline_VITIS_LOOP_22_1.vhd",
+      "impl\/vhdl\/accelerator_backProp_8_8_10_Pipeline_VITIS_LOOP_40_1.vhd",
+      "impl\/vhdl\/accelerator_backProp_8_8_10_Pipeline_VITIS_LOOP_81_1.vhd",
+      "impl\/vhdl\/accelerator_backProp_8_8_10_Pipeline_VITIS_LOOP_81_12.vhd",
+      "impl\/vhdl\/accelerator_backProp_8_8_10_Pipeline_VITIS_LOOP_266_1.vhd",
+      "impl\/vhdl\/accelerator_backProp_8_8_10_Pipeline_VITIS_LOOP_284_3.vhd",
+      "impl\/vhdl\/accelerator_backProp_8_8_10_s.vhd",
+      "impl\/vhdl\/accelerator_backProp_8_8_10_s_d_activation_0_RAM_AUTO_1R1W.vhd",
+      "impl\/vhdl\/accelerator_backProp_64_8_8_Pipeline_VITIS_LOOP_22_1.vhd",
+      "impl\/vhdl\/accelerator_backProp_64_8_8_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_41_2.vhd",
+      "impl\/vhdl\/accelerator_backProp_64_8_8_Pipeline_VITIS_LOOP_81_1.vhd",
+      "impl\/vhdl\/accelerator_backProp_64_8_8_Pipeline_VITIS_LOOP_81_13.vhd",
+      "impl\/vhdl\/accelerator_backProp_64_8_8_Pipeline_VITIS_LOOP_266_1.vhd",
+      "impl\/vhdl\/accelerator_backProp_64_8_8_Pipeline_VITIS_LOOP_284_3.vhd",
+      "impl\/vhdl\/accelerator_backProp_64_8_8_s.vhd",
+      "impl\/vhdl\/accelerator_backProp_64_8_8_s_w_l_plus1_T_RAM_AUTO_1R1W.vhd",
+      "impl\/vhdl\/accelerator_backProp_64_64_8_Pipeline_VITIS_LOOP_22_1.vhd",
+      "impl\/vhdl\/accelerator_backProp_64_64_8_Pipeline_VITIS_LOOP_40_1.vhd",
+      "impl\/vhdl\/accelerator_backProp_64_64_8_Pipeline_VITIS_LOOP_266_1.vhd",
+      "impl\/vhdl\/accelerator_backProp_64_64_8_Pipeline_VITIS_LOOP_284_3.vhd",
+      "impl\/vhdl\/accelerator_backProp_64_64_8_s.vhd",
+      "impl\/vhdl\/accelerator_backProp_64_64_8_s_d_activation_0_RAM_AUTO_1R1W.vhd",
+      "impl\/vhdl\/accelerator_backProp_64_64_8_s_mid_0_RAM_AUTO_1R1W.vhd",
+      "impl\/vhdl\/accelerator_dadd_64ns_64ns_64_5_full_dsp_1.vhd",
+      "impl\/vhdl\/accelerator_dadddsub_64ns_64ns_64_5_full_dsp_1.vhd",
+      "impl\/vhdl\/accelerator_dcmp_64ns_64ns_1_2_no_dsp_1.vhd",
+      "impl\/vhdl\/accelerator_ddiv_64ns_64ns_64_22_no_dsp_1.vhd",
+      "impl\/vhdl\/accelerator_dexp_64ns_64ns_64_15_full_dsp_1.vhd",
+      "impl\/vhdl\/accelerator_dmul_64ns_64ns_64_6_max_dsp_1.vhd",
+      "impl\/vhdl\/accelerator_flow_control_loop_pipe_sequential_init.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_8_8_Pipeline_VITIS_LOOP_13_1.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_8_8_Pipeline_VITIS_LOOP_81_1.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_8_8_Pipeline_VITIS_LOOP_161_1.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_8_8_s.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_8_10_Pipeline_VITIS_LOOP_81_1.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_8_10_Pipeline_VITIS_LOOP_161_1.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_8_10_Pipeline_VITIS_LOOP_180_4.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_8_10_s.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_8_10_s_softmax_input_RAM_AUTO_1R1W.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_8_10_s_transposed_0_RAM_AUTO_1R1W.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_64_8_Pipeline_VITIS_LOOP_13_1.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_64_8_Pipeline_VITIS_LOOP_81_1.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_64_8_Pipeline_VITIS_LOOP_161_1.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_64_8_s.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_64_8_s_C_0_RAM_AUTO_1R1W.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_64_8_s_net_0_RAM_AUTO_1R1W.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_64_64_Pipeline_VITIS_LOOP_161_1.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_64_64_s.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_64_64_s_mid_0_RAM_AUTO_1R1W.vhd",
+      "impl\/vhdl\/accelerator_forwardPropagation_64_64_s_net_0_RAM_AUTO_1R1W.vhd",
+      "impl\/vhdl\/accelerator_input_T_0_2_RAM_AUTO_1R1W.vhd",
+      "impl\/vhdl\/accelerator_input_T_0_RAM_AUTO_1R1W.vhd",
+      "impl\/vhdl\/accelerator_matmul_8ul_1ul_8ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2.vhd",
+      "impl\/vhdl\/accelerator_matmul_8ul_1ul_8ul_s.vhd",
+      "impl\/vhdl\/accelerator_matmul_8ul_1ul_64ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2.vhd",
+      "impl\/vhdl\/accelerator_matmul_8ul_1ul_64ul_s.vhd",
+      "impl\/vhdl\/accelerator_matmul_10ul_1ul_8ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2.vhd",
+      "impl\/vhdl\/accelerator_matmul_10ul_1ul_8ul_s.vhd",
+      "impl\/vhdl\/accelerator_matmul_64ul_1ul_64ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2.vhd",
+      "impl\/vhdl\/accelerator_matmul_64ul_1ul_64ul_s.vhd",
+      "impl\/vhdl\/accelerator_matmul_64ul_8ul_1ul_Pipeline_VITIS_LOOP_81_1.vhd",
+      "impl\/vhdl\/accelerator_matmul_64ul_8ul_1ul_s.vhd",
+      "impl\/vhdl\/accelerator_matmul_64ul_64ul_1ul_Pipeline_VITIS_LOOP_81_1.vhd",
+      "impl\/vhdl\/accelerator_matmul_64ul_64ul_1ul_s.vhd",
+      "impl\/vhdl\/accelerator_relu_64_Pipeline_VITIS_LOOP_13_1.vhd",
+      "impl\/vhdl\/accelerator_relu_64_s.vhd",
+      "impl\/vhdl\/accelerator_result_l3_0_RAM_AUTO_1R1W.vhd",
+      "impl\/vhdl\/accelerator_sitodp_32ns_64_4_no_dsp_1.vhd",
+      "impl\/vhdl\/accelerator_softmax_10_Pipeline_1.vhd",
+      "impl\/vhdl\/accelerator_softmax_10_Pipeline_VITIS_LOOP_89_1.vhd",
+      "impl\/vhdl\/accelerator_softmax_10_Pipeline_VITIS_LOOP_114_3.vhd",
+      "impl\/vhdl\/accelerator_softmax_10_s.vhd",
+      "impl\/vhdl\/accelerator_sparsemux_17_3_64_1_1.vhd",
+      "impl\/vhdl\/accelerator_sparsemux_21_4_64_1_1.vhd",
+      "impl\/vhdl\/accelerator_sparsemux_129_6_64_1_1.vhd",
+      "impl\/vhdl\/accelerator_update_temp_mat_RAM_AUTO_1R1W.vhd",
+      "impl\/vhdl\/accelerator.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/accelerator_accelerator_Pipeline_VITIS_LOOP_40_1.v",
+      "impl\/verilog\/accelerator_accelerator_Pipeline_VITIS_LOOP_40_14.v",
+      "impl\/verilog\/accelerator_accelerator_Pipeline_VITIS_LOOP_40_15.v",
+      "impl\/verilog\/accelerator_accelerator_Pipeline_VITIS_LOOP_40_17.v",
+      "impl\/verilog\/accelerator_accelerator_Pipeline_VITIS_LOOP_67_3.v",
+      "impl\/verilog\/accelerator_accelerator_Pipeline_VITIS_LOOP_323_1.v",
+      "impl\/verilog\/accelerator_accelerator_Pipeline_VITIS_LOOP_323_1_VITIS_LOOP_324_2.v",
+      "impl\/verilog\/accelerator_accelerator_Pipeline_VITIS_LOOP_323_16.v",
+      "impl\/verilog\/accelerator_accelerator_Pipeline_VITIS_LOOP_323_18.v",
+      "impl\/verilog\/accelerator_backProp_8_8_10_Pipeline_VITIS_LOOP_22_1.v",
+      "impl\/verilog\/accelerator_backProp_8_8_10_Pipeline_VITIS_LOOP_40_1.v",
+      "impl\/verilog\/accelerator_backProp_8_8_10_Pipeline_VITIS_LOOP_81_1.v",
+      "impl\/verilog\/accelerator_backProp_8_8_10_Pipeline_VITIS_LOOP_81_12.v",
+      "impl\/verilog\/accelerator_backProp_8_8_10_Pipeline_VITIS_LOOP_266_1.v",
+      "impl\/verilog\/accelerator_backProp_8_8_10_Pipeline_VITIS_LOOP_284_3.v",
+      "impl\/verilog\/accelerator_backProp_8_8_10_s.v",
+      "impl\/verilog\/accelerator_backProp_8_8_10_s_d_activation_0_RAM_AUTO_1R1W.v",
+      "impl\/verilog\/accelerator_backProp_64_8_8_Pipeline_VITIS_LOOP_22_1.v",
+      "impl\/verilog\/accelerator_backProp_64_8_8_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_41_2.v",
+      "impl\/verilog\/accelerator_backProp_64_8_8_Pipeline_VITIS_LOOP_81_1.v",
+      "impl\/verilog\/accelerator_backProp_64_8_8_Pipeline_VITIS_LOOP_81_13.v",
+      "impl\/verilog\/accelerator_backProp_64_8_8_Pipeline_VITIS_LOOP_266_1.v",
+      "impl\/verilog\/accelerator_backProp_64_8_8_Pipeline_VITIS_LOOP_284_3.v",
+      "impl\/verilog\/accelerator_backProp_64_8_8_s.v",
+      "impl\/verilog\/accelerator_backProp_64_8_8_s_w_l_plus1_T_RAM_AUTO_1R1W.v",
+      "impl\/verilog\/accelerator_backProp_64_64_8_Pipeline_VITIS_LOOP_22_1.v",
+      "impl\/verilog\/accelerator_backProp_64_64_8_Pipeline_VITIS_LOOP_40_1.v",
+      "impl\/verilog\/accelerator_backProp_64_64_8_Pipeline_VITIS_LOOP_266_1.v",
+      "impl\/verilog\/accelerator_backProp_64_64_8_Pipeline_VITIS_LOOP_284_3.v",
+      "impl\/verilog\/accelerator_backProp_64_64_8_s.v",
+      "impl\/verilog\/accelerator_backProp_64_64_8_s_d_activation_0_RAM_AUTO_1R1W.v",
+      "impl\/verilog\/accelerator_backProp_64_64_8_s_mid_0_RAM_AUTO_1R1W.v",
+      "impl\/verilog\/accelerator_dadd_64ns_64ns_64_5_full_dsp_1.v",
+      "impl\/verilog\/accelerator_dadddsub_64ns_64ns_64_5_full_dsp_1.v",
+      "impl\/verilog\/accelerator_dcmp_64ns_64ns_1_2_no_dsp_1.v",
+      "impl\/verilog\/accelerator_ddiv_64ns_64ns_64_22_no_dsp_1.v",
+      "impl\/verilog\/accelerator_dexp_64ns_64ns_64_15_full_dsp_1.v",
+      "impl\/verilog\/accelerator_dmul_64ns_64ns_64_6_max_dsp_1.v",
+      "impl\/verilog\/accelerator_flow_control_loop_pipe_sequential_init.v",
+      "impl\/verilog\/accelerator_forwardPropagation_8_8_Pipeline_VITIS_LOOP_13_1.v",
+      "impl\/verilog\/accelerator_forwardPropagation_8_8_Pipeline_VITIS_LOOP_81_1.v",
+      "impl\/verilog\/accelerator_forwardPropagation_8_8_Pipeline_VITIS_LOOP_161_1.v",
+      "impl\/verilog\/accelerator_forwardPropagation_8_8_s.v",
+      "impl\/verilog\/accelerator_forwardPropagation_8_10_Pipeline_VITIS_LOOP_81_1.v",
+      "impl\/verilog\/accelerator_forwardPropagation_8_10_Pipeline_VITIS_LOOP_161_1.v",
+      "impl\/verilog\/accelerator_forwardPropagation_8_10_Pipeline_VITIS_LOOP_180_4.v",
+      "impl\/verilog\/accelerator_forwardPropagation_8_10_s.v",
+      "impl\/verilog\/accelerator_forwardPropagation_8_10_s_softmax_input_RAM_AUTO_1R1W.v",
+      "impl\/verilog\/accelerator_forwardPropagation_8_10_s_transposed_0_RAM_AUTO_1R1W.v",
+      "impl\/verilog\/accelerator_forwardPropagation_64_8_Pipeline_VITIS_LOOP_13_1.v",
+      "impl\/verilog\/accelerator_forwardPropagation_64_8_Pipeline_VITIS_LOOP_81_1.v",
+      "impl\/verilog\/accelerator_forwardPropagation_64_8_Pipeline_VITIS_LOOP_161_1.v",
+      "impl\/verilog\/accelerator_forwardPropagation_64_8_s.v",
+      "impl\/verilog\/accelerator_forwardPropagation_64_8_s_C_0_RAM_AUTO_1R1W.v",
+      "impl\/verilog\/accelerator_forwardPropagation_64_8_s_net_0_RAM_AUTO_1R1W.v",
+      "impl\/verilog\/accelerator_forwardPropagation_64_64_Pipeline_VITIS_LOOP_161_1.v",
+      "impl\/verilog\/accelerator_forwardPropagation_64_64_s.v",
+      "impl\/verilog\/accelerator_forwardPropagation_64_64_s_mid_0_RAM_AUTO_1R1W.v",
+      "impl\/verilog\/accelerator_forwardPropagation_64_64_s_net_0_RAM_AUTO_1R1W.v",
+      "impl\/verilog\/accelerator_input_T_0_2_RAM_AUTO_1R1W.v",
+      "impl\/verilog\/accelerator_input_T_0_RAM_AUTO_1R1W.v",
+      "impl\/verilog\/accelerator_matmul_8ul_1ul_8ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2.v",
+      "impl\/verilog\/accelerator_matmul_8ul_1ul_8ul_s.v",
+      "impl\/verilog\/accelerator_matmul_8ul_1ul_64ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2.v",
+      "impl\/verilog\/accelerator_matmul_8ul_1ul_64ul_s.v",
+      "impl\/verilog\/accelerator_matmul_10ul_1ul_8ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2.v",
+      "impl\/verilog\/accelerator_matmul_10ul_1ul_8ul_s.v",
+      "impl\/verilog\/accelerator_matmul_64ul_1ul_64ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2.v",
+      "impl\/verilog\/accelerator_matmul_64ul_1ul_64ul_s.v",
+      "impl\/verilog\/accelerator_matmul_64ul_8ul_1ul_Pipeline_VITIS_LOOP_81_1.v",
+      "impl\/verilog\/accelerator_matmul_64ul_8ul_1ul_s.v",
+      "impl\/verilog\/accelerator_matmul_64ul_64ul_1ul_Pipeline_VITIS_LOOP_81_1.v",
+      "impl\/verilog\/accelerator_matmul_64ul_64ul_1ul_s.v",
+      "impl\/verilog\/accelerator_relu_64_Pipeline_VITIS_LOOP_13_1.v",
+      "impl\/verilog\/accelerator_relu_64_s.v",
+      "impl\/verilog\/accelerator_result_l3_0_RAM_AUTO_1R1W.v",
+      "impl\/verilog\/accelerator_sitodp_32ns_64_4_no_dsp_1.v",
+      "impl\/verilog\/accelerator_softmax_10_Pipeline_1.v",
+      "impl\/verilog\/accelerator_softmax_10_Pipeline_VITIS_LOOP_89_1.v",
+      "impl\/verilog\/accelerator_softmax_10_Pipeline_VITIS_LOOP_114_3.v",
+      "impl\/verilog\/accelerator_softmax_10_s.v",
+      "impl\/verilog\/accelerator_sparsemux_17_3_64_1_1.v",
+      "impl\/verilog\/accelerator_sparsemux_21_4_64_1_1.v",
+      "impl\/verilog\/accelerator_sparsemux_129_6_64_1_1.v",
+      "impl\/verilog\/accelerator_update_temp_mat_RAM_AUTO_1R1W.v",
+      "impl\/verilog\/accelerator.v"
+    ],
+    "IpMisc": ["impl\/misc\/logo.png"],
+    "Subcore": [
+      "impl\/misc\/accelerator_dadd_64ns_64ns_64_5_full_dsp_1_ip.tcl",
+      "impl\/misc\/accelerator_dadddsub_64ns_64ns_64_5_full_dsp_1_ip.tcl",
+      "impl\/misc\/accelerator_dcmp_64ns_64ns_1_2_no_dsp_1_ip.tcl",
+      "impl\/misc\/accelerator_ddiv_64ns_64ns_64_22_no_dsp_1_ip.tcl",
+      "impl\/misc\/accelerator_dexp_64ns_64ns_64_15_full_dsp_1_ip.tcl",
+      "impl\/misc\/accelerator_dmul_64ns_64ns_64_6_max_dsp_1_ip.tcl",
+      "impl\/misc\/accelerator_sitodp_32ns_64_4_no_dsp_1_ip.tcl"
+    ],
+    "CsynthXml": "syn\/report\/csynth.xml",
+    "DebugDir": ".debug",
+    "KernelXml": ".autopilot\/db\/kernel.internal.xml",
+    "Xo": "",
+    "XoHlsDir": "",
+    "ProtoInst": [".debug\/accelerator.protoinst"]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "Ip": [
+      {
+        "Name": "accelerator_dadd_64ns_64ns_64_5_full_dsp_1_ip",
+        "Vlnv": "xilinx.com:ip:floating_point:7.1",
+        "Params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Add CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 3 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name accelerator_dadd_64ns_64ns_64_5_full_dsp_1_ip CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "Name": "accelerator_dadddsub_64ns_64ns_64_5_full_dsp_1_ip",
+        "Vlnv": "xilinx.com:ip:floating_point:7.1",
+        "Params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 3 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name accelerator_dadddsub_64ns_64ns_64_5_full_dsp_1_ip CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "Name": "accelerator_dcmp_64ns_64ns_1_2_no_dsp_1_ip",
+        "Vlnv": "xilinx.com:ip:floating_point:7.1",
+        "Params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 1 CONFIG.c_result_fraction_width 0 CONFIG.component_name accelerator_dcmp_64ns_64ns_1_2_no_dsp_1_ip CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Compare CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "Name": "accelerator_ddiv_64ns_64ns_64_22_no_dsp_1_ip",
+        "Vlnv": "xilinx.com:ip:floating_point:7.1",
+        "Params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 20 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name accelerator_ddiv_64ns_64ns_64_22_no_dsp_1_ip CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Divide CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "Name": "accelerator_dexp_64ns_64ns_64_15_full_dsp_1_ip",
+        "Vlnv": "xilinx.com:ip:floating_point:7.1",
+        "Params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 13 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name accelerator_dexp_64ns_64ns_64_15_full_dsp_1_ip CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Exponential CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "Name": "accelerator_dmul_64ns_64ns_64_6_max_dsp_1_ip",
+        "Vlnv": "xilinx.com:ip:floating_point:7.1",
+        "Params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 4 CONFIG.c_mult_usage Max_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name accelerator_dmul_64ns_64ns_64_6_max_dsp_1_ip CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Multiply CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "Name": "accelerator_sitodp_32ns_64_4_no_dsp_1_ip",
+        "Vlnv": "xilinx.com:ip:floating_point:7.1",
+        "Params": "CONFIG.a_precision_type Custom CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 32 CONFIG.c_a_fraction_width 0 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 2 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name accelerator_sitodp_32ns_64_4_no_dsp_1_ip CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Fixed_to_Float CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      }
+    ]
+  },
+  "Interfaces": {
+    "ap_clk": {
+      "type": "clock",
+      "busTypeName": "clock",
+      "mode": "slave",
+      "busParams": {"ASSOCIATED_RESET": "ap_rst"},
+      "portMap": {"ap_clk": "CLK"},
+      "ports": ["ap_clk"]
+    },
+    "ap_rst": {
+      "type": "reset",
+      "busTypeName": "reset",
+      "mode": "slave",
+      "busParams": {"POLARITY": "ACTIVE_HIGH"},
+      "portMap": {"ap_rst": "RST"},
+      "ports": ["ap_rst"]
+    },
+    "ap_ctrl": {
+      "type": "ap_ctrl",
+      "busTypeName": "acc_handshake",
+      "mode": "slave",
+      "portMap": {
+        "ap_start": "start",
+        "ap_done": "done",
+        "ap_idle": "idle",
+        "ap_ready": "ready"
+      },
+      "ports": [
+        "ap_done",
+        "ap_idle",
+        "ap_ready",
+        "ap_start"
+      ]
+    },
+    "input_r_address0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "master",
+      "dataWidth": "11",
+      "portMap": {"input_r_address0": "DATA"},
+      "ports": ["input_r_address0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "input"
+        }]
+    },
+    "input_r_q0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "slave",
+      "dataWidth": "4096",
+      "portMap": {"input_r_q0": "DATA"},
+      "ports": ["input_r_q0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "input"
+        }]
+    },
+    "y_true_address0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "master",
+      "dataWidth": "11",
+      "portMap": {"y_true_address0": "DATA"},
+      "ports": ["y_true_address0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "y_true"
+        }]
+    },
+    "y_true_q0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "slave",
+      "dataWidth": "640",
+      "portMap": {"y_true_q0": "DATA"},
+      "ports": ["y_true_q0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "y_true"
+        }]
+    },
+    "weights_l0_address0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "master",
+      "dataWidth": "6",
+      "portMap": {"weights_l0_address0": "DATA"},
+      "ports": ["weights_l0_address0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "weights_l0"
+        }]
+    },
+    "weights_l0_d0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "master",
+      "dataWidth": "4096",
+      "portMap": {"weights_l0_d0": "DATA"},
+      "ports": ["weights_l0_d0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "weights_l0"
+        }]
+    },
+    "weights_l0_q0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "slave",
+      "dataWidth": "4096",
+      "portMap": {"weights_l0_q0": "DATA"},
+      "ports": ["weights_l0_q0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "weights_l0"
+        }]
+    },
+    "weights_l1_address0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "master",
+      "dataWidth": "3",
+      "portMap": {"weights_l1_address0": "DATA"},
+      "ports": ["weights_l1_address0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "weights_l1"
+        }]
+    },
+    "weights_l1_d0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "master",
+      "dataWidth": "4096",
+      "portMap": {"weights_l1_d0": "DATA"},
+      "ports": ["weights_l1_d0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "weights_l1"
+        }]
+    },
+    "weights_l1_q0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "slave",
+      "dataWidth": "4096",
+      "portMap": {"weights_l1_q0": "DATA"},
+      "ports": ["weights_l1_q0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "weights_l1"
+        }]
+    },
+    "weights_l2_i": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_ovld",
+      "mode": "slave",
+      "dataWidth": "4096",
+      "portMap": {"weights_l2_i": "DATA"},
+      "ports": ["weights_l2_i"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "weights_l2"
+        }]
+    },
+    "weights_l2_o": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_ovld",
+      "mode": "master",
+      "dataWidth": "4096",
+      "portMap": {"weights_l2_o": "DATA"},
+      "ports": ["weights_l2_o"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "weights_l2"
+        }]
+    },
+    "weights_l3_address0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "master",
+      "dataWidth": "4",
+      "portMap": {"weights_l3_address0": "DATA"},
+      "ports": ["weights_l3_address0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "weights_l3"
+        }]
+    },
+    "weights_l3_d0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "master",
+      "dataWidth": "512",
+      "portMap": {"weights_l3_d0": "DATA"},
+      "ports": ["weights_l3_d0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "weights_l3"
+        }]
+    },
+    "weights_l3_q0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "slave",
+      "dataWidth": "512",
+      "portMap": {"weights_l3_q0": "DATA"},
+      "ports": ["weights_l3_q0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "weights_l3"
+        }]
+    },
+    "biases_l0_i": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_ovld",
+      "mode": "slave",
+      "dataWidth": "4096",
+      "portMap": {"biases_l0_i": "DATA"},
+      "ports": ["biases_l0_i"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "biases_l0"
+        }]
+    },
+    "biases_l0_o": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_ovld",
+      "mode": "master",
+      "dataWidth": "4096",
+      "portMap": {"biases_l0_o": "DATA"},
+      "ports": ["biases_l0_o"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "biases_l0"
+        }]
+    },
+    "biases_l1_i": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_ovld",
+      "mode": "slave",
+      "dataWidth": "512",
+      "portMap": {"biases_l1_i": "DATA"},
+      "ports": ["biases_l1_i"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "biases_l1"
+        }]
+    },
+    "biases_l1_o": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_ovld",
+      "mode": "master",
+      "dataWidth": "512",
+      "portMap": {"biases_l1_o": "DATA"},
+      "ports": ["biases_l1_o"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "biases_l1"
+        }]
+    },
+    "biases_l2_i": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_ovld",
+      "mode": "slave",
+      "dataWidth": "512",
+      "portMap": {"biases_l2_i": "DATA"},
+      "ports": ["biases_l2_i"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "biases_l2"
+        }]
+    },
+    "biases_l2_o": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_ovld",
+      "mode": "master",
+      "dataWidth": "512",
+      "portMap": {"biases_l2_o": "DATA"},
+      "ports": ["biases_l2_o"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "biases_l2"
+        }]
+    },
+    "biases_l3_i": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_ovld",
+      "mode": "slave",
+      "dataWidth": "640",
+      "portMap": {"biases_l3_i": "DATA"},
+      "ports": ["biases_l3_i"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "biases_l3"
+        }]
+    },
+    "biases_l3_o": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_ovld",
+      "mode": "master",
+      "dataWidth": "640",
+      "portMap": {"biases_l3_o": "DATA"},
+      "ports": ["biases_l3_o"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "biases_l3"
+        }]
+    }
+  },
+  "RtlPorts": {
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_start": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_done": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_idle": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_ready": {
+      "dir": "out",
+      "width": "1"
+    },
+    "input_r_address0": {
+      "dir": "out",
+      "width": "11"
+    },
+    "input_r_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "input_r_q0": {
+      "dir": "in",
+      "width": "4096"
+    },
+    "y_true_address0": {
+      "dir": "out",
+      "width": "11"
+    },
+    "y_true_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "y_true_q0": {
+      "dir": "in",
+      "width": "640"
+    },
+    "weights_l0_address0": {
+      "dir": "out",
+      "width": "6"
+    },
+    "weights_l0_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "weights_l0_we0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "weights_l0_d0": {
+      "dir": "out",
+      "width": "4096"
+    },
+    "weights_l0_q0": {
+      "dir": "in",
+      "width": "4096"
+    },
+    "weights_l1_address0": {
+      "dir": "out",
+      "width": "3"
+    },
+    "weights_l1_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "weights_l1_we0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "weights_l1_d0": {
+      "dir": "out",
+      "width": "4096"
+    },
+    "weights_l1_q0": {
+      "dir": "in",
+      "width": "4096"
+    },
+    "weights_l2_i": {
+      "dir": "in",
+      "width": "4096"
+    },
+    "weights_l2_o": {
+      "dir": "out",
+      "width": "4096"
+    },
+    "weights_l2_o_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "weights_l3_address0": {
+      "dir": "out",
+      "width": "4"
+    },
+    "weights_l3_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "weights_l3_we0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "weights_l3_d0": {
+      "dir": "out",
+      "width": "512"
+    },
+    "weights_l3_q0": {
+      "dir": "in",
+      "width": "512"
+    },
+    "biases_l0_i": {
+      "dir": "in",
+      "width": "4096"
+    },
+    "biases_l0_o": {
+      "dir": "out",
+      "width": "4096"
+    },
+    "biases_l0_o_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "biases_l1_i": {
+      "dir": "in",
+      "width": "512"
+    },
+    "biases_l1_o": {
+      "dir": "out",
+      "width": "512"
+    },
+    "biases_l1_o_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "biases_l2_i": {
+      "dir": "in",
+      "width": "512"
+    },
+    "biases_l2_o": {
+      "dir": "out",
+      "width": "512"
+    },
+    "biases_l2_o_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "biases_l3_i": {
+      "dir": "in",
+      "width": "640"
+    },
+    "biases_l3_o": {
+      "dir": "out",
+      "width": "640"
+    },
+    "biases_l3_o_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {
+      "ModuleName": "accelerator",
+      "BindInstances": "dmul_64ns_64ns_64_6_max_dsp_1_U4165 dadddsub_64ns_64ns_64_5_full_dsp_1_U4142 update_temp_mat_1_U dmul_64ns_64ns_64_6_max_dsp_1_U4167 dadddsub_64ns_64ns_64_5_full_dsp_1_U4144 update_temp_mat_4_U dadddsub_64ns_64ns_64_5_full_dsp_1_U4140 dmul_64ns_64ns_64_6_max_dsp_1_U4168 dmul_64ns_64ns_64_6_max_dsp_1_U4164 dadddsub_64ns_64ns_64_5_full_dsp_1_U4140 update_temp_mat_9_U dmul_64ns_64ns_64_6_max_dsp_1_U4169 dadddsub_64ns_64ns_64_5_full_dsp_1_U4146 update_temp_mat_12_U dmul_64ns_64ns_64_6_max_dsp_1_U4167 dmul_64ns_64ns_64_6_max_dsp_1_U4170 dadddsub_64ns_64ns_64_5_full_dsp_1_U4147 update_temp_mat_16_U dmul_64ns_64ns_64_6_max_dsp_1_U4172 dmul_64ns_64ns_64_6_max_dsp_1_U4171 dmul_64ns_64ns_64_6_max_dsp_1_U4164 dmul_64ns_64ns_64_6_max_dsp_1_U4168 dmul_64ns_64ns_64_6_max_dsp_1_U4164 dadddsub_64ns_64ns_64_5_full_dsp_1_U4140 update_temp_mat_23_U update_temp_mat_24_U update_temp_mat_25_U update_temp_mat_26_U dmul_64ns_64ns_64_6_max_dsp_1_U4169 dmul_64ns_64ns_64_6_max_dsp_1_U4165 dadddsub_64ns_64ns_64_5_full_dsp_1_U4142 update_temp_mat_30_U update_temp_mat_31_U update_temp_mat_32_U update_temp_mat_33_U dmul_64ns_64ns_64_6_max_dsp_1_U4170 dmul_64ns_64ns_64_6_max_dsp_1_U4164 dadddsub_64ns_64ns_64_5_full_dsp_1_U4140 update_temp_mat_37_U update_temp_mat_38_U update_temp_mat_39_U update_temp_mat_40_U dmul_64ns_64ns_64_6_max_dsp_1_U4171 dmul_64ns_64ns_64_6_max_dsp_1_U4165 dadddsub_64ns_64ns_64_5_full_dsp_1_U4142 dmul_64ns_64ns_64_6_max_dsp_1_U4164 dadddsub_64ns_64ns_64_5_full_dsp_1_U4140 update_temp_mat_46_U update_temp_mat_47_U update_temp_mat_48_U dmul_64ns_64ns_64_6_max_dsp_1_U4166 dmul_64ns_64ns_64_6_max_dsp_1_U4166 dmul_64ns_64ns_64_6_max_dsp_1_U4165 dadddsub_64ns_64ns_64_5_full_dsp_1_U4142 dmul_64ns_64ns_64_6_max_dsp_1_U4166 dadddsub_64ns_64ns_64_5_full_dsp_1_U4144 update_temp_mat_55_U dmul_64ns_64ns_64_6_max_dsp_1_U4165 dmul_64ns_64ns_64_6_max_dsp_1_U4166 dmul_64ns_64ns_64_6_max_dsp_1_U4166 dadddsub_64ns_64ns_64_5_full_dsp_1_U4143 dmul_64ns_64ns_64_6_max_dsp_1_U4164 dmul_64ns_64ns_64_6_max_dsp_1_U4166 dadddsub_64ns_64ns_64_5_full_dsp_1_U4144 update_temp_mat_63_U input_T_0_1_U dmul_64ns_64ns_64_6_max_dsp_1_U4167 dadddsub_64ns_64ns_64_5_full_dsp_1_U4144 dmul_64ns_64ns_64_6_max_dsp_1_U4165 dadddsub_64ns_64ns_64_5_full_dsp_1_U4142 dmul_64ns_64ns_64_6_max_dsp_1_U4166 dadddsub_64ns_64ns_64_5_full_dsp_1_U4144 update_temp_mat_70_U dmul_64ns_64ns_64_6_max_dsp_1_U4168 dmul_64ns_64ns_64_6_max_dsp_1_U4166 dmul_64ns_64ns_64_6_max_dsp_1_U4166 dadddsub_64ns_64ns_64_5_full_dsp_1_U4143 update_temp_mat_75_U dmul_64ns_64ns_64_6_max_dsp_1_U4166 dadddsub_64ns_64ns_64_5_full_dsp_1_U4144 dmul_64ns_64ns_64_6_max_dsp_1_U4169 dadddsub_64ns_64ns_64_5_full_dsp_1_U4146 dmul_64ns_64ns_64_6_max_dsp_1_U4167 dadddsub_64ns_64ns_64_5_full_dsp_1_U4144 update_temp_mat_82_U update_temp_mat_83_U update_temp_mat_84_U dmul_64ns_64ns_64_6_max_dsp_1_U4170 dadddsub_64ns_64ns_64_5_full_dsp_1_U4147 dmul_64ns_64ns_64_6_max_dsp_1_U4168 dadddsub_64ns_64ns_64_5_full_dsp_1_U4145 update_temp_mat_89_U update_temp_mat_90_U update_temp_mat_91_U dmul_64ns_64ns_64_6_max_dsp_1_U4171 dadddsub_64ns_64ns_64_5_full_dsp_1_U4148 dmul_64ns_64ns_64_6_max_dsp_1_U4169 dadddsub_64ns_64ns_64_5_full_dsp_1_U4146 update_temp_mat_96_U update_temp_mat_97_U update_temp_mat_98_U dmul_64ns_64ns_64_6_max_dsp_1_U4172 dadddsub_64ns_64ns_64_5_full_dsp_1_U4149 dmul_64ns_64ns_64_6_max_dsp_1_U4170 dadd_64ns_64ns_64_5_full_dsp_1_U4230 update_temp_mat_103_U update_temp_mat_104_U dmul_64ns_64ns_64_6_max_dsp_1_U4167 dadd_64ns_64ns_64_5_full_dsp_1_U4231 dadddsub_64ns_64ns_64_5_full_dsp_1_U4150 dmul_64ns_64ns_64_6_max_dsp_1_U4171 dmul_64ns_64ns_64_6_max_dsp_1_U4168 dadd_64ns_64ns_64_5_full_dsp_1_U4232 update_temp_mat_111_U update_temp_mat_112_U dmul_64ns_64ns_64_6_max_dsp_1_U4174 dadd_64ns_64ns_64_5_full_dsp_1_U4233 dmul_64ns_64ns_64_6_max_dsp_1_U4172 dadddsub_64ns_64ns_64_5_full_dsp_1_U4149 dmul_64ns_64ns_64_6_max_dsp_1_U4170 dadd_64ns_64ns_64_5_full_dsp_1_U4234 update_temp_mat_119_U dmul_64ns_64ns_64_6_max_dsp_1_U4164 dmul_64ns_64ns_64_6_max_dsp_1_U4171 dadd_64ns_64ns_64_5_full_dsp_1_U4235 dadddsub_64ns_64ns_64_5_full_dsp_1_U4150 update_temp_mat_124_U dmul_64ns_64ns_64_6_max_dsp_1_U4173 dadd_64ns_64ns_64_5_full_dsp_1_U4236 dmul_64ns_64ns_64_6_max_dsp_1_U4165 dadddsub_64ns_64ns_64_5_full_dsp_1_U4142 dmul_64ns_64ns_64_6_max_dsp_1_U4174 dadd_64ns_64ns_64_5_full_dsp_1_U4237 update_temp_mat_129_U update_temp_mat_130_U dmul_64ns_64ns_64_6_max_dsp_1_U4174 dadd_64ns_64ns_64_5_full_dsp_1_U4238 dadddsub_64ns_64ns_64_5_full_dsp_1_U4143 dmul_64ns_64ns_64_6_max_dsp_1_U4164 dmul_64ns_64ns_64_6_max_dsp_1_U4175 dadd_64ns_64ns_64_5_full_dsp_1_U4239 dadddsub_64ns_64ns_64_5_full_dsp_1_U4140 d_l0_0_U dmul_64ns_64ns_64_6_max_dsp_1_U4215 epoch_fu_4348_p2 dadd_64ns_64ns_64_5_full_dsp_1_U4153 add_ln38_fu_4360_p2 dadd_64ns_64ns_64_5_full_dsp_1_U4155",
+      "Instances": [
+        {
+          "ModuleName": "forwardPropagation_64_64_s",
+          "InstanceName": "grp_forwardPropagation_64_64_s_fu_1720",
+          "BindInstances": "mid_0_U net_0_U ref_tmp_0_U",
+          "Instances": [
+            {
+              "ModuleName": "matmul_64ul_64ul_1ul_s",
+              "InstanceName": "grp_matmul_64ul_64ul_1ul_s_fu_1732",
+              "Instances": [{
+                  "ModuleName": "matmul_64ul_64ul_1ul_Pipeline_VITIS_LOOP_81_1",
+                  "InstanceName": "grp_matmul_64ul_64ul_1ul_Pipeline_VITIS_LOOP_81_1_fu_1247",
+                  "BindInstances": "icmp_ln81_fu_1355_p2 i_6_fu_1361_p2 dmul_64ns_64ns_64_6_max_dsp_1_U65 dadd_64ns_64ns_64_5_full_dsp_1_U1 dmul_64ns_64ns_64_6_max_dsp_1_U66 dadd_64ns_64ns_64_5_full_dsp_1_U2 dmul_64ns_64ns_64_6_max_dsp_1_U67 dadd_64ns_64ns_64_5_full_dsp_1_U3 dmul_64ns_64ns_64_6_max_dsp_1_U68 dadd_64ns_64ns_64_5_full_dsp_1_U4 dmul_64ns_64ns_64_6_max_dsp_1_U69 dadd_64ns_64ns_64_5_full_dsp_1_U5 dmul_64ns_64ns_64_6_max_dsp_1_U70 dadd_64ns_64ns_64_5_full_dsp_1_U6 dmul_64ns_64ns_64_6_max_dsp_1_U71 dadd_64ns_64ns_64_5_full_dsp_1_U7 dmul_64ns_64ns_64_6_max_dsp_1_U72 dadd_64ns_64ns_64_5_full_dsp_1_U8 dmul_64ns_64ns_64_6_max_dsp_1_U73 dadd_64ns_64ns_64_5_full_dsp_1_U9 dmul_64ns_64ns_64_6_max_dsp_1_U74 dadd_64ns_64ns_64_5_full_dsp_1_U10 dmul_64ns_64ns_64_6_max_dsp_1_U75 dadd_64ns_64ns_64_5_full_dsp_1_U11 dmul_64ns_64ns_64_6_max_dsp_1_U76 dadd_64ns_64ns_64_5_full_dsp_1_U12 dmul_64ns_64ns_64_6_max_dsp_1_U77 dadd_64ns_64ns_64_5_full_dsp_1_U13 dmul_64ns_64ns_64_6_max_dsp_1_U78 dadd_64ns_64ns_64_5_full_dsp_1_U14 dmul_64ns_64ns_64_6_max_dsp_1_U79 dadd_64ns_64ns_64_5_full_dsp_1_U15 dmul_64ns_64ns_64_6_max_dsp_1_U80 dadd_64ns_64ns_64_5_full_dsp_1_U16 dmul_64ns_64ns_64_6_max_dsp_1_U81 dadd_64ns_64ns_64_5_full_dsp_1_U17 dmul_64ns_64ns_64_6_max_dsp_1_U82 dadd_64ns_64ns_64_5_full_dsp_1_U18 dmul_64ns_64ns_64_6_max_dsp_1_U83 dadd_64ns_64ns_64_5_full_dsp_1_U19 dmul_64ns_64ns_64_6_max_dsp_1_U84 dadd_64ns_64ns_64_5_full_dsp_1_U20 dmul_64ns_64ns_64_6_max_dsp_1_U85 dadd_64ns_64ns_64_5_full_dsp_1_U21 dmul_64ns_64ns_64_6_max_dsp_1_U86 dadd_64ns_64ns_64_5_full_dsp_1_U22 dmul_64ns_64ns_64_6_max_dsp_1_U87 dadd_64ns_64ns_64_5_full_dsp_1_U23 dmul_64ns_64ns_64_6_max_dsp_1_U88 dadd_64ns_64ns_64_5_full_dsp_1_U24 dmul_64ns_64ns_64_6_max_dsp_1_U89 dadd_64ns_64ns_64_5_full_dsp_1_U25 dmul_64ns_64ns_64_6_max_dsp_1_U90 dadd_64ns_64ns_64_5_full_dsp_1_U26 dmul_64ns_64ns_64_6_max_dsp_1_U91 dadd_64ns_64ns_64_5_full_dsp_1_U27 dmul_64ns_64ns_64_6_max_dsp_1_U92 dadd_64ns_64ns_64_5_full_dsp_1_U28 dmul_64ns_64ns_64_6_max_dsp_1_U93 dadd_64ns_64ns_64_5_full_dsp_1_U29 dmul_64ns_64ns_64_6_max_dsp_1_U94 dadd_64ns_64ns_64_5_full_dsp_1_U30 dmul_64ns_64ns_64_6_max_dsp_1_U95 dadd_64ns_64ns_64_5_full_dsp_1_U31 dmul_64ns_64ns_64_6_max_dsp_1_U96 dadd_64ns_64ns_64_5_full_dsp_1_U32 dmul_64ns_64ns_64_6_max_dsp_1_U97 dadd_64ns_64ns_64_5_full_dsp_1_U33 dmul_64ns_64ns_64_6_max_dsp_1_U98 dadd_64ns_64ns_64_5_full_dsp_1_U34 dmul_64ns_64ns_64_6_max_dsp_1_U99 dadd_64ns_64ns_64_5_full_dsp_1_U35 dmul_64ns_64ns_64_6_max_dsp_1_U100 dadd_64ns_64ns_64_5_full_dsp_1_U36 dmul_64ns_64ns_64_6_max_dsp_1_U101 dadd_64ns_64ns_64_5_full_dsp_1_U37 dmul_64ns_64ns_64_6_max_dsp_1_U102 dadd_64ns_64ns_64_5_full_dsp_1_U38 dmul_64ns_64ns_64_6_max_dsp_1_U103 dadd_64ns_64ns_64_5_full_dsp_1_U39 dmul_64ns_64ns_64_6_max_dsp_1_U104 dadd_64ns_64ns_64_5_full_dsp_1_U40 dmul_64ns_64ns_64_6_max_dsp_1_U105 dadd_64ns_64ns_64_5_full_dsp_1_U41 dmul_64ns_64ns_64_6_max_dsp_1_U106 dadd_64ns_64ns_64_5_full_dsp_1_U42 dmul_64ns_64ns_64_6_max_dsp_1_U107 dadd_64ns_64ns_64_5_full_dsp_1_U43 dmul_64ns_64ns_64_6_max_dsp_1_U108 dadd_64ns_64ns_64_5_full_dsp_1_U44 dmul_64ns_64ns_64_6_max_dsp_1_U109 dadd_64ns_64ns_64_5_full_dsp_1_U45 dmul_64ns_64ns_64_6_max_dsp_1_U110 dadd_64ns_64ns_64_5_full_dsp_1_U46 dmul_64ns_64ns_64_6_max_dsp_1_U111 dadd_64ns_64ns_64_5_full_dsp_1_U47 dmul_64ns_64ns_64_6_max_dsp_1_U112 dadd_64ns_64ns_64_5_full_dsp_1_U48 dmul_64ns_64ns_64_6_max_dsp_1_U113 dadd_64ns_64ns_64_5_full_dsp_1_U49 dmul_64ns_64ns_64_6_max_dsp_1_U114 dadd_64ns_64ns_64_5_full_dsp_1_U50 dmul_64ns_64ns_64_6_max_dsp_1_U115 dadd_64ns_64ns_64_5_full_dsp_1_U51 dmul_64ns_64ns_64_6_max_dsp_1_U116 dadd_64ns_64ns_64_5_full_dsp_1_U52 dmul_64ns_64ns_64_6_max_dsp_1_U117 dadd_64ns_64ns_64_5_full_dsp_1_U53 dmul_64ns_64ns_64_6_max_dsp_1_U118 dadd_64ns_64ns_64_5_full_dsp_1_U54 dmul_64ns_64ns_64_6_max_dsp_1_U119 dadd_64ns_64ns_64_5_full_dsp_1_U55 dmul_64ns_64ns_64_6_max_dsp_1_U120 dadd_64ns_64ns_64_5_full_dsp_1_U56 dmul_64ns_64ns_64_6_max_dsp_1_U121 dadd_64ns_64ns_64_5_full_dsp_1_U57 dmul_64ns_64ns_64_6_max_dsp_1_U122 dadd_64ns_64ns_64_5_full_dsp_1_U58 dmul_64ns_64ns_64_6_max_dsp_1_U123 dadd_64ns_64ns_64_5_full_dsp_1_U59 dmul_64ns_64ns_64_6_max_dsp_1_U124 dadd_64ns_64ns_64_5_full_dsp_1_U60 dmul_64ns_64ns_64_6_max_dsp_1_U125 dadd_64ns_64ns_64_5_full_dsp_1_U61 dmul_64ns_64ns_64_6_max_dsp_1_U126 dadd_64ns_64ns_64_5_full_dsp_1_U62 dmul_64ns_64ns_64_6_max_dsp_1_U127 dadd_64ns_64ns_64_5_full_dsp_1_U63 dmul_64ns_64ns_64_6_max_dsp_1_U128 dadd_64ns_64ns_64_5_full_dsp_1_U64"
+                }]
+            },
+            {
+              "ModuleName": "forwardPropagation_64_64_Pipeline_VITIS_LOOP_161_1",
+              "InstanceName": "grp_forwardPropagation_64_64_Pipeline_VITIS_LOOP_161_1_fu_1868",
+              "BindInstances": "icmp_ln161_fu_86_p2 i_18_fu_92_p2 lshr_ln163_fu_119_p2"
+            },
+            {
+              "ModuleName": "relu_64_s",
+              "InstanceName": "grp_relu_64_s_fu_1876",
+              "Instances": [{
+                  "ModuleName": "relu_64_Pipeline_VITIS_LOOP_13_1",
+                  "InstanceName": "grp_relu_64_Pipeline_VITIS_LOOP_13_1_fu_723",
+                  "BindInstances": "icmp_ln13_fu_86_p2 i_4_fu_92_p2 icmp_ln14_fu_125_p2 icmp_ln14_1_fu_131_p2 or_ln14_fu_137_p2 and_ln14_fu_143_p2 select_ln14_fu_149_p3"
+                }]
+            }
+          ]
+        },
+        {
+          "ModuleName": "accelerator_Pipeline_VITIS_LOOP_40_17",
+          "InstanceName": "grp_accelerator_Pipeline_VITIS_LOOP_40_17_fu_1792",
+          "BindInstances": "icmp_ln40_fu_699_p2 i_38_fu_705_p2 sparsemux_129_6_64_1_1_U3847"
+        },
+        {
+          "ModuleName": "forwardPropagation_64_8_s",
+          "InstanceName": "grp_forwardPropagation_64_8_s_fu_1861",
+          "BindInstances": "C_0_U net_0_U output_0_U",
+          "Instances": [
+            {
+              "ModuleName": "forwardPropagation_64_8_Pipeline_VITIS_LOOP_81_1",
+              "InstanceName": "grp_forwardPropagation_64_8_Pipeline_VITIS_LOOP_81_1_fu_803",
+              "BindInstances": "icmp_ln81_fu_1357_p2 i_15_fu_1363_p2"
+            },
+            {
+              "ModuleName": "forwardPropagation_64_8_Pipeline_VITIS_LOOP_161_1",
+              "InstanceName": "grp_forwardPropagation_64_8_Pipeline_VITIS_LOOP_161_1_fu_938",
+              "BindInstances": "icmp_ln161_fu_88_p2 i_16_fu_94_p2 lshr_ln163_fu_121_p2"
+            },
+            {
+              "ModuleName": "forwardPropagation_64_8_Pipeline_VITIS_LOOP_13_1",
+              "InstanceName": "grp_forwardPropagation_64_8_Pipeline_VITIS_LOOP_13_1_fu_946",
+              "BindInstances": "icmp_ln13_fu_86_p2 i_17_fu_92_p2 icmp_ln14_fu_125_p2 icmp_ln14_3_fu_131_p2 or_ln14_fu_137_p2 and_ln14_fu_143_p2 select_ln14_fu_149_p3"
+            }
+          ]
+        },
+        {
+          "ModuleName": "accelerator_Pipeline_VITIS_LOOP_40_15",
+          "InstanceName": "grp_accelerator_Pipeline_VITIS_LOOP_40_15_fu_1933",
+          "BindInstances": "icmp_ln40_fu_699_p2 i_39_fu_705_p2 sparsemux_129_6_64_1_1_U3531"
+        },
+        {
+          "ModuleName": "forwardPropagation_8_8_s",
+          "InstanceName": "grp_forwardPropagation_8_8_s_fu_2002",
+          "BindInstances": "C_0_U net_0_U output_0_U",
+          "Instances": [
+            {
+              "ModuleName": "forwardPropagation_8_8_Pipeline_VITIS_LOOP_81_1",
+              "InstanceName": "grp_forwardPropagation_8_8_Pipeline_VITIS_LOOP_81_1_fu_353",
+              "BindInstances": "icmp_ln81_fu_216_p2 i_8_fu_222_p2 lshr_ln84_fu_249_p2 lshr_ln84_1_fu_279_p2 lshr_ln84_2_fu_303_p2 lshr_ln84_3_fu_327_p2 lshr_ln84_4_fu_351_p2 lshr_ln84_5_fu_375_p2 lshr_ln84_6_fu_399_p2 lshr_ln84_7_fu_419_p2"
+            },
+            {
+              "ModuleName": "forwardPropagation_8_8_Pipeline_VITIS_LOOP_161_1",
+              "InstanceName": "grp_forwardPropagation_8_8_Pipeline_VITIS_LOOP_161_1_fu_376",
+              "BindInstances": "icmp_ln161_fu_88_p2 i_9_fu_94_p2 lshr_ln163_fu_121_p2"
+            },
+            {
+              "ModuleName": "forwardPropagation_8_8_Pipeline_VITIS_LOOP_13_1",
+              "InstanceName": "grp_forwardPropagation_8_8_Pipeline_VITIS_LOOP_13_1_fu_384",
+              "BindInstances": "icmp_ln13_fu_86_p2 i_10_fu_92_p2 icmp_ln14_fu_125_p2 icmp_ln14_2_fu_131_p2 or_ln14_fu_137_p2 and_ln14_fu_143_p2 select_ln14_fu_149_p3"
+            }
+          ]
+        },
+        {
+          "ModuleName": "accelerator_Pipeline_VITIS_LOOP_40_14",
+          "InstanceName": "grp_accelerator_Pipeline_VITIS_LOOP_40_14_fu_2018",
+          "BindInstances": "icmp_ln40_fu_139_p2 i_40_fu_145_p2 sparsemux_17_3_64_1_1_U3482"
+        },
+        {
+          "ModuleName": "forwardPropagation_8_10_s",
+          "InstanceName": "grp_forwardPropagation_8_10_s_fu_2031",
+          "BindInstances": "softmax_input_U C_0_U net_0_U temp_0_U transposed_0_U softmax_result_0_U icmp_ln177_fu_694_p2 add_ln177_fu_700_p2",
+          "Instances": [
+            {
+              "ModuleName": "forwardPropagation_8_10_Pipeline_VITIS_LOOP_81_1",
+              "InstanceName": "grp_forwardPropagation_8_10_Pipeline_VITIS_LOOP_81_1_fu_633",
+              "BindInstances": "icmp_ln81_fu_237_p2 i_12_fu_243_p2"
+            },
+            {
+              "ModuleName": "forwardPropagation_8_10_Pipeline_VITIS_LOOP_161_1",
+              "InstanceName": "grp_forwardPropagation_8_10_Pipeline_VITIS_LOOP_161_1_fu_656",
+              "BindInstances": "icmp_ln161_fu_88_p2 i_13_fu_94_p2 lshr_ln163_fu_117_p2"
+            },
+            {
+              "ModuleName": "forwardPropagation_8_10_Pipeline_VITIS_LOOP_180_4",
+              "InstanceName": "grp_forwardPropagation_8_10_Pipeline_VITIS_LOOP_180_4_fu_664",
+              "BindInstances": "icmp_ln180_fu_264_p2 add_ln180_fu_270_p2"
+            },
+            {
+              "ModuleName": "softmax_10_s",
+              "InstanceName": "grp_softmax_10_s_fu_680",
+              "Instances": [
+                {
+                  "ModuleName": "softmax_10_Pipeline_1",
+                  "InstanceName": "grp_softmax_10_Pipeline_1_fu_141",
+                  "BindInstances": "icmp_ln5658_fu_124_p2 add_ln5658_fu_130_p2 icmp_ln85_fu_205_p2 icmp_ln85_1_fu_211_p2 or_ln85_fu_217_p2 icmp_ln85_2_fu_170_p2 icmp_ln85_3_fu_176_p2 or_ln85_1_fu_223_p2 and_ln85_fu_227_p2 and_ln85_1_fu_233_p2 p_result_fu_239_p3"
+                },
+                {
+                  "ModuleName": "softmax_10_Pipeline_VITIS_LOOP_89_1",
+                  "InstanceName": "grp_softmax_10_Pipeline_VITIS_LOOP_89_1_fu_148",
+                  "BindInstances": "icmp_ln89_fu_112_p2 i_2_fu_118_p2 dexp_64ns_64ns_64_15_full_dsp_1_U847"
+                },
+                {
+                  "ModuleName": "softmax_10_Pipeline_VITIS_LOOP_114_3",
+                  "InstanceName": "grp_softmax_10_Pipeline_VITIS_LOOP_114_3_fu_158",
+                  "BindInstances": "icmp_ln114_fu_71_p2 i_3_fu_77_p2 ddiv_64ns_64ns_64_22_no_dsp_1_U853"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ModuleName": "accelerator_Pipeline_VITIS_LOOP_40_1",
+          "InstanceName": "grp_accelerator_Pipeline_VITIS_LOOP_40_1_fu_2048",
+          "BindInstances": "icmp_ln40_fu_139_p2 i_41_fu_145_p2 sparsemux_17_3_64_1_1_U3401"
+        },
+        {
+          "ModuleName": "accelerator_Pipeline_VITIS_LOOP_67_3",
+          "InstanceName": "grp_accelerator_Pipeline_VITIS_LOOP_67_3_fu_2061",
+          "BindInstances": "icmp_ln67_fu_270_p2 i_37_fu_276_p2 lshr_ln69_fu_299_p2"
+        },
+        {
+          "ModuleName": "backProp_8_8_10_s",
+          "InstanceName": "grp_backProp_8_8_10_s_fu_2078",
+          "BindInstances": "C_0_U net_0_U d_activation_0_U",
+          "Instances": [
+            {
+              "ModuleName": "backProp_8_8_10_Pipeline_VITIS_LOOP_40_1",
+              "InstanceName": "grp_backProp_8_8_10_Pipeline_VITIS_LOOP_40_1_fu_864",
+              "BindInstances": "icmp_ln40_fu_1143_p2 i_23_fu_1149_p2"
+            },
+            {
+              "ModuleName": "backProp_8_8_10_Pipeline_VITIS_LOOP_81_12",
+              "InstanceName": "grp_backProp_8_8_10_Pipeline_VITIS_LOOP_81_12_fu_950",
+              "BindInstances": "icmp_ln81_fu_216_p2 i_20_fu_222_p2 lshr_ln84_fu_249_p2 lshr_ln84_8_fu_279_p2 lshr_ln84_9_fu_303_p2 lshr_ln84_10_fu_327_p2 lshr_ln84_11_fu_351_p2 lshr_ln84_12_fu_375_p2 lshr_ln84_13_fu_399_p2 lshr_ln84_14_fu_419_p2"
+            },
+            {
+              "ModuleName": "backProp_8_8_10_Pipeline_VITIS_LOOP_81_1",
+              "InstanceName": "grp_backProp_8_8_10_Pipeline_VITIS_LOOP_81_1_fu_973",
+              "BindInstances": "icmp_ln81_fu_1089_p2 i_21_fu_1095_p2 sparsemux_17_3_64_1_1_U997 sparsemux_17_3_64_1_1_U987 sparsemux_17_3_64_1_1_U988 sparsemux_17_3_64_1_1_U989 sparsemux_17_3_64_1_1_U990 sparsemux_17_3_64_1_1_U991 sparsemux_17_3_64_1_1_U992 sparsemux_17_3_64_1_1_U993 sparsemux_17_3_64_1_1_U994 sparsemux_17_3_64_1_1_U995 sparsemux_17_3_64_1_1_U996"
+            },
+            {
+              "ModuleName": "backProp_8_8_10_Pipeline_VITIS_LOOP_266_1",
+              "InstanceName": "grp_backProp_8_8_10_Pipeline_VITIS_LOOP_266_1_fu_1093",
+              "BindInstances": "icmp_ln266_fu_88_p2 i_24_fu_94_p2 lshr_ln268_fu_121_p2"
+            },
+            {
+              "ModuleName": "backProp_8_8_10_Pipeline_VITIS_LOOP_22_1",
+              "InstanceName": "grp_backProp_8_8_10_Pipeline_VITIS_LOOP_22_1_fu_1101",
+              "BindInstances": "icmp_ln22_fu_90_p2 i_25_fu_96_p2 icmp_ln23_fu_130_p2 icmp_ln23_1_fu_136_p2 or_ln23_fu_142_p2 and_ln23_fu_146_p2"
+            },
+            {
+              "ModuleName": "backProp_8_8_10_Pipeline_VITIS_LOOP_284_3",
+              "InstanceName": "grp_backProp_8_8_10_Pipeline_VITIS_LOOP_284_3_fu_1107",
+              "BindInstances": "icmp_ln284_fu_426_p2 add_ln284_fu_437_p2 sparsemux_17_3_64_1_1_U1140"
+            }
+          ]
+        },
+        {
+          "ModuleName": "matmul_10ul_1ul_8ul_s",
+          "InstanceName": "grp_matmul_10ul_1ul_8ul_s_fu_2112",
+          "Instances": [{
+              "ModuleName": "matmul_10ul_1ul_8ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2",
+              "InstanceName": "grp_matmul_10ul_1ul_8ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2_fu_932",
+              "BindInstances": "icmp_ln81_fu_364_p2 add_ln81_fu_370_p2 i_fu_382_p2 icmp_ln82_fu_388_p2 select_ln81_fu_394_p3 select_ln81_4_fu_402_p3 sparsemux_21_4_64_1_1_U3413 sparsemux_17_3_64_1_1_U3414 j_fu_419_p2"
+            }]
+        },
+        {
+          "ModuleName": "backProp_64_8_8_s",
+          "InstanceName": "grp_backProp_64_8_8_s_fu_2135",
+          "BindInstances": "w_l_plus1_T_U w_l_plus1_T_64_U w_l_plus1_T_65_U w_l_plus1_T_66_U w_l_plus1_T_67_U w_l_plus1_T_68_U w_l_plus1_T_69_U w_l_plus1_T_70_U C_0_U net_0_U d_activation_0_U",
+          "Instances": [
+            {
+              "ModuleName": "backProp_64_8_8_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_41_2",
+              "InstanceName": "grp_backProp_64_8_8_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_41_2_fu_1008",
+              "BindInstances": "icmp_ln40_fu_210_p2 add_ln40_fu_216_p2 i_fu_228_p2 icmp_ln41_fu_234_p2 select_ln40_fu_240_p3 select_ln40_1_fu_248_p3 lshr_ln42_fu_290_p2 j_fu_312_p2"
+            },
+            {
+              "ModuleName": "backProp_64_8_8_Pipeline_VITIS_LOOP_81_13",
+              "InstanceName": "grp_backProp_64_8_8_Pipeline_VITIS_LOOP_81_13_fu_1022",
+              "BindInstances": "icmp_ln81_fu_1357_p2 i_27_fu_1363_p2 dadd_64ns_64ns_64_5_full_dsp_1_U1297 dadd_64ns_64ns_64_5_full_dsp_1_U1298 dmul_64ns_64ns_64_6_max_dsp_1_U1384 dmul_64ns_64ns_64_6_max_dsp_1_U1385"
+            },
+            {
+              "ModuleName": "backProp_64_8_8_Pipeline_VITIS_LOOP_81_1",
+              "InstanceName": "grp_backProp_64_8_8_Pipeline_VITIS_LOOP_81_1_fu_1157",
+              "BindInstances": "icmp_ln81_fu_555_p2 i_28_fu_573_p2 sparsemux_17_3_64_1_1_U1225"
+            },
+            {
+              "ModuleName": "backProp_64_8_8_Pipeline_VITIS_LOOP_266_1",
+              "InstanceName": "grp_backProp_64_8_8_Pipeline_VITIS_LOOP_266_1_fu_1201",
+              "BindInstances": "icmp_ln266_fu_88_p2 i_29_fu_94_p2 lshr_ln268_fu_121_p2"
+            },
+            {
+              "ModuleName": "backProp_64_8_8_Pipeline_VITIS_LOOP_22_1",
+              "InstanceName": "grp_backProp_64_8_8_Pipeline_VITIS_LOOP_22_1_fu_1209",
+              "BindInstances": "icmp_ln22_fu_90_p2 i_31_fu_96_p2 icmp_ln23_fu_130_p2 icmp_ln23_2_fu_136_p2 or_ln23_fu_142_p2 and_ln23_fu_146_p2"
+            },
+            {
+              "ModuleName": "backProp_64_8_8_Pipeline_VITIS_LOOP_284_3",
+              "InstanceName": "grp_backProp_64_8_8_Pipeline_VITIS_LOOP_284_3_fu_1215",
+              "BindInstances": "icmp_ln284_fu_426_p2 add_ln284_fu_437_p2 sparsemux_17_3_64_1_1_U1461"
+            }
+          ]
+        },
+        {
+          "ModuleName": "accelerator_Pipeline_VITIS_LOOP_323_1",
+          "InstanceName": "grp_accelerator_Pipeline_VITIS_LOOP_323_1_fu_2223",
+          "BindInstances": "icmp_ln323_fu_375_p2 add_ln323_fu_517_p2 lshr_ln327_fu_536_p2 sparsemux_21_4_64_1_1_U3460 shl_ln327_fu_555_p2 shl_ln327_1_fu_600_p2 xor_ln327_fu_605_p2 and_ln327_fu_610_p2 or_ln327_fu_615_p2"
+        },
+        {
+          "ModuleName": "matmul_8ul_1ul_8ul_s",
+          "InstanceName": "grp_matmul_8ul_1ul_8ul_s_fu_2249",
+          "Instances": [{
+              "ModuleName": "matmul_8ul_1ul_8ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2",
+              "InstanceName": "grp_matmul_8ul_1ul_8ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2_fu_789",
+              "BindInstances": "icmp_ln81_fu_193_p2 add_ln81_fu_199_p2 i_fu_211_p2 icmp_ln82_fu_217_p2 select_ln81_fu_223_p3 select_ln81_1_fu_231_p3 sparsemux_17_3_64_1_1_U3494 add_ln56_fu_311_p2 dmul_64ns_64ns_64_6_max_dsp_1_U3493 dadd_64ns_64ns_64_5_full_dsp_1_U3492 j_fu_248_p2"
+            }]
+        },
+        {
+          "ModuleName": "backProp_64_64_8_s",
+          "InstanceName": "grp_backProp_64_64_8_s_fu_2263",
+          "BindInstances": "mid_0_U net_0_U d_activation_0_U",
+          "Instances": [
+            {
+              "ModuleName": "backProp_64_64_8_Pipeline_VITIS_LOOP_40_1",
+              "InstanceName": "grp_backProp_64_64_8_Pipeline_VITIS_LOOP_40_1_fu_3331",
+              "BindInstances": "icmp_ln40_fu_6983_p2 i_33_fu_6989_p2"
+            },
+            {
+              "ModuleName": "matmul_64ul_64ul_1ul_s",
+              "InstanceName": "grp_matmul_64ul_64ul_1ul_s_fu_3849",
+              "Instances": [{
+                  "ModuleName": "matmul_64ul_64ul_1ul_Pipeline_VITIS_LOOP_81_1",
+                  "InstanceName": "grp_matmul_64ul_64ul_1ul_Pipeline_VITIS_LOOP_81_1_fu_1247",
+                  "BindInstances": "icmp_ln81_fu_1355_p2 i_6_fu_1361_p2 dmul_64ns_64ns_64_6_max_dsp_1_U65 dadd_64ns_64ns_64_5_full_dsp_1_U1 dmul_64ns_64ns_64_6_max_dsp_1_U66 dadd_64ns_64ns_64_5_full_dsp_1_U2 dmul_64ns_64ns_64_6_max_dsp_1_U67 dadd_64ns_64ns_64_5_full_dsp_1_U3 dmul_64ns_64ns_64_6_max_dsp_1_U68 dadd_64ns_64ns_64_5_full_dsp_1_U4 dmul_64ns_64ns_64_6_max_dsp_1_U69 dadd_64ns_64ns_64_5_full_dsp_1_U5 dmul_64ns_64ns_64_6_max_dsp_1_U70 dadd_64ns_64ns_64_5_full_dsp_1_U6 dmul_64ns_64ns_64_6_max_dsp_1_U71 dadd_64ns_64ns_64_5_full_dsp_1_U7 dmul_64ns_64ns_64_6_max_dsp_1_U72 dadd_64ns_64ns_64_5_full_dsp_1_U8 dmul_64ns_64ns_64_6_max_dsp_1_U73 dadd_64ns_64ns_64_5_full_dsp_1_U9 dmul_64ns_64ns_64_6_max_dsp_1_U74 dadd_64ns_64ns_64_5_full_dsp_1_U10 dmul_64ns_64ns_64_6_max_dsp_1_U75 dadd_64ns_64ns_64_5_full_dsp_1_U11 dmul_64ns_64ns_64_6_max_dsp_1_U76 dadd_64ns_64ns_64_5_full_dsp_1_U12 dmul_64ns_64ns_64_6_max_dsp_1_U77 dadd_64ns_64ns_64_5_full_dsp_1_U13 dmul_64ns_64ns_64_6_max_dsp_1_U78 dadd_64ns_64ns_64_5_full_dsp_1_U14 dmul_64ns_64ns_64_6_max_dsp_1_U79 dadd_64ns_64ns_64_5_full_dsp_1_U15 dmul_64ns_64ns_64_6_max_dsp_1_U80 dadd_64ns_64ns_64_5_full_dsp_1_U16 dmul_64ns_64ns_64_6_max_dsp_1_U81 dadd_64ns_64ns_64_5_full_dsp_1_U17 dmul_64ns_64ns_64_6_max_dsp_1_U82 dadd_64ns_64ns_64_5_full_dsp_1_U18 dmul_64ns_64ns_64_6_max_dsp_1_U83 dadd_64ns_64ns_64_5_full_dsp_1_U19 dmul_64ns_64ns_64_6_max_dsp_1_U84 dadd_64ns_64ns_64_5_full_dsp_1_U20 dmul_64ns_64ns_64_6_max_dsp_1_U85 dadd_64ns_64ns_64_5_full_dsp_1_U21 dmul_64ns_64ns_64_6_max_dsp_1_U86 dadd_64ns_64ns_64_5_full_dsp_1_U22 dmul_64ns_64ns_64_6_max_dsp_1_U87 dadd_64ns_64ns_64_5_full_dsp_1_U23 dmul_64ns_64ns_64_6_max_dsp_1_U88 dadd_64ns_64ns_64_5_full_dsp_1_U24 dmul_64ns_64ns_64_6_max_dsp_1_U89 dadd_64ns_64ns_64_5_full_dsp_1_U25 dmul_64ns_64ns_64_6_max_dsp_1_U90 dadd_64ns_64ns_64_5_full_dsp_1_U26 dmul_64ns_64ns_64_6_max_dsp_1_U91 dadd_64ns_64ns_64_5_full_dsp_1_U27 dmul_64ns_64ns_64_6_max_dsp_1_U92 dadd_64ns_64ns_64_5_full_dsp_1_U28 dmul_64ns_64ns_64_6_max_dsp_1_U93 dadd_64ns_64ns_64_5_full_dsp_1_U29 dmul_64ns_64ns_64_6_max_dsp_1_U94 dadd_64ns_64ns_64_5_full_dsp_1_U30 dmul_64ns_64ns_64_6_max_dsp_1_U95 dadd_64ns_64ns_64_5_full_dsp_1_U31 dmul_64ns_64ns_64_6_max_dsp_1_U96 dadd_64ns_64ns_64_5_full_dsp_1_U32 dmul_64ns_64ns_64_6_max_dsp_1_U97 dadd_64ns_64ns_64_5_full_dsp_1_U33 dmul_64ns_64ns_64_6_max_dsp_1_U98 dadd_64ns_64ns_64_5_full_dsp_1_U34 dmul_64ns_64ns_64_6_max_dsp_1_U99 dadd_64ns_64ns_64_5_full_dsp_1_U35 dmul_64ns_64ns_64_6_max_dsp_1_U100 dadd_64ns_64ns_64_5_full_dsp_1_U36 dmul_64ns_64ns_64_6_max_dsp_1_U101 dadd_64ns_64ns_64_5_full_dsp_1_U37 dmul_64ns_64ns_64_6_max_dsp_1_U102 dadd_64ns_64ns_64_5_full_dsp_1_U38 dmul_64ns_64ns_64_6_max_dsp_1_U103 dadd_64ns_64ns_64_5_full_dsp_1_U39 dmul_64ns_64ns_64_6_max_dsp_1_U104 dadd_64ns_64ns_64_5_full_dsp_1_U40 dmul_64ns_64ns_64_6_max_dsp_1_U105 dadd_64ns_64ns_64_5_full_dsp_1_U41 dmul_64ns_64ns_64_6_max_dsp_1_U106 dadd_64ns_64ns_64_5_full_dsp_1_U42 dmul_64ns_64ns_64_6_max_dsp_1_U107 dadd_64ns_64ns_64_5_full_dsp_1_U43 dmul_64ns_64ns_64_6_max_dsp_1_U108 dadd_64ns_64ns_64_5_full_dsp_1_U44 dmul_64ns_64ns_64_6_max_dsp_1_U109 dadd_64ns_64ns_64_5_full_dsp_1_U45 dmul_64ns_64ns_64_6_max_dsp_1_U110 dadd_64ns_64ns_64_5_full_dsp_1_U46 dmul_64ns_64ns_64_6_max_dsp_1_U111 dadd_64ns_64ns_64_5_full_dsp_1_U47 dmul_64ns_64ns_64_6_max_dsp_1_U112 dadd_64ns_64ns_64_5_full_dsp_1_U48 dmul_64ns_64ns_64_6_max_dsp_1_U113 dadd_64ns_64ns_64_5_full_dsp_1_U49 dmul_64ns_64ns_64_6_max_dsp_1_U114 dadd_64ns_64ns_64_5_full_dsp_1_U50 dmul_64ns_64ns_64_6_max_dsp_1_U115 dadd_64ns_64ns_64_5_full_dsp_1_U51 dmul_64ns_64ns_64_6_max_dsp_1_U116 dadd_64ns_64ns_64_5_full_dsp_1_U52 dmul_64ns_64ns_64_6_max_dsp_1_U117 dadd_64ns_64ns_64_5_full_dsp_1_U53 dmul_64ns_64ns_64_6_max_dsp_1_U118 dadd_64ns_64ns_64_5_full_dsp_1_U54 dmul_64ns_64ns_64_6_max_dsp_1_U119 dadd_64ns_64ns_64_5_full_dsp_1_U55 dmul_64ns_64ns_64_6_max_dsp_1_U120 dadd_64ns_64ns_64_5_full_dsp_1_U56 dmul_64ns_64ns_64_6_max_dsp_1_U121 dadd_64ns_64ns_64_5_full_dsp_1_U57 dmul_64ns_64ns_64_6_max_dsp_1_U122 dadd_64ns_64ns_64_5_full_dsp_1_U58 dmul_64ns_64ns_64_6_max_dsp_1_U123 dadd_64ns_64ns_64_5_full_dsp_1_U59 dmul_64ns_64ns_64_6_max_dsp_1_U124 dadd_64ns_64ns_64_5_full_dsp_1_U60 dmul_64ns_64ns_64_6_max_dsp_1_U125 dadd_64ns_64ns_64_5_full_dsp_1_U61 dmul_64ns_64ns_64_6_max_dsp_1_U126 dadd_64ns_64ns_64_5_full_dsp_1_U62 dmul_64ns_64ns_64_6_max_dsp_1_U127 dadd_64ns_64ns_64_5_full_dsp_1_U63 dmul_64ns_64ns_64_6_max_dsp_1_U128 dadd_64ns_64ns_64_5_full_dsp_1_U64"
+                }]
+            },
+            {
+              "ModuleName": "matmul_64ul_8ul_1ul_s",
+              "InstanceName": "grp_matmul_64ul_8ul_1ul_s_fu_3984",
+              "Instances": [{
+                  "ModuleName": "matmul_64ul_8ul_1ul_Pipeline_VITIS_LOOP_81_1",
+                  "InstanceName": "grp_matmul_64ul_8ul_1ul_Pipeline_VITIS_LOOP_81_1_fu_4883",
+                  "BindInstances": "icmp_ln81_fu_4414_p2 i_5_fu_4420_p2 sparsemux_129_6_64_1_1_U2226 sparsemux_129_6_64_1_1_U2227 sparsemux_129_6_64_1_1_U2228 sparsemux_129_6_64_1_1_U2229 sparsemux_129_6_64_1_1_U2230 sparsemux_129_6_64_1_1_U2231 sparsemux_129_6_64_1_1_U2232 sparsemux_129_6_64_1_1_U2233"
+                }]
+            },
+            {
+              "ModuleName": "backProp_64_64_8_Pipeline_VITIS_LOOP_266_1",
+              "InstanceName": "grp_backProp_64_64_8_Pipeline_VITIS_LOOP_266_1_fu_4518",
+              "BindInstances": "icmp_ln266_fu_86_p2 i_34_fu_92_p2 lshr_ln268_fu_119_p2"
+            },
+            {
+              "ModuleName": "backProp_64_64_8_Pipeline_VITIS_LOOP_22_1",
+              "InstanceName": "grp_backProp_64_64_8_Pipeline_VITIS_LOOP_22_1_fu_4526",
+              "BindInstances": "icmp_ln22_fu_89_p2 i_36_fu_95_p2 icmp_ln23_fu_129_p2 icmp_ln23_3_fu_135_p2 or_ln23_fu_141_p2 and_ln23_fu_145_p2"
+            },
+            {
+              "ModuleName": "backProp_64_64_8_Pipeline_VITIS_LOOP_284_3",
+              "InstanceName": "grp_backProp_64_64_8_Pipeline_VITIS_LOOP_284_3_fu_4532",
+              "BindInstances": "icmp_ln284_fu_79_p2 add_ln284_fu_85_p2"
+            }
+          ]
+        },
+        {
+          "ModuleName": "accelerator_Pipeline_VITIS_LOOP_323_1_VITIS_LOOP_324_2",
+          "InstanceName": "grp_accelerator_Pipeline_VITIS_LOOP_323_1_VITIS_LOOP_324_2_fu_2345",
+          "BindInstances": "icmp_ln323_fu_259_p2 add_ln323_fu_265_p2 add_ln323_1_fu_277_p2 icmp_ln324_fu_283_p2 select_ln323_fu_289_p3 select_ln323_1_fu_428_p3 select_ln323_2_fu_297_p3 add_ln56_fu_321_p2 lshr_ln325_fu_412_p2 shl_ln325_fu_473_p2 shl_ln325_1_fu_482_p2 xor_ln325_fu_487_p2 and_ln325_fu_493_p2 or_ln325_fu_498_p2 add_ln324_fu_336_p2 lshr_ln327_fu_450_p2 sparsemux_17_3_64_1_1_U3517 shl_ln327_fu_504_p2 shl_ln327_1_fu_522_p2 xor_ln327_fu_527_p2 and_ln327_fu_532_p2 or_ln327_fu_537_p2"
+        },
+        {
+          "ModuleName": "matmul_8ul_1ul_64ul_s",
+          "InstanceName": "grp_matmul_8ul_1ul_64ul_s_fu_2362",
+          "Instances": [{
+              "ModuleName": "matmul_8ul_1ul_64ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2",
+              "InstanceName": "grp_matmul_8ul_1ul_64ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2_fu_5528",
+              "BindInstances": "icmp_ln81_fu_1586_p2 add_ln81_fu_1592_p2 i_fu_1604_p2 icmp_ln82_fu_1610_p2 select_ln81_fu_1616_p3 select_ln81_2_fu_1624_p3 sparsemux_17_3_64_1_1_U3599 sparsemux_129_6_64_1_1_U3600 j_fu_1645_p2"
+            }]
+        },
+        {
+          "ModuleName": "accelerator_Pipeline_VITIS_LOOP_323_16",
+          "InstanceName": "grp_accelerator_Pipeline_VITIS_LOOP_323_16_fu_2439",
+          "BindInstances": "icmp_ln323_fu_1509_p2 add_ln323_fu_1515_p2 lshr_ln327_fu_2295_p2 sparsemux_17_3_64_1_1_U3771 shl_ln327_fu_1647_p2 shl_ln327_3_fu_2535_p2 xor_ln327_fu_2540_p2 and_ln327_fu_2545_p2 or_ln327_fu_2550_p2"
+        },
+        {
+          "ModuleName": "matmul_64ul_1ul_64ul_s",
+          "InstanceName": "grp_matmul_64ul_1ul_64ul_s_fu_2519",
+          "Instances": [{
+              "ModuleName": "matmul_64ul_1ul_64ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2",
+              "InstanceName": "grp_matmul_64ul_1ul_64ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2_fu_37832",
+              "BindInstances": "icmp_ln81_fu_1450_p2 add_ln81_fu_1456_p2 i_fu_1468_p2 icmp_ln82_fu_1474_p2 select_ln81_fu_1480_p3 select_ln81_3_fu_1488_p3 sparsemux_129_6_64_1_1_U3915 j_fu_1510_p2"
+            }]
+        },
+        {
+          "ModuleName": "accelerator_Pipeline_VITIS_LOOP_323_18",
+          "InstanceName": "grp_accelerator_Pipeline_VITIS_LOOP_323_18_fu_2589",
+          "BindInstances": "icmp_ln323_fu_1438_p2 add_ln323_fu_1444_p2 lshr_ln327_fu_2397_p2 shl_ln327_fu_2447_p2 shl_ln327_2_fu_2784_p2 xor_ln327_fu_2789_p2 and_ln327_fu_2794_p2 or_ln327_fu_2799_p2"
+        }
+      ]
+    },
+    "Info": {
+      "matmul_64ul_64ul_1ul_Pipeline_VITIS_LOOP_81_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "matmul_64ul_64ul_1ul_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "forwardPropagation_64_64_Pipeline_VITIS_LOOP_161_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "relu_64_Pipeline_VITIS_LOOP_13_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "relu_64_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "forwardPropagation_64_64_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "forwardPropagation_64_8_Pipeline_VITIS_LOOP_81_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "forwardPropagation_64_8_Pipeline_VITIS_LOOP_161_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "forwardPropagation_64_8_Pipeline_VITIS_LOOP_13_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "forwardPropagation_64_8_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "forwardPropagation_8_8_Pipeline_VITIS_LOOP_81_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "forwardPropagation_8_8_Pipeline_VITIS_LOOP_161_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "forwardPropagation_8_8_Pipeline_VITIS_LOOP_13_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "forwardPropagation_8_8_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "forwardPropagation_8_10_Pipeline_VITIS_LOOP_81_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "forwardPropagation_8_10_Pipeline_VITIS_LOOP_161_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "forwardPropagation_8_10_Pipeline_VITIS_LOOP_180_4": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "softmax_10_Pipeline_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "softmax_10_Pipeline_VITIS_LOOP_89_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "softmax_10_Pipeline_VITIS_LOOP_114_3": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "softmax_10_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "forwardPropagation_8_10_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "accelerator_Pipeline_VITIS_LOOP_67_3": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "backProp_8_8_10_Pipeline_VITIS_LOOP_40_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "backProp_8_8_10_Pipeline_VITIS_LOOP_81_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "backProp_8_8_10_Pipeline_VITIS_LOOP_81_12": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "backProp_8_8_10_Pipeline_VITIS_LOOP_266_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "backProp_8_8_10_Pipeline_VITIS_LOOP_22_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "backProp_8_8_10_Pipeline_VITIS_LOOP_284_3": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "backProp_8_8_10_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "backProp_64_8_8_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_41_2": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "backProp_64_8_8_Pipeline_VITIS_LOOP_81_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "backProp_64_8_8_Pipeline_VITIS_LOOP_81_13": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "backProp_64_8_8_Pipeline_VITIS_LOOP_266_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "backProp_64_8_8_Pipeline_VITIS_LOOP_22_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "backProp_64_8_8_Pipeline_VITIS_LOOP_284_3": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "backProp_64_8_8_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "backProp_64_64_8_Pipeline_VITIS_LOOP_40_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "matmul_64ul_8ul_1ul_Pipeline_VITIS_LOOP_81_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "matmul_64ul_8ul_1ul_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "backProp_64_64_8_Pipeline_VITIS_LOOP_266_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "backProp_64_64_8_Pipeline_VITIS_LOOP_22_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "backProp_64_64_8_Pipeline_VITIS_LOOP_284_3": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "backProp_64_64_8_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "accelerator_Pipeline_VITIS_LOOP_40_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "matmul_10ul_1ul_8ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "matmul_10ul_1ul_8ul_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "accelerator_Pipeline_VITIS_LOOP_323_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "accelerator_Pipeline_VITIS_LOOP_40_14": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "matmul_8ul_1ul_8ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "matmul_8ul_1ul_8ul_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "accelerator_Pipeline_VITIS_LOOP_323_1_VITIS_LOOP_324_2": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "accelerator_Pipeline_VITIS_LOOP_40_15": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "matmul_8ul_1ul_64ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "matmul_8ul_1ul_64ul_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "accelerator_Pipeline_VITIS_LOOP_323_16": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "accelerator_Pipeline_VITIS_LOOP_40_17": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "matmul_64ul_1ul_64ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "matmul_64ul_1ul_64ul_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "accelerator_Pipeline_VITIS_LOOP_323_18": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "accelerator": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      }
+    },
+    "Metrics": {
+      "matmul_64ul_64ul_1ul_Pipeline_VITIS_LOOP_81_1": {
+        "Latency": {
+          "LatencyBest": "392",
+          "LatencyAvg": "392",
+          "LatencyWorst": "392",
+          "PipelineII": "65",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.954"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_81_1",
+            "TripCount": "64",
+            "Latency": "390",
+            "PipelineII": "1",
+            "PipelineDepth": "328"
+          }],
+        "Area": {
+          "DSP": "896",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "248",
+          "FF": "61788",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "43",
+          "LUT": "65411",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "92",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "matmul_64ul_64ul_1ul_s": {
+        "Latency": {
+          "LatencyBest": "425",
+          "LatencyAvg": "425",
+          "LatencyWorst": "425",
+          "PipelineII": "425",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.954"
+        },
+        "Area": {
+          "DSP": "896",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "248",
+          "FF": "61823",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "43",
+          "LUT": "65928",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "93",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "forwardPropagation_64_64_Pipeline_VITIS_LOOP_161_1": {
+        "Latency": {
+          "LatencyBest": "72",
+          "LatencyAvg": "72",
+          "LatencyWorst": "72",
+          "PipelineII": "65",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "6.919"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_161_1",
+            "TripCount": "64",
+            "Latency": "70",
+            "PipelineII": "1",
+            "PipelineDepth": "8"
+          }],
+        "Area": {
+          "FF": "349",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "2270",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "3",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "relu_64_Pipeline_VITIS_LOOP_13_1": {
+        "Latency": {
+          "LatencyBest": "67",
+          "LatencyAvg": "67",
+          "LatencyWorst": "67",
+          "PipelineII": "65",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "5.795"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_13_1",
+            "TripCount": "64",
+            "Latency": "65",
+            "PipelineII": "1",
+            "PipelineDepth": "3"
+          }],
+        "Area": {
+          "FF": "90",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "204",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "relu_64_s": {
+        "Latency": {
+          "LatencyBest": "100",
+          "LatencyAvg": "100",
+          "LatencyWorst": "100",
+          "PipelineII": "100",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "5.795"
+        },
+        "Area": {
+          "FF": "125",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "712",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "1",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "forwardPropagation_64_64_s": {
+        "Latency": {
+          "LatencyBest": "665",
+          "LatencyAvg": "665",
+          "LatencyWorst": "665",
+          "PipelineII": "665",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.954"
+        },
+        "Area": {
+          "BRAM_18K": "12",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "2",
+          "DSP": "896",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "248",
+          "FF": "70433",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "49",
+          "LUT": "70609",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "100",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "forwardPropagation_64_8_Pipeline_VITIS_LOOP_81_1": {
+        "Latency": {
+          "LatencyBest": "335",
+          "LatencyAvg": "335",
+          "LatencyWorst": "335",
+          "PipelineII": "9",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.954"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_81_1",
+            "TripCount": "8",
+            "Latency": "333",
+            "PipelineII": "1",
+            "PipelineDepth": "327"
+          }],
+        "Area": {
+          "FF": "12884",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "9",
+          "LUT": "2110",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "2",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "forwardPropagation_64_8_Pipeline_VITIS_LOOP_161_1": {
+        "Latency": {
+          "LatencyBest": "14",
+          "LatencyAvg": "14",
+          "LatencyWorst": "14",
+          "PipelineII": "9",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.709"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_161_1",
+            "TripCount": "8",
+            "Latency": "12",
+            "PipelineII": "1",
+            "PipelineDepth": "6"
+          }],
+        "Area": {
+          "FF": "147",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "2265",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "3",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "forwardPropagation_64_8_Pipeline_VITIS_LOOP_13_1": {
+        "Latency": {
+          "LatencyBest": "11",
+          "LatencyAvg": "11",
+          "LatencyWorst": "11",
+          "PipelineII": "9",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "5.233"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_13_1",
+            "TripCount": "8",
+            "Latency": "9",
+            "PipelineII": "1",
+            "PipelineDepth": "3"
+          }],
+        "Area": {
+          "FF": "81",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "199",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "forwardPropagation_64_8_s": {
+        "Latency": {
+          "LatencyBest": "374",
+          "LatencyAvg": "374",
+          "LatencyWorst": "374",
+          "PipelineII": "374",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.954"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "FF": "14410",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "10",
+          "LUT": "6291",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "8",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0"
+        }
+      },
+      "forwardPropagation_8_8_Pipeline_VITIS_LOOP_81_1": {
+        "Latency": {
+          "LatencyBest": "55",
+          "LatencyAvg": "55",
+          "LatencyWorst": "55",
+          "PipelineII": "9",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.709"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_81_1",
+            "TripCount": "8",
+            "Latency": "53",
+            "PipelineII": "1",
+            "PipelineDepth": "47"
+          }],
+        "Area": {
+          "FF": "1767",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "1",
+          "LUT": "17526",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "24",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "forwardPropagation_8_8_Pipeline_VITIS_LOOP_161_1": {
+        "Latency": {
+          "LatencyBest": "14",
+          "LatencyAvg": "14",
+          "LatencyWorst": "14",
+          "PipelineII": "9",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.709"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_161_1",
+            "TripCount": "8",
+            "Latency": "12",
+            "PipelineII": "1",
+            "PipelineDepth": "6"
+          }],
+        "Area": {
+          "FF": "147",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "2265",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "3",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "forwardPropagation_8_8_Pipeline_VITIS_LOOP_13_1": {
+        "Latency": {
+          "LatencyBest": "11",
+          "LatencyAvg": "11",
+          "LatencyWorst": "11",
+          "PipelineII": "9",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "5.233"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_13_1",
+            "TripCount": "8",
+            "Latency": "9",
+            "PipelineII": "1",
+            "PipelineDepth": "3"
+          }],
+        "Area": {
+          "FF": "81",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "199",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "forwardPropagation_8_8_s": {
+        "Latency": {
+          "LatencyBest": "94",
+          "LatencyAvg": "94",
+          "LatencyWorst": "94",
+          "PipelineII": "94",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.709"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "FF": "3293",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "2",
+          "LUT": "20699",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "29",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0"
+        }
+      },
+      "forwardPropagation_8_10_Pipeline_VITIS_LOOP_81_1": {
+        "Latency": {
+          "LatencyBest": "57",
+          "LatencyAvg": "57",
+          "LatencyWorst": "57",
+          "PipelineII": "11",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.954"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_81_1",
+            "TripCount": "10",
+            "Latency": "55",
+            "PipelineII": "1",
+            "PipelineDepth": "47"
+          }],
+        "Area": {
+          "FF": "1573",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "1",
+          "LUT": "318",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "forwardPropagation_8_10_Pipeline_VITIS_LOOP_161_1": {
+        "Latency": {
+          "LatencyBest": "16",
+          "LatencyAvg": "16",
+          "LatencyWorst": "16",
+          "PipelineII": "11",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.709"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_161_1",
+            "TripCount": "10",
+            "Latency": "14",
+            "PipelineII": "1",
+            "PipelineDepth": "6"
+          }],
+        "Area": {
+          "FF": "147",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "2265",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "3",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "forwardPropagation_8_10_Pipeline_VITIS_LOOP_180_4": {
+        "Latency": {
+          "LatencyBest": "62",
+          "LatencyAvg": "62",
+          "LatencyWorst": "62",
+          "PipelineII": "61",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "2.147"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_180_4",
+            "TripCount": "10",
+            "Latency": "60",
+            "PipelineII": "6",
+            "PipelineDepth": "7"
+          }],
+        "Area": {
+          "FF": "22",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "247",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "softmax_10_Pipeline_1": {
+        "Latency": {
+          "LatencyBest": "21",
+          "LatencyAvg": "21",
+          "LatencyWorst": "21",
+          "PipelineII": "20",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "4.932"
+        },
+        "Loops": [{
+            "Name": "Loop 1",
+            "TripCount": "9",
+            "Latency": "19",
+            "PipelineII": "2",
+            "PipelineDepth": "3"
+          }],
+        "Area": {
+          "FF": "209",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "321",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "softmax_10_Pipeline_VITIS_LOOP_89_1": {
+        "Latency": {
+          "LatencyBest": "64",
+          "LatencyAvg": "64",
+          "LatencyWorst": "64",
+          "PipelineII": "44",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.815"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_89_1",
+            "TripCount": "10",
+            "Latency": "62",
+            "PipelineII": "4",
+            "PipelineDepth": "27"
+          }],
+        "Area": {
+          "DSP": "26",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "7",
+          "FF": "1565",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "1",
+          "LUT": "2868",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "4",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "softmax_10_Pipeline_VITIS_LOOP_114_3": {
+        "Latency": {
+          "LatencyBest": "35",
+          "LatencyAvg": "35",
+          "LatencyWorst": "35",
+          "PipelineII": "11",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.288"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_114_3",
+            "TripCount": "10",
+            "Latency": "33",
+            "PipelineII": "1",
+            "PipelineDepth": "25"
+          }],
+        "Area": {
+          "FF": "249",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "94",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "softmax_10_s": {
+        "Latency": {
+          "LatencyBest": "128",
+          "LatencyAvg": "128",
+          "LatencyWorst": "128",
+          "PipelineII": "128",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.815"
+        },
+        "Area": {
+          "DSP": "26",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "7",
+          "FF": "2099",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "1",
+          "LUT": "3528",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "5",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "forwardPropagation_8_10_s": {
+        "Latency": {
+          "LatencyBest": "2103",
+          "LatencyAvg": "2103",
+          "LatencyWorst": "2103",
+          "PipelineII": "2103",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.954"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_177_3",
+            "TripCount": "10",
+            "Latency": "2010",
+            "PipelineII": "",
+            "PipelineDepth": "201"
+          }],
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "26",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "7",
+          "FF": "5296",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "3",
+          "LUT": "7502",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "10",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "accelerator_Pipeline_VITIS_LOOP_67_3": {
+        "Latency": {
+          "LatencyBest": "16",
+          "LatencyAvg": "16",
+          "LatencyWorst": "16",
+          "PipelineII": "11",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.709"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_67_3",
+            "TripCount": "10",
+            "Latency": "14",
+            "PipelineII": "1",
+            "PipelineDepth": "6"
+          }],
+        "Area": {
+          "FF": "852",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "2389",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "3",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "backProp_8_8_10_Pipeline_VITIS_LOOP_40_1": {
+        "Latency": {
+          "LatencyBest": "12",
+          "LatencyAvg": "12",
+          "LatencyWorst": "12",
+          "PipelineII": "11",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "1.846"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_40_1",
+            "TripCount": "10",
+            "Latency": "10",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          }],
+        "Area": {
+          "FF": "5131",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "3",
+          "LUT": "62",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "backProp_8_8_10_Pipeline_VITIS_LOOP_81_1": {
+        "Latency": {
+          "LatencyBest": "407",
+          "LatencyAvg": "407",
+          "LatencyWorst": "407",
+          "PipelineII": "406",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "8.221"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_81_1",
+            "TripCount": "8",
+            "Latency": "405",
+            "PipelineII": "50",
+            "PipelineDepth": "56"
+          }],
+        "Area": {
+          "FF": "2308",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "1",
+          "LUT": "1112",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "1",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "backProp_8_8_10_Pipeline_VITIS_LOOP_81_12": {
+        "Latency": {
+          "LatencyBest": "55",
+          "LatencyAvg": "55",
+          "LatencyWorst": "55",
+          "PipelineII": "9",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.709"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_81_1",
+            "TripCount": "8",
+            "Latency": "53",
+            "PipelineII": "1",
+            "PipelineDepth": "47"
+          }],
+        "Area": {
+          "FF": "1767",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "1",
+          "LUT": "17526",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "24",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "backProp_8_8_10_Pipeline_VITIS_LOOP_266_1": {
+        "Latency": {
+          "LatencyBest": "14",
+          "LatencyAvg": "14",
+          "LatencyWorst": "14",
+          "PipelineII": "9",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.709"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_266_1",
+            "TripCount": "8",
+            "Latency": "12",
+            "PipelineII": "1",
+            "PipelineDepth": "6"
+          }],
+        "Area": {
+          "FF": "147",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "2265",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "3",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "backProp_8_8_10_Pipeline_VITIS_LOOP_22_1": {
+        "Latency": {
+          "LatencyBest": "15",
+          "LatencyAvg": "15",
+          "LatencyWorst": "15",
+          "PipelineII": "9",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.888"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_22_1",
+            "TripCount": "8",
+            "Latency": "13",
+            "PipelineII": "1",
+            "PipelineDepth": "7"
+          }],
+        "Area": {
+          "FF": "88",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "175",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "backProp_8_8_10_Pipeline_VITIS_LOOP_284_3": {
+        "Latency": {
+          "LatencyBest": "43",
+          "LatencyAvg": "43",
+          "LatencyWorst": "43",
+          "PipelineII": "42",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.439"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_284_3",
+            "TripCount": "8",
+            "Latency": "41",
+            "PipelineII": "5",
+            "PipelineDepth": "7"
+          }],
+        "Area": {
+          "FF": "1048",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "370",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "backProp_8_8_10_s": {
+        "Latency": {
+          "LatencyBest": "532",
+          "LatencyAvg": "532",
+          "LatencyWorst": "532",
+          "PipelineII": "532",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "8.221"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "FF": "10828",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "7",
+          "LUT": "22161",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "31",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0"
+        }
+      },
+      "backProp_64_8_8_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_41_2": {
+        "Latency": {
+          "LatencyBest": "66",
+          "LatencyAvg": "66",
+          "LatencyWorst": "66",
+          "PipelineII": "65",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "4.730"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_40_1_VITIS_LOOP_41_2",
+            "TripCount": "64",
+            "Latency": "64",
+            "PipelineII": "1",
+            "PipelineDepth": "1"
+          }],
+        "Area": {
+          "FF": "17",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "2307",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "3",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "backProp_64_8_8_Pipeline_VITIS_LOOP_81_1": {
+        "Latency": {
+          "LatencyBest": "329",
+          "LatencyAvg": "329",
+          "LatencyWorst": "329",
+          "PipelineII": "328",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.756"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_81_1",
+            "TripCount": "8",
+            "Latency": "327",
+            "PipelineII": "40",
+            "PipelineDepth": "47"
+          }],
+        "Area": {
+          "FF": "2043",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "1",
+          "LUT": "605",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "backProp_64_8_8_Pipeline_VITIS_LOOP_81_13": {
+        "Latency": {
+          "LatencyBest": "335",
+          "LatencyAvg": "335",
+          "LatencyWorst": "335",
+          "PipelineII": "9",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.954"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_81_1",
+            "TripCount": "8",
+            "Latency": "333",
+            "PipelineII": "1",
+            "PipelineDepth": "327"
+          }],
+        "Area": {
+          "DSP": "28",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "7",
+          "FF": "14408",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "10",
+          "LUT": "4088",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "5",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "backProp_64_8_8_Pipeline_VITIS_LOOP_266_1": {
+        "Latency": {
+          "LatencyBest": "14",
+          "LatencyAvg": "14",
+          "LatencyWorst": "14",
+          "PipelineII": "9",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.709"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_266_1",
+            "TripCount": "8",
+            "Latency": "12",
+            "PipelineII": "1",
+            "PipelineDepth": "6"
+          }],
+        "Area": {
+          "FF": "147",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "2265",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "3",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "backProp_64_8_8_Pipeline_VITIS_LOOP_22_1": {
+        "Latency": {
+          "LatencyBest": "15",
+          "LatencyAvg": "15",
+          "LatencyWorst": "15",
+          "PipelineII": "9",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.888"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_22_1",
+            "TripCount": "8",
+            "Latency": "13",
+            "PipelineII": "1",
+            "PipelineDepth": "7"
+          }],
+        "Area": {
+          "FF": "88",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "175",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "backProp_64_8_8_Pipeline_VITIS_LOOP_284_3": {
+        "Latency": {
+          "LatencyBest": "43",
+          "LatencyAvg": "43",
+          "LatencyWorst": "43",
+          "PipelineII": "42",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.439"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_284_3",
+            "TripCount": "8",
+            "Latency": "41",
+            "PipelineII": "5",
+            "PipelineDepth": "7"
+          }],
+        "Area": {
+          "FF": "1048",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "370",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "backProp_64_8_8_s": {
+        "Latency": {
+          "LatencyBest": "734",
+          "LatencyAvg": "734",
+          "LatencyWorst": "734",
+          "PipelineII": "734",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.954"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "28",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "7",
+          "FF": "18602",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "13",
+          "LUT": "11793",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "16",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "backProp_64_64_8_Pipeline_VITIS_LOOP_40_1": {
+        "Latency": {
+          "LatencyBest": "10",
+          "LatencyAvg": "10",
+          "LatencyWorst": "10",
+          "PipelineII": "9",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "1.846"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_40_1",
+            "TripCount": "8",
+            "Latency": "8",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          }],
+        "Area": {
+          "FF": "32778",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "23",
+          "LUT": "62",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "matmul_64ul_8ul_1ul_Pipeline_VITIS_LOOP_81_1": {
+        "Latency": {
+          "LatencyBest": "112",
+          "LatencyAvg": "112",
+          "LatencyWorst": "112",
+          "PipelineII": "65",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "6.919"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_81_1",
+            "TripCount": "64",
+            "Latency": "110",
+            "PipelineII": "1",
+            "PipelineDepth": "48"
+          }],
+        "Area": {
+          "FF": "2220",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "1",
+          "LUT": "2507",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "3",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "matmul_64ul_8ul_1ul_s": {
+        "Latency": {
+          "LatencyBest": "145",
+          "LatencyAvg": "145",
+          "LatencyWorst": "145",
+          "PipelineII": "145",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "6.919"
+        },
+        "Area": {
+          "FF": "2255",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "1",
+          "LUT": "3168",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "4",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "backProp_64_64_8_Pipeline_VITIS_LOOP_266_1": {
+        "Latency": {
+          "LatencyBest": "72",
+          "LatencyAvg": "72",
+          "LatencyWorst": "72",
+          "PipelineII": "65",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "6.919"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_266_1",
+            "TripCount": "64",
+            "Latency": "70",
+            "PipelineII": "1",
+            "PipelineDepth": "8"
+          }],
+        "Area": {
+          "FF": "349",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "2270",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "3",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "backProp_64_64_8_Pipeline_VITIS_LOOP_22_1": {
+        "Latency": {
+          "LatencyBest": "72",
+          "LatencyAvg": "72",
+          "LatencyWorst": "72",
+          "PipelineII": "65",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.098"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_22_1",
+            "TripCount": "64",
+            "Latency": "70",
+            "PipelineII": "1",
+            "PipelineDepth": "8"
+          }],
+        "Area": {
+          "FF": "160",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "180",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "backProp_64_64_8_Pipeline_VITIS_LOOP_284_3": {
+        "Latency": {
+          "LatencyBest": "71",
+          "LatencyAvg": "71",
+          "LatencyWorst": "71",
+          "PipelineII": "65",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.954"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_284_3",
+            "TripCount": "64",
+            "Latency": "69",
+            "PipelineII": "1",
+            "PipelineDepth": "7"
+          }],
+        "Area": {
+          "FF": "90",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "99",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "backProp_64_64_8_s": {
+        "Latency": {
+          "LatencyBest": "750",
+          "LatencyAvg": "750",
+          "LatencyWorst": "750",
+          "PipelineII": "750",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.954"
+        },
+        "Area": {
+          "BRAM_18K": "10",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "2",
+          "DSP": "896",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "248",
+          "FF": "97499",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "69",
+          "LUT": "72623",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "102",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "accelerator_Pipeline_VITIS_LOOP_40_1": {
+        "Latency": {
+          "LatencyBest": "10",
+          "LatencyAvg": "10",
+          "LatencyWorst": "10",
+          "PipelineII": "9",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "2.147"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_40_1",
+            "TripCount": "8",
+            "Latency": "8",
+            "PipelineII": "1",
+            "PipelineDepth": "1"
+          }],
+        "Area": {
+          "FF": "6",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "94",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "matmul_10ul_1ul_8ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2": {
+        "Latency": {
+          "LatencyBest": "92",
+          "LatencyAvg": "92",
+          "LatencyWorst": "92",
+          "PipelineII": "81",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.709"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_81_1_VITIS_LOOP_82_2",
+            "TripCount": "80",
+            "Latency": "90",
+            "PipelineII": "1",
+            "PipelineDepth": "12"
+          }],
+        "Area": {
+          "FF": "845",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "563",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "matmul_10ul_1ul_8ul_s": {
+        "Latency": {
+          "LatencyBest": "98",
+          "LatencyAvg": "98",
+          "LatencyWorst": "98",
+          "PipelineII": "98",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.709"
+        },
+        "Area": {
+          "FF": "853",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "1552",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "2",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "accelerator_Pipeline_VITIS_LOOP_323_1": {
+        "Latency": {
+          "LatencyBest": "71",
+          "LatencyAvg": "71",
+          "LatencyWorst": "71",
+          "PipelineII": "66",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "8.384"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_323_1",
+            "TripCount": "10",
+            "Latency": "69",
+            "PipelineII": "6",
+            "PipelineDepth": "16"
+          }],
+        "Area": {
+          "FF": "4445",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "3",
+          "LUT": "8845",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "12",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "accelerator_Pipeline_VITIS_LOOP_40_14": {
+        "Latency": {
+          "LatencyBest": "10",
+          "LatencyAvg": "10",
+          "LatencyWorst": "10",
+          "PipelineII": "9",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "2.147"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_40_1",
+            "TripCount": "8",
+            "Latency": "8",
+            "PipelineII": "1",
+            "PipelineDepth": "1"
+          }],
+        "Area": {
+          "FF": "6",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "94",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "matmul_8ul_1ul_8ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2": {
+        "Latency": {
+          "LatencyBest": "77",
+          "LatencyAvg": "77",
+          "LatencyWorst": "77",
+          "PipelineII": "65",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.439"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_81_1_VITIS_LOOP_82_2",
+            "TripCount": "64",
+            "Latency": "75",
+            "PipelineII": "1",
+            "PipelineDepth": "13"
+          }],
+        "Area": {
+          "DSP": "14",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "3",
+          "FF": "1141",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "1256",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "1",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "matmul_8ul_1ul_8ul_s": {
+        "Latency": {
+          "LatencyBest": "110",
+          "LatencyAvg": "110",
+          "LatencyWorst": "110",
+          "PipelineII": "110",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.439"
+        },
+        "Area": {
+          "DSP": "14",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "3",
+          "FF": "1176",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "1773",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "2",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "accelerator_Pipeline_VITIS_LOOP_323_1_VITIS_LOOP_324_2": {
+        "Latency": {
+          "LatencyBest": "393",
+          "LatencyAvg": "393",
+          "LatencyWorst": "393",
+          "PipelineII": "390",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.954"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_323_1_VITIS_LOOP_324_2",
+            "TripCount": "64",
+            "Latency": "391",
+            "PipelineII": "6",
+            "PipelineDepth": "14"
+          }],
+        "Area": {
+          "FF": "10672",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "7",
+          "LUT": "27706",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "39",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "accelerator_Pipeline_VITIS_LOOP_40_15": {
+        "Latency": {
+          "LatencyBest": "66",
+          "LatencyAvg": "66",
+          "LatencyWorst": "66",
+          "PipelineII": "65",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "2.819"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_40_1",
+            "TripCount": "64",
+            "Latency": "64",
+            "PipelineII": "1",
+            "PipelineDepth": "1"
+          }],
+        "Area": {
+          "FF": "9",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "329",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "matmul_8ul_1ul_64ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2": {
+        "Latency": {
+          "LatencyBest": "524",
+          "LatencyAvg": "524",
+          "LatencyWorst": "524",
+          "PipelineII": "513",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.954"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_81_1_VITIS_LOOP_82_2",
+            "TripCount": "512",
+            "Latency": "522",
+            "PipelineII": "1",
+            "PipelineDepth": "12"
+          }],
+        "Area": {
+          "FF": "4665",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "3",
+          "LUT": "2589",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "3",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "matmul_8ul_1ul_64ul_s": {
+        "Latency": {
+          "LatencyBest": "529",
+          "LatencyAvg": "529",
+          "LatencyWorst": "529",
+          "PipelineII": "529",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.954"
+        },
+        "Area": {
+          "FF": "4672",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "3",
+          "LUT": "9428",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "13",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "accelerator_Pipeline_VITIS_LOOP_323_16": {
+        "Latency": {
+          "LatencyBest": "61",
+          "LatencyAvg": "61",
+          "LatencyWorst": "61",
+          "PipelineII": "54",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "8.361"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_323_1",
+            "TripCount": "8",
+            "Latency": "59",
+            "PipelineII": "6",
+            "PipelineDepth": "18"
+          }],
+        "Area": {
+          "FF": "21402",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "15",
+          "LUT": "9467",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "13",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "accelerator_Pipeline_VITIS_LOOP_40_17": {
+        "Latency": {
+          "LatencyBest": "66",
+          "LatencyAvg": "66",
+          "LatencyWorst": "66",
+          "PipelineII": "65",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "2.819"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_40_1",
+            "TripCount": "64",
+            "Latency": "64",
+            "PipelineII": "1",
+            "PipelineDepth": "1"
+          }],
+        "Area": {
+          "FF": "9",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "329",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "matmul_64ul_1ul_64ul_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2": {
+        "Latency": {
+          "LatencyBest": "4109",
+          "LatencyAvg": "4109",
+          "LatencyWorst": "4109",
+          "PipelineII": "4097",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.954"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_81_1_VITIS_LOOP_82_2",
+            "TripCount": "4096",
+            "Latency": "4107",
+            "PipelineII": "1",
+            "PipelineDepth": "13"
+          }],
+        "Area": {
+          "FF": "4929",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "3",
+          "LUT": "2557",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "3",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "matmul_64ul_1ul_64ul_s": {
+        "Latency": {
+          "LatencyBest": "4142",
+          "LatencyAvg": "4142",
+          "LatencyWorst": "4142",
+          "PipelineII": "4142",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "7.954"
+        },
+        "Area": {
+          "FF": "4964",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "3",
+          "LUT": "25646",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "36",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "accelerator_Pipeline_VITIS_LOOP_323_18": {
+        "Latency": {
+          "LatencyBest": "397",
+          "LatencyAvg": "397",
+          "LatencyWorst": "397",
+          "PipelineII": "390",
+          "PipelineDepth": "",
+          "PipelineType": "loop auto-rewind (delay=0 clock cycles(s))"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "8.387"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_323_1",
+            "TripCount": "64",
+            "Latency": "395",
+            "PipelineII": "6",
+            "PipelineDepth": "18"
+          }],
+        "Area": {
+          "FF": "31724",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "22",
+          "LUT": "20181",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "28",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "accelerator": {
+        "Latency": {
+          "LatencyBest": "882866201",
+          "LatencyAvg": "882866201",
+          "LatencyWorst": "882866201",
+          "PipelineII": "882866202",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.00",
+          "Estimate": "8.387"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_36_1",
+            "TripCount": "50",
+            "Latency": "882866200",
+            "PipelineII": "",
+            "PipelineDepth": "17657324",
+            "Loops": [{
+                "Name": "VITIS_LOOP_38_2",
+                "TripCount": "1797",
+                "Latency": "17657322",
+                "PipelineII": "",
+                "PipelineDepth": "9826"
+              }]
+          }],
+        "Area": {
+          "BRAM_18K": "290",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "67",
+          "DSP": "2756",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "765",
+          "FF": "388789",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "275",
+          "LUT": "402933",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "571",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      }
+    }
+  },
+  "GenerateBdFiles": "0",
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2025-03-21 12:19:48 -0500",
+    "ToolName": "vitis_hls",
+    "ToolVersion": "2024.1"
+  }
+}

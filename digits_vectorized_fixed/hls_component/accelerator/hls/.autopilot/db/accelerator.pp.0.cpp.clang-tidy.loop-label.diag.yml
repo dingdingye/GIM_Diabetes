@@ -1,0 +1,202 @@
+---
+MainSourceFile:  'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls/.autopilot/db/accelerator.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_40_1:  '
+    FileOffset:      40
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\layer.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1270299
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_40_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_41_2:  '
+    FileOffset:      41
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\layer.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1270343
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_41_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_81_1:  '
+    FileOffset:      81
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\layer.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1271119
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_81_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_82_2:  '
+    FileOffset:      82
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\layer.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1271165
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_82_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_83_3:  '
+    FileOffset:      83
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\layer.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1271215
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_83_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_121_1:  '
+    FileOffset:      121
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\layer.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1271755
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_121_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_122_2:  '
+    FileOffset:      122
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\layer.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1271796
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_122_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_124_3:  '
+    FileOffset:      124
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\layer.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1271874
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_124_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_161_1:  '
+    FileOffset:      161
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\layer.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1272488
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_161_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_162_2:  '
+    FileOffset:      162
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\layer.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1272538
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_162_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_177_3:  '
+    FileOffset:      177
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\layer.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1272877
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_177_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_180_4:  '
+    FileOffset:      180
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\layer.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1273000
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_180_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_266_1:  '
+    FileOffset:      266
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\layer.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1274375
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_266_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_267_2:  '
+    FileOffset:      267
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\layer.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1274422
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_267_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_284_3:  '
+    FileOffset:      284
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\layer.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1274819
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_284_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_285_4:  '
+    FileOffset:      285
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\layer.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1274870
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_285_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_323_1:  '
+    FileOffset:      323
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\layer.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1275823
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_323_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_324_2:  '
+    FileOffset:      324
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\layer.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1275868
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_324_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_36_1:  '
+    FileOffset:      36
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1379867
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_36_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_38_2:  '
+    FileOffset:      38
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1379943
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_38_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_67_3:  '
+    FileOffset:      67
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1381037
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_67_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_68_4:  '
+    FileOffset:      68
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\accelerator.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1381101
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_68_4: '
+...

@@ -1,0 +1,1000 @@
+
+
+================================================================
+== Vitis HLS Report for 'backProp_64_8_8_s'
+================================================================
+* Date:           Fri Mar 21 12:04:55 2025
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        accelerator
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sfvc784-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.954 ns|     2.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      734|      734|  7.340 us|  7.340 us|  734|  734|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------------------------------------------+----------------------------------------------------------+---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+        |                                                                      |                                                          |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                   |
+        |                               Instance                               |                          Module                          |   min   |   max   |    min   |    max   | min | max |                      Type                     |
+        +----------------------------------------------------------------------+----------------------------------------------------------+---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+        |grp_backProp_64_8_8_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_41_2_fu_1008  |backProp_64_8_8_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_41_2  |       66|       66|  0.660 us|  0.660 us|   65|   65|  loop auto-rewind stp(delay=0 clock cycles(s))|
+        |grp_backProp_64_8_8_Pipeline_VITIS_LOOP_81_13_fu_1022                 |backProp_64_8_8_Pipeline_VITIS_LOOP_81_13                 |      335|      335|  3.350 us|  3.350 us|    9|    9|  loop auto-rewind stp(delay=0 clock cycles(s))|
+        |grp_backProp_64_8_8_Pipeline_VITIS_LOOP_81_1_fu_1157                  |backProp_64_8_8_Pipeline_VITIS_LOOP_81_1                  |      329|      329|  3.290 us|  3.290 us|  328|  328|  loop auto-rewind stp(delay=0 clock cycles(s))|
+        |grp_backProp_64_8_8_Pipeline_VITIS_LOOP_266_1_fu_1201                 |backProp_64_8_8_Pipeline_VITIS_LOOP_266_1                 |       14|       14|  0.140 us|  0.140 us|    9|    9|  loop auto-rewind stp(delay=0 clock cycles(s))|
+        |grp_backProp_64_8_8_Pipeline_VITIS_LOOP_22_1_fu_1209                  |backProp_64_8_8_Pipeline_VITIS_LOOP_22_1                  |       15|       15|  0.150 us|  0.150 us|    9|    9|  loop auto-rewind stp(delay=0 clock cycles(s))|
+        |grp_backProp_64_8_8_Pipeline_VITIS_LOOP_284_3_fu_1215                 |backProp_64_8_8_Pipeline_VITIS_LOOP_284_3                 |       43|       43|  0.430 us|  0.430 us|   42|   42|  loop auto-rewind stp(delay=0 clock cycles(s))|
+        +----------------------------------------------------------------------+----------------------------------------------------------+---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      4|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|   28|   17751|   9810|    -|
+|Memory           |        0|    -|     832|     88|    0|
+|Multiplexer      |        -|    -|       0|   1891|    -|
+|Register         |        -|    -|      19|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|   28|   18602|  11793|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      432|  360|  141120|  70560|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    7|      13|     16|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------------------------------------------+----------------------------------------------------------+---------+----+-------+------+-----+
+    |                               Instance                               |                          Module                          | BRAM_18K| DSP|   FF  |  LUT | URAM|
+    +----------------------------------------------------------------------+----------------------------------------------------------+---------+----+-------+------+-----+
+    |grp_backProp_64_8_8_Pipeline_VITIS_LOOP_22_1_fu_1209                  |backProp_64_8_8_Pipeline_VITIS_LOOP_22_1                  |        0|   0|     88|   175|    0|
+    |grp_backProp_64_8_8_Pipeline_VITIS_LOOP_266_1_fu_1201                 |backProp_64_8_8_Pipeline_VITIS_LOOP_266_1                 |        0|   0|    147|  2265|    0|
+    |grp_backProp_64_8_8_Pipeline_VITIS_LOOP_284_3_fu_1215                 |backProp_64_8_8_Pipeline_VITIS_LOOP_284_3                 |        0|   0|   1048|   370|    0|
+    |grp_backProp_64_8_8_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_41_2_fu_1008  |backProp_64_8_8_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_41_2  |        0|   0|     17|  2307|    0|
+    |grp_backProp_64_8_8_Pipeline_VITIS_LOOP_81_1_fu_1157                  |backProp_64_8_8_Pipeline_VITIS_LOOP_81_1                  |        0|   0|   2043|   605|    0|
+    |grp_backProp_64_8_8_Pipeline_VITIS_LOOP_81_13_fu_1022                 |backProp_64_8_8_Pipeline_VITIS_LOOP_81_13                 |        0|  28|  14408|  4088|    0|
+    +----------------------------------------------------------------------+----------------------------------------------------------+---------+----+-------+------+-----+
+    |Total                                                                 |                                                          |        0|  28|  17751|  9810|    0|
+    +----------------------------------------------------------------------+----------------------------------------------------------+---------+----+-------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +------------------+-----------------------------------------------+---------+-----+----+-----+------+-----+------+-------------+
+    |      Memory      |                     Module                    | BRAM_18K|  FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +------------------+-----------------------------------------------+---------+-----+----+-----+------+-----+------+-------------+
+    |w_l_plus1_T_U     |backProp_64_8_8_s_w_l_plus1_T_RAM_AUTO_1R1W    |        0|   64|   8|    0|     8|   64|     1|          512|
+    |w_l_plus1_T_64_U  |backProp_64_8_8_s_w_l_plus1_T_RAM_AUTO_1R1W    |        0|   64|   8|    0|     8|   64|     1|          512|
+    |w_l_plus1_T_65_U  |backProp_64_8_8_s_w_l_plus1_T_RAM_AUTO_1R1W    |        0|   64|   8|    0|     8|   64|     1|          512|
+    |w_l_plus1_T_66_U  |backProp_64_8_8_s_w_l_plus1_T_RAM_AUTO_1R1W    |        0|   64|   8|    0|     8|   64|     1|          512|
+    |w_l_plus1_T_67_U  |backProp_64_8_8_s_w_l_plus1_T_RAM_AUTO_1R1W    |        0|   64|   8|    0|     8|   64|     1|          512|
+    |w_l_plus1_T_68_U  |backProp_64_8_8_s_w_l_plus1_T_RAM_AUTO_1R1W    |        0|   64|   8|    0|     8|   64|     1|          512|
+    |w_l_plus1_T_69_U  |backProp_64_8_8_s_w_l_plus1_T_RAM_AUTO_1R1W    |        0|   64|   8|    0|     8|   64|     1|          512|
+    |w_l_plus1_T_70_U  |backProp_64_8_8_s_w_l_plus1_T_RAM_AUTO_1R1W    |        0|   64|   8|    0|     8|   64|     1|          512|
+    |d_activation_0_U  |backProp_64_8_8_s_w_l_plus1_T_RAM_AUTO_1R1W    |        0|   64|   8|    0|     8|   64|     1|          512|
+    |C_0_U             |forwardPropagation_64_8_s_C_0_RAM_AUTO_1R1W    |        0|  128|   8|    0|     8|   64|     1|          512|
+    |net_0_U           |forwardPropagation_64_8_s_net_0_RAM_AUTO_1R1W  |        0|  128|   8|    0|     8|   64|     1|          512|
+    +------------------+-----------------------------------------------+---------+-----+----+-----+------+-----+------+-------------+
+    |Total             |                                               |        0|  832|  88|    0|    88|  704|    11|         5632|
+    +------------------+-----------------------------------------------+---------+-----+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |          Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |ap_block_state6_on_subcall_done  |        or|   0|  0|   2|           1|           1|
+    |ap_block_state8_on_subcall_done  |        or|   0|  0|   2|           1|           1|
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |Total                            |          |   0|  0|   4|           2|           2|
+    +---------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |C_0_address0             |  14|          3|    3|          9|
+    |C_0_address0_local       |  26|          5|    3|         15|
+    |C_0_address1             |   9|          2|    3|          6|
+    |C_0_address1_local       |  26|          5|    3|         15|
+    |C_0_ce0                  |  14|          3|    1|          3|
+    |C_0_ce1                  |   9|          2|    1|          2|
+    |C_0_d0                   |   9|          2|   64|        128|
+    |C_0_we0                  |   9|          2|    1|          2|
+    |ap_NS_fsm                |  65|         14|    1|         14|
+    |d_activation_0_address0  |  14|          3|    3|          9|
+    |d_activation_0_ce0       |  14|          3|    1|          3|
+    |d_activation_0_we0       |   9|          2|    1|          2|
+    |grp_fu_1902_ce           |  14|          3|    1|          3|
+    |grp_fu_1902_opcode       |  14|          3|    2|          6|
+    |grp_fu_1902_p0           |  14|          3|   64|        192|
+    |grp_fu_1902_p1           |  14|          3|   64|        192|
+    |grp_fu_1906_ce           |  20|          4|    1|          4|
+    |grp_fu_1906_p0           |  20|          4|   64|        256|
+    |grp_fu_1906_p1           |  20|          4|   64|        256|
+    |grp_fu_1910_ce           |  14|          3|    1|          3|
+    |grp_fu_1910_opcode       |  14|          3|    2|          6|
+    |grp_fu_1910_p0           |  14|          3|   64|        192|
+    |grp_fu_1910_p1           |  14|          3|   64|        192|
+    |grp_fu_1914_ce           |   9|          2|    1|          2|
+    |grp_fu_1918_ce           |   9|          2|    1|          2|
+    |grp_fu_1922_ce           |   9|          2|    1|          2|
+    |grp_fu_1926_ce           |   9|          2|    1|          2|
+    |grp_fu_1930_ce           |   9|          2|    1|          2|
+    |grp_fu_1934_ce           |   9|          2|    1|          2|
+    |grp_fu_1938_ce           |   9|          2|    1|          2|
+    |grp_fu_1942_ce           |   9|          2|    1|          2|
+    |grp_fu_1946_ce           |   9|          2|    1|          2|
+    |grp_fu_1950_ce           |   9|          2|    1|          2|
+    |grp_fu_1954_ce           |   9|          2|    1|          2|
+    |grp_fu_1958_ce           |   9|          2|    1|          2|
+    |grp_fu_1962_ce           |   9|          2|    1|          2|
+    |grp_fu_1966_ce           |   9|          2|    1|          2|
+    |grp_fu_1970_ce           |   9|          2|    1|          2|
+    |grp_fu_1974_ce           |   9|          2|    1|          2|
+    |grp_fu_1978_ce           |   9|          2|    1|          2|
+    |grp_fu_1982_ce           |   9|          2|    1|          2|
+    |grp_fu_1986_ce           |   9|          2|    1|          2|
+    |grp_fu_1990_ce           |   9|          2|    1|          2|
+    |grp_fu_1994_ce           |   9|          2|    1|          2|
+    |grp_fu_1998_ce           |   9|          2|    1|          2|
+    |grp_fu_2002_ce           |   9|          2|    1|          2|
+    |grp_fu_2006_ce           |   9|          2|    1|          2|
+    |grp_fu_2010_ce           |   9|          2|    1|          2|
+    |grp_fu_2014_ce           |   9|          2|    1|          2|
+    |grp_fu_2018_ce           |   9|          2|    1|          2|
+    |grp_fu_2022_ce           |   9|          2|    1|          2|
+    |grp_fu_2026_ce           |   9|          2|    1|          2|
+    |grp_fu_2030_ce           |   9|          2|    1|          2|
+    |grp_fu_2034_ce           |   9|          2|    1|          2|
+    |grp_fu_2038_ce           |   9|          2|    1|          2|
+    |grp_fu_2042_ce           |   9|          2|    1|          2|
+    |grp_fu_2046_ce           |   9|          2|    1|          2|
+    |grp_fu_2050_ce           |   9|          2|    1|          2|
+    |grp_fu_2054_ce           |   9|          2|    1|          2|
+    |grp_fu_2058_ce           |   9|          2|    1|          2|
+    |grp_fu_2062_ce           |   9|          2|    1|          2|
+    |grp_fu_2066_ce           |   9|          2|    1|          2|
+    |grp_fu_2070_ce           |   9|          2|    1|          2|
+    |grp_fu_2074_ce           |   9|          2|    1|          2|
+    |grp_fu_2078_ce           |   9|          2|    1|          2|
+    |grp_fu_2082_ce           |   9|          2|    1|          2|
+    |grp_fu_2086_ce           |   9|          2|    1|          2|
+    |grp_fu_2090_ce           |   9|          2|    1|          2|
+    |grp_fu_2094_ce           |   9|          2|    1|          2|
+    |grp_fu_2098_ce           |   9|          2|    1|          2|
+    |grp_fu_2102_ce           |   9|          2|    1|          2|
+    |grp_fu_2106_ce           |   9|          2|    1|          2|
+    |grp_fu_2110_ce           |   9|          2|    1|          2|
+    |grp_fu_2114_ce           |   9|          2|    1|          2|
+    |grp_fu_2118_ce           |   9|          2|    1|          2|
+    |grp_fu_2122_ce           |   9|          2|    1|          2|
+    |grp_fu_2126_ce           |   9|          2|    1|          2|
+    |grp_fu_2130_ce           |   9|          2|    1|          2|
+    |grp_fu_2134_ce           |   9|          2|    1|          2|
+    |grp_fu_2138_ce           |   9|          2|    1|          2|
+    |grp_fu_2142_ce           |   9|          2|    1|          2|
+    |grp_fu_2146_ce           |   9|          2|    1|          2|
+    |grp_fu_2150_ce           |   9|          2|    1|          2|
+    |grp_fu_2154_ce           |   9|          2|    1|          2|
+    |grp_fu_2158_ce           |   9|          2|    1|          2|
+    |grp_fu_2162_ce           |   9|          2|    1|          2|
+    |grp_fu_2166_ce           |   9|          2|    1|          2|
+    |grp_fu_2170_ce           |   9|          2|    1|          2|
+    |grp_fu_2174_ce           |   9|          2|    1|          2|
+    |grp_fu_2178_ce           |   9|          2|    1|          2|
+    |grp_fu_2182_ce           |   9|          2|    1|          2|
+    |grp_fu_2186_ce           |   9|          2|    1|          2|
+    |grp_fu_2190_ce           |   9|          2|    1|          2|
+    |grp_fu_2194_ce           |   9|          2|    1|          2|
+    |grp_fu_2198_ce           |   9|          2|    1|          2|
+    |grp_fu_2202_ce           |   9|          2|    1|          2|
+    |grp_fu_2206_ce           |   9|          2|    1|          2|
+    |grp_fu_2210_ce           |   9|          2|    1|          2|
+    |grp_fu_2214_ce           |   9|          2|    1|          2|
+    |grp_fu_2218_ce           |   9|          2|    1|          2|
+    |grp_fu_2222_ce           |   9|          2|    1|          2|
+    |grp_fu_2226_ce           |   9|          2|    1|          2|
+    |grp_fu_2230_ce           |   9|          2|    1|          2|
+    |grp_fu_2234_ce           |   9|          2|    1|          2|
+    |grp_fu_2238_ce           |   9|          2|    1|          2|
+    |grp_fu_2242_ce           |   9|          2|    1|          2|
+    |grp_fu_2246_ce           |   9|          2|    1|          2|
+    |grp_fu_2250_ce           |   9|          2|    1|          2|
+    |grp_fu_2254_ce           |   9|          2|    1|          2|
+    |grp_fu_2258_ce           |   9|          2|    1|          2|
+    |grp_fu_2262_ce           |   9|          2|    1|          2|
+    |grp_fu_2266_ce           |   9|          2|    1|          2|
+    |grp_fu_2270_ce           |   9|          2|    1|          2|
+    |grp_fu_2274_ce           |   9|          2|    1|          2|
+    |grp_fu_2278_ce           |   9|          2|    1|          2|
+    |grp_fu_2282_ce           |   9|          2|    1|          2|
+    |grp_fu_2286_ce           |   9|          2|    1|          2|
+    |grp_fu_2290_ce           |   9|          2|    1|          2|
+    |grp_fu_2294_ce           |   9|          2|    1|          2|
+    |grp_fu_2298_ce           |   9|          2|    1|          2|
+    |grp_fu_2302_ce           |   9|          2|    1|          2|
+    |grp_fu_2306_ce           |   9|          2|    1|          2|
+    |grp_fu_2310_ce           |   9|          2|    1|          2|
+    |grp_fu_2314_ce           |   9|          2|    1|          2|
+    |grp_fu_2318_ce           |   9|          2|    1|          2|
+    |grp_fu_2322_ce           |   9|          2|    1|          2|
+    |grp_fu_2326_ce           |   9|          2|    1|          2|
+    |grp_fu_2330_ce           |   9|          2|    1|          2|
+    |grp_fu_2334_ce           |   9|          2|    1|          2|
+    |grp_fu_2338_ce           |   9|          2|    1|          2|
+    |grp_fu_2342_ce           |   9|          2|    1|          2|
+    |grp_fu_2346_ce           |   9|          2|    1|          2|
+    |grp_fu_2350_ce           |   9|          2|    1|          2|
+    |grp_fu_2354_ce           |   9|          2|    1|          2|
+    |grp_fu_2358_ce           |   9|          2|    1|          2|
+    |grp_fu_2362_ce           |   9|          2|    1|          2|
+    |grp_fu_2366_ce           |   9|          2|    1|          2|
+    |grp_fu_2370_ce           |   9|          2|    1|          2|
+    |grp_fu_2374_ce           |   9|          2|    1|          2|
+    |grp_fu_2378_ce           |   9|          2|    1|          2|
+    |grp_fu_2382_ce           |   9|          2|    1|          2|
+    |grp_fu_2386_ce           |   9|          2|    1|          2|
+    |grp_fu_2390_ce           |   9|          2|    1|          2|
+    |grp_fu_2394_ce           |   9|          2|    1|          2|
+    |grp_fu_2398_ce           |   9|          2|    1|          2|
+    |grp_fu_2402_ce           |   9|          2|    1|          2|
+    |net_0_address0           |  14|          3|    3|          9|
+    |net_0_address0_local     |  26|          5|    3|         15|
+    |net_0_address1_local     |  26|          5|    3|         15|
+    |net_0_ce0                |  14|          3|    1|          3|
+    |net_0_d0                 |   9|          2|   64|        128|
+    |net_0_we0                |   9|          2|    1|          2|
+    |w_l_plus1_T_64_address0  |  14|          3|    3|          9|
+    |w_l_plus1_T_64_ce0       |  14|          3|    1|          3|
+    |w_l_plus1_T_64_we0       |   9|          2|    1|          2|
+    |w_l_plus1_T_65_address0  |  14|          3|    3|          9|
+    |w_l_plus1_T_65_ce0       |  14|          3|    1|          3|
+    |w_l_plus1_T_65_we0       |   9|          2|    1|          2|
+    |w_l_plus1_T_66_address0  |  14|          3|    3|          9|
+    |w_l_plus1_T_66_ce0       |  14|          3|    1|          3|
+    |w_l_plus1_T_66_we0       |   9|          2|    1|          2|
+    |w_l_plus1_T_67_address0  |  14|          3|    3|          9|
+    |w_l_plus1_T_67_ce0       |  14|          3|    1|          3|
+    |w_l_plus1_T_67_we0       |   9|          2|    1|          2|
+    |w_l_plus1_T_68_address0  |  14|          3|    3|          9|
+    |w_l_plus1_T_68_ce0       |  14|          3|    1|          3|
+    |w_l_plus1_T_68_we0       |   9|          2|    1|          2|
+    |w_l_plus1_T_69_address0  |  14|          3|    3|          9|
+    |w_l_plus1_T_69_ce0       |  14|          3|    1|          3|
+    |w_l_plus1_T_69_we0       |   9|          2|    1|          2|
+    |w_l_plus1_T_70_address0  |  14|          3|    3|          9|
+    |w_l_plus1_T_70_ce0       |  14|          3|    1|          3|
+    |w_l_plus1_T_70_we0       |   9|          2|    1|          2|
+    |w_l_plus1_T_address0     |  14|          3|    3|          9|
+    |w_l_plus1_T_ce0          |  14|          3|    1|          3|
+    |w_l_plus1_T_we0          |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |1891|        412|  714|       2040|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                        Name                                       | FF | LUT| Bits| Const Bits|
+    +-----------------------------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                                          |  13|   0|   13|          0|
+    |grp_backProp_64_8_8_Pipeline_VITIS_LOOP_22_1_fu_1209_ap_start_reg                  |   1|   0|    1|          0|
+    |grp_backProp_64_8_8_Pipeline_VITIS_LOOP_266_1_fu_1201_ap_start_reg                 |   1|   0|    1|          0|
+    |grp_backProp_64_8_8_Pipeline_VITIS_LOOP_284_3_fu_1215_ap_start_reg                 |   1|   0|    1|          0|
+    |grp_backProp_64_8_8_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_41_2_fu_1008_ap_start_reg  |   1|   0|    1|          0|
+    |grp_backProp_64_8_8_Pipeline_VITIS_LOOP_81_13_fu_1022_ap_start_reg                 |   1|   0|    1|          0|
+    |grp_backProp_64_8_8_Pipeline_VITIS_LOOP_81_1_fu_1157_ap_start_reg                  |   1|   0|    1|          0|
+    +-----------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                              |  19|   0|   19|          0|
+    +-----------------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+------+------------+--------------------+--------------+
+|       RTL Ports       | Dir | Bits |  Protocol  |    Source Object   |    C Type    |
++-----------------------+-----+------+------------+--------------------+--------------+
+|ap_clk                 |   in|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|ap_rst                 |   in|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|ap_start               |   in|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|ap_done                |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|ap_idle                |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|ap_ready               |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8501_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8501_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8501_p_opcode   |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8501_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8501_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8589_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8589_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8589_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8589_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8497_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8497_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8497_p_opcode   |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8497_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8497_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8505_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8505_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8505_p_opcode   |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8505_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8505_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8509_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8509_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8509_p_opcode   |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8509_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8509_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8513_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8513_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8513_p_opcode   |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8513_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8513_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8517_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8517_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8517_p_opcode   |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8517_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8517_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8521_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8521_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8521_p_opcode   |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8521_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8521_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8525_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8525_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8525_p_opcode   |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8525_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8525_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8529_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8529_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8529_p_opcode   |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8529_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8529_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8533_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8533_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8533_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8533_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8533_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8537_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8537_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8537_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8537_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8537_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8541_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8541_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8541_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8541_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8541_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8545_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8545_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8545_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8545_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8545_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8549_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8549_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8549_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8549_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8549_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8553_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8553_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8553_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8553_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8553_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8557_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8557_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8557_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8557_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8557_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8561_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8561_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8561_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8561_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8561_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8565_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8565_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8565_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8565_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8565_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8569_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8569_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8569_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8569_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8569_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8573_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8573_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8573_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8573_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8573_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8577_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8577_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8577_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8577_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8577_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8837_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8837_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8837_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8837_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8837_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8841_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8841_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8841_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8841_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8841_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8593_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8593_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8593_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8593_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8597_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8597_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8597_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8597_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8601_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8601_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8601_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8601_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8605_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8605_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8605_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8605_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8609_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8609_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8609_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8609_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8613_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8613_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8613_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8613_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8617_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8617_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8617_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8617_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8621_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8621_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8621_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8621_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8625_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8625_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8625_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8625_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8629_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8629_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8629_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8629_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8633_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8633_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8633_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8633_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8637_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8637_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8637_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8637_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8641_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8641_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8641_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8641_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8645_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8645_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8645_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8645_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8649_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8649_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8649_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8649_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8653_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8653_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8653_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8653_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8657_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8657_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8657_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8657_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8661_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8661_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8661_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8661_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8665_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8665_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8665_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8665_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8669_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8669_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8669_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8669_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8673_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8673_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8673_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8673_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8677_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8677_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8677_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8677_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8681_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8681_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8681_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8681_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8685_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8685_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8685_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8685_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8689_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8689_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8689_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8689_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8693_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8693_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8693_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8693_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8697_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8697_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8697_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8697_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8701_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8701_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8701_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8701_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8705_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8705_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8705_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8705_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8709_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8709_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8709_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8709_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8713_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8713_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8713_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8713_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8717_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8717_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8717_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8717_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8721_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8721_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8721_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8721_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8725_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8725_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8725_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8725_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8729_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8729_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8729_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8729_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8733_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8733_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8733_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8733_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8737_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8737_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8737_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8737_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8741_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8741_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8741_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8741_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8745_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8745_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8745_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8745_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8749_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8749_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8749_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8749_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8753_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8753_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8753_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8753_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8757_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8757_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8757_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8757_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8761_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8761_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8761_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8761_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8765_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8765_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8765_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8765_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8769_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8769_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8769_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8769_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8773_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8773_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8773_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8773_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8777_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8777_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8777_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8777_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8781_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8781_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8781_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8781_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8785_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8785_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8785_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8785_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8789_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8789_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8789_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8789_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8793_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8793_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8793_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8793_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8797_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8797_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8797_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8797_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8801_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8801_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8801_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8801_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8805_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8805_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8805_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8805_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8809_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8809_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8809_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8809_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8813_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8813_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8813_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8813_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8817_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8817_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8817_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8817_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8821_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8821_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8821_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8821_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8825_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8825_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8825_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8825_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8829_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8829_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8829_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8829_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8833_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8833_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8833_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8833_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8845_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8845_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8845_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8845_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8845_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8849_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8849_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8849_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8849_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8849_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8853_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8853_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8853_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8853_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8853_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8857_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8857_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8857_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8857_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8857_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8861_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8861_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8861_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8861_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8861_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8865_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8865_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8865_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8865_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8865_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8869_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8869_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8869_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8869_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8869_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8873_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8873_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8873_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8873_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8873_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8877_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8877_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8877_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8877_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8877_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8881_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8881_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8881_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8881_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8881_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8885_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8885_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8885_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8885_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8885_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8889_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8889_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8889_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8889_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8889_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8893_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8893_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8893_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8893_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8893_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8897_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8897_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8897_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8897_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8897_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8901_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8901_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8901_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8901_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8901_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8905_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8905_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8905_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8905_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8905_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8909_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8909_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8909_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8909_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8909_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8913_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8913_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8913_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8913_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8913_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8917_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8917_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8917_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8917_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8917_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8921_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8921_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8921_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8921_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8921_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8925_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8925_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8925_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8925_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8925_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8929_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8929_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8929_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8929_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8929_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8933_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8933_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8933_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8933_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8933_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8937_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8937_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8937_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8937_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8937_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8941_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8941_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8941_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8941_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8941_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8945_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8945_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8945_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8945_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8945_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8949_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8949_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8949_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8949_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8949_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8953_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8953_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8953_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8953_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8953_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8957_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8957_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8957_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8957_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8957_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8961_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8961_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8961_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8961_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8961_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8965_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8965_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8965_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8965_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8965_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8969_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8969_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8969_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8969_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8969_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8973_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8973_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8973_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8973_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8973_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8977_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8977_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8977_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8977_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8977_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8981_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8981_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8981_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8981_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8981_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8985_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8985_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8985_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8985_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8985_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8989_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8989_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8989_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8989_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8989_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8993_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8993_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8993_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8993_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8993_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8997_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8997_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8997_p_opcode   |  out|     2|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8997_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8997_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8489_p_din0     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8489_p_din1     |  out|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8489_p_opcode   |  out|     5|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8489_p_dout0    |   in|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_8489_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_9001_p_din0     |  out|    32|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_9001_p_dout0    |   in|    64|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|grp_fu_9001_p_ce       |  out|     1|  ap_ctrl_hs|  backProp<64, 8, 8>|  return value|
+|agg_result_0_0         |  out|    64|      ap_vld|      agg_result_0_0|       pointer|
+|agg_result_0_0_ap_vld  |  out|     1|      ap_vld|      agg_result_0_0|       pointer|
+|agg_result_1_0         |  out|    64|      ap_vld|      agg_result_1_0|       pointer|
+|agg_result_1_0_ap_vld  |  out|     1|      ap_vld|      agg_result_1_0|       pointer|
+|agg_result_2_0         |  out|    64|      ap_vld|      agg_result_2_0|       pointer|
+|agg_result_2_0_ap_vld  |  out|     1|      ap_vld|      agg_result_2_0|       pointer|
+|agg_result_3_0         |  out|    64|      ap_vld|      agg_result_3_0|       pointer|
+|agg_result_3_0_ap_vld  |  out|     1|      ap_vld|      agg_result_3_0|       pointer|
+|agg_result_4_0         |  out|    64|      ap_vld|      agg_result_4_0|       pointer|
+|agg_result_4_0_ap_vld  |  out|     1|      ap_vld|      agg_result_4_0|       pointer|
+|agg_result_5_0         |  out|    64|      ap_vld|      agg_result_5_0|       pointer|
+|agg_result_5_0_ap_vld  |  out|     1|      ap_vld|      agg_result_5_0|       pointer|
+|agg_result_6_0         |  out|    64|      ap_vld|      agg_result_6_0|       pointer|
+|agg_result_6_0_ap_vld  |  out|     1|      ap_vld|      agg_result_6_0|       pointer|
+|agg_result_7_0         |  out|    64|      ap_vld|      agg_result_7_0|       pointer|
+|agg_result_7_0_ap_vld  |  out|     1|      ap_vld|      agg_result_7_0|       pointer|
+|w_l_plus1_val          |   in|  4096|     ap_none|       w_l_plus1_val|        scalar|
+|p_read                 |   in|    64|     ap_none|              p_read|        scalar|
+|p_read1                |   in|    64|     ap_none|             p_read1|        scalar|
+|p_read2                |   in|    64|     ap_none|             p_read2|        scalar|
+|p_read3                |   in|    64|     ap_none|             p_read3|        scalar|
+|p_read4                |   in|    64|     ap_none|             p_read4|        scalar|
+|p_read5                |   in|    64|     ap_none|             p_read5|        scalar|
+|p_read6                |   in|    64|     ap_none|             p_read6|        scalar|
+|p_read7                |   in|    64|     ap_none|             p_read7|        scalar|
+|p_read8                |   in|    64|     ap_none|             p_read8|        scalar|
+|p_read9                |   in|    64|     ap_none|             p_read9|        scalar|
+|p_read10               |   in|    64|     ap_none|            p_read10|        scalar|
+|p_read11               |   in|    64|     ap_none|            p_read11|        scalar|
+|p_read12               |   in|    64|     ap_none|            p_read12|        scalar|
+|p_read13               |   in|    64|     ap_none|            p_read13|        scalar|
+|p_read14               |   in|    64|     ap_none|            p_read14|        scalar|
+|p_read15               |   in|    64|     ap_none|            p_read15|        scalar|
+|p_read16               |   in|    64|     ap_none|            p_read16|        scalar|
+|p_read17               |   in|    64|     ap_none|            p_read17|        scalar|
+|p_read18               |   in|    64|     ap_none|            p_read18|        scalar|
+|p_read19               |   in|    64|     ap_none|            p_read19|        scalar|
+|p_read20               |   in|    64|     ap_none|            p_read20|        scalar|
+|p_read21               |   in|    64|     ap_none|            p_read21|        scalar|
+|p_read22               |   in|    64|     ap_none|            p_read22|        scalar|
+|p_read23               |   in|    64|     ap_none|            p_read23|        scalar|
+|p_read24               |   in|    64|     ap_none|            p_read24|        scalar|
+|p_read25               |   in|    64|     ap_none|            p_read25|        scalar|
+|p_read26               |   in|    64|     ap_none|            p_read26|        scalar|
+|p_read27               |   in|    64|     ap_none|            p_read27|        scalar|
+|p_read28               |   in|    64|     ap_none|            p_read28|        scalar|
+|p_read29               |   in|    64|     ap_none|            p_read29|        scalar|
+|p_read30               |   in|    64|     ap_none|            p_read30|        scalar|
+|p_read31               |   in|    64|     ap_none|            p_read31|        scalar|
+|p_read32               |   in|    64|     ap_none|            p_read32|        scalar|
+|p_read33               |   in|    64|     ap_none|            p_read33|        scalar|
+|p_read34               |   in|    64|     ap_none|            p_read34|        scalar|
+|p_read35               |   in|    64|     ap_none|            p_read35|        scalar|
+|p_read36               |   in|    64|     ap_none|            p_read36|        scalar|
+|p_read37               |   in|    64|     ap_none|            p_read37|        scalar|
+|p_read38               |   in|    64|     ap_none|            p_read38|        scalar|
+|p_read39               |   in|    64|     ap_none|            p_read39|        scalar|
+|p_read40               |   in|    64|     ap_none|            p_read40|        scalar|
+|p_read41               |   in|    64|     ap_none|            p_read41|        scalar|
+|p_read42               |   in|    64|     ap_none|            p_read42|        scalar|
+|p_read43               |   in|    64|     ap_none|            p_read43|        scalar|
+|p_read44               |   in|    64|     ap_none|            p_read44|        scalar|
+|p_read45               |   in|    64|     ap_none|            p_read45|        scalar|
+|p_read46               |   in|    64|     ap_none|            p_read46|        scalar|
+|p_read47               |   in|    64|     ap_none|            p_read47|        scalar|
+|p_read48               |   in|    64|     ap_none|            p_read48|        scalar|
+|p_read49               |   in|    64|     ap_none|            p_read49|        scalar|
+|p_read50               |   in|    64|     ap_none|            p_read50|        scalar|
+|p_read51               |   in|    64|     ap_none|            p_read51|        scalar|
+|p_read52               |   in|    64|     ap_none|            p_read52|        scalar|
+|p_read53               |   in|    64|     ap_none|            p_read53|        scalar|
+|p_read54               |   in|    64|     ap_none|            p_read54|        scalar|
+|p_read55               |   in|    64|     ap_none|            p_read55|        scalar|
+|p_read56               |   in|    64|     ap_none|            p_read56|        scalar|
+|p_read57               |   in|    64|     ap_none|            p_read57|        scalar|
+|p_read58               |   in|    64|     ap_none|            p_read58|        scalar|
+|p_read59               |   in|    64|     ap_none|            p_read59|        scalar|
+|p_read60               |   in|    64|     ap_none|            p_read60|        scalar|
+|p_read61               |   in|    64|     ap_none|            p_read61|        scalar|
+|p_read62               |   in|    64|     ap_none|            p_read62|        scalar|
+|p_read63               |   in|    64|     ap_none|            p_read63|        scalar|
+|p_read64               |   in|    64|     ap_none|            p_read64|        scalar|
+|p_read65               |   in|    64|     ap_none|            p_read65|        scalar|
+|p_read66               |   in|    64|     ap_none|            p_read66|        scalar|
+|p_read67               |   in|    64|     ap_none|            p_read67|        scalar|
+|p_read68               |   in|    64|     ap_none|            p_read68|        scalar|
+|p_read69               |   in|    64|     ap_none|            p_read69|        scalar|
+|p_read70               |   in|    64|     ap_none|            p_read70|        scalar|
+|p_read71               |   in|    64|     ap_none|            p_read71|        scalar|
+|weights_l1_address0    |  out|     3|   ap_memory|          weights_l1|         array|
+|weights_l1_ce0         |  out|     1|   ap_memory|          weights_l1|         array|
+|weights_l1_q0          |   in|  4096|   ap_memory|          weights_l1|         array|
+|biases_val             |   in|   512|     ap_none|          biases_val|        scalar|
++-----------------------+-----+------+------------+--------------------+--------------+
+

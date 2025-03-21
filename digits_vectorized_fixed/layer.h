@@ -71,7 +71,7 @@ std::array<std::array<fixed_16, COLS_B>, ROWS_A> matmul(
         printf(" - Left matrix (A) dimensions: [%zu x %zu]\n", ROWS_A, COLS_A);
         printf(" - Right matrix (B) dimensions: [%zu x %zu]\n", B.size(), COLS_B);
         printf("Error: Matrix dimensions do not match for multiplication.");
-        throw std::invalid_argument("Matrix dimensions do not match for multiplication.");
+        // throw std::invalid_argument("Matrix dimensions do not match for multiplication.");
     }
 
     // Initialize the result matrix C with size (rowsA x colsB), filled with 0
@@ -215,7 +215,8 @@ std::array<std::array<fixed_16, 1>, OUT_SIZE> forwardPropagation(
     } else if (activation == 2) {
         output = sigmoid<OUT_SIZE>(net);
     } else {
-        throw std::runtime_error("Incorrect activation given");
+        printf("Error: Incorrect activation given.")
+        // throw std::runtime_error("Incorrect activation given");
     }
     
     return output;
@@ -279,7 +280,8 @@ std::array<std::array<fixed_16, 1>, IN_SIZE> backProp(
         // }
         
         if (temp.size() != d_activation.size()){
-            throw std::runtime_error("Backprop temp matrix and d activation vector size mismatch");
+            printf("Error: Backprop temp matrix and d activation vector size mismatch");
+            // throw std::runtime_error("Backprop temp matrix and d activation vector size mismatch");
         }
         for (int ii = 0; ii < IN_SIZE; ++ii) {
             for (int jj = 0; jj < temp[0].size(); ++jj) {
@@ -288,7 +290,8 @@ std::array<std::array<fixed_16, 1>, IN_SIZE> backProp(
         }
     
     } else {
-        throw std::runtime_error("Haven't supported any other activation functions for backprop"); 
+        printf("Error: Haven't supported any other activation functions for backprop.");
+        // throw std::runtime_error("Haven't supported any other activation functions for backprop"); 
     }
     return temp;
 }
@@ -315,7 +318,8 @@ void updateWeightBias (
 
     if (update_temp_mat.size() != weights.size() ||
         update_temp_mat[0].size() != weights[0].size()) {  
-            throw std::runtime_error("Weight update matrices sizes do not match\n");
+            printf("Error: Weight update matrices sizes do not match.");
+            // throw std::runtime_error("Weight update matrices sizes do not match\n");
     }
 
     for (int i = 0; i < OUT_SIZE; ++i) {

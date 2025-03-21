@@ -1,0 +1,67 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'accelerator'" level="0">
+<item name = "Date">Fri Mar 21 12:04:26 2025
+</item>
+<item name = "Version">2024.1 (Build 5069499 on May 21 2024)</item>
+<item name = "Project">accelerator</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sfvc784-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 8.387 ns, 2.00 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">882866201, 882866201, 8.829 sec, 8.829 sec, 882866202, 882866202, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_forwardPropagation_64_64_s_fu_1720">forwardPropagation_64_64_s, 665, 665, 6.650 us, 6.650 us, 665, 665, no</column>
+<column name="grp_accelerator_Pipeline_VITIS_LOOP_40_17_fu_1792">accelerator_Pipeline_VITIS_LOOP_40_17, 66, 66, 0.660 us, 0.660 us, 65, 65, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_forwardPropagation_64_8_s_fu_1861">forwardPropagation_64_8_s, 374, 374, 3.740 us, 3.740 us, 374, 374, no</column>
+<column name="grp_accelerator_Pipeline_VITIS_LOOP_40_15_fu_1933">accelerator_Pipeline_VITIS_LOOP_40_15, 66, 66, 0.660 us, 0.660 us, 65, 65, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_forwardPropagation_8_8_s_fu_2002">forwardPropagation_8_8_s, 94, 94, 0.940 us, 0.940 us, 94, 94, no</column>
+<column name="grp_accelerator_Pipeline_VITIS_LOOP_40_14_fu_2018">accelerator_Pipeline_VITIS_LOOP_40_14, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_forwardPropagation_8_10_s_fu_2031">forwardPropagation_8_10_s, 2103, 2103, 21.030 us, 21.030 us, 2103, 2103, no</column>
+<column name="grp_accelerator_Pipeline_VITIS_LOOP_40_1_fu_2048">accelerator_Pipeline_VITIS_LOOP_40_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_accelerator_Pipeline_VITIS_LOOP_67_3_fu_2061">accelerator_Pipeline_VITIS_LOOP_67_3, 16, 16, 0.160 us, 0.160 us, 11, 11, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_backProp_8_8_10_s_fu_2078">backProp_8_8_10_s, 532, 532, 5.320 us, 5.320 us, 532, 532, no</column>
+<column name="grp_matmul_10ul_1ul_8ul_s_fu_2112">matmul_10ul_1ul_8ul_s, 98, 98, 0.980 us, 0.980 us, 98, 98, no</column>
+<column name="grp_backProp_64_8_8_s_fu_2135">backProp_64_8_8_s, 734, 734, 7.340 us, 7.340 us, 734, 734, no</column>
+<column name="grp_accelerator_Pipeline_VITIS_LOOP_323_1_fu_2223">accelerator_Pipeline_VITIS_LOOP_323_1, 71, 71, 0.710 us, 0.710 us, 66, 66, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_matmul_8ul_1ul_8ul_s_fu_2249">matmul_8ul_1ul_8ul_s, 110, 110, 1.100 us, 1.100 us, 110, 110, no</column>
+<column name="grp_backProp_64_64_8_s_fu_2263">backProp_64_64_8_s, 750, 750, 7.500 us, 7.500 us, 750, 750, no</column>
+<column name="grp_accelerator_Pipeline_VITIS_LOOP_323_1_VITIS_LOOP_324_2_fu_2345">accelerator_Pipeline_VITIS_LOOP_323_1_VITIS_LOOP_324_2, 393, 393, 3.930 us, 3.930 us, 390, 390, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_matmul_8ul_1ul_64ul_s_fu_2362">matmul_8ul_1ul_64ul_s, 529, 529, 5.290 us, 5.290 us, 529, 529, no</column>
+<column name="grp_accelerator_Pipeline_VITIS_LOOP_323_16_fu_2439">accelerator_Pipeline_VITIS_LOOP_323_16, 61, 61, 0.610 us, 0.610 us, 54, 54, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_matmul_64ul_1ul_64ul_s_fu_2519">matmul_64ul_1ul_64ul_s, 4142, 4142, 41.420 us, 41.420 us, 4142, 4142, no</column>
+<column name="grp_accelerator_Pipeline_VITIS_LOOP_323_18_fu_2589">accelerator_Pipeline_VITIS_LOOP_323_18, 397, 397, 3.970 us, 3.970 us, 390, 390, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_36_1">882866200, 882866200, 17657324, -, -, 50, no</column>
+<column name=" + VITIS_LOOP_38_2">17657322, 17657322, 9826, -, -, 1797, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

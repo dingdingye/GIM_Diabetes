@@ -1,0 +1,236 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">,  10246, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll,  14399, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,  13595, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,  12511, user inline pragmas are applied</column>
+            <column name="">(4) simplification,  12204, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition,  12238, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,  12191, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,  12661, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,  12631, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,  12649, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,  12649, loop and instruction simplification</column>
+            <column name="">(2) parallelization,  17637, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition, 347454 *, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,  22525, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,  22549, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,  21443, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="accelerator" col1="accelerator.cpp:13" col2="10246" col3="12204" col4="12649" col5="22525" col6="21443">
+                    <row id="22" col0="forwardPropagation&lt;64, 64&gt;" col1="layer.h:148" col2="1725" col3="758" col4="772" col5="1264" col6="1143">
+                        <row id="23" col0="matmul&lt;64, 64, 1&gt;" col1="layer.h:55" col2="135" col3="149" col4="157" col5="714" col6="590">
+                            <row id="60" col0="printf" col1="stdio.h:345" col2="52" col2_disp="   52 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="28" col0="relu&lt;64&gt;" col1="activation.cpp:11" col2="56" col3="140" col4="140" col5="140" col6="144"/>
+                        <row id="67" col0="transpose&lt;64, 1&gt;" col1="layer.h:34" col2="45" col3="" col4="" col5="" col6=""/>
+                        <row id="68" col0="softmax&lt;64&gt;" col1="activation.cpp:58" col2="1230" col3="" col4="" col5="" col6="">
+                            <row id="13" col0="max_element&lt;std::array&lt;double, 1&gt; *, (lambda at ../activation.cpp:84:9)&gt;" col1="stl_algo.h:5699" col2="50" col3="" col4="" col5="" col6="">
+                                <row id="25" col0="__iter_comp_iter&lt;(lambda at ../activation.cpp:84:9)&gt;" col1="predefined_ops.h:149" col2="9" col3="" col4="" col5="" col6="">
+                                    <row id="8" col0="move&lt;(lambda at ../activation.cpp:84:9) &amp;&gt;" col1="move.h:99" col2="1" col3="" col4="" col5="" col6=""/>
+                                    <row id="61" col0="_Iter_comp_iter" col1="predefined_ops.h:135" col2="4" col3="" col4="" col5="" col6="">
+                                        <row id="8" col0="move&lt;(lambda at ../activation.cpp:84:9) &amp;&gt;" col1="move.h:99" col2="1" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                                <row id="1" col0="__max_element&lt;std::array&lt;double, 1&gt; *, __gnu_cxx::__ops::_Iter_comp_iter&lt;(lambda at ../activation.cpp:84:9)&gt; &gt;" col1="stl_algo.h:5653" col2="36" col3="" col4="" col5="" col6="">
+                                    <row id="30" col0="operator()&lt;std::array&lt;double, 1&gt; *, std::array&lt;double, 1&gt; *&gt;" col1="predefined_ops.h:142" col2="19" col3="" col4="" col5="" col6="">
+                                        <row id="3" col0="operator()" col1="activation.cpp:84" col2="16" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                            </row>
+                        </row>
+                        <row id="43" col0="sigmoid&lt;64&gt;" col1="activation.cpp:38" col2="40" col3="" col4="" col5="" col6=""/>
+                        <row id="60" col0="printf" col1="stdio.h:345" col2="13" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="20" col0="forwardPropagation&lt;64, 8&gt;" col1="layer.h:148" col2="1725" col3="122" col4="136" col5="692" col6="571">
+                        <row id="27" col0="matmul&lt;8, 64, 1&gt;" col1="layer.h:55" col2="135" col3="" col4="" col5="" col6="">
+                            <row id="60" col0="printf" col1="stdio.h:345" col2="52" col2_disp="   52 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="53" col0="relu&lt;8&gt;" col1="activation.cpp:11" col2="56" col3="" col4="" col5="" col6=""/>
+                        <row id="59" col0="transpose&lt;8, 1&gt;" col1="layer.h:34" col2="45" col3="" col4="" col5="" col6=""/>
+                        <row id="31" col0="softmax&lt;8&gt;" col1="activation.cpp:58" col2="1230" col3="" col4="" col5="" col6="">
+                            <row id="13" col0="max_element&lt;std::array&lt;double, 1&gt; *, (lambda at ../activation.cpp:84:9)&gt;" col1="stl_algo.h:5699" col2="50" col3="" col4="" col5="" col6="">
+                                <row id="25" col0="__iter_comp_iter&lt;(lambda at ../activation.cpp:84:9)&gt;" col1="predefined_ops.h:149" col2="9" col3="" col4="" col5="" col6="">
+                                    <row id="8" col0="move&lt;(lambda at ../activation.cpp:84:9) &amp;&gt;" col1="move.h:99" col2="1" col3="" col4="" col5="" col6=""/>
+                                    <row id="61" col0="_Iter_comp_iter" col1="predefined_ops.h:135" col2="4" col3="" col4="" col5="" col6="">
+                                        <row id="8" col0="move&lt;(lambda at ../activation.cpp:84:9) &amp;&gt;" col1="move.h:99" col2="1" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                                <row id="1" col0="__max_element&lt;std::array&lt;double, 1&gt; *, __gnu_cxx::__ops::_Iter_comp_iter&lt;(lambda at ../activation.cpp:84:9)&gt; &gt;" col1="stl_algo.h:5653" col2="36" col3="" col4="" col5="" col6="">
+                                    <row id="30" col0="operator()&lt;std::array&lt;double, 1&gt; *, std::array&lt;double, 1&gt; *&gt;" col1="predefined_ops.h:142" col2="19" col3="" col4="" col5="" col6="">
+                                        <row id="3" col0="operator()" col1="activation.cpp:84" col2="16" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                            </row>
+                        </row>
+                        <row id="38" col0="sigmoid&lt;8&gt;" col1="activation.cpp:38" col2="40" col3="" col4="" col5="" col6=""/>
+                        <row id="60" col0="printf" col1="stdio.h:345" col2="13" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="15" col0="forwardPropagation&lt;8, 8&gt;" col1="layer.h:148" col2="1725" col3="122" col4="137" col5="203" col6="194">
+                        <row id="26" col0="matmul&lt;8, 8, 1&gt;" col1="layer.h:55" col2="135" col3="" col4="" col5="" col6="">
+                            <row id="60" col0="printf" col1="stdio.h:345" col2="52" col2_disp="   52 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="53" col0="relu&lt;8&gt;" col1="activation.cpp:11" col2="56" col3="" col4="" col5="" col6=""/>
+                        <row id="59" col0="transpose&lt;8, 1&gt;" col1="layer.h:34" col2="45" col3="" col4="" col5="" col6=""/>
+                        <row id="31" col0="softmax&lt;8&gt;" col1="activation.cpp:58" col2="1230" col3="" col4="" col5="" col6="">
+                            <row id="13" col0="max_element&lt;std::array&lt;double, 1&gt; *, (lambda at ../activation.cpp:84:9)&gt;" col1="stl_algo.h:5699" col2="50" col3="" col4="" col5="" col6="">
+                                <row id="25" col0="__iter_comp_iter&lt;(lambda at ../activation.cpp:84:9)&gt;" col1="predefined_ops.h:149" col2="9" col3="" col4="" col5="" col6="">
+                                    <row id="8" col0="move&lt;(lambda at ../activation.cpp:84:9) &amp;&gt;" col1="move.h:99" col2="1" col3="" col4="" col5="" col6=""/>
+                                    <row id="61" col0="_Iter_comp_iter" col1="predefined_ops.h:135" col2="4" col3="" col4="" col5="" col6="">
+                                        <row id="8" col0="move&lt;(lambda at ../activation.cpp:84:9) &amp;&gt;" col1="move.h:99" col2="1" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                                <row id="1" col0="__max_element&lt;std::array&lt;double, 1&gt; *, __gnu_cxx::__ops::_Iter_comp_iter&lt;(lambda at ../activation.cpp:84:9)&gt; &gt;" col1="stl_algo.h:5653" col2="36" col3="" col4="" col5="" col6="">
+                                    <row id="30" col0="operator()&lt;std::array&lt;double, 1&gt; *, std::array&lt;double, 1&gt; *&gt;" col1="predefined_ops.h:142" col2="19" col3="" col4="" col5="" col6="">
+                                        <row id="3" col0="operator()" col1="activation.cpp:84" col2="16" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                            </row>
+                        </row>
+                        <row id="38" col0="sigmoid&lt;8&gt;" col1="activation.cpp:38" col2="40" col3="" col4="" col5="" col6=""/>
+                        <row id="60" col0="printf" col1="stdio.h:345" col2="13" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="49" col0="forwardPropagation&lt;8, 10&gt;" col1="layer.h:148" col2="1725" col3="271" col4="289" col5="360" col6="362">
+                        <row id="24" col0="matmul&lt;10, 8, 1&gt;" col1="layer.h:55" col2="135" col3="" col4="" col5="" col6="">
+                            <row id="60" col0="printf" col1="stdio.h:345" col2="52" col2_disp="   52 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="7" col0="relu&lt;10&gt;" col1="activation.cpp:11" col2="56" col3="" col4="" col5="" col6=""/>
+                        <row id="33" col0="transpose&lt;10, 1&gt;" col1="layer.h:34" col2="45" col3="" col4="" col5="" col6=""/>
+                        <row id="58" col0="softmax&lt;10&gt;" col1="activation.cpp:58" col2="1230" col3="75" col4="77" col5="75" col6="87">
+                            <row id="13" col0="max_element&lt;std::array&lt;double, 1&gt; *, (lambda at ../activation.cpp:84:9)&gt;" col1="stl_algo.h:5699" col2="50" col3="" col4="" col5="" col6="">
+                                <row id="25" col0="__iter_comp_iter&lt;(lambda at ../activation.cpp:84:9)&gt;" col1="predefined_ops.h:149" col2="9" col3="" col4="" col5="" col6="">
+                                    <row id="8" col0="move&lt;(lambda at ../activation.cpp:84:9) &amp;&gt;" col1="move.h:99" col2="1" col3="" col4="" col5="" col6=""/>
+                                    <row id="61" col0="_Iter_comp_iter" col1="predefined_ops.h:135" col2="4" col3="" col4="" col5="" col6="">
+                                        <row id="8" col0="move&lt;(lambda at ../activation.cpp:84:9) &amp;&gt;" col1="move.h:99" col2="1" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                                <row id="1" col0="__max_element&lt;std::array&lt;double, 1&gt; *, __gnu_cxx::__ops::_Iter_comp_iter&lt;(lambda at ../activation.cpp:84:9)&gt; &gt;" col1="stl_algo.h:5653" col2="36" col3="" col4="" col5="" col6="">
+                                    <row id="30" col0="operator()&lt;std::array&lt;double, 1&gt; *, std::array&lt;double, 1&gt; *&gt;" col1="predefined_ops.h:142" col2="19" col3="" col4="" col5="" col6="">
+                                        <row id="3" col0="operator()" col1="activation.cpp:84" col2="16" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                            </row>
+                        </row>
+                        <row id="37" col0="sigmoid&lt;10&gt;" col1="activation.cpp:38" col2="40" col3="" col4="" col5="" col6=""/>
+                        <row id="60" col0="printf" col1="stdio.h:345" col2="13" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="62" col0="max_element&lt;std::array&lt;double, 1&gt; *, (lambda at ../accelerator.cpp:54:17)&gt;" col1="stl_algo.h:5699" col2="50" col3="" col4="" col5="" col6="">
+                        <row id="21" col0="__iter_comp_iter&lt;(lambda at ../accelerator.cpp:54:17)&gt;" col1="predefined_ops.h:149" col2="9" col3="" col4="" col5="" col6="">
+                            <row id="29" col0="move&lt;(lambda at ../accelerator.cpp:54:17) &amp;&gt;" col1="move.h:99" col2="1" col3="" col4="" col5="" col6=""/>
+                            <row id="61" col0="_Iter_comp_iter" col1="predefined_ops.h:135" col2="4" col3="" col4="" col5="" col6="">
+                                <row id="29" col0="move&lt;(lambda at ../accelerator.cpp:54:17) &amp;&gt;" col1="move.h:99" col2="1" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="5" col0="__max_element&lt;std::array&lt;double, 1&gt; *, __gnu_cxx::__ops::_Iter_comp_iter&lt;(lambda at ../accelerator.cpp:54:17)&gt; &gt;" col1="stl_algo.h:5653" col2="36" col3="" col4="" col5="" col6="">
+                            <row id="30" col0="operator()&lt;std::array&lt;double, 1&gt; *, std::array&lt;double, 1&gt; *&gt;" col1="predefined_ops.h:142" col2="19" col3="" col4="" col5="" col6="">
+                                <row id="42" col0="operator()" col1="accelerator.cpp:54" col2="16" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                    </row>
+                    <row id="63" col0="distance&lt;std::array&lt;double, 1&gt; *&gt;" col1="stl_iterator_base_funcs.h:138" col2="13" col3="" col4="" col5="" col6="">
+                        <row id="56" col0="__iterator_category&lt;std::array&lt;double, 1&gt; *&gt;" col1="stl_iterator_base_types.h:205" col2="1" col3="" col4="" col5="" col6=""/>
+                        <row id="10" col0="__distance&lt;std::array&lt;double, 1&gt; *&gt;" col1="stl_iterator_base_funcs.h:98" col2="5" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="54" col0="max_element&lt;const double *&gt;" col1="stl_algo.h:5674" col2="26" col3="" col4="" col5="" col6="">
+                        <row id="34" col0="__iter_less_iter" col1="predefined_ops.h:48" col2="1" col3="" col4="" col5="" col6=""/>
+                        <row id="2" col0="__max_element&lt;const double *, __gnu_cxx::__ops::_Iter_less_iter&gt;" col1="stl_algo.h:5653" col2="21" col3="" col4="" col5="" col6="">
+                            <row id="66" col0="operator()&lt;const double *, const double *&gt;" col1="predefined_ops.h:42" col2="4" col3="" col4="" col5="" col6=""/>
+                        </row>
+                    </row>
+                    <row id="51" col0="distance&lt;const double *&gt;" col1="stl_iterator_base_funcs.h:138" col2="13" col3="" col4="" col5="" col6="">
+                        <row id="39" col0="__iterator_category&lt;const double *&gt;" col1="stl_iterator_base_types.h:205" col2="1" col3="" col4="" col5="" col6=""/>
+                        <row id="65" col0="__distance&lt;const double *&gt;" col1="stl_iterator_base_funcs.h:98" col2="5" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="12" col0="backProp&lt;8, 8, 10&gt;" col1="layer.h:249" col2="525" col3="145" col4="168" col5="549" col6="552">
+                        <row id="32" col0="transpose&lt;10, 8&gt;" col1="layer.h:34" col2="45" col3="" col4="" col5="" col6=""/>
+                        <row id="14" col0="matmul&lt;8, 10, 1&gt;" col1="layer.h:55" col2="135" col3="" col4="" col5="" col6="">
+                            <row id="60" col0="printf" col1="stdio.h:345" col2="52" col2_disp="   52 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="26" col0="matmul&lt;8, 8, 1&gt;" col1="layer.h:55" col2="135" col3="" col4="" col5="" col6="">
+                            <row id="60" col0="printf" col1="stdio.h:345" col2="52" col2_disp="   52 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="48" col0="derivative_relu&lt;8&gt;" col1="activation.cpp:20" col2="40" col3="" col4="" col5="" col6=""/>
+                        <row id="60" col0="printf" col1="stdio.h:345" col2="13" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="9" col0="backProp&lt;64, 8, 8&gt;" col1="layer.h:249" col2="525" col3="145" col4="168" col5="904" col6="812">
+                        <row id="18" col0="transpose&lt;8, 8&gt;" col1="layer.h:34" col2="45" col3="" col4="" col5="" col6=""/>
+                        <row id="26" col0="matmul&lt;8, 8, 1&gt;" col1="layer.h:55" col2="135" col3="" col4="" col5="" col6="">
+                            <row id="60" col0="printf" col1="stdio.h:345" col2="52" col2_disp="   52 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="27" col0="matmul&lt;8, 64, 1&gt;" col1="layer.h:55" col2="135" col3="" col4="" col5="" col6="">
+                            <row id="60" col0="printf" col1="stdio.h:345" col2="52" col2_disp="   52 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="48" col0="derivative_relu&lt;8&gt;" col1="activation.cpp:20" col2="40" col3="" col4="" col5="" col6=""/>
+                        <row id="60" col0="printf" col1="stdio.h:345" col2="13" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="55" col0="backProp&lt;64, 64, 8&gt;" col1="layer.h:249" col2="525" col3="485" col4="507" col5="2941" col6="3728">
+                        <row id="19" col0="transpose&lt;8, 64&gt;" col1="layer.h:34" col2="45" col3="" col4="" col5="" col6=""/>
+                        <row id="47" col0="matmul&lt;64, 8, 1&gt;" col1="layer.h:55" col2="135" col3="149" col4="150" col5="689" col6="693">
+                            <row id="60" col0="printf" col1="stdio.h:345" col2="52" col2_disp="   52 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="23" col0="matmul&lt;64, 64, 1&gt;" col1="layer.h:55" col2="135" col3="149" col4="157" col5="714" col6="590">
+                            <row id="60" col0="printf" col1="stdio.h:345" col2="52" col2_disp="   52 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="16" col0="derivative_relu&lt;64&gt;" col1="activation.cpp:20" col2="40" col3="" col4="" col5="" col6=""/>
+                        <row id="60" col0="printf" col1="stdio.h:345" col2="13" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="35" col0="updateWeightBias&lt;8, 10&gt;" col1="layer.h:307" col2="329" col3="" col4="" col5="" col6="">
+                        <row id="59" col0="transpose&lt;8, 1&gt;" col1="layer.h:34" col2="45" col3="" col4="" col5="" col6=""/>
+                        <row id="46" col0="matmul&lt;10, 1, 8&gt;" col1="layer.h:55" col2="135" col3="" col4="" col5="" col6="">
+                            <row id="60" col0="printf" col1="stdio.h:345" col2="52" col2_disp="   52 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="60" col0="printf" col1="stdio.h:345" col2="13" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="44" col0="updateWeightBias&lt;8, 8&gt;" col1="layer.h:307" col2="329" col3="" col4="" col5="" col6="">
+                        <row id="59" col0="transpose&lt;8, 1&gt;" col1="layer.h:34" col2="45" col3="" col4="" col5="" col6=""/>
+                        <row id="4" col0="matmul&lt;8, 1, 8&gt;" col1="layer.h:55" col2="135" col3="" col4="" col5="" col6="">
+                            <row id="60" col0="printf" col1="stdio.h:345" col2="52" col2_disp="   52 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="60" col0="printf" col1="stdio.h:345" col2="13" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="41" col0="updateWeightBias&lt;64, 8&gt;" col1="layer.h:307" col2="329" col3="" col4="" col5="" col6="">
+                        <row id="67" col0="transpose&lt;64, 1&gt;" col1="layer.h:34" col2="45" col3="" col4="" col5="" col6=""/>
+                        <row id="6" col0="matmul&lt;8, 1, 64&gt;" col1="layer.h:55" col2="135" col3="" col4="" col5="" col6="">
+                            <row id="60" col0="printf" col1="stdio.h:345" col2="52" col2_disp="   52 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="60" col0="printf" col1="stdio.h:345" col2="13" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="40" col0="updateWeightBias&lt;64, 64&gt;" col1="layer.h:307" col2="329" col3="" col4="" col5="" col6="">
+                        <row id="67" col0="transpose&lt;64, 1&gt;" col1="layer.h:34" col2="45" col3="" col4="" col5="" col6=""/>
+                        <row id="50" col0="matmul&lt;64, 1, 64&gt;" col1="layer.h:55" col2="135" col3="" col4="" col5="" col6="">
+                            <row id="60" col0="printf" col1="stdio.h:345" col2="52" col2_disp="   52 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="60" col0="printf" col1="stdio.h:345" col2="13" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="46" col0="matmul&lt;10, 1, 8&gt;" col1="layer.h:55" col2="" col3="180" col4="180" col5="248" col6="255"/>
+                    <row id="4" col0="matmul&lt;8, 1, 8&gt;" col1="layer.h:55" col2="" col3="148" col4="148" col5="163" col6="170"/>
+                    <row id="6" col0="matmul&lt;8, 1, 64&gt;" col1="layer.h:55" col2="" col3="1044" col4="1044" col5="1444" col6="1451"/>
+                    <row id="50" col0="matmul&lt;64, 1, 64&gt;" col1="layer.h:55" col2="" col3="8212" col4="8212" col5="8597" col6="8604"/>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

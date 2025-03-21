@@ -13,7 +13,7 @@
 // double he_init(int fan_in) {
 //     return sqrt(2.0 / fan_in) * ((double)rand() / RAND_MAX - 0.5);
 // }
-double he_init(int fan_in) {
+fixed_16 he_init(int fan_in) {
     std::random_device rd;
     std::mt19937 gen(rd());  // Initialize random number generator
     std::uniform_real_distribution<> dis(-0.5, 0.5);  // Uniform distribution from -0.5 to 0.5
@@ -21,8 +21,8 @@ double he_init(int fan_in) {
 }
 
 // Function to load the CSV for features (input)
-std::array<std::array<std::array<double, 1>, IN_SIZE>, DATA_SIZE> load_csv(const std::string& filename) {
-    std::array<std::array<std::array<double, 1>, IN_SIZE>, DATA_SIZE> formatted_input{}; // Initialize with zeros
+std::array<std::array<std::array<fixed_16, 1>, IN_SIZE>, DATA_SIZE> load_csv(const std::string& filename) {
+    std::array<std::array<std::array<fixed_16, 1>, IN_SIZE>, DATA_SIZE> formatted_input{}; // Initialize with zeros
     std::ifstream file(filename);
     std::string line;
 
@@ -49,8 +49,8 @@ std::array<std::array<std::array<double, 1>, IN_SIZE>, DATA_SIZE> load_csv(const
 }
 
 // Function to load the CSV for labels (y_true)
-std::array<std::array<double, OUT_SIZE>, DATA_SIZE> load_labels(const std::string& filename) {
-    std::array<std::array<double, OUT_SIZE>, DATA_SIZE> labels{}; // Initialize with zeros
+std::array<std::array<fixed_16, OUT_SIZE>, DATA_SIZE> load_labels(const std::string& filename) {
+    std::array<std::array<fixed_16, OUT_SIZE>, DATA_SIZE> labels{}; // Initialize with zeros
     std::ifstream file(filename);
     std::string line;
 

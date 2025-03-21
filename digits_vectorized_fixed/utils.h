@@ -6,9 +6,9 @@
 #include <string>
 #include <array>
 
-double he_init(int fan_in);
-std::array<std::array<std::array<double, 1>, IN_SIZE>, DATA_SIZE> load_csv(const std::string& filename);
-std::array<std::array<double, OUT_SIZE>, DATA_SIZE> load_labels(const std::string& filename);
+fixed_16 he_init(int fan_in);
+std::array<std::array<std::array<fixed_16, 1>, IN_SIZE>, DATA_SIZE> load_csv(const std::string& filename);
+std::array<std::array<fixed_16, OUT_SIZE>, DATA_SIZE> load_labels(const std::string& filename);
 
 
 #endif

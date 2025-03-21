@@ -1,0 +1,165 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\hls_component\\accelerator\\accelerator.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "03/21/25 14:17:27",
+ "timestampMillis": "3122892299",
+ "buildStep": {
+  "cmdId": "bfb26360-ac23-489b-bab0-a1b4d190e8ab",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\hls_component\\accelerator\\logs\\accelerator.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\hls_component\\hls_config.cfg --work_dir accelerator ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "accelerator"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/21/25 14:17:27",
+ "timestampMillis": "3122892299",
+ "status": {
+  "cmdId": "bfb26360-ac23-489b-bab0-a1b4d190e8ab",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "03/21/25 14:17:34",
+ "timestampMillis": "3122899864",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "accelerator",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\accelerator.cpp",
+     "C:/Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\accelerator.h",
+     "C:/Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\activation.cpp",
+     "C:/Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\activations.h",
+     "C:/Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\error.cpp",
+     "C:/Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\error.h",
+     "C:/Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\layer.cpp",
+     "C:/Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\layer.h",
+     "C:/Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\utils.cpp",
+     "C:/Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\utils.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "03/21/25 14:17:34",
+ "timestampMillis": "3122899867",
+ "buildStep": {
+  "cmdId": "421f801e-94e9-4b29-95e5-3f79299c2038",
+  "name": "csim_design",
+  "logFile": "C:/Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\hls_component\\accelerator\\hls\\hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/21/25 14:17:34",
+ "timestampMillis": "3122899868",
+ "status": {
+  "cmdId": "421f801e-94e9-4b29-95e5-3f79299c2038",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/21/25 14:17:37",
+ "timestampMillis": "3122902754",
+ "status": {
+  "cmdId": "421f801e-94e9-4b29-95e5-3f79299c2038",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/21/25 14:17:37",
+ "timestampMillis": "3122902906",
+ "status": {
+  "cmdId": "bfb26360-ac23-489b-bab0-a1b4d190e8ab",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/21/25 14:17:37",
+ "timestampMillis": "3122902906",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/21/25 14:17:37",
+ "timestampMillis": "3122902907",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

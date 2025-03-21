@@ -1,0 +1,74 @@
+[
+  {
+    "directory": "C:\\Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp"
+    ],
+    "file": "C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp"
+  },
+  {
+    "directory": "C:\\Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp"
+    ],
+    "file": "C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp"
+  },
+  {
+    "directory": "C:\\Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp"
+    ],
+    "file": "C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp"
+  },
+  {
+    "directory": "C:\\Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp"
+    ],
+    "file": "C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp"
+  },
+  {
+    "directory": "C:\\Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp"
+    ],
+    "file": "C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp"
+  },
+  {
+    "directory": "C:\\Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\include",
+      "",
+      "-c",
+      "C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp"
+    ],
+    "file": "C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp"
+  }
+]

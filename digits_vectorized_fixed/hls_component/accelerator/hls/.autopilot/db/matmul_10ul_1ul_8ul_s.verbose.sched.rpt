@@ -1,0 +1,328 @@
+
+
+================================================================
+== Vitis HLS Report for 'matmul_10ul_1ul_8ul_s'
+================================================================
+* Date:           Fri Mar 21 12:04:00 2025
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        accelerator
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sfvc784-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.709 ns|     2.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       98|       98|  0.980 us|  0.980 us|   98|   98|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 7
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.79>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%agg_result_0_addr = getelementptr i64 %agg_result_0, i64 0, i64 0"   --->   Operation 8 'getelementptr' 'agg_result_0_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%agg_result_1_addr = getelementptr i64 %agg_result_1, i64 0, i64 0"   --->   Operation 9 'getelementptr' 'agg_result_1_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%agg_result_2_addr = getelementptr i64 %agg_result_2, i64 0, i64 0"   --->   Operation 10 'getelementptr' 'agg_result_2_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%agg_result_3_addr = getelementptr i64 %agg_result_3, i64 0, i64 0"   --->   Operation 11 'getelementptr' 'agg_result_3_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%agg_result_4_addr = getelementptr i64 %agg_result_4, i64 0, i64 0"   --->   Operation 12 'getelementptr' 'agg_result_4_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%agg_result_5_addr = getelementptr i64 %agg_result_5, i64 0, i64 0"   --->   Operation 13 'getelementptr' 'agg_result_5_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%agg_result_6_addr = getelementptr i64 %agg_result_6, i64 0, i64 0"   --->   Operation 14 'getelementptr' 'agg_result_6_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%agg_result_7_addr = getelementptr i64 %agg_result_7, i64 0, i64 0"   --->   Operation 15 'getelementptr' 'agg_result_7_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%agg_result_0_addr_71 = getelementptr i64 %agg_result_0, i64 0, i64 1"   --->   Operation 16 'getelementptr' 'agg_result_0_addr_71' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%agg_result_1_addr_71 = getelementptr i64 %agg_result_1, i64 0, i64 1"   --->   Operation 17 'getelementptr' 'agg_result_1_addr_71' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%agg_result_2_addr_71 = getelementptr i64 %agg_result_2, i64 0, i64 1"   --->   Operation 18 'getelementptr' 'agg_result_2_addr_71' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%agg_result_3_addr_71 = getelementptr i64 %agg_result_3, i64 0, i64 1"   --->   Operation 19 'getelementptr' 'agg_result_3_addr_71' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%agg_result_4_addr_71 = getelementptr i64 %agg_result_4, i64 0, i64 1"   --->   Operation 20 'getelementptr' 'agg_result_4_addr_71' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%agg_result_5_addr_71 = getelementptr i64 %agg_result_5, i64 0, i64 1"   --->   Operation 21 'getelementptr' 'agg_result_5_addr_71' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%agg_result_6_addr_71 = getelementptr i64 %agg_result_6, i64 0, i64 1"   --->   Operation 22 'getelementptr' 'agg_result_6_addr_71' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%agg_result_7_addr_71 = getelementptr i64 %agg_result_7, i64 0, i64 1"   --->   Operation 23 'getelementptr' 'agg_result_7_addr_71' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_0_addr"   --->   Operation 24 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_1 : Operation 25 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_1_addr"   --->   Operation 25 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_1 : Operation 26 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_2_addr"   --->   Operation 26 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_1 : Operation 27 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_3_addr"   --->   Operation 27 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_1 : Operation 28 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_4_addr"   --->   Operation 28 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_1 : Operation 29 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_5_addr"   --->   Operation 29 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_1 : Operation 30 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_6_addr"   --->   Operation 30 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_1 : Operation 31 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_7_addr"   --->   Operation 31 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_1 : Operation 32 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_0_addr_71"   --->   Operation 32 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_1 : Operation 33 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_1_addr_71"   --->   Operation 33 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_1 : Operation 34 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_2_addr_71"   --->   Operation 34 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_1 : Operation 35 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_3_addr_71"   --->   Operation 35 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_1 : Operation 36 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_4_addr_71"   --->   Operation 36 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_1 : Operation 37 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_5_addr_71"   --->   Operation 37 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_1 : Operation 38 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_6_addr_71"   --->   Operation 38 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_1 : Operation 39 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_7_addr_71"   --->   Operation 39 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+
+State 2 <SV = 1> <Delay = 0.79>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%agg_result_0_addr_72 = getelementptr i64 %agg_result_0, i64 0, i64 2"   --->   Operation 40 'getelementptr' 'agg_result_0_addr_72' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%agg_result_1_addr_72 = getelementptr i64 %agg_result_1, i64 0, i64 2"   --->   Operation 41 'getelementptr' 'agg_result_1_addr_72' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%agg_result_2_addr_72 = getelementptr i64 %agg_result_2, i64 0, i64 2"   --->   Operation 42 'getelementptr' 'agg_result_2_addr_72' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%agg_result_3_addr_72 = getelementptr i64 %agg_result_3, i64 0, i64 2"   --->   Operation 43 'getelementptr' 'agg_result_3_addr_72' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%agg_result_4_addr_72 = getelementptr i64 %agg_result_4, i64 0, i64 2"   --->   Operation 44 'getelementptr' 'agg_result_4_addr_72' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%agg_result_5_addr_72 = getelementptr i64 %agg_result_5, i64 0, i64 2"   --->   Operation 45 'getelementptr' 'agg_result_5_addr_72' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%agg_result_6_addr_72 = getelementptr i64 %agg_result_6, i64 0, i64 2"   --->   Operation 46 'getelementptr' 'agg_result_6_addr_72' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%agg_result_7_addr_72 = getelementptr i64 %agg_result_7, i64 0, i64 2"   --->   Operation 47 'getelementptr' 'agg_result_7_addr_72' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%agg_result_0_addr_73 = getelementptr i64 %agg_result_0, i64 0, i64 3"   --->   Operation 48 'getelementptr' 'agg_result_0_addr_73' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%agg_result_1_addr_73 = getelementptr i64 %agg_result_1, i64 0, i64 3"   --->   Operation 49 'getelementptr' 'agg_result_1_addr_73' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%agg_result_2_addr_73 = getelementptr i64 %agg_result_2, i64 0, i64 3"   --->   Operation 50 'getelementptr' 'agg_result_2_addr_73' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%agg_result_3_addr_73 = getelementptr i64 %agg_result_3, i64 0, i64 3"   --->   Operation 51 'getelementptr' 'agg_result_3_addr_73' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%agg_result_4_addr_73 = getelementptr i64 %agg_result_4, i64 0, i64 3"   --->   Operation 52 'getelementptr' 'agg_result_4_addr_73' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%agg_result_5_addr_73 = getelementptr i64 %agg_result_5, i64 0, i64 3"   --->   Operation 53 'getelementptr' 'agg_result_5_addr_73' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%agg_result_6_addr_73 = getelementptr i64 %agg_result_6, i64 0, i64 3"   --->   Operation 54 'getelementptr' 'agg_result_6_addr_73' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 55 [1/1] (0.00ns)   --->   "%agg_result_7_addr_73 = getelementptr i64 %agg_result_7, i64 0, i64 3"   --->   Operation 55 'getelementptr' 'agg_result_7_addr_73' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 56 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_0_addr_72"   --->   Operation 56 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_2 : Operation 57 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_1_addr_72"   --->   Operation 57 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_2 : Operation 58 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_2_addr_72"   --->   Operation 58 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_2 : Operation 59 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_3_addr_72"   --->   Operation 59 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_2 : Operation 60 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_4_addr_72"   --->   Operation 60 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_2 : Operation 61 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_5_addr_72"   --->   Operation 61 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_2 : Operation 62 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_6_addr_72"   --->   Operation 62 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_2 : Operation 63 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_7_addr_72"   --->   Operation 63 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_2 : Operation 64 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_0_addr_73"   --->   Operation 64 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_2 : Operation 65 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_1_addr_73"   --->   Operation 65 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_2 : Operation 66 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_2_addr_73"   --->   Operation 66 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_2 : Operation 67 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_3_addr_73"   --->   Operation 67 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_2 : Operation 68 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_4_addr_73"   --->   Operation 68 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_2 : Operation 69 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_5_addr_73"   --->   Operation 69 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_2 : Operation 70 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_6_addr_73"   --->   Operation 70 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_2 : Operation 71 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_7_addr_73"   --->   Operation 71 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+
+State 3 <SV = 2> <Delay = 0.79>
+ST_3 : Operation 72 [1/1] (0.00ns)   --->   "%agg_result_0_addr_74 = getelementptr i64 %agg_result_0, i64 0, i64 4"   --->   Operation 72 'getelementptr' 'agg_result_0_addr_74' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 73 [1/1] (0.00ns)   --->   "%agg_result_1_addr_74 = getelementptr i64 %agg_result_1, i64 0, i64 4"   --->   Operation 73 'getelementptr' 'agg_result_1_addr_74' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 74 [1/1] (0.00ns)   --->   "%agg_result_2_addr_74 = getelementptr i64 %agg_result_2, i64 0, i64 4"   --->   Operation 74 'getelementptr' 'agg_result_2_addr_74' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 75 [1/1] (0.00ns)   --->   "%agg_result_3_addr_74 = getelementptr i64 %agg_result_3, i64 0, i64 4"   --->   Operation 75 'getelementptr' 'agg_result_3_addr_74' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 76 [1/1] (0.00ns)   --->   "%agg_result_4_addr_74 = getelementptr i64 %agg_result_4, i64 0, i64 4"   --->   Operation 76 'getelementptr' 'agg_result_4_addr_74' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 77 [1/1] (0.00ns)   --->   "%agg_result_5_addr_74 = getelementptr i64 %agg_result_5, i64 0, i64 4"   --->   Operation 77 'getelementptr' 'agg_result_5_addr_74' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 78 [1/1] (0.00ns)   --->   "%agg_result_6_addr_74 = getelementptr i64 %agg_result_6, i64 0, i64 4"   --->   Operation 78 'getelementptr' 'agg_result_6_addr_74' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 79 [1/1] (0.00ns)   --->   "%agg_result_7_addr_74 = getelementptr i64 %agg_result_7, i64 0, i64 4"   --->   Operation 79 'getelementptr' 'agg_result_7_addr_74' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 80 [1/1] (0.00ns)   --->   "%agg_result_0_addr_75 = getelementptr i64 %agg_result_0, i64 0, i64 5"   --->   Operation 80 'getelementptr' 'agg_result_0_addr_75' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 81 [1/1] (0.00ns)   --->   "%agg_result_1_addr_75 = getelementptr i64 %agg_result_1, i64 0, i64 5"   --->   Operation 81 'getelementptr' 'agg_result_1_addr_75' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 82 [1/1] (0.00ns)   --->   "%agg_result_2_addr_75 = getelementptr i64 %agg_result_2, i64 0, i64 5"   --->   Operation 82 'getelementptr' 'agg_result_2_addr_75' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 83 [1/1] (0.00ns)   --->   "%agg_result_3_addr_75 = getelementptr i64 %agg_result_3, i64 0, i64 5"   --->   Operation 83 'getelementptr' 'agg_result_3_addr_75' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 84 [1/1] (0.00ns)   --->   "%agg_result_4_addr_75 = getelementptr i64 %agg_result_4, i64 0, i64 5"   --->   Operation 84 'getelementptr' 'agg_result_4_addr_75' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 85 [1/1] (0.00ns)   --->   "%agg_result_5_addr_75 = getelementptr i64 %agg_result_5, i64 0, i64 5"   --->   Operation 85 'getelementptr' 'agg_result_5_addr_75' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 86 [1/1] (0.00ns)   --->   "%agg_result_6_addr_75 = getelementptr i64 %agg_result_6, i64 0, i64 5"   --->   Operation 86 'getelementptr' 'agg_result_6_addr_75' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 87 [1/1] (0.00ns)   --->   "%agg_result_7_addr_75 = getelementptr i64 %agg_result_7, i64 0, i64 5"   --->   Operation 87 'getelementptr' 'agg_result_7_addr_75' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 88 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_0_addr_74"   --->   Operation 88 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_3 : Operation 89 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_1_addr_74"   --->   Operation 89 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_3 : Operation 90 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_2_addr_74"   --->   Operation 90 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_3 : Operation 91 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_3_addr_74"   --->   Operation 91 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_3 : Operation 92 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_4_addr_74"   --->   Operation 92 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_3 : Operation 93 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_5_addr_74"   --->   Operation 93 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_3 : Operation 94 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_6_addr_74"   --->   Operation 94 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_3 : Operation 95 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_7_addr_74"   --->   Operation 95 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_3 : Operation 96 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_0_addr_75"   --->   Operation 96 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_3 : Operation 97 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_1_addr_75"   --->   Operation 97 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_3 : Operation 98 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_2_addr_75"   --->   Operation 98 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_3 : Operation 99 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_3_addr_75"   --->   Operation 99 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_3 : Operation 100 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_4_addr_75"   --->   Operation 100 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_3 : Operation 101 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_5_addr_75"   --->   Operation 101 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_3 : Operation 102 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_6_addr_75"   --->   Operation 102 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_3 : Operation 103 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_7_addr_75"   --->   Operation 103 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+
+State 4 <SV = 3> <Delay = 0.79>
+ST_4 : Operation 104 [1/1] (0.00ns)   --->   "%agg_result_0_addr_76 = getelementptr i64 %agg_result_0, i64 0, i64 6"   --->   Operation 104 'getelementptr' 'agg_result_0_addr_76' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 105 [1/1] (0.00ns)   --->   "%agg_result_1_addr_76 = getelementptr i64 %agg_result_1, i64 0, i64 6"   --->   Operation 105 'getelementptr' 'agg_result_1_addr_76' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 106 [1/1] (0.00ns)   --->   "%agg_result_2_addr_76 = getelementptr i64 %agg_result_2, i64 0, i64 6"   --->   Operation 106 'getelementptr' 'agg_result_2_addr_76' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 107 [1/1] (0.00ns)   --->   "%agg_result_3_addr_76 = getelementptr i64 %agg_result_3, i64 0, i64 6"   --->   Operation 107 'getelementptr' 'agg_result_3_addr_76' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 108 [1/1] (0.00ns)   --->   "%agg_result_4_addr_76 = getelementptr i64 %agg_result_4, i64 0, i64 6"   --->   Operation 108 'getelementptr' 'agg_result_4_addr_76' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 109 [1/1] (0.00ns)   --->   "%agg_result_5_addr_76 = getelementptr i64 %agg_result_5, i64 0, i64 6"   --->   Operation 109 'getelementptr' 'agg_result_5_addr_76' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 110 [1/1] (0.00ns)   --->   "%agg_result_6_addr_76 = getelementptr i64 %agg_result_6, i64 0, i64 6"   --->   Operation 110 'getelementptr' 'agg_result_6_addr_76' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 111 [1/1] (0.00ns)   --->   "%agg_result_7_addr_76 = getelementptr i64 %agg_result_7, i64 0, i64 6"   --->   Operation 111 'getelementptr' 'agg_result_7_addr_76' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 112 [1/1] (0.00ns)   --->   "%agg_result_0_addr_77 = getelementptr i64 %agg_result_0, i64 0, i64 7"   --->   Operation 112 'getelementptr' 'agg_result_0_addr_77' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 113 [1/1] (0.00ns)   --->   "%agg_result_1_addr_77 = getelementptr i64 %agg_result_1, i64 0, i64 7"   --->   Operation 113 'getelementptr' 'agg_result_1_addr_77' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 114 [1/1] (0.00ns)   --->   "%agg_result_2_addr_77 = getelementptr i64 %agg_result_2, i64 0, i64 7"   --->   Operation 114 'getelementptr' 'agg_result_2_addr_77' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 115 [1/1] (0.00ns)   --->   "%agg_result_3_addr_77 = getelementptr i64 %agg_result_3, i64 0, i64 7"   --->   Operation 115 'getelementptr' 'agg_result_3_addr_77' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 116 [1/1] (0.00ns)   --->   "%agg_result_4_addr_77 = getelementptr i64 %agg_result_4, i64 0, i64 7"   --->   Operation 116 'getelementptr' 'agg_result_4_addr_77' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 117 [1/1] (0.00ns)   --->   "%agg_result_5_addr_77 = getelementptr i64 %agg_result_5, i64 0, i64 7"   --->   Operation 117 'getelementptr' 'agg_result_5_addr_77' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 118 [1/1] (0.00ns)   --->   "%agg_result_6_addr_77 = getelementptr i64 %agg_result_6, i64 0, i64 7"   --->   Operation 118 'getelementptr' 'agg_result_6_addr_77' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 119 [1/1] (0.00ns)   --->   "%agg_result_7_addr_77 = getelementptr i64 %agg_result_7, i64 0, i64 7"   --->   Operation 119 'getelementptr' 'agg_result_7_addr_77' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 120 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_0_addr_76"   --->   Operation 120 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_4 : Operation 121 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_1_addr_76"   --->   Operation 121 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_4 : Operation 122 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_2_addr_76"   --->   Operation 122 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_4 : Operation 123 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_3_addr_76"   --->   Operation 123 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_4 : Operation 124 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_4_addr_76"   --->   Operation 124 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_4 : Operation 125 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_5_addr_76"   --->   Operation 125 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_4 : Operation 126 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_6_addr_76"   --->   Operation 126 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_4 : Operation 127 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_7_addr_76"   --->   Operation 127 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_4 : Operation 128 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_0_addr_77"   --->   Operation 128 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_4 : Operation 129 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_1_addr_77"   --->   Operation 129 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_4 : Operation 130 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_2_addr_77"   --->   Operation 130 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_4 : Operation 131 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_3_addr_77"   --->   Operation 131 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_4 : Operation 132 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_4_addr_77"   --->   Operation 132 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_4 : Operation 133 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_5_addr_77"   --->   Operation 133 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_4 : Operation 134 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_6_addr_77"   --->   Operation 134 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_4 : Operation 135 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_7_addr_77"   --->   Operation 135 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+
+State 5 <SV = 4> <Delay = 0.79>
+ST_5 : Operation 136 [1/1] (0.00ns)   --->   "%agg_result_0_addr_78 = getelementptr i64 %agg_result_0, i64 0, i64 8"   --->   Operation 136 'getelementptr' 'agg_result_0_addr_78' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 137 [1/1] (0.00ns)   --->   "%agg_result_1_addr_78 = getelementptr i64 %agg_result_1, i64 0, i64 8"   --->   Operation 137 'getelementptr' 'agg_result_1_addr_78' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 138 [1/1] (0.00ns)   --->   "%agg_result_2_addr_78 = getelementptr i64 %agg_result_2, i64 0, i64 8"   --->   Operation 138 'getelementptr' 'agg_result_2_addr_78' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 139 [1/1] (0.00ns)   --->   "%agg_result_3_addr_78 = getelementptr i64 %agg_result_3, i64 0, i64 8"   --->   Operation 139 'getelementptr' 'agg_result_3_addr_78' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 140 [1/1] (0.00ns)   --->   "%agg_result_4_addr_78 = getelementptr i64 %agg_result_4, i64 0, i64 8"   --->   Operation 140 'getelementptr' 'agg_result_4_addr_78' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 141 [1/1] (0.00ns)   --->   "%agg_result_5_addr_78 = getelementptr i64 %agg_result_5, i64 0, i64 8"   --->   Operation 141 'getelementptr' 'agg_result_5_addr_78' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 142 [1/1] (0.00ns)   --->   "%agg_result_6_addr_78 = getelementptr i64 %agg_result_6, i64 0, i64 8"   --->   Operation 142 'getelementptr' 'agg_result_6_addr_78' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 143 [1/1] (0.00ns)   --->   "%agg_result_7_addr_78 = getelementptr i64 %agg_result_7, i64 0, i64 8"   --->   Operation 143 'getelementptr' 'agg_result_7_addr_78' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 144 [1/1] (0.00ns)   --->   "%agg_result_0_addr_79 = getelementptr i64 %agg_result_0, i64 0, i64 9"   --->   Operation 144 'getelementptr' 'agg_result_0_addr_79' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 145 [1/1] (0.00ns)   --->   "%agg_result_1_addr_79 = getelementptr i64 %agg_result_1, i64 0, i64 9"   --->   Operation 145 'getelementptr' 'agg_result_1_addr_79' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 146 [1/1] (0.00ns)   --->   "%agg_result_2_addr_79 = getelementptr i64 %agg_result_2, i64 0, i64 9"   --->   Operation 146 'getelementptr' 'agg_result_2_addr_79' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 147 [1/1] (0.00ns)   --->   "%agg_result_3_addr_79 = getelementptr i64 %agg_result_3, i64 0, i64 9"   --->   Operation 147 'getelementptr' 'agg_result_3_addr_79' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 148 [1/1] (0.00ns)   --->   "%agg_result_4_addr_79 = getelementptr i64 %agg_result_4, i64 0, i64 9"   --->   Operation 148 'getelementptr' 'agg_result_4_addr_79' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 149 [1/1] (0.00ns)   --->   "%agg_result_5_addr_79 = getelementptr i64 %agg_result_5, i64 0, i64 9"   --->   Operation 149 'getelementptr' 'agg_result_5_addr_79' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 150 [1/1] (0.00ns)   --->   "%agg_result_6_addr_79 = getelementptr i64 %agg_result_6, i64 0, i64 9"   --->   Operation 150 'getelementptr' 'agg_result_6_addr_79' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 151 [1/1] (0.00ns)   --->   "%agg_result_7_addr_79 = getelementptr i64 %agg_result_7, i64 0, i64 9"   --->   Operation 151 'getelementptr' 'agg_result_7_addr_79' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 152 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_0_addr_78"   --->   Operation 152 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_5 : Operation 153 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_1_addr_78"   --->   Operation 153 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_5 : Operation 154 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_2_addr_78"   --->   Operation 154 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_5 : Operation 155 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_3_addr_78"   --->   Operation 155 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_5 : Operation 156 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_4_addr_78"   --->   Operation 156 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_5 : Operation 157 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_5_addr_78"   --->   Operation 157 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_5 : Operation 158 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_6_addr_78"   --->   Operation 158 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_5 : Operation 159 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_7_addr_78"   --->   Operation 159 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_5 : Operation 160 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_0_addr_79"   --->   Operation 160 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_5 : Operation 161 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_1_addr_79"   --->   Operation 161 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_5 : Operation 162 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_2_addr_79"   --->   Operation 162 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_5 : Operation 163 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_3_addr_79"   --->   Operation 163 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_5 : Operation 164 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_4_addr_79"   --->   Operation 164 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_5 : Operation 165 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_5_addr_79"   --->   Operation 165 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_5 : Operation 166 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_6_addr_79"   --->   Operation 166 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_5 : Operation 167 [1/1] (0.79ns)   --->   "%store_ln0 = store i64 0, i4 %agg_result_7_addr_79"   --->   Operation 167 'store' 'store_ln0' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 168 [1/1] (0.00ns)   --->   "%A_0_read_78 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %A_0_read_104" [../layer.h:56]   --->   Operation 168 'read' 'A_0_read_78' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 169 [1/1] (0.00ns)   --->   "%A_0_read_79 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %A_0_read_103" [../layer.h:56]   --->   Operation 169 'read' 'A_0_read_79' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 170 [1/1] (0.00ns)   --->   "%A_0_read_80 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %A_0_read_102" [../layer.h:56]   --->   Operation 170 'read' 'A_0_read_80' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 171 [1/1] (0.00ns)   --->   "%A_0_read_81 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %A_0_read_101" [../layer.h:56]   --->   Operation 171 'read' 'A_0_read_81' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 172 [1/1] (0.00ns)   --->   "%A_0_read_82 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %A_0_read_100" [../layer.h:56]   --->   Operation 172 'read' 'A_0_read_82' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 173 [1/1] (0.00ns)   --->   "%A_0_read_83 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %A_0_read_99" [../layer.h:56]   --->   Operation 173 'read' 'A_0_read_83' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 174 [1/1] (0.00ns)   --->   "%A_0_read_84 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %A_0_read_98" [../layer.h:56]   --->   Operation 174 'read' 'A_0_read_84' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 175 [1/1] (0.00ns)   --->   "%A_0_read_85 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %A_0_read_97" [../layer.h:56]   --->   Operation 175 'read' 'A_0_read_85' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 176 [1/1] (0.00ns)   --->   "%A_0_read_86 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %A_0_read_96" [../layer.h:56]   --->   Operation 176 'read' 'A_0_read_86' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 177 [1/1] (0.00ns)   --->   "%A_0_read534 = read i64 @_ssdm_op_Read.ap_auto.double, i64 %A_0_read" [../layer.h:56]   --->   Operation 177 'read' 'A_0_read534' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 178 [2/2] (0.00ns)   --->   "%call_ln56 = call void @matmul<10ul, 1ul, 8ul>_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2, i64 %A_0_read534, i64 %A_0_read_86, i64 %A_0_read_85, i64 %A_0_read_84, i64 %A_0_read_83, i64 %A_0_read_82, i64 %A_0_read_81, i64 %A_0_read_80, i64 %A_0_read_79, i64 %A_0_read_78, i64 %agg_result_0, i64 %agg_result_1, i64 %agg_result_2, i64 %agg_result_3, i64 %agg_result_4, i64 %agg_result_5, i64 %agg_result_6, i64 %agg_result_7, i64 %B_0" [../layer.h:56]   --->   Operation 178 'call' 'call_ln56' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 179 [1/2] (0.00ns)   --->   "%call_ln56 = call void @matmul<10ul, 1ul, 8ul>_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2, i64 %A_0_read534, i64 %A_0_read_86, i64 %A_0_read_85, i64 %A_0_read_84, i64 %A_0_read_83, i64 %A_0_read_82, i64 %A_0_read_81, i64 %A_0_read_80, i64 %A_0_read_79, i64 %A_0_read_78, i64 %agg_result_0, i64 %agg_result_1, i64 %agg_result_2, i64 %agg_result_3, i64 %agg_result_4, i64 %agg_result_5, i64 %agg_result_6, i64 %agg_result_7, i64 %B_0" [../layer.h:56]   --->   Operation 179 'call' 'call_ln56' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 180 [1/1] (0.00ns)   --->   "%ret_ln88 = ret" [../layer.h:88]   --->   Operation 180 'ret' 'ret_ln88' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.000ns.
+
+ <State 1>: 0.790ns
+The critical path consists of the following:
+	'getelementptr' operation 4 bit ('agg_result_0_addr') [30]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on array 'agg_result_0' [110]  (0.790 ns)
+
+ <State 2>: 0.790ns
+The critical path consists of the following:
+	'getelementptr' operation 4 bit ('agg_result_0_addr_72') [46]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on array 'agg_result_0' [126]  (0.790 ns)
+
+ <State 3>: 0.790ns
+The critical path consists of the following:
+	'getelementptr' operation 4 bit ('agg_result_0_addr_74') [62]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on array 'agg_result_0' [142]  (0.790 ns)
+
+ <State 4>: 0.790ns
+The critical path consists of the following:
+	'getelementptr' operation 4 bit ('agg_result_0_addr_76') [78]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on array 'agg_result_0' [158]  (0.790 ns)
+
+ <State 5>: 0.790ns
+The critical path consists of the following:
+	'getelementptr' operation 4 bit ('agg_result_0_addr_78') [94]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on array 'agg_result_0' [174]  (0.790 ns)
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+ <State 7>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

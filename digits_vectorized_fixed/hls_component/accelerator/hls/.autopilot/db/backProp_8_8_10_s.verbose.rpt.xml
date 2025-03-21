@@ -1,0 +1,293 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'backProp_8_8_10_s'" level="0">
+<item name = "Date">Fri Mar 21 12:04:47 2025
+</item>
+<item name = "Version">2024.1 (Build 5069499 on May 21 2024)</item>
+<item name = "Project">accelerator</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sfvc784-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 8.221 ns, 2.00 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">532, 532, 5.320 us, 5.320 us, 532, 532, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_backProp_8_8_10_Pipeline_VITIS_LOOP_40_1_fu_864">backProp_8_8_10_Pipeline_VITIS_LOOP_40_1, 12, 12, 0.120 us, 0.120 us, 11, 11, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_backProp_8_8_10_Pipeline_VITIS_LOOP_81_12_fu_950">backProp_8_8_10_Pipeline_VITIS_LOOP_81_12, 55, 55, 0.550 us, 0.550 us, 9, 9, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_backProp_8_8_10_Pipeline_VITIS_LOOP_81_1_fu_973">backProp_8_8_10_Pipeline_VITIS_LOOP_81_1, 407, 407, 4.070 us, 4.070 us, 406, 406, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_backProp_8_8_10_Pipeline_VITIS_LOOP_266_1_fu_1093">backProp_8_8_10_Pipeline_VITIS_LOOP_266_1, 14, 14, 0.140 us, 0.140 us, 9, 9, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_backProp_8_8_10_Pipeline_VITIS_LOOP_22_1_fu_1101">backProp_8_8_10_Pipeline_VITIS_LOOP_22_1, 15, 15, 0.150 us, 0.150 us, 9, 9, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_backProp_8_8_10_Pipeline_VITIS_LOOP_284_3_fu_1107">backProp_8_8_10_Pipeline_VITIS_LOOP_284_3, 43, 43, 0.430 us, 0.430 us, 42, 42, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 4, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 10489, 21510, -</column>
+<column name="Memory">0, -, 320, 24, 0</column>
+<column name="Multiplexer">-, -, 0, 623, -</column>
+<column name="Register">-, -, 19, -, -</column>
+<specialColumn name="Available">432, 360, 141120, 70560, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 7, 31, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_backProp_8_8_10_Pipeline_VITIS_LOOP_22_1_fu_1101">backProp_8_8_10_Pipeline_VITIS_LOOP_22_1, 0, 0, 88, 175, 0</column>
+<column name="grp_backProp_8_8_10_Pipeline_VITIS_LOOP_266_1_fu_1093">backProp_8_8_10_Pipeline_VITIS_LOOP_266_1, 0, 0, 147, 2265, 0</column>
+<column name="grp_backProp_8_8_10_Pipeline_VITIS_LOOP_284_3_fu_1107">backProp_8_8_10_Pipeline_VITIS_LOOP_284_3, 0, 0, 1048, 370, 0</column>
+<column name="grp_backProp_8_8_10_Pipeline_VITIS_LOOP_40_1_fu_864">backProp_8_8_10_Pipeline_VITIS_LOOP_40_1, 0, 0, 5131, 62, 0</column>
+<column name="grp_backProp_8_8_10_Pipeline_VITIS_LOOP_81_1_fu_973">backProp_8_8_10_Pipeline_VITIS_LOOP_81_1, 0, 0, 2308, 1112, 0</column>
+<column name="grp_backProp_8_8_10_Pipeline_VITIS_LOOP_81_12_fu_950">backProp_8_8_10_Pipeline_VITIS_LOOP_81_12, 0, 0, 1767, 17526, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="d_activation_0_U">backProp_8_8_10_s_d_activation_0_RAM_AUTO_1R1W, 0, 64, 8, 0, 8, 64, 1, 512</column>
+<column name="C_0_U">forwardPropagation_64_8_s_C_0_RAM_AUTO_1R1W, 0, 128, 8, 0, 8, 64, 1, 512</column>
+<column name="net_0_U">forwardPropagation_64_8_s_net_0_RAM_AUTO_1R1W, 0, 128, 8, 0, 8, 64, 1, 512</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_block_state6_on_subcall_done">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state8_on_subcall_done">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="C_0_address0">14, 3, 3, 9</column>
+<column name="C_0_address0_local">26, 5, 3, 15</column>
+<column name="C_0_address1">9, 2, 3, 6</column>
+<column name="C_0_address1_local">26, 5, 3, 15</column>
+<column name="C_0_ce0">14, 3, 1, 3</column>
+<column name="C_0_ce1">9, 2, 1, 2</column>
+<column name="C_0_d0">9, 2, 64, 128</column>
+<column name="C_0_we0">9, 2, 1, 2</column>
+<column name="ap_NS_fsm">65, 14, 1, 14</column>
+<column name="d_activation_0_address0">14, 3, 3, 9</column>
+<column name="d_activation_0_ce0">14, 3, 1, 3</column>
+<column name="d_activation_0_we0">9, 2, 1, 2</column>
+<column name="grp_fu_2564_ce">14, 3, 1, 3</column>
+<column name="grp_fu_2564_opcode">14, 3, 2, 6</column>
+<column name="grp_fu_2564_p0">14, 3, 64, 192</column>
+<column name="grp_fu_2564_p1">14, 3, 64, 192</column>
+<column name="grp_fu_2568_ce">20, 4, 1, 4</column>
+<column name="grp_fu_2568_p0">20, 4, 64, 256</column>
+<column name="grp_fu_2568_p1">20, 4, 64, 256</column>
+<column name="grp_fu_2572_ce">14, 3, 1, 3</column>
+<column name="grp_fu_2572_opcode">14, 3, 2, 6</column>
+<column name="grp_fu_2572_p0">14, 3, 64, 192</column>
+<column name="grp_fu_2572_p1">14, 3, 64, 192</column>
+<column name="grp_fu_2576_ce">9, 2, 1, 2</column>
+<column name="grp_fu_2580_ce">9, 2, 1, 2</column>
+<column name="grp_fu_2584_ce">9, 2, 1, 2</column>
+<column name="grp_fu_2588_ce">9, 2, 1, 2</column>
+<column name="grp_fu_2592_ce">9, 2, 1, 2</column>
+<column name="grp_fu_2596_ce">9, 2, 1, 2</column>
+<column name="grp_fu_2600_ce">9, 2, 1, 2</column>
+<column name="grp_fu_2604_ce">9, 2, 1, 2</column>
+<column name="grp_fu_2608_ce">9, 2, 1, 2</column>
+<column name="grp_fu_2612_ce">9, 2, 1, 2</column>
+<column name="grp_fu_2616_ce">9, 2, 1, 2</column>
+<column name="grp_fu_2620_ce">9, 2, 1, 2</column>
+<column name="grp_fu_2624_ce">9, 2, 1, 2</column>
+<column name="grp_fu_2628_ce">9, 2, 1, 2</column>
+<column name="grp_fu_2632_ce">9, 2, 1, 2</column>
+<column name="net_0_address0">14, 3, 3, 9</column>
+<column name="net_0_address0_local">26, 5, 3, 15</column>
+<column name="net_0_address1_local">26, 5, 3, 15</column>
+<column name="net_0_ce0">14, 3, 1, 3</column>
+<column name="net_0_d0">9, 2, 64, 128</column>
+<column name="net_0_we0">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">13, 0, 13, 0</column>
+<column name="grp_backProp_8_8_10_Pipeline_VITIS_LOOP_22_1_fu_1101_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_backProp_8_8_10_Pipeline_VITIS_LOOP_266_1_fu_1093_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_backProp_8_8_10_Pipeline_VITIS_LOOP_284_3_fu_1107_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_backProp_8_8_10_Pipeline_VITIS_LOOP_40_1_fu_864_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_backProp_8_8_10_Pipeline_VITIS_LOOP_81_12_fu_950_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_backProp_8_8_10_Pipeline_VITIS_LOOP_81_1_fu_973_ap_start_reg">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8493_p_din0">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8493_p_din1">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8493_p_opcode">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8493_p_dout0">in, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8493_p_ce">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8581_p_din0">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8581_p_din1">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8581_p_dout0">in, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8581_p_ce">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8485_p_din0">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8485_p_din1">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8485_p_opcode">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8485_p_dout0">in, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8485_p_ce">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8497_p_din0">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8497_p_din1">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8497_p_opcode">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8497_p_dout0">in, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8497_p_ce">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8501_p_din0">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8501_p_din1">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8501_p_opcode">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8501_p_dout0">in, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8501_p_ce">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8505_p_din0">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8505_p_din1">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8505_p_opcode">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8505_p_dout0">in, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8505_p_ce">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8509_p_din0">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8509_p_din1">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8509_p_opcode">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8509_p_dout0">in, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8509_p_ce">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8513_p_din0">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8513_p_din1">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8513_p_opcode">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8513_p_dout0">in, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8513_p_ce">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8517_p_din0">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8517_p_din1">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8517_p_opcode">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8517_p_dout0">in, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8517_p_ce">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8585_p_din0">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8585_p_din1">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8585_p_dout0">in, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8585_p_ce">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8589_p_din0">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8589_p_din1">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8589_p_dout0">in, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8589_p_ce">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8593_p_din0">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8593_p_din1">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8593_p_dout0">in, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8593_p_ce">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8597_p_din0">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8597_p_din1">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8597_p_dout0">in, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8597_p_ce">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8601_p_din0">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8601_p_din1">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8601_p_dout0">in, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8601_p_ce">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8605_p_din0">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8605_p_din1">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8605_p_dout0">in, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8605_p_ce">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8609_p_din0">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8609_p_din1">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8609_p_dout0">in, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8609_p_ce">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8489_p_din0">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8489_p_din1">out, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8489_p_opcode">out, 5, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8489_p_dout0">in, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_8489_p_ce">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_9001_p_din0">out, 32, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_9001_p_dout0">in, 64, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="grp_fu_9001_p_ce">out, 1, ap_ctrl_hs, backProp&lt;8, 8, 10&gt;, return value</column>
+<column name="agg_result_0_0">out, 64, ap_vld, agg_result_0_0, pointer</column>
+<column name="agg_result_0_0_ap_vld">out, 1, ap_vld, agg_result_0_0, pointer</column>
+<column name="agg_result_1_0">out, 64, ap_vld, agg_result_1_0, pointer</column>
+<column name="agg_result_1_0_ap_vld">out, 1, ap_vld, agg_result_1_0, pointer</column>
+<column name="agg_result_2_0">out, 64, ap_vld, agg_result_2_0, pointer</column>
+<column name="agg_result_2_0_ap_vld">out, 1, ap_vld, agg_result_2_0, pointer</column>
+<column name="agg_result_3_0">out, 64, ap_vld, agg_result_3_0, pointer</column>
+<column name="agg_result_3_0_ap_vld">out, 1, ap_vld, agg_result_3_0, pointer</column>
+<column name="agg_result_4_0">out, 64, ap_vld, agg_result_4_0, pointer</column>
+<column name="agg_result_4_0_ap_vld">out, 1, ap_vld, agg_result_4_0, pointer</column>
+<column name="agg_result_5_0">out, 64, ap_vld, agg_result_5_0, pointer</column>
+<column name="agg_result_5_0_ap_vld">out, 1, ap_vld, agg_result_5_0, pointer</column>
+<column name="agg_result_6_0">out, 64, ap_vld, agg_result_6_0, pointer</column>
+<column name="agg_result_6_0_ap_vld">out, 1, ap_vld, agg_result_6_0, pointer</column>
+<column name="agg_result_7_0">out, 64, ap_vld, agg_result_7_0, pointer</column>
+<column name="agg_result_7_0_ap_vld">out, 1, ap_vld, agg_result_7_0, pointer</column>
+<column name="weights_l3_address0">out, 4, ap_memory, weights_l3, array</column>
+<column name="weights_l3_ce0">out, 1, ap_memory, weights_l3, array</column>
+<column name="weights_l3_q0">in, 512, ap_memory, weights_l3, array</column>
+<column name="p_read">in, 64, ap_none, p_read, scalar</column>
+<column name="p_read1">in, 64, ap_none, p_read1, scalar</column>
+<column name="p_read2">in, 64, ap_none, p_read2, scalar</column>
+<column name="p_read3">in, 64, ap_none, p_read3, scalar</column>
+<column name="p_read4">in, 64, ap_none, p_read4, scalar</column>
+<column name="p_read5">in, 64, ap_none, p_read5, scalar</column>
+<column name="p_read6">in, 64, ap_none, p_read6, scalar</column>
+<column name="p_read7">in, 64, ap_none, p_read7, scalar</column>
+<column name="p_read8">in, 64, ap_none, p_read8, scalar</column>
+<column name="p_read9">in, 64, ap_none, p_read9, scalar</column>
+<column name="p_read10">in, 64, ap_none, p_read10, scalar</column>
+<column name="p_read11">in, 64, ap_none, p_read11, scalar</column>
+<column name="p_read12">in, 64, ap_none, p_read12, scalar</column>
+<column name="p_read13">in, 64, ap_none, p_read13, scalar</column>
+<column name="p_read14">in, 64, ap_none, p_read14, scalar</column>
+<column name="p_read15">in, 64, ap_none, p_read15, scalar</column>
+<column name="p_read16">in, 64, ap_none, p_read16, scalar</column>
+<column name="p_read17">in, 64, ap_none, p_read17, scalar</column>
+<column name="weights_val">in, 4096, ap_none, weights_val, scalar</column>
+<column name="biases_val">in, 512, ap_none, biases_val, scalar</column>
+</table>
+</item>
+</section>
+</profile>
