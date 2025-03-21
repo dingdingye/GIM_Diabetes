@@ -12,7 +12,7 @@ template <int N>
 std::array<std::array<fixed_16, 1>, N> relu(std::array<std::array<fixed_16, 1>, N>& net) {
     std::array<std::array<fixed_16, 1>, N> output = {};
     for (size_t i = 0; i < N; ++i) {
-        output[i][0] = net[i][0] > 0 ? net[i][0] : 0;  // Apply ReLU element-wise
+        output[i][0] = int(net[i][0]) > 0 ? int(net[i][0]) : 0;  // Apply ReLU element-wise
     }
     return output;
 }

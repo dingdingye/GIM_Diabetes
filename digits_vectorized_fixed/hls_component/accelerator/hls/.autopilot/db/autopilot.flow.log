@@ -7357,3 +7357,814 @@ Execute   close_project
 Execute     close_solution 
 Execute       cleanup_all 
 Execute       cleanup_all 
+INFO-FLOW: Workspace C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls opened at Fri Mar 21 14:33:28 -0500 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(8)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(9)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(10)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(11)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(12)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(13)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(14)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(15)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(16)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(17)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(20) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(20)
+Execute     add_files -tb C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(21) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(21)
+Command     send_msg_by_id done; 1.693 sec.
+Execute     add_files -tb C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/digits_features.csv' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(22) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(22)
+Execute     add_files -tb C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/digits_labels.csv' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 2.169 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.102 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.352 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(18)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(19) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(19)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 4.177 sec.
+Execute   apply_ini C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+INFO-FLOW: AESL_CSIM::c_sim errorInfo:
+
+    while executing
+"::AESL_CSIM::c_sim "$argn" "
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 2.893 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls opened at Fri Mar 21 14:35:23 -0500 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(8)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(9)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(10)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(11)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(12)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(13)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(14)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(15)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(16)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(17)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(20) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(20)
+Execute     add_files -tb C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(21) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(21)
+Command     send_msg_by_id done; 1.778 sec.
+Execute     add_files -tb C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/digits_features.csv' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(22) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(22)
+Execute     add_files -tb C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/digits_labels.csv' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 2.141 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.298 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(18)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(19) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(19)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 4.206 sec.
+Execute   apply_ini C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+INFO-FLOW: AESL_CSIM::c_sim errorInfo:
+
+    while executing
+"::AESL_CSIM::c_sim "$argn" "
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 2.713 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls opened at Fri Mar 21 14:35:59 -0500 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(8)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(9)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(10)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(11)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(12)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(13)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(14)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(15)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(16)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(17)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(20) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(20)
+Execute     add_files -tb C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(21) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(21)
+Command     send_msg_by_id done; 1.662 sec.
+Execute     add_files -tb C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/digits_features.csv' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(22) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(22)
+Execute     add_files -tb C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/digits_labels.csv' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 2.147 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.301 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(18)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(19) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(19)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 4.091 sec.
+Execute   apply_ini C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+INFO-FLOW: AESL_CSIM::c_sim errorInfo:
+
+    while executing
+"::AESL_CSIM::c_sim "$argn" "
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 2.72 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls opened at Fri Mar 21 14:40:43 -0500 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(8)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(9)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(10)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(11)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(12)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(13)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(14)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(15)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(16)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(17)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(20) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(20)
+Execute     add_files -tb C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(21) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(21)
+Command     send_msg_by_id done; 1.606 sec.
+Execute     add_files -tb C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/digits_features.csv' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(22) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(22)
+Execute     add_files -tb C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/digits_labels.csv' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 2.124 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.28 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(18)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(19) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(19)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 4.011 sec.
+Execute   apply_ini C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+INFO-FLOW: AESL_CSIM::c_sim errorInfo:
+
+    while executing
+"::AESL_CSIM::c_sim "$argn" "
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 2.848 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls opened at Fri Mar 21 14:42:02 -0500 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(8)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(9)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(10)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(11)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(12)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(13)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(14)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(15)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(16)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(17)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(20) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(20)
+Execute     add_files -tb C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(21) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(21)
+Execute     add_files -tb C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/digits_features.csv' to the project
+Command     add_files done; 1.839 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(22) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(22)
+Execute     add_files -tb C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/digits_labels.csv' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 2.185 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.35 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(18)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(19) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(19)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 4.329 sec.
+Execute   apply_ini C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+INFO-FLOW: AESL_CSIM::c_sim errorInfo:
+
+    while executing
+"::AESL_CSIM::c_sim "$argn" "
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 11.645 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls opened at Fri Mar 21 14:43:33 -0500 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(8)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(9)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(10)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(11)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(12)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(13)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(14)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(15)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(16)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(17)
+Execute     add_files C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(20) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(20)
+Execute     add_files -tb C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(21) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(21)
+Command     send_msg_by_id done; 1.718 sec.
+Execute     add_files -tb C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/digits_features.csv' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(22) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(22)
+Execute     add_files -tb C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/digits_labels.csv' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=accelerator' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(7)
+Execute     set_top accelerator 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-1-e' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       create_platform xczu3eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+Command       create_platform done; 2.128 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.292 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(18) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(18)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=2ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(19) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(19)
+Execute     set_clock_uncertainty 2ns 
+Execute       ap_set_clock -name default -uncertainty 2 -unit ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 4.145 sec.
+Execute   apply_ini C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+INFO-FLOW: AESL_CSIM::c_sim errorInfo:
+
+    while executing
+"::AESL_CSIM::c_sim "$argn" "
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 5.67 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 

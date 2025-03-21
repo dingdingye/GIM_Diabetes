@@ -17,15 +17,15 @@ using namespace std;
 
 
 int main() {
-    std::array<std::array<fixed_16, IN_SIZE>, L0_SIZE> weights_l0; // 64x64
+    std::array<std::array<fixed_16, INPUT_SIZE>, L0_SIZE> weights_l0; // 64x64
     std::array<std::array<fixed_16, L0_SIZE>, L1_SIZE> weights_l1; // 8x64
     std::array<std::array<fixed_16, L1_SIZE>, L2_SIZE> weights_l2; // 8x8
-    std::array<std::array<fixed_16, L2_SIZE>, OUT_SIZE> weights_l3; // 10x8
+    std::array<std::array<fixed_16, L2_SIZE>, OUTPUT_SIZE> weights_l3; // 10x8
 
     std::array<fixed_16, L0_SIZE> biases_l0 = {0.5};  // 64 elements
     std::array<fixed_16, L1_SIZE> biases_l1 = {0.5};  // 8 elements
     std::array<fixed_16, L2_SIZE> biases_l2 = {0.5};  // 8 elements
-    std::array<fixed_16, OUT_SIZE> biases_l3 = {0.5}; // 10 elements
+    std::array<fixed_16, OUTPUT_SIZE> biases_l3 = {0.5}; // 10 elements
 
     // std::vector<fixed_16> biases_l0(64, 0.0);  // Biases should start at 0 for ReLU supposedly?
     // std::vector<fixed_16> biases_l1(8, 0.0);
@@ -49,8 +49,8 @@ int main() {
         for (int j = 0; j < 8; j++)
             weights_l3[i][j] = he_init(8);  
 
-    std::array<std::array<std::array<fixed_16, 1>, IN_SIZE>, DATA_SIZE> input = load_csv("digits_features.csv");  // Load and reformat features
-    std::array<std::array<fixed_16, OUT_SIZE>, DATA_SIZE> y_true = load_labels("digits_labels.csv");    // Load and one-hot encode labels
+    std::array<std::array<std::array<fixed_16, 1>, INPUT_SIZE>, DATA_SIZE> input = load_csv("digits_features.csv");  // Load and reformat features
+    std::array<std::array<fixed_16, OUTPUT_SIZE>, DATA_SIZE> y_true = load_labels("digits_labels.csv");    // Load and one-hot encode labels
     
     // // check if data and labels are correctly loaded
     // std::cout << "First sample (64 features): ";

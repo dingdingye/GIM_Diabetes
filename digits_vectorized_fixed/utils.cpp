@@ -21,8 +21,8 @@ fixed_16 he_init(int fan_in) {
 }
 
 // Function to load the CSV for features (input)
-std::array<std::array<std::array<fixed_16, 1>, IN_SIZE>, DATA_SIZE> load_csv(const std::string& filename) {
-    std::array<std::array<std::array<fixed_16, 1>, IN_SIZE>, DATA_SIZE> formatted_input{}; // Initialize with zeros
+std::array<std::array<std::array<fixed_16, 1>, INPUT_SIZE>, DATA_SIZE> load_csv(const std::string& filename) {
+    std::array<std::array<std::array<fixed_16, 1>, INPUT_SIZE>, DATA_SIZE> formatted_input{}; // Initialize with zeros
     std::ifstream file(filename);
     std::string line;
 
@@ -37,7 +37,7 @@ std::array<std::array<std::array<fixed_16, 1>, IN_SIZE>, DATA_SIZE> load_csv(con
         std::string value;
         size_t feature_index = 0;
 
-        while (getline(ss, value, ',') && feature_index < IN_SIZE) {
+        while (getline(ss, value, ',') && feature_index < INPUT_SIZE) {
             formatted_input[sample_index][feature_index][0] = std::stod(value);
             ++feature_index;
         }
@@ -49,8 +49,8 @@ std::array<std::array<std::array<fixed_16, 1>, IN_SIZE>, DATA_SIZE> load_csv(con
 }
 
 // Function to load the CSV for labels (y_true)
-std::array<std::array<fixed_16, OUT_SIZE>, DATA_SIZE> load_labels(const std::string& filename) {
-    std::array<std::array<fixed_16, OUT_SIZE>, DATA_SIZE> labels{}; // Initialize with zeros
+std::array<std::array<fixed_16, OUTPUT_SIZE>, DATA_SIZE> load_labels(const std::string& filename) {
+    std::array<std::array<fixed_16, OUTPUT_SIZE>, DATA_SIZE> labels{}; // Initialize with zeros
     std::ifstream file(filename);
     std::string line;
 
@@ -62,7 +62,7 @@ std::array<std::array<fixed_16, OUT_SIZE>, DATA_SIZE> load_labels(const std::str
     size_t sample_index = 0;
     while (getline(file, line) && sample_index < DATA_SIZE) { // Limit to 1000 samples
         int label = std::stoi(line);
-        if (label >= 0 && label < OUT_SIZE) {
+        if (label >= 0 && label < OUTPUT_SIZE) {
             labels[sample_index][label] = 1.0;  // One-hot encode
         }
         ++sample_index;

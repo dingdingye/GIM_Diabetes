@@ -13,26 +13,26 @@ typedef ap_fixed<16,7> fixed_16;
 using namespace std;
 
 void accelerator(
-    const std::array<std::array<std::array<fixed_16, 1>, IN_SIZE>, DATA_SIZE>& input,
-    const std::array<std::array<fixed_16, OUT_SIZE>, DATA_SIZE>& y_true,
-    std::array<std::array<fixed_16, IN_SIZE>, L0_SIZE>& weights_l0,
+    const std::array<std::array<std::array<fixed_16, 1>, INPUT_SIZE>, DATA_SIZE>& input,
+    const std::array<std::array<fixed_16, OUTPUT_SIZE>, DATA_SIZE>& y_true,
+    std::array<std::array<fixed_16, INPUT_SIZE>, L0_SIZE>& weights_l0,
     std::array<std::array<fixed_16, L0_SIZE>, L1_SIZE>& weights_l1,
     std::array<std::array<fixed_16, L1_SIZE>, L2_SIZE>& weights_l2,
-    std::array<std::array<fixed_16, L2_SIZE>, OUT_SIZE>& weights_l3,
+    std::array<std::array<fixed_16, L2_SIZE>, OUTPUT_SIZE>& weights_l3,
     std::array<fixed_16, L0_SIZE>& biases_l0,
     std::array<fixed_16, L1_SIZE>& biases_l1,
     std::array<fixed_16, L2_SIZE>& biases_l2,
-    std::array<fixed_16, OUT_SIZE>& biases_l3
+    std::array<fixed_16, OUTPUT_SIZE>& biases_l3
 ) {
     int first_full_acc_epoch = NUM_ITERATIONS + 301;
     double learning_rate = LR;
 
     std::cout << "+---------------------------------------------------------------+" << std::endl;
 
-    std::cout << "Initial | weights_l0[0][0]: " << weights_l0[0][0] 
-                << " | weights_l1[0][0]: " << weights_l1[0][0] 
-                << " | weights_l2[0][0]: " << weights_l2[0][0] 
-                << " | weights_l3[0][0]: " << weights_l3[0][0] << std::endl;
+    // std::cout << "Initial | weights_l0[0][0]: " << weights_l0[0][0] 
+    //             << " | weights_l1[0][0]: " << weights_l1[0][0] 
+    //             << " | weights_l2[0][0]: " << weights_l2[0][0] 
+    //             << " | weights_l3[0][0]: " << weights_l3[0][0] << std::endl;
             
 
     for (int epoch = 0; epoch < NUM_ITERATIONS; ++epoch) {
@@ -41,13 +41,13 @@ void accelerator(
             // printf("======================\n");
             // printf("iteration %d \n", iteration);
             auto input_ref = input[iteration];
-            auto result_l0 = forwardPropagation<IN_SIZE, L0_SIZE>(input_ref, weights_l0, biases_l0, ACTIVATION_HIDDEN);
+            auto result_l0 = forwardPropagation<INPUT_SIZE, L0_SIZE>(input_ref, weights_l0, biases_l0, ACTIVATION_HIDDEN);
             // printf("Finished first forward prop\n");
             auto result_l1 = forwardPropagation<L0_SIZE, L1_SIZE>(result_l0, weights_l1, biases_l1, ACTIVATION_HIDDEN);
             // printf("Finished second forward prop\n");
             auto result_l2 = forwardPropagation<L1_SIZE, L2_SIZE>(result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
             // printf("Finished third forward prop\n");
-            auto result_l3 = forwardPropagation<L2_SIZE, OUT_SIZE>(result_l2, weights_l3, biases_l3, ACTIVATION_OUTPUT);
+            auto result_l3 = forwardPropagation<L2_SIZE, OUTPUT_SIZE>(result_l2, weights_l3, biases_l3, ACTIVATION_OUTPUT);
             // printf("Forward prop res: \n");
 
             // select the max value in the last layer output
@@ -65,7 +65,7 @@ void accelerator(
                 correct += 1;
             }
 
-            std::array<std::array<double, 1>, OUT_SIZE> final_error{};
+            std::array<std::array<double, 1>, OUTPUT_SIZE> final_error{};
             for (size_t i = 0; i < result_l3.size(); ++i) {
                 for (size_t j = 0; j < result_l3[i].size(); ++j) {
                     final_error[i][j] = result_l3[i][j] - y_true[iteration][i]; // Corrected indexing
@@ -78,11 +78,11 @@ void accelerator(
 
             // printf("Dimensions of weights_l3: [%lu x %lu]\n", weights_l3.size(), weights_l3[0].size());
             
-            auto d_l2 = backProp<L1_SIZE, L2_SIZE, OUT_SIZE>(weights_l3, final_error, result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
+            auto d_l2 = backProp<L1_SIZE, L2_SIZE, OUTPUT_SIZE>(weights_l3, final_error, result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
             // printf("Finished first backprop\n");
             auto d_l1 = backProp<L0_SIZE, L1_SIZE, L2_SIZE>(weights_l2, d_l2, result_l0, weights_l1, biases_l1, ACTIVATION_HIDDEN);
             // printf("Finished second backprop\n");
-            auto d_l0 = backProp<IN_SIZE, L0_SIZE, L1_SIZE>(weights_l1, d_l1, input_ref, weights_l0, biases_l0, ACTIVATION_HIDDEN);
+            auto d_l0 = backProp<INPUT_SIZE, L0_SIZE, L1_SIZE>(weights_l1, d_l1, input_ref, weights_l0, biases_l0, ACTIVATION_HIDDEN);
             // printf("Finished all backprop\n");
             
             // std::cout << "Gradient d_l3[0][0]: " << final_error[0][0] << std::endl;
@@ -97,10 +97,10 @@ void accelerator(
             // }
             // std::cout << "Max Gradient d_l3: " << max_gradient << std::endl;
             
-            updateWeightBias<L2_SIZE, OUT_SIZE>(weights_l3, biases_l3, result_l2, final_error, learning_rate);
+            updateWeightBias<L2_SIZE, OUTPUT_SIZE>(weights_l3, biases_l3, result_l2, final_error, learning_rate);
             updateWeightBias<L1_SIZE, L2_SIZE>(weights_l2, biases_l2, result_l1, d_l2, learning_rate);
             updateWeightBias<L0_SIZE, L1_SIZE>(weights_l1, biases_l1, result_l0, d_l1, learning_rate);
-            updateWeightBias<IN_SIZE, L0_SIZE>(weights_l0, biases_l0, input_ref, d_l0, learning_rate);
+            updateWeightBias<INPUT_SIZE, L0_SIZE>(weights_l0, biases_l0, input_ref, d_l0, learning_rate);
             
         }
         // std::cout << "Epoch " << epoch 

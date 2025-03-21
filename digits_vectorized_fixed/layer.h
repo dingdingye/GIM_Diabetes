@@ -11,6 +11,7 @@
 #include <cassert>
 #include <iomanip>  // for std::setw (nice formatting)
 
+typedef ap_fixed<16, 7> fixed_16;
 using namespace std;
 
 // template <size_t ROWS, size_t COLS>
@@ -138,14 +139,15 @@ std::array<std::array<fixed_16, P>, M> matmulTransposeW (
 //     std::vector<double>& biases,
 //     int activation);
 
-/// Forward propagation function for a DNN.
-/// @param input The input vector to the network.
-/// @param weights A vector of weight matrices, one per layer.
-///        Each weight matrix is a vector of neurons, where each neuron is a vector of weights.
-/// @param biases A vector of bias vectors, one per layer.
-/// @param activations A vector of activation functions, one for each layer.
-/// @return The output vector from the final layer.
-template <int IN_SIZE, int OUT_SIZE>
+// / Forward propagation function for a DNN.
+// / @param input The input vector to the network.
+// / @param weights A vector of weight matrices, one per layer.
+// /        Each weight matrix is a vector of neurons, where each neuron is a vector of weights.
+// / @param biases A vector of bias vectors, one per layer.
+// / @param activations A vector of activation functions, one for each layer.
+// / @return The output vector from the final layer.
+
+template<int IN_SIZE, int OUT_SIZE>
 std::array<std::array<fixed_16, 1>, OUT_SIZE> forwardPropagation(
     std::array<std::array<fixed_16, 1>, IN_SIZE>& input,
     std::array<std::array<fixed_16, IN_SIZE>, OUT_SIZE>& weights,
@@ -215,7 +217,7 @@ std::array<std::array<fixed_16, 1>, OUT_SIZE> forwardPropagation(
     } else if (activation == 2) {
         output = sigmoid<OUT_SIZE>(net);
     } else {
-        printf("Error: Incorrect activation given.")
+        printf("Error: Incorrect activation given.");
         // throw std::runtime_error("Incorrect activation given");
     }
     
