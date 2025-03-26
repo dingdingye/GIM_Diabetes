@@ -48,12 +48,19 @@ void accelerator(
             auto result_l3 = forwardPropagation<L2_SIZE, OUT_SIZE>(result_l2, weights_l3, biases_l3, ACTIVATION_OUTPUT);
             // printf("Forward prop res: \n");
 
+            // std::cout << "result_l3: ";
+            // for (size_t i = 0; i < OUT_SIZE; ++i) std::cout << result_l3[i][0] << " ";
+            // std::cout << std::endl;
+
             // select the max value in the last layer output
+            // int predicted_digit = std::distance(result_l3.begin(), 
+            //     std::max_element(result_l3.begin(), result_l3.end(),
+            //     [](const std::array<double, 1>& a, const std::array<double, 1>& b) {
+            //         return a[0] < b[0];  // Compare based on the first element
+            //     }));
+
             int predicted_digit = std::distance(result_l3.begin(), 
-                std::max_element(result_l3.begin(), result_l3.end(),
-                [](const std::array<double, 1>& a, const std::array<double, 1>& b) {
-                    return a[0] < b[0];  // Compare based on the first element
-                }));
+                std::max_element(result_l3.begin(), result_l3.end()));
 
 
             // select which in the one-hot vector is the correct label
@@ -69,12 +76,26 @@ void accelerator(
                     final_error[i][j] = result_l3[i][j] - y_true[iteration][i]; // Corrected indexing
                 }
             }
+
             // std::array<std::array<double, 1>, OUT_SIZE> final_error;
             // for (size_t i = 0; i < result_l3.size(); ++i) {
             //     final_error[i][0] = result_l3[i][0] - y_true[iteration][i]; // Corrected indexing
             // }
 
             // printf("Dimensions of weights_l3: [%lu x %lu]\n", weights_l3.size(), weights_l3[0].size());
+
+            // std::cout << "Predicted: " << predicted_digit << ", Actual: " << actual_digit << std::endl;
+            // std::cout << "result_l3: ";
+            // for (size_t i = 0; i < OUT_SIZE; ++i) std::cout << result_l3[i][0] << " ";
+            // std::cout << std::endl;
+
+            // std::cout << "y_true: ";
+            // for (size_t i = 0; i < OUT_SIZE; ++i) std::cout << y_true[iteration][i] << " ";
+            // std::cout << std::endl;
+
+            // std::cout << "final_error: ";
+            // for (size_t i = 0; i < OUT_SIZE; ++i) std::cout << final_error[i][0] << " ";
+            // std::cout << std::endl;
             
             auto d_l2 = backProp<L1_SIZE, L2_SIZE, OUT_SIZE>(weights_l3, final_error, result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
             // printf("Finished first backprop\n");
@@ -101,12 +122,12 @@ void accelerator(
             updateWeightBias<IN_SIZE, L0_SIZE>(weights_l0, biases_l0, input_ref, d_l0, learning_rate);
             
         }
-        // std::cout << "Epoch " << epoch 
-                        // << " | weights_l0[0][0]: " << weights_l0[0][0]
-                        // << " | weights_l1[0][0]: " << weights_l1[0][0]
-                        // << " | weights_l2[0][0]: " << weights_l2[0][0]
-                        // << " | weights_l3[0][0]: " << weights_l3[0][0]
-                        // << std::endl;
+        std::cout << "Epoch " << epoch 
+                        << " | weights_l0[0][0]: " << weights_l0[0][0]
+                        << " | weights_l1[0][0]: " << weights_l1[0][0]
+                        << " | weights_l2[0][0]: " << weights_l2[0][0]
+                        << " | weights_l3[0][0]: " << weights_l3[0][0]
+                        << std::endl;
         std::cout << "Epoch " << epoch << " accuracy: " << (double)correct / input.size() << std::endl;
         if (correct / input.size() == 1.0) {
             first_full_acc_epoch = std::min(first_full_acc_epoch, epoch);
