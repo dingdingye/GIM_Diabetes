@@ -6,18 +6,41 @@
 #include <vector>
 #include <cmath>
 #include <thread>
+#include <random>
 
 int main(){
     // L+1 rows, L cols
-    std::vector<std::vector<double>> weights_l2 = {{0.05, 0.05, 0.05, 0.05}, 
-                                                   {0.05, 0.05, 0.05, 0.05}};
-    std::vector<std::vector<double>> weights_lh = {{0.05, 0.05}, {0.05, 0.05},
-                                                   {0.05, 0.05}, {0.05, 0.05}};
-    std::vector<std::vector<double>> weights_l1 = {{0.05, 0.05}, {0.05, 0.05}};
+    // std::vector<std::vector<double>> weights_l2 = {{0.05, 0.05, 0.05, 0.05}, 
+    //                                                {0.05, 0.05, 0.05, 0.05}};
+    // std::vector<std::vector<double>> weights_lh = {{0.05, 0.05}, {0.05, 0.05},
+    //                                                {0.05, 0.05}, {0.05, 0.05}};
+    // std::vector<std::vector<double>> weights_l1 = {{0.05, 0.05}, {0.05, 0.05}};
 
-    std::vector<double> biases_l1 = {0.05, 0.05, 0.05, 0.05};
-    std::vector<double> biases_lh = {0.05, 0.05};
-    std::vector<double> biases_l2 = {0.05, 0.05};
+    // std::vector<double> biases_l1 = {0.05, 0.05, 0.05, 0.05};
+    // std::vector<double> biases_lh = {0.05, 0.05};
+    // std::vector<double> biases_l2 = {0.05, 0.05};
+
+    srand(5); // Set an initial seed 
+    std::vector<std::vector<double>> weights_l2 = {
+        { 0.73, -0.12,  0.35, -0.56 },
+        {-0.91,  0.44, -0.03,  0.66 }
+    };
+
+    std::vector<std::vector<double>> weights_lh = {
+        { 0.25, -0.78 },
+        {-0.41,  0.83 },
+        { 0.97, -0.11 },
+        { 0.34,  0.56 }
+    };
+
+    std::vector<std::vector<double>> weights_l1 = {
+        {-0.77,  0.45 },
+        { 0.12, -0.68 }
+    };
+
+    std::vector<double> biases_l1 = { 0.15, -0.25,  0.42, -0.97 };
+    std::vector<double> biases_lh = { 0.36, -0.84 };
+    std::vector<double> biases_l2 = { -0.12,  0.67 };
 
     std::vector<std::vector<std::vector<double>>> input =  {{{0.0}, {0.0}}, 
                                                             {{0.0}, {1.0}}, 
@@ -35,18 +58,17 @@ int main(){
 
     std::vector<std::vector<double>> final_error(y_true[0].size(), std::vector<double>(y_true[0][0].size(), 0));
     std::vector<std::vector<double>> result_l2(y_true[0].size(), std::vector<double>(y_true[0][0].size(), 0));
-    std::vector<std::vector<double>> result_lh(weights_l2[0].size(), std::vector<double>(y_true[0][0].size(), 0));
-    std::vector<std::vector<double>> result_l1(weights_lh[0].size(), std::vector<double>(y_true[0][0].size(), 0));
+    std::vector<std::vector<double>> result_lh(weights_l2[0].size(), std::vector<double>(y_true[0][0].size(), 0.5));
+    std::vector<std::vector<double>> result_l1(weights_lh[0].size(), std::vector<double>(y_true[0][0].size(), 0.5));
     
-    for (int epoch = 0; epoch < 10; ++epoch){
+    for (int epoch = 0; epoch < 5; ++epoch){
         double correct = 0;
         for (int iteration = 0; iteration < 4; ++iteration) {
             printf("======================\n");
             printf("epoch %d iteration %d \n", epoch, iteration);
-            std::vector<std::vector<double>> result_l1 = forwardPropagation(input[iteration], weights_l1, biases_l1, activation_l1);
             printf("Finished first forward prop\n");
             
-            printf("Starting backprop");
+            printf("Starting backprop\n");
             // Output Error Calculation (essentially the backprop step for the softmax end layer)
             printf("Prev iter result: \n");
             print2D(result_l2);
@@ -55,6 +77,8 @@ int main(){
                     final_error[ii][j] = result_l2[ii][j] - y_true[iteration][ii][j];
                 }
             }
+            printf("Final error \n");
+            print2D(final_error);
             std::vector<std::vector<double>> d_lh = backProp(
                 weights_l2,
                 final_error,
@@ -89,16 +113,16 @@ int main(){
             // printf("Biases lh (n-1): \n");
             // print1D(biases_lh);
             // FWD prop from input layer to hidden layer
-            std::vector<std::vector<double>> result_l1 = forwardPropagation(input[iteration], weights_l1, biases_l1, activation_l1);
+            result_l1 = forwardPropagation(input[iteration], weights_l1, biases_l1, activation_l1);
             printf("Finished first forward prop\n");
 
-            std::vector<std::vector<double>> result_lh = forwardPropagation(result_l1, weights_lh, biases_lh, activation_l1);
+            result_lh = forwardPropagation(result_l1, weights_lh, biases_lh, activation_l1);
             printf("makes it past f_lh\n");
             // Backprop of output error into Lh
             
             printf("makes it past b_lh\n");
 
-            std::vector<std::vector<double>> result_l2 = forwardPropagation(result_lh, weights_l2, biases_l2, activation_l2);
+            result_l2 = forwardPropagation(result_lh, weights_l2, biases_l2, activation_l2);
 
             printf("makes it past f_l2\n");
             // Backprop of output error into L1
