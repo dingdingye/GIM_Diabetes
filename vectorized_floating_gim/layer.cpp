@@ -316,12 +316,22 @@ std::vector<std::vector<double> > backPropagationSingleSample(
             // printf("dout %f \n", dOut[0][0]);
             // printf("dOut: %f, input: %f \n", dOut[i][0], input[j][0]);
             double dW = dOut[i][0] * input[j][0];
+            if (dW > 1.0) {
+                dW = 1.0;
+            } else if (dW < -1.0) {
+                dW = -1.0;
+            }
             // printf("DW is %f\n", dW);
             // gradient descent update
             // printf("Weight before: %f \n", weights[i][j]);
             // printf("Subtracting: %f \n", learning_rate * dW);
             weights[i][j] = weights[i][j] - (learning_rate * dW);
             // printf("Weights after: %f \n", weights[i][j]);
+            if (dOut[i][0] > 1.0){
+                dOut[i][0] = 1.0;
+            } else if (dOut[i][0] < -1.0){
+                dOut[i][0] = -1.0;
+            }
             biases[i] -= learning_rate * dOut[i][0];
         }
     }

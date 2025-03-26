@@ -61,7 +61,7 @@ int main(){
     std::vector<std::vector<double>> result_lh(weights_l2[0].size(), std::vector<double>(y_true[0][0].size(), 0.5));
     std::vector<std::vector<double>> result_l1(weights_lh[0].size(), std::vector<double>(y_true[0][0].size(), 0.5));
     
-    for (int epoch = 0; epoch < 5; ++epoch){
+    for (int epoch = 0; epoch < 10; ++epoch){
         double correct = 0;
         for (int iteration = 0; iteration < 4; ++iteration) {
             printf("======================\n");
