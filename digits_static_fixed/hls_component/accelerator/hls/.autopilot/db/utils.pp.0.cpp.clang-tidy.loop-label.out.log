@@ -1,0 +1,15 @@
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\utils.pp.0.cpp:45818:5: warning: Added loop label VITIS_LOOP_35_1:   [xilinx-label-all-loops]
+    while (getline(file, line) && sample_index < 1000) {
+    ^~~~~
+    VITIS_LOOP_35_1: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\utils.pp.0.cpp:45818:5: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\utils.pp.0.cpp:45823:9: warning: Added loop label VITIS_LOOP_40_2:   [xilinx-label-all-loops]
+        while (getline(ss, value, ',') && feature_index < 64) {
+        ^~~~~
+        VITIS_LOOP_40_2: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\utils.pp.0.cpp:45823:9: note: FIX-IT applied suggested code changes
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\utils.pp.0.cpp:45846:5: warning: Added loop label VITIS_LOOP_63_1:   [xilinx-label-all-loops]
+    while (getline(file, line) && sample_index < 1797) {
+    ^~~~~
+    VITIS_LOOP_63_1: 
+C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\utils.pp.0.cpp:45846:5: note: FIX-IT applied suggested code changes

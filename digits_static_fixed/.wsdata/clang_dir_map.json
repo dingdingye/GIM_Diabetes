@@ -1,0 +1,18 @@
+{
+  "workspaceRoot": "C:\\Users\\Dawso\\GIM_Diabetes\\digits_vectorized_fixed",
+  "mapping": {
+    "main.cpp": "hls_component",
+    "digits_features.csv": "hls_component_fixed",
+    "accelerator.cpp": "hls_component",
+    "activation.cpp": "hls_component",
+    "utils.h": "hls_component",
+    "error.cpp": "hls_component",
+    "digits_labels.csv": "hls_component",
+    "activations.h": "hls_component",
+    "layer.h": "hls_component",
+    "utils.cpp": "hls_component",
+    "error.h": "hls_component",
+    "accelerator.h": "hls_component",
+    "layer.cpp": "hls_component"
+  }
+}

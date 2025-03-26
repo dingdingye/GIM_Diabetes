@@ -1,0 +1,13 @@
+---
+MainSourceFile:  'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls/.autopilot/db/error.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_29_1:  '
+    FileOffset:      29
+    FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\error.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\accelerator\hls\.autopilot\db\error.pp.0.cpp'
+        Offset:          823178
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_29_1: '
+...

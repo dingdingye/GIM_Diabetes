@@ -1,0 +1,220 @@
+
+
+================================================================
+== Vitis HLS Report for 'forwardPropagation_8_10_Pipeline_VITIS_LOOP_180_4'
+================================================================
+* Date:           Fri Mar 21 12:03:33 2025
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        accelerator
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sfvc784-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.147 ns|     2.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                   |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                     |
+    +---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+    |       62|       62|  0.620 us|  0.620 us|   61|   61|  loop auto-rewind stp(delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_180_4  |       60|       60|         7|          6|          1|    10|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 6, depth = 7
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 7
+* Pipeline : 1
+  Pipeline-0 : II = 6, D = 7, States = { 1 2 3 4 5 6 7 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.14>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%k = alloca i32 1" [C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:55->C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186->../layer.h:181]   --->   Operation 10 'alloca' 'k' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%net_0_load_9_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %net_0_load_9"   --->   Operation 11 'read' 'net_0_load_9_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%net_0_load_8_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %net_0_load_8"   --->   Operation 12 'read' 'net_0_load_8_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%net_0_load_7_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %net_0_load_7"   --->   Operation 13 'read' 'net_0_load_7_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%net_0_load_6_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %net_0_load_6"   --->   Operation 14 'read' 'net_0_load_6_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%net_0_load_5_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %net_0_load_5"   --->   Operation 15 'read' 'net_0_load_5_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%net_0_load_4_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %net_0_load_4"   --->   Operation 16 'read' 'net_0_load_4_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%net_0_load_3_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %net_0_load_3"   --->   Operation 17 'read' 'net_0_load_3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%net_0_load_2_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %net_0_load_2"   --->   Operation 18 'read' 'net_0_load_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%net_0_load_1_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %net_0_load_1"   --->   Operation 19 'read' 'net_0_load_1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%net_0_load_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %net_0_load"   --->   Operation 20 'read' 'net_0_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.48ns)   --->   "%store_ln55 = store i4 0, i4 %k" [C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:55->C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186->../layer.h:181]   --->   Operation 21 'store' 'store_ln55' <Predicate = true> <Delay = 0.48>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc33"   --->   Operation 22 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%k_1 = load i4 %k" [../layer.h:180]   --->   Operation 23 'load' 'k_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.86ns)   --->   "%icmp_ln180 = icmp_eq  i4 %k_1, i4 10" [../layer.h:180]   --->   Operation 24 'icmp' 'icmp_ln180' <Predicate = true> <Delay = 0.86> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.86> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.86ns)   --->   "%add_ln180 = add i4 %k_1, i4 1" [../layer.h:180]   --->   Operation 25 'add' 'add_ln180' <Predicate = true> <Delay = 0.86> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.86> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln180 = br i1 %icmp_ln180, void %for.inc33.split, void %for.inc42.exitStub" [../layer.h:180]   --->   Operation 26 'br' 'br_ln180' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%transposed_0_addr_1 = getelementptr i64 %transposed_0, i64 0, i64 0"   --->   Operation 27 'getelementptr' 'transposed_0_addr_1' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%transposed_0_addr_2 = getelementptr i64 %transposed_0, i64 0, i64 1"   --->   Operation 28 'getelementptr' 'transposed_0_addr_2' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.79ns)   --->   "%store_ln42 = store i64 %net_0_load_read, i4 %transposed_0_addr_1" [../layer.h:42->../layer.h:181]   --->   Operation 29 'store' 'store_ln42' <Predicate = (!icmp_ln180)> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_1 : Operation 30 [1/1] (0.79ns)   --->   "%store_ln42 = store i64 %net_0_load_1_read, i4 %transposed_0_addr_2" [../layer.h:42->../layer.h:181]   --->   Operation 30 'store' 'store_ln42' <Predicate = (!icmp_ln180)> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_1 : Operation 31 [1/1] (0.48ns)   --->   "%store_ln55 = store i4 %add_ln180, i4 %k" [C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:55->C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186->../layer.h:181]   --->   Operation 31 'store' 'store_ln55' <Predicate = (!icmp_ln180)> <Delay = 0.48>
+ST_1 : Operation 59 [1/1] (0.48ns)   --->   "%ret_ln0 = ret"   --->   Operation 59 'ret' 'ret_ln0' <Predicate = (icmp_ln180)> <Delay = 0.48>
+
+State 2 <SV = 1> <Delay = 0.79>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%transposed_0_addr_3 = getelementptr i64 %transposed_0, i64 0, i64 2"   --->   Operation 32 'getelementptr' 'transposed_0_addr_3' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%transposed_0_addr_4 = getelementptr i64 %transposed_0, i64 0, i64 3"   --->   Operation 33 'getelementptr' 'transposed_0_addr_4' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.79ns)   --->   "%store_ln42 = store i64 %net_0_load_2_read, i4 %transposed_0_addr_3" [../layer.h:42->../layer.h:181]   --->   Operation 34 'store' 'store_ln42' <Predicate = (!icmp_ln180)> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_2 : Operation 35 [1/1] (0.79ns)   --->   "%store_ln42 = store i64 %net_0_load_3_read, i4 %transposed_0_addr_4" [../layer.h:42->../layer.h:181]   --->   Operation 35 'store' 'store_ln42' <Predicate = (!icmp_ln180)> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+
+State 3 <SV = 2> <Delay = 0.79>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%transposed_0_addr_5 = getelementptr i64 %transposed_0, i64 0, i64 4"   --->   Operation 36 'getelementptr' 'transposed_0_addr_5' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%transposed_0_addr_6 = getelementptr i64 %transposed_0, i64 0, i64 5"   --->   Operation 37 'getelementptr' 'transposed_0_addr_6' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (0.79ns)   --->   "%store_ln42 = store i64 %net_0_load_4_read, i4 %transposed_0_addr_5" [../layer.h:42->../layer.h:181]   --->   Operation 38 'store' 'store_ln42' <Predicate = (!icmp_ln180)> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_3 : Operation 39 [1/1] (0.79ns)   --->   "%store_ln42 = store i64 %net_0_load_5_read, i4 %transposed_0_addr_6" [../layer.h:42->../layer.h:181]   --->   Operation 39 'store' 'store_ln42' <Predicate = (!icmp_ln180)> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+
+State 4 <SV = 3> <Delay = 0.79>
+ST_4 : Operation 40 [1/1] (0.00ns)   --->   "%transposed_0_addr_7 = getelementptr i64 %transposed_0, i64 0, i64 6"   --->   Operation 40 'getelementptr' 'transposed_0_addr_7' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%transposed_0_addr_8 = getelementptr i64 %transposed_0, i64 0, i64 7"   --->   Operation 41 'getelementptr' 'transposed_0_addr_8' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_4 : Operation 42 [1/1] (0.79ns)   --->   "%store_ln42 = store i64 %net_0_load_6_read, i4 %transposed_0_addr_7" [../layer.h:42->../layer.h:181]   --->   Operation 42 'store' 'store_ln42' <Predicate = (!icmp_ln180)> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_4 : Operation 43 [1/1] (0.79ns)   --->   "%store_ln42 = store i64 %net_0_load_7_read, i4 %transposed_0_addr_8" [../layer.h:42->../layer.h:181]   --->   Operation 43 'store' 'store_ln42' <Predicate = (!icmp_ln180)> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+
+State 5 <SV = 4> <Delay = 0.79>
+ST_5 : Operation 44 [1/1] (0.00ns)   --->   "%transposed_0_addr_9 = getelementptr i64 %transposed_0, i64 0, i64 8"   --->   Operation 44 'getelementptr' 'transposed_0_addr_9' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_5 : Operation 45 [1/1] (0.00ns)   --->   "%transposed_0_addr_10 = getelementptr i64 %transposed_0, i64 0, i64 9"   --->   Operation 45 'getelementptr' 'transposed_0_addr_10' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_5 : Operation 46 [1/1] (0.79ns)   --->   "%store_ln42 = store i64 %net_0_load_8_read, i4 %transposed_0_addr_9" [../layer.h:42->../layer.h:181]   --->   Operation 46 'store' 'store_ln42' <Predicate = (!icmp_ln180)> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_5 : Operation 47 [1/1] (0.79ns)   --->   "%store_ln42 = store i64 %net_0_load_9_read, i4 %transposed_0_addr_10" [../layer.h:42->../layer.h:181]   --->   Operation 47 'store' 'store_ln42' <Predicate = (!icmp_ln180)> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+
+State 6 <SV = 5> <Delay = 0.79>
+ST_6 : Operation 48 [1/1] (0.00ns)   --->   "%zext_ln180 = zext i4 %k_1" [../layer.h:180]   --->   Operation 48 'zext' 'zext_ln180' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_6 : Operation 49 [1/1] (0.00ns)   --->   "%transposed_0_addr = getelementptr i64 %transposed_0, i64 0, i64 %zext_ln180" [C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:56->C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186->../layer.h:181]   --->   Operation 49 'getelementptr' 'transposed_0_addr' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_6 : Operation 50 [2/2] (0.79ns)   --->   "%transposed_0_load = load i4 %transposed_0_addr" [../layer.h:181]   --->   Operation 50 'load' 'transposed_0_load' <Predicate = (!icmp_ln180)> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+
+State 7 <SV = 6> <Delay = 1.58>
+ST_7 : Operation 51 [1/1] (0.00ns)   --->   "%specpipeline_ln180 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [../layer.h:180]   --->   Operation 51 'specpipeline' 'specpipeline_ln180' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 52 [1/1] (0.00ns)   --->   "%speclooptripcount_ln180 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 10, i64 10, i64 10" [../layer.h:180]   --->   Operation 52 'speclooptripcount' 'speclooptripcount_ln180' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 53 [1/1] (0.00ns)   --->   "%specloopname_ln180 = specloopname void @_ssdm_op_SpecLoopName, void @empty_11" [../layer.h:180]   --->   Operation 53 'specloopname' 'specloopname_ln180' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 54 [1/2] (0.79ns)   --->   "%transposed_0_load = load i4 %transposed_0_addr" [../layer.h:181]   --->   Operation 54 'load' 'transposed_0_load' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_7 : Operation 55 [1/1] (0.00ns)   --->   "%bitcast_ln181 = bitcast i64 %transposed_0_load" [../layer.h:181]   --->   Operation 55 'bitcast' 'bitcast_ln181' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 56 [1/1] (0.00ns)   --->   "%softmax_input_addr = getelementptr i64 %softmax_input, i64 0, i64 %zext_ln180" [../layer.h:181]   --->   Operation 56 'getelementptr' 'softmax_input_addr' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 57 [1/1] (0.79ns)   --->   "%store_ln181 = store i64 %bitcast_ln181, i4 %softmax_input_addr" [../layer.h:181]   --->   Operation 57 'store' 'store_ln181' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_7 : Operation 58 [1/1] (0.00ns)   --->   "%br_ln180 = br void %for.inc33" [../layer.h:180]   --->   Operation 58 'br' 'br_ln180' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.000ns.
+
+ <State 1>: 2.147ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln55', C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:55->C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186->../layer.h:181) of constant 0 on local variable '__n', C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:55->C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186->../layer.h:181 [24]  (0.489 ns)
+	'load' operation 4 bit ('k', ../layer.h:180) on local variable '__n', C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:55->C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186->../layer.h:181 [27]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln180', ../layer.h:180) [28]  (0.868 ns)
+	'store' operation 0 bit ('store_ln42', ../layer.h:42->../layer.h:181) of variable 'net_0_load_read' on array 'transposed_0' [46]  (0.790 ns)
+
+ <State 2>: 0.790ns
+The critical path consists of the following:
+	'getelementptr' operation 4 bit ('transposed_0_addr_3') [34]  (0.000 ns)
+	'store' operation 0 bit ('store_ln42', ../layer.h:42->../layer.h:181) of variable 'net_0_load_2_read' on array 'transposed_0' [48]  (0.790 ns)
+
+ <State 3>: 0.790ns
+The critical path consists of the following:
+	'getelementptr' operation 4 bit ('transposed_0_addr_5') [36]  (0.000 ns)
+	'store' operation 0 bit ('store_ln42', ../layer.h:42->../layer.h:181) of variable 'net_0_load_4_read' on array 'transposed_0' [50]  (0.790 ns)
+
+ <State 4>: 0.790ns
+The critical path consists of the following:
+	'getelementptr' operation 4 bit ('transposed_0_addr_7') [38]  (0.000 ns)
+	'store' operation 0 bit ('store_ln42', ../layer.h:42->../layer.h:181) of variable 'net_0_load_6_read' on array 'transposed_0' [52]  (0.790 ns)
+
+ <State 5>: 0.790ns
+The critical path consists of the following:
+	'getelementptr' operation 4 bit ('transposed_0_addr_9') [40]  (0.000 ns)
+	'store' operation 0 bit ('store_ln42', ../layer.h:42->../layer.h:181) of variable 'net_0_load_8_read' on array 'transposed_0' [54]  (0.790 ns)
+
+ <State 6>: 0.790ns
+The critical path consists of the following:
+	'getelementptr' operation 4 bit ('transposed_0_addr', C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:56->C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186->../layer.h:181) [56]  (0.000 ns)
+	'load' operation 64 bit ('transposed_0_load', ../layer.h:181) on array 'transposed_0' [57]  (0.790 ns)
+
+ <State 7>: 1.580ns
+The critical path consists of the following:
+	'load' operation 64 bit ('transposed_0_load', ../layer.h:181) on array 'transposed_0' [57]  (0.790 ns)
+	'store' operation 0 bit ('store_ln181', ../layer.h:181) of variable 'bitcast_ln181', ../layer.h:181 on array 'softmax_input' [60]  (0.790 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

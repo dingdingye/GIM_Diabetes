@@ -1,0 +1,218 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator\accelerator.hlsrun_csim_summary, at 03/21/25 14:43:30
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator -config C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg -cmdlineconfig C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Fri Mar 21 14:43:32 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source C:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'Dawso' on host 'laptop-dp0ojsk0' (Windows NT_amd64 version 10.0) on Fri Mar 21 14:43:33 -0500 2025
+INFO: [HLS 200-10] In directory 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component'
+INFO: [HLS 200-2005] Using work_dir C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(21)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/digits_features.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(22)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/digits_labels.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(18)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(19)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../activation.cpp in debug mode
+csim.mk:112: recipe for target 'obj/activation.o' failed
+In file included from ../../../../../activation.cpp:6:
+In file included from ../../../../../activations.h:7:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+../../../../../activation.cpp:104:23: error: call to 'isinf' is ambiguous
+    if (sum == 0.0 || std::isinf(sum)) {
+                      ^~~~~~~~~~
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:584:3: note: candidate function
+  isinf(float __x)
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:592:3: note: candidate function
+  isinf(double __x)
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:597:3: note: candidate function
+  isinf(long double __x)
+  ^
+../../../../../activation.cpp:42:37: error: call to 'exp' is ambiguous
+        output[i][0] = 1.0 / (1.0 + std::exp(-net[i][0]));
+                                    ^~~~~~~~
+../../../../../activation.cpp:144:50: note: in instantiation of function template specialization 'sigmoid<64>' requested here
+template std::array<std::array<fixed_16, 1>, 64> sigmoid<64>(std::array<std::array<fixed_16, 1>, 64>&);
+                                                 ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/math.h:188:18: note: candidate function
+  double __cdecl exp(double _X);
+                 ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:222:3: note: candidate function
+  exp(float __x)
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:226:3: note: candidate function
+  exp(long double __x)
+  ^
+../../../../../activation.cpp:42:37: error: call to 'exp' is ambiguous
+        output[i][0] = 1.0 / (1.0 + std::exp(-net[i][0]));
+                                    ^~~~~~~~
+../../../../../activation.cpp:145:49: note: in instantiation of function template specialization 'sigmoid<8>' requested here
+template std::array<std::array<fixed_16, 1>, 8> sigmoid<8>(std::array<std::array<fixed_16, 1>, 8>&);
+                                                ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/math.h:188:18: note: candidate function
+  double __cdecl exp(double _X);
+                 ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:222:3: note: candidate function
+  exp(float __x)
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:226:3: note: candidate function
+  exp(long double __x)
+  ^
+../../../../../activation.cpp:42:37: error: call to 'exp' is ambiguous
+        output[i][0] = 1.0 / (1.0 + std::exp(-net[i][0]));
+                                    ^~~~~~~~
+../../../../../activation.cpp:146:50: note: in instantiation of function template specialization 'sigmoid<10>' requested here
+template std::array<std::array<fixed_16, 1>, 10> sigmoid<10>(std::array<std::array<fixed_16, 1>, 10>&);
+                                                 ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/math.h:188:18: note: candidate function
+  double __cdecl exp(double _X);
+                 ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:222:3: note: candidate function
+  exp(float __x)
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:226:3: note: candidate function
+  exp(long double __x)
+  ^
+../../../../../activation.cpp:98:24: error: call to 'exp' is ambiguous
+        output[i][0] = std::exp(net[i][0] - maxLogit);
+                       ^~~~~~~~
+../../../../../activation.cpp:149:50: note: in instantiation of function template specialization 'softmax<64>' requested here
+template std::array<std::array<fixed_16, 1>, 64> softmax<64>(std::array<std::array<fixed_16, 1>, 64>&);
+                                                 ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/math.h:188:18: note: candidate function
+  double __cdecl exp(double _X);
+                 ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:222:3: note: candidate function
+  exp(float __x)
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:226:3: note: candidate function
+  exp(long double __x)
+  ^
+../../../../../activation.cpp:118:13: error: call to 'isnan' is ambiguous
+        if (std::isnan(output[i][0])) {
+            ^~~~~~~~~~
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:611:3: note: candidate function
+  isnan(float __x)
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:619:3: note: candidate function
+  isnan(double __x)
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:624:3: note: candidate function
+  isnan(long double __x)
+  ^
+../../../../../activation.cpp:98:24: error: call to 'exp' is ambiguous
+        output[i][0] = std::exp(net[i][0] - maxLogit);
+                       ^~~~~~~~
+../../../../../activation.cpp:150:49: note: in instantiation of function template specialization 'softmax<8>' requested here
+template std::array<std::array<fixed_16, 1>, 8> softmax<8>(std::array<std::array<fixed_16, 1>, 8>&);
+                                                ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/math.h:188:18: note: candidate function
+  double __cdecl exp(double _X);
+                 ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:222:3: note: candidate function
+  exp(float __x)
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:226:3: note: candidate function
+  exp(long double __x)
+  ^
+../../../../../activation.cpp:118:13: error: call to 'isnan' is ambiguous
+        if (std::isnan(output[i][0])) {
+            ^~~~~~~~~~
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:611:3: note: candidate function
+  isnan(float __x)
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:619:3: note: candidate function
+  isnan(double __x)
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:624:3: note: candidate function
+  isnan(long double __x)
+  ^
+../../../../../activation.cpp:98:24: error: call to 'exp' is ambiguous
+        output[i][0] = std::exp(net[i][0] - maxLogit);
+                       ^~~~~~~~
+../../../../../activation.cpp:151:50: note: in instantiation of function template specialization 'softmax<10>' requested here
+template std::array<std::array<fixed_16, 1>, 10> softmax<10>(std::array<std::array<fixed_16, 1>, 10>&);
+                                                 ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/math.h:188:18: note: candidate function
+  double __cdecl exp(double _X);
+                 ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:222:3: note: candidate function
+  exp(float __x)
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:226:3: note: candidate function
+  exp(long double __x)
+  ^
+../../../../../activation.cpp:118:13: error: call to 'isnan' is ambiguous
+        if (std::isnan(output[i][0])) {
+            ^~~~~~~~~~
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:611:3: note: candidate function
+  isnan(float __x)
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:619:3: note: candidate function
+  isnan(double __x)
+  ^
+C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:624:3: note: candidate function
+  isnan(long double __x)
+  ^
+1 warning and 10 errors generated.
+make: *** [obj/activation.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 11.12 seconds; peak allocated memory: 231.145 MB.

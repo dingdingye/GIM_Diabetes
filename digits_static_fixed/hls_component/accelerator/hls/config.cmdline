@@ -1,0 +1,3 @@
+relativeroot=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component
+original_argv=--mode hls --csim --config C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\hls_component\hls_config.cfg --work_dir accelerator 
+

@@ -1,0 +1,1051 @@
+{
+    "1": {
+        "name": "matmul<64ul, 1ul, 64ul>_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2",
+        "file": "..\/layer.h",
+        "fileloc": "81",
+        "instructions": "293",
+        "total_instructions": "293",
+        "calls": "",
+        "basicblocks": "69",
+        "loads": {
+            "L": "69"
+        },
+        "stores": {
+            "L": "70"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "softmax<10>_Pipeline_1",
+        "file": "..\/activation.cpp",
+        "fileloc": "83",
+        "instructions": "42",
+        "total_instructions": "42",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "forwardPropagation<8, 10>",
+        "file": "..\/layer.h",
+        "fileloc": "157",
+        "instructions": "157",
+        "total_instructions": "410",
+        "calls": "52 28 17 21",
+        "basicblocks": "4",
+        "loads": {
+            "L": "22"
+        },
+        "stores": {
+            "L": "53"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "forwardPropagation<8, 8>_Pipeline_VITIS_LOOP_81_1",
+        "file": "..\/layer.h",
+        "fileloc": "157",
+        "instructions": "83",
+        "total_instructions": "83",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "backProp<64, 8, 8>_Pipeline_VITIS_LOOP_22_1",
+        "file": "..\/layer.h",
+        "fileloc": "274",
+        "instructions": "28",
+        "total_instructions": "28",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "accelerator_Pipeline_VITIS_LOOP_323_1",
+        "file": "..\/accelerator.cpp",
+        "fileloc": "98",
+        "instructions": "107",
+        "total_instructions": "107",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "11",
+            "T": "1"
+        },
+        "stores": {
+            "L": "4",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "backProp<8, 8, 10>_Pipeline_VITIS_LOOP_40_1",
+        "file": "..\/layer.h",
+        "fileloc": "260",
+        "instructions": "364",
+        "total_instructions": "364",
+        "calls": "",
+        "basicblocks": "15",
+        "loads": {
+            "L": "81",
+            "T": "1"
+        },
+        "stores": {
+            "L": "82"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "backProp<64, 64, 8>_Pipeline_VITIS_LOOP_22_1",
+        "file": "..\/layer.h",
+        "fileloc": "274",
+        "instructions": "28",
+        "total_instructions": "28",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "backProp<8, 8, 10>",
+        "file": "..\/layer.h",
+        "fileloc": "264",
+        "instructions": "279",
+        "total_instructions": "1128",
+        "calls": "7 26 41 30 58 23",
+        "basicblocks": "1",
+        "loads": {
+            "L": "104"
+        },
+        "stores": {
+            "L": "16"
+        }
+    },
+    "10": {
+        "name": "softmax<10>_Pipeline_VITIS_LOOP_89_1",
+        "file": "..\/activation.cpp",
+        "fileloc": "83",
+        "instructions": "30",
+        "total_instructions": "30",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "5"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "matmul<64ul, 64ul, 1ul>_Pipeline_VITIS_LOOP_81_1",
+        "file": "..\/layer.h",
+        "fileloc": "81",
+        "instructions": "340",
+        "total_instructions": "340",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2",
+            "T": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "12": {
+        "name": "forwardPropagation<64, 8>_Pipeline_VITIS_LOOP_13_1",
+        "file": "..\/layer.h",
+        "fileloc": "170",
+        "instructions": "27",
+        "total_instructions": "27",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
+        "name": "accelerator_Pipeline_VITIS_LOOP_40_15",
+        "file": "..\/accelerator.cpp",
+        "fileloc": "100",
+        "instructions": "82",
+        "total_instructions": "82",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "14": {
+        "name": "matmul<8ul, 1ul, 8ul>_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2",
+        "file": "..\/layer.h",
+        "fileloc": "81",
+        "instructions": "48",
+        "total_instructions": "48",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "15": {
+        "name": "matmul<8ul, 1ul, 64ul>",
+        "file": "..\/layer.h",
+        "fileloc": "56",
+        "instructions": "1034",
+        "total_instructions": "1335",
+        "calls": "20",
+        "basicblocks": "1",
+        "stores": {
+            "L": "512"
+        }
+    },
+    "16": {
+        "name": "forwardPropagation<8, 8>_Pipeline_VITIS_LOOP_161_1",
+        "file": "..\/layer.h",
+        "fileloc": "161",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "17": {
+        "name": "forwardPropagation<8, 10>_Pipeline_VITIS_LOOP_180_4",
+        "file": "..\/layer.h",
+        "fileloc": "180",
+        "instructions": "49",
+        "total_instructions": "49",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "13"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "18": {
+        "name": "matmul<64ul, 8ul, 1ul>",
+        "file": "..\/layer.h",
+        "fileloc": "56",
+        "instructions": "650",
+        "total_instructions": "1212",
+        "calls": "47",
+        "basicblocks": "1",
+        "stores": {
+            "L": "64"
+        }
+    },
+    "19": {
+        "name": "accelerator_Pipeline_VITIS_LOOP_323_1_VITIS_LOOP_324_2",
+        "file": "..\/accelerator.cpp",
+        "fileloc": "99",
+        "instructions": "89",
+        "total_instructions": "89",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "9"
+        },
+        "stores": {
+            "L": "11"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "20": {
+        "name": "matmul<8ul, 1ul, 64ul>_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2",
+        "file": "..\/layer.h",
+        "fileloc": "81",
+        "instructions": "301",
+        "total_instructions": "301",
+        "calls": "",
+        "basicblocks": "69",
+        "loads": {
+            "L": "68"
+        },
+        "stores": {
+            "L": "70"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "21": {
+        "name": "softmax<10>",
+        "file": "..\/activation.cpp",
+        "fileloc": "129",
+        "instructions": "28",
+        "total_instructions": "119",
+        "calls": "2 10 56",
+        "basicblocks": "1",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "10"
+        }
+    },
+    "22": {
+        "name": "matmul<64ul, 1ul, 64ul>",
+        "file": "..\/layer.h",
+        "fileloc": "56",
+        "instructions": "8194",
+        "total_instructions": "8487",
+        "calls": "1",
+        "basicblocks": "1",
+        "stores": {
+            "L": "4096"
+        }
+    },
+    "23": {
+        "name": "backProp<8, 8, 10>_Pipeline_VITIS_LOOP_284_3",
+        "file": "..\/layer.h",
+        "fileloc": "284",
+        "instructions": "116",
+        "total_instructions": "116",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "18"
+        },
+        "stores": {
+            "L": "34"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "24": {
+        "name": "matmul<8ul, 1ul, 8ul>",
+        "file": "..\/layer.h",
+        "fileloc": "56",
+        "instructions": "138",
+        "total_instructions": "186",
+        "calls": "14",
+        "basicblocks": "1",
+        "stores": {
+            "L": "64"
+        }
+    },
+    "25": {
+        "name": "forwardPropagation<64, 8>_Pipeline_VITIS_LOOP_161_1",
+        "file": "..\/layer.h",
+        "fileloc": "161",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "26": {
+        "name": "backProp<8, 8, 10>_Pipeline_VITIS_LOOP_81_1",
+        "file": "..\/layer.h",
+        "fileloc": "261",
+        "instructions": "232",
+        "total_instructions": "232",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "25"
+        },
+        "stores": {
+            "L": "34"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "27": {
+        "name": "backProp<64, 64, 8>_Pipeline_VITIS_LOOP_40_1",
+        "file": "..\/layer.h",
+        "fileloc": "260",
+        "instructions": "2203",
+        "total_instructions": "2203",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "513",
+            "T": "1"
+        },
+        "stores": {
+            "L": "514"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "28": {
+        "name": "forwardPropagation<8, 10>_Pipeline_VITIS_LOOP_161_1",
+        "file": "..\/layer.h",
+        "fileloc": "161",
+        "instructions": "25",
+        "total_instructions": "25",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "29": {
+        "name": "forwardPropagation<64, 8>",
+        "file": "..\/layer.h",
+        "fileloc": "157",
+        "instructions": "137",
+        "total_instructions": "530",
+        "calls": "60 25 12",
+        "basicblocks": "1",
+        "loads": {
+            "L": "8"
+        },
+        "stores": {
+            "L": "24"
+        }
+    },
+    "30": {
+        "name": "backProp<8, 8, 10>_Pipeline_VITIS_LOOP_266_1",
+        "file": "..\/layer.h",
+        "fileloc": "266",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "31": {
+        "name": "accelerator_Pipeline_VITIS_LOOP_323_18",
+        "file": "..\/accelerator.cpp",
+        "fileloc": "101",
+        "instructions": "491",
+        "total_instructions": "491",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "68",
+            "T": "1"
+        },
+        "stores": {
+            "L": "4",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "accelerator",
+        "file": "accelerator.cpp",
+        "fileloc": "13",
+        "instructions": "1065",
+        "total_instructions": "22369",
+        "calls": "42 29 37 3 35 9 40 51 57 49 6 55 24 19 13 15 32 39 22 31",
+        "basicblocks": "7",
+        "loads": {
+            "L": "336",
+            "T": "2"
+        },
+        "stores": {
+            "L": "138"
+        },
+        "loops": {
+            "L": "1",
+            "N": "1"
+        }
+    },
+    "32": {
+        "name": "accelerator_Pipeline_VITIS_LOOP_323_16",
+        "file": "..\/accelerator.cpp",
+        "fileloc": "100",
+        "instructions": "498",
+        "total_instructions": "498",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "67",
+            "T": "1"
+        },
+        "stores": {
+            "L": "4",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "33": {
+        "name": "backProp<64, 64, 8>_Pipeline_VITIS_LOOP_284_3",
+        "file": "..\/layer.h",
+        "fileloc": "284",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "34": {
+        "name": "matmul<10ul, 1ul, 8ul>_Pipeline_VITIS_LOOP_81_1_VITIS_LOOP_82_2",
+        "file": "..\/layer.h",
+        "fileloc": "81",
+        "instructions": "78",
+        "total_instructions": "78",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "12"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "35": {
+        "name": "accelerator_Pipeline_VITIS_LOOP_67_3",
+        "file": "..\/accelerator.cpp",
+        "fileloc": "67",
+        "instructions": "84",
+        "total_instructions": "84",
+        "calls": "",
+        "basicblocks": "15",
+        "loads": {
+            "L": "12"
+        },
+        "stores": {
+            "L": "22"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "36": {
+        "name": "relu<64>",
+        "file": "..\/activation.cpp",
+        "fileloc": "11",
+        "instructions": "130",
+        "total_instructions": "157",
+        "calls": "46",
+        "basicblocks": "1",
+        "stores": {
+            "L": "64"
+        }
+    },
+    "37": {
+        "name": "forwardPropagation<8, 8>",
+        "file": "..\/layer.h",
+        "fileloc": "157",
+        "instructions": "81",
+        "total_instructions": "217",
+        "calls": "4 16 43",
+        "basicblocks": "1",
+        "loads": {
+            "L": "8"
+        },
+        "stores": {
+            "L": "24"
+        }
+    },
+    "38": {
+        "name": "backProp<64, 8, 8>_Pipeline_VITIS_LOOP_266_1",
+        "file": "..\/layer.h",
+        "fileloc": "266",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "39": {
+        "name": "accelerator_Pipeline_VITIS_LOOP_40_17",
+        "file": "..\/accelerator.cpp",
+        "fileloc": "101",
+        "instructions": "82",
+        "total_instructions": "82",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "40": {
+        "name": "backProp<64, 8, 8>",
+        "file": "..\/layer.h",
+        "fileloc": "260",
+        "instructions": "181",
+        "total_instructions": "904",
+        "calls": "50 48 44 38 5 53",
+        "basicblocks": "1",
+        "loads": {
+            "L": "24"
+        },
+        "stores": {
+            "L": "16"
+        }
+    },
+    "41": {
+        "name": "backProp<8, 8, 10>_Pipeline_VITIS_LOOP_81_12",
+        "file": "..\/layer.h",
+        "fileloc": "264",
+        "instructions": "83",
+        "total_instructions": "83",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "42": {
+        "name": "forwardPropagation<64, 64>",
+        "file": "..\/layer.h",
+        "fileloc": "157",
+        "instructions": "393",
+        "total_instructions": "1111",
+        "calls": "59 45 36",
+        "basicblocks": "1",
+        "loads": {
+            "L": "64"
+        },
+        "stores": {
+            "L": "64"
+        }
+    },
+    "43": {
+        "name": "forwardPropagation<8, 8>_Pipeline_VITIS_LOOP_13_1",
+        "file": "..\/layer.h",
+        "fileloc": "170",
+        "instructions": "27",
+        "total_instructions": "27",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "44": {
+        "name": "backProp<64, 8, 8>_Pipeline_VITIS_LOOP_81_13",
+        "file": "..\/layer.h",
+        "fileloc": "264",
+        "instructions": "340",
+        "total_instructions": "340",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2",
+            "T": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "45": {
+        "name": "forwardPropagation<64, 64>_Pipeline_VITIS_LOOP_161_1",
+        "file": "..\/layer.h",
+        "fileloc": "161",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "46": {
+        "name": "relu<64>_Pipeline_VITIS_LOOP_13_1",
+        "file": "..\/activation.cpp",
+        "fileloc": "13",
+        "instructions": "27",
+        "total_instructions": "27",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "47": {
+        "name": "matmul<64ul, 8ul, 1ul>_Pipeline_VITIS_LOOP_81_1",
+        "file": "..\/layer.h",
+        "fileloc": "81",
+        "instructions": "562",
+        "total_instructions": "562",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "48": {
+        "name": "backProp<64, 8, 8>_Pipeline_VITIS_LOOP_81_1",
+        "file": "..\/layer.h",
+        "fileloc": "261",
+        "instructions": "153",
+        "total_instructions": "153",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "33"
+        },
+        "stores": {
+            "L": "34"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "49": {
+        "name": "matmul<10ul, 1ul, 8ul>",
+        "file": "..\/layer.h",
+        "fileloc": "56",
+        "instructions": "172",
+        "total_instructions": "250",
+        "calls": "34",
+        "basicblocks": "1",
+        "stores": {
+            "L": "80"
+        }
+    },
+    "50": {
+        "name": "backProp<64, 8, 8>_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_41_2",
+        "file": "..\/layer.h",
+        "fileloc": "260",
+        "instructions": "60",
+        "total_instructions": "60",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "51": {
+        "name": "backProp<64, 64, 8>",
+        "file": "..\/layer.h",
+        "fileloc": "261",
+        "instructions": "1237",
+        "total_instructions": "5261",
+        "calls": "27 18 59 54 8 33",
+        "basicblocks": "1",
+        "loads": {
+            "L": "512"
+        },
+        "stores": {
+            "L": "64"
+        }
+    },
+    "52": {
+        "name": "forwardPropagation<8, 10>_Pipeline_VITIS_LOOP_81_1",
+        "file": "..\/layer.h",
+        "fileloc": "157",
+        "instructions": "60",
+        "total_instructions": "60",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2",
+            "T": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "53": {
+        "name": "backProp<64, 8, 8>_Pipeline_VITIS_LOOP_284_3",
+        "file": "..\/layer.h",
+        "fileloc": "284",
+        "instructions": "116",
+        "total_instructions": "116",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "18"
+        },
+        "stores": {
+            "L": "34"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "54": {
+        "name": "backProp<64, 64, 8>_Pipeline_VITIS_LOOP_266_1",
+        "file": "..\/layer.h",
+        "fileloc": "266",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "55": {
+        "name": "accelerator_Pipeline_VITIS_LOOP_40_14",
+        "file": "..\/accelerator.cpp",
+        "fileloc": "99",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "56": {
+        "name": "softmax<10>_Pipeline_VITIS_LOOP_114_3",
+        "file": "..\/activation.cpp",
+        "fileloc": "114",
+        "instructions": "19",
+        "total_instructions": "19",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "57": {
+        "name": "accelerator_Pipeline_VITIS_LOOP_40_1",
+        "file": "..\/accelerator.cpp",
+        "fileloc": "98",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "58": {
+        "name": "backProp<8, 8, 10>_Pipeline_VITIS_LOOP_22_1",
+        "file": "..\/layer.h",
+        "fileloc": "274",
+        "instructions": "28",
+        "total_instructions": "28",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "59": {
+        "name": "matmul<64ul, 64ul, 1ul>",
+        "file": "..\/layer.h",
+        "fileloc": "57",
+        "instructions": "195",
+        "total_instructions": "535",
+        "calls": "11",
+        "basicblocks": "1",
+        "stores": {
+            "L": "64"
+        }
+    },
+    "60": {
+        "name": "forwardPropagation<64, 8>_Pipeline_VITIS_LOOP_81_1",
+        "file": "..\/layer.h",
+        "fileloc": "157",
+        "instructions": "340",
+        "total_instructions": "340",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2",
+            "T": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

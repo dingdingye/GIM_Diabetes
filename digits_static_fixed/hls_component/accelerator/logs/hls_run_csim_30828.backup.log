@@ -1,0 +1,148 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator\accelerator.hlsrun_csim_summary, at 03/21/25 14:09:00
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator -config C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg -cmdlineconfig C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Fri Mar 21 14:09:02 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source C:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'Dawso' on host 'laptop-dp0ojsk0' (Windows NT_amd64 version 10.0) on Fri Mar 21 14:09:03 -0500 2025
+INFO: [HLS 200-10] In directory 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component'
+INFO: [HLS 200-2005] Using work_dir C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/accelerator 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/accelerator.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activation.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/activations.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/error.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/layer.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/utils.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/main.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_features.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(21)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/digits_features.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Dawso\GIM_Diabetes\digits_vectorized_fixed\digits_labels.csv' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(22)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/digits_labels.csv' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=accelerator' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(18)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(19)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/Dawso/GIM_Diabetes/digits_vectorized_fixed/hls_component/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../main.cpp in debug mode
+csim.mk:88: recipe for target 'obj/main.o' failed
+In file included from ../../../../../main.cpp:1:
+In file included from ../../../../../layer.h:4:
+In file included from ../../../../../activations.h:8:
+In file included from ../../../../../accelerator.h:5:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h:9:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+In file included from ../../../../../main.cpp:1:
+In file included from ../../../../../layer.h:4:
+In file included from ../../../../../activations.h:8:
+../../../../../accelerator.h:22:44: error: use of undeclared identifier 'fixed_16'
+    const std::array<std::array<std::array<fixed_16, 1>, IN_SIZE>, DATA_SIZE>& input,
+                                           ^
+../../../../../accelerator.h:23:33: error: use of undeclared identifier 'fixed_16'
+    const std::array<std::array<fixed_16, OUT_SIZE>, DATA_SIZE>& y_true,
+                                ^
+../../../../../accelerator.h:24:27: error: use of undeclared identifier 'fixed_16'
+    std::array<std::array<fixed_16, IN_SIZE>, L0_SIZE>& weights_l0,
+                          ^
+../../../../../accelerator.h:25:27: error: use of undeclared identifier 'fixed_16'
+    std::array<std::array<fixed_16, L0_SIZE>, L1_SIZE>& weights_l1,
+                          ^
+../../../../../accelerator.h:26:27: error: use of undeclared identifier 'fixed_16'
+    std::array<std::array<fixed_16, L1_SIZE>, L2_SIZE>& weights_l2,
+                          ^
+../../../../../accelerator.h:27:27: error: use of undeclared identifier 'fixed_16'
+    std::array<std::array<fixed_16, L2_SIZE>, OUT_SIZE>& weights_l3,
+                          ^
+../../../../../accelerator.h:28:16: error: use of undeclared identifier 'fixed_16'
+    std::array<fixed_16, L0_SIZE>& biases_l0,
+               ^
+../../../../../accelerator.h:29:16: error: use of undeclared identifier 'fixed_16'
+    std::array<fixed_16, L1_SIZE>& biases_l1,
+               ^
+../../../../../accelerator.h:30:16: error: use of undeclared identifier 'fixed_16'
+    std::array<fixed_16, L2_SIZE>& biases_l2,
+               ^
+../../../../../accelerator.h:31:16: error: use of undeclared identifier 'fixed_16'
+    std::array<fixed_16, OUT_SIZE>& biases_l3
+               ^
+In file included from ../../../../../main.cpp:1:
+In file included from ../../../../../layer.h:4:
+../../../../../activations.h:13:23: error: use of undeclared identifier 'fixed_16'
+std::array<std::array<fixed_16, 1>, N> relu(std::array<std::array<fixed_16, 1>, N>& net);
+                      ^
+../../../../../activations.h:13:67: error: use of undeclared identifier 'fixed_16'
+std::array<std::array<fixed_16, 1>, N> relu(std::array<std::array<fixed_16, 1>, N>& net);
+                                                                  ^
+../../../../../activations.h:16:23: error: use of undeclared identifier 'fixed_16'
+std::array<std::array<fixed_16, 1>, N> derivative_relu(std::array<std::array<fixed_16, 1>, N>& net);
+                      ^
+../../../../../activations.h:16:78: error: use of undeclared identifier 'fixed_16'
+std::array<std::array<fixed_16, 1>, N> derivative_relu(std::array<std::array<fixed_16, 1>, N>& net);
+                                                                             ^
+../../../../../activations.h:20:23: error: use of undeclared identifier 'fixed_16'
+std::array<std::array<fixed_16, 1>, N> derivative_leaky_relu(std::array<std::array<fixed_16, 1>, N>& net, fixed_16 alpha = 0.01) ;
+                      ^
+../../../../../activations.h:20:84: error: use of undeclared identifier 'fixed_16'
+std::array<std::array<fixed_16, 1>, N> derivative_leaky_relu(std::array<std::array<fixed_16, 1>, N>& net, fixed_16 alpha = 0.01) ;
+                                                                                   ^
+../../../../../activations.h:20:107: error: unknown type name 'fixed_16'
+std::array<std::array<fixed_16, 1>, N> derivative_leaky_relu(std::array<std::array<fixed_16, 1>, N>& net, fixed_16 alpha = 0.01) ;
+                                                                                                          ^
+../../../../../activations.h:20:124: warning: implicit conversion from 'double' to 'int' changes value from 0.01 to 0 [-Wliteral-conversion]
+std::array<std::array<fixed_16, 1>, N> derivative_leaky_relu(std::array<std::array<fixed_16, 1>, N>& net, fixed_16 alpha = 0.01) ;
+                                                                                                                         ~ ^~~~
+../../../../../activations.h:24:23: error: use of undeclared identifier 'fixed_16'
+std::array<std::array<fixed_16, 1>, N> sigmoid(std::array<std::array<fixed_16, 1>, N>& net);
+                      ^
+../../../../../activations.h:24:70: error: use of undeclared identifier 'fixed_16'
+std::array<std::array<fixed_16, 1>, N> sigmoid(std::array<std::array<fixed_16, 1>, N>& net);
+                                                                     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+2 warnings and 20 errors generated.
+make: *** [obj/main.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 9.098 seconds; peak allocated memory: 232.211 MB.

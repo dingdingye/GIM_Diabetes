@@ -1,0 +1,7 @@
++---------------------------------------------------------------+
+Initial | weights_l0[0][0]: 0.0412405 | weights_l1[0][0]: -0.0442063 | weights_l2[0][0]: -0.170088 | weights_l3[0][0]: -0.207977
+Epoch 0 accuracy: 0.099054
+Epoch 1 accuracy: 0.112966
+Epoch 2 accuracy: 0.100723
+Epoch 3 accuracy: 0.100723
+Epoch 4 accuracy: 0.100723
