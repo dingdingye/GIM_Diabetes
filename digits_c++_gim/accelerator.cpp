@@ -34,6 +34,12 @@ void accelerator(
                 << " | weights_l2[0][0]: " << weights_l2[0][0] 
                 << " | weights_l3[0][0]: " << weights_l3[0][0] << std::endl;
 
+    // std::vector<std::vector<double>> final_error(OUT_SIZE, std::vector<double>(OUT_SIZE, 0));
+    std::vector<std::vector<double>> result_l3(OUT_SIZE, std::vector<double>(L2_SIZE, 0));
+    std::vector<std::vector<double>> result_l2(L2_SIZE, std::vector<double>(OUT_SIZE, 0.5));
+    std::vector<std::vector<double>> result_l1(L1_SIZE, std::vector<double>(L2_SIZE, 0.5));
+    std::vector<std::vector<double>> result_l0(L0_SIZE, std::vector<double>(L1_SIZE, 0.5));
+
     for (int epoch = 0; epoch < NUM_ITERATIONS; ++epoch) {
         int correct_train = 0;
 
@@ -43,32 +49,11 @@ void accelerator(
                 // printf("======================\n");
                 // printf("iteration %d \n", iteration);
                 std::vector<std::vector<double>> input_ref = input_train[iteration];
-                std::vector<std::vector<double>> result_l0 = forwardPropagation(input_ref, weights_l0, biases_l0, ACTIVATION_HIDDEN);
-                // printf("Finished first forward prop\n");
-                std::vector<std::vector<double>> result_l1 = forwardPropagation(result_l0, weights_l1, biases_l1, ACTIVATION_HIDDEN);
-                // printf("Finished second forward prop\n");
-                std::vector<std::vector<double>> result_l2 = forwardPropagation(result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
-                // printf("Finished third forward prop\n");
-                std::vector<std::vector<double>> result_l3 = forwardPropagation(result_l2, weights_l3, biases_l3, ACTIVATION_OUTPUT);
-
-                // select the max value in the last layer output
-                int predicted_digit = std::distance(result_l3.begin(), 
-                                        std::max_element(result_l3.begin(), result_l3.end(),
-                                        [](const std::vector<double>& a, const std::vector<double>& b) {
-                                            return a[0] < b[0];  // Compare based on the first element
-                                        }));
-                                        
-                // select which in the one-hot vector is the correct label
-                int actual_digit = std::distance(y_true_train[iteration].begin(), std::max_element(y_true_train[iteration].begin(), y_true_train[iteration].end()));
-
-                if (predicted_digit == actual_digit) {
-                    correct_train += 1.0;
-                }
-
-                std::vector<std::vector<double>> final_error(result_l3.size(), std::vector<double>(result_l3[0].size(), 0));
-                for (size_t i = 0; i < result_l3.size(); ++i) {
-                    for (size_t j = 0; j < result_l3[i].size(); ++j) {
-                        final_error[i][j] = result_l3[i][j] - y_true_train[iteration][i];
+                
+                std::vector<std::vector<double>> final_error{};
+                for (size_t i = 0; i < L2_SIZE; ++i) {
+                    for (size_t j = 0; j < OUT_SIZE; ++j) {
+                        final_error[j][0] = result_l3[i][j] - y_true_train[iteration][i]; // Corrected indexing
                     }
                 }
 
@@ -89,6 +74,29 @@ void accelerator(
                 //     }
                 // }
                 // std::cout << "Max Gradient d_l3: " << max_gradient << std::endl;
+                
+                
+                std::vector<std::vector<double>> result_l0 = forwardPropagation(input_ref, weights_l0, biases_l0, ACTIVATION_HIDDEN);
+                // printf("Finished first forward prop\n");
+                std::vector<std::vector<double>> result_l1 = forwardPropagation(result_l0, weights_l1, biases_l1, ACTIVATION_HIDDEN);
+                // printf("Finished second forward prop\n");
+                std::vector<std::vector<double>> result_l2 = forwardPropagation(result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
+                // printf("Finished third forward prop\n");
+                std::vector<std::vector<double>> result_l3 = forwardPropagation(result_l2, weights_l3, biases_l3, ACTIVATION_OUTPUT);
+
+                // select the max value in the last layer output
+                int predicted_digit = std::distance(result_l3.begin(), 
+                                        std::max_element(result_l3.begin(), result_l3.end(),
+                                        [](const std::vector<double>& a, const std::vector<double>& b) {
+                                            return a[0] < b[0];  // Compare based on the first element
+                                        }));
+                                        
+                // select which in the one-hot vector is the correct label
+                int actual_digit = std::distance(y_true_train[iteration].begin(), std::max_element(y_true_train[iteration].begin(), y_true_train[iteration].end()));
+
+                if (predicted_digit == actual_digit) {
+                    correct_train += 1.0;
+                } 
 
                 updateWeightBias(weights_l3, biases_l3, result_l2, final_error, learning_rate);
                 updateWeightBias(weights_l2, biases_l2, result_l1, d_l2, learning_rate);

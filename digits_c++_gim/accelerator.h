@@ -3,7 +3,7 @@
 
 #include <vector>
 
-#define NUM_ITERATIONS 50
+#define NUM_ITERATIONS 20
 #define LR 0.001
 // #define ALPHA 0.02 // factor for "leaky-ness" of leaky ReLU
 
