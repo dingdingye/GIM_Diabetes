@@ -46,10 +46,16 @@ void accelerator(
         // Training loop if test flag is false (training phase)
         if (!test) {
             for (int iteration = 0; iteration < input_train.size(); ++iteration) {
-                // printf("======================\n");
-                // printf("iteration %d \n", iteration);
+                printf("======================\n");
+                printf("iteration %d \n", iteration);
+                std::cout << "input_train.size(): " << input_train.size() << std::endl;
+                if (iteration < input_train.size()) {
+                    std::cout << "input_train[" << iteration << "].size(): " << input_train[iteration].size() << std::endl;
+                }
+                std::cout << "input_train[" << iteration << "][0].size(): " << (input_train[iteration].size() > 0 ? input_train[iteration][0].size() : 0) << std::endl;
+
                 std::vector<std::vector<double>> input_ref = input_train[iteration];
-                
+                printf("copied");
                 std::vector<std::vector<double>> final_error{};
                 for (size_t i = 0; i < L2_SIZE; ++i) {
                     for (size_t j = 0; j < OUT_SIZE; ++j) {
@@ -58,11 +64,11 @@ void accelerator(
                 }
 
                 std::vector<std::vector<double>> d_l2 = backProp(weights_l3, final_error, result_l1, weights_l2, biases_l2, 0);
-                // printf("Finished first backprop\n");
+                printf("Finished first backprop\n");
                 std::vector<std::vector<double>> d_l1 = backProp(weights_l2, d_l2, result_l0, weights_l1, biases_l1, 0);
-                // printf("Finished second backprop\n");
+                printf("Finished second backprop\n");
                 std::vector<std::vector<double>> d_l0 = backProp(weights_l1, d_l1, input_ref, weights_l0, biases_l0, 0);
-                // // printf("Finished all backprop\n");
+                printf("Finished all backprop\n");
                 // std::cout << "Gradient d_l3[0][0]: " << final_error[0][0] << std::endl;
                 // std::cout << "Gradient d_l2[0][0]: " << d_l2[0][0] << std::endl;
                 // std::cout << "Gradient d_l1[0][0]: " << d_l1[0][0] << std::endl;
