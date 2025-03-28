@@ -230,7 +230,9 @@ void updateWeightBias (
 )
 {
     std::vector<std::vector<double>> input_T = transpose(input);
+    // printf("transposed\n");
     std::vector<std::vector<double>> update_temp_mat = matmul(d_l, input_T);
+    // printf("d_l x input_T worked \n");
 
     if (update_temp_mat.size() != weights.size() ||
         update_temp_mat[0].size() != weights[0].size()) {  

@@ -34,7 +34,7 @@ void accelerator(
                 << " | weights_l2[0][0]: " << weights_l2[0][0] 
                 << " | weights_l3[0][0]: " << weights_l3[0][0] << std::endl;
 
-    // std::vector<std::vector<double>> final_error(OUT_SIZE, std::vector<double>(OUT_SIZE, 0));
+    std::vector<std::vector<double>> final_error(OUT_SIZE, std::vector<double>(1, 0));
     std::vector<std::vector<double>> result_l3(OUT_SIZE, std::vector<double>(L2_SIZE, 0));
     std::vector<std::vector<double>> result_l2(L2_SIZE, std::vector<double>(OUT_SIZE, 0.5));
     std::vector<std::vector<double>> result_l1(L1_SIZE, std::vector<double>(L2_SIZE, 0.5));
@@ -46,29 +46,35 @@ void accelerator(
         // Training loop if test flag is false (training phase)
         if (!test) {
             for (int iteration = 0; iteration < input_train.size(); ++iteration) {
-                printf("======================\n");
-                printf("iteration %d \n", iteration);
-                std::cout << "input_train.size(): " << input_train.size() << std::endl;
-                if (iteration < input_train.size()) {
-                    std::cout << "input_train[" << iteration << "].size(): " << input_train[iteration].size() << std::endl;
-                }
-                std::cout << "input_train[" << iteration << "][0].size(): " << (input_train[iteration].size() > 0 ? input_train[iteration][0].size() : 0) << std::endl;
+                // printf("======================\n");
+                // printf("iteration %d \n", iteration);
 
-                std::vector<std::vector<double>> input_ref = input_train[iteration];
-                printf("copied");
-                std::vector<std::vector<double>> final_error{};
-                for (size_t i = 0; i < L2_SIZE; ++i) {
-                    for (size_t j = 0; j < OUT_SIZE; ++j) {
+                // std::vector<std::vector<double>> input_ref = input_train[iteration];
+                
+                // std::vector<std::vector<double>> final_error{};
+                // printf("here");
+                for (size_t i = 0; i < OUT_SIZE; ++i) {
+                    for (size_t j = 0; j < 1; ++j) {
                         final_error[j][0] = result_l3[i][j] - y_true_train[iteration][i]; // Corrected indexing
                     }
                 }
 
+                // printf("final error: ");
+                // print2D(final_error);
+
+                if (input_train[iteration].empty()) {
+                    std::cerr << "ERROR: input_train[" << iteration << "] is empty!" << std::endl;
+                } else if (input_train[iteration].size() != 64) {
+                    std::cerr << "ERROR: input_train[" << iteration << "] has incorrect size!" << std::endl;
+                }
+                
+                std::vector<std::vector<double>> input_ref = input_train[iteration];
                 std::vector<std::vector<double>> d_l2 = backProp(weights_l3, final_error, result_l1, weights_l2, biases_l2, 0);
-                printf("Finished first backprop\n");
+                // printf("Finished first backprop\n");
                 std::vector<std::vector<double>> d_l1 = backProp(weights_l2, d_l2, result_l0, weights_l1, biases_l1, 0);
-                printf("Finished second backprop\n");
+                // printf("Finished second backprop\n");
                 std::vector<std::vector<double>> d_l0 = backProp(weights_l1, d_l1, input_ref, weights_l0, biases_l0, 0);
-                printf("Finished all backprop\n");
+                // printf("Finished all backprop\n");
                 // std::cout << "Gradient d_l3[0][0]: " << final_error[0][0] << std::endl;
                 // std::cout << "Gradient d_l2[0][0]: " << d_l2[0][0] << std::endl;
                 // std::cout << "Gradient d_l1[0][0]: " << d_l1[0][0] << std::endl;
@@ -89,6 +95,7 @@ void accelerator(
                 std::vector<std::vector<double>> result_l2 = forwardPropagation(result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
                 // printf("Finished third forward prop\n");
                 std::vector<std::vector<double>> result_l3 = forwardPropagation(result_l2, weights_l3, biases_l3, ACTIVATION_OUTPUT);
+                // printf("Finished all forward prop\n");
 
                 // select the max value in the last layer output
                 int predicted_digit = std::distance(result_l3.begin(), 
@@ -96,15 +103,16 @@ void accelerator(
                                         [](const std::vector<double>& a, const std::vector<double>& b) {
                                             return a[0] < b[0];  // Compare based on the first element
                                         }));
-                                        
+                // printf("Finished predicted digit\n");                      
                 // select which in the one-hot vector is the correct label
                 int actual_digit = std::distance(y_true_train[iteration].begin(), std::max_element(y_true_train[iteration].begin(), y_true_train[iteration].end()));
 
                 if (predicted_digit == actual_digit) {
                     correct_train += 1.0;
                 } 
-
+                // printf("here\n");
                 updateWeightBias(weights_l3, biases_l3, result_l2, final_error, learning_rate);
+                // printf("Finished first weight update\n");
                 updateWeightBias(weights_l2, biases_l2, result_l1, d_l2, learning_rate);
                 updateWeightBias(weights_l1, biases_l1, result_l0, d_l1, learning_rate);
                 updateWeightBias(weights_l0, biases_l0, input_ref, d_l0, learning_rate);
