@@ -163,6 +163,10 @@ std::vector<std::vector<double> > forwardPropagation(
         for (int j = 0; j < net.size(); ++j) {
             output[j] = sigmoid(net[j]);
         }
+    } else if (activation == 3) {
+        for (int j = 0; j < net.size(); ++j) {
+            output[j] = leaky_relu(net[j], -0.01);
+        } 
     } else {
         throw std::runtime_error("Incorrect activation given");
     }
@@ -191,20 +195,37 @@ std::vector<std::vector<double>> backProp (
             net[i][j] = mid[i][j] + biases[i];
         }
     }
-    printf("Backprop net:\n");
-    print2D(net);
+    // printf("Backprop net:\n");
+    // print2D(net);
     if (activation == 0) {
         std::vector<std::vector<double>> d_activation(net.size(), std::vector<double>(net[0].size(), 0));
         for (int ii = 0; ii < d_activation.size(); ++ii){
             d_activation[ii] = derivative_relu(net[ii]);
         }
-        printf("D_activation:\n");
-        print2D(d_activation);
+        // printf("D_activation:\n");
+        // print2D(d_activation);
         if (temp.size() != d_activation.size()){
             throw std::runtime_error("Backprop temp matrix and d activation vector size mismatch");
         }
-        printf("Temp:\n");
-        print2D(temp);
+        // printf("Temp:\n");
+        // print2D(temp);
+        for (int ii = 0; ii < temp.size(); ++ii) {
+            for (int jj = 0; jj < temp[0].size(); ++jj) {
+                temp[ii][jj] *= d_activation[ii][0];
+            }
+        }
+    } else if (activation == 3) {
+        std::vector<std::vector<double>> d_activation(net.size(), std::vector<double>(net[0].size(), 0));
+        for (int ii = 0; ii < d_activation.size(); ++ii){
+            d_activation[ii] = derivative_leaky_relu(net[ii], -0.01);
+        }
+        // printf("D_activation:\n");
+        // print2D(d_activation);
+        if (temp.size() != d_activation.size()){
+            throw std::runtime_error("Backprop temp matrix and d activation vector size mismatch");
+        }
+        // printf("Temp:\n");
+        // print2D(temp);
         for (int ii = 0; ii < temp.size(); ++ii) {
             for (int jj = 0; jj < temp[0].size(); ++jj) {
                 temp[ii][jj] *= d_activation[ii][0];
@@ -226,12 +247,12 @@ void updateWeightBias (
 {
     std::vector<std::vector<double>> input_T = transpose(input);
     std::vector<std::vector<double>> update_temp_mat = matmul(d_l, input_T);
-    printf("Input_T:\n");
-    print2D(input_T);
-    printf("d_l:\n");
-    print2D(d_l);
-    printf("update_temp_mat:\n");
-    print2D(update_temp_mat);
+    // printf("Input_T:\n");
+    // print2D(input_T);
+    // printf("d_l:\n");
+    // print2D(d_l);
+    // printf("update_temp_mat:\n");
+    // print2D(update_temp_mat);
     if (update_temp_mat.size() != weights.size() ||
         update_temp_mat[0].size() != weights[0].size()) {  
             throw std::runtime_error("Weight update matrices sizes do not match\n");

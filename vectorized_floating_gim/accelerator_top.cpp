@@ -22,8 +22,8 @@ int main(){
 
     // srand(5); // Set an initial seed 
     std::vector<std::vector<double>> weights_l2 = {
-        { 1.5, 1.48,  0.45, -0.59 },
-        {-1.67,  -1.55, -0.55,  0.49 }
+        { 0.50,   0.48,  0.45, -0.59 },
+        {-0.67,  -0.55, -0.55,  0.49 }
     };
 
     std::vector<std::vector<double>> weights_lh = {
@@ -38,7 +38,7 @@ int main(){
         {  0.12 , -0.68 }
     };
 
-    std::vector<double> biases_l1 {  1.06, -0.84 };
+    std::vector<double> biases_l1 {  0.06, -0.84 };
     std::vector<double> biases_lh { -0.13, 0.78,  0.42, -0.97 };
     std::vector<double> biases_l2 { -0.12,  0.78 };
 
@@ -52,9 +52,10 @@ int main(){
                                                             {{0.0}, {1.0}},
                                                             {{1.0}, {0.0}}};
     std::vector<std::vector<double>> copy;
-    int activation_l1 = 0; // relu
+    int activation_l1 = 3; // relu
     int activation_l2 = 1; // softmax
-    int first_full_acc_epoch = 10001;
+
+    int first_full_acc_epoch = -1;
 
     std::vector<std::vector<double>> final_error(y_true[0].size(), std::vector<double>(y_true[0][0].size(), 0));
     std::vector<std::vector<double>> result_l2(y_true[0].size(), std::vector<double>(y_true[0][0].size(), 0.5));
@@ -64,21 +65,21 @@ int main(){
     for (int epoch = 0; epoch < 1000; ++epoch){
         double correct = 0;
         for (int iteration = 0; iteration < 4; ++iteration) {
-            printf("======================\n");
-            printf("epoch %d iteration %d \n", epoch, iteration);
-            printf("Finished first forward prop\n");
+            // printf("======================\n");
+            // printf("epoch %d iteration %d \n", epoch, iteration);
+            // printf("Finished first forward prop\n");
             
-            printf("Starting backprop\n");
+            // printf("Starting backprop\n");
             // Output Error Calculation (essentially the backprop step for the softmax end layer)
-            printf("Prev iter result: \n");
-            print2D(result_l2);
+            // printf("Prev iter result: \n");
+            // print2D(result_l2);
             for (size_t ii = 0; ii < result_l2.size(); ++ii) {
                 for (size_t j = 0; j < result_l2[0].size(); ++j) {
                     final_error[ii][j] = result_l2[ii][j] - y_true[iteration][ii][j];
                 }
             }
-            printf("Final error \n");
-            print2D(final_error);
+            // printf("Final error \n");
+            // print2D(final_error);
             std::vector<std::vector<double>> d_lh = backProp(
                 weights_l2,
                 final_error,
@@ -96,13 +97,13 @@ int main(){
                 0
             );
 
-            printf("Deltas for backprop are:\n");
-            printf("Error layer: \n");
-            print2D(final_error);
-            printf("d_lh\n");
-            print2D(d_lh);
-            printf("d_l1\n");
-            print2D(d_l1);
+            // printf("Deltas for backprop are:\n");
+            // printf("Error layer: \n");
+            // print2D(final_error);
+            // printf("d_lh\n");
+            // print2D(d_lh);
+            // printf("d_l1\n");
+            // print2D(d_l1);
 
             // printf("Final error:\n");
             // print2D(final_error);
@@ -114,27 +115,27 @@ int main(){
             // print1D(biases_lh);
             // FWD prop from input layer to hidden layer
             result_l1 = forwardPropagation(input[iteration], weights_l1, biases_l1, activation_l1);
-            printf("Finished first forward prop\n");
+            // printf("Finished first forward prop\n");
 
             result_lh = forwardPropagation(result_l1, weights_lh, biases_lh, activation_l1);
-            printf("makes it past f_lh\n");
+            // printf("makes it past f_lh\n");
             // Backprop of output error into Lh
             
-            printf("makes it past b_lh\n");
+            // printf("makes it past b_lh\n");
 
             result_l2 = forwardPropagation(result_lh, weights_l2, biases_l2, activation_l2);
 
-            printf("makes it past f_l2\n");
+            // printf("makes it past f_l2\n");
             // Backprop of output error into L1
             
-            printf("makes it past b_l1\n");
+            // printf("makes it past b_l1\n");
 
             if (result_l2[0] > result_l2[1] && (y_true[iteration][0][0] == 1.0) || 
                 result_l2[0] < result_l2[1] && (y_true[iteration][1][0] == 1.0)) {
-                    printf("Correct!\n");
+                    // printf("Correct!\n");
                     correct += 1.0;
             } else {
-                printf("Incorrect!\n");
+                // printf("Incorrect!\n");
             }
 
             // Weight and bias update step can happen simultaneously across layers
@@ -143,42 +144,42 @@ int main(){
                 biases_l2,
                 result_lh,
                 final_error,
-                0.1
+                0.2
             );
-            printf("Updated L2 \n");
+            // printf("Updated L2 \n");
 
             updateWeightBias(
                 weights_lh,
                 biases_lh,
                 result_l1,
                 d_lh,
-                0.1
+                0.2
             );
-            printf("Updated LH \n");
+            // printf("Updated LH \n");
 
             updateWeightBias(
                 weights_l1,
                 biases_l1,
                 input[iteration],
                 d_l1,
-                0.1
+                0.2
             );
-            printf("Updated L1 \n");
+            // printf("Updated L1 \n");
 
-        //     printf("weights_l2:\n");
-        //     print2D(weights_l2);
-        //     printf("biases_l2:\n");
-        //     print1D(biases_l2);
+            // printf("weights_l2:\n");
+            // print2D(weights_l2);
+            // printf("biases_l2:\n");
+            // print1D(biases_l2);
 
-        //     printf("weights_lh:\n");
-        //     print2D(weights_lh);
-        //     printf("biases_lh:\n");
-        //     print1D(biases_lh);
+            // printf("weights_lh:\n");
+            // print2D(weights_lh);
+            // printf("biases_lh:\n");
+            // print1D(biases_lh);
            
-        //     printf("weights_l1:\n");
-        //     print2D(weights_l1);
-        //     printf("biases_l1:\n");
-        //     print1D(biases_l1);
+            // printf("weights_l1:\n");
+            // print2D(weights_l1);
+            // printf("biases_l1:\n");
+            // print1D(biases_l1);
 
         }
         printf("Epoch %d accuracy: %f \n", epoch, correct/4);
@@ -186,6 +187,23 @@ int main(){
             first_full_acc_epoch = first_full_acc_epoch > epoch ? epoch : first_full_acc_epoch;
         }
     }
+
+
+    printf("weights_l2:\n");
+    print2D(weights_l2);
+    printf("biases_l2:\n");
+    print1D(biases_l2);
+
+    printf("weights_lh:\n");
+    print2D(weights_lh);
+    printf("biases_lh:\n");
+    print1D(biases_lh);
+    
+    printf("weights_l1:\n");
+    print2D(weights_l1);
+    printf("biases_l1:\n");
+    print1D(biases_l1);
+
     printf("First full accuracy occurs in epoch %d \n", first_full_acc_epoch);
     return 0;
 }
