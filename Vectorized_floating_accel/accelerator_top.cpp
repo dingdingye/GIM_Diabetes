@@ -32,7 +32,7 @@ int main(){
     int activation_l1 = 0; // relu
     int activation_l2 = 1; // softmax
     int first_full_acc_epoch = 501;
-    for (int epoch = 0; epoch < 500; ++epoch){
+    for (int epoch = 0; epoch < 5; ++epoch){
         double correct = 0;
         for (int iteration = 0; iteration < 4; ++iteration) {
             printf("======================\n");

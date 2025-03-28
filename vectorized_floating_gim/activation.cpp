@@ -16,7 +16,7 @@ std::vector<double> relu(std::vector<double>& net) {
 std::vector<double> derivative_relu(std::vector<double>& net) {
     std::vector<double> output(net.size());
     for (size_t i = 0; i < net.size(); ++i) {
-        output[i] = net[i] > 0 ? 1 : 0;
+        output[i] = net[i] > 0 ? 1 : 0.000001;
     }
     return output;
 }

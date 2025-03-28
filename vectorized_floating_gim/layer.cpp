@@ -191,16 +191,20 @@ std::vector<std::vector<double>> backProp (
             net[i][j] = mid[i][j] + biases[i];
         }
     }
-
+    printf("Backprop net:\n");
+    print2D(net);
     if (activation == 0) {
         std::vector<std::vector<double>> d_activation(net.size(), std::vector<double>(net[0].size(), 0));
         for (int ii = 0; ii < d_activation.size(); ++ii){
             d_activation[ii] = derivative_relu(net[ii]);
         }
-        
+        printf("D_activation:\n");
+        print2D(d_activation);
         if (temp.size() != d_activation.size()){
             throw std::runtime_error("Backprop temp matrix and d activation vector size mismatch");
         }
+        printf("Temp:\n");
+        print2D(temp);
         for (int ii = 0; ii < temp.size(); ++ii) {
             for (int jj = 0; jj < temp[0].size(); ++jj) {
                 temp[ii][jj] *= d_activation[ii][0];
@@ -222,7 +226,12 @@ void updateWeightBias (
 {
     std::vector<std::vector<double>> input_T = transpose(input);
     std::vector<std::vector<double>> update_temp_mat = matmul(d_l, input_T);
-
+    printf("Input_T:\n");
+    print2D(input_T);
+    printf("d_l:\n");
+    print2D(d_l);
+    printf("update_temp_mat:\n");
+    print2D(update_temp_mat);
     if (update_temp_mat.size() != weights.size() ||
         update_temp_mat[0].size() != weights[0].size()) {  
             throw std::runtime_error("Weight update matrices sizes do not match\n");
@@ -233,107 +242,4 @@ void updateWeightBias (
         }
         biases[i] = biases[i] - learning_rate * d_l[i][0];
     }
-}
-
-std::vector<std::vector<double> > backPropagationSingleSample(
-    std::vector<std::vector<double> >& input,
-    std::vector<std::vector<double> >& weights,
-    std::vector<double>& biases,
-    std::vector<std::vector<double> >& output,
-    std::vector<std::vector<double> >& dOut,
-    int activation, // if you need to handle other activation types
-    double learning_rate
-) 
-{
-    // printf("Dout internally \n");
-    // print2D(dOut);
-    std::vector<std::vector<double> > d_minus1 = matmulTransposeW(weights, dOut);
-    printf("Issue was in backprop\n");
-
-    std::vector<std::vector<double> > mid = matmul(weights, input);
-    std::vector<std::vector<double> > net(mid.size(), std::vector<double>(mid[0].size(), 0.0)); // Net should be the same size as biases
-    for (size_t i = 0; i < mid.size(); ++i) {
-        for (size_t j = 0; j < mid[i].size(); ++j) {
-            net[i][j] = mid[i][j] + biases[i];
-        }
-    }
-
-    printf("Reached here yippee \n");
-    // softmax code is given here: https://www.youtube.com/watch?v=AbLvJVwySEo
-    if (activation = 0) { // RELU
-        printf("entering relu?!");
-        for (int i = 0; i < d_minus1.size(); ++i) {
-            for (int j = 0; j < d_minus1[0].size(); ++j) {
-                d_minus1[i][j] = d_minus1[i][j]*net[i][0];
-            }
-        }
-    } else if (activation = 1) { // Softmax
-        printf("Entering softmax \n");
-        // Create a square matrix (vector of vectors) of size d_minus1.size()
-        std::vector<std::vector<double> > deriv_softmax_mat(dOut.size(), std::vector<double>(dOut.size(), 0.0));
-        std::vector<std::vector<double> > identity_mat(dOut.size(), std::vector<double>(dOut.size(), 0.0));
-        std::vector<std::vector<double> > temp_mat(dOut.size(), std::vector<double>(dOut.size(), 0.0));
-        
-        printf("Getting past init \n");
-        printf("dOut size %d \n", dOut.size());
-        for (int i = 0; i < dOut.size(); ++i) {
-            for (int j = 0; j < dOut.size(); ++j) {
-                deriv_softmax_mat[i][j] = dOut[i][0];
-                printf("%f ", deriv_softmax_mat[i][j]);
-                if (i == j) {
-                    identity_mat[i][j] = 1.0;
-                }
-            }
-            printf("\n");
-        }
-        printf("Generated indentity and deriv_softmax \n");
-        for (int i = 0; i < temp_mat.size(); ++i) {
-            for (int j = 0; j < temp_mat.size(); ++j) {
-                temp_mat[i][j] = deriv_softmax_mat[i][j] * (identity_mat[i][j] - deriv_softmax_mat[i][j]);
-            }
-        }
-        printf("Completed hadamard product etc \n");
-        d_minus1 = matmul(temp_mat, dOut);
-        printf("mat has been multied \n");
-    } else {
-        throw std::runtime_error("Haven't supported any other activation functions for backprop");
-    }
-    
-
-    // printf("completed d_minus1\n");
-
-    std::vector<std::vector<double> > input_t = transpose(input);
-
-    // delta is: (output_dim x 1)
-    // input is: (input_dim x 1)
-    // weights is: (output_dim x input_dim)
-
-
-    for (size_t i = 0; i < dOut.size(); i++) {
-        for (size_t j = 0; j < input.size(); j++) {
-            // gradient wrt w[i][j]
-            // printf("i is %f, and j is %f \n", i, j);
-            // printf("dout %f \n", dOut[0][0]);
-            // printf("dOut: %f, input: %f \n", dOut[i][0], input[j][0]);
-            double dW = dOut[i][0] * input[j][0];
-            if (dW > 1.0) {
-                dW = 1.0;
-            } else if (dW < -1.0) {
-                dW = -1.0;
-            }
-            // printf("DW is %f\n", dW);
-            // gradient descent update
-            // printf("Weight before: %f \n", weights[i][j]);
-            // printf("Subtracting: %f \n", learning_rate * dW);
-            weights[i][j] = weights[i][j] - (learning_rate * dW);
-            // printf("Weights after: %f \n", weights[i][j]);
-            if (dOut[i][0] > 1.0){
-                dOut[i][0] = 1.0;
-            } else if (dOut[i][0] < -1.0){
-                dOut[i][0] = -1.0;
-            }
-            biases[i] -= learning_rate * dOut[i][0];
-        }
-    }
-    return d_minus1;
 }

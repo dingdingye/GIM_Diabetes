@@ -20,27 +20,27 @@ int main(){
     // std::vector<double> biases_lh = {0.05, 0.05};
     // std::vector<double> biases_l2 = {0.05, 0.05};
 
-    srand(5); // Set an initial seed 
+    // srand(5); // Set an initial seed 
     std::vector<std::vector<double>> weights_l2 = {
-        { 0.73, -0.12,  0.35, -0.56 },
-        {-0.91,  0.44, -0.03,  0.66 }
+        { 1.5, 1.48,  0.45, -0.59 },
+        {-1.67,  -1.55, -0.55,  0.49 }
     };
 
     std::vector<std::vector<double>> weights_lh = {
-        { 0.25, -0.78 },
-        {-0.41,  0.83 },
-        { 0.97, -0.11 },
-        { 0.34,  0.56 }
+        { -0.41 , -0.78 },
+        { -0.41 ,  0.83 },
+        { -0.91 , -0.11 },
+        { -0.64 ,  0.56 }
     };
 
     std::vector<std::vector<double>> weights_l1 = {
-        {-0.77,  0.45 },
-        { 0.12, -0.68 }
+        { -0.24 ,  0.13 },
+        {  0.12 , -0.68 }
     };
 
-    std::vector<double> biases_l1 = { 0.15, -0.25,  0.42, -0.97 };
-    std::vector<double> biases_lh = { 0.36, -0.84 };
-    std::vector<double> biases_l2 = { -0.12,  0.67 };
+    std::vector<double> biases_l1 {  1.06, -0.84 };
+    std::vector<double> biases_lh { -0.13, 0.78,  0.42, -0.97 };
+    std::vector<double> biases_l2 { -0.12,  0.78 };
 
     std::vector<std::vector<std::vector<double>>> input =  {{{0.0}, {0.0}}, 
                                                             {{0.0}, {1.0}}, 
@@ -54,14 +54,14 @@ int main(){
     std::vector<std::vector<double>> copy;
     int activation_l1 = 0; // relu
     int activation_l2 = 1; // softmax
-    int first_full_acc_epoch = 501;
+    int first_full_acc_epoch = 10001;
 
     std::vector<std::vector<double>> final_error(y_true[0].size(), std::vector<double>(y_true[0][0].size(), 0));
-    std::vector<std::vector<double>> result_l2(y_true[0].size(), std::vector<double>(y_true[0][0].size(), 0));
+    std::vector<std::vector<double>> result_l2(y_true[0].size(), std::vector<double>(y_true[0][0].size(), 0.5));
     std::vector<std::vector<double>> result_lh(weights_l2[0].size(), std::vector<double>(y_true[0][0].size(), 0.5));
     std::vector<std::vector<double>> result_l1(weights_lh[0].size(), std::vector<double>(y_true[0][0].size(), 0.5));
     
-    for (int epoch = 0; epoch < 10; ++epoch){
+    for (int epoch = 0; epoch < 1000; ++epoch){
         double correct = 0;
         for (int iteration = 0; iteration < 4; ++iteration) {
             printf("======================\n");
@@ -165,20 +165,20 @@ int main(){
             );
             printf("Updated L1 \n");
 
-            printf("weights_l2:\n");
-            print2D(weights_l2);
-            printf("biases_l2:\n");
-            print1D(biases_l2);
+        //     printf("weights_l2:\n");
+        //     print2D(weights_l2);
+        //     printf("biases_l2:\n");
+        //     print1D(biases_l2);
 
-            printf("weights_lh:\n");
-            print2D(weights_lh);
-            printf("biases_lh:\n");
-            print1D(biases_lh);
+        //     printf("weights_lh:\n");
+        //     print2D(weights_lh);
+        //     printf("biases_lh:\n");
+        //     print1D(biases_lh);
            
-            printf("weights_l1:\n");
-            print2D(weights_l1);
-            printf("biases_l1:\n");
-            print1D(biases_l1);
+        //     printf("weights_l1:\n");
+        //     print2D(weights_l1);
+        //     printf("biases_l1:\n");
+        //     print1D(biases_l1);
 
         }
         printf("Epoch %d accuracy: %f \n", epoch, correct/4);
@@ -186,6 +186,6 @@ int main(){
             first_full_acc_epoch = first_full_acc_epoch > epoch ? epoch : first_full_acc_epoch;
         }
     }
-    printf("First full accuracy occors in epoch %d \n", first_full_acc_epoch);
+    printf("First full accuracy occurs in epoch %d \n", first_full_acc_epoch);
     return 0;
 }
