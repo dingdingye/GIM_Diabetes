@@ -3,8 +3,8 @@
 
 #include <vector>
 
-#define NUM_ITERATIONS 20
-#define LR 0.001
+#define NUM_ITERATIONS 50
+#define LR 0.00001
 // #define ALPHA 0.02 // factor for "leaky-ness" of leaky ReLU
 
 #define DATA_SIZE 1797 // full is 1797    
