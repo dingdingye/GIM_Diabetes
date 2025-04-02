@@ -1,0 +1,24 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../main.cpp in debug mode
+   Compiling ../../../accelerator.cpp in debug mode
+   Compiling ../../../activation.cpp in debug mode
+   Compiling ../../../bias.cpp in debug mode
+   Compiling ../../../data.cpp in debug mode
+   Compiling ../../../error.cpp in debug mode
+   Compiling ../../../layer.cpp in debug mode
+   Compiling ../../../matmul.cpp in debug mode
+   Generating csim.exe
+0
+0.00390625
+0.0146484
+0.0239258
+0
+0.00195313
+0
+0.896484
+0.00390625
+0.0537109
+Array saved to output.csv
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
