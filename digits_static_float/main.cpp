@@ -6,15 +6,7 @@
 #include <vector>
 #include <iostream> 
 
-using namespace std;
-
-// #define DATA_SIZE 500    
-// #define IN_SIZE 64        
-// #define L0_SIZE 64       
-// #define L1_SIZE 8        
-// #define L2_SIZE 8        
-// #define OUT_SIZE 10    
-
+using namespace std; 
 
 int main() {
     std::array<std::array<double, IN_SIZE>, L0_SIZE> weights_l0; // 64x64
@@ -22,15 +14,15 @@ int main() {
     std::array<std::array<double, L1_SIZE>, L2_SIZE> weights_l2; // 8x8
     std::array<std::array<double, L2_SIZE>, OUT_SIZE> weights_l3; // 10x8
 
-    std::array<double, L0_SIZE> biases_l0 = {0.5};  // 64 elements
-    std::array<double, L1_SIZE> biases_l1 = {0.5};  // 8 elements
-    std::array<double, L2_SIZE> biases_l2 = {0.5};  // 8 elements
-    std::array<double, OUT_SIZE> biases_l3 = {0.5}; // 10 elements
+    // std::array<double, L0_SIZE> biases_l0 = {0.5};  // 64 elements
+    // std::array<double, L1_SIZE> biases_l1 = {0.5};  // 8 elements
+    // std::array<double, L2_SIZE> biases_l2 = {0.5};  // 8 elements
+    // std::array<double, OUT_SIZE> biases_l3 = {0.5}; // 10 elements
 
-    // std::vector<double> biases_l0(64, 0.0);  // Biases should start at 0 for ReLU supposedly?
-    // std::vector<double> biases_l1(8, 0.0);
-    // std::vector<double> biases_l2(8, 0.0);
-    // std::vector<double> biases_l3(10, 0.0);
+    std::array<double, L0_SIZE> biases_l0 = {0};  // Biases should start at 0 for ReLU supposedly?
+    std::array<double, L1_SIZE> biases_l1 = {0};  // 8 elements
+    std::array<double, L2_SIZE> biases_l2 = {0};  // 8 elements
+    std::array<double, OUT_SIZE> biases_l3 = {0};
 
     // He initialization with weights 
     for (int i = 0; i < 64; i++)

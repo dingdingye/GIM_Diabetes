@@ -96,11 +96,11 @@ std::array<std::array<double, P>, M> matmulTransposeW (
     const std::array<std::array<double, P>, N>& delta)  // shape [N x P]
 {
 
-    // Check for non-empty matrices by ensuring sizes are greater than 0
-    if (N == 0 || M == 0) {
-        std::cerr << "Error: Matrices must not be empty." << std::endl;
-        return;
-    }
+    // // Check for non-empty matrices by ensuring sizes are greater than 0
+    // if (N == 0 || M == 0) {
+    //     std::cerr << "Error: Matrices must not be empty." << std::endl;
+    //     return;
+    // }
 // // Ensure consistent row counts, THIS IS NOT RIGHT, CHECK LATER
     // if (N != N) {
     //     // Handle error
