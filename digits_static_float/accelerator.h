@@ -80,7 +80,10 @@ void accelerator(
             }
 
             if (!is_training) {
-                if (iteration == input.size() - 1) { finished_testing = true; } // when testing, run through all datapoints only once
+                if (iteration == input.size() - 1) { 
+                    std::cout << "🔍 Testing Mode: Running inference on test data..." << endl;
+                    finished_testing = true; 
+                } // when testing, run through all datapoints only once
                 continue; // when testing, skip the backpropagation and weight update steps 
             }
 
@@ -111,13 +114,14 @@ void accelerator(
         }
 
         if (is_training) {
-            std::cout << "Epoch " << epoch 
+            std::cout << "🛠️ Epoch " << epoch 
+                        << " Accuracy: " << (double)correct / input.size()
                         << " | weights_l0[0][0]: " << weights_l0[0][0]
                         << " | weights_l1[0][0]: " << weights_l1[0][0]
                         << " | weights_l2[0][0]: " << weights_l2[0][0]
                         << " | weights_l3[0][0]: " << weights_l3[0][0]
                         << std::endl;
-            std::cout << "Epoch " << epoch << " accuracy: " << (double)correct / input.size() << std::endl;
+            // std::cout << "Epoch " << epoch << " Accuracy: " << (double)correct / input.size() << std::endl;
             if (correct / input.size() == 1.0) {
                 first_full_acc_epoch = std::min(first_full_acc_epoch, epoch);
             }
@@ -131,7 +135,7 @@ void accelerator(
     }
 
     if (is_training) {
-        std::cout << "First full accuracy occurs in epoch " << first_full_acc_epoch << std::endl;
+        std::cout << "🏁 First full accuracy occurs in epoch " << first_full_acc_epoch << std::endl;
     }
 }
 
