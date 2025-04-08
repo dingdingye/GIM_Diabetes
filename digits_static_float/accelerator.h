@@ -23,7 +23,7 @@ using namespace std;
 #define IN_SIZE 64        
 // #define L0_SIZE 64       
 #define L1_SIZE 8        
-#define L2_SIZE 8        
+#define L2_SIZE 4        
 #define OUT_SIZE 10       
 
 #define ACTIVATION_HIDDEN 0 // ReLU

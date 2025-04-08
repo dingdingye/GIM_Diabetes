@@ -30,20 +30,20 @@ int main() {
     // std::array<double, OUT_SIZE> biases_l3 = {0};
 
     // He initialization with weights 
-    // for (int i = 0; i < 64; i++)
-    //     for (int j = 0; j < 64; j++)
+    // for (int i = 0; i < IN_SIZE; i++)
+    //     for (int j = 0; j < L0_SIZE; j++)
     //         weights_l0[i][j] = he_init(64);  
 
-    for (int i = 0; i < 8; i++)
-        for (int j = 0; j < 64; j++)
+    for (int i = 0; i < L1_SIZE; i++)
+        for (int j = 0; j < IN_SIZE; j++)
             weights_l1[i][j] = he_init(64);  
 
-    for (int i = 0; i < 8; i++)
-        for (int j = 0; j < 8; j++)
+    for (int i = 0; i < L2_SIZE; i++)
+        for (int j = 0; j < L1_SIZE; j++)
             weights_l2[i][j] = he_init(8);  
 
-    for (int i = 0; i < 10; i++)
-        for (int j = 0; j < 8; j++)
+    for (int i = 0; i < OUT_SIZE; i++)
+        for (int j = 0; j < L2_SIZE; j++)
             weights_l3[i][j] = he_init(8);  
 
     std::array<std::array<std::array<double, 1>, IN_SIZE>, DATA_SIZE> input = load_csv("digits_features.csv");  // Load and reformat features
