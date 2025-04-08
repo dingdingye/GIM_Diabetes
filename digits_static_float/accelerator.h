@@ -21,7 +21,7 @@ using namespace std;
 #define TRAIN_SIZE 1437  // 80% of 1797
 #define TEST_SIZE  360   // 20% of 1797
 #define IN_SIZE 64        
-#define L0_SIZE 64       
+// #define L0_SIZE 64       
 #define L1_SIZE 8        
 #define L2_SIZE 8        
 #define OUT_SIZE 10       
@@ -33,11 +33,11 @@ template <size_t PROBLEM_SIZE>
 void accelerator(
     const std::array<std::array<std::array<double, 1>, IN_SIZE>, PROBLEM_SIZE>& input,
     const std::array<std::array<double, OUT_SIZE>, PROBLEM_SIZE>& y_true,
-    std::array<std::array<double, IN_SIZE>, L0_SIZE>& weights_l0,
-    std::array<std::array<double, L0_SIZE>, L1_SIZE>& weights_l1,
+    // std::array<std::array<double, IN_SIZE>, L0_SIZE>& weights_l0,
+    std::array<std::array<double, IN_SIZE>, L1_SIZE>& weights_l1,
     std::array<std::array<double, L1_SIZE>, L2_SIZE>& weights_l2,
     std::array<std::array<double, L2_SIZE>, OUT_SIZE>& weights_l3,
-    std::array<double, L0_SIZE>& biases_l0,
+    // std::array<double, L0_SIZE>& biases_l0,
     std::array<double, L1_SIZE>& biases_l1,
     std::array<double, L2_SIZE>& biases_l2,
     std::array<double, OUT_SIZE>& biases_l3,
@@ -48,7 +48,8 @@ void accelerator(
 
     std::cout << "+------------------------------------------------------------------------------------------------------------------------------+" << std::endl;
 
-    std::cout << "Initial | weights_l0[0][0]: " << weights_l0[0][0] 
+    std::cout << "Initial"  
+                // << " | weights_l0[0][0]: " << weights_l0[0][0] 
                 << " | weights_l1[0][0]: " << weights_l1[0][0] 
                 << " | weights_l2[0][0]: " << weights_l2[0][0] 
                 << " | weights_l3[0][0]: " << weights_l3[0][0] << std::endl;
@@ -63,9 +64,9 @@ void accelerator(
             // printf("======================\n");
             // printf("iteration %d \n", iteration);
             auto input_ref = input[iteration];
-            auto result_l0 = forwardPropagation<IN_SIZE, L0_SIZE>(input_ref, weights_l0, biases_l0, ACTIVATION_HIDDEN);
+            // auto result_l0 = forwardPropagation<IN_SIZE, L0_SIZE>(input_ref, weights_l0, biases_l0, ACTIVATION_HIDDEN);
             // printf("Finished first forward prop\n");
-            auto result_l1 = forwardPropagation<L0_SIZE, L1_SIZE>(result_l0, weights_l1, biases_l1, ACTIVATION_HIDDEN);
+            auto result_l1 = forwardPropagation<IN_SIZE, L1_SIZE>(input_ref, weights_l1, biases_l1, ACTIVATION_HIDDEN);
             // printf("Finished second forward prop\n");
             auto result_l2 = forwardPropagation<L1_SIZE, L2_SIZE>(result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
             // printf("Finished third forward prop\n");
@@ -96,9 +97,9 @@ void accelerator(
             
             auto d_l2 = backProp<L1_SIZE, L2_SIZE, OUT_SIZE>(weights_l3, final_error, result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
             // printf("Finished first backprop\n");
-            auto d_l1 = backProp<L0_SIZE, L1_SIZE, L2_SIZE>(weights_l2, d_l2, result_l0, weights_l1, biases_l1, ACTIVATION_HIDDEN);
+            auto d_l1 = backProp<IN_SIZE, L1_SIZE, L2_SIZE>(weights_l2, d_l2, input_ref, weights_l1, biases_l1, ACTIVATION_HIDDEN);
             // printf("Finished second backprop\n");
-            auto d_l0 = backProp<IN_SIZE, L0_SIZE, L1_SIZE>(weights_l1, d_l1, input_ref, weights_l0, biases_l0, ACTIVATION_HIDDEN);
+            // auto d_l0 = backProp<IN_SIZE, L0_SIZE, L1_SIZE>(weights_l1, d_l1, input_ref, weights_l0, biases_l0, ACTIVATION_HIDDEN);
             // printf("Finished all backprop\n");
             
             // std::cout << "Gradient d_l3[0][0]: " << final_error[0][0] << std::endl;
@@ -108,15 +109,15 @@ void accelerator(
             
             updateWeightBias<L2_SIZE, OUT_SIZE>(weights_l3, biases_l3, result_l2, final_error, learning_rate);
             updateWeightBias<L1_SIZE, L2_SIZE>(weights_l2, biases_l2, result_l1, d_l2, learning_rate);
-            updateWeightBias<L0_SIZE, L1_SIZE>(weights_l1, biases_l1, result_l0, d_l1, learning_rate);
-            updateWeightBias<IN_SIZE, L0_SIZE>(weights_l0, biases_l0, input_ref, d_l0, learning_rate);
+            updateWeightBias<IN_SIZE, L1_SIZE>(weights_l1, biases_l1, input_ref, d_l1, learning_rate);
+            // updateWeightBias<IN_SIZE, L0_SIZE>(weights_l0, biases_l0, input_ref, d_l0, learning_rate);
             
         }
 
         if (is_training) {
             std::cout << "🛠️ Epoch " << epoch 
                         << " Accuracy: " << (double)correct / input.size()
-                        << " | weights_l0[0][0]: " << weights_l0[0][0]
+                        // << " | weights_l0[0][0]: " << weights_l0[0][0]
                         << " | weights_l1[0][0]: " << weights_l1[0][0]
                         << " | weights_l2[0][0]: " << weights_l2[0][0]
                         << " | weights_l3[0][0]: " << weights_l3[0][0]

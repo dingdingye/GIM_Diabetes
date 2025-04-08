@@ -13,13 +13,13 @@ using namespace std;
 #define TRAIN_RATIO 0.8
 
 int main() {
-    std::array<std::array<double, IN_SIZE>, L0_SIZE> weights_l0; // 64x64
-    std::array<std::array<double, L0_SIZE>, L1_SIZE> weights_l1; // 8x64
+    // std::array<std::array<double, IN_SIZE>, L0_SIZE> weights_l0; // 64x64
+    std::array<std::array<double, IN_SIZE>, L1_SIZE> weights_l1; // 8x64
     std::array<std::array<double, L1_SIZE>, L2_SIZE> weights_l2; // 8x8
     std::array<std::array<double, L2_SIZE>, OUT_SIZE> weights_l3; // 10x8
 
     // SETTING WEIGHTS TO 0.5 SEEM TO WORK BETTER (earlier full accuracy epochs)
-    std::array<double, L0_SIZE> biases_l0 = {0.5};  // 64 elements
+    // std::array<double, L0_SIZE> biases_l0 = {0.5};  // 64 elements
     std::array<double, L1_SIZE> biases_l1 = {0.5};  // 8 elements
     std::array<double, L2_SIZE> biases_l2 = {0.5};  // 8 elements
     std::array<double, OUT_SIZE> biases_l3 = {0.5}; // 10 elements
@@ -30,9 +30,9 @@ int main() {
     // std::array<double, OUT_SIZE> biases_l3 = {0};
 
     // He initialization with weights 
-    for (int i = 0; i < 64; i++)
-        for (int j = 0; j < 64; j++)
-            weights_l0[i][j] = he_init(64);  
+    // for (int i = 0; i < 64; i++)
+    //     for (int j = 0; j < 64; j++)
+    //         weights_l0[i][j] = he_init(64);  
 
     for (int i = 0; i < 8; i++)
         for (int j = 0; j < 64; j++)
@@ -93,8 +93,10 @@ int main() {
     }
 
 
-    accelerator<TRAIN_SIZE>(input_train, y_true_train, weights_l0, weights_l1, weights_l2, weights_l3, biases_l0, biases_l1, biases_l2, biases_l3, 1);
-    accelerator<TEST_SIZE>(input_test, y_true_test, weights_l0, weights_l1, weights_l2, weights_l3, biases_l0, biases_l1, biases_l2, biases_l3, 0);
+    // accelerator<TRAIN_SIZE>(input_train, y_true_train, weights_l0, weights_l1, weights_l2, weights_l3, biases_l0, biases_l1, biases_l2, biases_l3, 1);
+    // accelerator<TEST_SIZE>(input_test, y_true_test, weights_l0, weights_l1, weights_l2, weights_l3, biases_l0, biases_l1, biases_l2, biases_l3, 0);
+    accelerator<TRAIN_SIZE>(input_train, y_true_train, weights_l1, weights_l2, weights_l3, biases_l1, biases_l2, biases_l3, 1);
+    accelerator<TEST_SIZE>(input_test, y_true_test, weights_l1, weights_l2, weights_l3, biases_l1, biases_l2, biases_l3, 0);
 
     return 0;
 }
