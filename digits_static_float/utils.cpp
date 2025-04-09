@@ -32,7 +32,7 @@ std::array<std::array<std::array<double, 1>, IN_SIZE>, DATA_SIZE> load_csv(const
     }
 
     size_t sample_index = 0;
-    while (getline(file, line) && sample_index < DATA_SIZE) { // 1797 total samples
+    while (getline(file, line) && sample_index < 1000) { // Limit to 1000 samples
         std::stringstream ss(line);
         std::string value;
         size_t feature_index = 0;
