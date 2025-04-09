@@ -96,11 +96,11 @@ std::array<std::array<double, P>, M> matmulTransposeW (
     const std::array<std::array<double, P>, N>& delta)  // shape [N x P]
 {
 
-    // Check for non-empty matrices by ensuring sizes are greater than 0
-    if (N == 0 || M == 0) {
-        std::cerr << "Error: Matrices must not be empty." << std::endl;
-        return;
-    }
+    // // Check for non-empty matrices by ensuring sizes are greater than 0
+    // if (N == 0 || M == 0) {
+    //     std::cerr << "Error: Matrices must not be empty." << std::endl;
+    //     return;
+    // }
 // // Ensure consistent row counts, THIS IS NOT RIGHT, CHECK LATER
     // if (N != N) {
     //     // Handle error
@@ -168,49 +168,8 @@ std::array<std::array<double, 1>, OUT_SIZE> forwardPropagation(
     
     if (activation == 0) {
         output = relu<OUT_SIZE>(net); 
-        // for (int j = 0; j < OUT_SIZE; ++j) {
-        //     output[j] = relu<OUT_SIZE>(net[j]);
-        // }
     } else if (activation == 1) {
-        std::array<std::array<double, 1>, OUT_SIZE> temp{};
-
-        for (int j = 0; j < OUT_SIZE; ++j) {
-            // Wrap transpose<OUT_SIZE>(net)[j] inside a temporary 2D array
-            std::array<std::array<double, 1>, OUT_SIZE> softmax_input{};
-            for (int k = 0; k < OUT_SIZE; ++k) {
-                softmax_input[k][0] = transpose<OUT_SIZE>(net)[j][k];
-            }
-
-            // Apply softmax on this 2D wrapped input
-            auto softmax_result = softmax<OUT_SIZE>(softmax_input);
-
-            // Extract the first column result back to temp
-            temp[j][0] = softmax_result[j][0];
-        }
-
-        // output = transpose<OUT_SIZE>(temp);
-        output = temp;
-
-        // std::array<std::array<double, 1>, OUT_SIZE> temp{};
-        // // std::vector<std::vector<double>> temp(net[0].size(), std::vector<double>(net.size()));
-        // // printf("Pre_softmax: \n");
-        // // print2D(net);
-        // for (int j = 0; j < OUT_SIZE; ++j) {
-        //     temp[j][0] = softmax<OUT_SIZE>(transpose<OUT_SIZE>(net)[j])[0];  
-        // }
-
-        // output = transpose<OUT_SIZE>(temp);
-    
-        // for (int j = 0; j < transpose<OUT_SIZE>(net).size(); ++j) {
-        //     // printf("j is %d\n", j);
-        //     // print1D(transpose(net)[j]);
-        //     temp[j] = softmax<OUT_SIZE>(transpose(net)[j]);
-        //     output = transpose<OUT_SIZE>(temp);
-        //     // print2D(temp);
-        //     // print2D(output);
-        // }
-      // printf("Post_softmax: \n");
-        // print2D(output);
+        output = softmax<OUT_SIZE>(net);
     } else if (activation == 2) {
         output = sigmoid<OUT_SIZE>(net);
     } else {

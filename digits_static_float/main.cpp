@@ -5,16 +5,12 @@
 #include "utils.h"
 #include <vector>
 #include <iostream> 
+#include <algorithm>  // For std::shuffle
+#include <random>     // For std::random_device, std::mt19937
 
-using namespace std;
+using namespace std; 
 
-// #define DATA_SIZE 500    
-// #define IN_SIZE 64        
-// #define L0_SIZE 64       
-// #define L1_SIZE 8        
-// #define L2_SIZE 8        
-// #define OUT_SIZE 10    
-
+#define TRAIN_RATIO 0.8
 
 int main() {
     std::array<std::array<double, IN_SIZE>, L0_SIZE> weights_l0; // 64x64
@@ -22,15 +18,16 @@ int main() {
     std::array<std::array<double, L1_SIZE>, L2_SIZE> weights_l2; // 8x8
     std::array<std::array<double, L2_SIZE>, OUT_SIZE> weights_l3; // 10x8
 
+    // SETTING WEIGHTS TO 0.5 SEEM TO WORK BETTER (earlier full accuracy epochs)
     std::array<double, L0_SIZE> biases_l0 = {0.5};  // 64 elements
     std::array<double, L1_SIZE> biases_l1 = {0.5};  // 8 elements
     std::array<double, L2_SIZE> biases_l2 = {0.5};  // 8 elements
     std::array<double, OUT_SIZE> biases_l3 = {0.5}; // 10 elements
 
-    // std::vector<double> biases_l0(64, 0.0);  // Biases should start at 0 for ReLU supposedly?
-    // std::vector<double> biases_l1(8, 0.0);
-    // std::vector<double> biases_l2(8, 0.0);
-    // std::vector<double> biases_l3(10, 0.0);
+    // std::array<double, L0_SIZE> biases_l0 = {0};  // Biases should start at 0 for ReLU supposedly?
+    // std::array<double, L1_SIZE> biases_l1 = {0};  // 8 elements
+    // std::array<double, L2_SIZE> biases_l2 = {0};  // 8 elements
+    // std::array<double, OUT_SIZE> biases_l3 = {0};
 
     // He initialization with weights 
     for (int i = 0; i < 64; i++)
@@ -63,7 +60,41 @@ int main() {
     // }
     // std::cout << std::endl;
 
-    accelerator(input, y_true, weights_l0, weights_l1, weights_l2, weights_l3, biases_l0, biases_l1, biases_l2, biases_l3);
+    // index array for shuffling
+    std::vector<int> indices(DATA_SIZE);
+    for (int i = 0; i < DATA_SIZE; i++) indices[i] = i;
+
+    // random seed and shuffle
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::shuffle(indices.begin(), indices.end(), gen);
+
+    // compute train/test split index
+    int train_size = static_cast<int>(TRAIN_RATIO * DATA_SIZE);
+
+    // separate into train/test sets
+    // std::vector<std::array<std::array<double, 1>, IN_SIZE>> input_train(train_size);
+    // std::vector<std::array<std::array<double, 1>, IN_SIZE>> input_test(DATA_SIZE - train_size);
+    // std::vector<std::array<double, OUT_SIZE>> y_true_train(train_size);
+    // std::vector<std::array<double, OUT_SIZE>> y_true_test(DATA_SIZE - train_size);
+
+    std::array<std::array<std::array<double, 1>, IN_SIZE>, TRAIN_SIZE> input_train;
+    std::array<std::array<double, OUT_SIZE>, TRAIN_SIZE> y_true_train;
+    std::array<std::array<std::array<double, 1>, IN_SIZE>, TEST_SIZE> input_test;
+    std::array<std::array<double, OUT_SIZE>, TEST_SIZE> y_true_test;
+
+    for (int i = 0; i < train_size; i++) {
+        input_train[i] = input[indices[i]];
+        y_true_train[i] = y_true[indices[i]];
+    }
+    for (int i = train_size; i < DATA_SIZE; i++) {
+        input_test[i - train_size] = input[indices[i]];
+        y_true_test[i - train_size] = y_true[indices[i]];
+    }
+
+
+    accelerator<TRAIN_SIZE>(input_train, y_true_train, weights_l0, weights_l1, weights_l2, weights_l3, biases_l0, biases_l1, biases_l2, biases_l3, 1);
+    accelerator<TEST_SIZE>(input_test, y_true_test, weights_l0, weights_l1, weights_l2, weights_l3, biases_l0, biases_l1, biases_l2, biases_l3, 0);
 
     return 0;
 }
