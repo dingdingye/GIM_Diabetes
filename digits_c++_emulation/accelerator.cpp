@@ -42,23 +42,14 @@ void accelerator(
             for (int iteration = 0; iteration < input_train.size(); ++iteration) {
                 // printf("======================\n");
                 // printf("iteration %d \n", iteration);
-
                 std::vector<std::vector<double>> input_ref = input_train[iteration];
-                
                 std::vector<std::vector<double>> result_l0 = forwardPropagation(input_ref, weights_l0, biases_l0, ACTIVATION_HIDDEN);
                 // printf("Finished first forward prop\n");
-                std::cout << "result_l0 size: " << result_l0.size() << " x " << (result_l0.empty() ? 0 : result_l0[0].size()) << std::endl;
-
                 std::vector<std::vector<double>> result_l1 = forwardPropagation(result_l0, weights_l1, biases_l1, ACTIVATION_HIDDEN);
                 // printf("Finished second forward prop\n");
-                std::cout << "result_l1 size: " << result_l1.size() << " x " << (result_l1.empty() ? 0 : result_l1[0].size()) << std::endl;
-
                 std::vector<std::vector<double>> result_l2 = forwardPropagation(result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
                 // printf("Finished third forward prop\n");
-                std::cout << "result_l2 size: " << result_l2.size() << " x " << (result_l2.empty() ? 0 : result_l2[0].size()) << std::endl;
-
                 std::vector<std::vector<double>> result_l3 = forwardPropagation(result_l2, weights_l3, biases_l3, ACTIVATION_OUTPUT);
-                std::cout << "result_l3 size: " << result_l3.size() << " x " << (result_l3.empty() ? 0 : result_l3[0].size()) << std::endl;
 
                 // select the max value in the last layer output
                 int predicted_digit = std::distance(result_l3.begin(), 
