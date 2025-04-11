@@ -2,10 +2,11 @@
 #define LAYER_H
 
 #include "activations.h"
-#include "accelerator.h"
+// #include "accelerator.h"
 
 #include <array>
 #include <cmath>
+#include <ap_fixed.h>
 #include <algorithm>
 #include <iostream>
 #include <cassert>
@@ -30,6 +31,8 @@ using namespace std;
 //         std::cout << elem << " " << std::endl;
 //     }
 // }
+
+typedef ap_fixed<25, 8> fixed32_8;
 
 template <size_t ROWS, size_t COLS>
 std::array<std::array<fixed32_8, ROWS>, COLS> transpose(
@@ -70,9 +73,9 @@ std::array<std::array<fixed32_8, COLS_B>, ROWS_A> matmul(
             temp = 0;  // Accumulator for the result of A[i][k] * B[k][j]
             for (size_t k = 0; k < COLS_A; ++k) {
                 #pragma HLS pipeline II=1  // Pipeline the innermost loop to enable parallelism
-                #pragma HLS bind_op op=mul impl=dsp // Bind multiplication to DSPs
-                #pragma HLS bind_op op=add impl=dsp // Bind addition to DSPs
-                #pragma HLS bind_op op=sub impl=dsp // Bind subtraction to DSPs
+                #pragma HLS bind_op variable=temp op=mul impl=dsp // Bind multiplication to DSPs
+                #pragma HLS bind_op variable=temp op=add impl=dsp // Bind addition to DSPs
+                #pragma HLS bind_op variable=temp op=sub impl=dsp // Bind subtraction to DSPs
                 temp += A[i][k] * B[k][j]; // Accumulate the results
             }
             C[i][j] = temp; // Store the final result in C
@@ -141,9 +144,9 @@ std::array<std::array<fixed32_8, 1>, OUTPUT_SIZE> forwardPropagation(
 
     for (size_t i = 0; i < mid.size(); ++i) {
         for (size_t j = 0; j < mid[i].size(); ++j) {
-                    #pragma HLS bind_op op=mul impl=dsp // Bind multiplication to DSPs
-                  #pragma HLS bind_op op=add impl=dsp // Bind addition to DSPs
-                 #pragma HLS bind_op op=sub impl=dsp // Bind subtraction to DSPs
+                    #pragma HLS bind_op variable=net op=mul impl=dsp // Bind multiplication to DSPs
+                  #pragma HLS bind_op variable=net op=add impl=dsp // Bind addition to DSPs
+                 #pragma HLS bind_op variable=net op=sub impl=dsp // Bind subtraction to DSPs
             net[i][j] = mid[i][j] + biases[i];          // add biases
         }
     }
@@ -186,7 +189,7 @@ std::array<std::array<fixed32_8, 1>, INPUT_SIZE> backProp(
     std::array<std::array<fixed32_8, 1>, INPUT_SIZE> net{}; // Net should be the same size as biases
     for (size_t i = 0; i < INPUT_SIZE; ++i) {
         for (size_t j = 0; j < mid[i].size(); ++j) {        
-        #pragma HLS bind_op op=add impl=dsp // Bind addition to DSPs
+        #pragma HLS bind_op variable=net op=add impl=dsp // Bind addition to DSPs
             net[i][j] = mid[i][j] + biases[i];
         }
     }
@@ -232,16 +235,16 @@ void updateWeightBias (
     for (int i = 0; i < OUTPUT_SIZE; ++i) {
         // Apply DSP binding at the loop level for subtractions and additions
         for (int j = 0; j < INPUT_SIZE; ++j) {
-            #pragma HLS bind_op op=mul impl=dsp // Bind multiplication to DSPs
-            #pragma HLS bind_op op=add impl=dsp // Bind addition to DSPs
-            #pragma HLS bind_op op=sub impl=dsp // Bind subtraction to DSPs
+            #pragma HLS bind_op variable=weights op=mul impl=dsp // Bind multiplication to DSPs
+            #pragma HLS bind_op variable=weights op=add impl=dsp // Bind addition to DSPs
+            #pragma HLS bind_op variable=weights op=sub impl=dsp // Bind subtraction to DSPs
             weights[i][j] = weights[i][j] - learning_rate * update_temp_mat[i][j];
         }
         
         // Apply DSP binding for bias update (add, sub, mul)
-        #pragma HLS bind_op op=mul impl=dsp // Bind multiplication to DSPs
-        #pragma HLS bind_op op=add impl=dsp // Bind addition to DSPs
-        #pragma HLS bind_op op=sub impl=dsp // Bind subtraction to DSPs
+        #pragma HLS bind_op variable=biases op=mul impl=dsp // Bind multiplication to DSPs
+        #pragma HLS bind_op variable=biases op=add impl=dsp // Bind addition to DSPs
+        #pragma HLS bind_op variable=biases op=sub impl=dsp // Bind subtraction to DSPs
         biases[i] = biases[i] - learning_rate * d_l[i][0];
     }
 }

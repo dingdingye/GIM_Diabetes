@@ -21,8 +21,8 @@
 // }
 
 // Function to load the CSV for features (input)
-std::array<std::array<std::array<fixed32_8, 1>, IN_SIZE>, DATA_SIZE> load_csv(const std::string& filename) {
-    std::array<std::array<std::array<fixed32_8, 1>, IN_SIZE>, DATA_SIZE> formatted_input{}; // Initialize with zeros
+std::array<std::array<std::array<fixed6_6, 1>, IN_SIZE>, DATA_SIZE> load_csv(const std::string& filename) {
+    std::array<std::array<std::array<fixed6_6, 1>, IN_SIZE>, DATA_SIZE> formatted_input{}; // Initialize with zeros
     std::ifstream file(filename);
     std::string line;
 
@@ -32,7 +32,7 @@ std::array<std::array<std::array<fixed32_8, 1>, IN_SIZE>, DATA_SIZE> load_csv(co
     // }
 
     size_t sample_index = 0;
-    while (getline(file, line) && sample_index < 1797) { // Limit to 1000 samples
+    while (getline(file, line) && sample_index < DATA_SIZE) { // Limit to 1000 samples
         std::stringstream ss(line);
         std::string value;
         size_t feature_index = 0;
@@ -49,8 +49,8 @@ std::array<std::array<std::array<fixed32_8, 1>, IN_SIZE>, DATA_SIZE> load_csv(co
 }
 
 // Function to load the CSV for labels (y_true)
-std::array<std::array<fixed32_8, OUT_SIZE>, DATA_SIZE> load_labels(const std::string& filename) {
-    std::array<std::array<fixed32_8, OUT_SIZE>, DATA_SIZE> labels{}; // Initialize with zeros
+std::array<std::array<fixed6_6, OUT_SIZE>, DATA_SIZE> load_labels(const std::string& filename) {
+    std::array<std::array<fixed6_6, OUT_SIZE>, DATA_SIZE> labels{}; // Initialize with zeros
     std::ifstream file(filename);
     std::string line;
 

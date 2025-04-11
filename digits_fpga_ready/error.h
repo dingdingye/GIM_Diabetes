@@ -4,7 +4,9 @@
 #include <array>
 #include <cmath>
 #include <stdexcept>
-#include "accelerator.h"
+#include <ap_fixed.h>
+
+// #include "accelerator.h"
 
 /**
  * Computes the categorical cross-entropy between two vectors.
@@ -15,6 +17,7 @@
  * @throws std::invalid_argument if the vectors differ in size or
  *         if a predicted probability is <= 0 or > 1.
  */
+typedef ap_fixed<25, 8> fixed32_8;
 
 template <int N>
 fixed32_8 categoricalCrossEntropy(std::array<std::array<fixed32_8, 1>, N>& y_true,

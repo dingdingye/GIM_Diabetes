@@ -14,11 +14,15 @@
  *         if a predicted probability is <= 0 or > 1.
  */
 inline fixed32_8 log_approx(fixed32_8 x) {
-    #pragma HLS bind_op op=mul impl=dsp // Bind multiplication to DSPs
-    #pragma HLS bind_op op=add impl=dsp // Bind addition to DSPs
-    #pragma HLS bind_op op=sub impl=dsp // Bind subtraction to DSPs
-    fixed32_8 z = x - fixed32_8(1.0);
-    fixed32_8 z2 = z * z;
+    fixed32_8 z, z2;
+    #pragma HLS bind_op variable=z op=mul impl=dsp // Bind multiplication to DSPs
+    #pragma HLS bind_op variable=z op=add impl=dsp // Bind addition to DSPs
+    #pragma HLS bind_op variable=z op=sub impl=dsp // Bind subtraction to DSPs
+    #pragma HLS bind_op variable=z2 op=mul impl=dsp // Bind multiplication to DSPs
+    #pragma HLS bind_op variable=z2 op=add impl=dsp // Bind addition to DSPs
+    #pragma HLS bind_op variable=z2 op=sub impl=dsp // Bind subtraction to DSPs
+    z = x - fixed32_8(1.0);
+    z2 = z * z;
     // fixed32_8 z3 = z2 * z;
 
     return z - fixed32_8(0.5) * z2; //+ (z3 / fixed32_8(3.0));
@@ -26,15 +30,16 @@ inline fixed32_8 log_approx(fixed32_8 x) {
 
 template <int N>
 fixed32_8 categoricalCrossEntropy(std::array<fixed32_8, N>& y_true, std::array<fixed32_8, N>& y_pred) {
-    #pragma HLS bind_op op=mul impl=dsp // Bind multiplication to DSPs
-    #pragma HLS bind_op op=add impl=dsp // Bind addition to DSPs
-    #pragma HLS bind_op op=sub impl=dsp // Bind subtraction to DSPs
+    fixed32_8 x;
+    #pragma HLS bind_op variable=x op=mul impl=dsp // Bind multiplication to DSPs
+    #pragma HLS bind_op variable=x op=add impl=dsp // Bind addition to DSPs
+    #pragma HLS bind_op variable=x op=sub impl=dsp // Bind subtraction to DSPs
 
     fixed32_8 loss = 0.0;
     const fixed32_8 epsilon = 1e-3;  // Increase epsilon slightly to keep x near 1
 
     for (int i = 0; i < N; ++i) {
-        #pragma HLS UNROLL
+        #pragma HLS pipeline II=1
 
         fixed32_8 yt = y_true[i];
         fixed32_8 yp = y_pred[i];
@@ -44,7 +49,7 @@ fixed32_8 categoricalCrossEntropy(std::array<fixed32_8, N>& y_true, std::array<f
             return -1.0;
         }
 
-        fixed32_8 x = yp + epsilon;  // Avoid log(0)
+        x = yp + epsilon;  // Avoid log(0)
         fixed32_8 log_val = log_approx(x);
         loss -= yt * log_val;
     }
