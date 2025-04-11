@@ -57,6 +57,14 @@ void accelerator(
     //             << " | weights_l2[0][0]: " << weights_l2[0][0] 
     //             << " | weights_l3[0][0]: " << weights_l3[0][0] << std::endl;
             
+    // Initializing the previous epoch's error signals
+    std::array<std::array<std::array<fixed32_8, 1>, 10>, NUM_ITERATIONS> prev_epoch_err;
+
+    for (size_t i = 0; i < NUM_ITERATIONS; ++i) {
+        for (size_t j = 0; j < 10; ++j) {
+            prev_epoch_err[i][j][0] = 0.5;
+        }
+    }
 
     for (int epoch = 0; epoch < NUM_ITERATIONS; ++epoch) {
         int correct = 0;
@@ -110,6 +118,8 @@ void accelerator(
                     }
                 }
 
+
+
                 // std::array<std::array<fixed32_8, 1>, OUT_SIZE> final_error;
                 // for (size_t i = 0; i < result_l3.size(); ++i) {
                 //     final_error[i][0] = result_l3[i][0] - y_true[iteration][i]; // Corrected indexing
@@ -130,7 +140,7 @@ void accelerator(
                 // for (size_t i = 0; i < OUT_SIZE; ++i) std::cout << final_error[i][0] << " ";
                 // std::cout << std::endl;
                 
-                auto d_l2 = backProp<L1_SIZE, L2_SIZE, OUT_SIZE>(weights_l3, final_error, result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
+                auto d_l2 = backProp<L1_SIZE, L2_SIZE, OUT_SIZE>(weights_l3, prev_epoch_err[epoch], result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
                 // printf("Finished first backprop\n");
                 auto d_l1 = backProp<IN_SIZE, L1_SIZE, L2_SIZE>(weights_l2, d_l2, input_ref, weights_l1, biases_l1, ACTIVATION_HIDDEN);
                 // printf("Finished second backprop\n");
@@ -148,6 +158,8 @@ void accelerator(
                 //     }
                 // }
                 // std::cout << "Max Gradient d_l3: " << max_gradient << std::endl;
+
+                prev_epoch_err[epoch] = final_error;
                 
                 updateWeightBias<L2_SIZE, OUT_SIZE>(weights_l3, biases_l3, result_l2, final_error, learning_rate);
                 updateWeightBias<L1_SIZE, L2_SIZE>(weights_l2, biases_l2, result_l1, d_l2, learning_rate);
