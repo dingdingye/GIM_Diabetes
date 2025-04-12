@@ -60,8 +60,8 @@ void accelerator(
     // Initializing the previous epoch's error signals
     std::array<std::array<std::array<double, 1>, 10>, NUM_ITERATIONS> prev_epoch_err;
 
-    for (size_t i = 0; i < NUM_ITERATIONS; ++i) {
-        for (size_t j = 0; j < 10; ++j) {
+    for (size_t i = 0; i < input.size(); ++i) {
+        for (size_t j = 0; j < OUT_SIZE; ++j) {
             prev_epoch_err[i][j][0] = 0.5;
         }
     }
@@ -139,8 +139,12 @@ void accelerator(
                 // std::cout << "final_error: ";
                 // for (size_t i = 0; i < OUT_SIZE; ++i) std::cout << final_error[i][0] << " ";
                 // std::cout << std::endl;
-                
-                auto d_l2 = backProp<L1_SIZE, L2_SIZE, OUT_SIZE>(weights_l3, prev_epoch_err[epoch], result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
+                auto d_l2 = backProp<L1_SIZE, L2_SIZE, OUT_SIZE>(weights_l3, prev_epoch_err[iteration], result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
+                if (epoch > 2){
+                    d_l2 = backProp<L1_SIZE, L2_SIZE, OUT_SIZE>(weights_l3, prev_epoch_err[iteration], result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
+                } else {
+                    d_l2 = backProp<L1_SIZE, L2_SIZE, OUT_SIZE>(weights_l3, final_error, result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
+                }
                 // printf("Finished first backprop\n");
                 auto d_l1 = backProp<IN_SIZE, L1_SIZE, L2_SIZE>(weights_l2, d_l2, input_ref, weights_l1, biases_l1, ACTIVATION_HIDDEN);
                 // printf("Finished second backprop\n");

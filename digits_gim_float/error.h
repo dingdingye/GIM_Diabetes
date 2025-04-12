@@ -4,7 +4,7 @@
 #include <array>
 #include <cmath>
 #include <stdexcept>
-#include <ap_fixed.h>
+// #include <ap_fixed.h>
 
 // #include "accelerator.h"
 
