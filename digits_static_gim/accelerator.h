@@ -92,14 +92,34 @@ void accelerator(
 
             std::array<std::array<double, 1>, OUT_SIZE> final_error{};
             final_error = prev_epoch_error[iteration];                      // use previous epoch's error
-
             std::array<std::array<double, 1>, OUT_SIZE> new_error{};
-            for (size_t i = 0; i < result_l3.size(); ++i) {
-                for (size_t j = 0; j < result_l3[i].size(); ++j) {
-                    new_error[i][j] = result_l3[i][j] - y_true[iteration][i]; // Corrected indexing
+            if (epoch == 0) {
+                // Compute error normally and store it, but don't use it to backprop
+                for (size_t i = 0; i < OUT_SIZE; ++i) {
+                    new_error[i][0] = result_l3[i][0] - y_true[iteration][i];
                 }
+                prev_epoch_error[iteration] = new_error;
+                continue;
             }
-            prev_epoch_error[iteration] = new_error;                        // store this epoch's error to use for next epoch
+
+            else {
+                final_error = prev_epoch_error[iteration]; // Use stored error
+                for (size_t i = 0; i < OUT_SIZE; ++i) {
+                    new_error[i][0] = result_l3[i][0] - y_true[iteration][i]; // Update for next epoch
+                }
+                prev_epoch_error[iteration] = new_error;
+                // proceed with backprop...
+            }
+            // std::array<std::array<double, 1>, OUT_SIZE> final_error{};
+            // final_error = prev_epoch_error[iteration];                      // use previous epoch's error
+
+            // std::array<std::array<double, 1>, OUT_SIZE> new_error{};
+            // for (size_t i = 0; i < result_l3.size(); ++i) {
+            //     for (size_t j = 0; j < result_l3[i].size(); ++j) {
+            //         new_error[i][j] = result_l3[i][j] - y_true[iteration][i]; // Corrected indexing
+            //     }
+            // }
+            // prev_epoch_error[iteration] = new_error;                        // store this epoch's error to use for next epoch
             
             auto d_l2 = backProp<L1_SIZE, L2_SIZE, OUT_SIZE>(weights_l3, final_error, result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
             // printf("Finished first backprop\n");
