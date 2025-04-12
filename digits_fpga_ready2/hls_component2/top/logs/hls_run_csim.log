@@ -1,0 +1,119 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/top\top.hlsrun_csim_summary, at 04/12/25 11:06:25
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/top -config C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg -cmdlineconfig C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/top/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sat Apr 12 11:06:27 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source C:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'dy32' on host 'ryn-b10-pc-12.ad.rice.edu' (Windows NT_amd64 version 10.0) on Sat Apr 12 11:06:27 -0500 2025
+INFO: [HLS 200-10] In directory 'C:/GIM_Diabetes/digits_fpga_ready2/hls_component2'
+INFO: [HLS 200-2005] Using work_dir C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/top 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Diabetes/digits_fpga_ready2/accelerator.cpp' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Diabetes/digits_fpga_ready2/accelerator.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Diabetes/digits_fpga_ready2/accelerator.h' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Diabetes/digits_fpga_ready2/accelerator.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Diabetes/digits_fpga_ready2/activation.cpp' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Diabetes/digits_fpga_ready2/activation.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Diabetes/digits_fpga_ready2/activations.h' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Diabetes/digits_fpga_ready2/activations.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Diabetes/digits_fpga_ready2/error.cpp' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Diabetes/digits_fpga_ready2/error.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Diabetes/digits_fpga_ready2/error.h' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Diabetes/digits_fpga_ready2/error.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Diabetes/digits_fpga_ready2/layer.h' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Diabetes/digits_fpga_ready2/layer.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Diabetes/digits_fpga_ready2/top.cpp' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Diabetes/digits_fpga_ready2/top.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GIM_Diabetes/digits_fpga_ready2/top.h' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(21)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Diabetes/digits_fpga_ready2/top.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Diabetes\digits_fpga_ready2\digits_features.h' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(22)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Diabetes/digits_fpga_ready2/digits_features.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\GIM_Diabetes\digits_fpga_ready2\digits_labels.h' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(23)
+INFO: [HLS 200-10] Adding design file 'C:/GIM_Diabetes/digits_fpga_ready2/digits_labels.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Diabetes/digits_fpga_ready2/main.cpp' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Diabetes/digits_fpga_ready2/main.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Diabetes/digits_fpga_ready2/digits_features.h' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Diabetes/digits_fpga_ready2/digits_features.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GIM_Diabetes/digits_fpga_ready2/digits_labels.h' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/GIM_Diabetes/digits_fpga_ready2/digits_labels.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=top' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-1-e' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-1-e'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(11)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=2ns' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(12)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+make: 'csim.exe' is up to date.
++---------------------------------------------------------------+
+Epoch 0 accuracy: 0.128045
+Epoch 1 accuracy: 0.117606
+Epoch 2 accuracy: 0.251914
+Epoch 3 accuracy: 0.410578
+Epoch 4 accuracy: 0.592206
+Epoch 5 accuracy: 0.670146
+Epoch 6 accuracy: 0.73904
+Epoch 7 accuracy: 0.784273
+Epoch 8 accuracy: 0.821155
+Epoch 9 accuracy: 0.85595
+Epoch 10 accuracy: 0.87961
+Epoch 11 accuracy: 0.896312
+Epoch 12 accuracy: 0.909534
+Epoch 13 accuracy: 0.917189
+Epoch 14 accuracy: 0.921364
+Epoch 15 accuracy: 0.923452
+Epoch 16 accuracy: 0.930411
+Epoch 17 accuracy: 0.931802
+Epoch 18 accuracy: 0.93737
+Epoch 19 accuracy: 0.935978
+Epoch 20 accuracy: 0.936674
+Epoch 21 accuracy: 0.940849
+Epoch 22 accuracy: 0.942241
+Epoch 23 accuracy: 0.942241
+Epoch 24 accuracy: 0.943633
+Epoch 25 accuracy: 0.94572
+Epoch 26 accuracy: 0.946416
+Epoch 27 accuracy: 0.947808
+Epoch 28 accuracy: 0.949896
+Epoch 29 accuracy: 0.953375
+Epoch 30 accuracy: 0.956159
+Epoch 31 accuracy: 0.95755
+Epoch 32 accuracy: 0.956855
+Epoch 33 accuracy: 0.961726
+Epoch 34 accuracy: 0.967293
+Epoch 35 accuracy: 0.966597
+Epoch 36 accuracy: 0.969381
+Epoch 37 accuracy: 0.972164
+Epoch 38 accuracy: 0.972164
+Epoch 39 accuracy: 0.978427
+Epoch 40 accuracy: 0.974948
+Epoch 41 accuracy: 0.978427
+Epoch 42 accuracy: 0.977035
+Epoch 43 accuracy: 0.977731
+Epoch 44 accuracy: 0.979819
+Epoch 45 accuracy: 0.981907
+Epoch 46 accuracy: 0.979819
+Epoch 47 accuracy: 0.983994
+Epoch 48 accuracy: 0.983994
+Epoch 49 accuracy: 0.98817
+First full accuracy occurs in epoch 351
++---------------------------------------------------------------+
+Test accuracy: 0.85
+First full accuracy occurs in epoch 351
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 57.327 seconds; peak allocated memory: 141.855 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 1m 1s

@@ -1,0 +1,186 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 314640 *, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll,  50346, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,  41775, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,   6039, user inline pragmas are applied</column>
+            <column name="">(4) simplification,   4988, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition,   5004, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,   4970, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,   4970, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,   4970, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,   5034, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,   5034, loop and instruction simplification</column>
+            <column name="">(2) parallelization,   7194, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,  94520, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,   9690, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,   9747, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,   9560, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="top" col1="top.cpp:13" col2="314640" col2_note="*" col3="4988" col4="5034" col5="9690" col6="9560">
+                    <row id="38" col0="accelerator&lt;1437&gt;" col1="accelerator.h:36" col2="43297" col3="2506" col4="2538" col5="6665" col6="6400">
+                        <row id="35" col0="forwardPropagation&lt;64, 8&gt;" col1="layer.h:132" col2="10850" col2_disp="10,850 (2 calls)" col3="141" col4="144" col5="268" col6="283">
+                            <row id="39" col0="matmul&lt;8, 64, 1&gt;" col1="layer.h:59" col2="1052" col2_disp=" 1,052 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="44" col0="relu&lt;8&gt;" col1="activations.h:19" col2="404" col2_disp="   404 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="25" col0="softmax&lt;8&gt;" col1="activations.h:115" col2="8740" col2_disp=" 8,740 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="10" col0="fast_exp_fixed" col1="activations.h:81" col2="6522" col2_disp=" 6,522 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="13" col0="forwardPropagation&lt;8, 4&gt;" col1="layer.h:132" col2="10850" col2_disp="10,850 (2 calls)" col3="105" col4="108" col5="170" col6="176">
+                            <row id="21" col0="matmul&lt;4, 8, 1&gt;" col1="layer.h:59" col2="1052" col2_disp=" 1,052 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="1" col0="relu&lt;4&gt;" col1="activations.h:19" col2="404" col2_disp="   404 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="9" col0="softmax&lt;4&gt;" col1="activations.h:115" col2="8740" col2_disp=" 8,740 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="10" col0="fast_exp_fixed" col1="activations.h:81" col2="6522" col2_disp=" 6,522 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="42" col0="forwardPropagation&lt;4, 10&gt;" col1="layer.h:132" col2="10850" col2_disp="10,850 (2 calls)" col3="269" col4="281" col5="277" col6="326">
+                            <row id="15" col0="matmul&lt;10, 4, 1&gt;" col1="layer.h:59" col2="1052" col2_disp=" 1,052 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="16" col0="relu&lt;10&gt;" col1="activations.h:19" col2="404" col2_disp="   404 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="2" col0="softmax&lt;10&gt;" col1="activations.h:115" col2="8740" col2_disp=" 8,740 (2 calls)" col3="130" col4="139" col5="128" col6="156">
+                                <row id="10" col0="fast_exp_fixed" col1="activations.h:81" col2="6522" col2_disp=" 6,522 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="14" col0="max_element&lt;std::array&lt;ap_fixed&lt;25, 8, AP_TRN, AP_WRAP, 0&gt;, 1&gt; *&gt;" col1="stl_algo.h:5674" col2="298" col2_disp="   298 (2 calls)" col3="" col4="" col5="" col6="">
+                            <row id="30" col0="__iter_less_iter" col1="predefined_ops.h:48" col2="2" col2_disp="     2 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="19" col0="__max_element&lt;std::array&lt;ap_fixed&lt;25, 8, AP_TRN, AP_WRAP, 0&gt;, 1&gt; *, __gnu_cxx::__ops::_Iter_less_iter&gt;" col1="stl_algo.h:5653" col2="288" col2_disp="   288 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="48" col0="operator()&lt;std::array&lt;ap_fixed&lt;25, 8, AP_TRN, AP_WRAP, 0&gt;, 1&gt; *, std::array&lt;ap_fixed&lt;25, 8, AP_TRN, AP_WRAP, 0&gt;, 1&gt; *&gt;" col1="predefined_ops.h:42" col2="254" col2_disp="   254 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="11" col0="distance&lt;std::array&lt;ap_fixed&lt;25, 8, AP_TRN, AP_WRAP, 0&gt;, 1&gt; *&gt;" col1="stl_iterator_base_funcs.h:138" col2="26" col2_disp="    26 (2 calls)" col3="" col4="" col5="" col6="">
+                            <row id="29" col0="__iterator_category&lt;std::array&lt;ap_fixed&lt;25, 8, AP_TRN, AP_WRAP, 0&gt;, 1&gt; *&gt;" col1="stl_iterator_base_types.h:205" col2="2" col2_disp="     2 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="20" col0="__distance&lt;std::array&lt;ap_fixed&lt;25, 8, AP_TRN, AP_WRAP, 0&gt;, 1&gt; *&gt;" col1="stl_iterator_base_funcs.h:98" col2="10" col2_disp="    10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="37" col0="max_element&lt;const ap_fixed&lt;6, 6, AP_TRN, AP_WRAP, 0&gt; *&gt;" col1="stl_algo.h:5674" col2="72" col2_disp="    72 (2 calls)" col3="" col4="" col5="" col6="">
+                            <row id="30" col0="__iter_less_iter" col1="predefined_ops.h:48" col2="2" col2_disp="     2 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="41" col0="__max_element&lt;const ap_fixed&lt;6, 6, AP_TRN, AP_WRAP, 0&gt; *, __gnu_cxx::__ops::_Iter_less_iter&gt;" col1="stl_algo.h:5653" col2="62" col2_disp="    62 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="18" col0="operator()&lt;const ap_fixed&lt;6, 6, AP_TRN, AP_WRAP, 0&gt; *, const ap_fixed&lt;6, 6, AP_TRN, AP_WRAP, 0&gt; *&gt;" col1="predefined_ops.h:42" col2="28" col2_disp="    28 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="43" col0="distance&lt;const ap_fixed&lt;6, 6, AP_TRN, AP_WRAP, 0&gt; *&gt;" col1="stl_iterator_base_funcs.h:138" col2="24" col2_disp="    24 (2 calls)" col3="" col4="" col5="" col6="">
+                            <row id="23" col0="__iterator_category&lt;const ap_fixed&lt;6, 6, AP_TRN, AP_WRAP, 0&gt; *&gt;" col1="stl_iterator_base_types.h:205" col2="2" col2_disp="     2 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="36" col0="__distance&lt;const ap_fixed&lt;6, 6, AP_TRN, AP_WRAP, 0&gt; *&gt;" col1="stl_iterator_base_funcs.h:98" col2="8" col2_disp="     8 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="5" col0="backProp&lt;8, 4, 10&gt;" col1="layer.h:173" col2="1887" col3="161" col4="167" col5="280" col6="307">
+                            <row id="47" col0="transpose&lt;10, 4&gt;" col1="layer.h:38" col2="45" col3="" col4="" col5="" col6=""/>
+                            <row id="8" col0="matmul&lt;4, 10, 1&gt;" col1="layer.h:59" col2="526" col3="" col4="" col5="" col6=""/>
+                            <row id="21" col0="matmul&lt;4, 8, 1&gt;" col1="layer.h:59" col2="526" col3="" col4="" col5="" col6=""/>
+                            <row id="26" col0="derivative_relu&lt;4&gt;" col1="activations.h:29" col2="215" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="28" col0="backProp&lt;64, 8, 4&gt;" col1="layer.h:173" col2="1887" col3="185" col4="191" col5="330" col6="366">
+                            <row id="27" col0="transpose&lt;4, 8&gt;" col1="layer.h:38" col2="45" col3="" col4="" col5="" col6=""/>
+                            <row id="45" col0="matmul&lt;8, 4, 1&gt;" col1="layer.h:59" col2="526" col3="" col4="" col5="" col6=""/>
+                            <row id="39" col0="matmul&lt;8, 64, 1&gt;" col1="layer.h:59" col2="526" col3="" col4="" col5="" col6=""/>
+                            <row id="4" col0="derivative_relu&lt;8&gt;" col1="activations.h:29" col2="215" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="3" col0="updateWeightBias&lt;4, 10&gt;" col1="layer.h:225" col2="1491" col3="" col4="" col5="" col6="">
+                            <row id="46" col0="transpose&lt;4, 1&gt;" col1="layer.h:38" col2="45" col3="" col4="" col5="" col6=""/>
+                            <row id="40" col0="matmul&lt;10, 1, 4&gt;" col1="layer.h:59" col2="526" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="31" col0="updateWeightBias&lt;8, 4&gt;" col1="layer.h:225" col2="1491" col3="142" col4="142" col5="432" col6="440">
+                            <row id="12" col0="transpose&lt;8, 1&gt;" col1="layer.h:38" col2="45" col3="" col4="" col5="" col6=""/>
+                            <row id="7" col0="matmul&lt;4, 1, 8&gt;" col1="layer.h:59" col2="526" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="33" col0="updateWeightBias&lt;64, 8&gt;" col1="layer.h:225" col2="1491" col3="" col4="" col5="" col6="">
+                            <row id="17" col0="transpose&lt;64, 1&gt;" col1="layer.h:38" col2="45" col3="" col4="" col5="" col6=""/>
+                            <row id="6" col0="matmul&lt;8, 1, 64&gt;" col1="layer.h:59" col2="526" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="40" col0="matmul&lt;10, 1, 4&gt;" col1="layer.h:59" col2="" col3="111" col4="111" col5="157" col6="157"/>
+                        <row id="6" col0="matmul&lt;8, 1, 64&gt;" col1="layer.h:59" col2="" col3="1055" col4="1055" col5="2185" col6="2189"/>
+                    </row>
+                    <row id="24" col0="accelerator&lt;360&gt;" col1="accelerator.h:36" col2="43297" col3="664" col4="687" col5="901" col6="963">
+                        <row id="35" col0="forwardPropagation&lt;64, 8&gt;" col1="layer.h:132" col2="10850" col2_disp="10,850 (2 calls)" col3="141" col4="144" col5="268" col6="283">
+                            <row id="39" col0="matmul&lt;8, 64, 1&gt;" col1="layer.h:59" col2="1052" col2_disp=" 1,052 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="44" col0="relu&lt;8&gt;" col1="activations.h:19" col2="404" col2_disp="   404 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="25" col0="softmax&lt;8&gt;" col1="activations.h:115" col2="8740" col2_disp=" 8,740 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="10" col0="fast_exp_fixed" col1="activations.h:81" col2="6522" col2_disp=" 6,522 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="13" col0="forwardPropagation&lt;8, 4&gt;" col1="layer.h:132" col2="10850" col2_disp="10,850 (2 calls)" col3="105" col4="108" col5="170" col6="176">
+                            <row id="21" col0="matmul&lt;4, 8, 1&gt;" col1="layer.h:59" col2="1052" col2_disp=" 1,052 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="1" col0="relu&lt;4&gt;" col1="activations.h:19" col2="404" col2_disp="   404 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="9" col0="softmax&lt;4&gt;" col1="activations.h:115" col2="8740" col2_disp=" 8,740 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="10" col0="fast_exp_fixed" col1="activations.h:81" col2="6522" col2_disp=" 6,522 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="42" col0="forwardPropagation&lt;4, 10&gt;" col1="layer.h:132" col2="10850" col2_disp="10,850 (2 calls)" col3="269" col4="281" col5="277" col6="326">
+                            <row id="15" col0="matmul&lt;10, 4, 1&gt;" col1="layer.h:59" col2="1052" col2_disp=" 1,052 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="16" col0="relu&lt;10&gt;" col1="activations.h:19" col2="404" col2_disp="   404 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="2" col0="softmax&lt;10&gt;" col1="activations.h:115" col2="8740" col2_disp=" 8,740 (2 calls)" col3="130" col4="139" col5="128" col6="156">
+                                <row id="10" col0="fast_exp_fixed" col1="activations.h:81" col2="6522" col2_disp=" 6,522 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="14" col0="max_element&lt;std::array&lt;ap_fixed&lt;25, 8, AP_TRN, AP_WRAP, 0&gt;, 1&gt; *&gt;" col1="stl_algo.h:5674" col2="298" col2_disp="   298 (2 calls)" col3="" col4="" col5="" col6="">
+                            <row id="30" col0="__iter_less_iter" col1="predefined_ops.h:48" col2="2" col2_disp="     2 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="19" col0="__max_element&lt;std::array&lt;ap_fixed&lt;25, 8, AP_TRN, AP_WRAP, 0&gt;, 1&gt; *, __gnu_cxx::__ops::_Iter_less_iter&gt;" col1="stl_algo.h:5653" col2="288" col2_disp="   288 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="48" col0="operator()&lt;std::array&lt;ap_fixed&lt;25, 8, AP_TRN, AP_WRAP, 0&gt;, 1&gt; *, std::array&lt;ap_fixed&lt;25, 8, AP_TRN, AP_WRAP, 0&gt;, 1&gt; *&gt;" col1="predefined_ops.h:42" col2="254" col2_disp="   254 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="11" col0="distance&lt;std::array&lt;ap_fixed&lt;25, 8, AP_TRN, AP_WRAP, 0&gt;, 1&gt; *&gt;" col1="stl_iterator_base_funcs.h:138" col2="26" col2_disp="    26 (2 calls)" col3="" col4="" col5="" col6="">
+                            <row id="29" col0="__iterator_category&lt;std::array&lt;ap_fixed&lt;25, 8, AP_TRN, AP_WRAP, 0&gt;, 1&gt; *&gt;" col1="stl_iterator_base_types.h:205" col2="2" col2_disp="     2 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="20" col0="__distance&lt;std::array&lt;ap_fixed&lt;25, 8, AP_TRN, AP_WRAP, 0&gt;, 1&gt; *&gt;" col1="stl_iterator_base_funcs.h:98" col2="10" col2_disp="    10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="37" col0="max_element&lt;const ap_fixed&lt;6, 6, AP_TRN, AP_WRAP, 0&gt; *&gt;" col1="stl_algo.h:5674" col2="72" col2_disp="    72 (2 calls)" col3="" col4="" col5="" col6="">
+                            <row id="30" col0="__iter_less_iter" col1="predefined_ops.h:48" col2="2" col2_disp="     2 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="41" col0="__max_element&lt;const ap_fixed&lt;6, 6, AP_TRN, AP_WRAP, 0&gt; *, __gnu_cxx::__ops::_Iter_less_iter&gt;" col1="stl_algo.h:5653" col2="62" col2_disp="    62 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="18" col0="operator()&lt;const ap_fixed&lt;6, 6, AP_TRN, AP_WRAP, 0&gt; *, const ap_fixed&lt;6, 6, AP_TRN, AP_WRAP, 0&gt; *&gt;" col1="predefined_ops.h:42" col2="28" col2_disp="    28 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="43" col0="distance&lt;const ap_fixed&lt;6, 6, AP_TRN, AP_WRAP, 0&gt; *&gt;" col1="stl_iterator_base_funcs.h:138" col2="24" col2_disp="    24 (2 calls)" col3="" col4="" col5="" col6="">
+                            <row id="23" col0="__iterator_category&lt;const ap_fixed&lt;6, 6, AP_TRN, AP_WRAP, 0&gt; *&gt;" col1="stl_iterator_base_types.h:205" col2="2" col2_disp="     2 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="36" col0="__distance&lt;const ap_fixed&lt;6, 6, AP_TRN, AP_WRAP, 0&gt; *&gt;" col1="stl_iterator_base_funcs.h:98" col2="8" col2_disp="     8 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="5" col0="backProp&lt;8, 4, 10&gt;" col1="layer.h:173" col2="1887" col3="" col4="" col5="" col6="">
+                            <row id="47" col0="transpose&lt;10, 4&gt;" col1="layer.h:38" col2="45" col3="" col4="" col5="" col6=""/>
+                            <row id="8" col0="matmul&lt;4, 10, 1&gt;" col1="layer.h:59" col2="526" col3="" col4="" col5="" col6=""/>
+                            <row id="21" col0="matmul&lt;4, 8, 1&gt;" col1="layer.h:59" col2="526" col3="" col4="" col5="" col6=""/>
+                            <row id="26" col0="derivative_relu&lt;4&gt;" col1="activations.h:29" col2="215" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="28" col0="backProp&lt;64, 8, 4&gt;" col1="layer.h:173" col2="1887" col3="" col4="" col5="" col6="">
+                            <row id="27" col0="transpose&lt;4, 8&gt;" col1="layer.h:38" col2="45" col3="" col4="" col5="" col6=""/>
+                            <row id="45" col0="matmul&lt;8, 4, 1&gt;" col1="layer.h:59" col2="526" col3="" col4="" col5="" col6=""/>
+                            <row id="39" col0="matmul&lt;8, 64, 1&gt;" col1="layer.h:59" col2="526" col3="" col4="" col5="" col6=""/>
+                            <row id="4" col0="derivative_relu&lt;8&gt;" col1="activations.h:29" col2="215" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="3" col0="updateWeightBias&lt;4, 10&gt;" col1="layer.h:225" col2="1491" col3="" col4="" col5="" col6="">
+                            <row id="46" col0="transpose&lt;4, 1&gt;" col1="layer.h:38" col2="45" col3="" col4="" col5="" col6=""/>
+                            <row id="40" col0="matmul&lt;10, 1, 4&gt;" col1="layer.h:59" col2="526" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="31" col0="updateWeightBias&lt;8, 4&gt;" col1="layer.h:225" col2="1491" col3="" col4="" col5="" col6="">
+                            <row id="12" col0="transpose&lt;8, 1&gt;" col1="layer.h:38" col2="45" col3="" col4="" col5="" col6=""/>
+                            <row id="7" col0="matmul&lt;4, 1, 8&gt;" col1="layer.h:59" col2="526" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="33" col0="updateWeightBias&lt;64, 8&gt;" col1="layer.h:225" col2="1491" col3="" col4="" col5="" col6="">
+                            <row id="17" col0="transpose&lt;64, 1&gt;" col1="layer.h:38" col2="45" col3="" col4="" col5="" col6=""/>
+                            <row id="6" col0="matmul&lt;8, 1, 64&gt;" col1="layer.h:59" col2="526" col3="" col4="" col5="" col6=""/>
+                        </row>
+                    </row>
+                </row>
+            </rows>
+            <notes>
+                <note name="*" desc="Exceeded design size warning message threshold"/>
+            </notes>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

@@ -1,0 +1,208 @@
+
+
+================================================================
+== Vitis HLS Report for 'backProp_8_4_10_s'
+================================================================
+* Date:           Sat Apr 12 12:18:42 2025
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        top
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sfvc784-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.996 ns|     2.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      167|      167|  1.670 us|  1.670 us|  167|  167|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%output_16_load_loc = alloca i64 1"   --->   Operation 9 'alloca' 'output_16_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%output_13_load_1_loc = alloca i64 1"   --->   Operation 10 'alloca' 'output_13_load_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%output_10_load_loc = alloca i64 1"   --->   Operation 11 'alloca' 'output_10_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%output_load_loc = alloca i64 1"   --->   Operation 12 'alloca' 'output_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%net_3_load_loc = alloca i64 1"   --->   Operation 13 'alloca' 'net_3_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%net_2_load_loc = alloca i64 1"   --->   Operation 14 'alloca' 'net_2_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%net_1_load_loc = alloca i64 1"   --->   Operation 15 'alloca' 'net_1_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%net_load_loc = alloca i64 1"   --->   Operation 16 'alloca' 'net_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%C_load_loc = alloca i64 1"   --->   Operation 17 'alloca' 'C_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%C_29_load_loc = alloca i64 1"   --->   Operation 18 'alloca' 'C_29_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%C_31_load_loc = alloca i64 1"   --->   Operation 19 'alloca' 'C_31_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%C_33_load_loc = alloca i64 1"   --->   Operation 20 'alloca' 'C_33_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%w_l_plus1_T = alloca i64 1" [../layer.h:184]   --->   Operation 21 'alloca' 'w_l_plus1_T' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [2/2] (0.00ns)   --->   "%call_ln0 = call void @backProp<8, 4, 10>_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2, i25 %w_l_plus1_0, i25 %w_l_plus1_1, i25 %w_l_plus1_2, i25 %w_l_plus1_3, i25 %w_l_plus1_T"   --->   Operation 22 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 23 [2/2] (0.00ns)   --->   "%call_ln0 = call void @backProp<8, 4, 10>_Pipeline_VITIS_LOOP_71_1_VITIS_LOOP_74_33, i25 %weights_0, i25 %weights_1, i25 %weights_2, i25 %weights_3, i25 %weights_4, i25 %weights_5, i25 %weights_6, i25 %weights_7, i24 %input_0, i25 %C_33_load_loc, i25 %C_31_load_loc, i25 %C_29_load_loc, i25 %C_load_loc"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 1.86>
+ST_2 : Operation 24 [1/2] (1.86ns)   --->   "%call_ln0 = call void @backProp<8, 4, 10>_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2, i25 %w_l_plus1_0, i25 %w_l_plus1_1, i25 %w_l_plus1_2, i25 %w_l_plus1_3, i25 %w_l_plus1_T"   --->   Operation 24 'call' 'call_ln0' <Predicate = true> <Delay = 1.86> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i25P0A, i25 %agg_result_0, i25 0"   --->   Operation 25 'write' 'write_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i25P0A, i25 %agg_result_1, i25 0"   --->   Operation 26 'write' 'write_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i25P0A, i25 %agg_result_2, i25 0"   --->   Operation 27 'write' 'write_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i25P0A, i25 %agg_result_3, i25 0"   --->   Operation 28 'write' 'write_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [1/2] (1.86ns)   --->   "%call_ln0 = call void @backProp<8, 4, 10>_Pipeline_VITIS_LOOP_71_1_VITIS_LOOP_74_33, i25 %weights_0, i25 %weights_1, i25 %weights_2, i25 %weights_3, i25 %weights_4, i25 %weights_5, i25 %weights_6, i25 %weights_7, i24 %input_0, i25 %C_33_load_loc, i25 %C_31_load_loc, i25 %C_29_load_loc, i25 %C_load_loc"   --->   Operation 29 'call' 'call_ln0' <Predicate = true> <Delay = 1.86> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 2.21>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%p_read3136 = read i25 @_ssdm_op_Read.ap_auto.i25, i25 %p_read3"   --->   Operation 30 'read' 'p_read3136' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%p_read2135 = read i25 @_ssdm_op_Read.ap_auto.i25, i25 %p_read2"   --->   Operation 31 'read' 'p_read2135' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%p_read1134 = read i25 @_ssdm_op_Read.ap_auto.i25, i25 %p_read1"   --->   Operation 32 'read' 'p_read1134' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%p_read133 = read i25 @_ssdm_op_Read.ap_auto.i25, i25 %p_read"   --->   Operation 33 'read' 'p_read133' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 34 [2/2] (0.00ns)   --->   "%call_ln0 = call void @backProp<8, 4, 10>_Pipeline_VITIS_LOOP_71_1_VITIS_LOOP_74_3, i25 %agg_result_0, i25 %w_l_plus1_T, i25 %d_l_plus1_0, i25 %agg_result_1, i25 %agg_result_2, i25 %agg_result_3"   --->   Operation 34 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%C_33_load = load i25 %C_33_load_loc"   --->   Operation 35 'load' 'C_33_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%C_31_load = load i25 %C_31_load_loc"   --->   Operation 36 'load' 'C_31_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%C_29_load = load i25 %C_29_load_loc"   --->   Operation 37 'load' 'C_29_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%C_load = load i25 %C_load_loc"   --->   Operation 38 'load' 'C_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 39 [2/2] (2.21ns)   --->   "%call_ln0 = call void @backProp<8, 4, 10>_Pipeline_VITIS_LOOP_190_1, i25 %C_load, i25 %C_29_load, i25 %C_31_load, i25 %C_33_load, i25 %p_read133, i25 %p_read1134, i25 %p_read2135, i25 %p_read3136, i25 %net_load_loc, i25 %net_1_load_loc, i25 %net_2_load_loc, i25 %net_3_load_loc"   --->   Operation 39 'call' 'call_ln0' <Predicate = true> <Delay = 2.21> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 5.67>
+ST_4 : Operation 40 [1/2] (5.67ns)   --->   "%call_ln0 = call void @backProp<8, 4, 10>_Pipeline_VITIS_LOOP_71_1_VITIS_LOOP_74_3, i25 %agg_result_0, i25 %w_l_plus1_T, i25 %d_l_plus1_0, i25 %agg_result_1, i25 %agg_result_2, i25 %agg_result_3"   --->   Operation 40 'call' 'call_ln0' <Predicate = true> <Delay = 5.67> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 41 [1/2] (1.72ns)   --->   "%call_ln0 = call void @backProp<8, 4, 10>_Pipeline_VITIS_LOOP_190_1, i25 %C_load, i25 %C_29_load, i25 %C_31_load, i25 %C_33_load, i25 %p_read133, i25 %p_read1134, i25 %p_read2135, i25 %p_read3136, i25 %net_load_loc, i25 %net_1_load_loc, i25 %net_2_load_loc, i25 %net_3_load_loc"   --->   Operation 41 'call' 'call_ln0' <Predicate = true> <Delay = 1.72> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 2.15>
+ST_5 : Operation 42 [1/1] (0.00ns)   --->   "%net_load = load i25 %net_load_loc"   --->   Operation 42 'load' 'net_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 43 [1/1] (0.00ns)   --->   "%net_1_load = load i25 %net_1_load_loc"   --->   Operation 43 'load' 'net_1_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 44 [1/1] (0.00ns)   --->   "%net_2_load = load i25 %net_2_load_loc"   --->   Operation 44 'load' 'net_2_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 45 [1/1] (0.00ns)   --->   "%net_3_load = load i25 %net_3_load_loc"   --->   Operation 45 'load' 'net_3_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 46 [2/2] (2.15ns)   --->   "%call_ln0 = call void @backProp<8, 4, 10>_Pipeline_VITIS_LOOP_31_1, i25 %net_load, i25 %net_1_load, i25 %net_2_load, i25 %net_3_load, i18 %output_load_loc, i18 %output_10_load_loc, i18 %output_13_load_1_loc, i18 %output_16_load_loc"   --->   Operation 46 'call' 'call_ln0' <Predicate = true> <Delay = 2.15> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 1.72>
+ST_6 : Operation 47 [1/2] (1.72ns)   --->   "%call_ln0 = call void @backProp<8, 4, 10>_Pipeline_VITIS_LOOP_31_1, i25 %net_load, i25 %net_1_load, i25 %net_2_load, i25 %net_3_load, i18 %output_load_loc, i18 %output_10_load_loc, i18 %output_13_load_1_loc, i18 %output_16_load_loc"   --->   Operation 47 'call' 'call_ln0' <Predicate = true> <Delay = 1.72> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 5.31>
+ST_7 : Operation 48 [1/1] (0.00ns)   --->   "%output_load = load i18 %output_load_loc"   --->   Operation 48 'load' 'output_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 49 [1/1] (0.00ns)   --->   "%output_10_load = load i18 %output_10_load_loc"   --->   Operation 49 'load' 'output_10_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 50 [1/1] (0.00ns)   --->   "%output_13_load = load i18 %output_13_load_1_loc"   --->   Operation 50 'load' 'output_13_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 51 [1/1] (0.00ns)   --->   "%output_16_load = load i18 %output_16_load_loc"   --->   Operation 51 'load' 'output_16_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 52 [2/2] (5.31ns)   --->   "%call_ln0 = call void @backProp<8, 4, 10>_Pipeline_VITIS_LOOP_208_3, i25 %agg_result_0, i25 %agg_result_3, i25 %agg_result_2, i25 %agg_result_1, i18 %output_load, i18 %output_10_load, i18 %output_13_load, i18 %output_16_load"   --->   Operation 52 'call' 'call_ln0' <Predicate = true> <Delay = 5.31> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 6.54>
+ST_8 : Operation 53 [1/2] (6.54ns)   --->   "%call_ln0 = call void @backProp<8, 4, 10>_Pipeline_VITIS_LOOP_208_3, i25 %agg_result_0, i25 %agg_result_3, i25 %agg_result_2, i25 %agg_result_1, i18 %output_load, i18 %output_10_load, i18 %output_13_load, i18 %output_16_load"   --->   Operation 53 'call' 'call_ln0' <Predicate = true> <Delay = 6.54> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 54 [1/1] (0.00ns)   --->   "%ret_ln222 = ret" [../layer.h:222]   --->   Operation 54 'ret' 'ret_ln222' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.000ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 1.865ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'backProp<8, 4, 10>_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2' [40]  (1.865 ns)
+
+ <State 3>: 2.215ns
+The critical path consists of the following:
+	wire read operation ('p_read3136') on port 'p_read3' [23]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'backProp<8, 4, 10>_Pipeline_VITIS_LOOP_190_1' [51]  (2.215 ns)
+
+ <State 4>: 5.670ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'backProp<8, 4, 10>_Pipeline_VITIS_LOOP_71_1_VITIS_LOOP_74_3' [45]  (5.670 ns)
+
+ <State 5>: 2.156ns
+The critical path consists of the following:
+	'load' operation 25 bit ('net_load') on local variable 'net_load_loc' [52]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'backProp<8, 4, 10>_Pipeline_VITIS_LOOP_31_1' [56]  (2.156 ns)
+
+ <State 6>: 1.724ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'backProp<8, 4, 10>_Pipeline_VITIS_LOOP_31_1' [56]  (1.724 ns)
+
+ <State 7>: 5.312ns
+The critical path consists of the following:
+	'load' operation 18 bit ('output_load') on local variable 'output_load_loc' [57]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'backProp<8, 4, 10>_Pipeline_VITIS_LOOP_208_3' [61]  (5.312 ns)
+
+ <State 8>: 6.548ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'backProp<8, 4, 10>_Pipeline_VITIS_LOOP_208_3' [61]  (6.548 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

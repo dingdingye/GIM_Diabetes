@@ -1,0 +1,31 @@
+../error.cpp:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=log_approx_XLX_SEP_ PragmaOptions=variable=z op=mul impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=z op=mul impl=dsp
+        ^
+../error.cpp:19:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=log_approx_XLX_SEP_ PragmaOptions=variable=z op=add impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=z op=add impl=dsp
+        ^
+../error.cpp:20:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=log_approx_XLX_SEP_ PragmaOptions=variable=z op=sub impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=z op=sub impl=dsp
+        ^
+../error.cpp:21:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=log_approx_XLX_SEP_ PragmaOptions=variable=z2 op=mul impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=z2 op=mul impl=dsp
+        ^
+../error.cpp:22:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=log_approx_XLX_SEP_ PragmaOptions=variable=z2 op=add impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=z2 op=add impl=dsp
+        ^
+../error.cpp:23:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=log_approx_XLX_SEP_ PragmaOptions=variable=z2 op=sub impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=z2 op=sub impl=dsp
+        ^
+../error.cpp:34:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=categoricalCrossEntropy_XLX_SEP_ PragmaOptions=variable=x op=mul impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=x op=mul impl=dsp
+        ^
+../error.cpp:35:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=categoricalCrossEntropy_XLX_SEP_ PragmaOptions=variable=x op=add impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=x op=add impl=dsp
+        ^
+../error.cpp:36:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=categoricalCrossEntropy_XLX_SEP_ PragmaOptions=variable=x op=sub impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=x op=sub impl=dsp
+        ^
+../error.cpp:42:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=categoricalCrossEntropy_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=1
+        ^
+10 warnings generated.

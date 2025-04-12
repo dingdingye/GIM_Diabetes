@@ -1,0 +1,57 @@
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:29508:7: warning: Added loop label VITIS_LOOP_1223_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1223_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:29508:7: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:30482:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:30482:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:30496:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:30496:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:30510:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:30510:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:32127:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:32127:7: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:33911:9: error: Invalid Directive: for current device, mul + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=z op=mul impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:33912:9: error: Invalid Directive: for current device, add + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=z op=add impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:33913:9: error: Invalid Directive: for current device, sub + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=z op=sub impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:33914:9: error: Invalid Directive: for current device, mul + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=z2 op=mul impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:33915:9: error: Invalid Directive: for current device, add + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=z2 op=add impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:33916:9: error: Invalid Directive: for current device, sub + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=z2 op=sub impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:33927:9: error: Invalid Directive: for current device, mul + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=x op=mul impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:33928:9: error: Invalid Directive: for current device, add + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=x op=add impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:33929:9: error: Invalid Directive: for current device, sub + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=x op=sub impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:33934:5: warning: Added loop label VITIS_LOOP_41_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; ++i) {
+    ^~~
+    VITIS_LOOP_41_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\error.pp.0.cpp:33934:5: note: FIX-IT applied suggested code changes

@@ -1,0 +1,5 @@
+5 warnings and 14 errors generated.
+Error while processing C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp.
+clang-tidy applied 40 of 40 suggested fixes.
+Suppressed 253 warnings (248 in non-user code, 5 with check filters).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

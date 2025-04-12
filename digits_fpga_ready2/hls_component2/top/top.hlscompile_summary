@@ -1,0 +1,255 @@
+<ENTRY>
+{
+ "thisFile": "C:/GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\top\\top.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "04/12/25 12:14:17",
+ "timestampMillis": "721335415",
+ "buildStep": {
+  "cmdId": "6d049cc5-998a-415d-92ac-ef7e7d6f3168",
+  "name": "v++",
+  "logFile": "C:/GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\top\\logs\\top.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\hls_config.cfg --work_dir top ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\hls_config.cfg",
+   "--work_dir",
+   "top"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\hls_config.cfg",
+    "content": "part=xczu3eg-sfvc784-1-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=top\ntb.file=C:/GIM_Diabetes/digits_fpga_ready2/main.cpp\ntb.file=C:/GIM_Diabetes/digits_fpga_ready2/digits_features.h\ntb.file=C:/GIM_Diabetes/digits_fpga_ready2/digits_labels.h\nclock=10ns\nclock_uncertainty=2ns\nsyn.file=C:/GIM_Diabetes/digits_fpga_ready2/accelerator.cpp\nsyn.file=C:/GIM_Diabetes/digits_fpga_ready2/accelerator.h\nsyn.file=C:/GIM_Diabetes/digits_fpga_ready2/activation.cpp\nsyn.file=C:/GIM_Diabetes/digits_fpga_ready2/activations.h\nsyn.file=C:/GIM_Diabetes/digits_fpga_ready2/error.cpp\nsyn.file=C:/GIM_Diabetes/digits_fpga_ready2/error.h\nsyn.file=C:/GIM_Diabetes/digits_fpga_ready2/layer.h\nsyn.file=C:/GIM_Diabetes/digits_fpga_ready2/top.cpp\nsyn.file=C:/GIM_Diabetes/digits_fpga_ready2/top.h\nsyn.file=C:\\GIM_Diabetes\\digits_fpga_ready2\\digits_features.h\nsyn.file=C:\\GIM_Diabetes\\digits_fpga_ready2\\digits_labels.h"
+   }
+  ],
+  "cwd": "C:\\GIM_Diabetes\\digits_fpga_ready2\\hls_component2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/12/25 12:14:17",
+ "timestampMillis": "721335416",
+ "status": {
+  "cmdId": "6d049cc5-998a-415d-92ac-ef7e7d6f3168",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "04/12/25 12:14:25",
+ "timestampMillis": "721343725",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "top",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\accelerator.cpp",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\accelerator.h",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\activation.cpp",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\activations.h",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\error.cpp",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\error.h",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\layer.h",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\top.cpp",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\top.h",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\digits_features.h",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\digits_labels.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "04/12/25 12:14:25",
+ "timestampMillis": "721343727",
+ "buildStep": {
+  "cmdId": "e95b6333-5d4d-4507-ac54-c42dbca22566",
+  "name": "csynth_design",
+  "logFile": "C:/GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\top\\hls\\hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\GIM_Diabetes\\digits_fpga_ready2\\hls_component2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/12/25 12:14:25",
+ "timestampMillis": "721343727",
+ "status": {
+  "cmdId": "e95b6333-5d4d-4507-ac54-c42dbca22566",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/12/25 12:14:25",
+ "timestampMillis": "721343728",
+ "report": {
+  "path": "C:/GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\top\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/12/25 12:14:25",
+ "timestampMillis": "721343728",
+ "report": {
+  "path": "C:/GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\top\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/12/25 12:14:25",
+ "timestampMillis": "721343729",
+ "report": {
+  "path": "C:/GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\top\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/12/25 12:19:35",
+ "timestampMillis": "721653374",
+ "report": {
+  "path": "C:/GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\top\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/12/25 12:19:35",
+ "timestampMillis": "721653375",
+ "report": {
+  "path": "C:/GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\top\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/12/25 12:19:35",
+ "timestampMillis": "721653375",
+ "report": {
+  "path": "C:/GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\top\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/12/25 12:19:35",
+ "timestampMillis": "721653376",
+ "status": {
+  "cmdId": "e95b6333-5d4d-4507-ac54-c42dbca22566",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/12/25 12:19:35",
+ "timestampMillis": "721653715",
+ "status": {
+  "cmdId": "6d049cc5-998a-415d-92ac-ef7e7d6f3168",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/12/25 12:19:35",
+ "timestampMillis": "721653754",
+ "report": {
+  "path": "C:/GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\top\\reports\\v++_compile_top_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/12/25 12:19:35",
+ "timestampMillis": "721653755",
+ "report": {
+  "path": "C:/GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\top\\reports\\.db\\v++_compile_top_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

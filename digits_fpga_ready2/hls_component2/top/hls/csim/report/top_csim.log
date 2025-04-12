@@ -1,0 +1,60 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+make: 'csim.exe' is up to date.
++---------------------------------------------------------------+
+Epoch 0 accuracy: 0.128045
+Epoch 1 accuracy: 0.117606
+Epoch 2 accuracy: 0.251914
+Epoch 3 accuracy: 0.410578
+Epoch 4 accuracy: 0.592206
+Epoch 5 accuracy: 0.670146
+Epoch 6 accuracy: 0.73904
+Epoch 7 accuracy: 0.784273
+Epoch 8 accuracy: 0.821155
+Epoch 9 accuracy: 0.85595
+Epoch 10 accuracy: 0.87961
+Epoch 11 accuracy: 0.896312
+Epoch 12 accuracy: 0.909534
+Epoch 13 accuracy: 0.917189
+Epoch 14 accuracy: 0.921364
+Epoch 15 accuracy: 0.923452
+Epoch 16 accuracy: 0.930411
+Epoch 17 accuracy: 0.931802
+Epoch 18 accuracy: 0.93737
+Epoch 19 accuracy: 0.935978
+Epoch 20 accuracy: 0.936674
+Epoch 21 accuracy: 0.940849
+Epoch 22 accuracy: 0.942241
+Epoch 23 accuracy: 0.942241
+Epoch 24 accuracy: 0.943633
+Epoch 25 accuracy: 0.94572
+Epoch 26 accuracy: 0.946416
+Epoch 27 accuracy: 0.947808
+Epoch 28 accuracy: 0.949896
+Epoch 29 accuracy: 0.953375
+Epoch 30 accuracy: 0.956159
+Epoch 31 accuracy: 0.95755
+Epoch 32 accuracy: 0.956855
+Epoch 33 accuracy: 0.961726
+Epoch 34 accuracy: 0.967293
+Epoch 35 accuracy: 0.966597
+Epoch 36 accuracy: 0.969381
+Epoch 37 accuracy: 0.972164
+Epoch 38 accuracy: 0.972164
+Epoch 39 accuracy: 0.978427
+Epoch 40 accuracy: 0.974948
+Epoch 41 accuracy: 0.978427
+Epoch 42 accuracy: 0.977035
+Epoch 43 accuracy: 0.977731
+Epoch 44 accuracy: 0.979819
+Epoch 45 accuracy: 0.981907
+Epoch 46 accuracy: 0.979819
+Epoch 47 accuracy: 0.983994
+Epoch 48 accuracy: 0.983994
+Epoch 49 accuracy: 0.98817
+First full accuracy occurs in epoch 351
++---------------------------------------------------------------+
+Test accuracy: 0.85
+First full accuracy occurs in epoch 351
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

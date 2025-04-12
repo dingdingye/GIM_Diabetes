@@ -2,7 +2,7 @@
 #include "activations.h"
 #include "error.h"
 #include "accelerator.h"
-#include "utils.h"
+// #include "utils.h"
 #include "digits_features.h"
 #include "digits_labels.h"
 #include <vector>

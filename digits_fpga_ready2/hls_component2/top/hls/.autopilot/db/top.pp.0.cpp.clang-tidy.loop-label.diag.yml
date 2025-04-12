@@ -1,0 +1,434 @@
+---
+MainSourceFile:  'C:/GIM_Diabetes/digits_fpga_ready2/hls_component2/top/hls/.autopilot/db/top.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1223_1:  '
+    FileOffset:      1223
+    FilePath:        'C:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_base.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          1079215
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1223_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          1306581
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          1307045
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          1307510
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        'C:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          1590434
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_21_1:  '
+    FileOffset:      21
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\activations.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          1958224
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_21_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_31_1:  '
+    FileOffset:      31
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\activations.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          1958528
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_31_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_41_1:  '
+    FileOffset:      41
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\activations.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          1958874
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_41_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_60_1:  '
+    FileOffset:      60
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\activations.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          1959360
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_60_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_73_1:  '
+    FileOffset:      73
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\activations.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          1959748
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_73_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_100_1:  '
+    FileOffset:      100
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\activations.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          1960284
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_100_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_105_2:  '
+    FileOffset:      105
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\activations.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          1960387
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_105_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_120_1:  '
+    FileOffset:      120
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\activations.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          1960711
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_120_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_128_2:  '
+    FileOffset:      128
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\activations.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          1960845
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_128_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_138_3:  '
+    FileOffset:      138
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\activations.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          1961060
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_138_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_44_1:  '
+    FileOffset:      44
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2197523
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_44_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_45_2:  '
+    FileOffset:      45
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2197567
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_45_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_71_1:  '
+    FileOffset:      71
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2198031
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_71_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_72_2:  '
+    FileOffset:      72
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2198077
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_72_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_74_3:  '
+    FileOffset:      74
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2198149
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_74_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, mul + dsp is invalid combination for bind_op'
+    FileOffset:      76
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, add + dsp is invalid combination for bind_op'
+    FileOffset:      77
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, sub + dsp is invalid combination for bind_op'
+    FileOffset:      78
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_101_1:  '
+    FileOffset:      101
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2198750
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_101_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_102_2:  '
+    FileOffset:      102
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2198791
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_102_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_104_3:  '
+    FileOffset:      104
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2198872
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_104_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_145_1:  '
+    FileOffset:      145
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2199652
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_145_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_146_2:  '
+    FileOffset:      146
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2199702
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_146_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, mul + dsp is invalid combination for bind_op'
+    FileOffset:      147
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, add + dsp is invalid combination for bind_op'
+    FileOffset:      148
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, sub + dsp is invalid combination for bind_op'
+    FileOffset:      149
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_190_1:  '
+    FileOffset:      190
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2201178
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_190_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_191_2:  '
+    FileOffset:      191
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2201228
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_191_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, add + dsp is invalid combination for bind_op'
+    FileOffset:      192
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_208_3:  '
+    FileOffset:      208
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2201536
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_208_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_209_4:  '
+    FileOffset:      209
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2201590
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_209_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_235_1:  '
+    FileOffset:      235
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2202297
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_235_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_237_2:  '
+    FileOffset:      237
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2202346
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_237_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, mul + dsp is invalid combination for bind_op'
+    FileOffset:      238
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, add + dsp is invalid combination for bind_op'
+    FileOffset:      239
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, sub + dsp is invalid combination for bind_op'
+    FileOffset:      240
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, mul + dsp is invalid combination for bind_op'
+    FileOffset:      245
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, add + dsp is invalid combination for bind_op'
+    FileOffset:      246
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, sub + dsp is invalid combination for bind_op'
+    FileOffset:      247
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\layer.h'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_61_1:  '
+    FileOffset:      61
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\accelerator.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2305522
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_61_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_64_2:  '
+    FileOffset:      64
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\accelerator.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2305623
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_64_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_68_3:  '
+    FileOffset:      68
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\accelerator.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2305774
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_68_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_104_4:  '
+    FileOffset:      104
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\accelerator.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2306737
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_104_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_105_5:  '
+    FileOffset:      105
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\accelerator.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2306805
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_105_5: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, sub + dsp is invalid combination for bind_op'
+    FileOffset:      108
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\accelerator.h'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_174_6:  '
+    FileOffset:      174
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\accelerator.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2307970
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_174_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_176_7:  '
+    FileOffset:      176
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\accelerator.h'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          2308111
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_176_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_82_1:  '
+    FileOffset:      82
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\top.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          4405967
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_82_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_88_2:  '
+    FileOffset:      88
+    FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\top.cpp'
+    Replacements:    
+      - FilePath:        'C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp'
+        Offset:          4406096
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_88_2: '
+...

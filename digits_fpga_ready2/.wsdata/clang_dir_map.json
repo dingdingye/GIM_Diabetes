@@ -1,0 +1,17 @@
+{
+  "workspaceRoot": "C:\\GIM_Diabetes\\digits_fpga_ready2",
+  "mapping": {
+    "activations.h": "hls_component2",
+    "main.cpp": "hls_component2",
+    "layer.h": "hls_component2",
+    "accelerator.cpp": "hls_component2",
+    "activation.cpp": "hls_component2",
+    "top.cpp": "hls_component2",
+    "top.h": "hls_component2",
+    "error.h": "hls_component2",
+    "digits_labels.h": "hls_component2",
+    "digits_features.h": "hls_component2",
+    "accelerator.h": "hls_component2",
+    "error.cpp": "hls_component2"
+  }
+}

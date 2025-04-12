@@ -1,0 +1,169 @@
+<ENTRY>
+{
+ "thisFile": "C:/GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\top\\top.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "04/12/25 12:19:52",
+ "timestampMillis": "721670627",
+ "buildStep": {
+  "cmdId": "d7a2c96c-3aa6-4bac-b8e8-9e854e5c9590",
+  "name": "vitis-run",
+  "logFile": "C:/GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\top\\logs\\top.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --package --config C:\\GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\hls_config.cfg --work_dir top ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "C:\\GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\hls_config.cfg",
+   "--work_dir",
+   "top"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\GIM_Diabetes\\digits_fpga_ready2\\hls_component2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/12/25 12:19:52",
+ "timestampMillis": "721670628",
+ "status": {
+  "cmdId": "d7a2c96c-3aa6-4bac-b8e8-9e854e5c9590",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "04/12/25 12:19:58",
+ "timestampMillis": "721675992",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "top",
+     "file": "C:/GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\top\\top.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\accelerator.cpp",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\accelerator.h",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\activation.cpp",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\activations.h",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\error.cpp",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\error.h",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\layer.h",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\top.cpp",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\top.h",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\digits_features.h",
+     "C:/GIM_Diabetes\\digits_fpga_ready2\\digits_labels.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "04/12/25 12:19:58",
+ "timestampMillis": "721675995",
+ "buildStep": {
+  "cmdId": "27fa763d-09c5-421e-a375-d4bea99f191e",
+  "name": "export_design",
+  "logFile": "C:/GIM_Diabetes\\digits_fpga_ready2\\hls_component2\\top\\hls\\hls.log",
+  "commandLine": "export_design -flow none",
+  "args": [
+   "-flow",
+   "none"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\GIM_Diabetes\\digits_fpga_ready2\\hls_component2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/12/25 12:19:58",
+ "timestampMillis": "721675995",
+ "status": {
+  "cmdId": "27fa763d-09c5-421e-a375-d4bea99f191e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/12/25 12:20:58",
+ "timestampMillis": "721736428",
+ "status": {
+  "cmdId": "27fa763d-09c5-421e-a375-d4bea99f191e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/12/25 12:20:58",
+ "timestampMillis": "721736503",
+ "status": {
+  "cmdId": "d7a2c96c-3aa6-4bac-b8e8-9e854e5c9590",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/12/25 12:20:58",
+ "timestampMillis": "721736503",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/12/25 12:20:58",
+ "timestampMillis": "721736503",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

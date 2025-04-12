@@ -1,0 +1,176 @@
+In file included from ../top.cpp:1:
+../layer.h:75:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matmul_XLX_SEP_ PragmaOptions=II=100_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=100
+        ^
+../layer.h:76:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matmul_XLX_SEP_ PragmaOptions=variable=temp op=mul impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=temp op=mul impl=dsp
+        ^
+../layer.h:77:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matmul_XLX_SEP_ PragmaOptions=variable=temp op=add impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=temp op=add impl=dsp
+        ^
+../layer.h:78:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matmul_XLX_SEP_ PragmaOptions=variable=temp op=sub impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=temp op=sub impl=dsp
+        ^
+../layer.h:105:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matmulTransposeW_XLX_SEP_ PragmaOptions=II=100_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=100
+        ^
+../layer.h:106:9: warning: missing argument for 'variable' [-Winvalid-hls-pragmas]
+#pragma HLS bind_op op=mul impl=dsp
+        ^
+../layer.h:106:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matmulTransposeW_XLX_SEP_ PragmaOptions=op=mul impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+../layer.h:107:9: warning: missing argument for 'variable' [-Winvalid-hls-pragmas]
+#pragma HLS bind_op op=add impl=dsp
+        ^
+../layer.h:107:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matmulTransposeW_XLX_SEP_ PragmaOptions=op=add impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+../layer.h:108:9: warning: missing argument for 'variable' [-Winvalid-hls-pragmas]
+#pragma HLS bind_op op=sub impl=dsp
+        ^
+../layer.h:108:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matmulTransposeW_XLX_SEP_ PragmaOptions=op=sub impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+../layer.h:147:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=forwardPropagation_XLX_SEP_ PragmaOptions=variable=net op=mul impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=net op=mul impl=dsp
+        ^
+../layer.h:148:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=forwardPropagation_XLX_SEP_ PragmaOptions=variable=net op=add impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=net op=add impl=dsp
+        ^
+../layer.h:149:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=forwardPropagation_XLX_SEP_ PragmaOptions=variable=net op=sub impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=net op=sub impl=dsp
+        ^
+../layer.h:192:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=backProp_XLX_SEP_ PragmaOptions=variable=net op=add impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=net op=add impl=dsp
+        ^
+../layer.h:210:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=backProp_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=1
+        ^
+../layer.h:238:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=updateWeightBias_XLX_SEP_ PragmaOptions=variable=weights op=mul impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=weights op=mul impl=dsp
+        ^
+../layer.h:239:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=updateWeightBias_XLX_SEP_ PragmaOptions=variable=weights op=add impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=weights op=add impl=dsp
+        ^
+../layer.h:240:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=updateWeightBias_XLX_SEP_ PragmaOptions=variable=weights op=sub impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=weights op=sub impl=dsp
+        ^
+../layer.h:245:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=updateWeightBias_XLX_SEP_ PragmaOptions=variable=biases op=mul impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=biases op=mul impl=dsp
+        ^
+../layer.h:246:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=updateWeightBias_XLX_SEP_ PragmaOptions=variable=biases op=add impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=biases op=add impl=dsp
+        ^
+../layer.h:247:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=updateWeightBias_XLX_SEP_ PragmaOptions=variable=biases op=sub impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=biases op=sub impl=dsp
+        ^
+In file included from ../top.cpp:4:
+../accelerator.h:99:9: warning: missing argument for 'variable' [-Winvalid-hls-pragmas]
+#pragma HLS bind_op op=add impl=dsp
+        ^
+../accelerator.h:99:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=accelerator_XLX_SEP_ PragmaOptions=op=add impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+../accelerator.h:108:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=accelerator_XLX_SEP_ PragmaOptions=variable=final_error op=sub impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=final_error op=sub impl=dsp
+        ^
+directive:1:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=top_XLX_SEP_ PragmaOptions=name=top_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=top
+        ^
+../top.cpp:26:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=top_XLX_SEP_ PragmaOptions=s_axilite port=train_accuracy bundle=BUS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=train_accuracy bundle=BUS
+        ^
+../top.cpp:27:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=top_XLX_SEP_ PragmaOptions=s_axilite port=test_accuracy bundle=BUS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=test_accuracy bundle=BUS
+        ^
+../top.cpp:28:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=top_XLX_SEP_ PragmaOptions=s_axilite port=done bundle=BUS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=done bundle=BUS
+        ^
+In file included from ../top.cpp:4:
+../accelerator.h:108:9: warning: Unknown pragma bind_op variable value 'final_error', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=final_error op=sub impl=dsp
+        ^
+In file included from ../top.cpp:1:
+../layer.h:147:9: warning: Unknown pragma bind_op variable value 'net', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=net op=mul impl=dsp
+        ^
+../layer.h:148:9: warning: Unknown pragma bind_op variable value 'net', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=net op=add impl=dsp
+        ^
+../layer.h:149:9: warning: Unknown pragma bind_op variable value 'net', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=net op=sub impl=dsp
+        ^
+../layer.h:147:9: warning: Unknown pragma bind_op variable value 'net', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=net op=mul impl=dsp
+        ^
+../layer.h:148:9: warning: Unknown pragma bind_op variable value 'net', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=net op=add impl=dsp
+        ^
+../layer.h:149:9: warning: Unknown pragma bind_op variable value 'net', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=net op=sub impl=dsp
+        ^
+../layer.h:147:9: warning: Unknown pragma bind_op variable value 'net', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=net op=mul impl=dsp
+        ^
+../layer.h:148:9: warning: Unknown pragma bind_op variable value 'net', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=net op=add impl=dsp
+        ^
+../layer.h:149:9: warning: Unknown pragma bind_op variable value 'net', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=net op=sub impl=dsp
+        ^
+../layer.h:192:9: warning: Unknown pragma bind_op variable value 'net', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=net op=add impl=dsp
+        ^
+../layer.h:192:9: warning: Unknown pragma bind_op variable value 'net', please check that the variable exists in the same scope as the pragma.
+../layer.h:238:9: warning: Unknown pragma bind_op variable value 'weights', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=weights op=mul impl=dsp
+        ^
+../layer.h:239:9: warning: Unknown pragma bind_op variable value 'weights', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=weights op=add impl=dsp
+        ^
+../layer.h:240:9: warning: Unknown pragma bind_op variable value 'weights', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=weights op=sub impl=dsp
+        ^
+../layer.h:245:9: warning: Unknown pragma bind_op variable value 'biases', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=biases op=mul impl=dsp
+        ^
+../layer.h:246:9: warning: Unknown pragma bind_op variable value 'biases', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=biases op=add impl=dsp
+        ^
+../layer.h:247:9: warning: Unknown pragma bind_op variable value 'biases', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=biases op=sub impl=dsp
+        ^
+../layer.h:238:9: warning: Unknown pragma bind_op variable value 'weights', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=weights op=mul impl=dsp
+        ^
+../layer.h:239:9: warning: Unknown pragma bind_op variable value 'weights', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=weights op=add impl=dsp
+        ^
+../layer.h:240:9: warning: Unknown pragma bind_op variable value 'weights', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=weights op=sub impl=dsp
+        ^
+../layer.h:245:9: warning: Unknown pragma bind_op variable value 'biases', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=biases op=mul impl=dsp
+        ^
+../layer.h:246:9: warning: Unknown pragma bind_op variable value 'biases', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=biases op=add impl=dsp
+        ^
+../layer.h:247:9: warning: Unknown pragma bind_op variable value 'biases', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=biases op=sub impl=dsp
+        ^
+../layer.h:238:9: warning: Unknown pragma bind_op variable value 'weights', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=weights op=mul impl=dsp
+        ^
+../layer.h:239:9: warning: Unknown pragma bind_op variable value 'weights', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=weights op=add impl=dsp
+        ^
+../layer.h:240:9: warning: Unknown pragma bind_op variable value 'weights', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=weights op=sub impl=dsp
+        ^
+../layer.h:245:9: warning: Unknown pragma bind_op variable value 'biases', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=biases op=mul impl=dsp
+        ^
+../layer.h:246:9: warning: Unknown pragma bind_op variable value 'biases', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=biases op=add impl=dsp
+        ^
+../layer.h:247:9: warning: Unknown pragma bind_op variable value 'biases', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=biases op=sub impl=dsp
+        ^
+In file included from ../top.cpp:4:
+../accelerator.h:108:9: warning: Unknown pragma bind_op variable value 'final_error', please check that the variable exists in the same scope as the pragma.
+#pragma HLS bind_op variable=final_error op=sub impl=dsp
+        ^
+60 warnings generated.

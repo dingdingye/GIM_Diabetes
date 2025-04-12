@@ -1,0 +1,149 @@
+
+
+================================================================
+== Vitis HLS Report for 'backProp_64_8_4_Pipeline_VITIS_LOOP_190_1'
+================================================================
+* Date:           Sat Apr 12 12:18:44 2025
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        top
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sfvc784-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.701 ns|     2.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                   |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                     |
+    +---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+    |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp(delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_190_1  |        8|        8|         2|          1|          1|     8|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.84>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i_03 = alloca i32 1" [../layer.h:190]   --->   Operation 5 'alloca' 'i_03' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.48ns)   --->   "%store_ln190 = store i4 0, i4 %i_03" [../layer.h:190]   --->   Operation 6 'store' 'store_ln190' <Predicate = true> <Delay = 0.48>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%br_ln0 = br void %VITIS_LOOP_191_2"   --->   Operation 7 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%i = load i4 %i_03" [../layer.h:190]   --->   Operation 8 'load' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.86ns)   --->   "%icmp_ln190 = icmp_eq  i4 %i, i4 8" [../layer.h:190]   --->   Operation 9 'icmp' 'icmp_ln190' <Predicate = true> <Delay = 0.86> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.86> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.86ns)   --->   "%i_36 = add i4 %i, i4 1" [../layer.h:190]   --->   Operation 10 'add' 'i_36' <Predicate = true> <Delay = 0.86> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.86> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln190 = br i1 %icmp_ln190, void %VITIS_LOOP_191_2.split, void %for.body.i.preheader.exitStub" [../layer.h:190]   --->   Operation 11 'br' 'br_ln190' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%zext_ln190 = zext i4 %i" [../layer.h:190]   --->   Operation 12 'zext' 'zext_ln190' <Predicate = (!icmp_ln190)> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%biases_addr = getelementptr i25 %biases, i64 0, i64 %zext_ln190" [../layer.h:190]   --->   Operation 13 'getelementptr' 'biases_addr' <Predicate = (!icmp_ln190)> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%C_0_addr = getelementptr i25 %C_0, i64 0, i64 %zext_ln190" [../layer.h:193]   --->   Operation 14 'getelementptr' 'C_0_addr' <Predicate = (!icmp_ln190)> <Delay = 0.00>
+ST_1 : Operation 15 [2/2] (0.79ns)   --->   "%C_0_load = load i3 %C_0_addr" [../layer.h:193]   --->   Operation 15 'load' 'C_0_load' <Predicate = (!icmp_ln190)> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 25> <Depth = 8> <RAM>
+ST_1 : Operation 16 [2/2] (0.79ns)   --->   "%biases_load = load i3 %biases_addr" [../layer.h:193]   --->   Operation 16 'load' 'biases_load' <Predicate = (!icmp_ln190)> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 25> <Depth = 8> <RAM>
+ST_1 : Operation 17 [1/1] (0.48ns)   --->   "%store_ln190 = store i4 %i_36, i4 %i_03" [../layer.h:190]   --->   Operation 17 'store' 'store_ln190' <Predicate = (!icmp_ln190)> <Delay = 0.48>
+ST_1 : Operation 27 [1/1] (0.48ns)   --->   "%ret_ln0 = ret"   --->   Operation 27 'ret' 'ret_ln0' <Predicate = (icmp_ln190)> <Delay = 0.48>
+
+State 2 <SV = 1> <Delay = 2.70>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%specpipeline_ln190 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_75" [../layer.h:190]   --->   Operation 18 'specpipeline' 'specpipeline_ln190' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%speclooptripcount_ln190 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [../layer.h:190]   --->   Operation 19 'speclooptripcount' 'speclooptripcount_ln190' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%specloopname_ln190 = specloopname void @_ssdm_op_SpecLoopName, void @empty_92" [../layer.h:190]   --->   Operation 20 'specloopname' 'specloopname_ln190' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/2] (0.79ns)   --->   "%C_0_load = load i3 %C_0_addr" [../layer.h:193]   --->   Operation 21 'load' 'C_0_load' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 25> <Depth = 8> <RAM>
+ST_2 : Operation 22 [1/2] (0.79ns)   --->   "%biases_load = load i3 %biases_addr" [../layer.h:193]   --->   Operation 22 'load' 'biases_load' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 25> <Depth = 8> <RAM>
+ST_2 : Operation 23 [1/1] (1.12ns)   --->   "%add_ln193 = add i25 %biases_load, i25 %C_0_load" [../layer.h:193]   --->   Operation 23 'add' 'add_ln193' <Predicate = true> <Delay = 1.12> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.12> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%net_0_addr = getelementptr i25 %net_0, i64 0, i64 %zext_ln190" [../layer.h:193]   --->   Operation 24 'getelementptr' 'net_0_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.79ns)   --->   "%store_ln193 = store i25 %add_ln193, i3 %net_0_addr" [../layer.h:193]   --->   Operation 25 'store' 'store_ln193' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 25> <Depth = 8> <RAM>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln190 = br void %VITIS_LOOP_191_2" [../layer.h:190]   --->   Operation 26 'br' 'br_ln190' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.000ns.
+
+ <State 1>: 1.846ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln190', ../layer.h:190) of constant 0 on local variable 'i', ../layer.h:190 [5]  (0.489 ns)
+	'load' operation 4 bit ('i', ../layer.h:190) on local variable 'i', ../layer.h:190 [8]  (0.000 ns)
+	'add' operation 4 bit ('i', ../layer.h:190) [10]  (0.868 ns)
+	'store' operation 0 bit ('store_ln190', ../layer.h:190) of variable 'i', ../layer.h:190 on local variable 'i', ../layer.h:190 [24]  (0.489 ns)
+
+ <State 2>: 2.701ns
+The critical path consists of the following:
+	'load' operation 25 bit ('C_0_load', ../layer.h:193) on array 'C_0' [19]  (0.790 ns)
+	'add' operation 25 bit ('add_ln193', ../layer.h:193) [21]  (1.121 ns)
+	'store' operation 0 bit ('store_ln193', ../layer.h:193) of variable 'add_ln193', ../layer.h:193 on array 'net_0' [23]  (0.790 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,64 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'accelerator_1437_s'" level="0">
+<item name = "Date">Sat Apr 12 12:18:57 2025
+</item>
+<item name = "Version">2024.1 (Build 5069499 on May 21 2024)</item>
+<item name = "Project">top</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sfvc784-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.837 ns, 2.00 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">213826451, 262612601, 2.138 sec, 2.626 sec, 213826451, 262612601, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_accelerator_1437_Pipeline_VITIS_LOOP_68_3_fu_1132">accelerator_1437_Pipeline_VITIS_LOOP_68_3, 66, 66, 0.660 us, 0.660 us, 65, 65, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_forwardPropagation_64_8_s_fu_1164">forwardPropagation_64_8_s, 1060, 1060, 10.600 us, 10.600 us, 1060, 1060, no</column>
+<column name="grp_forwardPropagation_8_4_s_fu_1300">forwardPropagation_8_4_s, 84, 84, 0.840 us, 0.840 us, 84, 84, no</column>
+<column name="grp_forwardPropagation_4_10_s_fu_1329">forwardPropagation_4_10_s, 254, 924, 2.540 us, 9.240 us, 254, 924, no</column>
+<column name="grp_accelerator_1437_Pipeline_2_fu_1348">accelerator_1437_Pipeline_2, 5, 6, 50.000 ns, 60.000 ns, 5, 6, no</column>
+<column name="grp_accelerator_1437_Pipeline_3_fu_1358">accelerator_1437_Pipeline_3, 11, 11, 0.110 us, 0.110 us, 10, 10, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_accelerator_1437_Pipeline_VITIS_LOOP_44_1_fu_1367">accelerator_1437_Pipeline_VITIS_LOOP_44_1, 6, 6, 60.000 ns, 60.000 ns, 5, 5, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_accelerator_1437_Pipeline_VITIS_LOOP_104_4_fu_1379">accelerator_1437_Pipeline_VITIS_LOOP_104_4, 12, 12, 0.120 us, 0.120 us, 11, 11, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_backProp_8_4_10_s_fu_1388">backProp_8_4_10_s, 167, 167, 1.670 us, 1.670 us, 167, 167, no</column>
+<column name="grp_backProp_64_8_4_s_fu_1426">backProp_64_8_4_s, 1123, 1123, 11.230 us, 11.230 us, 1123, 1123, no</column>
+<column name="grp_matmul_10ul_1ul_4ul_s_fu_1582">matmul_10ul_1ul_4ul_s, 18, 18, 0.180 us, 0.180 us, 18, 18, no</column>
+<column name="grp_accelerator_1437_Pipeline_VITIS_LOOP_235_1_fu_1595">accelerator_1437_Pipeline_VITIS_LOOP_235_1, 15, 15, 0.150 us, 0.150 us, 11, 11, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_updateWeightBias_8_4_s_fu_1614">updateWeightBias_8_4_s, 30, 30, 0.300 us, 0.300 us, 30, 30, no</column>
+<column name="grp_accelerator_1437_Pipeline_VITIS_LOOP_44_15_fu_1647">accelerator_1437_Pipeline_VITIS_LOOP_44_15, 66, 66, 0.660 us, 0.660 us, 65, 65, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_matmul_8ul_1ul_64ul_s_fu_1716">matmul_8ul_1ul_64ul_s, 15, 15, 0.150 us, 0.150 us, 15, 15, no</column>
+<column name="grp_accelerator_1437_Pipeline_VITIS_LOOP_235_16_fu_1849">accelerator_1437_Pipeline_VITIS_LOOP_235_16, 13, 13, 0.130 us, 0.130 us, 9, 9, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_61_1">213826450, 262612600, 4276529 ~ 5252252, -, -, 50, no</column>
+<column name=" + VITIS_LOOP_64_2">4276512, 5252235, 2976 ~ 3655, -, -, 1437, no</column>
+<column name="  ++ VITIS_LOOP_64_2.1">81, 90, 9 ~ 10, -, -, 9, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

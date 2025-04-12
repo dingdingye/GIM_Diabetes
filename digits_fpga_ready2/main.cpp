@@ -2,7 +2,7 @@
 #include "activations.h"
 #include "error.h"
 #include "accelerator.h"
-#include "utils.h"
+// #include "utils.h"
 #include "top.h"
 #include <vector>
 #include <iostream> 

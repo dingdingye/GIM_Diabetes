@@ -1,0 +1,1734 @@
+{
+  "0": {
+    "basicblocks": 13,
+    "calls": "93 52 86 22 21 117 103 22 106 117 144 64 167",
+    "file": "top.cpp",
+    "fileloc": 13,
+    "instructions": 1337,
+    "loads": {
+      "L": 4
+    },
+    "name": "top",
+    "stores": {
+      "L": 4,
+      "T": 1
+    },
+    "total_instructions": 314640
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "10": {
+    "basicblocks": 10,
+    "calls": "62 140 62 140 62 140",
+    "file": "activations.h",
+    "fileloc": 19,
+    "instructions": 33,
+    "loads": {
+      "L": 2
+    },
+    "name": "relu<4>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 202
+  },
+  "100": {
+    "basicblocks": 1,
+    "calls": "123",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "101": {
+    "basicblocks": 25,
+    "calls": "96 140 96 140 96 140 96 140 132 96 140 96 140 96 140 96 140",
+    "file": "activations.h",
+    "fileloc": 115,
+    "instructions": 143,
+    "loads": {
+      "L": 7
+    },
+    "name": "softmax<10>",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 4370
+  },
+  "102": {
+    "basicblocks": 1,
+    "calls": "127",
+    "file": "array",
+    "fileloc": 126,
+    "instructions": 2,
+    "name": "begin",
+    "total_instructions": 7
+  },
+  "103": {
+    "basicblocks": 1,
+    "calls": "105",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "104": {
+    "basicblocks": 1,
+    "calls": "139",
+    "file": "array",
+    "fileloc": 234,
+    "instructions": 3,
+    "name": "data",
+    "total_instructions": 5
+  },
+  "105": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "106": {
+    "basicblocks": 1,
+    "calls": "69",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "107": {
+    "basicblocks": 13,
+    "calls": "95 67 158 46 158 46 158 46 61 20 154 61",
+    "file": "layer.h",
+    "fileloc": 225,
+    "instructions": 100,
+    "loads": {
+      "L": 2
+    },
+    "name": "updateWeightBias<4, 10>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 1491
+  },
+  "108": {
+    "basicblocks": 1,
+    "calls": "87",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "109": {
+    "basicblocks": 1,
+    "calls": "55 164",
+    "file": "top.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 3,
+    "name": "",
+    "total_instructions": 45280811
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "5",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "110": {
+    "basicblocks": 10,
+    "calls": "32 140 32 140",
+    "file": "activations.h",
+    "fileloc": 29,
+    "instructions": 35,
+    "loads": {
+      "L": 1
+    },
+    "name": "derivative_relu<8>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 215
+  },
+  "111": {
+    "basicblocks": 27,
+    "calls": "97 120 162 62 159 62 140 4 62 140 26 62 159 62 140 62 140",
+    "file": "layer.h",
+    "fileloc": 173,
+    "instructions": 110,
+    "loads": {
+      "L": 1
+    },
+    "name": "backProp<8, 4, 10>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 1887
+  },
+  "112": {
+    "basicblocks": 19,
+    "calls": "151 154 135 25 124 94",
+    "file": "layer.h",
+    "fileloc": 59,
+    "instructions": 68,
+    "loads": {
+      "L": 2
+    },
+    "name": "matmul<8, 1, 64>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 526
+  },
+  "113": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "114": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "115": {
+    "basicblocks": 1,
+    "calls": "142 142 142 142 81",
+    "file": "stl_algobase.h",
+    "fileloc": 1221,
+    "instructions": 6,
+    "name": "lexicographical_compare<const ap_fixed<25, 8, AP_TRN, AP_WRAP, 0> *, const ap_fixed<25, 8, AP_TRN, AP_WRAP, 0> *>",
+    "total_instructions": 89
+  },
+  "116": {
+    "basicblocks": 1,
+    "calls": "79",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "117": {
+    "basicblocks": 1,
+    "calls": "99",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "118": {
+    "basicblocks": 1,
+    "calls": "160",
+    "file": "array",
+    "fileloc": 238,
+    "instructions": 3,
+    "name": "data",
+    "total_instructions": 5
+  },
+  "119": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "12": {
+    "basicblocks": 19,
+    "calls": "35 154 72 77 9 8",
+    "file": "layer.h",
+    "fileloc": 59,
+    "instructions": 68,
+    "loads": {
+      "L": 2
+    },
+    "name": "matmul<4, 1, 8>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 526
+  },
+  "120": {
+    "basicblocks": 19,
+    "calls": "152 157 20 154 62 140",
+    "file": "layer.h",
+    "fileloc": 59,
+    "instructions": 68,
+    "loads": {
+      "L": 2
+    },
+    "name": "matmul<4, 10, 1>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 526
+  },
+  "121": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "stl_algobase.h",
+    "fileloc": 865,
+    "instructions": 1,
+    "name": "__cnd2<const ap_fixed<25, 8, AP_TRN, AP_WRAP, 0> *>",
+    "total_instructions": 1
+  },
+  "122": {
+    "basicblocks": 25,
+    "calls": "62 140 62 140 62 140 62 140 132 62 140 62 140 62 140 62 140",
+    "file": "activations.h",
+    "fileloc": 115,
+    "instructions": 143,
+    "loads": {
+      "L": 7
+    },
+    "name": "softmax<4>",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 4370
+  },
+  "123": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "124": {
+    "basicblocks": 1,
+    "calls": "128",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "125": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 175,
+    "instructions": 1,
+    "name": "size",
+    "total_instructions": 1
+  },
+  "126": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "127": {
+    "basicblocks": 1,
+    "calls": "34",
+    "file": "array",
+    "fileloc": 234,
+    "instructions": 3,
+    "name": "data",
+    "total_instructions": 5
+  },
+  "128": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "129": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 175,
+    "instructions": 1,
+    "name": "size",
+    "total_instructions": 1
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "43",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "130": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "131": {
+    "basicblocks": 1,
+    "calls": "133",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "132": {
+    "basicblocks": 20,
+    "calls": "",
+    "file": "activations.h",
+    "fileloc": 81,
+    "instructions": 163,
+    "loads": {
+      "L": 5
+    },
+    "name": "fast_exp_fixed",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 3261
+  },
+  "133": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "134": {
+    "basicblocks": 1,
+    "calls": "161",
+    "file": "array",
+    "fileloc": 126,
+    "instructions": 2,
+    "name": "begin",
+    "total_instructions": 7
+  },
+  "135": {
+    "basicblocks": 1,
+    "calls": "126",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "136": {
+    "basicblocks": 1,
+    "calls": "31 16",
+    "file": "stl_iterator_base_funcs.h",
+    "fileloc": 138,
+    "instructions": 7,
+    "loads": {
+      "L": 1
+    },
+    "name": "distance<std::array<ap_fixed<25, 8, AP_TRN, AP_WRAP, 0>, 1> *>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 13
+  },
+  "137": {
+    "basicblocks": 13,
+    "calls": "151 154 59 8",
+    "file": "layer.h",
+    "fileloc": 38,
+    "instructions": 25,
+    "loads": {
+      "L": 1
+    },
+    "name": "transpose<8, 1>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 45
+  },
+  "138": {
+    "basicblocks": 1,
+    "calls": "23",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "139": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 59,
+    "instructions": 2,
+    "name": "_S_ptr",
+    "total_instructions": 2
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 175,
+    "instructions": 1,
+    "name": "size",
+    "total_instructions": 1
+  },
+  "140": {
+    "basicblocks": 1,
+    "calls": "119",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "141": {
+    "basicblocks": 1,
+    "calls": "6",
+    "file": "array",
+    "fileloc": 138,
+    "instructions": 3,
+    "name": "end",
+    "total_instructions": 8
+  },
+  "142": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "stl_algobase.h",
+    "fileloc": 277,
+    "instructions": 1,
+    "name": "__niter_base<const ap_fixed<25, 8, AP_TRN, AP_WRAP, 0> *>",
+    "total_instructions": 1
+  },
+  "143": {
+    "basicblocks": 1,
+    "calls": "105",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "144": {
+    "basicblocks": 1,
+    "calls": "133",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "145": {
+    "basicblocks": 18,
+    "calls": "162 18 62 159 62 140 46 62 140 10 122",
+    "file": "layer.h",
+    "fileloc": 132,
+    "instructions": 82,
+    "loads": {
+      "L": 3
+    },
+    "name": "forwardPropagation<8, 4>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 5425
+  },
+  "146": {
+    "basicblocks": 1,
+    "calls": "36 156",
+    "file": "stl_algo.h",
+    "fileloc": 5674,
+    "instructions": 4,
+    "name": "max_element<std::array<ap_fixed<25, 8, AP_TRN, AP_WRAP, 0>, 1> *>",
+    "total_instructions": 149
+  },
+  "147": {
+    "basicblocks": 19,
+    "calls": "100 4 35 154 96 140",
+    "file": "layer.h",
+    "fileloc": 59,
+    "instructions": 68,
+    "loads": {
+      "L": 2
+    },
+    "name": "matmul<10, 4, 1>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 526
+  },
+  "148": {
+    "basicblocks": 10,
+    "calls": "96 140 96 140 96 140",
+    "file": "activations.h",
+    "fileloc": 19,
+    "instructions": 33,
+    "loads": {
+      "L": 2
+    },
+    "name": "relu<10>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 202
+  },
+  "149": {
+    "basicblocks": 1,
+    "calls": "75 73",
+    "file": "stl_algobase.h",
+    "fileloc": 784,
+    "instructions": 3,
+    "name": "fill_n<ap_fixed<25, 8, AP_TRN, AP_WRAP, 0> *, unsigned long, ap_fixed<25, 8, AP_TRN, AP_WRAP, 0> >",
+    "total_instructions": 17
+  },
+  "15": {
+    "basicblocks": 13,
+    "calls": "24 154 165 94",
+    "file": "layer.h",
+    "fileloc": 38,
+    "instructions": 25,
+    "loads": {
+      "L": 1
+    },
+    "name": "transpose<64, 1>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 45
+  },
+  "150": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "predefined_ops.h",
+    "fileloc": 42,
+    "instructions": 4,
+    "name": "operator()<const ap_fixed<6, 6, AP_TRN, AP_WRAP, 0> *, const ap_fixed<6, 6, AP_TRN, AP_WRAP, 0> *>",
+    "total_instructions": 14
+  },
+  "151": {
+    "basicblocks": 1,
+    "calls": "163",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "152": {
+    "basicblocks": 1,
+    "calls": "70",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "153": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "154": {
+    "basicblocks": 1,
+    "calls": "119",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "155": {
+    "basicblocks": 1,
+    "calls": "17",
+    "file": "array",
+    "fileloc": 126,
+    "instructions": 2,
+    "name": "begin",
+    "total_instructions": 7
+  },
+  "156": {
+    "basicblocks": 9,
+    "calls": "98",
+    "file": "stl_algo.h",
+    "fileloc": 5653,
+    "instructions": 17,
+    "name": "__max_element<std::array<ap_fixed<25, 8, AP_TRN, AP_WRAP, 0>, 1> *, __gnu_cxx::__ops::_Iter_less_iter>",
+    "total_instructions": 144
+  },
+  "157": {
+    "basicblocks": 1,
+    "calls": "113",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "158": {
+    "basicblocks": 1,
+    "calls": "123",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "159": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 175,
+    "instructions": 1,
+    "name": "size",
+    "total_instructions": 1
+  },
+  "16": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "stl_iterator_base_funcs.h",
+    "fileloc": 98,
+    "instructions": 5,
+    "name": "__distance<std::array<ap_fixed<25, 8, AP_TRN, AP_WRAP, 0>, 1> *>",
+    "total_instructions": 5
+  },
+  "160": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 59,
+    "instructions": 2,
+    "name": "_S_ptr",
+    "total_instructions": 2
+  },
+  "161": {
+    "basicblocks": 1,
+    "calls": "19",
+    "file": "array",
+    "fileloc": 234,
+    "instructions": 3,
+    "name": "data",
+    "total_instructions": 5
+  },
+  "162": {
+    "basicblocks": 19,
+    "calls": "13 77 151 154 62 140",
+    "file": "layer.h",
+    "fileloc": 59,
+    "instructions": 68,
+    "loads": {
+      "L": 2
+    },
+    "name": "matmul<4, 8, 1>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 526
+  },
+  "163": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "164": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "digits_labels.h",
+    "fileloc": 1,
+    "instructions": 17971,
+    "name": "__cxx_global_var_init.2",
+    "total_instructions": 772711
+  },
+  "165": {
+    "basicblocks": 1,
+    "calls": "126",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "166": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "stl_iterator_base_types.h",
+    "fileloc": 205,
+    "instructions": 1,
+    "name": "__iterator_category<const ap_fixed<6, 6, AP_TRN, AP_WRAP, 0> *>",
+    "total_instructions": 1
+  },
+  "167": {
+    "basicblocks": 53,
+    "calls": "45 89 78 39 138 140 57 145 71 56 56 48 146 136 131 54 131 54 131 141 60 85 53 96 159 96 140 131 68 96 140 111 3 107 42 51 45 45 37 45 45 89 78 39 138 140 57 145 71 56 56 48 146 136 131 54 131 54 131 141 60 85 45 45",
+    "file": "accelerator.h",
+    "fileloc": 36,
+    "instructions": 335,
+    "loads": {
+      "L": 13
+    },
+    "name": "accelerator<360>",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 43297
+  },
+  "17": {
+    "basicblocks": 1,
+    "calls": "44",
+    "file": "array",
+    "fileloc": 234,
+    "instructions": 3,
+    "name": "data",
+    "total_instructions": 5
+  },
+  "18": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 175,
+    "instructions": 1,
+    "name": "size",
+    "total_instructions": 1
+  },
+  "19": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 59,
+    "instructions": 2,
+    "name": "_S_ptr",
+    "total_instructions": 2
+  },
+  "2": {
+    "basicblocks": 25,
+    "calls": "32 140 32 140 32 140 32 140 132 32 140 32 140 32 140 32 140",
+    "file": "activations.h",
+    "fileloc": 115,
+    "instructions": 143,
+    "loads": {
+      "L": 7
+    },
+    "name": "softmax<8>",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 4370
+  },
+  "20": {
+    "basicblocks": 1,
+    "calls": "38",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "21": {
+    "basicblocks": 1,
+    "calls": "5",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "22": {
+    "basicblocks": 1,
+    "calls": "130",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "23": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "24": {
+    "basicblocks": 1,
+    "calls": "23",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "25": {
+    "basicblocks": 1,
+    "calls": "114",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "26": {
+    "basicblocks": 10,
+    "calls": "62 140 62 140",
+    "file": "activations.h",
+    "fileloc": 29,
+    "instructions": 35,
+    "loads": {
+      "L": 1
+    },
+    "name": "derivative_relu<4>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 215
+  },
+  "27": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "28": {
+    "basicblocks": 13,
+    "calls": "13 77 116 46",
+    "file": "layer.h",
+    "fileloc": 38,
+    "instructions": 25,
+    "loads": {
+      "L": 1
+    },
+    "name": "transpose<4, 8>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 45
+  },
+  "29": {
+    "basicblocks": 1,
+    "calls": "70",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "3": {
+    "basicblocks": 27,
+    "calls": "28 92 66 32 159 32 140 77 32 140 110 32 159 32 140 32 140",
+    "file": "layer.h",
+    "fileloc": 173,
+    "instructions": 110,
+    "loads": {
+      "L": 1
+    },
+    "name": "backProp<64, 8, 4>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 1887
+  },
+  "30": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "31": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "stl_iterator_base_types.h",
+    "fileloc": 205,
+    "instructions": 1,
+    "name": "__iterator_category<std::array<ap_fixed<25, 8, AP_TRN, AP_WRAP, 0>, 1> *>",
+    "total_instructions": 1
+  },
+  "32": {
+    "basicblocks": 1,
+    "calls": "163",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "33": {
+    "basicblocks": 1,
+    "calls": "128",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "34": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 59,
+    "instructions": 2,
+    "name": "_S_ptr",
+    "total_instructions": 2
+  },
+  "35": {
+    "basicblocks": 1,
+    "calls": "27",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "36": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "predefined_ops.h",
+    "fileloc": 48,
+    "instructions": 1,
+    "name": "__iter_less_iter",
+    "total_instructions": 1
+  },
+  "37": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "stl_algobase.h",
+    "fileloc": 195,
+    "instructions": 8,
+    "loads": {
+      "L": 2
+    },
+    "name": "min<int>",
+    "total_instructions": 8
+  },
+  "38": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "39": {
+    "basicblocks": 1,
+    "calls": "153",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "49",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "40": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "41": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "stl_algobase.h",
+    "fileloc": 853,
+    "instructions": 15,
+    "name": "__newlast1<const ap_fixed<25, 8, AP_TRN, AP_WRAP, 0> *, const ap_fixed<25, 8, AP_TRN, AP_WRAP, 0> *>",
+    "total_instructions": 15
+  },
+  "42": {
+    "basicblocks": 13,
+    "calls": "137 12 9 8 9 8 9 8 46 35 154 46",
+    "file": "layer.h",
+    "fileloc": 225,
+    "instructions": 100,
+    "loads": {
+      "L": 2
+    },
+    "name": "updateWeightBias<8, 4>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 1491
+  },
+  "43": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "44": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 59,
+    "instructions": 2,
+    "name": "_S_ptr",
+    "total_instructions": 2
+  },
+  "45": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 175,
+    "instructions": 1,
+    "name": "size",
+    "total_instructions": 1
+  },
+  "46": {
+    "basicblocks": 1,
+    "calls": "49",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "47": {
+    "basicblocks": 1,
+    "calls": "118",
+    "file": "array",
+    "fileloc": 138,
+    "instructions": 3,
+    "name": "end",
+    "total_instructions": 8
+  },
+  "48": {
+    "basicblocks": 1,
+    "calls": "104",
+    "file": "array",
+    "fileloc": 134,
+    "instructions": 3,
+    "name": "end",
+    "total_instructions": 8
+  },
+  "49": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "50": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "predefined_ops.h",
+    "fileloc": 42,
+    "instructions": 4,
+    "name": "operator()<const ap_fixed<25, 8, AP_TRN, AP_WRAP, 0> *, const ap_fixed<25, 8, AP_TRN, AP_WRAP, 0> *>",
+    "total_instructions": 14
+  },
+  "51": {
+    "basicblocks": 13,
+    "calls": "15 112 124 94 124 94 124 94 8 151 154 8",
+    "file": "layer.h",
+    "fileloc": 225,
+    "instructions": 100,
+    "loads": {
+      "L": 2
+    },
+    "name": "updateWeightBias<64, 8>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 1491
+  },
+  "52": {
+    "basicblocks": 1,
+    "calls": "134 14 149",
+    "file": "array",
+    "fileloc": 116,
+    "instructions": 4,
+    "name": "fill",
+    "total_instructions": 29
+  },
+  "53": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 175,
+    "instructions": 1,
+    "name": "size",
+    "total_instructions": 1
+  },
+  "54": {
+    "basicblocks": 1,
+    "calls": "6",
+    "file": "array",
+    "fileloc": 130,
+    "instructions": 2,
+    "name": "begin",
+    "total_instructions": 7
+  },
+  "55": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "digits_features.h",
+    "fileloc": 1,
+    "instructions": 115009,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 44508097
+  },
+  "56": {
+    "basicblocks": 1,
+    "calls": "104",
+    "file": "array",
+    "fileloc": 126,
+    "instructions": 2,
+    "name": "begin",
+    "total_instructions": 7
+  },
+  "57": {
+    "basicblocks": 18,
+    "calls": "66 129 32 159 32 140 8 32 140 90 2",
+    "file": "layer.h",
+    "fileloc": 132,
+    "instructions": 82,
+    "loads": {
+      "L": 3
+    },
+    "name": "forwardPropagation<64, 8>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 5425
+  },
+  "58": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "stl_iterator_base_funcs.h",
+    "fileloc": 98,
+    "instructions": 4,
+    "name": "__distance<const ap_fixed<6, 6, AP_TRN, AP_WRAP, 0> *>",
+    "total_instructions": 4
+  },
+  "59": {
+    "basicblocks": 1,
+    "calls": "65",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "63",
+    "file": "array",
+    "fileloc": 238,
+    "instructions": 3,
+    "name": "data",
+    "total_instructions": 5
+  },
+  "60": {
+    "basicblocks": 1,
+    "calls": "36 7",
+    "file": "stl_algo.h",
+    "fileloc": 5674,
+    "instructions": 4,
+    "name": "max_element<const ap_fixed<6, 6, AP_TRN, AP_WRAP, 0> *>",
+    "total_instructions": 36
+  },
+  "61": {
+    "basicblocks": 1,
+    "calls": "113",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "62": {
+    "basicblocks": 1,
+    "calls": "27",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "63": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 59,
+    "instructions": 2,
+    "name": "_S_ptr",
+    "total_instructions": 2
+  },
+  "64": {
+    "basicblocks": 53,
+    "calls": "125 11 78 39 138 140 57 145 71 56 56 48 146 136 143 54 143 54 143 141 60 85 53 96 159 96 140 143 68 96 140 111 3 107 42 51 125 125 37 125 125 11 78 39 138 140 57 145 71 56 56 48 146 136 143 54 143 54 143 141 60 85 125 125",
+    "file": "accelerator.h",
+    "fileloc": 36,
+    "instructions": 335,
+    "loads": {
+      "L": 13
+    },
+    "name": "accelerator<1437>",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 43297
+  },
+  "65": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "66": {
+    "basicblocks": 19,
+    "calls": "33 25 24 154 32 140",
+    "file": "layer.h",
+    "fileloc": 59,
+    "instructions": 68,
+    "loads": {
+      "L": 2
+    },
+    "name": "matmul<8, 64, 1>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 526
+  },
+  "67": {
+    "basicblocks": 19,
+    "calls": "20 154 74 4 158 46",
+    "file": "layer.h",
+    "fileloc": 59,
+    "instructions": 68,
+    "loads": {
+      "L": 2
+    },
+    "name": "matmul<10, 1, 4>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 526
+  },
+  "68": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "69": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "7": {
+    "basicblocks": 9,
+    "calls": "150",
+    "file": "stl_algo.h",
+    "fileloc": 5653,
+    "instructions": 17,
+    "name": "__max_element<const ap_fixed<6, 6, AP_TRN, AP_WRAP, 0> *, __gnu_cxx::__ops::_Iter_less_iter>",
+    "total_instructions": 31
+  },
+  "70": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "71": {
+    "basicblocks": 18,
+    "calls": "147 53 96 159 96 140 61 96 140 148 101",
+    "file": "layer.h",
+    "fileloc": 132,
+    "instructions": 82,
+    "loads": {
+      "L": 3
+    },
+    "name": "forwardPropagation<4, 10>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 5425
+  },
+  "72": {
+    "basicblocks": 1,
+    "calls": "65",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "73": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "stl_algobase.h",
+    "fileloc": 738,
+    "instructions": 13,
+    "loads": {
+      "L": 1
+    },
+    "name": "__fill_n_a<ap_fixed<25, 8, AP_TRN, AP_WRAP, 0> *, unsigned long, ap_fixed<25, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 13
+  },
+  "74": {
+    "basicblocks": 1,
+    "calls": "87",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "75": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "stl_algobase.h",
+    "fileloc": 277,
+    "instructions": 1,
+    "name": "__niter_base<ap_fixed<25, 8, AP_TRN, AP_WRAP, 0> *>",
+    "total_instructions": 1
+  },
+  "76": {
+    "basicblocks": 1,
+    "calls": "118",
+    "file": "array",
+    "fileloc": 130,
+    "instructions": 2,
+    "name": "begin",
+    "total_instructions": 7
+  },
+  "77": {
+    "basicblocks": 1,
+    "calls": "40",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "78": {
+    "basicblocks": 1,
+    "calls": "30",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "79": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "40",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "80": {
+    "basicblocks": 1,
+    "calls": "76 47 76 47 115",
+    "file": "array",
+    "fileloc": 262,
+    "instructions": 6,
+    "name": "operator<<ap_fixed<25, 8, AP_TRN, AP_WRAP, 0>, 1>",
+    "total_instructions": 125
+  },
+  "81": {
+    "basicblocks": 1,
+    "calls": "84",
+    "file": "stl_algobase.h",
+    "fileloc": 928,
+    "instructions": 2,
+    "name": "__lexicographical_compare_aux<const ap_fixed<25, 8, AP_TRN, AP_WRAP, 0> *, const ap_fixed<25, 8, AP_TRN, AP_WRAP, 0> *>",
+    "total_instructions": 79
+  },
+  "82": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 175,
+    "instructions": 1,
+    "name": "size",
+    "total_instructions": 1
+  },
+  "83": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 175,
+    "instructions": 1,
+    "name": "size",
+    "total_instructions": 1
+  },
+  "84": {
+    "basicblocks": 1,
+    "calls": "36 88",
+    "file": "stl_algobase.h",
+    "fileloc": 902,
+    "instructions": 4,
+    "name": "__lc<const ap_fixed<25, 8, AP_TRN, AP_WRAP, 0> *, const ap_fixed<25, 8, AP_TRN, AP_WRAP, 0> *>",
+    "total_instructions": 77
+  },
+  "85": {
+    "basicblocks": 1,
+    "calls": "166 58",
+    "file": "stl_iterator_base_funcs.h",
+    "fileloc": 138,
+    "instructions": 7,
+    "loads": {
+      "L": 1
+    },
+    "name": "distance<const ap_fixed<6, 6, AP_TRN, AP_WRAP, 0> *>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 12
+  },
+  "86": {
+    "basicblocks": 1,
+    "calls": "102 83 149",
+    "file": "array",
+    "fileloc": 116,
+    "instructions": 4,
+    "name": "fill",
+    "total_instructions": 29
+  },
+  "87": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "88": {
+    "basicblocks": 14,
+    "calls": "41 121 50 50",
+    "file": "stl_algobase.h",
+    "fileloc": 871,
+    "instructions": 28,
+    "name": "__lexicographical_compare_impl<const ap_fixed<25, 8, AP_TRN, AP_WRAP, 0> *, const ap_fixed<25, 8, AP_TRN, AP_WRAP, 0> *, __gnu_cxx::__ops::_Iter_less_iter>",
+    "total_instructions": 72
+  },
+  "89": {
+    "basicblocks": 1,
+    "calls": "69",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "43",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "90": {
+    "basicblocks": 10,
+    "calls": "32 140 32 140 32 140",
+    "file": "activations.h",
+    "fileloc": 19,
+    "instructions": 33,
+    "loads": {
+      "L": 2
+    },
+    "name": "relu<8>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 202
+  },
+  "91": {
+    "basicblocks": 1,
+    "calls": "79",
+    "file": "array",
+    "fileloc": 189,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "92": {
+    "basicblocks": 19,
+    "calls": "91 4 35 154 32 140",
+    "file": "layer.h",
+    "fileloc": 59,
+    "instructions": 68,
+    "loads": {
+      "L": 2
+    },
+    "name": "matmul<8, 4, 1>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 526
+  },
+  "93": {
+    "basicblocks": 1,
+    "calls": "155 82 149",
+    "file": "array",
+    "fileloc": 116,
+    "instructions": 4,
+    "name": "fill",
+    "total_instructions": 29
+  },
+  "94": {
+    "basicblocks": 1,
+    "calls": "114",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "95": {
+    "basicblocks": 13,
+    "calls": "35 154 108 46",
+    "file": "layer.h",
+    "fileloc": 38,
+    "instructions": 25,
+    "loads": {
+      "L": 1
+    },
+    "name": "transpose<4, 1>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 45
+  },
+  "96": {
+    "basicblocks": 1,
+    "calls": "38",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "97": {
+    "basicblocks": 13,
+    "calls": "100 4 29 61",
+    "file": "layer.h",
+    "fileloc": 38,
+    "instructions": 25,
+    "loads": {
+      "L": 1
+    },
+    "name": "transpose<10, 4>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 45
+  },
+  "98": {
+    "basicblocks": 1,
+    "calls": "80",
+    "file": "predefined_ops.h",
+    "fileloc": 42,
+    "instructions": 2,
+    "name": "operator()<std::array<ap_fixed<25, 8, AP_TRN, AP_WRAP, 0>, 1> *, std::array<ap_fixed<25, 8, AP_TRN, AP_WRAP, 0>, 1> *>",
+    "total_instructions": 127
+  },
+  "99": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  }
+}

@@ -1,0 +1,242 @@
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:36573:7: warning: Added loop label VITIS_LOOP_1223_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1223_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:36573:7: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:37547:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:37547:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:37561:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:37561:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:37575:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:37575:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:39192:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:39192:7: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:40976:5: warning: Added loop label VITIS_LOOP_21_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < N; ++i) {
+    ^~~
+    VITIS_LOOP_21_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:40976:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:40986:5: warning: Added loop label VITIS_LOOP_31_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < N; ++i) {
+    ^~~
+    VITIS_LOOP_31_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:40986:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:40996:5: warning: Added loop label VITIS_LOOP_41_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < net.size(); ++i) {
+    ^~~
+    VITIS_LOOP_41_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:40996:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:41015:5: warning: Added loop label VITIS_LOOP_60_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < N; ++i) {
+    ^~~
+    VITIS_LOOP_60_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:41015:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:41028:5: warning: Added loop label VITIS_LOOP_73_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < net.size(); ++i) {
+    ^~~
+    VITIS_LOOP_73_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:41028:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:41055:9: warning: Added loop label VITIS_LOOP_100_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < int_part; ++i) {
+        ^~~
+        VITIS_LOOP_100_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:41055:9: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:41060:9: warning: Added loop label VITIS_LOOP_105_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < -int_part; ++i) {
+        ^~~
+        VITIS_LOOP_105_2: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:41060:9: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:41075:5: warning: Added loop label VITIS_LOOP_120_1:   [xilinx-label-all-loops]
+    for (int i = 1; i < N; ++i) {
+    ^~~
+    VITIS_LOOP_120_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:41075:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:41083:5: warning: Added loop label VITIS_LOOP_128_2:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; ++i) {
+    ^~~
+    VITIS_LOOP_128_2: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:41083:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:41093:5: warning: Added loop label VITIS_LOOP_138_3:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; ++i) {
+    ^~~
+    VITIS_LOOP_138_3: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:41093:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:48949:5: warning: Added loop label VITIS_LOOP_44_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < ROWS; ++i) {
+    ^~~
+    VITIS_LOOP_44_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:48949:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:48950:9: warning: Added loop label VITIS_LOOP_45_2:   [xilinx-label-all-loops]
+        for (size_t j = 0; j < COLS; ++j) {
+        ^~~
+        VITIS_LOOP_45_2: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:48950:9: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:48976:5: warning: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < ROWS_A; ++i) {
+    ^~~
+    VITIS_LOOP_71_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:48976:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:48977:9: warning: Added loop label VITIS_LOOP_72_2:   [xilinx-label-all-loops]
+        for (size_t j = 0; j < COLS_B; ++j) {
+        ^~~
+        VITIS_LOOP_72_2: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:48977:9: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:48979:13: warning: Added loop label VITIS_LOOP_74_3:   [xilinx-label-all-loops]
+            for (size_t k = 0; k < COLS_A; ++k) {
+            ^~~
+            VITIS_LOOP_74_3: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:48979:13: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:48981:9: error: Invalid Directive: for current device, mul + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=temp op=mul impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:48982:9: error: Invalid Directive: for current device, add + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=temp op=add impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:48983:9: error: Invalid Directive: for current device, sub + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=temp op=sub impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49006:5: warning: Added loop label VITIS_LOOP_101_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < M; ++i) {
+    ^~~
+    VITIS_LOOP_101_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49006:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49007:9: warning: Added loop label VITIS_LOOP_102_2:   [xilinx-label-all-loops]
+        for (size_t j = 0; j < P; ++j) {
+        ^~~
+        VITIS_LOOP_102_2: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49007:9: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49009:13: warning: Added loop label VITIS_LOOP_104_3:   [xilinx-label-all-loops]
+            for (size_t k = 0; k < N; ++k) {
+            ^~~
+            VITIS_LOOP_104_3: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49009:13: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49037:5: warning: Added loop label VITIS_LOOP_145_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < mid.size(); ++i) {
+    ^~~
+    VITIS_LOOP_145_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49037:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49038:9: warning: Added loop label VITIS_LOOP_146_2:   [xilinx-label-all-loops]
+        for (size_t j = 0; j < mid[i].size(); ++j) {
+        ^~~
+        VITIS_LOOP_146_2: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49038:9: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49039:9: error: Invalid Directive: for current device, mul + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=net op=mul impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49040:9: error: Invalid Directive: for current device, add + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=net op=add impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49041:9: error: Invalid Directive: for current device, sub + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=net op=sub impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49075:5: warning: Added loop label VITIS_LOOP_190_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < INPUT_SIZE; ++i) {
+    ^~~
+    VITIS_LOOP_190_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49075:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49076:9: warning: Added loop label VITIS_LOOP_191_2:   [xilinx-label-all-loops]
+        for (size_t j = 0; j < mid[i].size(); ++j) {
+        ^~~
+        VITIS_LOOP_191_2: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49076:9: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49077:9: error: Invalid Directive: for current device, add + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=net op=add impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49086:9: warning: Added loop label VITIS_LOOP_208_3:   [xilinx-label-all-loops]
+        for (int ii = 0; ii < INPUT_SIZE; ++ii) {
+        ^~~
+        VITIS_LOOP_208_3: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49086:9: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49087:13: warning: Added loop label VITIS_LOOP_209_4:   [xilinx-label-all-loops]
+            for (int jj = 0; jj < temp[0].size(); ++jj) {
+            ^~~
+            VITIS_LOOP_209_4: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49087:13: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49113:5: warning: Added loop label VITIS_LOOP_235_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < OUTPUT_SIZE; ++i) {
+    ^~~
+    VITIS_LOOP_235_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49113:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49115:9: warning: Added loop label VITIS_LOOP_237_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < INPUT_SIZE; ++j) {
+        ^~~
+        VITIS_LOOP_237_2: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49115:9: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49116:9: error: Invalid Directive: for current device, mul + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=weights op=mul impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49117:9: error: Invalid Directive: for current device, add + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=weights op=add impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49118:9: error: Invalid Directive: for current device, sub + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=weights op=sub impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49123:9: error: Invalid Directive: for current device, mul + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=biases op=mul impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49124:9: error: Invalid Directive: for current device, add + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=biases op=add impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:49125:9: error: Invalid Directive: for current device, sub + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=biases op=sub impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:53032:5: warning: Added loop label VITIS_LOOP_61_1:   [xilinx-label-all-loops]
+    for (int epoch = 0; epoch < 50; ++epoch) {
+    ^~~
+    VITIS_LOOP_61_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:53032:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:53035:13: warning: Added loop label VITIS_LOOP_64_2:   [xilinx-label-all-loops]
+            for (int iteration = 0; iteration < input.size(); ++iteration) {
+            ^~~
+            VITIS_LOOP_64_2: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:53035:13: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:53039:17: warning: Added loop label VITIS_LOOP_68_3:   [xilinx-label-all-loops]
+                for (int i = 0; i < 64; ++i) {
+                ^~~
+                VITIS_LOOP_68_3: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:53039:17: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:53063:17: warning: Added loop label VITIS_LOOP_104_4:   [xilinx-label-all-loops]
+                for (size_t i = 0; i < result_l3.size(); ++i) {
+                ^~~
+                VITIS_LOOP_104_4: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:53063:17: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:53064:21: warning: Added loop label VITIS_LOOP_105_5:   [xilinx-label-all-loops]
+                    for (size_t j = 0; j < result_l3[i].size(); ++j) {
+                    ^~~
+                    VITIS_LOOP_105_5: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:53064:21: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:53067:9: error: Invalid Directive: for current device, sub + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=final_error op=sub impl=dsp
+        ^
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:53098:9: warning: Added loop label VITIS_LOOP_174_6:   [xilinx-label-all-loops]
+        for (int iteration = 0; iteration < input.size(); ++iteration) {
+        ^~~
+        VITIS_LOOP_174_6: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:53098:9: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:53100:13: warning: Added loop label VITIS_LOOP_176_7:   [xilinx-label-all-loops]
+            for (int i = 0; i < 64; ++i) {
+            ^~~
+            VITIS_LOOP_176_7: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:53100:13: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:173609:5: warning: Added loop label VITIS_LOOP_82_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < 1437; ++i) {
+    ^~~
+    VITIS_LOOP_82_1: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:173609:5: note: FIX-IT applied suggested code changes
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:173615:5: warning: Added loop label VITIS_LOOP_88_2:   [xilinx-label-all-loops]
+    for (int i = 0; i < 360; ++i) {
+    ^~~
+    VITIS_LOOP_88_2: 
+C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\top\hls\.autopilot\db\top.pp.0.cpp:173615:5: note: FIX-IT applied suggested code changes

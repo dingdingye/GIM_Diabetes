@@ -1,0 +1,62 @@
+[
+  {
+    "directory": "C:\\GIM_Diabetes\\digits_fpga_ready2\\hls_component2",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/GIM_Diabetes/digits_fpga_ready2/accelerator.cpp"
+    ],
+    "file": "C:/GIM_Diabetes/digits_fpga_ready2/accelerator.cpp"
+  },
+  {
+    "directory": "C:\\GIM_Diabetes\\digits_fpga_ready2\\hls_component2",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/GIM_Diabetes/digits_fpga_ready2/activation.cpp"
+    ],
+    "file": "C:/GIM_Diabetes/digits_fpga_ready2/activation.cpp"
+  },
+  {
+    "directory": "C:\\GIM_Diabetes\\digits_fpga_ready2\\hls_component2",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/GIM_Diabetes/digits_fpga_ready2/top.cpp"
+    ],
+    "file": "C:/GIM_Diabetes/digits_fpga_ready2/top.cpp"
+  },
+  {
+    "directory": "C:\\GIM_Diabetes\\digits_fpga_ready2\\hls_component2",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/GIM_Diabetes/digits_fpga_ready2/error.cpp"
+    ],
+    "file": "C:/GIM_Diabetes/digits_fpga_ready2/error.cpp"
+  },
+  {
+    "directory": "C:\\GIM_Diabetes\\digits_fpga_ready2\\hls_component2",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\include",
+      "",
+      "-c",
+      "C:/GIM_Diabetes/digits_fpga_ready2/main.cpp"
+    ],
+    "file": "C:/GIM_Diabetes/digits_fpga_ready2/main.cpp"
+  }
+]

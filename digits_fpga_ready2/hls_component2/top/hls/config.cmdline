@@ -1,0 +1,3 @@
+relativeroot=C:/GIM_Diabetes/digits_fpga_ready2/hls_component2
+original_argv=--mode hls --package --config C:\GIM_Diabetes\digits_fpga_ready2\hls_component2\hls_config.cfg --work_dir top 
+

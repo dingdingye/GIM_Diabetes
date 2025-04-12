@@ -1,0 +1,183 @@
+{
+  "0": {
+    "basicblocks": 11,
+    "calls": "11 4",
+    "file": "top.cpp",
+    "fileloc": 13,
+    "instructions": 1809,
+    "loads": {
+      "G": 148
+    },
+    "name": "top",
+    "stores": {
+      "L": 735,
+      "T": 1
+    },
+    "total_instructions": 7194
+  },
+  "1": {
+    "basicblocks": 21,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 173,
+    "instructions": 199,
+    "loads": {
+      "L": 10
+    },
+    "name": "backProp<64, 8, 4>",
+    "stores": {
+      "L": 31
+    },
+    "total_instructions": 199
+  },
+  "10": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 59,
+    "instructions": 157,
+    "loads": {
+      "L": 5
+    },
+    "name": "matmul<10, 1, 4>",
+    "stores": {
+      "L": 44
+    },
+    "total_instructions": 157
+  },
+  "11": {
+    "basicblocks": 39,
+    "calls": "3 6 5 7 1 10 2 8",
+    "file": "accelerator.h",
+    "fileloc": 36,
+    "instructions": 1182,
+    "loads": {
+      "L": 149
+    },
+    "name": "accelerator<1437>",
+    "stores": {
+      "L": 85
+    },
+    "total_instructions": 4706
+  },
+  "2": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 225,
+    "instructions": 342,
+    "loads": {
+      "L": 28
+    },
+    "name": "updateWeightBias<8, 4>",
+    "stores": {
+      "L": 50
+    },
+    "total_instructions": 342
+  },
+  "3": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 132,
+    "instructions": 146,
+    "loads": {
+      "L": 13
+    },
+    "name": "forwardPropagation<64, 8>",
+    "stores": {
+      "L": 35
+    },
+    "total_instructions": 146
+  },
+  "4": {
+    "basicblocks": 26,
+    "calls": "3 6 5",
+    "file": "accelerator.h",
+    "fileloc": 36,
+    "instructions": 149,
+    "loads": {
+      "L": 5
+    },
+    "name": "accelerator<360>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 679
+  },
+  "5": {
+    "basicblocks": 7,
+    "calls": "9",
+    "file": "layer.h",
+    "fileloc": 132,
+    "instructions": 144,
+    "loads": {
+      "L": 14
+    },
+    "name": "forwardPropagation<4, 10>",
+    "stores": {
+      "L": 32
+    },
+    "total_instructions": 274
+  },
+  "6": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 132,
+    "instructions": 110,
+    "loads": {
+      "L": 9
+    },
+    "name": "forwardPropagation<8, 4>",
+    "stores": {
+      "L": 19
+    },
+    "total_instructions": 110
+  },
+  "7": {
+    "basicblocks": 21,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 173,
+    "instructions": 175,
+    "loads": {
+      "L": 10
+    },
+    "name": "backProp<8, 4, 10>",
+    "stores": {
+      "L": 19
+    },
+    "total_instructions": 175
+  },
+  "8": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 59,
+    "instructions": 2121,
+    "loads": {
+      "L": 65
+    },
+    "name": "matmul<8, 1, 64>",
+    "stores": {
+      "L": 576
+    },
+    "total_instructions": 2121
+  },
+  "9": {
+    "basicblocks": 18,
+    "calls": "",
+    "file": "activations.h",
+    "fileloc": 115,
+    "instructions": 130,
+    "loads": {
+      "L": 4
+    },
+    "name": "softmax<10>",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 130
+  }
+}

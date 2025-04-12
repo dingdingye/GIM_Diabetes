@@ -1,0 +1,151 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 314,640 *    | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  |  50,346      | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |  41,775      | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |   6,039      | user inline pragmas are applied                                                        |
+|               | (4) simplification          |   4,988      | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         |   5,004      | user array partition pragmas are applied                                               |
+|               | (2) simplification          |   4,970      | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |   4,970      | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |   4,970      | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |   5,034      | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     |   5,034      | loop and instruction simplification                                                    |
+|               | (2) parallelization         |   7,194      | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         |  94,520      | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          |   9,690      | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                |   9,747      | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           |   9,560      | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+    * - Exceeded design size warning message threshold
+
+* Instructions per Function for each Compilation Phase
++---------------------------------------+-------------------------------+------------------+---------------+--------------+-------------+---------------+
+| Function                              | Location                      | Compile/Link     | Unroll/Inline | Array/Struct | Performance | HW Transforms |
++---------------------------------------+-------------------------------+------------------+---------------+--------------+-------------+---------------+
+| + top                                 | top.cpp:13                    | 314,640 *        | 4,988         | 5,034        | 9,690       | 9,560         |
+|  + accelerator<1437>                  | accelerator.h:36              | 43,297           | 2,506         | 2,538        | 6,665       | 6,400         |
+|   + forwardPropagation<64, 8>         | layer.h:132                   | 10,850 (2 calls) |  141          |  144         |  268        |  283          |
+|      matmul<8, 64, 1>                 | layer.h:59                    |  1,052 (2 calls) |               |              |             |               |
+|      relu<8>                          | activations.h:19              |    404 (2 calls) |               |              |             |               |
+|    + softmax<8>                       | activations.h:115             |  8,740 (2 calls) |               |              |             |               |
+|       fast_exp_fixed                  | activations.h:81              |  6,522 (2 calls) |               |              |             |               |
+|   + forwardPropagation<8, 4>          | layer.h:132                   | 10,850 (2 calls) |  105          |  108         |  170        |  176          |
+|      matmul<4, 8, 1>                  | layer.h:59                    |  1,052 (2 calls) |               |              |             |               |
+|      relu<4>                          | activations.h:19              |    404 (2 calls) |               |              |             |               |
+|    + softmax<4>                       | activations.h:115             |  8,740 (2 calls) |               |              |             |               |
+|       fast_exp_fixed                  | activations.h:81              |  6,522 (2 calls) |               |              |             |               |
+|   + forwardPropagation<4, 10>         | layer.h:132                   | 10,850 (2 calls) |  269          |  281         |  277        |  326          |
+|      matmul<10, 4, 1>                 | layer.h:59                    |  1,052 (2 calls) |               |              |             |               |
+|      relu<10>                         | activations.h:19              |    404 (2 calls) |               |              |             |               |
+|    + softmax<10>                      | activations.h:115             |  8,740 (2 calls) |  130          |  139         |  128        |  156          |
+|       fast_exp_fixed                  | activations.h:81              |  6,522 (2 calls) |               |              |             |               |
+|   + max_element<std::array<ap_fi...   | stl_algo.h:5674               |    298 (2 calls) |               |              |             |               |
+|      __iter_less_iter                 | predefined_ops.h:48           |      2 (2 calls) |               |              |             |               |
+|    + __max_element<std::array<ap_...  | stl_algo.h:5653               |    288 (2 calls) |               |              |             |               |
+|       operator()<std::array<ap_fix... | predefined_ops.h:42           |    254 (2 calls) |               |              |             |               |
+|   + distance<std::array<ap_fixed...   | stl_iterator_base_funcs.h:138 |     26 (2 calls) |               |              |             |               |
+|      __iterator_category<std::arr...  | stl_iterator_base_types.h:205 |      2 (2 calls) |               |              |             |               |
+|      __distance<std::array<ap_fix...  | stl_iterator_base_funcs.h:98  |     10 (2 calls) |               |              |             |               |
+|   + max_element<const ap_fixed<6...   | stl_algo.h:5674               |     72 (2 calls) |               |              |             |               |
+|      __iter_less_iter                 | predefined_ops.h:48           |      2 (2 calls) |               |              |             |               |
+|    + __max_element<const ap_fixed...  | stl_algo.h:5653               |     62 (2 calls) |               |              |             |               |
+|       operator()<const ap_fixed<6,... | predefined_ops.h:42           |     28 (2 calls) |               |              |             |               |
+|   + distance<const ap_fixed<6, 6...   | stl_iterator_base_funcs.h:138 |     24 (2 calls) |               |              |             |               |
+|      __iterator_category<const ap...  | stl_iterator_base_types.h:205 |      2 (2 calls) |               |              |             |               |
+|      __distance<const ap_fixed<6,...  | stl_iterator_base_funcs.h:98  |      8 (2 calls) |               |              |             |               |
+|   + backProp<8, 4, 10>                | layer.h:173                   |  1,887           |  161          |  167         |  280        |  307          |
+|      transpose<10, 4>                 | layer.h:38                    |     45           |               |              |             |               |
+|      matmul<4, 10, 1>                 | layer.h:59                    |    526           |               |              |             |               |
+|      matmul<4, 8, 1>                  | layer.h:59                    |    526           |               |              |             |               |
+|      derivative_relu<4>               | activations.h:29              |    215           |               |              |             |               |
+|   + backProp<64, 8, 4>                | layer.h:173                   |  1,887           |  185          |  191         |  330        |  366          |
+|      transpose<4, 8>                  | layer.h:38                    |     45           |               |              |             |               |
+|      matmul<8, 4, 1>                  | layer.h:59                    |    526           |               |              |             |               |
+|      matmul<8, 64, 1>                 | layer.h:59                    |    526           |               |              |             |               |
+|      derivative_relu<8>               | activations.h:29              |    215           |               |              |             |               |
+|   + updateWeightBias<4, 10>           | layer.h:225                   |  1,491           |               |              |             |               |
+|      transpose<4, 1>                  | layer.h:38                    |     45           |               |              |             |               |
+|      matmul<10, 1, 4>                 | layer.h:59                    |    526           |               |              |             |               |
+|   + updateWeightBias<8, 4>            | layer.h:225                   |  1,491           |  142          |  142         |  432        |  440          |
+|      transpose<8, 1>                  | layer.h:38                    |     45           |               |              |             |               |
+|      matmul<4, 1, 8>                  | layer.h:59                    |    526           |               |              |             |               |
+|   + updateWeightBias<64, 8>           | layer.h:225                   |  1,491           |               |              |             |               |
+|      transpose<64, 1>                 | layer.h:38                    |     45           |               |              |             |               |
+|      matmul<8, 1, 64>                 | layer.h:59                    |    526           |               |              |             |               |
+|     matmul<10, 1, 4>                  | layer.h:59                    |                  |  111          |  111         |  157        |  157          |
+|     matmul<8, 1, 64>                  | layer.h:59                    |                  | 1,055         | 1,055        | 2,185       | 2,189         |
+|  + accelerator<360>                   | accelerator.h:36              | 43,297           |  664          |  687         |  901        |  963          |
+|   + forwardPropagation<64, 8>         | layer.h:132                   | 10,850 (2 calls) |  141          |  144         |  268        |  283          |
+|      matmul<8, 64, 1>                 | layer.h:59                    |  1,052 (2 calls) |               |              |             |               |
+|      relu<8>                          | activations.h:19              |    404 (2 calls) |               |              |             |               |
+|    + softmax<8>                       | activations.h:115             |  8,740 (2 calls) |               |              |             |               |
+|       fast_exp_fixed                  | activations.h:81              |  6,522 (2 calls) |               |              |             |               |
+|   + forwardPropagation<8, 4>          | layer.h:132                   | 10,850 (2 calls) |  105          |  108         |  170        |  176          |
+|      matmul<4, 8, 1>                  | layer.h:59                    |  1,052 (2 calls) |               |              |             |               |
+|      relu<4>                          | activations.h:19              |    404 (2 calls) |               |              |             |               |
+|    + softmax<4>                       | activations.h:115             |  8,740 (2 calls) |               |              |             |               |
+|       fast_exp_fixed                  | activations.h:81              |  6,522 (2 calls) |               |              |             |               |
+|   + forwardPropagation<4, 10>         | layer.h:132                   | 10,850 (2 calls) |  269          |  281         |  277        |  326          |
+|      matmul<10, 4, 1>                 | layer.h:59                    |  1,052 (2 calls) |               |              |             |               |
+|      relu<10>                         | activations.h:19              |    404 (2 calls) |               |              |             |               |
+|    + softmax<10>                      | activations.h:115             |  8,740 (2 calls) |  130          |  139         |  128        |  156          |
+|       fast_exp_fixed                  | activations.h:81              |  6,522 (2 calls) |               |              |             |               |
+|   + max_element<std::array<ap_fi...   | stl_algo.h:5674               |    298 (2 calls) |               |              |             |               |
+|      __iter_less_iter                 | predefined_ops.h:48           |      2 (2 calls) |               |              |             |               |
+|    + __max_element<std::array<ap_...  | stl_algo.h:5653               |    288 (2 calls) |               |              |             |               |
+|       operator()<std::array<ap_fix... | predefined_ops.h:42           |    254 (2 calls) |               |              |             |               |
+|   + distance<std::array<ap_fixed...   | stl_iterator_base_funcs.h:138 |     26 (2 calls) |               |              |             |               |
+|      __iterator_category<std::arr...  | stl_iterator_base_types.h:205 |      2 (2 calls) |               |              |             |               |
+|      __distance<std::array<ap_fix...  | stl_iterator_base_funcs.h:98  |     10 (2 calls) |               |              |             |               |
+|   + max_element<const ap_fixed<6...   | stl_algo.h:5674               |     72 (2 calls) |               |              |             |               |
+|      __iter_less_iter                 | predefined_ops.h:48           |      2 (2 calls) |               |              |             |               |
+|    + __max_element<const ap_fixed...  | stl_algo.h:5653               |     62 (2 calls) |               |              |             |               |
+|       operator()<const ap_fixed<6,... | predefined_ops.h:42           |     28 (2 calls) |               |              |             |               |
+|   + distance<const ap_fixed<6, 6...   | stl_iterator_base_funcs.h:138 |     24 (2 calls) |               |              |             |               |
+|      __iterator_category<const ap...  | stl_iterator_base_types.h:205 |      2 (2 calls) |               |              |             |               |
+|      __distance<const ap_fixed<6,...  | stl_iterator_base_funcs.h:98  |      8 (2 calls) |               |              |             |               |
+|   + backProp<8, 4, 10>                | layer.h:173                   |  1,887           |               |              |             |               |
+|      transpose<10, 4>                 | layer.h:38                    |     45           |               |              |             |               |
+|      matmul<4, 10, 1>                 | layer.h:59                    |    526           |               |              |             |               |
+|      matmul<4, 8, 1>                  | layer.h:59                    |    526           |               |              |             |               |
+|      derivative_relu<4>               | activations.h:29              |    215           |               |              |             |               |
+|   + backProp<64, 8, 4>                | layer.h:173                   |  1,887           |               |              |             |               |
+|      transpose<4, 8>                  | layer.h:38                    |     45           |               |              |             |               |
+|      matmul<8, 4, 1>                  | layer.h:59                    |    526           |               |              |             |               |
+|      matmul<8, 64, 1>                 | layer.h:59                    |    526           |               |              |             |               |
+|      derivative_relu<8>               | activations.h:29              |    215           |               |              |             |               |
+|   + updateWeightBias<4, 10>           | layer.h:225                   |  1,491           |               |              |             |               |
+|      transpose<4, 1>                  | layer.h:38                    |     45           |               |              |             |               |
+|      matmul<10, 1, 4>                 | layer.h:59                    |    526           |               |              |             |               |
+|   + updateWeightBias<8, 4>            | layer.h:225                   |  1,491           |               |              |             |               |
+|      transpose<8, 1>                  | layer.h:38                    |     45           |               |              |             |               |
+|      matmul<4, 1, 8>                  | layer.h:59                    |    526           |               |              |             |               |
+|   + updateWeightBias<64, 8>           | layer.h:225                   |  1,491           |               |              |             |               |
+|      transpose<64, 1>                 | layer.h:38                    |     45           |               |              |             |               |
+|      matmul<8, 1, 64>                 | layer.h:59                    |    526           |               |              |             |               |
++---------------------------------------+-------------------------------+------------------+---------------+--------------+-------------+---------------+
+    * - Exceeded design size warning message threshold
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+
