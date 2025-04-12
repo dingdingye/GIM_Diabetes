@@ -91,7 +91,7 @@ void accelerator(
             }
 
             std::array<std::array<double, 1>, OUT_SIZE> final_error{};
-            final_error = prev_epoch_error[iteration];
+            final_error = prev_epoch_error[iteration];                      // use previous epoch's error
 
             std::array<std::array<double, 1>, OUT_SIZE> new_error{};
             for (size_t i = 0; i < result_l3.size(); ++i) {
@@ -99,7 +99,7 @@ void accelerator(
                     new_error[i][j] = result_l3[i][j] - y_true[iteration][i]; // Corrected indexing
                 }
             }
-            prev_epoch_error[iteration] = new_error;
+            prev_epoch_error[iteration] = new_error;                        // store this epoch's error to use for next epoch
             
             auto d_l2 = backProp<L1_SIZE, L2_SIZE, OUT_SIZE>(weights_l3, final_error, result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
             // printf("Finished first backprop\n");
