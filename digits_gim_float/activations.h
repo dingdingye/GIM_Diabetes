@@ -99,12 +99,12 @@ inline double fast_exp_fixed(double x) {
     if (int_part >= 0) {
         for (int i = 0; i < int_part; ++i) {
             // #pragma HLS pipeline II=1
-            result = result << 2;
+            result = result * 2;
         }
     } else {
         for (int i = 0; i < -int_part; ++i) {
             // #pragma HLS pipeline II=1
-            result = result >> 2;
+            result = result / 2;
         }
     }
 
