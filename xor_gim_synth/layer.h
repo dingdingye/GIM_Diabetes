@@ -6,11 +6,8 @@
 
 #include <array>
 #include <cmath>
-// #include <ap_fixed.h>
-#include <algorithm>
+#include <ap_fixed.h>
 #include <iostream>
-#include <cassert>
-#include <iomanip>  // for std::setw (nice formatting)
 
 using namespace std;
 

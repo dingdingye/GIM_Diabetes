@@ -1,12 +1,11 @@
-#include "layer.h"
-#include "activations.h"
-#include "error.h"
+// #include "layer.h"
+// #include "activations.h"
+// #include "error.h"
 #include "accelerator.h"
-#include <iostream> 
 
 using namespace std;
 
-void top(
+int top(
     std::array<std::array<std::array<fixed6_6, 1>, IN_SIZE>, TRAIN_SIZE>& input_train,
     std::array<std::array<fixed6_6, OUT_SIZE>, TRAIN_SIZE>& y_train,
     fixed32_8& train_accuracy,
@@ -54,5 +53,6 @@ void top(
     // cout << "Train accuracy: " << train_accuracy << endl;
 
     done = 1;
+    return 0;
 }
 

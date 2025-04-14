@@ -5,7 +5,7 @@
 
 #include <array>
 
-void top(
+int top(
     std::array<std::array<std::array<fixed6_6, 1>, IN_SIZE>, TRAIN_SIZE>& input_train,
     std::array<std::array<fixed6_6, OUT_SIZE>, TRAIN_SIZE>& y_train,
     fixed32_8& train_accuracy,
