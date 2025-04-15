@@ -11,10 +11,10 @@ int top(
     fixed32_8& train_accuracy,
     int& done
 ){
-    #pragma HLS INTERFACE s_axilite port=input_train bundle=BUS
-    #pragma HLS INTERFACE s_axilite port=y_train bundle=BUS
-    #pragma HLS INTERFACE s_axilite port=train_accuracy bundle=BUS
-    #pragma HLS INTERFACE s_axilite port=done bundle=BUS
+    // #pragma HLS INTERFACE s_axilite port=input_train bundle=BUS
+    // #pragma HLS INTERFACE s_axilite port=y_train bundle=BUS
+    // #pragma HLS INTERFACE s_axilite port=train_accuracy bundle=BUS
+    // #pragma HLS INTERFACE s_axilite port=done bundle=BUS
 
     std::array<std::array<fixed32_8, IN_SIZE>, L1_SIZE> weights_l1 = {{
         {fixed32_8(-0.1), fixed32_8(-0.5)},

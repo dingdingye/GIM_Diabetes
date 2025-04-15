@@ -5,7 +5,6 @@
 #include "activations.h"
 #include "error.h"
 #include "accelerator.h"
-#include "top.h"
 #include <vector>
 #include <iostream>
 #include <ap_fixed.h>
@@ -33,6 +32,11 @@ typedef ap_fixed<6, 6> fixed6_6;
 typedef ap_fixed<32, 8> fixed32_8;
 
 // Declaration of the foo function
-int foo();
+int foo(
+    std::array<std::array<std::array<fixed6_6, 1>, IN_SIZE>, TRAIN_SIZE>& input_train,
+    std::array<std::array<fixed6_6, OUT_SIZE>, TRAIN_SIZE>& y_train,
+    fixed32_8& train_accuracy,
+    int& done
+);
 
 #endif // FOO_H
