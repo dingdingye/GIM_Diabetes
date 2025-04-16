@@ -61,26 +61,11 @@ return *(reinterpret_cast<fixed6_6 *>(&x));
 int main()
 {
 	cout << "--- Start of the Program ---" << endl;
-    int zero = get_int6_reinterpret(fixed6_6(0.0));
-    int one = get_int6_reinterpret(fixed6_6(1.0));
-    // values for simulation and testing using C++ format with integers
-    std::array<std::array<std::array<int, 1>, 2>, 4> input = {{
-        {{{zero}, {zero}}},
-        {{{zero}, {one}}},
-        {{{one}, {zero}}},
-        {{{one}, {one}}}
-    }};
-
-    std::array<std::array<int, 2>, 4> y_true = {{
-        {one, zero},
-        {zero, one},
-        {zero, one},
-        {one, zero},
-    }};
 
 	// Handshake variable from output of HLS PL block
 	int done_out = 0;
     fixed32_8 train_acc = 0.0;
+	int train_acc_int = get_int32_reinterpret(train_acc);
 
 	// Variables for timing and counts used for application cycle counts and timing
 	unsigned long long tt;
@@ -110,8 +95,7 @@ int main()
 	// Real processing on PL accelerator starts here
 	// Write all values to PL accelerator registers
 
-	XFoo_Set_input_train(&Foo, input);
-	XFoo_Set_y_train(&Foo, y_true);
+	XFoo_Set_train_acc(&Foo, train_acc_int);
 
 	// Trigger the accelerator to start
     XFoo_Start(&Foo);
@@ -120,20 +104,21 @@ int main()
 	// Note that r_hw is the result value.
 	// Note that done_out is a standard 32 bit integer and does not need reinterpretation.
 	      do {
-			 train_acc = XFoo_Get_train_accuracy(&Foo);
+			 train_acc_int = XFoo_Get_train_accuracy(&Foo);
 	    	 done_out = XFoo_Get_done(&Foo);
 	      } while (!XFoo_IsReady(&Foo));
          // Comment out print statement after debugging
-	     // cout << "Detected HLS peripheral complete. Result received." << endl;
+	cout << "Detected HLS peripheral complete. Result received." << endl;
 
 
 	// Capture the stop time on the processor
 	XTime_GetTime(&stop_time_co);
-
+	
+	train_acc = get_fixed32_reinterpret(train_acc_int);
 	// END OF EXECUTION ON FPGA PROGRAMMABLE LOGIC
 	cout << "Done signal from hardware = " << done_out << endl;
 	
-	cout << "Hardware result as r_hw = " << double(train_acc) << endl;
+	cout << "Hardware result as training accuracy = " << train_acc << endl;
 
 
 	// Compute timing on PL hardware using the accelerator.
@@ -146,8 +131,6 @@ int main()
 	cout << "Time in seconds for PL hardware add = times steps / COUNTS_PER_SECOND = " << pl_time << endl;
 
     // Compute Speedup when using the programmable logic accelerator
-    speedup = ps_time / pl_time;
-    cout << "Speedup of FPGA accelerator versus all software on ARM or PS/PL = " << speedup << endl;
     cout << "--- End of the Program ---" << endl;
 
 

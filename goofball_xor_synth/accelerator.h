@@ -51,13 +51,14 @@ void accelerator(
 
     // Initializing the previous epoch's error signals
 
-    // std::array<std::array<std::array<fixed32_8, 1>, OUT_SIZE>, TRAIN_SIZE> prev_epoch_err;
+    std::array<std::array<std::array<fixed32_8, 1>, OUT_SIZE>, TRAIN_SIZE> prev_epoch_err;
 
-    // for (int i = 0; i < TRAIN_SIZE; ++i) {
-    //     for (int j = 0; j < OUT_SIZE; ++j) {
-    //         prev_epoch_err[i][j][0] = 0.5;
-    //     }
-    // }
+    for (int i = 0; i < TRAIN_SIZE; ++i) {
+        for (int j = 0; j < OUT_SIZE; ++j) {
+            #pragma HLS pipeline II=1
+            prev_epoch_err[i][j][0] = 0.5;
+        }
+    }
 
     for (int epoch = 0; epoch < NUM_EPOCHS; ++epoch) {
         int correct = 0;
@@ -69,7 +70,7 @@ void accelerator(
                 for (int i = 0; i < IN_SIZE; ++i) {
                     input_ref[i][0] = static_cast<fixed32_8>(input[iteration][i][0]);
                 }
-
+                #pragma HLS pipeline II=1
                 
                 auto result_l1 = forwardPropagation<IN_SIZE, L1_SIZE>(input_ref, weights_l1, biases_l1, ACTIVATION_HIDDEN);
                 auto result_l2 = forwardPropagation<L1_SIZE, L2_SIZE>(result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
@@ -91,6 +92,7 @@ void accelerator(
                 std::array<std::array<fixed32_8, 1>, OUT_SIZE> final_error{};
                 for (size_t i = 0; i < result_l3.size(); ++i) {
                     for (size_t j = 0; j < result_l3[i].size(); ++j) {
+                    #pragma HLS UNROLL
                     // #pragma HLS bind_op op=mul impl=dsp // Bind multiplication to DSPs
                     // #pragma HLS bind_op op=add impl=dsp // Bind addition to DSPs
                     #pragma HLS bind_op variable=final_error op=sub impl=dsp // Bind subtraction to DSPs                        
@@ -99,15 +101,15 @@ void accelerator(
                 }
 
                 
-                // auto d_l2 = backProp<L1_SIZE, L2_SIZE, OUT_SIZE>(weights_l3, prev_epoch_err[iteration], result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
-                auto d_l2 = backProp<L1_SIZE, L2_SIZE, OUT_SIZE>(weights_l3, final_error, result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
+                auto d_l2 = backProp<L1_SIZE, L2_SIZE, OUT_SIZE>(weights_l3, prev_epoch_err[iteration], result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
+                // auto d_l2 = backProp<L1_SIZE, L2_SIZE, OUT_SIZE>(weights_l3, final_error, result_l1, weights_l2, biases_l2, ACTIVATION_HIDDEN);
                 auto d_l1 = backProp<IN_SIZE, L1_SIZE, L2_SIZE>(weights_l2, d_l2, input_ref, weights_l1, biases_l1, ACTIVATION_HIDDEN);
 
 
-                // prev_epoch_err[iteration] = final_error;
+                prev_epoch_err[iteration] = final_error;
                 
-                // updateWeightBias<L2_SIZE, OUT_SIZE>(weights_l3, biases_l3, result_l2, prev_epoch_err[iteration], learning_rate);
-                updateWeightBias<L2_SIZE, OUT_SIZE>(weights_l3, biases_l3, result_l2, final_error, learning_rate);
+                updateWeightBias<L2_SIZE, OUT_SIZE>(weights_l3, biases_l3, result_l2, prev_epoch_err[iteration], learning_rate);
+                // updateWeightBias<L2_SIZE, OUT_SIZE>(weights_l3, biases_l3, result_l2, final_error, learning_rate);
                 updateWeightBias<L1_SIZE, L2_SIZE>(weights_l2, biases_l2, result_l1, d_l2, learning_rate);
                 updateWeightBias<IN_SIZE, L1_SIZE>(weights_l1, biases_l1, input_ref, d_l1, learning_rate);
                 
