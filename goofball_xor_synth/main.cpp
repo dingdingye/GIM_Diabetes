@@ -27,16 +27,10 @@ int main() {
     }};
 
     // Declare training and testing arrays
-    std::array<std::array<std::array<fixed6_6, 1>, IN_SIZE>, TRAIN_SIZE> input_train;
-    std::array<std::array<fixed6_6, OUT_SIZE>, TRAIN_SIZE> y_train;
     fixed32_8 train_accuracy;
-    // Populate training data
-    for (int i = 0; i < TRAIN_SIZE; ++i) {
-        input_train[i] = input[i];
-        y_train[i] = y_true[i];
-    }
-
     int done = 0;
+
+    
     foo(input_train, y_train, train_accuracy, done);
 
     std::cout << "TB: TRAIN ACC " << train_accuracy << std::endl;
