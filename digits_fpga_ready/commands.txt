@@ -1,0 +1,1 @@
+g++ accelerator.cpp accelerator.h activation.cpp activations.h error.cpp error.h layer.cpp layer.h main.cpp top.cpp top.h utils.cpp utils.h -o run
