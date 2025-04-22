@@ -34,6 +34,11 @@ void accelerator(
                 << " | weights_l2[0][0]: " << weights_l2[0][0] 
                 << " | weights_l3[0][0]: " << weights_l3[0][0] << std::endl;
 
+    std::vector<std::vector<std::vector<double>>> vec3D(
+        NUM_ITERATIONS,
+        std::vector<std::vector<double>>(10, std::vector<double>(1, 0.0))
+    );
+    // std::vector<std::vector<std::vector<double>>> prev_epoch_err(NUM_ITERATIONS, std::vector<std::vector<double>(10, std::vector<double>(1, 0));
     for (int epoch = 0; epoch < NUM_ITERATIONS; ++epoch) {
         int correct_train = 0;
 
