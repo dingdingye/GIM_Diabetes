@@ -13,27 +13,10 @@ using namespace std;
 
 int main() {
 
-    std::array<std::array<std::array<fixed6_6, 1>, IN_SIZE>, DATA_SIZE> input = load_csv("digits_features.csv");  // Load and reformat features
-    std::array<std::array<fixed6_6, OUT_SIZE>, DATA_SIZE> y_true = load_labels("digits_labels.csv");    // Load and one-hot encode labels
+    // std::array<std::array<std::array<fixed6_6, 1>, IN_SIZE>, DATA_SIZE> input = load_csv("digits_features.csv");  // Load and reformat features
+    // std::array<std::array<fixed6_6, OUT_SIZE>, DATA_SIZE> y_true = load_labels("digits_labels.csv");    // Load and one-hot encode labels
 
     // Declare training and testing arrays
-    std::array<std::array<std::array<fixed6_6, 1>, IN_SIZE>, TRAIN_SIZE> input_train;
-    std::array<std::array<fixed6_6, OUT_SIZE>, TRAIN_SIZE> y_train;
-
-    std::array<std::array<std::array<fixed6_6, 1>, IN_SIZE>, TEST_SIZE> input_test;
-    std::array<std::array<fixed6_6, OUT_SIZE>, TEST_SIZE> y_test;
-
-    // Populate training data
-    for (int i = 0; i < TRAIN_SIZE; ++i) {
-        input_train[i] = input[i];
-        y_train[i] = y_true[i];
-    }
-
-    // Populate testing data
-    for (int i = 0; i < TEST_SIZE; ++i) {
-        input_test[i] = input[TRAIN_SIZE + i];
-        y_test[i] = y_true[TRAIN_SIZE + i];
-    }
 
     // std::array<std::array<fixed32_8, IN_SIZE>, L1_SIZE> weights_l1 = {{
     //     {{fixed32_8(-0.08508530), fixed32_8(-0.02892900), fixed32_8(-0.02975860), fixed32_8(-0.01997880), fixed32_8(0.08838610), fixed32_8(0.06033330), fixed32_8(0.03643510), fixed32_8(0.03752860), fixed32_8(-0.00603695), fixed32_8(0.03037270), fixed32_8(-0.03686940), fixed32_8(0.08277670), fixed32_8(0.04146250), fixed32_8(-0.08709560), fixed32_8(-0.01959830), fixed32_8(0.08264850), fixed32_8(-0.05415040), fixed32_8(0.01061400), fixed32_8(0.02377260), fixed32_8(0.00660743), fixed32_8(0.05487000), fixed32_8(-0.05232070), fixed32_8(0.04949580), fixed32_8(0.01520550), fixed32_8(-0.02374160), fixed32_8(0.03420050), fixed32_8(-0.06295830), fixed32_8(-0.06215730), fixed32_8(-0.05591800), fixed32_8(0.02834020), fixed32_8(-0.02105160), fixed32_8(0.08043460), fixed32_8(0.05842260), fixed32_8(-0.01533340), fixed32_8(-0.05663970), fixed32_8(0.06725630), fixed32_8(0.02298130), fixed32_8(0.05642670), fixed32_8(0.05438700), fixed32_8(0.08613030), fixed32_8(-0.02420490), fixed32_8(-0.04795040), fixed32_8(-0.00652421), fixed32_8(0.07378710), fixed32_8(-0.03178240), fixed32_8(0.03499120), fixed32_8(0.08479580), fixed32_8(0.05356940), fixed32_8(-0.04546440), fixed32_8(-0.02109650), fixed32_8(0.04998020), fixed32_8(-0.06103620), fixed32_8(-0.01057350), fixed32_8(-0.01740950), fixed32_8(0.01799010), fixed32_8(-0.06861040), fixed32_8(-0.08412720), fixed32_8(0.02656190), fixed32_8(-0.02381750), fixed32_8(0.06411120), fixed32_8(0.05533800), fixed32_8(-0.04021790), fixed32_8(0.04199880), fixed32_8(-0.06538710)}},
@@ -101,7 +84,7 @@ int main() {
     int done;
     fixed32_8 train_accuracy, test_accuracy;    
 
-    top(input_train, y_train, input_test, y_test, train_accuracy, test_accuracy, done);
+    top(train_accuracy, test_accuracy, done);
 
     return 0;
 }

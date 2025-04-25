@@ -32,7 +32,7 @@ using namespace std;
 //     }
 // }
 
-typedef ap_fixed<25, 8> fixed32_8;
+typedef ap_fixed<24, 7> fixed32_8;
 
 template <size_t ROWS, size_t COLS>
 std::array<std::array<fixed32_8, ROWS>, COLS> transpose(
@@ -72,7 +72,7 @@ std::array<std::array<fixed32_8, COLS_B>, ROWS_A> matmul(
         for (size_t j = 0; j < COLS_B; ++j) {
             temp = 0;  // Accumulator for the result of A[i][k] * B[k][j]
             for (size_t k = 0; k < COLS_A; ++k) {
-                #pragma HLS pipeline II=1  // Pipeline the innermost loop to enable parallelism
+                #pragma HLS pipeline II=100  // Pipeline the innermost loop to enable parallelism
                 #pragma HLS bind_op variable=temp op=mul impl=dsp // Bind multiplication to DSPs
                 #pragma HLS bind_op variable=temp op=add impl=dsp // Bind addition to DSPs
                 #pragma HLS bind_op variable=temp op=sub impl=dsp // Bind subtraction to DSPs
@@ -102,7 +102,7 @@ std::array<std::array<fixed32_8, P>, M> matmulTransposeW (
         for (size_t j = 0; j < P; ++j) {  
             fixed32_8 sumVal = 0.0;
             for (size_t k = 0; k < N; ++k) {
-                #pragma HLS pipeline II=1   
+                #pragma HLS pipeline II=100   
                 #pragma HLS bind_op op=mul impl=dsp // Bind multiplication to DSPs
                 #pragma HLS bind_op op=add impl=dsp // Bind addition to DSPs
                 #pragma HLS bind_op op=sub impl=dsp // Bind subtraction to DSPs

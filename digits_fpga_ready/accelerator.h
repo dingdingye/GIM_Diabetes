@@ -29,13 +29,14 @@ using namespace std;
 #define ACTIVATION_HIDDEN 0 // ReLU
 #define ACTIVATION_OUTPUT 1 // Softmax
 
-typedef ap_fixed<25, 8> fixed32_8;
+typedef ap_fixed<24, 7> fixed32_8;
 typedef ap_fixed<6, 6> fixed6_6;
+typedef ap_fixed<2, 2> fixed2_2;
 
 template <int PARAM_DATA_SIZE>
 void accelerator(
     const std::array<std::array<std::array<fixed6_6, 1>, IN_SIZE>, PARAM_DATA_SIZE>& input,
-    const std::array<std::array<fixed6_6, OUT_SIZE>, PARAM_DATA_SIZE>& y_true,
+    const std::array<std::array<fixed2_2, OUT_SIZE>, PARAM_DATA_SIZE>& y_true,
     // std::array<std::array<fixed32_8, IN_SIZE>, L1_SIZE>& weights_l0,
     std::array<std::array<fixed32_8, IN_SIZE>, L1_SIZE>& weights_l1,
     std::array<std::array<fixed32_8, L1_SIZE>, L2_SIZE>& weights_l2,

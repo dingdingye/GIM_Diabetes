@@ -1,4 +1,4 @@
-std::array<std::array<fixed6_6, 10>, 1797> digits_labels = {{
+std::array<std::array<fixed2_2, 10>, 1797> digits_labels = {{
     {{1, 0, 0, 0, 0, 0, 0, 0, 0, 0}},
     {{0, 1, 0, 0, 0, 0, 0, 0, 0, 0}},
     {{0, 0, 1, 0, 0, 0, 0, 0, 0, 0}},

@@ -13,7 +13,7 @@
 
 // Example activation functions
 
-typedef ap_fixed<25, 8> fixed32_8;
+typedef ap_fixed<24, 7> fixed32_8;
 
 template <int N>
 std::array<std::array<fixed32_8, 1>, N> relu(std::array<std::array<fixed32_8, 1>, N>& net) {

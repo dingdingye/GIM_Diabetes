@@ -3,24 +3,27 @@
 #include "error.h"
 #include "accelerator.h"
 #include "utils.h"
+#include "digits_features.h"
+#include "digits_labels.h"
 #include <vector>
 #include <iostream> 
 
 using namespace std;
 
 void top(
-    std::array<std::array<std::array<fixed6_6, 1>, IN_SIZE>, TRAIN_SIZE>& input_train,
-    std::array<std::array<fixed6_6, OUT_SIZE>, TRAIN_SIZE>& y_train,
-    std::array<std::array<std::array<fixed6_6, 1>, IN_SIZE>, TEST_SIZE>& input_test,
-    std::array<std::array<fixed6_6, OUT_SIZE>, TEST_SIZE>& y_test,
+    // std::array<std::array<std::array<fixed6_6, 1>, IN_SIZE>, TRAIN_SIZE>& input_train,
+    // std::array<std::array<fixed6_6, OUT_SIZE>, TRAIN_SIZE>& y_train,
+    // std::array<std::array<std::array<fixed6_6, 1>, IN_SIZE>, TEST_SIZE>& input_test,
+    // std::array<std::array<fixed6_6, OUT_SIZE>, TEST_SIZE>& y_test,
     fixed32_8& train_accuracy,
     fixed32_8& test_accuracy,
     int& done
 ){
-    #pragma HLS INTERFACE s_axilite port=input_train bundle=BUS
-    #pragma HLS INTERFACE s_axilite port=y_train bundle=BUS
-    #pragma HLS INTERFACE s_axilite port=input_test bundle=BUS
-    #pragma HLS INTERFACE s_axilite port=y_test bundle=BUS
+    // #pragma HLS INTERFACE s_axilite port=input_train bundle=BUS
+    // #pragma HLS INTERFACE s_axilite port=y_train bundle=BUS
+    // #pragma HLS INTERFACE s_axilite port=input_test bundle=BUS
+    // #pragma HLS INTERFACE s_axilite port=y_test bundle=BUS
+    #pragma HLS INTERFACE s_axilite port=return bundle=bus
     #pragma HLS INTERFACE s_axilite port=train_accuracy bundle=BUS
     #pragma HLS INTERFACE s_axilite port=test_accuracy bundle=BUS
     #pragma HLS INTERFACE s_axilite port=done bundle=BUS
@@ -69,6 +72,24 @@ void top(
     biases_l1.fill(fixed32_8(0.0));
     biases_l2.fill(fixed32_8(0.0));
     biases_l3.fill(fixed32_8(0.0));
+
+    std::array<std::array<std::array<fixed6_6, 1>, IN_SIZE>, TRAIN_SIZE> input_train;
+    std::array<std::array<fixed2_2, OUT_SIZE>, TRAIN_SIZE> y_train;
+
+    std::array<std::array<std::array<fixed6_6, 1>, IN_SIZE>, TEST_SIZE> input_test;
+    std::array<std::array<fixed2_2, OUT_SIZE>, TEST_SIZE> y_test;
+
+    // Populate training data
+    for (int i = 0; i < TRAIN_SIZE; ++i) {
+        input_train[i] = digits_features[i];
+        y_train[i] = digits_labels[i];
+    }
+
+    // Populate testing data
+    for (int i = 0; i < TEST_SIZE; ++i) {
+        input_test[i] = digits_features[TRAIN_SIZE + i];
+        y_test[i] = digits_labels[TRAIN_SIZE + i];
+    }
 
     accelerator<TRAIN_SIZE>(input_train, y_train, weights_l1, weights_l2, weights_l3, biases_l1, biases_l2, biases_l3, train_accuracy, 0);
 
